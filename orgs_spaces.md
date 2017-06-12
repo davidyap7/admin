@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-09"
+lastupdated: "2017-05-03"
 
 ---
 
@@ -28,7 +28,7 @@ To manage organizations and spaces, from the {{site.data.keyword.Bluemix_notm}} 
 Organizations can span multiple regions, and they are defined by the following items:
 
 <dl>
-<dt>Users</dt>
+<dt>Team members</dt>
 <dd>The role with basic permission in organizations and spaces. You must be assigned to an organization before you can be granted other permissions to the spaces within the organization. For detailed information, see [Users and roles](/docs/iam/users_roles.html#userrolesinfo).</dd>
 <dt>Domains</dt>
 <dd>Provide the route on the internet that is allocated to the organization. A route has a sub-domain and a domain. A sub-domain is typically the application name. A domain might be a system domain, or a custom domain that you registered for your application. See [Managing custom domains](/docs/admin/manageorg.html#managedomains).<br/>
@@ -38,18 +38,18 @@ Organizations can span multiple regions, and they are defined by the following i
 <p>**Note:** In a Subscription account, quota is a user defined limit that triggers spending notifications.</p></dd>
 </dl>
 
-In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable collaboration among users and to facilitate the logical grouping of project resources in the following ways:
+In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable collaboration among team members and to facilitate the logical grouping of project resources in the following ways:
 
 <ul>
-<li>You can group a set of spaces, applications, services, domains, routes, and users together in organizations.</li>
+<li>You can group a set of spaces, applications, services, domains, routes, and team members together in organizations.</li>
 <li>You can manage the access to the spaces and organizations on a per-user basis.</li>
 </ul>
 
-When you create an organization, the organization name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, then you must specify a new name. After you create the organization, you will be automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add users, and create or delete spaces in the organization.
+When you create an organization, the organization name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, then you must specify a new name. After you create the organization, you will be automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add team members, and create or delete spaces in the organization.
 
 You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
 
-The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assigned to users in an organization. All users invited to the account are assigned the auditor role by default.
+The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assigned to team members in an organization:
 
 <ul>
 <li>Organization manager</li>
@@ -69,9 +69,9 @@ Only account owners with Pay-As-You-Go accounts can create an organization. You 
 ## Creating spaces
 {: #spaceinfo}
 
-Within an organization, you can use spaces to group a set of applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}.
+Within an organization, you can use spaces to group a set of applications, services, and team members. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}.
 
-After you add users to an organization, you can grant them permissions to the spaces. Similar to organizations, spaces also have a set of [user roles](/docs/iam/users_roles.html#userrolesinfo) with specific permissions that are assigned to team members:
+After you add team members to an organization, you can grant them permissions to the spaces. Similar to organizations, spaces also have a set of [user roles](/docs/iam/users_roles.html#userrolesinfo) with specific permissions that are assigned to team members:
 
 <ul>
 <li>Space manager</li>
@@ -79,7 +79,7 @@ After you add users to an organization, you can grant them permissions to the sp
 <li>Space auditor</li>
 </ul>
 
-**Note**: A user must be assigned at least one of the permissions in the space.
+**Note**: A team member must be assigned at least one of the permissions in the space.
 
 You can create spaces in your organization; for example, a *dev* space as a development environment, a *test* space as a testing environment, and a *production* space as a production environment. Then, you can associate your apps with spaces. Complete the following steps to create a space:
 

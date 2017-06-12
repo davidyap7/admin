@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-09"
+lastupdated: "2017-04-11"
 
 ---
 
@@ -33,12 +33,11 @@ Complete the following steps to rename your organization:
 ## Deleting orgs and spaces
 {: #deleteorgs}
 
-You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
+As the account owner, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} to delete an organization.
 
-**Note**: Deleting operations cannot be reversed. 
+**Note**: Deleting operations cannot be reversed. You lose all your apps and services that are associated with the org.
 
-Complete the following steps to delete a space:
-
+Complete the following steps to delete an org or space:
 1. Click **Manage** > **Account** > **Organizations**.
 2. Identify the org that you want to edit, and click **View Details**.
 3. Identify the space that you want to delete, and click **Edit Space**.
