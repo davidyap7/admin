@@ -16,7 +16,8 @@ lastupdated: "2017-03-23"
 {:new_window: target="_blank"}
 
 # Benachrichtigungen einstellen
-Registrieren Sie sich für den Erhalt von Benachrichtigungen über Wartungsaktualisierungen an den öffentlichen Regionen der {{site.data.keyword.Bluemix_notm}}-Plattform und Ausgabenlimits des Kontos. Ausgabebenachrichtigungen sind nur für Eigener eines nutzungsabhängigen Kontos oder Abonnementkontos verfügbar.{:shortdesc}
+Registrieren Sie sich für den Erhalt von Benachrichtigungen über Wartungsaktualisierungen an den öffentlichen Regionen der {{site.data.keyword.Bluemix_notm}}-Plattform und Ausgabenlimits des Kontos. Ausgabebenachrichtigungen sind nur für Eigener eines nutzungsabhängigen Kontos oder Abonnementkontos verfügbar.
+{:shortdesc}
 
 Sie können Plattform-E-Mail-Benachrichtigungen für {{site.data.keyword.Bluemix_notm}}-Vorfälle und die geplante Instandhaltung festlegen und Sie können Ausgabebenachrichtigungen definieren, durch die Sie gewarnt werden, wenn sich die Ausgaben für Ihr Konto dem festgelegten Schwellenwert nähern. Rufen Sie **Konto > Benachrichtigungen verwalten** auf, um unterschiedliche Benachrichtigungstypen für Ihr Konto festzulegen.
 

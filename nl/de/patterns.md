@@ -186,7 +186,7 @@ Beachten Sie die folgenden Hinweise für Organisationen:
 
 Innerhalb einer Organisation bieten Bereiche eine zusätzliche Abgrenzungs- und Abstraktionsebene.
 
-Ein Bereich ist ein reservierter Teil in der Organisation, in dem Benutzer Anwendungen und Services entwickeln und ausführen können. Sie können eine beliebige Anzahl von Bereichen in einer Organisation erstellen und die Benutzer steuern, die Zugriff auf einen Bereich haben. Weitere Informationen finden Sie in [Bereiche](/docs/admin/orgs_spaces.html#spaceinfo "Spaces"). 
+Ein Bereich ist ein reservierter Teil in der Organisation, in dem Benutzer Anwendungen und Services entwickeln und ausführen können. Sie können eine beliebige Anzahl von Bereichen in einer Organisation erstellen und die Benutzer steuern, die Zugriff auf einen Bereich haben. Weitere Informationen finden Sie in [Bereiche](/docs/admin/orgs_spaces.html#spaceinfo "Spaces").
 
 Wenn Sie planen, eine große Anzahl von Bereichen zu definieren, kann es sinnvoll sein, eine Anwendung zu erstellen, die bei der Verwaltung der Bereiche hilft. Überschreiten die Bereiche die Anzahl von 60, empfiehlt es sich vielleicht, eine weitere Organisation zu definieren.
 

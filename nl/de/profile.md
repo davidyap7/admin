@@ -17,7 +17,8 @@ lastupdated: "2017-03-29"
 # Profil einrichten
 {: #usersettings}
 
-Wenn Sie zum ersten Mal mit {{site.data.keyword.Bluemix}} arbeiten, sollten Sie Ihr Kontoprofil einrichten. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**, um Ihre Profileinstellungen festzulegen oder zu aktualisieren.{:shortdesc}
+Wenn Sie zum ersten Mal mit {{site.data.keyword.Bluemix}} arbeiten, sollten Sie Ihr Kontoprofil einrichten. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**, um Ihre Profileinstellungen festzulegen oder zu aktualisieren.
+{:shortdesc}
 
 Sie können die folgenden Informationen festlegen oder aktualisieren:
 

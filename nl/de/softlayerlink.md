@@ -59,7 +59,7 @@ In einigen Fällen muss ein Reseller oder Distributor aktivieren, dass die Authe
 ## IBMid-Benutzerkonten verknüpfen
 {: #link_user_accounts}
 
-Nachdem die Benutzerkonten zur Authentifizierung mit IBMid gewechselt haben, können Reseller und Distributoren SoftLayer- und {{site.data.keyword.Bluemix_notm}}-Konten verknüpfen, um die kombinierten Infrastruktur- und Plattformressourcen zu nutzen. 
+Nachdem die Benutzerkonten zur Authentifizierung mit IBMid gewechselt haben, können Reseller und Distributoren SoftLayer- und {{site.data.keyword.Bluemix_notm}}-Konten verknüpfen, um die kombinierten Infrastruktur- und Plattformressourcen zu nutzen.
 
 **Hinweis**:
   * Der Masterbenutzer des Kontos, das verknüpft wird, muss eine IBMid haben.
@@ -67,9 +67,9 @@ Nachdem die Benutzerkonten zur Authentifizierung mit IBMid gewechselt haben, kö
   * Wenn Sie einem verknüpften Konto neue Benutzer hinzufügen, müssen Sie sie sowohl dem SoftLayer-Konto als auch dem {{site.data.keyword.Bluemix_notm}}-Konto hinzufügen, damit sie Zugriff auf alle Funktionen in der einheitlichen Konsole erhalten. 
   
 Führen Sie die folgenden Schritte aus, um jedes Konto mit einem {{site.data.keyword.Bluemix_notm}}-Konto zu verknüpfen:
-1. Um eine Verknüpfung mit einem vorhandenen {{site.data.keyword.Bluemix_notm}}-Konto zu erstellen oder um ein neues zu erstellen, melden Sie sich als Masterbenutzer bei Ihrem SoftLayer-Konto an und klicken Sie auf den {{site.data.keyword.Bluemix_notm}}-Link. 
+1. Um eine Verknüpfung mit einem vorhandenen {{site.data.keyword.Bluemix_notm}}-Konto zu erstellen oder um ein neues zu erstellen, melden Sie sich als Masterbenutzer bei Ihrem SoftLayer-Konto an und klicken Sie auf den {{site.data.keyword.Bluemix_notm}}-Link.
 
-   Die IBMid, die der Masterbenutzer des SoftLayer-Kontos ist, muss der Eigner des {{site.data.keyword.Bluemix_notm}}-Kontos sein, zu dem die Verknüpfung hergestellt wird.  
+   Die IBMid, die der Masterbenutzer des SoftLayer-Kontos ist, muss der Eigner des {{site.data.keyword.Bluemix_notm}}-Kontos sein, zu dem die Verknüpfung hergestellt wird. 
    
 2. Befolgen Sie die Eingabeaufforderungen im Assistenten und fügen Sie die Benutzer im SoftLayer-Konto dem {{site.data.keyword.Bluemix_notm}}-Konto hinzu.
 3. Nachdem Sie das Konto verknüpft haben, informieren Sie die Endbenutzer der einzelnen Konten darüber, dass sie zur IBMid migrieren müssen. Dabei sollte das im vorherigen Abschnitt beschriebene Verfahren verwendet werden.

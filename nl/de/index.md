@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-02"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -15,7 +16,6 @@ lastupdated: "2017-05-02"
 
 # {{site.data.keyword.Bluemix_notm}} Local und {{site.data.keyword.Bluemix_notm}} Dedicated verwalten
 {: #mng}
-
 
 Wenn Sie über Administratorzugriff für {{site.data.keyword.Bluemix}} Local oder {{site.data.keyword.Bluemix_notm}} Dedicated verfügen, können Sie über die Seite **Verwaltung** Ressourcen verwalten, die Kontingentnutzung überwachen, Benutzerberechtigungen verwalten, Upgradebenachrichtigungen planen, Sicherheitsberichte und Protokolle anzeigen und vieles mehr. Sie können Ihre Organisationen verwalten, indem Sie Bereiche erstellen und [Benutzerrollen und Berechtigungen festlegen](/docs/admin/index.html#oc_useradmin). Weitere Informationen finden Sie in [Organisationen verwalten](/docs/admin/orgs_spaces.html).
 {:shortdesc}
@@ -32,7 +32,7 @@ Wenn Sie über Administratorzugriff für {{site.data.keyword.Bluemix}} Local ode
 |Berichte und Protokolle prüfen | Klicken Sie auf **Verwaltung &gt; Berichte und Protokolle**, um Sicherheitsberichte und Prüfprotokolle für Ihre Instanz anzuzeigen. Siehe [Berichte anzeigen](/docs/admin/index.html#oc_report). |
 |Systeminformationen anzeigen | Klicken Sie auf **Verwaltung &gt; Systeminformationen**, um Systeminformationen wie anstehende Wartungsaktualisierungen, Name und Version Ihrer Instanz, Region, API-URL, CLI-URL, LDAP-Konfigurationsdetails, Gruppen- und Benutzerzuordnungen, Statistiken und gemeinsam genutzte Domänen anzuzeigen. Siehe [Systeminformationen anzeigen](/docs/admin/index.html#oc_system). |
 |Benachrichtigungen erweitern und Benachrichtigungsabonnements einrichten | Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend**. Sie können Web-Hooks zur Integration in einen Web-Service Ihrer Wahl verwenden, um ein Abonnement für Ereignisbenachrichtigungen für eine Aktualisierung oder einen Vorfall einzurichten. Siehe [Benachrichtigungen und Benachrichtigungsabonnements](/docs/admin/index.html#oc_eventsubscription). |
-{: caption="Tabelle 1. Verwaltungstasks zur Verwaltung Ihrer Bluemix Local oder Dedicated-Instanz" caption-side="top"}
+{: caption="Tabelle 1. Verwaltungstasks zur Verwaltung Ihrer lokalen oder dedizierten {{site.data.keyword.Bluemix_notm}}-Instanz" caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -119,7 +119,7 @@ Führen Sie folgende Schritte aus, um ein E-Mail- oder Web-Hook-Abonnement auf d
 | An | Geben Sie die E-Mail-Adresse(n) der Empfänger der E-Mail-Benachrichtigung in Form einer durch Kommas getrennte Liste ein. Erweitern Sie die Optionen "cc" bzw. "bcc", um andere Benutzer auf Kopie zu setzen. Dies ist ein erforderliches Feld. |
 {: caption="Tabelle 4. Felder für E-Mail-Benachrichtigungs-Abonnements für Wartungsaktualisierungen oder Vorfälle" caption-side="top"}
 
-Schwellenwertdaten werden alle 6 Stunden erfasst. Eine Benachrichtigung wird nur einmal gesendet, wenn der Wert den von Ihnen festgelegten Schwellenwert über- oder unterschreitet. Wenn Sie 'aufsteigend' gewählt haben, wird nur dann eine neue Benachrichtigung gesendet, wenn der Wert den Schwellenwert unterschreitet und dann wieder überschreitet. Wenn Sie 'absteigend' gewählt haben, werden Sie entsprechend nur dann benachrichtigt, wenn der Wert den von Ihnen festgelegten Schwellenwert überschreitet und dann wieder unterschreitet. 
+Schwellenwertdaten werden alle 6 Stunden erfasst. Eine Benachrichtigung wird nur einmal gesendet, wenn der Wert den von Ihnen festgelegten Schwellenwert über- oder unterschreitet. Wenn Sie 'aufsteigend' gewählt haben, wird nur dann eine neue Benachrichtigung gesendet, wenn der Wert den Schwellenwert unterschreitet und dann wieder überschreitet. Wenn Sie 'absteigend' gewählt haben, werden Sie entsprechend nur dann benachrichtigt, wenn der Wert den von Ihnen festgelegten Schwellenwert überschreitet und dann wieder unterschreitet.
 
 Wenn Sie nicht 6 Stunden warten möchten, bis die Benachrichtigung über das Erreichen des Schwellenwerts gesendet wird, können Sie nach dem Ausfüllen der Felder im Formular auf **Speichern und testen** klicken, um eine Testbenachrichtigung mit Beispieldaten zu empfangen.  
 
@@ -169,7 +169,7 @@ Eine Benachrichtigung über einen Organisationskontingentschwellenwert enthält 
 | URL | Geben Sie die URL für die Verbindung mit dem Web-Service ein. |
 {: caption="Tabelle 6. Formularfelder für ein Abonnement für Web-Hook-Benachrichtigungen über Schwellenwerte" caption-side="top"}
 
-Schwellenwertdaten werden alle 6 Stunden erfasst. Eine Benachrichtigung wird nur einmal gesendet, wenn der Wert den von Ihnen festgelegten Schwellenwert über- oder unterschreitet. Eine neue Benachrichtigung wird nur dann gesendet, wenn Sie 'absteigend' gewählt haben, der Wert den Schwellenwert unterschreitet und dann wieder überschreitet. Wenn Sie 'absteigend' gewählt haben, werden Sie entsprechend nur dann benachrichtigt, wenn der Wert den von Ihnen festgelegten Schwellenwert überschreitet und dann wieder unterschreitet. 
+Schwellenwertdaten werden alle 6 Stunden erfasst. Eine Benachrichtigung wird nur einmal gesendet, wenn der Wert den von Ihnen festgelegten Schwellenwert über- oder unterschreitet. Eine neue Benachrichtigung wird nur dann gesendet, wenn Sie 'absteigend' gewählt haben, der Wert den Schwellenwert unterschreitet und dann wieder überschreitet. Wenn Sie 'absteigend' gewählt haben, werden Sie entsprechend nur dann benachrichtigt, wenn der Wert den von Ihnen festgelegten Schwellenwert überschreitet und dann wieder unterschreitet.
 
 Wenn Sie nicht 6 Stunden warten möchten, bis die Benachrichtigung über das Erreichen des Schwellenwerts gesendet wird, können Sie nach dem Ausfüllen der Felder im Formular auf **Speichern und testen** klicken, um die Benachrichtigung mit Beispieldaten zu speichern und zu testen.
 
@@ -190,6 +190,7 @@ Eine Benachrichtigung über einen Organisationskontingentschwellenwert enthält 
 | {{region}} | Betroffene Region | Wartungsaktualisierung und Vorfall |
 | {{status}} | Status der Aktualisierung | Wartungsaktualisierung |
 | {{type}} | Aktualisierung und Vorfall | Wartungsaktualisierung und Vorfall |
+| {{workitem}} | Arbeitselement-Nummer | Wartungsaktualisierung und Vorfall |
 {: caption="Tabelle 7. Werte im Abschnitt 'payload' für Wartung und Vorfälle" caption-side="top"}
 
 
@@ -241,7 +242,7 @@ Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
 2. Erweitern Sie den Abschnitt zum Thema **Verfügbare Aktualisierungszeiten verwalten**.
-3. Klicken Sie auf **Neues hinzufügen** ![Neues hinzufügen](images/add-new.png).
+3. Klicken Sie auf **Neues hinzufügen**.
 4. Legen Sie das erste verfügbare Zeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
 5. Optional: Wählen Sie **Als bevorzugt markieren** aus, um das wiederkehrende Zeitfenster als bevorzugtes Zeitfenster für geplante Bereitstellungen festzulegen. Bevorzugte Zeitfenster haben Priorität, sofern dies möglich ist.
 6. Klicken Sie auf **Abschicken**.
@@ -256,7 +257,7 @@ Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
 2. Erweitern Sie den Abschnitt zum Thema **Nicht verfügbare Aktualisierungszeiten verwalten**.
-3. Klicken Sie auf **Neues hinzufügen** ![Neues hinzufügen](images/add-new.png).
+3. Klicken Sie auf **Neues hinzufügen**.
 4. Legen Sie das erste nicht verfügbare Zeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
 5. Klicken Sie auf **Abschicken**.
 
@@ -379,6 +380,7 @@ Die Registerkarte **Service** zeigt die Gesamtnutzung des Service in Bezug auf d
 **Hinweis**: Die Informationen zur Servicenutzung sind möglicherweise zu diesem Zeitpunkt nicht in allen Umgebungen vorhanden. Dieses Feature ist für Cloudant, MessageHub, API Connect und Session Cache verfügbar.
 
 
+
 ### Kontonutzung
 {: #accountusage}
 
@@ -435,42 +437,41 @@ Weitere Informationen zum Anzeigen der Nutzung pro Organisation, zum Anpassen vo
 ### Reports
 {: #oc_report}
 
-Sie können Sicherheitsberichte und -protokolle, wie DataPower&trade;-, Firewall- und Anmeldeprüfberichte für Ihre {{site.data.keyword.Bluemix_notm}}-Instanz anzeigen. Klicken Sie zum Anzeigen von Berichten und Protokollen auf **Verwaltung &gt; Berichte und Protokolle**.
+Sie können für Ihre {{site.data.keyword.Bluemix_notm}}-Instanz Sicherheitsberichte und -protokolle anzeigen, z. B. Auditberichte für DataPower&trade;, Firewall und Anmeldungen. Klicken Sie zum Anzeigen von Berichten und Protokollen auf **Verwaltung &gt; Berichte und Protokolle**.
 
-Es stehen Ihnen nun verschiedene Möglichkeiten zur Auswahl:
+Sie können über die Kachel 'Berichte und Protokolle' die folgenden Tasks ausführen:
 
-- Sie können in den Feldern Start- und Enddatum auswählen, um die Berichte und Protokolle zu filtern, die angezeigt werden.
-- Sie können im Navigationsbereich verschiedene Berichte einblenden und anzeigen.
-- Sie können Ihre Berichte und Protokolle durchsuchen. Bei der Suche werden die
-Berichtsnamen ebenso wie der Textinhalt in den Berichten und Protokollen einbezogen. Sie können bei
-der Suche auch Filter für Administrationsereignisse, DataPower-, Firewall- und
-Anmeldeprüfungsberichte einsetzen.
-- Beim Anzeigen eines Berichts oder eines Protokolls können Sie auf das Symbol ![Download](images/icon_download.png) klicken, um den Bericht bzw. das Protokoll herunterzuladen.
+- Wählen Sie Start-und Enddatum aus den Feldern, um zu filtern, welche Berichte und Protokolle angezeigt werden.
+- Zeigen Sie die Liste der angeforderten Berichte und derzeit verfügbaren Berichte an.
+- Suchen Sie in Ihrer Sammlung von Berichten und Protokollen. Bei der Suche werden die
+Berichtsnamen ebenso wie der Textinhalt in den Berichten und Protokollen einbezogen. Sie können Ihre Suche auch nach der Kategorie filtern.
+- Laden Sie einen Bericht herunter, indem Sie auf das ![Downloadsymbol](images/icon_download.png) klicken.
+- Fordern Sie die Generierung eines Berichts an, sofern Sie Schreibzugriff für die Berichtsberechtigung haben. Sie können je nach Bedarf aus den folgenden sechs Kategorien zum Generieren eines Berichts auswählen: 'Admininistrationskonsole - Benutzermanagement', '{{site.data.keyword.Bluemix_notm}}-Plattform - Administration', 'Zurückgewiesene Firewallanmeldungen', 'Firewallanmeldungen', 'Anmeldung über den Anmeldeserver' und 'Betriebssystemanmeldung'. Sie können Berichte für Daten anfordern, die bis zu 90 Tage alt sind.
+
+**Hinweis**: Die Funktion zur Berichtsanforderung ist derzeit möglicherweise nicht in allen Umgebungen verfügbar.
 
 In der folgenden Tabelle sind Sicherheitsberichte aufgelistet, die für {{site.data.keyword.Bluemix_notm}} Local und {{site.data.keyword.Bluemix_notm}} Dedicated generiert werden. Die meisten Berichte werden täglich generiert. Die Berichte zur Verschlüsselung und zu den wichtigsten Verwaltungsereignissen werden jedoch monatlich generiert. Alle Berichte werden in der Administrationskonsole gespeichert und können 90 Tage lang abgerufen werden. Nach Ablauf dieser 90 Tage sind die Berichte auf Anforderung an {{site.data.keyword.Bluemix_notm}} 9 Monate lang offline verfügbar. Insgesamt sind die Berichte bis zu 1 Jahr verfügbar.
 
 
 {: #ld_table9}
 
-| **Kategorie** | **Bericht** | **Beschreibung** |      
-|-----------------|-------------------|---------------------|
-| Firewall | Firewall-Anmeldungen | Ereignisse im Zusammenhang mit der Administratoranmeldung an den Vyatta-Firewall-Geräten. |
-| Firewall | Firewall-Ablehnungen | Ereignisse, die von den Vyatta-Firewall-Geräten generiert werden, wenn eine Zugriffsanforderung im Einklang mit den bestehenden Firewallregeln abgelehnt wird. |
-| {{site.data.keyword.Bluemix_notm}}-Administrator-Anmeldeereignisse | {{site.data.keyword.Bluemix_notm}}-Administratoranmeldung | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine SSH-Sitzung auf einem beliebigen {{site.data.keyword.Bluemix_notm}}-System startet. |
-| {{site.data.keyword.Bluemix_notm}}-Anwendungsentwickler-Anmeldeereignisse | {{site.data.keyword.Bluemix_notm}}-Anwendungsentwickleranmeldung | Ereignisse, die von der Anmeldungskomponente der {{site.data.keyword.Bluemix_notm}}-Plattform generiert werden, wenn ein {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer eine Sitzung über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle startet. |
-| {{site.data.keyword.Bluemix_notm}}-Administrator-Verwaltungsereignisse | {{site.data.keyword.Bluemix_notm}}-Administrator-Verwaltungsereignisse des Betriebssystems | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine Aktion innerhalb einer aktuellen Arbeitssitzung ausführt. |
-| {{site.data.keyword.Bluemix_notm}}-Anwendungsentwickler-Verwaltungsereignisse | {{site.data.keyword.Bluemix_notm}}-Verwaltungsereignisse (Cloud Foundry) | Ereignisse im Zusammenhang mit Operationen, die vom {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle ausgeführt werden. |
-| {{site.data.keyword.Bluemix_notm}}-Administrator-Datenbankverwaltungsereignisse | Datenbankverwaltungsereignisse | Ereignisse im Zusammenhang mit Operationen, die von einem Datenbankadministrator in den internen {{site.data.keyword.Bluemix_notm}}-Datenbanken ausgeführt werden. |
-| Verwaltungsereignisse | Benutzerverwaltungsereignisse | Ereignisse im Zusammenhang mit Benutzerverwaltungsaktionen, die auf der Verwaltungsseite ausgeführt werden. |
-| Verwaltungsereignisse | Catalog | Ereignisse im Zusammenhang mit Änderungen am Servicekatalog |
-| Verwaltungsereignisse | Sicherheitsbericht-Verwaltungsereignisse | Ereignisse im Zusammenhang mit Sicherheitsbericht-Verwaltungsaktionen, die auf der Verwaltungsseite ausgeführt werden. |
-| Zugriffsprüfungen | Bericht über Zugriffsprüfungen | Prüfungen für berechtigte Zugriffe. |
-| Änderungsmanagement | Management von Softwareänderungen | Änderungsmanagementaktivität. |
-| Schlüsselmanagement | Verwaltung von angepassten SSL-Zertifikaten | Angepasste SSL-Zertifikate, die hochgeladen und gespeichert wurden. |
-| Verschlüsselung | Verschlüsselung von Daten bei der Übertragung | Konfigurierte Verschlüsselung von Daten bei der Übertragung. |
-| Virenschutz | Bericht zum Virenscan | Installierte Virenschutzsoftware. |
-| Software-Fix-Management | Patchanwendungsbericht | Angewendete Software-Fixes. |
-| Verwaltung von Sicherheitsvorfällen | Bericht zur Korrektur von Sicherheitsvorfällen | Nachweis von Sicherheitsvorfällen für die Verwaltung von Sicherheitsvorfällen. |
+| **Bericht** | **Beschreibung** |      
+|-------------------|---------------------|
+| [Firewall-Anmeldungen](/docs/hybrid/reports.html#firewalllogins) | Ereignisse im Zusammenhang mit der Administratoranmeldung an den Vyatta-Firewall-Geräten. |
+| [Firewall-Ablehnungen](/docs/hybrid/reports.html#firewalldenies) | Ereignisse, die von den Vyatta-Firewall-Geräten generiert werden, wenn eine Zugriffsanforderung im Einklang mit den bestehenden Firewallregeln abgelehnt wird. |
+| {{site.data.keyword.Bluemix_notm}} [-Administratoranmeldung](/docs/hybrid/reports.html#oslogin) | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine SSH-Sitzung auf einem beliebigen {{site.data.keyword.Bluemix_notm}}-System startet. |
+| {{site.data.keyword.Bluemix_notm}} [-Anwendungsentwickleranmeldung](/docs/hybrid/reports.html#loginserverlogins) | Ereignisse, die von der Anmeldungskomponente der {{site.data.keyword.Bluemix_notm}}-Plattform generiert werden, wenn ein {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer eine Sitzung über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle startet. |
+| {{site.data.keyword.Bluemix_notm}} [-Betriebssystemverwaltung](/docs/hybrid/reports.html#osadmin)  | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine Aktion innerhalb einer aktuellen Arbeitssitzung ausführt. |
+| {{site.data.keyword.Bluemix_notm}} [-Plattformverwaltung (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) | Ereignisse im Zusammenhang mit Operationen, die vom {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle ausgeführt werden. |
+| [Interne Datenbankverwaltung](/docs/hybrid/reports.html#dbadmin) | Ereignisse im Zusammenhang mit Operationen, die von einem Datenbankadministrator in den internen {{site.data.keyword.Bluemix_notm}}-Datenbanken ausgeführt werden. |
+| [Benutzermanagement](/docs/hybrid/reports.html#acusermgmt) | Ereignisse im Zusammenhang mit Benutzerverwaltungsaktionen, die auf der Verwaltungsseite ausgeführt werden. |
+| [Katalogverwaltung](/docs/hybrid/reports.html#catalogmgmt) | Ereignisse im Zusammenhang mit Änderungen am Servicekatalog |
+| [Sicherheitsberichtsmanagement](/docs/hybrid/reports.html#securityreportsmgmt) | Ereignisse im Zusammenhang mit Sicherheitsbericht-Verwaltungsaktionen, die auf der Verwaltungsseite ausgeführt werden. |
+| [Zugriffsprüfungen](/docs/hybrid/reports.html#securityreportsmgmt) | Prüfungen für berechtigte Zugriffe. |
+| Management von Softwareänderungen | Änderungsmanagementaktivität. |
+| [Schlüsselzertifikatmanagement](/docs/hybrid/reports.html#keymgmt) | Schlüsselzertifikat-Verwaltungsoperationen. |
+| [Systembenachrichtigungen](/docs/hybrid/reports.html#systemnotifications) | Ereignisse im Zusammenhang mit der Konfiguration der Fenster für die Bereitstellung von Software-Updates oder der Benachrichtigungsabonnements. |
+
 {: caption="Tabelle 9. Liste der Sicherheitsberichte" caption-side="top"}
 
 ## Status anzeigen
@@ -828,7 +829,7 @@ Ein Kontingent stellt die Ressourcengrenzen für die Organisationen in Ihrer Umg
 <ol>
 <li>Klicken Sie im Abschnitt 'Hauptspeichernutzung für Organisation' auf den Balken im Diagramm für die Organisation, die bearbeitet werden soll, oder wählen Sie den Namen der Organisation im Bereich 'Organisationsliste' aus. Auf der Seite 'Informationen zu Organisation' können Sie die Organisation umbenennen oder Manager hinzufügen oder entfernen.
 <p><strong>Hinweis:</strong> Wenn Sie einen Kontingentplan auswählen, der für die aktuelle Speichernutzung einer Organisation nicht ausreicht, erhalten Sie eine Nachricht.</p></li>
-<li>Klicken Sie auf <strong>Cloud Foundry</strong> oder <strong>Container</strong>.  Standardmäßig wird die Kontingentseite 'Cloud Foundry' geöffnet. 
+<li>Klicken Sie auf <strong>Cloud Foundry</strong> oder <strong>Container</strong>.  Standardmäßig wird die Kontingentseite 'Cloud Foundry' geöffnet.
 <ul>
 <li>Auf der Seite 'Cloud Foundry' können Sie einen Plan auswählen und die Kontingentdetails für die folgenden Ressourcen anzeigen:
 <ul>
@@ -852,7 +853,7 @@ Ein Kontingent stellt die Ressourcengrenzen für die Organisationen in Ihrer Umg
 <dd>Die maximale Anzahl öffentlicher IP-Adressen, die Sie bereichsübergreifend in einer Organisation zuordnen können.</dd>
 </dl>
 <strong>Hinweis:</strong> Wenn in Ihrer Umgebung noch keine Container vorhanden oder konfiguriert sind, wird eine Fehlernachricht angezeigt.
-<p>Weitere Informationen zu Containern finden Sie in den [Informationen zu IBM Containern](/docs/containers/container_ov.html). Weitere Informationen zu Containerkontingenten finden Sie unter [Kontingent und Bluemix-Konten](/docs/containers/container_planning.html#container_planning_quota).</p>
+<p>Weitere Informationen zu Containern finden Sie in den [Informationen zu IBM Containern](/docs/containers/container_ov.html). Weitere Informationen zu Containerkontingenten finden Sie unter [Kontingent und Bluemix-Konten](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Hinweis:</strong> In der {{site.data.keyword.Bluemix_notm}}-Region 'Sydney' stehen keine Container zur Verfügung.</li>
 </ul>
 <li>Speichern Sie Ihre Änderungen auf der Seite 'Organisation verwalten', indem Sie auf <strong>Speichern</strong> klicken.</li>
@@ -874,7 +875,7 @@ Im Bereich der Organisationsliste werden alle Organisationen in der {{site.data.
   - Diagramm zur gemessenen Anwendungsnutzung, das einen dreimonatigen Bericht zu den genutzten GB-Stunden pro bereitgestellter App zeigt. Sie können die **Listenansicht** auswählen, um Daten für alle Apps mit Speicherzuordnung pro App und gemessener GB-Stundennutzung für die vergangenen drei Monate anzuzeigen.
 
 - Zum Bearbeiten des Namens der Organisation sowie zum Hinzufügen oder Entfernen von Managern klicken Sie auf den Namen der Organisation in der Liste und folgen den Anweisungen in der Anzeige.
-- Um Informationen zu einem bestimmten Benutzer der angezeigten Organisation anzuzeigen, klicken Sie auf den Benutzernamen, um die Benutzerinformationen anzuzeigen. Anschließend können Sie auf den Namen der Organisation klicken, um zur Anzeige der Organisationsinformationen zurückzukehren. 
+- Um Informationen zu einem bestimmten Benutzer der angezeigten Organisation anzuzeigen, klicken Sie auf den Benutzernamen, um die Benutzerinformationen anzuzeigen. Anschließend können Sie auf den Namen der Organisation klicken, um zur Anzeige der Organisationsinformationen zurückzukehren.
 
 ## Benutzer und Berechtigungen verwalten
 {: #oc_useradmin}
@@ -950,8 +951,8 @@ Abhängig vom Zugriff **Lesen** oder **Schreiben** für die Berechtigungen des B
 
     1. Wählen Sie den Benutzernamen in der Tabelle aus, um auf die Seite **Benutzer bearbeiten** zuzugreifen und einen Benutzer zu einer Organisation hinzuzufügen. Verwenden Sie anschließend das Suchfeld, um eine Organisation zu lokalisieren, wählen Sie die Organisation aus der Liste aus und klicken Sie anschließend auf **Speichern**.
     2. Wählen Sie den Benutzernamen in der Tabelle aus, um auf die Seite **Benutzer bearbeiten** zuzugreifen und einen Benutzer aus einer Organisation zu entfernen. Klicken Sie anschließend für die Organisation, aus der der Benutzer entfernt werden soll, auf ![Entfernen](images/icon_remove.svg) und dann auf **Speichern**.
-    
-* Um Informationen zu der Organisation anzuzeigen, der der Benutzer zugewiesen ist, klicken Sie auf den Namen der Organisation, um die Organisationsinformationen anzuzeigen. Anschließend können Sie auf den Benutzernamen klicken, um zur Anzeige der Benutzerinformationen zurückzukehren. 
+
+* Um Informationen zu der Organisation anzuzeigen, der der Benutzer zugewiesen ist, klicken Sie auf den Namen der Organisation, um die Organisationsinformationen anzuzeigen. Anschließend können Sie auf den Benutzernamen klicken, um zur Anzeige der Benutzerinformationen zurückzukehren.
 
 ### Berechtigungen
 {: #permissions}
@@ -970,12 +971,12 @@ Den Benutzern können die folgenden Berechtigungen mit bestimmten Zugriffsebenen
 | Users | Benutzern mit der Berechtigung **Users** kann der Zugriff **Lesen** (Anzeigen) für die Liste der Benutzer oder **Schreiben** (Hinzufügen oder Entfernen) für Benutzer zugewiesen werden. Diese Berechtigung erlaubt es Ihnen nicht, Berechtigungen für andere Benutzer festzulegen. Benutzer mit Schreibzugriff können neue Benutzer zur Umgebung hinzufügen, Benutzer aus der Umgebung löschen und vorhandene Benutzer zu Organisationen hinzufügen, die in der Umgebung bereits vorhanden sind. Außerdem können Benutzer mit dem Zugriff **Schreiben** neue Organisationen hinzufügen, Organisationen löschen und die Benutzer in den Organisationen bearbeiten. |
 {: caption="Tabelle 14. Berechtigungen" caption-side="top"}
 
-## REST-APIs verwenden 
+## REST-APIs verwenden
 {: #auth_adminapi}
 
 Für die Verwendung der REST-API-Befehle müssen Sie sich zunächst authentifizieren. Zur Generierung und Unterstützung von Sitzungen können Sie cURL-Befehle für die folgenden Tasks verwenden:
 
-* [Bei der Administrationskonsole anmelden](#auth_loginapi) 
+* [Bei der Administrationskonsole anmelden](#auth_loginapi)
 * [Benutzer-ID und Kennwort speichern](#auth_setuidpw)
 * [Cookies speichern](#auth_apistorecook)
 * [Cookies wiederverwenden](#auth_apireusecook)
@@ -983,7 +984,7 @@ Für die Verwendung der REST-API-Befehle müssen Sie sich zunächst authentifizi
 ### Bei der Administrationskonsole anmelden
 {: #auth_loginapi}
 
-Vor dem Ausführen von `Admin`-API-Anforderungen müssen Sie sich bei der Administrationskonsole anmelden. 
+Vor dem Ausführen von `Admin`-API-Anforderungen müssen Sie sich bei der Administrationskonsole anmelden.
 
 Zum Anmelden bei der Administrationskonsole können Sie die Basiszugriffsauthentifizierung am Endpunkt `https://console.<region>.bluemix.net/login` verwenden. Der Server gibt ein Cookie mit Ihrer Sitzung zurück. Dieses Cookie verwenden Sie für alle Operationen mit der Administrationskonsole.
 
@@ -1028,8 +1029,8 @@ Sie können Ihre Benutzer-ID und das zugehörige Kennwort auch speichern, sodass
 Wenn Sie Ihre Anmeldeinformationen in einer separaten Datei speichern und dann die Datei aufrufen wollen, sodass Sie die Informationen nicht für jede Authentifizierungsanforderung erneut eingeben müssen, verwenden Sie die Option `--netrc`, die mit dem cURL-Befehl zur Verfügung steht.
 
 Wenn Sie die Option `--netrc` mit cURL verwenden wollen, erstellen Sie zunächst eine Datei im Ausgangsverzeichnis des Benutzers auf eine der folgenden Weisen:
-* UNIX-System: Erstellen Sie eine Datei mit dem Namen '.netrc'. 
-* Windows-System: Erstellen Sie eine Datei mit dem Namen '_netrc'. 
+* UNIX-System: Erstellen Sie eine Datei mit dem Namen '.netrc'.
+* Windows-System: Erstellen Sie eine Datei mit dem Namen '_netrc'.
 
 Geben Sie in dieser Datei die folgenden Informationen an:
 
@@ -1317,12 +1318,12 @@ Das folgende Beispiel zeigt die Ausgabe dieses Befehls:
  ```
 {: screen}
 
-## API für Metriken (experimentell)
+## API für Metriken
 {: #envappmetricsapi}
 
 Zur Erfassung von Metriken über Ihre Umgebung oder Anwendungen können Sie drei experimentelle APIs verwenden. Diese APIs geben ein Array von Datenpunkten für die angeforderten Metriken und den von Ihnen angegebenen Zeitraum zurück.
 
-Auf die in den folgenden Abschnitten beschriebenen Metrik-APIs kann über den regionsspezifischen Endpunkt zugegriffen werden. Beispiel: 
+Auf die in den folgenden Abschnitten beschriebenen Metrik-APIs kann über den regionsspezifischen Endpunkt zugegriffen werden. Beispiel:
 
 `https://console.<region>.bluemix.net/admin/metrics`
 {: codeblock}
@@ -1332,13 +1333,14 @@ Auf die in den folgenden Abschnitten beschriebenen Metrik-APIs kann über den re
 1. Ein Benutzer kann pro Stunde bis zu 200 API-Anforderungen für Metriken absetzen.
 2. Jede API-Anforderung gibt bis zu 200 Datenpunkte pro Anforderung zurück. Falls mehr Daten verfügbar sind, wird in der Antwort eine URL bereitgestellt, mit deren Hilfe die nächste Gruppe von Daten geladen werden kann.
 3. Jede API-Anforderung erfordert mindestens Basiszugriff eines Benutzers auf die Administrationskonsole.  Weitere Berechtigungen können wie nachfolgend beschrieben erforderlich sein.
+4. Es stehen Daten bis zu 6 Monaten rückwirkend ab dem Zeitpunkt der API-Anforderung zur Verfügung.
 
-## Metriken über Ihre Umgebung erfassen 
+## Metriken über Ihre Umgebung erfassen
 
 Mit der experimentellen Umgebungs-API können Sie allgemeine Information zur Umgebung für einen von Ihnen angegebenen Zeitraum erfassen. Zurückgegeben werden die verfügbaren Datenpunkte im angegebenen Zeitraum. Daten werden ungefähr ein Mal pro Stunde aufgezeichnet. Falls Sie beispielsweise sechs Stunden von CPU-Daten für die Umgebung angefordert haben, würde die Antwort CPU-Daten für jede der angeforderten sechs Stunden enthalten.
 
 
-### Umgebungsendpunkte 
+### Umgebungsendpunkte
 
 Zum Aufrufen dieses API-Befehls können Sie den folgenden Endpunkt verwenden: `/api/v1/env`
 
@@ -1372,7 +1374,7 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<Regio
 Das Datenformat ist in den folgenden Abschnitten erläutert.
 
  * Um Datensätze über die Hauptspeicherbelegung zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1457,7 +1459,7 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 {: screen}
 
  * Um Datensätze über die Plattenbelegung zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1542,7 +1544,7 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 {: screen}
 
  * Um Datensätze über die CPU-Auslastung zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1596,7 +1598,7 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 {: screen}
 
  * Um Datensätze über das Netz zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1648,7 +1650,7 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 {: screen}
 
 * Um Datensätze über die Kontingentnutzung zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1668,7 +1670,7 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 {: screen}
 
 * Um Datensätze über Ihre Anwendungen zu erfassen, verwenden Sie das folgende Datenformat:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1699,7 +1701,7 @@ Für alle Organisationen werden ungefähr ein Mal pro Stunde Daten aufgezeichnet
 
 Um die Menge der Informationen zu verringern, die für jede Datenstichprobe im angeforderten Zeitraum zurückgegeben werden, können Sie eine Option für die Anzahl angeben. Wenn Sie beim vorherigen Beispiel eine Option für die Anzahl mit dem Wert 5 hinzufügen, werden 30 Datensätze zurückgegeben, die für jede Datenstichprobe die 5 Organisationen mit der höchsten Hauptspeichernutzung darstellen.
 
-### Organisationsendpunkte 
+### Organisationsendpunkte
 
 Zum Aufrufen dieses API-Befehls können Sie die folgenden Endpunkte verwenden:
 * `/api/v1/org/memory/physical`
@@ -1710,7 +1712,7 @@ Zum Aufrufen dieses API-Befehls können Sie die folgenden Endpunkte verwenden:
 **Hinweis:** Eine der folgenden Berechtigungen ist für den Zugriff auf diese Endpunkte erforderlich: **Benutzerlesezugriff**, **Benutzerschreibzugriff** oder **Superuser**.
 
 ### Abfrageparameter für Organisationen
- 
+
 Mit den folgenden Abfrageparametern können Sie Metriken für Ihre Organisationen erfassen:
 
 <dl class="parml">
@@ -1751,10 +1753,10 @@ Für alle Anwendungen werden ungefähr ein Mal pro Stunde Daten aufgezeichnet. E
 
 Um die Menge der Informationen zu verringern, die für jede Datenstichprobe im angeforderten Zeitraum zurückgegeben werden, können Sie eine Option für die Anzahl angeben. Wenn Sie beim vorherigen Beispiel eine Option für die Anzahl mit dem Wert 5 hinzufügen, werden 30 Datensätze zurückgegeben, die für jede Datenstichprobe die 5 Anwendungen mit der höchsten CPU-Auslastung darstellen.
 
-### Anwendungsendpunkte 
+### Anwendungsendpunkte
 
 Zum Aufrufen dieses API-Befehls können Sie die folgenden Endpunkte verwenden:
-* `/api/v1/app/cpu/physical` 
+* `/api/v1/app/cpu/physical`
 * `/api/v1/app/memory/physical`
 * `/api/v1/app/memory/reserved`
 * `/api/v1/app/disk/physical`
@@ -1763,7 +1765,7 @@ Zum Aufrufen dieses API-Befehls können Sie die folgenden Endpunkte verwenden:
 **Hinweis:** Eine der folgenden Berechtigungen ist für den Zugriff auf diese Endpunkte erforderlich: **Benutzerlesezugriff**, **Benutzerschreibzugriff** oder **Superuser**.
 
 ### Abfrageparameter für Anwendungen
- 
+
 Mit den folgenden Abfrageparametern können Sie Metriken für Ihre Anwendungen erfassen:
 
 <dl class="parml">
