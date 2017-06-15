@@ -192,7 +192,7 @@ Tenga en cuenta la siguiente orientación de organización:
 
 Dentro de una organización, los espacios proporcionan un nivel adicional de cumplimiento y abstracción de los límites.
 
-Un espacio es un área reservada de la organización donde los usuarios pueden desarrollar y ejecutar aplicaciones y servicios. En una organización podrá crear tantos espacios como desee y controlar los usuarios que tendrán acceso a dichos espacios. Consulte [Espacios](/docs/admin/orgs_spaces.html#spaceinfo "Espacios") para obtener información más detallada. 
+Un espacio es un área reservada de la organización donde los usuarios pueden desarrollar y ejecutar aplicaciones y servicios. En una organización podrá crear tantos espacios como desee y controlar los usuarios que tendrán acceso a dichos espacios. Consulte [Espacios](/docs/admin/orgs_spaces.html#spaceinfo "Espacios") para obtener información más detallada.
 
 Si tiene previsto definir un gran número de espacios, es posible que desee crear una aplicación para ayudar a gestionar los espacios. Cuando el número de espacios supere los sesenta, es posible que desee definir otra organización.
 
@@ -349,8 +349,8 @@ En una arquitectura con varias organizaciones o con una única organización, de
 2. Defina los permisos para estos usuarios en la cuenta. Divida permisos para gestionar el catálogo y los informes entre los usuarios del equipo.
 3. Seleccione uno o varios roles para cada usuario para que coincidan con los permisos necesarios para gestionar la cuenta:
 
-   * Rol de administrador: Los usuarios tendrán la autorización para gestionar toda la organización. 
-   * Rol de usuario: Los gestores de organización con permisos de escritura pueden añadir usuarios a la cuenta y sus organizaciones. Los gestores de organización con permisos de lectura pueden ver la lista de miembros en la cuenta. 
-   * Rol de catálogo: Los usuarios con permisos de escritura pueden definir y gestionar los iniciadores y servicios de Bluemix visibles en el catálogo de {{site.data.keyword.Bluemix_notm}} para los usuarios. 
+   * Rol de administrador: Los usuarios tendrán la autorización para gestionar toda la organización.
+   * Rol de usuario: Los gestores de organización con permisos de escritura pueden añadir usuarios a la cuenta y sus organizaciones. Los gestores de organización con permisos de lectura pueden ver la lista de miembros en la cuenta.
+   * Rol de catálogo: Los usuarios con permisos de escritura pueden definir y gestionar los iniciadores y servicios de Bluemix visibles en el catálogo de {{site.data.keyword.Bluemix_notm}} para los usuarios.
    * Rol de informes: Los usuarios con permisos de escritura pueden ver y añadir informes que otros usuarios con permisos de lectura pueden descargar. Otorgue permisos de lectura a todos los miembros del equipo de administración.
    * Rol de inicio de sesión: Otorgue este rol a todos los miembros del equipo de administración. También puede otorgar este rol a otros usuarios de la cuenta que necesitan acceso para ver las notificaciones de la cuenta y la información del sistema.

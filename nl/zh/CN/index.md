@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-02"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -15,7 +16,6 @@ lastupdated: "2017-05-02"
 
 # 管理 {{site.data.keyword.Bluemix_notm}} Local 和 {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #mng}
-
 
 如果您具有 {{site.data.keyword.Bluemix}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated 的管理员访问权，请转至**管理**页面来管理资源、监视配额使用情况、管理用户许可权、安排升级通知，以及查看安全报告和日志等。您可以通过创建空间并设置[用户角色和许可权](/docs/admin/index.html#oc_useradmin)来管理组织；请参阅[管理组织](/docs/admin/orgs_spaces.html)。
 {:shortdesc}
@@ -32,7 +32,7 @@ lastupdated: "2017-05-02"
 |查看报告和日志 | 单击**管理 &gt; 报告和日志**可查看针对您实例的安全报告和审计日志。请参阅[查看报告](/docs/admin/index.html#oc_report)。 |
 |查看系统信息 | 单击**管理 &gt; 系统信息**可查看系统信息，例如暂挂维护更新数、实例的名称和版本、区域、API URL、CLI URL、LDAP 配置详细信息、组和用户映射、统计信息以及共享域。请参阅[查看系统信息](/docs/admin/index.html#oc_system)。 |
 |扩展通知和设置通知预订 | 单击**管理 &gt; 系统信息 &gt; *Number* 个暂挂**。可以使用 Webhook 来与所选 Web 服务集成，以设置某个更新或事件的事件通知预订。请参阅[通知和通知预订](/docs/admin/index.html#oc_eventsubscription)。 |
-{: caption="表 1. 用于管理 Bluemix Local 或 Dedicated 实例的管理任务" caption-side="top"}
+{: caption="表 1. 用于管理 {{site.data.keyword.Bluemix_notm}} Local 或 Dedicated 实例的管理任务" caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -120,7 +120,7 @@ lastupdated: "2017-05-02"
 | 收件人 | 使用电子邮件通知收件人的逗号分隔列表，输入一个或多个电子邮件地址。展开“抄送”或“密件抄送”选项，将电子邮件抄送给其他人。这是必填字段。 |
 {: caption="表 4. 关于维护更新或事件的电子邮件通知预订的字段" caption-side="top"}
 
-阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会向您发送通知。 
+阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会向您发送通知。
 
 如果在达到阈值时不想等 6 小时再发送通知，那么在填完表单上的字段后，可以单击**保存并测试**以接收使用样本数据的测试通知。  
 
@@ -171,7 +171,7 @@ lastupdated: "2017-05-02"
 | URL | 输入要连接到 Web Service 的 URL。 |
 {: caption="表 6. 关于阈值的 Webhook 通知预订的表单字段" caption-side="top"}
 
-阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会再次向您发送通知。 
+阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会再次向您发送通知。
 
 如果在达到阈值时不想等 6 小时再发送通知，在填完表单上的字段后，可以单击**保存并测试**以保存通知并使用样本数据来测试通知。
 
@@ -192,6 +192,7 @@ lastupdated: "2017-05-02"
 | {{region}} | 受影响的区域 | 维护更新和事件 |
 | {{status}} | 更新的状态 | 维护更新 |
 | {{type}} | 更新或事件 | 维护更新和事件 |
+| {{workitem}} | 工作项编号 | 维护更新和事件 |
 {: caption="表 7. 维护和事件有效内容部分值" caption-side="top"}
 
 
@@ -243,7 +244,7 @@ lastupdated: "2017-05-02"
 
 1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂 &gt; 管理可用性**。
 2. 展开**管理可用更新时段**部分。
-3. 单击**添加新时段** ![添加新时段](images/add-new.png)。
+3. 单击**添加新项**。
 4. 通过选择时段的频率、持续时间和开始时间，设置第一个可用时段。
 5. 可选：如果您想要将重现可用性时段设置为要安排部署的首先时间，请选择**标记为首选**。可能时，首选时段会提供高优先级。
 6. 单击**提交**。
@@ -258,7 +259,7 @@ lastupdated: "2017-05-02"
 
 1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂 &gt; 管理可用性**。
 2. 展开**管理不可用更新时段**部分。
-3. 单击**添加新时段** ![添加新时段](images/add-new.png)。
+3. 单击**添加新项**。
 4. 通过选择时段的频率、持续时间和开始时间，设置不可用时段。
 5. 单击**提交**。
 
@@ -378,6 +379,7 @@ lastupdated: "2017-05-02"
 **注**：目前，服务使用量信息可能并非在所有环境中可用。此功能可用于 Cloudant、MessageHub、API Connect 和 Session Cache。
 
 
+
 ### 帐户使用情况
 {: #accountusage}
 
@@ -434,39 +436,40 @@ lastupdated: "2017-05-02"
 ### Reports
 {: #oc_report}
 
-您可以查看 {{site.data.keyword.Bluemix_notm}} 实例的安全报告和日志，例如 DataPower&trade;、防火墙和登录审计。要查看报告和日志，请单击**管理 &gt; 报告和日志**。
+您可以查看 {{site.data.keyword.Bluemix_notm}} 实例的安全报告和日志，例如 DataPower&trade;、防火墙和登录审计报告。要查看报告和日志，请单击**管理 &gt; 报告和日志**。
 
-从以下选项中进行选择：
+可以通过“报告和日志”磁贴执行以下任务：
 
-- 可以从字段中选择开始日期和结束日期，以过滤出要显示的报告和日志。
-- 可以从导航窗格中展开并查看各种报告。
-- 可以在报告和日志集合中进行搜索。搜索既适用于报告名称，也适用于报告和日志内包含的文本内容。您还可以选择按**管理事件**、**DataPower 报告**、**防火墙**和**登录审计**来过滤搜索。
-- 显示报告或日志时，可以单击 ![下载](images/icon_download.png) 图标来下载报告。
+- 从字段中选择开始日期和结束日期，以过滤出要显示的报告和日志。
+- 查看所请求报告和当前可用报告的列表。
+- 在报告和日志集合中进行搜索。搜索既适用于报告名称，也适用于报告和日志内包含的文本内容。您还可以选择按类别过滤搜索。
+- 通过单击 ![下载](images/icon_download.png) 图标来下载报告。
+- 请求生成报告（如果您具有报告许可权的写访问权的话）。您可以从以下六个类别中进行选择，以根据需要生成报告：管理控制台用户管理、{{site.data.keyword.Bluemix_notm}} 平台管理、防火墙拒绝、防火墙登录、登录服务器登录和操作系统登录。您可以针对 90 天之前的数据请求报告。
+
+**注**：目前，请求报告功能可能并非在所有环境中可用。
 
 下表显示了为 {{site.data.keyword.Bluemix_notm}} Local 和 {{site.data.keyword.Bluemix_notm}} Dedicated 生成的安全报告的列表。大多数报告会每天生成。但是，加密和密钥管理事件报告是每月生成一次。所有报告都会在管理控制台中保留 90 天，以供您检索。在 90 天后，报告在 {{site.data.keyword.Bluemix_notm}} 中可根据请求脱机提供，这一时间为 9 个月。报告总计可供检索的时间最长为 1 年。
 
 
 {: #ld_table9}
 
-| **类别** | **报告** | **描述** |      
-|-----------------|-------------------|---------------------|
-| 防火墙 | 防火墙登录 | 与管理员登录到 Vyatta 防火墙设备相关的事件。 |
-| 防火墙 | 防火墙拒绝 | 根据适用的防火墙规则，访问请求被拒绝时，Vyatta 防火墙设备生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理员登录事件 | {{site.data.keyword.Bluemix_notm}} 管理员登录 | 管理员在每个 {{site.data.keyword.Bluemix_notm}} 系统上启动 SSH 会话时，操作系统生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 应用程序开发者登录事件 | {{site.data.keyword.Bluemix_notm}} 应用程序开发者登录 | {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面启动会话时，{{site.data.keyword.Bluemix_notm}} 平台登录组件生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理员管理事件 | {{site.data.keyword.Bluemix_notm}} 管理员操作系统管理事件 | 管理员在当前工作会话中执行操作时，操作系统生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 应用程序开发者管理事件 | {{site.data.keyword.Bluemix_notm}} (Cloud Foundry) 管理事件 | 与 {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面执行的操作相关的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理员数据库管理事件 | 数据库管理事件 | 与数据库管理员在 {{site.data.keyword.Bluemix_notm}} 内部数据库上执行的操作相关的事件。 |
-| 管理事件 | 用户管理事件 | 与在“管理”页面上执行的用户管理操作相关的事件。 |
-| 管理事件 | 目录 | 与服务“目录”更改相关的事件。 |
-| 管理事件 | 安全报告管理事件 | 与在“管理”页面上执行的安全报告管理操作相关的事件。 |
-| 访问审核 | 访问审核报告 | 对特权访问的审核。 |
-| 变更管理 | 软件变更管理 | 变更管理活动。 |
-| 密钥管理 | 定制 SSL 证书管理 | 已上传并存储的定制 SSL 证书。 |
-| 加密 | 传输中的数据加密 | 已配置的传输中的数据加密。 |
-| 防病毒 | 防病毒扫描报告 | 已就位的防病毒软件。 |
-| 软件修订管理 | 补丁安装报告 | 已应用的软件修订。 |
-| 安全事件管理 | 安全事件补救报告 | 用于安全事件管理的安全事件证据。 |
+| **报告** | **描述** |      
+|-------------------|---------------------|
+| [防火墙登录](/docs/hybrid/reports.html#firewalllogins) | 与管理员登录到 Vyatta 防火墙设备相关的事件。 |
+| [防火墙拒绝](/docs/hybrid/reports.html#firewalldenies) | 根据适用的防火墙规则，访问请求被拒绝时，Vyatta 防火墙设备生成的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [管理员登录](/docs/hybrid/reports.html#oslogin) | 管理员在每个 {{site.data.keyword.Bluemix_notm}} 系统上启动 SSH 会话时，操作系统生成的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [应用程序开发者登录](/docs/hybrid/reports.html#loginserverlogins) | {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面启动会话时，{{site.data.keyword.Bluemix_notm}} 平台登录组件生成的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [操作系统管理](/docs/hybrid/reports.html#osadmin)  | 管理员在当前工作会话中执行操作时，操作系统生成的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) 平台管理](/docs/hybrid/reports.html#platformadmin) | 与 {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面执行的操作相关的事件。 |
+| [内部数据库管理](/docs/hybrid/reports.html#dbadmin) | 与数据库管理员在 {{site.data.keyword.Bluemix_notm}} 内部数据库上执行的操作相关的事件。 |
+| [用户管理](/docs/hybrid/reports.html#acusermgmt) | 与在“管理”页面上执行的用户管理操作相关的事件。 |
+| [目录管理](/docs/hybrid/reports.html#catalogmgmt) | 与服务“目录”更改相关的事件。 |
+| [安全报告管理](/docs/hybrid/reports.html#securityreportsmgmt) | 与在“管理”页面上执行的安全报告管理操作相关的事件。 |
+| [访问审核](/docs/hybrid/reports.html#securityreportsmgmt) | 对特权访问的审核。 |
+| 软件变更管理 | 变更管理活动。 |
+| [密钥证书管理](/docs/hybrid/reports.html#keymgmt) | 密钥证书管理操作。 |
+| [系统通知](/docs/hybrid/reports.html#systemnotifications) | 与配置软件更新部署窗口或通知预订相关的事件。 |
+
 {: caption="表 9. 安全报告列表" caption-side="top"}
 
 ## 查看状态
@@ -839,7 +842,7 @@ lastupdated: "2017-05-02"
 <dd>可以在组织的所有空间中分配的最大公共 IP 地址数。</dd>
 </dl>
 <strong>注</strong>：如果环境中尚无容器，或者如果在环境中尚未设置容器，那么您将收到错误消息。
-<p>有关容器的更多信息，请参阅[关于 IBM Containers](/docs/containers/container_ov.html)。有关容器配额的更多信息，请参阅[配额和 Bluemix 帐户](/docs/containers/container_planning.html#container_planning_quota)。</p>
+<p>有关容器的更多信息，请参阅[关于 IBM Containers](/docs/containers/container_ov.html)。有关容器配额的更多信息，请参阅[配额和 Bluemix 帐户](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
 <strong>注：</strong>在 {{site.data.keyword.Bluemix_notm}} 悉尼区域中无法使用容器。</li>
 </ul>
 <li>要保存在“管理组织”页面上进行的任何更改，请单击<strong>保存</strong>。</li>
@@ -861,7 +864,7 @@ lastupdated: "2017-05-02"
   - 计量应用程序使用情况图，显示三个月的报告，内容是每个已部署应用程序使用的 GB-小时。可以选择**列表视图**来查看所有应用程序的数据，包括过去三个月中每个应用程序的内存分配和计量的 GB-小时使用量。
 
 - 要编辑组织的名称，以及添加或除去管理员，请在列表中单击组织的名称，然后按照屏幕上的提示执行操作。
-- 要查看有关所查看组织的特定用户的信息，请单击该用户名以显示“用户信息”。然后，可以单击组织名称返回以查看“组织信息”。 
+- 要查看有关所查看组织的特定用户的信息，请单击该用户名以显示“用户信息”。然后，可以单击组织名称返回以查看“组织信息”。
 
 ## 管理用户和许可权
 {: #oc_useradmin}
@@ -936,8 +939,8 @@ lastupdated: "2017-05-02"
 
     1. 要向组织添加用户，请从表中选择相应用户名以访问**编辑用户**页面。接着，使用搜索字段来查找组织，从列表中选择组织，然后单击**保存**。
     2. 要从组织中除去用户，请从表中选择相应用户名以访问**编辑用户**页面。接着，对要从中除去用户的组织，单击 ![除去](images/icon_remove.svg)，然后单击**保存**。
-    
-* 要查看有关用户分配到的组织的信息，请单击组织名称以显示“组织信息”。然后，可以单击用户名返回以查看“用户信息”。 
+
+* 要查看有关用户分配到的组织的信息，请单击组织名称以显示“组织信息”。然后，可以单击用户名返回以查看“用户信息”。
 
 ### 许可权
 {: #permissions}
@@ -956,12 +959,12 @@ lastupdated: "2017-05-02"
 | Users | 可以为拥有 **Users** 许可权的用户分配针对用户列表执行 **Read**（查看）操作或针对用户执行 **Write**（添加或除去）操作的访问权。此许可权不允许为其他用户设置许可权。Write 访问权允许用户向环境添加新用户、从环境删除用户，并向环境内已经存在的组织添加现有用户。此外，**Write** 访问权允许用户添加新组织、删除组织并编辑组织内的用户。 |
 {: caption="表 14. 许可权" caption-side="top"}
 
-## 使用 REST API 
+## 使用 REST API
 {: #auth_adminapi}
 
 要使用 REST API 命令，您首先需要进行认证。要生成并支持会话，可以使用 cURL 命令来完成以下任务：
 
-* [登录到管理控制台](#auth_loginapi) 
+* [登录到管理控制台](#auth_loginapi)
 * [存储用户标识和密码](#auth_setuidpw)
 * [存储 cookie](#auth_apistorecook)
 * [复用 cookie](#auth_apireusecook)
@@ -969,7 +972,7 @@ lastupdated: "2017-05-02"
 ### 登录到管理控制台
 {: #auth_loginapi}
 
-运行任何 `Admin` API 请求之前，都必须登录到管理控制台。 
+运行任何 `Admin` API 请求之前，都必须登录到管理控制台。
 
 要登录到管理控制台，可以在 `https://console.<region>.bluemix.net/login` 端点上使用基本访问认证。服务器会使用您的会话返回 cookie。您使用该 cookie 来执行所有管理控制台操作。
 
@@ -1014,8 +1017,8 @@ lastupdated: "2017-05-02"
 要在单独的文件中设置登录信息，然后调用该文件，以便您不必为每个认证请求重新输入这些信息，请使用 cURL 命令提供的 `--netrc` 选项。
 
 要将 `--netrc` 选项与 cURL 配合使用，请首先通过以下某种方式在用户的主目录中创建文件：
-* 在 Unix 系统上，创建名为 .netrc 的文件 
-* 在 Windows 系统上，创建名为 _netrc 的文件。 
+* 在 Unix 系统上，创建名为 .netrc 的文件
+* 在 Windows 系统上，创建名为 _netrc 的文件。
 
 在该文件中，输入以下信息：
 
@@ -1300,12 +1303,12 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
  ```
 {: screen}
 
-## 用于度量值的 API（试验性）
+## 用于度量值的 API
 {: #envappmetricsapi}
 
 您可以使用三个试验性 API 来收集有关环境或应用程序的度量值。这些 API 会针对指定时间段内所请求的度量值返回一组数据点。
 
-以下各部分中描述的度量值 API 可以从特定于区域的端点进行访问，例如： 
+以下各部分中描述的度量值 API 可以从特定于区域的端点进行访问，例如：
 
 `https://console.<region>.bluemix.net/admin/metrics`
 {: codeblock}
@@ -1315,13 +1318,14 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 1. 用户每小时最多可以对度量值发起 200 个 API 请求。
 2. 每个 API 请求最多可返回 200 个数据点。如果有更多数据可用，将在响应中提供 URL，以用于装入下一组数据。
 3. 每个 API 请求都需要用户至少具有对管理控制台的基本访问权。可能还需要其他许可权，如下面所指定。
+4. 可以使用从发出 API 请求开始 6 个月前的数据。
 
-## 收集有关环境的度量值 
+## 收集有关环境的度量值
 
 您可以使用试验性环境 API 来收集指定时间段内的高级别环境信息。这将返回指定时间内的可用数据点。数据大约每小时记录一次。例如，如果请求 6 个小时的环境 CPU 数据，那么响应将包含请求 6 个小时内每个小时的 CPU 数据。
 
 
-### 环境端点 
+### 环境端点
 
 您可以使用以下端点来调用此 API 命令：`/api/v1/env`
 
@@ -1355,7 +1359,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 以下各部分提供了数据格式。
 
  * 要收集有关内存使用情况的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1440,7 +1444,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 要收集有关磁盘使用情况的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1525,7 +1529,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 要收集有关 CPU 使用情况的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1579,7 +1583,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 要收集有关网络的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1631,7 +1635,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
 * 要收集有关配额使用情况的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1651,7 +1655,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
 * 要收集有关应用程序的数据记录，请使用以下数据格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1682,7 +1686,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 
 要减少在请求的时间段内每次数据采样返回的信息量，可以指定 count 选项。使用上面的示例并添加值为 5 的 count 选项时，将返回 30 个记录，这表示每次数据采样中按内存列出的排名前 5 位的组织。
 
-### 组织端点 
+### 组织端点
 
 您可以使用以下端点来调用此 API 命令：
 * `/api/v1/org/memory/physical`
@@ -1693,7 +1697,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 **注**：访问这些端点需要以下某个许可权：**用户读许可权**、**用户写许可权**或**超级用户**
 
 ### 组织查询参数
- 
+
 使用以下查询参数可收集组织的度量值：
 
 <dl class="parml">
@@ -1734,10 +1738,10 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 
 要减少在请求的时间段内每次数据采样返回的信息量，可以指定 count 选项。使用上面的示例，并添加值为 5 的 count 选项时，将返回 30 个记录，这表示每次数据采样中按 CPU 列出的排名前 5 位的应用程序。
 
-### 应用程序端点 
+### 应用程序端点
 
 您可以使用以下端点来调用此 API 命令：
-* `/api/v1/app/cpu/physical` 
+* `/api/v1/app/cpu/physical`
 * `/api/v1/app/memory/physical`
 * `/api/v1/app/memory/reserved`
 * `/api/v1/app/disk/physical`
@@ -1746,7 +1750,7 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 **注**：访问这些端点需要以下某个许可权：**用户读许可权**、**用户写许可权**或**超级用户**
 
 ### 应用程序查询参数
- 
+
 使用以下查询参数可收集应用程序的度量值：
 
 <dl class="parml">

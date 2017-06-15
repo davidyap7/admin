@@ -15,7 +15,7 @@ lastupdated: "2017-04-07"
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Configuration de votre environnement Bluemix 
+# Configuration de votre environnement Bluemix
 {: #patterns}
 
 Pour que votre projet aboutisse, prenez le temps de planifier et concevoir les ressources dont vous avez besoin et les exigences de votre entreprise. Pour vous aider à démarrer avec votre projet cloud, tenez compte des questions suivantes :
@@ -184,8 +184,7 @@ Tenez compte des conseils suivants pour une organisation :
 
 Au sein d'une organisation, des espaces fournissent un niveau supplémentaire d'application de limites et d'abstraction.
 
-Un espace est une zone réservée dans l'organisation où les utilisateurs peuvent développer et exécuter des applications et des services. Vous pouvez créer autant d'espaces que nécessaire dans une organisation et définir les utilisateurs pouvant accéder à un espace.
-Voir [Espaces](/docs/admin/orgs_spaces.html#spaceinfo "Espaces") pour plus de détails. 
+Un espace est une zone réservée dans l'organisation où les utilisateurs peuvent développer et exécuter des applications et des services. Vous pouvez créer autant d'espaces que nécessaire dans une organisation et définir les utilisateurs pouvant accéder à un espace. Voir [Espaces](/docs/admin/orgs_spaces.html#spaceinfo "Espaces") pour plus de détails.
 
 Si vous prévoyez de définir un grand nombre d'espaces, vous souhaiterez peut-être créer une application dédiée à la gestion des espaces. Pour plus de soixante espaces, vous pouvez envisager de définir une autre organisation.
 
@@ -328,7 +327,7 @@ Un développeur de l'espace peut effectuer les tâches suivantes :
 
 Pour chaque espace, vous avez la possibilité d'accorder le rôle **Auditeur** de l'espace aux membres d'équipe qui disposent du rôle **Auditeur** de l'organisation. Dans votre entreprise, ce rôle devra peut-être être accordé à un groupe d'utilisateurs spécifique.
 
-### Rôles d'administration pour les comptes dédiés et locaux 
+### Rôles d'administration pour les comptes dédiés et locaux
 {: #adminroles}
 
 [Les rôles d'administration](/docs/hybrid/index.html#oc_useradmin "Gestion des utilisateurs et des droits") définissent les droits que vous pouvez accorder à des utilisateurs pour gérer un compte {{site.data.keyword.Bluemix_notm}} dédié ou un compte {{site.data.keyword.Bluemix_notm}} local.
@@ -340,8 +339,8 @@ Dans une architecture avec plusieurs organisations ou dans une architecture à o
 2. Définissez les droits d'accès de ces utilisateurs dans le compte. Répartissez les droits d'accès entre les utilisateurs de cette équipe pour gérer le catalogue et les rapports.
 3. Sélectionnez un ou plusieurs rôles pour chaque utilisateur en fonction des droits d'accès requis pour gérer le compte :
 
-   * Rôle Admin : les utilisateurs peuvent gérer l'ensemble de l'organisation. 
-   * Rôle Utilisateur : les responsables de l'organisation disposant de droits d'accès en écriture peuvent ajouter des utilisateurs au compte et à leurs organisations. Les responsables de l'organisation disposant de droits d'accès en lecture peuvent afficher la liste des membres du compte. 
-   * Rôle Catalogue : les utilisateurs disposant de droits d'accès en écriture peuvent définir et gérer les services et les modules de démarrage Bluemix que les utilisateurs peuvent voir dans le catalogue {{site.data.keyword.Bluemix_notm}}. 
+   * Rôle Admin : les utilisateurs peuvent gérer l'ensemble de l'organisation.
+   * Rôle Utilisateur : les responsables de l'organisation disposant de droits d'accès en écriture peuvent ajouter des utilisateurs au compte et à leurs organisations. Les responsables de l'organisation disposant de droits d'accès en lecture peuvent afficher la liste des membres du compte.
+   * Rôle Catalogue : les utilisateurs disposant de droits d'accès en écriture peuvent définir et gérer les services et les modules de démarrage Bluemix que les utilisateurs peuvent voir dans le catalogue {{site.data.keyword.Bluemix_notm}}.
    * Rôle Rapports : les utilisateurs disposant de droits d'accès en écriture peuvent afficher et ajouter des rapports que d'autres utilisateurs disposant de droits d'accès en lecture peuvent télécharger. Accordez des droits d'accès en lecture à tous les membres de l'équipe d'administration.
    * Rôle Connexion : accordez ce rôle à à tous les membres de l'équipe d'administration. Vous pouvez également l'accorder aux autres utilisateurs qui ont besoin d'afficher les notifications de compte et les informations système.

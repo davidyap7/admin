@@ -16,7 +16,8 @@ lastupdated: "2017-03-23"
 {:new_window: target="_blank"}
 
 # 设置通知
-注册以获取 {{site.data.keyword.Bluemix_notm}} 平台 Public 区域的维护更新通知以及帐户花费限制通知。花费通知仅可供现买现付帐户和预订帐户所有者使用。{:shortdesc}
+注册以获取 {{site.data.keyword.Bluemix_notm}} 平台 Public 区域的维护更新通知以及帐户花费限制通知。花费通知仅可供现买现付帐户和预订帐户所有者使用。
+{:shortdesc}
 
 您可以设置 {{site.data.keyword.Bluemix_notm}} 事件和计划维护的平台电子邮件通知，您也可以设置花费通知，以在帐户接近指定的花费阈值时对您发出警报。转至**管理 > 帐户 > 通知**来为帐户设置不同的通知类型。
 

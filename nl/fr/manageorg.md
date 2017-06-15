@@ -16,34 +16,34 @@ lastupdated: "2017-04-11"
 En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez effectuer des tâches de gestion de l'organisation, notamment renommer votre organisation, supprimer une organisation ou un espace, mettre à jour les rôles d'organisation ou d'espace et gérer le quota et les domaines.
 {:shortdesc}
 
-Dans la barre de menu de la console, sélectionnez **Gérer > Compte > Organisations** pour gérer vos organisations.  
+Dans la barre de menu de la console, sélectionnez **Gérer > Compte > Organisations** pour gérer vos organisations. 
 
-**Remarque :** vous pouvez afficher les ressources d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à l'autre depuis le lien des préférences du compte utilisateur dans la barre de menu de la console. 
+**Remarque :** vous pouvez afficher les ressources d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à l'autre depuis le lien des préférences du compte utilisateur dans la barre de menu de la console.
 
-## Modification du nom d'une organisation 
+## Modification du nom d'une organisation
 {: #orgrename}
 
 Procédez comme suit pour renommer votre organisation :
 1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
 2. Identifiez l'organisation à renommer et cliquez sur **Afficher les détails**.
 3. Cliquez sur **Editer l'organisation**.
-4. Cliquez sur **Editer** à côté du nom de l'organisation. 
+4. Cliquez sur **Editer** à côté du nom de l'organisation.
 5. Entrez le nouveau nom d'organisation et cliquez sur **Sauvegarder**.
 
-## Suppression d'organisations et d'espaces 
+## Suppression d'organisations et d'espaces
 {: #deleteorgs}
 
-En tant que propriétaire de compte, prenez contact avec le [support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour supprimer une organisation. 
+En tant que propriétaire de compte, prenez contact avec le [support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour supprimer une organisation.
 
 **Remarque** : les opérations de suppression sont irréversibles. Vous perdez toutes vos applis et tous les services qui sont associés à l'organisation.
 
-Procédez comme suit pour supprimer une organisation ou un espace : 
+Procédez comme suit pour supprimer une organisation ou un espace :
 1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
 2. Identifiez l'organisation à éditer et cliquez sur **Afficher les détails**.
 3. Identifiez l'espace à supprimer et cliquez sur **Editer l'espace**.
 4. Cliquez sur **Supprimer l'espace**.
 
-## Edition des rôles utilisateur 
+## Edition des rôles utilisateur
 {: #listmembers}
 
 Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation spécifique :
@@ -52,7 +52,7 @@ Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation
 3. Cliquez sur **Editer l'organisation**.
 4. Les membres de votre organisation et leurs rôles s'affichent dans l'onglet **UTILISATEURS**.
 
-Procédez comme suit afin d'éditer les rôles utilisateur pour un espace spécifique : 
+Procédez comme suit afin d'éditer les rôles utilisateur pour un espace spécifique :
 1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
 2. Identifiez l'organisation dont vous voulez afficher les membres, puis cliquez sur **Afficher les détails**.
 3. Identifiez l'espace dont vous voulez afficher les membres, puis cliquez sur **Editer l'espace**.

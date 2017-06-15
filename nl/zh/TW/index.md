@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-02"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -15,7 +16,6 @@ lastupdated: "2017-05-02"
 
 # 管理 {{site.data.keyword.Bluemix_notm}} 本端及 {{site.data.keyword.Bluemix_notm}} 專用
 {: #mng}
-
 
 如果您具有「{{site.data.keyword.Bluemix}} 本端」或「{{site.data.keyword.Bluemix_notm}} 專用」的管理者存取權，請移至**管理**頁面來管理資源、監視配額用量、管理使用者許可權、排定升級通知，以及檢視安全報告和日誌等。您可以透過建立空間並設定[使用者角色和許可權](/docs/admin/index.html#oc_useradmin)來管理組織；請參閱[管理組織](/docs/admin/orgs_spaces.html)。
 {:shortdesc}
@@ -32,7 +32,7 @@ lastupdated: "2017-05-02"
 |檢視報告和日誌 | 按一下**管理 &gt; 報告和日誌**，以檢視您實例的安全報告及審核日誌。請參閱[檢視報告](/docs/admin/index.html#oc_report)。 |
 |檢視系統資訊 | 按一下**管理 &gt; 系統資訊**，以檢視系統資訊，例如擱置維護更新、實例的名稱和版本、地區、API URL、CLI URL、LDAP 配置詳細資料、群組和使用者對映、統計資料以及共用網域。請參閱[檢視系統資訊](/docs/admin/index.html#oc_system)。 |
 |擴充通知以及設定通知訂閱 | 按一下**管理 &gt; 系統資訊 &gt; *數字* 個擱置**。您可以使用 Webhook 與您選擇的 Web 服務整合，以設定更新或突發事件的事件通知訂閱。請參閱[通知及通知訂閱](/docs/admin/index.html#oc_eventsubscription)。 |
-{: caption="表 1. 管理 Bluemix 本端或專用實例的管理作業" caption-side="top"}
+{: caption="表 1. 管理 {{site.data.keyword.Bluemix_notm}} 本端或專用實例的管理作業" caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -119,7 +119,7 @@ lastupdated: "2017-05-02"
 | 收件者 | 使用以逗點區隔的清單來輸入電子郵件通知接收者的電子郵件位址。展開「副本」或「密件副本」選項，可將電子郵件副本傳送給其他人。這是必要欄位。 |
 {: caption="表 4. 關於維護更新或突發事件的電子郵件通知訂閱欄位" caption-side="top"}
 
-臨界值資料是每 6 小時收集一次。通知只會在值越過您設定的臨界值時傳送一次。如果您選擇遞增，則除非值降到低於臨界值，然後再次高於臨界值，否則不會傳送新的通知。同樣地，如果您選擇遞減，則只有在值升高超過所設定的臨界值，然後再次降到低於臨界值時，您才會收到通知。 
+臨界值資料是每 6 小時收集一次。通知只會在值越過您設定的臨界值時傳送一次。如果您選擇遞增，則除非值降到低於臨界值，然後再次高於臨界值，否則不會傳送新的通知。同樣地，如果您選擇遞減，則只有在值升高超過所設定的臨界值，然後再次降到低於臨界值時，您才會收到通知。
 
 如果您不想在符合臨界值時等待 6 小時才傳送通知，則在完成表單上的欄位之後，可以按一下**儲存並測試**，以接收含有範例資料的測試通知。  
 
@@ -169,7 +169,7 @@ lastupdated: "2017-05-02"
 | URL | 輸入要連接至 Web 服務的 URL。 |
 {: caption="表 6. 關於臨界值的 Webhook 通知訂閱表單欄位" caption-side="top"}
 
-臨界值資料是每 6 小時收集一次。通知只會在值越過您設定的臨界值時傳送一次。如果您選擇遞增，則除非值降到低於臨界值，然後再次高於臨界值，否則不會傳送新的通知。同樣地，如果您選擇遞減，則只有在值升高超過所設定的臨界值，然後再次降到低於臨界值時，您才會再次收到通知。 
+臨界值資料是每 6 小時收集一次。通知只會在值越過您設定的臨界值時傳送一次。如果您選擇遞增，則除非值降到低於臨界值，然後再次高於臨界值，否則不會傳送新的通知。同樣地，如果您選擇遞減，則只有在值升高超過所設定的臨界值，然後再次降到低於臨界值時，您才會再次收到通知。
 
 如果您不想在符合臨界值時等待 6 小時才傳送通知，則在完成表單上的欄位之後，您可以按一下**儲存並測試**，以儲存通知，並使用範例資料測試通知。
 
@@ -190,6 +190,7 @@ lastupdated: "2017-05-02"
 | {{region}} | 受影響的地區 | 維護更新及突發事件 |
 | {{status}} | 更新的狀態 | 維護更新 |
 | {{type}} | 更新或突發事件 | 維護更新及突發事件 |
+| {{workitem}} | 工作項目號碼 | 維護更新及突發事件 |
 {: caption="表 7. 維護及突發事件有效負載區段值" caption-side="top"}
 
 
@@ -229,7 +230,7 @@ lastupdated: "2017-05-02"
 ### 設定預先核准的維護時間範圍
 {: #preapprovedmaintenance}
 
-非干擾性維護更新是排定在預先核准的時間範圍期間執行。依預設，會為您的系統建立兩個每週可用更新時間範圍。這些時間範圍一般是設為在每個星期六及星期日晚上重複發生。您可以使用下列其中一種方式來變更預設值：
+非干擾性維護更新是排定在預先核准的時間範圍期間執行。預設會為您的系統建立兩個每週可用更新時間範圍。這些時間範圍一般是設為在每個星期六及星期日晚上重複發生。您可以使用下列其中一種方式來變更預設值：
  * 選擇不同日期及（或）不同開始時間，以編輯預設更新時間範圍
  * 建立更新時間範圍，然後刪除預設更新時間範圍
 
@@ -241,7 +242,7 @@ lastupdated: "2017-05-02"
 
 1. 移至**管理 &gt; 系統資訊 &gt; *數字* 個擱置 &gt; 管理可用性**。
 2. 展開**管理可進行更新的時間範圍**區段。
-3. 按一下**新增** ![新增](images/add-new.png)。
+3. 按一下**新增**。
 4. 設定第一個可用的時間範圍，方法是選取時間範圍的頻率、持續時間及開始時間。
 5. 選用項目：如果您要將循環可用性時間範圍設定為排定部署的偏好時間，請選取**標示為偏好**。偏好的時間範圍會有指定的優先順序（在可能時）。
 6. 按一下**提交**。
@@ -256,7 +257,7 @@ lastupdated: "2017-05-02"
 
 1. 移至**管理 &gt; 系統資訊 &gt; *數字* 個擱置 &gt; 管理可用性**。
 2. 展開**管理無法進行更新的時間範圍**區段。
-3. 按一下**新增** ![新增](images/add-new.png)。
+3. 按一下**新增**。
 4. 設定無法使用的時間範圍，方法是選取時間範圍的頻率、持續時間及開始時間。
 5. 按一下**提交**。
 
@@ -379,6 +380,7 @@ lastupdated: "2017-05-02"
 **附註**：目前，可能無法在所有環境中使用服務耗用量資訊。此特性適用於 Cloudant、MessageHub、API Connect 及 Session Cache。
 
 
+
 ### 帳戶用量
 {: #accountusage}
 
@@ -414,7 +416,7 @@ lastupdated: "2017-05-02"
 <li>所有聯合運行環境、服務及應用程式的費用摘要</li>
 </ul>
 </li>
-<li>選用項目：從長條圖中選取您選擇的月份，以檢視特定月份的資料。依預設，會顯示現行月份的資料。</li>
+<li>選用項目：從長條圖中選取您選擇的月份，以檢視特定月份的資料。預設會顯示現行月份的資料。</li>
 <li>選用項目：按一下<strong>匯出資料</strong>，然後選取 <strong>CSV</strong> 或 <strong>JSON</strong>，以將您的選取月份資料匯出為 <code>CSV</code> 或 <code>JSON</code> 檔案。</li>
 </ol>
 
@@ -435,39 +437,40 @@ lastupdated: "2017-05-02"
 ### 報告
 {: #oc_report}
 
-您可以檢視 {{site.data.keyword.Bluemix_notm}} 實例的安全報告及日誌（例如 DataPower&trade;、防火牆及登入審核）。若要檢視報告及日誌，請按一下**管理 &gt; 報告及日誌**。
+您可以檢視 {{site.data.keyword.Bluemix_notm}} 實例的安全報告及日誌（例如 DataPower&trade;、防火牆及登入審核報告）。若要檢視報告及日誌，請按一下**管理 &gt; 報告及日誌**。
 
-從下列選項中選取：
+您可以從「報告及日誌」磚來執行下列作業：
 
-- 您可以從欄位中選取開始及結束日期，以過濾顯示的報告及日誌。
-- 您可以從導覽窗格中展開及檢視各種報告。
-- 您可以在報告及日誌的集合中進行搜尋。搜尋適用於報告名稱，也適用於報告及日誌內包含的文字內容。您也可以選擇依**管理事件**、**DataPower 報告**、**防火牆**及**登入審核**來過濾您的搜尋。
-- 顯示報告或日誌時，可以按一下 ![下載](images/icon_download.png) 圖示來下載報告。
+- 從欄位中選取開始及結束日期，以過濾顯示的報告及日誌。
+- 檢視所要求報告及目前可用報告的清單。
+- 在報告及日誌的集合中進行搜尋。搜尋適用於報告名稱，也適用於報告及日誌內包含的文字內容。您也可以選擇依種類來過濾您的搜尋。
+- 下載報告，方法是按一下 ![下載](images/icon_download.png) 圖示來下載報告。
+- 如果您有報告許可權的寫入權，請要求產生報告。您可以從下列六個種類進行選擇以依需求產生報告：「管理主控台使用者管理」、「{{site.data.keyword.Bluemix_notm}} 平台管理」、「防火牆拒絕」、「防火牆登入」、「登入伺服器登入」及「作業系統登入」。您可以要求最多 90 天舊資料的報告。
+
+**附註**：目前可能無法在所有環境中使用要求報告特性。
 
 下表顯示針對「{{site.data.keyword.Bluemix_notm}} 本端」及「{{site.data.keyword.Bluemix_notm}} 專用」所產生的安全報告清單。大部分的報告都是每日產生。不過，加密及金鑰管理事件報告是每月產生。所有報告都會在管理主控台中保留 90 天，供您進行擷取。在這 90 天之後，{{site.data.keyword.Bluemix_notm}} 的每個要求都可以離線使用報告 9 個月。總共可擷取報告長達 1 年。
 
 
 {: #ld_table9}
 
-| **種類** | **報告** | **說明** |      
-|-----------------|-------------------|---------------------|
-| 防火牆 | 防火牆登入 | 與 Vyatta 防火牆裝置的管理者登入有關的事件。 |
-| 防火牆 | 防火牆拒絕 | 根據現有的防火牆規則拒絕存取要求時，Vyatta 防火牆裝置所產生的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理者登入事件 | {{site.data.keyword.Bluemix_notm}} 管理者登入 | 管理者在每個 {{site.data.keyword.Bluemix_notm}} 系統上啟動 SSH 階段作業時，作業系統所產生的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 應用程式開發人員登入事件 | {{site.data.keyword.Bluemix_notm}} 應用程式開發人員登入 | {{site.data.keyword.Bluemix_notm}} 平台使用者使用指令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 使用者介面來啟動階段作業時，{{site.data.keyword.Bluemix_notm}} 平台登入元件所產生的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理者管理事件 | {{site.data.keyword.Bluemix_notm}} 管理者作業系統管理事件 | 管理者在現行工作階段作業內執行動作時，作業系統所產生的事件。 |
-| {{site.data.keyword.Bluemix_notm}} 應用程式開發人員管理事件 | {{site.data.keyword.Bluemix_notm}} (Cloud Foundry) 管理事件 | {{site.data.keyword.Bluemix_notm}} 平台使用者使用指令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 使用者介面所執行之作業的相關事件。 |
-| {{site.data.keyword.Bluemix_notm}} 管理者資料庫管理事件 | 資料庫管理事件 | 資料庫管理者對 {{site.data.keyword.Bluemix_notm}} 內部資料庫執行之作業的相關事件。 |
-| 管理事件 | 使用者管理事件 | 在「管理」頁面上執行之使用者管理動作的相關事件。 |
-| 管理事件 | 型錄 | 服務型錄變更的相關事件 |
-| 管理事件 | 安全報告管理事件 | 在「管理」頁面上執行之安全報告管理動作的相關事件。 |
-| 存取檢閱 | 存取檢閱報告 | 特許存取權的檢閱。 |
-| 變更管理 | 軟體變更管理 | 變更管理活動。 |
-| 金鑰管理 | 自訂 SSL 憑證管理 | 已上傳及儲存的自訂 SSL 憑證。 |
-| 加密 | data-in-transit 加密 | 已配置的 data-in-transit 加密。 |
-| 防毒 | 防毒掃描報告 | 現有的防毒軟體。 |
-| 軟體修正程式管理 | 修補程式應用程式報告 | 已套用的軟體修正程式。 |
-| 資安突發事件管理 | 資安突發事件補救報告 | 進行資安突發事件管理的資安突發事件證明。 |
+| **報告** | **說明** |      
+|-------------------|---------------------|
+| [防火牆登入](/docs/hybrid/reports.html#firewalllogins) | 與 Vyatta 防火牆裝置的管理者登入有關的事件。 |
+| [防火牆拒絕](/docs/hybrid/reports.html#firewalldenies) | 根據現有的防火牆規則拒絕存取要求時，Vyatta 防火牆裝置所產生的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [管理者登入](/docs/hybrid/reports.html#oslogin) | 管理者在每個 {{site.data.keyword.Bluemix_notm}} 系統上啟動 SSH 階段作業時，作業系統所產生的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [應用程式開發人員登入](/docs/hybrid/reports.html#loginserverlogins) | {{site.data.keyword.Bluemix_notm}} 平台使用者使用指令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 使用者介面來啟動階段作業時，{{site.data.keyword.Bluemix_notm}} 平台登入元件所產生的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [作業系統管理](/docs/hybrid/reports.html#osadmin)  | 管理者在現行工作階段作業內執行動作時，作業系統所產生的事件。 |
+| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) 平台管理](/docs/hybrid/reports.html#platformadmin) | {{site.data.keyword.Bluemix_notm}} 平台使用者使用指令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 使用者介面所執行之作業的相關事件。 |
+| [內部資料庫管理](/docs/hybrid/reports.html#dbadmin) | 資料庫管理者對 {{site.data.keyword.Bluemix_notm}} 內部資料庫執行之作業的相關事件。 |
+| [使用者管理](/docs/hybrid/reports.html#acusermgmt) | 在「管理」頁面上執行之使用者管理動作的相關事件。 |
+| [型錄管理](/docs/hybrid/reports.html#catalogmgmt) | 服務型錄變更的相關事件 |
+| [安全報告管理](/docs/hybrid/reports.html#securityreportsmgmt) | 在「管理」頁面上執行之安全報告管理動作的相關事件。 |
+| [存取檢閱](/docs/hybrid/reports.html#securityreportsmgmt) | 特許存取權的檢閱。 |
+| 軟體變更管理 | 變更管理活動。 |
+| [金鑰憑證管理](/docs/hybrid/reports.html#keymgmt) | 金鑰憑證管理作業。 |
+| [系統通知](/docs/hybrid/reports.html#systemnotifications) | 配置軟體更新部署時間範圍或通知訂閱的相關事件。 |
+
 {: caption="表 9. 安全報告清單" caption-side="top"}
 
 ## 檢視狀態
@@ -738,7 +741,7 @@ lastupdated: "2017-05-02"
 <p><strong>附註</strong>：如果您需要變更服務的型錄資訊，請更新服務分配管理系統，然後填寫表單來重新啟動登錄程序。</p>
 </li>
 <li>按一下<strong>登錄</strong>。</li>
-<li>選擇啟用服務的所有方案或僅特定方案。依預設，會停用所有方案。</li>
+<li>選擇啟用服務的所有方案或僅特定方案。預設會停用所有方案。</li>
 <li>啟用所有組織或特定組織的服務實例。</li>
 </ol>
 
@@ -818,7 +821,7 @@ lastupdated: "2017-05-02"
 <ol>
 <li>按一下圖表中您要在「組織記憶體用量」區段中編輯之組織的長條，或從「組織清單」區段中選取組織的名稱。從「組織資訊」頁面中，您可以重新命名組織，以及新增或移除管理員。
 <p><strong>附註</strong>：如果您選取的配額方案不足以提供組織的現行用量，則會收到一則訊息。</p></li>
-<li>按一下 <strong>Cloud Foundry</strong> 或<strong>容器</strong>。依預設，會開啟 Cloud Foundry 配額頁面。
+<li>按一下 <strong>Cloud Foundry</strong> 或<strong>容器</strong>。預設會開啟 Cloud Foundry 配額頁面。
 <ul>
 <li>從 Cloud Foundry 頁面中，您可以選取方案，以及檢視下列資源的配額詳細資料：
 <ul>
@@ -842,7 +845,7 @@ lastupdated: "2017-05-02"
 <dd>您可配置至組織之所有空間的公用 IP 位址數目上限。</dd>
 </dl>
 <strong>附註</strong>：如果環境中還沒有容器，或環境中尚未設定容器，則會收到一則錯誤訊息。
-<p>如需容器的相關資訊，請參閱[關於 IBM Containers](/docs/containers/container_ov.html)。如需容器配額的相關資訊，請參閱[配額及 Bluemix 帳戶](/docs/containers/container_planning.html#container_planning_quota)。</p>
+<p>如需容器的相關資訊，請參閱[關於 IBM Containers](/docs/containers/container_ov.html)。如需容器配額的相關資訊，請參閱[配額及 Bluemix 帳戶](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
 <strong>附註：</strong>{{site.data.keyword.Bluemix_notm}} 雪梨地區尚無法使用容器。</li>
 </ul>
 <li>若要儲存您在「管理組織」頁面上所做的任何變更，請按一下<strong>儲存</strong>。</li>
@@ -864,7 +867,7 @@ lastupdated: "2017-05-02"
   - 計量應用程式用量圖，顯示每個已部署應用程式的已用 GB-小時的三個月報告。您可以選取**清單視圖**，以查看所有應用程式的資料（包括，每個應用程式的記憶體配置，以及過去三個月的計量 GB-小時用量）。
 
 - 若要編輯組織名稱，以及新增或移除管理員，請按一下清單中的組織名稱，並遵循畫面上的提示。
-- 若要檢視所檢視組織之特定使用者的相關資訊，請按一下使用者名稱來顯示「使用者資訊」。您接著可以按一下組織名稱，以返回檢視「組織資訊」。 
+- 若要檢視所檢視組織之特定使用者的相關資訊，請按一下使用者名稱來顯示「使用者資訊」。您接著可以按一下組織名稱，以返回檢視「組織資訊」。
 
 ## 管理使用者及許可權
 {: #oc_useradmin}
@@ -940,8 +943,8 @@ lastupdated: "2017-05-02"
 
     1. 若要將使用者新增至組織，請從表格中選取使用者名稱，以存取**編輯使用者**頁面。然後，使用搜尋欄位來找出組織，並從清單中選取組織，然後按一下**儲存**。
     2. 若要從組織移除使用者，請從表格中選取使用者名稱，以存取**編輯使用者**頁面。然後，針對您要移除使用者的組織，按一下 ![移除](images/icon_remove.svg)，然後按一下**儲存**。
-    
-* 若要檢視獲指派使用者之組織的相關資訊，請按一下組織名稱來顯示「組織資訊」。您接著可以按一下使用者名稱，以返回檢視「使用者資訊」。 
+
+* 若要檢視獲指派使用者之組織的相關資訊，請按一下組織名稱來顯示「組織資訊」。您接著可以按一下使用者名稱，以返回檢視「使用者資訊」。
 
 ### 許可權
 {: #permissions}
@@ -960,12 +963,12 @@ lastupdated: "2017-05-02"
 | 使用者 | 具有**使用者**許可權的使用者，可獲指派**讀取**（檢視）使用者清單或是**寫入**（新增或移除）使用者的存取權。此許可權不容許您設定其他使用者的許可權。寫入存取權可讓使用者新增使用者至環境中、從環境刪除使用者，以及將現有的使用者新增至環境中已存在的組織。此外，**寫入**存取權還可讓使用者新增組織、刪除組織，以及編輯組織中的使用者。 |
 {: caption="表 14. 許可權" caption-side="top"}
 
-## 使用 REST API 
+## 使用 REST API
 {: #auth_adminapi}
 
 若要使用 REST API 指令，您需要先進行鑑別。若要產生及支援階段作業，您可以使用 cURL 指令來達成下列作業：
 
-* [登入管理主控台](#auth_loginapi) 
+* [登入管理主控台](#auth_loginapi)
 * [儲存使用者 ID 及密碼](#auth_setuidpw)
 * [儲存 Cookie](#auth_apistorecook)
 * [重複使用 Cookie](#auth_apireusecook)
@@ -973,7 +976,7 @@ lastupdated: "2017-05-02"
 ### 登入管理主控台
 {: #auth_loginapi}
 
-您必須登入「管理主控台」，才能執行任何 `Admin` API 要求。 
+您必須登入「管理主控台」，才能執行任何 `Admin` API 要求。
 
 若要登入「管理主控台」，您可以在 `https://console.<region>.bluemix.net/login` 端點上使用基本存取鑑別。伺服器會使用您的階段作業傳回 Cookie。您可以使用該 Cookie 來執行「管理主控台」的所有作業。
 
@@ -1018,8 +1021,8 @@ lastupdated: "2017-05-02"
 若要在個別檔案中設定登入資訊，然後呼叫檔案，而不需要針對每一個鑑別要求重新予以輸入，則請使用 cURL 指令所提供的 `--netrc` 選項。
 
 若要搭配使用 `--netrc` 選項與 cURL，請先使用下列其中一種方式在使用者的起始目錄中建立檔案：
-* 在 Unix 系統上，建立一個名為 .netrc 的檔案 
-* 在 Windows 系統上，建立一個名為 _netrc 的檔案。 
+* 在 Unix 系統上，建立一個名為 .netrc 的檔案
+* 在 Windows 系統上，建立一個名為 _netrc 的檔案。
 
 在檔案中，輸入下列資訊：
 
@@ -1305,12 +1308,12 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
  ```
 {: screen}
 
-## 度量值的 API（實驗性）
+## 度量值的 API
 {: #envappmetricsapi}
 
 您可以使用三個實驗性 API，收集環境或應用程式的相關度量值。這些 API 會對您在指定的時間所要求的度量值傳回一連串資料點。
 
-您可以從地區特定端點存取下列各節所說明的「度量值 API」，例如： 
+您可以從地區特定端點存取下列各節所說明的「度量值 API」，例如：
 
 `https://console.<region>.bluemix.net/admin/metrics`
 {: codeblock}
@@ -1320,13 +1323,14 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 1. 一個使用者可在一小時內最多提出 200 個 API 要求來取得度量值。
 2. 每一個 API 要求可傳回每個要求最多 200 個資料點。如果有其他資料可用，則會在回應中提供一個 URL，用於載入下一組資料。
 3. 每一個 API 要求都需要使用者至少具有「管理主控台」的「基本存取」。可能還需要其他許可權，如下面所指定。
+4. 可以取得從提出 API 要求開始算起的最多 6 個月資料。
 
-## 收集環境的相關度量值 
+## 收集環境的相關度量值
 
 您可以使用實驗性環境 API，在您指定的時段收集高階環境資訊。系統會傳回在您指定的時間內可用的資料點。大約每一小時記錄一次資料。比方說，如果您已對環境要求六小時的 CPU 資料，則回應將包括所要求的六個小時的每一小時的 CPU 資料。
 
 
-### 環境端點 
+### 環境端點
 
 您可以使用下列端點來呼叫此 API 指令：`/api/v1/env`
 
@@ -1360,7 +1364,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 下列各節提供資料格式。
 
  * 若要收集有關記憶體用量的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1445,7 +1449,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 若要收集有關磁碟用量的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1530,7 +1534,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 若要收集有關 CPU 用量的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1584,7 +1588,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
  * 若要收集有關網路的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1636,7 +1640,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
 * 若要收集有關配額用量的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1656,7 +1660,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 {: screen}
 
 * 若要收集有關應用程式的資料記錄，請使用下列資料格式：
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1687,7 +1691,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 
 若要減少在所要求的時段對每一個資料範例傳回的資訊數量，您可以指定計數選項。使用前一個範例並新增計數選項 5，即會對每一個資料範例傳回 30 筆記錄，代表前 5 個依記憶體排列的組織。
 
-### 組織端點 
+### 組織端點
 
 您可以使用下列端點來呼叫此 API 指令：
 * `/api/v1/org/memory/physical`
@@ -1698,7 +1702,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 **附註**：需要有下列其中一個許可權，才能存取這些端點：**使用者讀取**、**使用者寫入**或**超級使用者**
 
 ### 組織查詢參數
- 
+
 請使用下列查詢參數來收集組織的度量值：
 
 <dl class="parml">
@@ -1739,10 +1743,10 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 
 若要減少在所要求的時段對每一個資料範例傳回的資訊數量，您可以指定計數選項。使用前一個範例並新增計數選項 5，即會對每一個資料範例傳回 30 筆記錄，代表前 5 個依 CPU 排列的應用程式。
 
-### 應用程式端點 
+### 應用程式端點
 
 您可以使用下列端點來呼叫此 API 指令：
-* `/api/v1/app/cpu/physical` 
+* `/api/v1/app/cpu/physical`
 * `/api/v1/app/memory/physical`
 * `/api/v1/app/memory/reserved`
 * `/api/v1/app/disk/physical`
@@ -1751,7 +1755,7 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 **附註**：需要有下列其中一個許可權，才能存取這些端點：**使用者讀取**、**使用者寫入**或**超級使用者**
 
 ### 應用程式查詢參數
- 
+
 請使用下列查詢參數來收集應用程式的度量值：
 
 <dl class="parml">

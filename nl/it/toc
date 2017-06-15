@@ -2,18 +2,18 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="bluemix-account" audience="platform" href="/docs/admin/adminpublic.html"}
-Managing del tuo account
+Gestione del tuo account
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Account configurazione
+    Configurazione account
         adminpublic.md
         profile.md
     
     softlayerlink.md
 
     {: .topicgroup}
-    Orgs
+    Organizzazioni
         orgs_spaces.md
         manageorg.md
         
@@ -22,7 +22,7 @@ Managing del tuo account
 
     {: .navgroup id="learn"}
     {: .topicgroup}  
-    Best procedure
+    Procedure consigliate
         patterns.md
         
     {: .navgroup-end}

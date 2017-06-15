@@ -20,15 +20,15 @@ lastupdated: "2017-03-29"
 Cuando inicie por primera vez {{site.data.keyword.Bluemix}}, le interesará configurar el perfil de su cuenta. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil de usuario** para configurar o actualizar su configuración de perfil.
 {:shortdesc}
 
-Configure o actualice la siguiente información: 
+Configure o actualice la siguiente información:
 
  * Una foto de perfil que sea visible para otros usuarios de {{site.data.keyword.Bluemix_notm}}
  * Información de ID de IBM que incluye el nombre, el correo electrónico, el número de teléfono, la contraseña, la empresa y el rol.
  * Valor de seguimiento de herramientas de análisis
 
-También es posible que desee registrarse para recibir notificaciones, comprobar las opciones de soporte para saber dónde ir y qué hacer si se le presentan problemas o si desea enviar comentarios a IBM. 
+También es posible que desee registrarse para recibir notificaciones, comprobar las opciones de soporte para saber dónde ir y qué hacer si se le presentan problemas o si desea enviar comentarios a IBM.
 
-Si es un administrador de {{site.data.keyword.Bluemix_notm}} local o {{site.data.keyword.Bluemix_notm}} dedicado, consulte [Gestión de {{site.data.keyword.Bluemix_notm}} local o {{site.data.keyword.Bluemix_notm}} dedicado](/docs/admin/index.html#mng) para obtener detalles sobre cómo gestionar la cuenta utilizando la página Administración. 
+Si es un administrador de {{site.data.keyword.Bluemix_notm}} local o {{site.data.keyword.Bluemix_notm}} dedicado, consulte [Gestión de {{site.data.keyword.Bluemix_notm}} local o {{site.data.keyword.Bluemix_notm}} dedicado](/docs/admin/index.html#mng) para obtener detalles sobre cómo gestionar la cuenta utilizando la página Administración.
 
 ## Cambio de la foto de perfil
 {: #photo notoc}
@@ -37,14 +37,14 @@ Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar
 
   * Pulse **CARGAR UNA FOTO** para cargar una foto.
   * Para sustituir la foto actual con una nueva, pulse **CAMBIAR FOTO**.
-  * Para eliminar su foto, pulse **Eliminar foto**. 
+  * Para eliminar su foto, pulse **Eliminar foto**.
 
 ## Editar información de ID de IBM
 {: #ibmid}
 
 Un ID de IBM es un ID único que utiliza para iniciar sesión en la cuenta de {{site.data.keyword.Bluemix_notm}} para las características de infraestructura, servicios y aplicaciones. Su ID de IBM es el mismo ID que puede utilizar para acceder a otras aplicaciones de IBM.
 
-No es posible cambiar su IBMid, sin embargo, puede editar la información de perfil asociada al mismo como, por ejemplo, su nombre, correo electrónico, número de teléfono, contraseña o nombre de la empresa. 
+No es posible cambiar su IBMid, sin embargo, puede editar la información de perfil asociada al mismo como, por ejemplo, su nombre, correo electrónico, número de teléfono, contraseña o nombre de la empresa.
 
 1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil de usuario**.
 2. Pulse **Editar el ID de IBM**.

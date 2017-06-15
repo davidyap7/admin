@@ -1,17 +1,19 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bluemix-account" audience="platform" href="/docs/admin/adminpublic.html"} ¹ÜÀíÕÊ»§
+{: .toc subcollection="bluemix-account" audience="platform" href="/docs/admin/adminpublic.html"}
+ç®¡ç†å¸æˆ·
 
     {: .navgroup id="howto"}
-    {: .topicgroup}     ÕÊ»§ÉèÖÃ
+    {: .topicgroup}
+    å¸æˆ·è®¾ç½®
         adminpublic.md
         profile.md
     
     softlayerlink.md
 
     {: .topicgroup}
-    Orgs
+    ç»„ç»‡
         orgs_spaces.md
         manageorg.md
         
@@ -19,7 +21,8 @@
     {: .navgroup-end}
 
     {: .navgroup id="learn"}
-    {: .topicgroup}      ×î¼ÑÊµ¼ù
+    {: .topicgroup}  
+    æœ€ä½³åšæ³•
         patterns.md
         
     {: .navgroup-end}

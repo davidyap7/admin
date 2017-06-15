@@ -12,13 +12,13 @@ lastupdated: "2017-04-11"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Gestión de organizaciones 
+# Gestión de organizaciones
 Como propietario de una cuenta o como un gestor de una organización, puede realizar tareas de gestión de la organización como, por ejemplo, cambiar el nombre de la misma, suprimir la organización, suprimir un espacio, actualizar la organización, actualizar roles de espacio y gestionar dominios o cuotas.
 {:shortdesc}
 
-Desde la barra de menús, pulse **Gestionar > Cuenta > Organizaciones** para gestionar sus organizaciones.  
+Desde la barra de menús, pulse **Gestionar > Cuenta > Organizaciones** para gestionar sus organizaciones. 
 
-**Nota:** Solo puede ver los recursos de una organización a la vez. Si es miembro de varias organizaciones, puede conmutar entre organizaciones desde el enlace de preferencias de cuenta de usuario en la barra de menús de la consola. 
+**Nota:** Solo puede ver los recursos de una organización a la vez. Si es miembro de varias organizaciones, puede conmutar entre organizaciones desde el enlace de preferencias de cuenta de usuario en la barra de menús de la consola.
 
 ## Cambiar el nombre de las organizaciones
 {: #orgrename}
@@ -27,7 +27,7 @@ Siga los pasos siguientes para cambiar el nombre de la organización:
 1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
 2. Identifique la organización que desea renombrar y pulse **Ver detalles**.
 3. Pulse **Editar organización**.
-4. Pulse **Editar** junto al nombre de la organización. 
+4. Pulse **Editar** junto al nombre de la organización.
 5. Escriba el nuevo nombre de la organización, y pulse **Guardar**.
 
 ## Supresión de organizaciones y espacios
@@ -35,9 +35,9 @@ Siga los pasos siguientes para cambiar el nombre de la organización:
 
 Como propietario de la cuenta, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para suprimir una organización.
 
-**Nota**: La supresión de operaciones no se puede revertir. Perderá todas las apps y los servicios asociados a la organización. 
+**Nota**: La supresión de operaciones no se puede revertir. Perderá todas las apps y los servicios asociados a la organización.
 
-Siga estos pasos para suprimir una organización o un espacio: 
+Siga estos pasos para suprimir una organización o un espacio:
 1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
 2. Identifique la organización que desea editar y pulse **Ver detalles**.
 3. Identifique el espacio que desea suprimir y pulse **Editar espacio**.
@@ -46,13 +46,13 @@ Siga estos pasos para suprimir una organización o un espacio:
 ## Edición de roles de usuario
 {: #listmembers}
 
-Siga los siguientes pasos para editar los roles de usuario de una organización específica: 
+Siga los siguientes pasos para editar los roles de usuario de una organización específica:
 1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
 2. Identifique la organización para la que desea ver los miembros y pulse **Ver detalles**.
 3. Pulse **Editar organización**.
 4. Puede ver los miembros de su organización y sus roles en el separador **USUARIOS**.
 
-Siga los siguientes pasos para editar los roles de usuario de un espacio específico: 
+Siga los siguientes pasos para editar los roles de usuario de un espacio específico:
 1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
 2. Identifique la organización para la que desea ver los miembros y pulse **Ver detalles**.
 3. Identifique el espacio para el que desea ver los miembros y pulse **Editar espacio**.

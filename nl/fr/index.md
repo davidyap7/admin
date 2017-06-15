@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-02"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -15,7 +16,6 @@ lastupdated: "2017-05-02"
 
 # Gestion de l'environnement {{site.data.keyword.Bluemix_notm}} local et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié
 {: #mng}
-
 
 Si vous disposez d'un accès administrateur pour l'environnement {{site.data.keyword.Bluemix}} local ou {{site.data.keyword.Bluemix_notm}} dédié, accédez à la page **Administration** pour gérer les ressources, surveiller l'utilisation des quotas, administrer des droits d'utilisateur, planifier des notifications de mise à niveau, afficher des rapports de sécurité et des journaux, etc. Vous pouvez gérer votre organisation en créant des espaces et en configurant des [rôles utilisateur et autorisations](/docs/admin/index.html#oc_useradmin). Voir [Gestion de vos organisations](/docs/admin/orgs_spaces.html).
 {:shortdesc}
@@ -32,7 +32,7 @@ Si vous disposez d'un accès administrateur pour l'environnement {{site.data.key
 |Consulter les rapports et les journaux | Cliquez sur **ADMINISTRATION &gt; RAPPORTS ET JOURNAUX** afin d'afficher des rapports de sécurité et des journaux d'audit pour votre instance. Voir [Affichage des rapports](/docs/admin/index.html#oc_report). |
 |Afficher les informations système | Cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME** afin d'afficher des informations système, telles que les mises à jour de maintenance en attente, le nom et la version de votre instance, la région, l'adresse URL de l'API, l'adresse URL de l'interface de ligne de commande, les détails de la configuration LDAP, les mappages des groupes et des utilisateurs, des statistiques et les domaines partagés. Voir [Affichage des informations système](/docs/admin/index.html#oc_system). |
 |Etendre des notifications et configurer des abonnements à des notifications | Cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* mises à jour en attente**. Vous pouvez utiliser des webhooks pour l'intégration à un service Web de votre choix afin de configurer un abonnement aux notifications d'événement pour une mise à jour ou un incident. Voir [Notifications et abonnements à des notifications](/docs/admin/index.html#oc_eventsubscription). |
-{: caption="Tableau 1. Tâches d'administration pour la gestion de votre instance Bluemix locale ou dédiée" caption-side="top"}
+{: caption="Tableau 1. Tâches d'administration pour la gestion de votre instance {{site.data.keyword.Bluemix_notm}} locale ou dédiée " caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -119,7 +119,7 @@ Pour créer un abonnement par courrier électronique ou webhook depuis la page *
 | A | Entrez l'adresse ou les adresses électroniques des destinataires de la notification par courrier électronique dans une liste séparée par des virgules. Développez les options "cc" ou "bcc" pour ajouter d'autres destinataires au courrier électronique. Cette zone est obligatoire. |
 {: caption="Tableau 4. Zones pour les abonnements à des notifications par courrier électronique sur les mises à jour de maintenance ou les incidents" caption-side="top"}
 
-Les données de seuil sont collectées toutes les six heures. Une notification n'est envoyée qu'une fois lorsque la valeur dépasse ou passe sous la valeur que vous avez définie. Si vous avez choisi la propriété Croissant, aucune nouvelle notification n'est envoyée sauf si la valeur passe sous le seuil, puis dépasse à nouveau le seuil. De même, si vous avez choisi la propriété Décroissant, vous ne recevez une notification que si la valeur dépasse le seuil que vous avez défini, puis passe à nouveau sous le seuil. 
+Les données de seuil sont collectées toutes les six heures. Une notification n'est envoyée qu'une fois lorsque la valeur dépasse ou passe sous la valeur que vous avez définie. Si vous avez choisi la propriété Croissant, aucune nouvelle notification n'est envoyée sauf si la valeur passe sous le seuil, puis dépasse à nouveau le seuil. De même, si vous avez choisi la propriété Décroissant, vous ne recevez une notification que si la valeur dépasse le seuil que vous avez défini, puis passe à nouveau sous le seuil.
 
 Si vous ne voulez pas attendre six heures avant l'envoi de la notification lorsque le seuil est atteint, après avoir rempli les zones du formulaire, vous pouvez cliquer sur **Sauvegarder et tester** pour recevoir une notification de test avec des exemples de données.  
 
@@ -169,7 +169,7 @@ Une notification de seuil de quota inclut uniquement les organisations qui ont d
 | URL | Entrez l'URL pour connexion à votre service Web. |
 {: caption="Tableau 6. Zones de formulaire pour un abonnement aux notifications par webhook sur les seuils" caption-side="top"}
 
-Les données de seuil sont collectées toutes les six heures. Une notification n'est envoyée qu'une fois lorsque la valeur dépasse ou passe sous la valeur que vous avez définie. Aucune nouvelle notification n'est envoyée sauf si la valeur passe sous le seuil, si vous avez choisi la propriété Croissant, puis dépasse à nouveau le seuil. De même, si vous avez choisi la propriété Décroissant, vous ne recevez de nouvelle notification que si la valeur dépasse le seuil que vous avez défini, puis passe à nouveau sous le seuil. 
+Les données de seuil sont collectées toutes les six heures. Une notification n'est envoyée qu'une fois lorsque la valeur dépasse ou passe sous la valeur que vous avez définie. Aucune nouvelle notification n'est envoyée sauf si la valeur passe sous le seuil, si vous avez choisi la propriété Croissant, puis dépasse à nouveau le seuil. De même, si vous avez choisi la propriété Décroissant, vous ne recevez de nouvelle notification que si la valeur dépasse le seuil que vous avez défini, puis passe à nouveau sous le seuil.
 
 Si vous ne voulez pas attendre six heures avant l'envoi de la notification lorsque le seuil est atteint, après avoir rempli les zones du formulaire, vous pouvez cliquer sur **Sauvegarder et tester** pour sauvegarder et tester la notification avec des exemples de données.
 
@@ -190,6 +190,7 @@ Une notification de seuil de quota inclut uniquement les organisations qui ont d
 | {{region}} | Région affectée | Mise à jour de maintenance et incident |
 | {{status}} | Statut de la mise à jour | Mise à jour de maintenance |
 | {{type}} | Mise à jour ou incident | Mise à jour de maintenance et incident |
+| {{workitem}} | Numéro de l'élément de travail | Mise à jour de maintenance et incident |
 {: caption="Tableau 7. Valeurs de la section de contenu de maintenance et d'incident" caption-side="top"}
 
 
@@ -241,7 +242,7 @@ Vous devez définir au minimum 12 heures disponibles réparties sur au moins deu
 
 1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente &gt; Gérer la disponibilité**.
 2. Développez la section **Gérer les fenêtres de disponibilité pour les mises à jour**.
-3. Cliquez sur **Ajouter** ![Ajouter](images/add-new.png).
+3. Cliquez sur **Ajouter**.
 4. Définissez votre première fenêtre de disponibilité en sélectionnant la fréquence, la durée et l'heure de début de la fenêtre.
 5. Facultatif : sélectionnez **Marquer comme préféré** si vous souhaitez définir votre fenêtre de disponibilité récurrente comme période de planification préférée pour vos déploiements. Les fenêtres préférées sont prioritaires, chaque fois que cela est possible.
 6. Cliquez sur **Soumettre**.
@@ -256,7 +257,7 @@ Vous devez définir au minimum 12 heures disponibles réparties sur au moins deu
 
 1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente &gt; Gérer la disponibilité**.
 2. Développez la section **Gérer les fenêtres d'indisponibilité pour les mises à jour**.
-3. Cliquez sur **Ajouter** ![Ajouter](images/add-new.png).
+3. Cliquez sur **Ajouter**.
 4. Définissez votre fenêtre d'indisponibilité en sélectionnant la fréquence, la durée et l'heure de début de la fenêtre.
 5. Cliquez sur **Soumettre**.
 
@@ -372,12 +373,13 @@ Pour des informations plus détaillées sur votre utilisation de la mémoire ré
 	<dd>La zone Physique affiche la quantité de mémoire ou d'espace disque utilisée.</dd>
 	</dl>
 
-#### Détails sur l'utilisation du service 
+#### Détails sur l'utilisation du service
 {: #servicesresourceusage}
 
-L'onglet **Service** affiche l'utilisation totale du service par rapport à la capacité maximale dont vous disposez pour un service dédié. Par exemple, si vous disposez d'un service Cloudant dédié et que vous utilisez 500 Go sur une capacité de 1000 Go, un graphique indique que vous avez utilisé 50 % de votre capacité totale. La couleur du graphique change selon que vous êtes proche ou non de la limite de capacité. Le jaune indique que vous avez utilisé entre 70 % et 84 % de votre capacité et le rouge est utilisé lorsque vous avez atteint 85 % ou plus de la capacité disponible. 
+L'onglet **Service** affiche l'utilisation totale du service par rapport à la capacité maximale dont vous disposez pour un service dédié. Par exemple, si vous disposez d'un service Cloudant dédié et que vous utilisez 500 Go sur une capacité de 1000 Go, un graphique indique que vous avez utilisé 50 % de votre capacité totale. La couleur du graphique change selon que vous êtes proche ou non de la limite de capacité. Le jaune indique que vous avez utilisé entre 70 % et 84 % de votre capacité et le rouge est utilisé lorsque vous avez atteint 85 % ou plus de la capacité disponible.
 
 **Remarque** : à l'heure actuelle, il se peut que les informations sur la consommation du service ne soient pas disponibles dans tous les environnements. Cette fonction est disponible pour Cloudant, MessageHub, API Connect et Session Cache.
+
 
 
 ### Utilisation du compte
@@ -436,39 +438,40 @@ Pour plus d'informations sur l'affichage de l'utilisation par organisation, l'aj
 ### Rapports
 {: #oc_report}
 
-Vous pouvez afficher des journaux et des rapports de sécurité, tels que des rapports DataPower&trade;, de pare-feux et d'audit de connexion, pour votre instance {{site.data.keyword.Bluemix_notm}}. Pour afficher les rapports et les journaux, cliquez sur **ADMINISTRATION &gt; RAPPORTS ET JOURNAUX**.
+Vous pouvez afficher des rapports et des journaux de sécurité, comme des rapports DataPower&trade;, de pare-feu et d'audit de connexion, sur votre instance {{site.data.keyword.Bluemix_notm}}. Pour afficher les rapports et les journaux, cliquez sur **ADMINISTRATION &gt; RAPPORTS ET JOURNAUX**.
 
-Effectuez l'une des opérations suivantes :
+Vous pouvez effectuer les tâches suivantes depuis la vignette Rapports et journaux :
 
-- Vous pouvez sélectionner des dates de début et de fin dans les zones afin de filtrer les rapports et les journaux à afficher.
-- Vous pouvez développer et afficher divers rapports depuis le panneau de navigation.
-- Vous pouvez effectuer une recherche dans votre collection de rapports et de journaux. La recherche s'applique aux noms de rapport ainsi qu'au contenu textuel des rapports et des journaux. Vous pouvez aussi choisir de filtrer votre recherche par **événements d'administration**, **rapports DataPower**, **pare-feu** et **audit de connexion**.
-- Lors de l'affichage d'un rapport ou d'un journal, vous pouvez cliquer sur l'icône ![Télécharger](images/icon_download.png) pour télécharger le rapport.
+- Sélectionner des dates de début et de fin dans les zones afin de filtrer les rapports et les journaux à afficher.
+- Afficher la liste des rapports que vous avez demandés et des rapports actuellement disponibles .
+- Lancer des recherches dans votre collection de rapports et de journaux. La recherche s'applique aux noms de rapport ainsi qu'au contenu textuel des rapports et des journaux. Vous pouvez également choisir de filtrer votre recherche d'après la catégorie.
+- Télécharger un rapport en cliquant sur l'icône ![Télécharger](images/icon_download.png).
+- Demander la génération d'un rapport si vous disposez d'un accès en écriture sur la demande de rapports. Vous pouvez choisir l'une des six catégories suivantes pour générer un rapport à la demande : Gestion des utilisateurs de la console d'administration, Administration de la plateforme {{site.data.keyword.Bluemix_notm}}, Refus du pare-feu, Connexions au pare-feu, Connexion au serveur de connexion et Connexion au système d'exploitation. Vous pouvez demander des rapports portant sur des données remontant jusqu'à 90 jours.
+
+**Remarque **: Il se peut qu'une demande de fonction de rapport ne soit pas disponible dans tous les environnements à l'heure actuelle.
 
 Le tableau ci-dessous présente la liste des rapports de sécurité qui sont générés pour l'environnement {{site.data.keyword.Bluemix_notm}} local et l'environnement {{site.data.keyword.Bluemix_notm}} dédié. La plupart des rapports sont générés quotidiennement. Toutefois, les rapports sur les événements de gestion des clés et de chiffrement sont générés mensuellement. Tous les rapports sont conservés pendant 90 jours dans la console d'administration, à partir de laquelle vous pouvez y accéder. Au bout de ces 90 jours, {{site.data.keyword.Bluemix_notm}} les tient à disposition hors ligne sur demande pendant 9 mois. Au total, les rapports sont disponibles en vue de leur extraction pendant un an.
 
 
 {: #ld_table9}
 
-| **Catégorie** | **Rapport** | **Description** |      
-|-----------------|-------------------|---------------------|
-| Pare-feu | Connexions au pare-feu | Evénements liés à la connexion de l'administrateur aux unités de pare-feu Vyatta. |
-| Pare-feu | Refus du pare-feu | Evénements générés par les unités de pare-feu Vyatta lorsqu'une demande d'accès est refusée selon les règles de pare-feu appliquées. |
-| Evénements de connexion d'administrateur {{site.data.keyword.Bluemix_notm}} | Connexion des administrateurs {{site.data.keyword.Bluemix_notm}} | Evénements générés par le système d'exploitation lorsqu'un administrateur démarre une session SSH sur chaque système {{site.data.keyword.Bluemix_notm}}. |
-| Evénements de connexion de développeur d'applications {{site.data.keyword.Bluemix_notm}} | Connexion des développeurs d'applications {{site.data.keyword.Bluemix_notm}} | Evénements générés par le composant de connexion à la plateforme {{site.data.keyword.Bluemix_notm}} lorsqu'un utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} démarre une session via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
-| Evénements d'administration d'administrateur {{site.data.keyword.Bluemix_notm}} | Evénements d'administration du système d'exploitation des administrateurs {{site.data.keyword.Bluemix_notm}} | Evénements générés par le système d'exploitation lorsqu'un administrateur effectue une action dans une session de travail en cours. |
-| Evénements d'administration de développeur d'applications {{site.data.keyword.Bluemix_notm}} | Evénements d'administration (Cloud Foundry) {{site.data.keyword.Bluemix_notm}} | Evénements liés aux opérations effectuées par l'utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
-| Evénements d'administration de base de données d'administrateur {{site.data.keyword.Bluemix_notm}} | Evénements d'administration de base de données | Evénements liés aux opérations effectuées par un administrateur de base de données sur les bases de données internes {{site.data.keyword.Bluemix_notm}}. |
-| Evénements d'administration | Evénements de gestion des utilisateurs | Evénements liés aux actions de gestion des utilisateurs effectuées dans la page Administration. |
-| Evénements d'administration | Catalogue | Evénements liés aux modifications du catalogue des services. |
-| Evénements d'administration | Evénements de gestion des rapports de sécurité | Evénements liés aux actions de gestion des rapports de sécurité effectuées dans la page Administration. |
-| Révisions d'accès | Rapport sur les révisions d'accès | Révisions pour les accès privilégiés. |
-| Gestion des modifications | Gestion des modifications logicielles | Activité de gestion des modifications. |
-| Gestion des clés | Gestion des certificats SSL personnalisés | Certifications SSL personnalisées qui ont été téléchargées et stockées. |
-| Chiffrement | Chiffrement des données en transit | Chiffrement des données en transit configuré. |
-| Antivirus | Rapport d'analyse antivirus | Logiciel antivirus installé. |
-| Gestion des correctifs logiciels | Rapport d'application des correctifs | Correctifs logiciels appliqués. |
-| Gestion des incidents de sécurité | Rapport de résolution des incidents de sécurité | Preuve des incidents de sécurité pour la gestion des incidents de sécurité. |
+| **Rapport** | **Description** |      
+|-------------------|---------------------|
+| [Connexions au pare-feu](/docs/hybrid/reports.html#firewalllogins) | Evénements liés à la connexion de l'administrateur aux unités de pare-feu Vyatta. |
+| [Refus du pare-feu](/docs/hybrid/reports.html#firewalldenies) | Evénements générés par les unités de pare-feu Vyatta lorsqu'une demande d'accès est refusée selon les règles de pare-feu appliquées. |
+| Connexion d'administrateurs {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#oslogin) | Evénements générés par le système d'exploitation lorsqu'un administrateur démarre une session SSH sur chaque système {{site.data.keyword.Bluemix_notm}}. |
+| Connexion des développeurs d'applications {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#loginserverlogins) | Evénements générés par le composant de connexion à la plateforme {{site.data.keyword.Bluemix_notm}} lorsqu'un utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} démarre une session via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
+| Administration du système d'exploitation {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#osadmin)  | Evénements générés par le système d'exploitation lorsqu'un administrateur effectue une action dans une session de travail en cours. |
+| Administration de la plateforme {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) | Evénements liés aux opérations effectuées par l'utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
+| Administration de la base de données interne [](/docs/hybrid/reports.html#dbadmin) | Evénements liés aux opérations effectuées par un administrateur de base de données sur les bases de données internes {{site.data.keyword.Bluemix_notm}}. |
+| [Gestion des utilisateurs](/docs/hybrid/reports.html#acusermgmt) | Evénements liés aux actions de gestion des utilisateurs effectuées dans la page Administration. |
+| Gestion du catalogue [](/docs/hybrid/reports.html#catalogmgmt) | Evénements liés aux modifications du catalogue des services. |
+| Gestion des rapports de sécurité [](/docs/hybrid/reports.html#securityreportsmgmt) | Evénements liés aux actions de gestion des rapports de sécurité effectuées dans la page Administration. |
+| [Révisions d'accès](/docs/hybrid/reports.html#securityreportsmgmt) | Révisions pour les accès privilégiés. |
+| Gestion des modifications logicielles | Activité de gestion des modifications. |
+| Gestion du certificat de clé [](/docs/hybrid/reports.html#keymgmt) | Opérations de gestion de certificat de clé. |
+| Notifications système [](/docs/hybrid/reports.html#systemnotifications) | Evénements liés à la configuration des fenêtres de déploiement de mises à jour de logiciel ou d'abonnement aux notifications. |
+
 {: caption="Tableau 9. Liste des rapports de sécurité" caption-side="top"}
 
 ## Affichage du statut
@@ -817,7 +820,7 @@ Un quota représente les limites de ressources pour les organisations de votre e
 <ol>
 <li>Cliquez dans le graphique sur la barre correspondant à l'organisation que vous voulez éditer dans la section Utilisation de la mémoire de l'organisation ou sélectionnez le nom de l'organisation dans la section Liste des organisations. Dans la page Informations sur l'organisation, vous pouvez renommer l'organisation et ajouter ou supprimer des responsables.
 <p><strong>Remarque</strong> : vous recevez un message si vous sélectionnez un plan d'établissement des quotas qui n'est pas suffisant pour l'utilisation en cours pour l'organisation.</p></li>
-<li>Cliquez sur <strong>Cloud Foundry</strong> ou sur <strong>Conteneurs</strong>.  Par défaut, la page du quota Cloud Foundry s'ouvre. 
+<li>Cliquez sur <strong>Cloud Foundry</strong> ou sur <strong>Conteneurs</strong>.  Par défaut, la page du quota Cloud Foundry s'ouvre.
 <ul>
 <li>A partir de la page Cloud Foundry, vous pouvez sélectionner un plan et afficher les détails du quota des ressources suivantes :
 <ul>
@@ -841,7 +844,7 @@ Un quota représente les limites de ressources pour les organisations de votre e
 <dd>Nombre maximal d'adresses IP publiques pouvant être allouées entre tous les espaces d'une organisation.</dd>
 </dl>
 <strong>Remarque</strong> : si vous ne disposez pas encore de conteneurs dans votre environnement, ou si les conteneurs de votre environnement ne sont pas encore configurés, vous obtenez un message d'erreur.
-<p>Pour plus d'informations sur les conteneurs, voir [A propos d'IBM containers](/docs/containers/container_ov.html). Pour plus d'informations sur les quotas de conteneur, voir [Quota et comptes Bluemix](/docs/containers/container_planning.html#container_planning_quota).</p>
+<p>Pour plus d'informations sur les conteneurs, voir [A propos d'IBM containers](/docs/containers/container_ov.html). Pour plus d'informations sur les quotas de conteneur, voir [Quota et comptes Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Remarque :</strong> Les conteneurs ne sont pas disponibles dans la région {{site.data.keyword.Bluemix_notm}} Sydney.</li>
 </ul>
 <li>Pour sauvegarder les modifications que vous avez apportées dans la page Gérer l'organisation, cliquez sur <strong>SAUVEGARDER</strong>.</li>
@@ -863,7 +866,7 @@ Dans la section Liste des organisations, vous pouvez afficher toutes les organis
   - Un graphique de l'utilisation des applications mesurée qui représente un rapport sur trois mois du nombre de Go/heure consommé par application déployée. Vous pouvez sélectionner la **vue Liste** pour examiner les données de toutes les applications, notamment l'allocation mémoire par application et l'utilisation mesurée en Go par heure au cours des trois derniers mois.
 
 - Pour éditer le nom de l'organisation et ajouter ou retirer des responsables, cliquez sur le nom de l'organisation dans la liste et suivez les invites à l'écran.
-- Pour afficher des informations sur un utilisateur particulier de l'organisation que vous visualiser, cliquez sur le nom d'utilisateur pour voir les Informations utilisateur. Vous pouvez ensuite cliquer sur le nom de l'organisation pour revenir aux Informations sur l'organisation. 
+- Pour afficher des informations sur un utilisateur particulier de l'organisation que vous visualiser, cliquez sur le nom d'utilisateur pour voir les Informations utilisateur. Vous pouvez ensuite cliquer sur le nom de l'organisation pour revenir aux Informations sur l'organisation.
 
 ## Gestion des utilisateurs et des droits
 {: #oc_useradmin}
@@ -939,8 +942,8 @@ En fonction de l'accès **Lecture** ou **Ecriture** pour les droits des utilisat
 
     1. Pour ajouter un utilisateur à une organisation, sélectionnez le nom de celui-ci dans le tableau pour accéder à la page **Edition d'utilisateur**. Ensuite, utilisez la zone de recherche pour localiser une organisation, sélectionnez celle-ci dans la liste, puis cliquez sur **Sauvegarder**.
     2. Pour retirer un utilisateur d'une organisation, sélectionnez le nom de l'utilisateur concerné dans le tableau afin d'accéder à la page **Edition d'utilisateur**. Ensuite, cliquez sur ![Retirer](images/icon_remove.svg) pour l'organisation dont vous souhaitez retirer l'utilisateur, puis cliquez sur **Sauvegarder**.
-    
-* Pour afficher les informations sur l'organisation à laquelle l'utilisateur est affecté, cliquez sur le nom de l'organisation pour afficher les Informations sur l'organisation. Vous pouvez ensuite cliquer sur le nom d'utilisateur pour revenir aux Informations utilisateur. 
+
+* Pour afficher les informations sur l'organisation à laquelle l'utilisateur est affecté, cliquez sur le nom de l'organisation pour afficher les Informations sur l'organisation. Vous pouvez ensuite cliquer sur le nom d'utilisateur pour revenir aux Informations utilisateur.
 
 ### Droits
 {: #permissions}
@@ -959,12 +962,12 @@ Les droits suivants peuvent être accordés aux utilisateurs avec des niveaux d'
 | Utilisateurs | Les utilisateurs disposant du droit **Utilisateurs** peuvent afficher (accès **Lecture**) la liste d'utilisateurs ou ajouter ou retirer des utilisateurs (accès **Ecriture**). Ce droit ne vous permet pas de définir des droits pour d'autres utilisateurs. L'accès en écriture permet à l'utilisateur d'ajouter de nouveaux utilisateurs à l'environnement, de supprimer des utilisateurs de l'environnement et d'ajouter des utilisateurs existants à des organisations qui existent déjà dans l'environnement. De plus, l'accès **Ecriture** permet à l'utilisateur d'ajouter de nouvelles organisations, de supprimer des organisations et d'éditer les utilisateurs des organisations. |
 {: caption="Tableau 14. Droits" caption-side="top"}
 
-## Utilisation d'API REST 
+## Utilisation d'API REST
 {: #auth_adminapi}
 
 Pour utiliser les commandes d'API REST, vous devez d'abord vous authentifier. Pour générer et prendre en charge des sessions, vous pouvez utiliser des commandes cURL pour exécuter les tâches suivantes :
 
-* [Connexion à la console d'administration](#auth_loginapi) 
+* [Connexion à la console d'administration](#auth_loginapi)
 * [Stockage de votre ID utilisateur et de votre mot de passe](#auth_setuidpw)
 * [Stockage de cookies](#auth_apistorecook)
 * [Réutilisation de cookies](#auth_apireusecook)
@@ -972,7 +975,7 @@ Pour utiliser les commandes d'API REST, vous devez d'abord vous authentifier. Po
 ### Connexion à la console d'administration
 {: #auth_loginapi}
 
-Pour pouvoir exécuter des requêtes d'API `Admin`, vous devez vous connecter à la console d'administration. 
+Pour pouvoir exécuter des requêtes d'API `Admin`, vous devez vous connecter à la console d'administration.
 
 Pour vous connecter à la console d'administration, vous pouvez utiliser l'authentification d'accès de base sur le noeud final `https://console.<region>.bluemix.net/login`. Le serveur renvoie un cookie avec votre session. Vous utilisez ce cookie pour toutes les opérations avec la console d'administration.
 
@@ -1018,8 +1021,8 @@ Vous pouvez également stocker votre ID utilisateur et votre mot de passe de man
 Pour configurer vos informations de connexion dans un fichier distinct, puis appeler ce fichier de manière à ne pas avoir à le saisir à nouveau pour chaque demande d'authentification, utilisez l'option `--netrc` fournie par la commande cURL.
 
 Pour utiliser l'option `--netrc` avec cURL, commencez par créer un fichier dans le répertoire de base de l'utilisateur en procédant de l'une des manières suivantes :
-* Sur un système Unix, créez un fichier nommé .netrc 
-* Sur un système Windows, créez un fichier nommé _netrc. 
+* Sur un système Unix, créez un fichier nommé .netrc
+* Sur un système Windows, créez un fichier nommé _netrc.
 
 Dans le fichier, entrez les informations suivantes :
 
@@ -1312,12 +1315,12 @@ cette commande :
  ```
 {: screen}
 
-## API pour les mesures (expérimental)
+## API pour métriques
 {: #envappmetricsapi}
 
 Vous pouvez employer trois API expérimentales pour regrouper des mesures relatives à votre environnement ou à vos applications. Ces API renvoient un tableau de points de données des mesures demandées sur la durée indiquée.
 
-Les API de mesures décrites dans les sections suivantes sont accessibles à partir du noeud final spécifique de la région, par exemple : 
+Les API de mesures décrites dans les sections suivantes sont accessibles à partir du noeud final spécifique de la région, par exemple :
 
 `https://console.<région>.bluemix.net/admin/metrics`
 {: codeblock}
@@ -1327,13 +1330,14 @@ Les API de mesures décrites dans les sections suivantes sont accessibles à par
 1. Un utilisateur peut effectuer jusqu'à 200 demandes d'API de mesures par heure.
 2. Chaque demande d'API renvoie jusqu'à 200 points de données par demande. Si des données supplémentaires sont disponibles, une URL est fournie en réponse au chargement de l'ensemble de données suivant.
 3. Chaque demande d'API nécessite qu'un utilisateur dispose au moins des droits d'accès de base à la console d'administration.  Des droits supplémentaires peuvent être nécessaires, comme indiqué ci-dessous.
+4. Des données sont disponibles jusqu'à 6 mois en arrière de la date de la demande d'API.
 
-## Regroupement des mesures relatives à votre environnement 
+## Regroupement des mesures relatives à votre environnement
 
 Vous pouvez utiliser l'API d'environnement expérimentale pour regrouper des informations de niveau supérieur relatives à votre environnement sur une période que vous définissez. Les points de données disponibles sur la durée indiquée sont renvoyés. Les données sont enregistrées environ toutes les heures. SI, par exemple, vous avez demandé six heures de données relatives à l'unité centrale de votre environnement, la réponse inclut les données relatives à l'unité centrale pour chacune des six heures demandées.
 
 
-### Noeuds finaux d'environnement 
+### Noeuds finaux d'environnement
 
 Vous pouvez utiliser le noeud final suivant pour appeler cette commande d'API : `/api/v1/env`
 
@@ -1367,7 +1371,7 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<régi
 Les sections suivantes indiquent le format des données.
 
  * Pour regrouper les enregistrements de données concernant l'utilisation de la mémoire, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1452,7 +1456,7 @@ Les sections suivantes indiquent le format des données.
 {: screen}
 
  * Pour regrouper les enregistrements de données concernant l'utilisation du disque, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1537,7 +1541,7 @@ Les sections suivantes indiquent le format des données.
 {: screen}
 
  * Pour regrouper les enregistrements de données concernant l'utilisation de l'unité centrale, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1591,7 +1595,7 @@ Les sections suivantes indiquent le format des données.
 {: screen}
 
  * Pour regrouper les enregistrements de données concernant votre réseau, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1643,7 +1647,7 @@ Les sections suivantes indiquent le format des données.
 {: screen}
 
 * Pour regrouper les enregistrements de données concernant l'utilisation de quota, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1663,7 +1667,7 @@ Les sections suivantes indiquent le format des données.
 {: screen}
 
 * Pour regrouper les enregistrements de données concernant vos applications, employez le format de données suivant :
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1694,7 +1698,7 @@ Des données sont enregistrées pour toutes les organisations environ toutes les
 
 Pour réduire la quantité d'informations renvoyées pour chaque échantillon de données sur la période demandée, vous pouvez indiquer une option count. Si vous ajoutez l'option count avec une valeur égale à 5, l'exemple précédent renvoie 30 enregistrements, qui représentent les 5 organisations les plus importantes par mémoire de chaque échantillon de données.
 
-### Noeuds finaux relatifs aux organisations 
+### Noeuds finaux relatifs aux organisations
 
 Vous pouvez utiliser les noeuds finaux suivants pour appeler cette commande d'API :
 * `/api/v1/org/memory/physical`
@@ -1705,7 +1709,7 @@ Vous pouvez utiliser les noeuds finaux suivants pour appeler cette commande d'AP
 **Remarque** : l'un des droits suivants sont nécessaires pour accéder à ces noeuds finaux : **Accès en lecture de l'utilisateur**, **Accès en écriture de l'utilisateur** ou **Superutilisateur**
 
 ### Paramètres de requête relatifs aux organisations
- 
+
 Utilisez les paramètres de requête suivants pour regrouper des mesures concernant vos organisations :
 
 <dl class="parml">
@@ -1746,10 +1750,10 @@ Les données sont enregistrées pour toutes les applications environ toutes les 
 
 Pour réduire la quantité d'informations renvoyées pour chaque échantillon de données sur la période demandée, vous pouvez indiquer une option count. Si vous ajoutez l'option count avec une valeur égale à 5, l'exemple précédent renvoie 30 enregistrements, qui représentent les 5 applications les plus importantes par unité centrale de chaque échantillon de données.
 
-### Noeuds finaux des applications 
+### Noeuds finaux des applications
 
 Vous pouvez utiliser les noeuds finaux suivants pour appeler cette commande d'API :
-* `/api/v1/app/cpu/physical` 
+* `/api/v1/app/cpu/physical`
 * `/api/v1/app/memory/physical`
 * `/api/v1/app/memory/reserved`
 * `/api/v1/app/disk/physical`
@@ -1758,7 +1762,7 @@ Vous pouvez utiliser les noeuds finaux suivants pour appeler cette commande d'AP
 **Remarque** : l'un des droits suivants sont nécessaires pour accéder à ces noeuds finaux : **Accès en lecture de l'utilisateur**, **Accès en écriture de l'utilisateur** ou **Superutilisateur**
 
 ### Paramètres de requête relatifs aux applications
- 
+
 Utilisez les paramètres de requête suivants pour regrouper des mesures concernant vos applications :
 
 <dl class="parml">

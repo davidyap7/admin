@@ -17,7 +17,8 @@ lastupdated: "2017-03-29"
 
 # 注册 Bluemix
 
-您可以使用现有的 IBM 标识，通过创建新 IBM 标识或使用联合标识，来注册 {{site.data.keyword.Bluemix}} 帐户。联合标识是公司域内已向 IBM 注册的标识，因此域和用户凭证可用于访问 IBM Web 应用程序。{:shortdesc}
+您可以使用现有的 IBM 标识，通过创建新 IBM 标识或使用联合标识，来注册 {{site.data.keyword.Bluemix}} 帐户。联合标识是公司域内已向 IBM 注册的标识，因此域和用户凭证可用于访问 IBM Web 应用程序。
+{:shortdesc}
 
 您可以使用现有的 IBM 标识，通过创建新 IBM 标识或使用联合标识，来注册 {{site.data.keyword.Bluemix_notm}} 帐户。联合标识是公司域内已向 IBM 注册的标识，因此域和用户凭证可用于访问 IBM Web 应用程序。  
 

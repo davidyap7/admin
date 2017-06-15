@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-02"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -15,7 +16,6 @@ lastupdated: "2017-05-02"
 
 # Gestión de {{site.data.keyword.Bluemix_notm}} Local y {{site.data.keyword.Bluemix_notm}} Dedicado
 {: #mng}
-
 
 Si tiene acceso de administrador para {{site.data.keyword.Bluemix}} Local o {{site.data.keyword.Bluemix_notm}} Dedicado, vaya a la página **Administración** para gestionar recursos, supervisar el uso de cuota, administrar permisos de usuarios, planificar las notificaciones de actualización, ver informes y registros de seguridad, etc. Puede gestionar sus organizaciones mediante la creación de espacios y la configuración de [roles y permisos de usuarios](/docs/admin/index.html#oc_useradmin); consulte [Gestión de las organizaciones](/docs/admin/orgs_spaces.html).
 {:shortdesc}
@@ -32,7 +32,7 @@ Si tiene acceso de administrador para {{site.data.keyword.Bluemix}} Local o {{si
 |Revisar informes y registros | Pulse **ADMINISTRACIÓN &gt; INFORMES Y REGISTROS** para ver informes de seguridad y registros de auditoría para su instancia. Ver [Visualización de informes](/docs/admin/index.html#oc_report). |
 |Ver información del sistema | Pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA** para ver información del sistema como actualizaciones de mantenimiento pendientes, el nombre y la versión de la instancia, la región, el URL de API, el URL de CLI, los detalles de configuración de LDAP, las correlaciones de usuario y de grupo, las estadísticas y los dominios compartidos. Consulte [Visualización de información del sistema](/docs/admin/index.html#oc_system). |
 |Ampliar notificaciones y configurar suscripciones de notificaciones | Pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Number* pendientes**. Puede usar webhooks para integrar con el servicio web que quiera para configurar la suscripción a notificación de sucesos para una actualización o incidencia. Consulte [Suscripción de notificaciones](/docs/admin/index.html#oc_eventsubscription). |
-{: caption="Tabla 1. Tareas administrativas para gestionar la instancia local o dedicada de Bluemix" caption-side="top"}
+{: caption="Tabla 1. Tareas administrativas para gestionar la instancia local o dedicada de {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -122,7 +122,7 @@ Para crear una suscripción de correo electrónico o webhook desde la página **
 | Para | Especifique la dirección o direcciones de correo electrónico utilizando una lista separada por comas de los destinatarios de notificación por correo electrónico. Expanda las opciones "C/o" o "C/co" para enviar una copia del mensaje a otros destinatarios. Este campo es necesario. |
 {: caption="Tabla 4. Campos para suscripciones a notificaciones por correo electrónico sobre las actualizaciones o los incidentes de mantenimiento" caption-side="top"}
 
-Los datos del umbral se recopilan una vez cada 6 horas. Solamente se enviará una notificación una vez cuando el valor sobrepase el valor de umbral que haya establecido. Si elige ascendente, no se envía una nueva notificación a menos que el valor caiga por debajo del umbral y, a continuación, aumente de nuevo por encima del umbral. Del mismo modo, si ha elegido descendente, sólo se le notificará si el valor sube por encima del umbral establecido y, a continuación, cae por debajo del umbral de nuevo. 
+Los datos del umbral se recopilan una vez cada 6 horas. Solamente se enviará una notificación una vez cuando el valor sobrepase el valor de umbral que haya establecido. Si elige ascendente, no se envía una nueva notificación a menos que el valor caiga por debajo del umbral y, a continuación, aumente de nuevo por encima del umbral. Del mismo modo, si ha elegido descendente, sólo se le notificará si el valor sube por encima del umbral establecido y, a continuación, cae por debajo del umbral de nuevo.
 
 Si no desea esperar 6 horas para que se envíe la notificación cuando se alcanza el umbral, una vez que complete los campos del formulario, puede pulsar **Guardar y probar** para recibir una notificación de prueba con datos de ejemplo.  
 
@@ -172,7 +172,7 @@ Una notificación de umbral de Cuota de organización incluye sólo las organiza
 | URL | Especificar el URL al que conectar su servicio web. |
 {: caption="Tabla 6. Campos de formulario para una suscripción a notificaciones de webhook sobre umbrales" caption-side="top"}
 
-Los datos del umbral se recopilan una vez cada 6 horas. Solamente se enviará una notificación una vez cuando el valor sobrepase el valor de umbral que haya establecido. No se enviará una notificación nueva a menos que el valor caiga por debajo del umbral, si ha elegido ascendente y, a continuación, aumenta por encima del umbral de nuevo. Del mismo modo, si ha elegido descendente, sólo se le volverá a notificar si el valor sube por encima del umbral establecido y, a continuación, cae por debajo del umbral de nuevo. 
+Los datos del umbral se recopilan una vez cada 6 horas. Solamente se enviará una notificación una vez cuando el valor sobrepase el valor de umbral que haya establecido. No se enviará una notificación nueva a menos que el valor caiga por debajo del umbral, si ha elegido ascendente y, a continuación, aumenta por encima del umbral de nuevo. Del mismo modo, si ha elegido descendente, sólo se le volverá a notificar si el valor sube por encima del umbral establecido y, a continuación, cae por debajo del umbral de nuevo.
 
 Si no desea esperar 6 horas para que se envíe la notificación cuando se alcanza el umbral, una vez que complete los campos del formulario, puede pulsar **Guardar y probar** para guardar y probar la notificación con datos de ejemplo.
 
@@ -193,6 +193,7 @@ Una notificación de umbral de Cuota de organización incluye sólo las organiza
 | {{region}} | Región afectada | Actualización de mantenimiento e incidencia |
 | {{status}} | Estado de la actualización | Actualización de mantenimiento |
 | {{type}} | Actualización o incidencia | Actualización de mantenimiento e incidencia |
+| {{workitem}} | Número de elemento de trabajo | Actualización de mantenimiento e incidencia |
 {: caption="Tabla 7. Valores de la sección de carga útil de incidencia y de mantenimiento" caption-side="top"}
 
 
@@ -244,7 +245,7 @@ Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínim
 
 1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes &gt; Gestionar disponibilidad**.
 2. Expanda la sección **Gestionar ventanas de actualización disponibles**.
-3. Pulse **Añadir nuevo** ![Añadir nuevo](images/add-new.png).
+3. Pulse **Añadir nuevo**.
 4. Establezca la primera ventana de disponibilidad seleccionando la frecuencia, duración y hora de inicio para la ventana.
 5. Opcional: seleccione **Marcar como preferido** si le gustaría establecer su ventana de disponibilidad recurrente como la hora preferida para que se planifiquen los despliegues. Las ventanas preferidas tienen prioridad, siempre que sea posible.
 6. Pulse **Enviar**.
@@ -259,7 +260,7 @@ Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínim
 
 1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes &gt; Gestionar disponibilidad**.
 2. Expanda la sección **Gestionar ventanas de actualización no disponibles**.
-3. Pulse **Añadir nuevo** ![Añadir nuevo](images/add-new.png).
+3. Pulse **Añadir nuevo**.
 4. Establezca una ventana no disponible seleccionando la frecuencia, duración y hora de inicio para la ventana.
 5. Pulse **Enviar**.
 
@@ -380,9 +381,10 @@ Para ver información más detallada sobre el uso de memoria física y reservada
 #### Detalles de utilización del servicio
 {: #servicesresourceusage}
 
-El separador **Servicio** muestra la utilización total del servicio con relación a la capacidad máxima que tiene para un servicio dedicado. Por ejemplo, si tiene un servicio Cloudant dedicado, y está utilizando 500 GB de los 1000 GB que tiene como capacidad disponible, verá un gráfico que mostrará que está utilizando un 50% del total de su capacidad. El color del gráfico cambia en base a lo cerca que está a su límite de capacidad. El color amarillo indica que ha utilizado entre el 70% y el 84% de su capacidad, y el color rojo se utiliza cuando llega al 85% o más de su capacidad disponible. 
+El separador **Servicio** muestra la utilización total del servicio con relación a la capacidad máxima que tiene para un servicio dedicado. Por ejemplo, si tiene un servicio Cloudant dedicado, y está utilizando 500 GB de los 1000 GB que tiene como capacidad disponible, verá un gráfico que mostrará que está utilizando un 50% del total de su capacidad. El color del gráfico cambia en base a lo cerca que está a su límite de capacidad. El color amarillo indica que ha utilizado entre el 70% y el 84% de su capacidad, y el color rojo se utiliza cuando llega al 85% o más de su capacidad disponible.
 
-**Nota**: Actualmente, la información de consumo del servicio podría no estar disponible en todos los entornos. Esta característica está disponible para Cloudant, MessageHub, API Connect y Session Cache. 
+**Nota**: Actualmente, la información de consumo del servicio podría no estar disponible en todos los entornos. Esta característica está disponible para Cloudant, MessageHub, API Connect y Session Cache.
+
 
 
 ### Uso de cuenta
@@ -449,46 +451,43 @@ el uso de GB-hora medido para los últimos tres meses.
 Para obtener más información sobre la visualización del uso por organización, el ajuste de planes de cuota y la gestión de sus
 organizaciones, consulte [Administración de organizaciones](../admin/index.html#oc_organizations).
 
-### Reports
+### Informes
 {: #oc_report}
 
-Puede ver informes de seguridad y registros, como por ejemplo DataPower&trade;, el cortafuegos y la auditoría de inicio de sesión, para
-la instancia de {{site.data.keyword.Bluemix_notm}}. Para visualizar informes y registros, pulse **ADMINISTRACIÓN &gt; INFORMES Y REGISTROS**.
+Puede ver informes de seguridad y de registros, como por ejemplo los informes de DataPower, del cortafuegos, de la auditoría de inicio de sesión, para la instancia de {{site.data.keyword.Bluemix_notm}}. Para visualizar informes y registros, pulse **ADMINISTRACIÓN &gt; INFORMES Y REGISTROS**.
 
-Seleccione una de las opciones siguientes:
+Puede llevar a cabo las siguientes tareas desde el mosaico Informes y registros: 
 
-- Puede seleccionar fechas de inicio y finalización en los campos para filtrar los informes y registros que se muestran.
-- Puede expandir y visualizar distintos informes desde el panel de navegación.
-- Puede buscar dentro del conjunto de informes y registros. La búsqueda se aplica a los nombres de informes y al contenido de texto que se incluye en los informes y los registros. También puede optar por filtrar
-la búsqueda por **Sucesos de administración**, **Informes de DataPower**, **Cortafuegos** y **Auditoría
-de inicio de sesión**.
-- Cuando visualice un informe o un registro, puede pulsar el icono ![Descargar](images/icon_download.png)
-para descargar el informe.
+- Seleccionar las fechas de inicio y finalización en los campos para filtrar los informes y registros que se muestran.
+- Visualizar la lista de informes solicitados y los informes actualmente disponibles.
+- Buscar dentro del conjunto de informes y registros. La búsqueda se aplica a los nombres de informes y al contenido de texto que se incluye en los informes y los registros. También puede optar por filtrar la búsqueda por categoría. 
+- Descargar un informe pulsando el icono ![Descargar](images/icon_download.png) para descargar el informe.
+- Si tiene acceso de escritura para el permiso de los informes, solicitar la generación de un informe. Puede elegir entre las siguientes seis categorías para generar un informe bajo demanda: gestión de usuarios de la consola de administración, administración de la plataforma {{site.data.keyword.Bluemix_notm}}, denegaciones de cortafuegos, inicios de sesión de cortafuegos, inicios de sesión de servidor e inicio de sesión de sistema operativo. Puede solicitar informes con datos con una antigüedad de hasta 90 días.  
+
+**Nota**: En este momento, la característica de solicitar un informe podría no estar disponible en todos los entornos. 
 
 La tabla siguiente muestra la lista de los informes de seguridad generados para {{site.data.keyword.Bluemix_notm}} local y {{site.data.keyword.Bluemix_notm}} dedicado. La mayoría de los informes se generan a diario. Sin embargo, los informes de cifrado y sucesos de gestión de claves se generan mensualmente. Todos los informes se conservan 90 días en la consola administrativa para su recuperación. Transcurridos 90 días, los informes están disponibles fuera de línea desde {{site.data.keyword.Bluemix_notm}} durante 9 meses. En total, los informes están disponibles para su recuperación un máximo de un año.
 
 
 {: #ld_table9}
 
-| **Categoría** | **Informe** | **Descripción** |      
-|-----------------|-------------------|---------------------|
-| Cortafuegos | Inicios de sesión de cortafuegos | Sucesos relacionados con el inicio de sesión del administrador en los dispositivos de cortafuegos Vyatta. |
-| Cortafuegos | Denegaciones de cortafuegos | Sucesos generados por los dispositivos cortafuegos Vyatta cuando se deniega una solicitud de acceso acuerdo con las reglas vigentes del cortafuegos. |
-| Sucesos de inicio de sesión del administrador de {{site.data.keyword.Bluemix_notm}} | Inicio de sesión de los administradores de {{site.data.keyword.Bluemix_notm}} | Sucesos generados por el sistema operativo cuando un administrador inicia una sesión SSH en cada sistema {{site.data.keyword.Bluemix_notm}}. |
-| Sucesos de inicio de sesión de desarrollador de apps de {{site.data.keyword.Bluemix_notm}} | Inicio de sesión de desarrolladores de apps de {{site.data.keyword.Bluemix_notm}} | Sucesos generados por el componente de inicio de sesión de la plataforma {{site.data.keyword.Bluemix_notm}} cuando un usuario de la plataforma {{site.data.keyword.Bluemix_notm}} inicia sesión mediante la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
-| Sucesos administrativos del administrador de {{site.data.keyword.Bluemix_notm}} | Sucesos administrativos del sistema operativo de los administradores de {{site.data.keyword.Bluemix_notm}} | Sucesos generados por el sistema operativo cuando un administrador realiza una acción durante una sesión de trabajo actual. |
-| Sucesos administrativos de desarrollador de apps de {{site.data.keyword.Bluemix_notm}} | Sucesos administrativos de {{site.data.keyword.Bluemix_notm}} (Cloud Foundry) | Sucesos relacionados con operaciones realizadas por el usuario de la plataforma {{site.data.keyword.Bluemix_notm}} utilizando la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
-| Sucesos administrativos de la base de datos del administrador de {{site.data.keyword.Bluemix_notm}} | Sucesos administrativos de la base de datos | Sucesos relacionados con las operaciones realizadas por un administrador de bases de datos en las bases de datos internas de {{site.data.keyword.Bluemix_notm}}. |
-| Sucesos de administración | Sucesos de gestión de usuarios | Sucesos relacionados con acciones de gestión de usuarios realizadas en la página Administración. |
-| Sucesos de administración | Catalog | Sucesos relacionados con cambios en el catálogo de servicios. |
-| Sucesos de administración | Sucesos de gestión de informes de seguridad | Sucesos relacionados con acciones de gestión de informes de seguridad realizadas en la página Administración. |
-| Revisiones de acceso | Informe de revisiones de acceso | Revisiones para accesos privilegiados. |
-| Gestión de cambios | Gestión de cambios de software | Actividad de gestión de cambios. |
-| Gestión de claves | Gestión de certificados SSL personalizados | Certificados SSL personalizados cargados y almacenados. |
-| Cifrado | Cifrado data-in-transit (datos en tránsito) | Cifrado data-in-transit (datos en tránsito) configurado. |
-| Antivirus | Informe de exploración de antivirus | Software antivirus vigente. |
-| Gestión de arreglos de software | Informe de app de parches | Arreglos de software aplicados. |
-| Gestión de incidentes de seguridad | Informe de solución de incidentes de seguridad | Pruebas de incidentes de seguridad para la gestión de incidentes de seguridad. |
+| **Informe** | **Descripción** |      
+|-------------------|---------------------|
+| [Inicios de sesión de cortafuegos](/docs/hybrid/reports.html#firewalllogins) | Sucesos relacionados con el inicio de sesión del administrador en los dispositivos de cortafuegos Vyatta. |
+| [Denegaciones de cortafuegos](/docs/hybrid/reports.html#firewalldenies) | Sucesos generados por los dispositivos cortafuegos Vyatta cuando se deniega una solicitud de acceso acuerdo con las reglas vigentes del cortafuegos. |
+| [Inicio de sesión de administradores](/docs/hybrid/reports.html#oslogin) de {{site.data.keyword.Bluemix_notm}}   | Sucesos generados por el sistema operativo cuando un administrador inicia una sesión SSH en cada sistema {{site.data.keyword.Bluemix_notm}}. |
+|  [Inicio de sesión de desarrolladores](/docs/hybrid/reports.html#loginserverlogins) de {{site.data.keyword.Bluemix_notm}}  | Sucesos generados por el componente de inicio de sesión de la plataforma {{site.data.keyword.Bluemix_notm}} cuando un usuario de la plataforma {{site.data.keyword.Bluemix_notm}} inicia sesión mediante la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
+| [Administración de sistema operativo](/docs/hybrid/reports.html#osadmin) de {{site.data.keyword.Bluemix_notm}}    | Sucesos generados por el sistema operativo cuando un administrador realiza una acción durante una sesión de trabajo actual. |
+| [Administración de plataforma (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) de {{site.data.keyword.Bluemix_notm}}   | Sucesos relacionados con operaciones realizadas por el usuario de la plataforma {{site.data.keyword.Bluemix_notm}} utilizando la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
+| [Administración de base de datos interna](/docs/hybrid/reports.html#dbadmin) | Sucesos relacionados con las operaciones realizadas por un administrador de bases de datos en las bases de datos internas de {{site.data.keyword.Bluemix_notm}}. |
+| [Gestión de usuarios](/docs/hybrid/reports.html#acusermgmt) | Sucesos relacionados con acciones de gestión de usuarios realizadas en la página Administración. |
+| [Gestión de catálogos](/docs/hybrid/reports.html#catalogmgmt) | Sucesos relacionados con cambios en el catálogo de servicios. |
+| [Gestión de informes de seguridad](/docs/hybrid/reports.html#securityreportsmgmt) | Sucesos relacionados con acciones de gestión de informes de seguridad realizadas en la página Administración. |
+| [Revisiones de acceso](/docs/hybrid/reports.html#securityreportsmgmt) | Revisiones para accesos privilegiados. |
+| Gestión de cambios de software | Actividad de gestión de cambios. |
+| [Gestión de certificados de clave](/docs/hybrid/reports.html#keymgmt) | Operaciones de gestión de certificados de clave. |
+| [Notificaciones del sistema](/docs/hybrid/reports.html#systemnotifications) | Sucesos relacionados con la configuración de suscripciones de notificaciones o ventanas de despliegue de actualización de software.  |
+
 {: caption="Tabla 9. Lista de informes de seguridad" caption-side="top"}
 
 ## Visualización del estado
@@ -847,7 +846,7 @@ Una cuota representa los límites de recursos para las organizaciones del entorn
 <ol>
 <li>Pulse la barra del gráfico de la organización que desea editar en la sección Uso de memoria de la organización, o bien seleccione el nombre de la organización en la sección Lista de organizaciones. En la página Información de la organización, puede cambiar el nombre de la organización y añadir o eliminar gestores.
 <p><strong>Nota</strong>: Si selecciona un plan de cuotas insuficiente para el uso actual de la organización, recibirá un mensaje.</p></li>
-<li>Pulse <strong>Cloud Foundry</strong> o <strong>Contenedores</strong>.  De forma predeterminada, se abrirá la página de cuota de Cloud Foundry. 
+<li>Pulse <strong>Cloud Foundry</strong> o <strong>Contenedores</strong>.  De forma predeterminada, se abrirá la página de cuota de Cloud Foundry.
 <ul>
 <li>En la página Cloud Foundry, puede seleccionar un plan y ver los detalles de la cuota de los siguientes recursos:
 <ul>
@@ -871,7 +870,7 @@ Una cuota representa los límites de recursos para las organizaciones del entorn
 <dd>El número máximo de direcciones IP públicas que puede asignar entre todos los espacios de una organización.</dd>
 </dl>
 <strong>Nota</strong>: si aún no tiene contenedores en su entorno o si aún no tiene los contenedores del entorno configurados, recibirá un mensaje de error.
-<p>Para obtener más información sobre contenedores, consulte [Acerca de los contenedores de IBM](/docs/containers/container_ov.html). Para obtener más información sobre cuotas de contenedor, consulte [Cuota y cuentas de Bluemix](/docs/containers/container_planning.html#container_planning_quota).</p>
+<p>Para obtener más información sobre contenedores, consulte [Acerca de los contenedores de IBM](/docs/containers/container_ov.html). Para obtener más información sobre cuotas de contenedor, consulte [Cuota y cuentas de Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Nota:</strong> Los contenedores no están disponibles en la región Sídney de {{site.data.keyword.Bluemix_notm}}.</li>
 </ul>
 <li>Para guardar los cambios que haya efectuado en la página Gestionar
@@ -898,7 +897,7 @@ seleccionar la **Vista de lista** para ver los datos de todas las aplicaciones, 
 el uso de GB-hora medido para los últimos tres meses.
 
 - Para editar el nombre de la organización y añadir o eliminar gestores, pulse el nombre de la organización en la lista y siga las indicaciones en pantalla.
-- Para ver información sobre un determinado usuarios de la organización que está visualizando, pulse el nombre del usuario para ver Información de usuario. Luego puede pulsar el nombre de la organización para volver a ver la Información de organización. 
+- Para ver información sobre un determinado usuarios de la organización que está visualizando, pulse el nombre del usuario para ver Información de usuario. Luego puede pulsar el nombre de la organización para volver a ver la Información de organización.
 
 ## Gestión de usuarios y permisos
 {: #oc_useradmin}
@@ -983,8 +982,8 @@ acceso **Escritura** (editar o añadir y eliminar) para dicho permiso.
 
     1. Para añadir un usuario a una organización, seleccione el nombre de usuario en la tabla para acceder a la página **Editar usuario**. A continuación, utilice el campo de búsqueda para localizar una organización, seleccione la organización en la lista y pulse **Guardar**.
     2. Para eliminar un usuario de una organización, seleccione el nombre de usuario de la tabla para acceder a la página **Editar usuario**. A continuación, pulse ![Eliminar](images/icon_remove.svg) para la organización de la que desea eliminar el usuario y pulse **Guardar**.
-    
-* Para ver información sobre la organización a la que está asignado el usuario, pulse el nombre de la organización para ver Información de la organización. Luego puede pulsar el nombre del usuario para volver a ver la Información de usuario. 
+
+* Para ver información sobre la organización a la que está asignado el usuario, pulse el nombre de la organización para ver Información de la organización. Luego puede pulsar el nombre del usuario para volver a ver la Información de usuario.
 
 ### Permisos
 {: #permissions}
@@ -1003,12 +1002,12 @@ Es posible asignar a los usuarios los permisos siguientes con niveles de acceso 
 | Users | A los usuarios con el permiso **Users** se les puede asignar el acceso de **Lectura** (ver) sobre la lista de usuarios o de **Escritura** (añadir o eliminar) sobre los usuarios. Este permiso no le permite definir permisos para otros usuarios. El acceso de escritura permite que el usuario pueda añadir nuevos usuarios al entorno, suprimir usuarios del entorno y añadir usuarios existentes a las organizaciones que ya existen en el entorno. Además, el acceso de **Escritura** permite que el usuario pueda añadir nuevas organizaciones, suprimir organizaciones y editar los usuarios dentro de las organizaciones. |
 {: caption="Tabla 14. Permisos" caption-side="top"}
 
-## Utilización de API REST 
+## Utilización de API REST
 {: #auth_adminapi}
 
 Para utilizar los mandatos de API REST, primero debe autenticarse. Para generar y dar soporte a las sesiones, puede utilizar mandatos cURL para llevar a cabo las tareas siguientes:
 
-* [Inicio de sesión en la consola de administración](#auth_loginapi) 
+* [Inicio de sesión en la consola de administración](#auth_loginapi)
 * [Almacenamiento del ID de usuario y de la contraseña](#auth_setuidpw)
 * [Almacenamiento de cookies](#auth_apistorecook)
 * [Reutilización de cookies](#auth_apireusecook)
@@ -1016,7 +1015,7 @@ Para utilizar los mandatos de API REST, primero debe autenticarse. Para generar 
 ### Inicio de sesión en la consola de administración
 {: #auth_loginapi}
 
-Para poder ejecutar cualquier solicitud de la API `Admin`, debe iniciar una sesión en la consola de administración. 
+Para poder ejecutar cualquier solicitud de la API `Admin`, debe iniciar una sesión en la consola de administración.
 
 Para iniciar la sesión en la Consola de administración, puede utilizar la autenticación de acceso básica en el
 punto final `https://console.<region>.bluemix.net/login`. El servidor devuelve una cookie con la sesión. Utilice dicha cookie para todas las operaciones con la consola de administración.
@@ -1062,8 +1061,8 @@ También puede almacenar el ID de usuario y la contraseña de forma que no tenga
 Para configurar su información de inicio de sesión en un archivo independiente y, a continuación, invocar el archivo para que no tenga que volver a especificarla para cada solicitud de autenticación, utilice la opción `--netrc` que se proporciona mediante el mandato cURL.
 
 Para utilizar la opción `--netrc` con cURL, cree en primer lugar un archivo en el directorio de inicio del usuario de una de las siguientes maneras:
-* En un sistema Unix, cree un archivo denominado .netrc 
-* En un sistema Windows, cree un archivo denominado _netrc. 
+* En un sistema Unix, cree un archivo denominado .netrc
+* En un sistema Windows, cree un archivo denominado _netrc.
 
 En el archivo, especifique la siguiente información:
 
@@ -1363,12 +1362,12 @@ El siguiente ejemplo muestra la salida de este mandato:
  ```
 {: screen}
 
-## API para métricas (experimental)
+## API para métricas
 {: #envappmetricsapi}
 
 Puede utilizar tres API experimentales para recopilar métricas sobre el entorno o las aplicaciones. Estas API devuelven una matriz de puntos de datos correspondientes a las métricas que ha solicitado durante el periodo de tiempo especificado.
 
-Se puede acceder a las API para métricas que se describen en las secciones desde el punto final específico de la región, por ejemplo: 
+Se puede acceder a las API para métricas que se describen en las secciones desde el punto final específico de la región, por ejemplo:
 
 `https://console.<region>.bluemix.net/admin/metrics`
 {: codeblock}
@@ -1378,13 +1377,14 @@ Se puede acceder a las API para métricas que se describen en las secciones desd
 1. Un usuario puede realizar un máximo de 200 solicitudes de API para métricas por hora.
 2. Cada solicitud de API devuelve un máximo de 200 puntos de datos por solicitud. Si hay más datos disponibles, se proporciona un URL en la respuesta para cargar el siguiente conjunto de datos.
 3. Cada solicitud de API necesita que un usuario tenga al menos Acceso básico a la consola de administración.  Es posible que se necesiten permisos adicionales, como se especifica más abajo.
+4. Los datos están disponibles hasta un máximo de 6 meses desde el momento en que se realiza la solicitud de API. 
 
-## Obtención de métricas sobre el entorno 
+## Obtención de métricas sobre el entorno
 
 Puede utilizar la API de entorno experimental para obtener información sobre el entorno durante el periodo de tiempo que especifique. Se devuelven los puntos de datos disponibles dentro del periodo de tiempo que especifique. Se registran datos cada hora aproximadamente. Si, por ejemplo, ha solicitado seis horas de datos de CPU para el entorno, la respuesta incluirá datos de CPU correspondientes a cada una de las seis horas solicitadas.
 
 
-### Puntos finales del entorno 
+### Puntos finales del entorno
 
 Puede utilizar el punto final siguiente para invocar este mandato de API: `/api/v1/env`
 
@@ -1418,7 +1418,7 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 En las secciones siguientes se proporciona al formato de los datos.
 
  * Para obtener registros de datos sobre el uso de memoria, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1503,7 +1503,7 @@ En las secciones siguientes se proporciona al formato de los datos.
 {: screen}
 
  * Para obtener registros de datos sobre el uso de disco, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1588,7 +1588,7 @@ En las secciones siguientes se proporciona al formato de los datos.
 {: screen}
 
  * Para obtener registros de datos sobre el uso de CPU, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1642,7 +1642,7 @@ En las secciones siguientes se proporciona al formato de los datos.
 {: screen}
 
  * Para obtener registros de datos sobre la red, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1694,7 +1694,7 @@ En las secciones siguientes se proporciona al formato de los datos.
 {: screen}
 
 * Para recopilar registros de datos sobre el uso de cuota, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1714,7 +1714,7 @@ En las secciones siguientes se proporciona al formato de los datos.
 {: screen}
 
 * Para obtener registros de datos sobre las aplicaciones, utilice el siguiente formato de datos:
- 
+
 ```
 {
   "sample_time": 1477494000000,
@@ -1745,7 +1745,7 @@ Se registran datos para todas las organizaciones aproximadamente cada hora. Una 
 
 Para reducir la cantidad de información que se devuelve para cada muestra de datos en el periodo de tiempo solicitado, puede especificar una opción de recuento. Siguiendo con el ejemplo anterior, si añadimos una opción de recuento de 5 se devuelven 30 registros que representan las 5 primeras organizaciones por memoria para cada muestra de datos.
 
-### Puntos finales de las organizaciones 
+### Puntos finales de las organizaciones
 
 Puede utilizar los siguientes puntos finales para invocar este mandato de API:
 * `/api/v1/org/memory/physical`
@@ -1756,7 +1756,7 @@ Puede utilizar los siguientes puntos finales para invocar este mandato de API:
 **Nota**: Es necesario uno de los siguientes permisos para acceder a estos puntos finales: **lectura de usuario**, **escritura de usuario**, o **Superusuario**
 
 ### Parámetros de consulta de las organizaciones
- 
+
 Utilice los siguientes parámetros de consulta para recopilar métricas para las organizaciones:
 
 <dl class="parml">
@@ -1797,10 +1797,10 @@ Se registran datos para todas las aplicaciones aproximadamente cada hora. Una so
 
 Para reducir la cantidad de información que se devuelve para cada muestra de datos en el periodo de tiempo solicitado, puede especificar una opción de recuento. Siguiendo con el ejemplo anterior, si añadimos una opción de recuento de 5 se devuelven 30 registros que representan las 5 primeras aplicaciones por CPU para cada muestra de datos.
 
-### Puntos finales de las aplicaciones 
+### Puntos finales de las aplicaciones
 
 Puede utilizar los siguientes puntos finales para invocar este mandato de API:
-* `/api/v1/app/cpu/physical` 
+* `/api/v1/app/cpu/physical`
 * `/api/v1/app/memory/physical`
 * `/api/v1/app/memory/reserved`
 * `/api/v1/app/disk/physical`
@@ -1809,7 +1809,7 @@ Puede utilizar los siguientes puntos finales para invocar este mandato de API:
 **Nota**: Es necesario uno de los siguientes permisos para acceder a estos puntos finales: **lectura de usuario**, **escritura de usuario**, o **Superusuario**
 
 ### Parámetros de consulta de aplicaciones
- 
+
 Utilice los siguientes parámetros de consulta para obtener métricas correspondientes a las aplicaciones:
 
 <dl class="parml">

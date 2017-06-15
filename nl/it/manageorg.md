@@ -12,88 +12,88 @@ lastupdated: "2017-04-11"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Gestione di organizzazioni
-In qualità di proprietario dell'account o di gestore dell'organizzazione, puoi eseguire attività di gestione dell'organizzazione, che includono la rinominazione dell'organizzazione, l'eliminazione di un'organizzazione o uno spazio, l'aggiornamento dei ruoli e la gestione della quota e dei domini.
+# Managing organizations
+As an account owner or an organization manager, you can perform org management tasks, including renaming your org, deleting an org or space, updating org or space roles, and managing quota and domains.
 {:shortdesc}
 
-Per gestire le tue organizzazioni, dalla barra dei menu della console, fai clic su **Gestisci > Account > Organizzazioni**. 
+From the console menu bar, click **Manage > Account > Organizations** to manage your orgs. 
 
-**Nota:** puoi visualizzare le risorse di una sola organizzazione alla volta. Se sei membro di più organizzazioni, puoi passare da un'organizzazione all'altra utilizzando il link delle preferenze dell'account utente nella barra dei menu della console.
+**Note:** You can view resources of only one organization at a time. If you are a member of multiple organizations, you can switch organizations from the user account preferences link in the console menu bar.
 
-## Rinominazione di organizzazioni
+## Renaming orgs
 {: #orgrename}
 
-Per rinominare la tua organizzazione, completa la seguente procedura:
-1. Fai clic su **Gestione** > **Account** > **Organizzazioni**.
-2. Identifica l'organizzazione che vuoi rinominare e fai clic su **Visualizza dettagli**.
-3. Fai clic su **Modifica organizzazione**.
-4. Fai clic su **Modifica** accanto al nome dell'organizzazione.
-5. Immetti il nuovo nome per l'organizzazione e fai clic su **Salva**.
+Complete the following steps to rename your organization:
+1. Click **Manage** > **Account** > **Organizations**.
+2. Identify the org that you want to rename, and click **View Details**.
+3. Click **Edit Org**.
+4. Click **Edit** next to the name of the org.
+5. Type the new org name, and click **Save**.
 
-## Eliminazione di organizzazioni e spazi
+## Deleting orgs and spaces
 {: #deleteorgs}
 
-In qualità di proprietario dell'account, contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} per eliminare un'organizzazione.
+As the account owner, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} to delete an organization.
 
-**Nota**: le operazioni di eliminazione sono irreversibili. Perdi tutte le applicazioni e tutti i servizi associati all'organizzazione.
+**Note**: Deleting operations cannot be reversed. You lose all your apps and services that are associated with the org.
 
-Completa la seguente procedura per eliminare un'organizzazione o uno spazio:
-1. Fai clic su **Gestione** > **Account** > **Organizzazioni**.
-2. Identifica l'organizzazione che vuoi modificare e fai clic su **Visualizza dettagli**.
-3. Identifica lo spazio che vuoi eliminare e fai clic su **Modifica spazio**.
-4. Fai clic su **Modifica spazio**.
+Complete the following steps to delete an org or space:
+1. Click **Manage** > **Account** > **Organizations**.
+2. Identify the org that you want to edit, and click **View Details**.
+3. Identify the space that you want to delete, and click **Edit Space**.
+4. Click **Delete Space**.
 
-## Modifica dei ruoli utente
+## Editing user roles
 {: #listmembers}
 
-Completa la seguente procedura per modificare i ruoli degli utenti per una specifica organizzazione:
-1. Fai clic su **Gestione** &gt; **Account** &gt; **Organizzazioni**.
-2. Identifica l'organizzazione per cui vuoi visualizzare i membri e fai clic su **Visualizza dettagli**.
-3. Fai clic su **Modifica organizzazione**.
-4. Puoi visualizzare i membri della tua organizzazione e i loro ruoli nella scheda **UTENTI**.
+Complete the following steps to edit the users roles for a specific org:
+1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+2. Identify the organization that you want to view the members for, and click **View Details**.
+3. Click **Edit Org**.
+4. You can see the members of your organization and their roles in the **USERS** tab.
 
-Completa la seguente procedura per modificare i ruoli degli utenti per uno specifico spazio:
-1. Fai clic su **Gestione** &gt; **Account** &gt; **Organizzazioni**.
-2. Identifica l'organizzazione per cui vuoi visualizzare i membri e fai clic su **Visualizza dettagli**.
-3. Identifica lo spazio per cui vuoi visualizzare i membri e fai clic su **Modifica spazio**.
-4. Puoi visualizzare i membri del tuo spazio e i loro ruoli nella scheda **UTENTI**.
+Complete the following steps to edit the user roles for a specific space:
+1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+2. Identify the organization that you want to view the members for, and click **View Details**.
+3. Identify the space that you want to view the members for, and click **Edit Space**.
+4. You can see the members of your space and their roles in the **USERS** tab.
 
-## Gestione della quota
+## Managing quota
 {: #managequota}
 
-In qualità di proprietario dell'account o di gestore dell'organizzazione {{site.data.keyword.Bluemix_notm}}, puoi visualizzare la quota utilizzata e assegnata per un'organizzazione. La quota rappresenta i limiti di risorse per l'organizzazione, che viene assegnata quando l'organizzazione viene creata. A seconda che si disponga di un account di prova o di un account fatturabile, le risorse disponibili per un'organizzazione sono diverse. Applicazioni o servizi in uno spazio all'interno dell'organizzazione contribuiscono tutti all'utilizzo della quota assegnata.
+As a {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the used and allocated quota for an organization. The quota represents the resource limits for the organization, which is assigned when the organization is created. Depending on whether you have a trial account or a billable account, the resources that are available to an organization vary. Any application or service in a space within the organization contributes to the usage of the allocated quota.
 
-Per visualizzare la quota utilizzata e assegnata per un'organizzazione, completa la seguente procedura:
-1. Fai clic su **Gestione** &gt; **Account** &gt; **Organizzazioni**.
-2. Identifica l'organizzazione per cui vuoi visualizzare la quota e fai clic su **Visualizza dettagli**.
-3. Fai clic su **Modifica organizzazione**.
-4. Se hai degli spazi definiti in più di un'organizzazione, seleziona la specifica regione che vuoi visualizzare.
-5. Fai clic su **QUOTA**. 
-6. Per impostazione predefinita, si apre la pagina della quota **Cloud Foundry**. Puoi visualizzare i dettagli della quota per le seguenti risorse:
- * MEMORIA
- * SERVIZI
- * PIANO
- * PREZZO
-7. Fai clic su **Contenitori** per visualizzare l'assegnazione della quota utilizzate e disponibile per i contenitori. L'assegnazione del contenitore varia a seconda del piano prezzi. Puoi visualizzare i dettagli della quota per le seguenti risorse:
- * MEMORIA
- * IP PUBBLICO
- * CONDIVISIONI FILE
-8. Fai clic su **Server virtuali** per visualizzare le macchine virtuali.
+To view the used and allocated quota for an org, complete the following steps:
+1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+2. Identify the organization that you want to view the quota for, and click **View Details**.
+3. Click **Edit Org**.
+4. If you have spaces defined in more than one region, select the specific region that you want to view.
+5. Click **QUOTA**. 
+6. By default, the **Cloud Foundry** quota page opens. You can view the quota details for the following resources:
+ * MEMORY
+ * SERVICES
+ * PLAN
+ * PRICE
+7. Click **Containers** to view the used and available container quota allocation. The container allocation varies depending on your pricing plan. You can view the quota details for the following resources:
+ * MEMORY
+ * PUBLIC IP
+ * FILE SHARES
+8. Click **Virtual Servers** to view the virtual machines.
 
-**Nota:** i contenitori non sono disponibili nella regione {{site.data.keyword.Bluemix_notm}} Sydney. 
+**Note:** Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region. 
 
-Per ulteriori informazioni sui contenitori, vedi [Quota](/docs/containers/container_planning.html#container_planning_quota) nella documentazione dei contenitori.
-Per modificare la quota assegnata a un'organizzazione, devi aprire un ticket di supporto. Per ulteriori informazioni sull'apertura di un ticket di supporto, vedi [Richiesta di assistenza clienti](/docs/support/index.html#contacting-support). 
+For more information about containers, see [Quota](/docs/containers/container_planning.html#container_planning_quota) in the Containers documentation.
+To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support). 
 
-## Gestione dei domini
+## Managing domains
 {: #managedomains}
 
-In qualità di proprietario dell'account o di gestore dell'organizzazione, puoi visualizzare il dominio di sistema e aggiungere domini personalizzati per le applicazioni create all'interno di un'organizzazione e dei relativi spazi. In qualità di gestore spazio, la scheda **Domini** per uno spazio è un elenco di sola lettura dei domini assegnati allo spazio.
+As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an organization and its spaces. As a space manager, the **Domains** tab for a space is a read-only list of the domains that are assigned to the space.
 
-1. Fai clic su **Gestione** &gt; **Account** &gt; **Organizzazioni**.
-2. Identifica l'organizzazione per cui vuoi visualizzare o modificare i domini.
-3. Seleziona **Visualizza dettagli** per tale organizzazione.
-4. Fai clic su **Modifica organizzazione**.
-5. Fai clic su **DOMINI**.
+1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+2. Identify the organization that you want to view or edits domains for.
+3. Select **View Details** for that org.
+4. Click **Edit Org**.
+5. Click **DOMAINS**.
 
-Se aggiungi un dominio personalizzato, devi configurare il server DNS per far sì che il tuo dominio personalizzato punti al dominio di sistema {{site.data.keyword.Bluemix_notm}}. In questo modo, quando {{site.data.keyword.Bluemix_notm}} riceve una richiesta per il tuo dominio personalizzato, può correttamente instradarla alla tua applicazione. Il dominio di sistema è sempre disponibile per uno spazio e a uno spazio è anche possibile assegnare dei domini personalizzati. Le applicazioni create in uno spazio possono utilizzare qualsiasi dominio elencato per quello spazio. Per ulteriori informazioni sulla creazione e l'utilizzo dei domini personalizzati, consulta [Utilizzo di un dominio personalizzato](/docs/manageapps/updapps.html#domain).
+If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps created in a space might use any of domains listed for that space. For more information about creating and using custom domains, see [Using a custom domain](/docs/manageapps/updapps.html#domain).

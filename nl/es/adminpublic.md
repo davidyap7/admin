@@ -15,7 +15,7 @@ lastupdated: "2017-03-29"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Registro en Bluemix 
+# Registro en Bluemix
 
 Puede registrarse para obtener una cuenta de {{site.data.keyword.Bluemix}} utilizando un ID de IBM existente, creando un nuevo ID de IBM o utilizando un ID federado. Un ID federado es un ID dentro del dominio de una empresa que ha sido registrado con IBM, por lo que el dominio y las credenciales de usuario pueden utilizarse para acceder a aplicaciones web de IBM.
 {:shortdesc}

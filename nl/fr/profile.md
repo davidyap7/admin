@@ -14,13 +14,13 @@ lastupdated: "2017-03-29"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Configuration de votre profil 
+# Configuration de votre profil
 {: #usersettings}
 
 Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, vous pouvez décider de configurer votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur** pour définir ou mettre à jour vos paramètres de profil.
 {:shortdesc}
 
-Vous pouvez définir ou mettre à jour les informations suivantes : 
+Vous pouvez définir ou mettre à jour les informations suivantes :
 
  * Photo de profil visible par les autres utilisateurs {{site.data.keyword.Bluemix_notm}}
  * Informations IBMid, telles que votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe, votre société et votre rôle
@@ -48,7 +48,7 @@ Cliquez sur l'icône
 Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix_notm}} afin de vous servir des
 fonctions d'infrastructure, de services et d'application. Il est identique à l'ID que vous pouvez utiliser pour accéder à d'autres applications IBM.
 
-Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société. 
+Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société.
 
 1. Cliquez sur l'icône
 **{{site.data.keyword.avatar}}**
@@ -74,7 +74,7 @@ Afin de désactiver le suivi pour analyse, procédez comme suit :
 **Profil utilisateur**.
 2. Désactivez le suivi pour analyse en spécifiant **off**.
 
-## Envoi de commentaires 
+## Envoi de commentaires
 {: #feedback}
 
 Pour soumettre des idées qui pourraient améliorer {{site.data.keyword.Bluemix_notm}}  et les services, accédez à [IBM Cloud Ideas ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Pour plus d'informations sur l'utilisation du nouveau portail d'idées, voir [Think, write, submit: New ideas portal for IBM Cloud ![Icône de lien externe](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.

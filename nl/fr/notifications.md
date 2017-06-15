@@ -19,7 +19,7 @@ lastupdated: "2017-03-23"
 Abonnez-vous pour recevoir des notifications relatives aux mises à jour de maintenance des régions publiques de la plateforme {{site.data.keyword.Bluemix_notm}} et aux plafonds des dépenses pour le compte. Les notifications relatives aux dépenses ne sont disponibles que pour les propriétaires de compte Paiement à la carte ou Abonnement.
 {:shortdesc}
 
-Vous pouvez définir des notifications de plateforme par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}, ainsi que des notifications relatives aux dépenses qui vous informent lorsque vous vous approchez du plafond des dépenses que vous avez spécifié pour votre compte. Sélectionnez **Gérer > Compte > Notifications** afin de définir différents types de notification pour votre compte. 
+Vous pouvez définir des notifications de plateforme par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}, ainsi que des notifications relatives aux dépenses qui vous informent lorsque vous vous approchez du plafond des dépenses que vous avez spécifié pour votre compte. Sélectionnez **Gérer > Compte > Notifications** afin de définir différents types de notification pour votre compte.
 
 ## Définition de notifications de plateforme
 {: #platform}
