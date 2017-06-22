@@ -15,348 +15,348 @@ lastupdated: "2017-04-07"
 {:screen:.screen}
 {:codeblock:.codeblock}
 
-# Setting up your Bluemix environment
+# Configurazione del tuo ambiente Bluemix
 {: #patterns}
 
-For a successful project, take time to plan and design which resources you need and what your enterprise requirements are. To help you get started with your cloud project, consider the following questions:
+Per il buon esito di un progetto, ti occorre del tempo per pianificare e progettare quali siano le risorse di cui hai bisogno e i requisiti della tua azienda. Per aiutarti a iniziare con il tuo progetto cloud, considera le seguenti domande:
 
-* How many, and what type of, applications will be developed?
-* Which services will the applications need to access?
-* Who will be collaborating in the development process and what role will they play?
-* What degree of isolation is required for each phase of the project?
-* Will your enterprise supply the infrastructure resources?
-* How does your company communicate?
-* Is there a naming standard that you can implement to clearly identify the organization and space usage?   
+* Quante e quali tipi di applicazioni verranno sviluppate?
+* A quali servizi dovranno accedere le applicazioni?
+* Chi collaborerà nel processo di sviluppo e quale sarà il suo ruolo?
+* Che grado di isolamento è richiesto per ogni fase del progetto?
+* La tua azienda fornirà le risorse dell'infrastruttura?
+* In che modo comunica la tua azienda?
+* Esiste una denominazione standard che puoi implementare per identificare chiaramente l'utilizzo dell'organizzazione e dello spazio?   
 
 {:shortdesc}
 
-When you design a cloud solution, also think about account security and operational requirements, country regulations, market directives, and corporate policies.
-To cater for your project needs, {{site.data.keyword.Bluemix}} offers three types of cloud environments.
+Quando progetti una soluzione cloud, considera anche i requisiti funzionali e di sicurezza dell'account, le normative nazionali, le direttive per il mercato e le politiche aziendali.
+Per soddisfare le tue esigenze di progetto, {{site.data.keyword.Bluemix}} offre tre tipi di ambiente cloud.
 
-* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): The infrastructure resources are shared by different companies and users.
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): You use your own dedicated SoftLayer infrastructure, which you can connect securely to the {{site.data.keyword.Bluemix_notm}} Public cloud and your own network.
-* [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): Sits behind your company firewall, which can protect your most sensitive workloads and can connect securely to both {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated clouds.
+* [{{site.data.keyword.Bluemix_notm}} pubblico](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): le risorse dell'infrastruttura sono condivise da differenti aziende e utenti.
+* [{{site.data.keyword.Bluemix_notm}} dedicato](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): utilizza la tua propria infrastruttura SoftLayer dedicata, che puoi collegare in modo sicuro al cloud {{site.data.keyword.Bluemix_notm}} pubblico e alla tua rete.
+* [{{site.data.keyword.Bluemix_notm}} locale](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): si trova dietro il tuo firewall aziendale, può proteggere i tuoi carichi di lavoro più sensibili e può connettersi in modo sicuro ai cloud {{site.data.keyword.Bluemix_notm}} pubblico e {{site.data.keyword.Bluemix_notm}} dedicato.
 
-As part of deciding which type of cloud environment you need, plan the structure of your account, organizations, spaces, resources, and team members.
+Quando devi decidere quale tipo di ambiente cloud ti serve, pianifica la struttura dei tuoi account, organizzazioni, spazi, risorse e membri del team.
 
-For most companies, a single {{site.data.keyword.Bluemix_notm}} account is sufficient. For larger companies, where there is more than one business area, you might
-want a separate {{site.data.keyword.Bluemix_notm}} account for each business domain. For example, within a large banking corporation there might be separate accounts for the retail and commercial sectors.
+Per la maggior parte delle aziende, un account {{site.data.keyword.Bluemix_notm}} è sufficiente. Per le aziende più grandi, in cui c'è più di un'area di business,
+potresti voler un account {{site.data.keyword.Bluemix_notm}} separato per ogni dominio di business. Ad esempio, all'interno di una grande azienda bancaria potrebbero esserci account separati per i settori al dettaglio e commerciali.
 
-The following table provides a summary of some of the key elements.
+La seguente tabella fornisce un riepilogo di alcuni degli elementi chiave.
 
-| Element   | Description |
+| Elemento   | Descrizione |
 |---------------------------------------|--------------------------------------------------------------------------------------|
-| Account   | Each account has one account owner. |
-|| Contains one or more organizations. You must have a Pay-As-You-Go account to create more than one organization. |
-| Account owner   | Responsible for all of the usage charges that are accumulated within the account. |
-|| Can own only one account. |
-|| Can add one or more organization managers to delegate the org management, which includes the read and write permissions to the organizations. |
-|| Can be a team member in organizations and spaces in other {{site.data.keyword.Bluemix_notm}} accounts. |
-| Organization   | Contains one or more spaces. |
-|| Contains one or more org managers. |
-|| Contains one or more team members. Each team member can be granted one or more roles. |
-|| The usage charges, which are generated by a deployed application within a space, are reported at the organization level. |
-| Space   | Contains one or more resources. |
-|| Contains one or more applications. |
-|| Contains one or more space managers. |
-|| Contains one or more team members. Each user must already be a team member in the owning organization. Each team member can be granted one or more roles. |
-| Team member   | Can be added to one or more organizations and spaces across different accounts. |
-|| Can be given more than one role within the same organization, space, or both. |
-{:caption="Table 1. Description of key elements" caption-side="top"}
+| Account   | Ogni account ha un solo proprietario. |
+|| Contiene una o più organizzazioni. Per creare più di un'organizzazione, devi disporre di un account con pagamento a consumo. |
+| Proprietario dell'account   | Responsabile di tutti gli addebiti di utilizzo che si accumulano all'interno dell'account. |
+|| Puoi essere proprietario di un solo account. |
+|| Puoi aggiungere uno o più gestori dell'organizzazione per delegarne la gestione, che comprende le autorizzazioni di lettura e scrittura per le organizzazioni. |
+|| Puoi essere un membro del team in organizzazioni e spazi di altri account {{site.data.keyword.Bluemix_notm}}. |
+| Organizzazione   | Contiene uno o più spazi. |
+|| Contiene uno o più gestori organizzazione. |
+|| Contiene uno o più membri del team. A ogni membro del team possono essere concessi uno o più ruoli. |
+|| Gli addebiti di utilizzo, che vengono generati da un'applicazione distribuita in uno spazio, vengono segnalati a livello dell'organizzazione. |
+| Spazio   | Contiene una o più risorse. |
+|| Contiene una o più applicazioni. |
+|| Contiene uno o più gestori spazio. |
+|| Contiene uno o più membri del team. Ogni utente deve essere già un membro del team nell'organizzazione proprietaria. A ogni membro del team possono essere concessi uno o più ruoli. |
+| Membro del team   | Può essere aggiunto a una o più organizzazioni e spazi tra i diversi account. |
+|| Gli può essere fornito più di un ruolo all'interno della stessa organizzazione e/o dello stesso spazio. |
+{:caption="Tabella 1.  Descrizione di elementi chiave" caption-side="top"}
 
-## Determining your {{site.data.keyword.Bluemix_notm}} environment
+## Determinazione del tuo ambiente {{site.data.keyword.Bluemix_notm}}
 {: #bpimplementation}
 
-Instead of the traditional, strictly defined development, test, and production methodology, you can implement an environment where developers and testers can collaborate along with other team members. If you design the way you want to develop and deliver your aplications, you can create {{site.data.keyword.Bluemix_notm}} spaces to fulfil that methodology. Instead of designing your environment from the organization level down, consider designing your {{site.data.keyword.Bluemix_notm}} environment from the space level up.
+Invece della rigorosa metodologia di sviluppo, test e produzione tradizionale, puoi implementare un ambiente in cui sviluppatori e tester siano in grado di collaborare con gli altri membri del team. Se progetti il modo in cui vuoi sviluppare e distribuire le tue applicazioni, puoi creare degli spazi {{site.data.keyword.Bluemix_notm}} per soddisfare questa metodologia. Anziché progettare il tuo ambiente dal livello dell'organizzazione a scendere, prova a progettare il tuo ambiente {{site.data.keyword.Bluemix_notm}} dal livello dello spazio a salire.
 
-Consider the scale and scope of the applications you plan to develop and deploy. A {{site.data.keyword.Bluemix_notm}} space can be used as a development environment for one or more applications that are tightly connected or defined. Apart from a development space, for example, you might want to create spaces for unit testing, performance testing, and integration testing. Spaces can also be defined for build, staging, and production. Each of the spaces that you create can be shared with different team members within the same organization.
+Considera la dimensione e l'ambito delle applicazioni che intendi sviluppare e distribuire. Uno spazio {{site.data.keyword.Bluemix_notm}} può essere utilizzato come ambiente di sviluppo per una o più applicazioni strettamente connesse o definite. Oltre a uno spazio di sviluppo, ad esempio, potresti voler creare degli spazi per i test di unità, test delle prestazioni e test di integrazione. Inoltre, gli spazi possono essere definiti per le fasi di creazione, preparazione e produzione. Ogni spazio creato può esser condiviso con diversi membri del team all'interno della stessa organizzazione.
 
-Create separate {{site.data.keyword.Bluemix_notm}} organizations when you have people working on different business areas and where their activities do not overlap. If there are two completely independent groups, then creating an organization for each defines clear boundaries for the delivery and management of team players and resources. You can define an API to communicate between the organizations.  
+Crea delle organizzazioni {{site.data.keyword.Bluemix_notm}} separate per le persone che lavorano in diverse aree di business e in cui le loro attività non si sovrappongano. Se ci sono due gruppi completamente indipendenti, la creazione di un'organizzazione per ognuno di questi definisce chiaramente i limiti per la distribuzione e gestione dei gruppi e delle risorse. Puoi definire una API per la comunicazione tra le organizzazioni.  
 
-{{site.data.keyword.Bluemix_notm}} organizations can be created to match how you want to work rather than the structure within a company. Typically, company organizations can change but the development and maintenance of an application will continue regardless.
-Design your {{site.data.keyword.Bluemix_notm}} environment for the lifetime of the applications and not on your company organization structure.
+Le organizzazioni {{site.data.keyword.Bluemix_notm}} possono essere create per soddisfare il modo in cui vuoi lavorare anziché la struttura all'interno di un'azienda. Di norma, le organizzazioni aziendali possono cambiare, ma lo sviluppo e la manutenzione di un'applicazione continueranno a prescindere.
+Progetta il tuo ambiente {{site.data.keyword.Bluemix_notm}} per tutta la durata delle applicazioni e non in base alla struttura dell'organizzazione aziendale.
 
-Iterative development and deployment can result in applications expanding quickly. Your delivery process design must be able to scale up quickly and easily. You will want continuous development with a fast deployment rate. Having your development and production spaces in the same {{site.data.keyword.Bluemix_notm}} organization will provide access to the same resources. Managing different spaces within a single organization reduces the administration overhead. The development, test, and operations personnel can collaborate easily if they are working within the same {{site.data.keyword.Bluemix_notm}} organization.
+Lo sviluppo e la distribuzione iterativa possono comportare una rapida espansione delle applicazioni. La progettazione del tuo processo di distribuzione deve potersi incrementare in modo rapido e veloce e tu necessiterai di uno sviluppo continuo con un tasso di distribuzione elevato. Con gli spazi di sviluppo e produzione presenti nella stessa organizzazione {{site.data.keyword.Bluemix_notm}}, si fornirà accesso alle stesse risorse. La gestione di spazi diversi all'interno di una singola organizzazione riduce i doveri amministrativi. Il personale addetto allo sviluppo, al test e alle operazioni può collaborare facilmente se lavorano tutti all'interno della stessa organizzazione {{site.data.keyword.Bluemix_notm}}.
 
-Implement a naming standard to clearly identify the organization and space usage. For example, you might include the type of cloud, the geographical region, the usage type (such as dev, test, prod), the application name, and the version or revision number. The organizations and spaces can then be easily identified for administration and access purposes.  
+Implementa una denominazione standard per identificare chiaramente l'utilizzo dell'organizzazione e dello spazio. Ad esempio, potresti includere il tipo di cloud, la regione geografica, il tipo di utilizzo (ad esempio, sviluppo, test, produzione), il nome dell'applicazione e il numero di versione o revisione. Le organizzazioni e gli spazi possono essere facilmente identificati per scopi di amministrazione e accesso.  
 
-The number of spaces can multiply rapidly because of iterative development. You can define as many spaces as you need within an organization. If you plan to define a large number of spaces, you might want to create an application to help manage the spaces. When the number of spaces exceeds sixty, you might want to consider defining another organization.
+Il numero di spazi può moltiplicarsi rapidamente per via dello sviluppo iterativo. All'interno di un'organizzazione, puoi definire il numero di spazi desiderato. Se intendi definire un numero elevato di spazi, potresti creare un'applicazione per facilitare la gestione di tali spazi. Se il numero di spazi supera sessanta, puoi valutare la possibilità di definire un'altra organizzazione.
 
-Have one person create and manage an organization, define the spaces, and grant team member access. A second person can be given the same access to maintain the environment when the organization manager is unavailable.  
+Scegli una persona che crei e gestisca un'organizzazione, definisca gli spazi e conceda l'accesso ai membri del team. A una seconda persona può essere fornito lo stesso accesso per mantenere l'ambiente quando il gestore dell'organizzazione non è disponibile.  
 
-Identify all of the people who will need access to each space and organization. Determine their role. The job role of a team member will determine their authority. For example, a senior developer will need the authority to view and update the whole {{site.data.keyword.Bluemix_notm}} development environment. However, a junior developer will be limited as to what they can view and update.
+Identifica tutte le persone che avranno bisogno dell'accesso a ogni spazio e organizzazione. Determina i loro ruoli. Il ruolo lavorativo di un membro del team ne determina l'autorità. Ad esempio, uno sviluppatore senior avrà bisogno dell'autorità per visualizzare e aggiornare l'intero ambiente di sviluppo {{site.data.keyword.Bluemix_notm}}. Tuttavia, per uno sviluppatore junior vi saranno delle limitazioni su ciò che potrà visualizzare e aggiornare.
 
-## Determining your organization architecture
+## Determinazione dell'architettura della tua organizzazione
 {: #orgstructure}
 
-To design a cloud environment that uses {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, {{site.data.keyword.Bluemix_notm}} Local, or any combination, you can use the following organization architectures:
+Per progettare un ambiente cloud che utilizzi {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato, {{site.data.keyword.Bluemix_notm}} locale o una qualsiasi combinazione di essi, puoi utilizzare le seguenti architetture di organizzazione:
 
-* Single-organization: Consider using this architecture if you require the same set of users to access resources that are available anywhere in the organization either in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local.
-* Multi-organization: Consider using this architecture if you require isolation between different environments within {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local.
+* Singola organizzazione: prendi in considerazione l'utilizzo di questa architettura se richiedi che lo stesso insieme di utenti acceda alle risorse disponibili in tutta l'organizzazione in {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato o {{site.data.keyword.Bluemix_notm}} locale.
+* Più organizzazioni: prendi in considerazione l'utilizzo di questa architettura se richiedi l'isolamento tra i diversi ambienti all'interno di {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato o {{site.data.keyword.Bluemix_notm}} locale.
 
-### Single-organization versus multi-organization
+### Singola organizzazione contro più organizzazioni
 {: #singleormulti}
 
-In a single-organization environment, the infrastructure resources are shared by different areas of
-the company. Whereas, in a multi-organization environment the infrastructure resources are not shared.
+In un ambiente a singola organizzazione, le risorse dell'infrastruttura sono condivise dalle diverse aree
+dell'azienda. Al contrario, in un ambiente a più organizzazioni le risorse dell'infrastruttura non sono condivise.
 
-Both organization architectures support the following priciples:
+Entrambe le architetture dell'organizzazione supportano i seguenti principi:
 
-* Boundary enforcement for applications, projects, or both.
-* Authorization to manage resources granted by user role.
+* Applicazione di limiti per applicazioni e/o progetti.
+* Autorizzazione per gestire le risorse concessa dal ruolo utente.
 
-To implement a single-organization architecture, create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or
-{{site.data.keyword.Bluemix_notm}} Local, and define one organization. You can then define multiple spaces that are based on different lines of business (LOB),
-the delivery phases, specific projects, applications, user permisisons, or a combination of these components.
+Per implementare un'architettura a singola organizzazione, crea un account in {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato o
+{{site.data.keyword.Bluemix_notm}} locale e definisci un'organizzazione. Puoi quindi definire più spazi basati su differenti linee di business (LOB),
+fasi di distribuzione, specifici progetti, applicazioni, autorizzazioni utente o una combinazione di questi componenti.
 
-To implement a multi-organization architecture, create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated,
-or {{site.data.keyword.Bluemix_notm}} Local. Next, you can define organizations that correspond to different LOBs, delivery phases,
-specific projects, user permisisons, or a combination of these components. You can then define multiple spaces that are based on applications or projects that are delivered by the same department in the company.
+Per implementare un'architettura a più organizzazioni, crea un account in {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato
+o {{site.data.keyword.Bluemix_notm}} locale. Successivamente, puoi definire le organizzazioni che corrispondono a differenti LOB, fasi di distribuzione.
+specifici progetti, autorizzazioni utente o una combinazione di questi componenti. Puoi quindi definire più spazi che si basano su applicazioni o progetti forniti dallo stesso reparto nell'azienda.
 
-**Note:** You must have a billable account, such as Pay-As-You-Go or Subscription, to define multiple organizations.
+**Nota:** per definire più organizzazioni, devi disporre di un account fatturabile, ad esempio Pagamento a consumo o Sottoscrizione.
 
-### Organization considerations
+### Considerazioni sulle organizzazioni
 {: #orgconsiderations}
 
-When you implement a single-organization architecture, the organization includes all of the cloud resources, services, and applications that you use to develop, manage, and
-deploy cloud applications. In {{site.data.keyword.Bluemix_notm}} Public, the organization provides segregation between accounts and is available across all regions.
+Quando implementi un'architettura a singola organizzazione, questa include ogni risorsa cloud, servizio e applicazione da te utilizzati per sviluppare, gestire e
+distribuire le applicazioni cloud. In {{site.data.keyword.Bluemix_notm}} pubblico, l'organizzazione fornisce la separazione tra gli account ed è disponibile in tutte le regioni.
 
- ![Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
+ ![Figura che mostra l'architettura a singola organizzazione in {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
 
- Figure 1. Example of a single-organization architecture for {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, and
- {{site.data.keyword.Bluemix_notm}} Local
+ Figura 1. Esempio di architettura a singola organizzazione per {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato e
+ {{site.data.keyword.Bluemix_notm}} locale
 {: #bpfigure1}
 
-When you implement a multi-organization architecture, organizations provide the first level of boundary enforcement and abstraction that you can use to control and define what can be
-done and by whom. Design each organization around the different LOBs, the delivery phases, the roles of the users, specific projects, or a combination of these components.  
+Quando implementi un'architettura a più organizzazioni, le organizzazioni forniscono il primo livello di applicazione di limiti e astrazione che puoi utilizzare per controllare e definire
+cosa può essere fatto e da chi. Progetta ogni organizzazione attorno a differenti LOB, fasi di distribuzione, specifici progetti o una combinazione di questi componenti.  
 
-The number of organizations that you require depends on multiple factors:
+Il numero di organizzazioni necessarie dipende da più fattori:
 
-* The level of granularity that you require within your organization to manage quotas and control costs.
-* The level of security that you must enforce in your different environments. For example, if you are using containers, you might want to segregate container images that are used for development from the container images that are used for production.
-* The location of the organizations due to corporate, country, and industry requirements. For example, you might want to run all of your apps in a dedicated cloud that is located in a specific region in your geography (geo).
+* Il livello di granularità di cui hai bisogno all'interno della tua organizzazione per gestire le quote e controllare i costi.
+* Il livello di sicurezza che devi applicare nei tuoi diversi ambienti. Ad esempio, se utilizzi dei contenitori, potresti voler separare le immagini di contenitore utilizzate per lo sviluppo da quelle utilizzate per la produzione.
+* La posizione delle organizzazioni dovuta ai requisiti aziendali, del paese e del settore. Ad esempio, potresti voler eseguire tutte le tue applicazioni in un cloud dedicato che si trova in una specifica regione della tua area geografica.
 
-When you are defining the different organizations for your cloud structure, consider the following guidance:
+Quando definisci le diverse organizzazioni per la tua struttura cloud, tieni presenti le seguenti indicazioni:
 
-* Define and then enforce a naming convention. For example, define a naming convention where the name of the organization includes information about the business area, the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated), and the process phase (development, testing, or production). For organizations that are located in {{site.data.keyword.Bluemix_notm}} Public, you might want to add information about the region too.
-* Define the restrictions that apply to the organization. For example, define the role of the team members that are going to work in that organization.
-* Identify the manager of the organization.
-* Identify the area of the business that is allocated to this organization.
+* Definisci e quindi applica una convenzione di denominazione. Ad esempio, definisci una convenzione di denominazione in cui il nome dell'organizzazione include informazioni sull'area di business, sul tipo di cloud ({{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} locale o {{site.data.keyword.Bluemix_notm}} dedicato) e sulla fase del processo (sviluppo, test o produzione). Per le organizzazioni che si trovano in {{site.data.keyword.Bluemix_notm}} pubblico, potresti anche aggiungere informazioni sulla regione.
+* Definisci le restrizioni applicabili all'organizzazione. Ad esempio, definisci il ruolo dei membri del team che lavoreranno in tale organizzazione.
+* Identifica il gestore dell'organizzazione.
+* Identifica l'area di business assegnata a questa organizzazione.
 
-The following scenarios show different approaches that you can adopt when you define the number of {{site.data.keyword.Bluemix_notm}} organizations in a cloud environment:
-* **Scenario 1: Segregation of user groups by business application delivery**
+I seguenti scenari mostrano i diversi approcci che puoi adottare per definire il numero di organizzazioni {{site.data.keyword.Bluemix_notm}} in un ambiente cloud:
+* **Scenario 1: Separazione dei gruppi di utenti in base alla distribuzione delle applicazioni di business**
 
- Description: Corporate rules require that the apps of each LOB must be developed, managed, and deployed by users from each LOB. Security must be enforced so that users can access only the apps that are relevant to their part of the business. So, the users work in different business areas, the applications they are working on require access to different {{site.data.keyword.Bluemix_notm}} resources, and there is no activity overlap.
+ Descrizione: le regole aziendali richiedono che le applicazioni di ogni LOB siano sviluppate, gestite e distribuite dagli utenti di ciascuna LOB. È necessario applicare la sicurezza in modo che gli utenti possano accedere solo alle applicazioni pertinenti alla loro parte del business. Dunque, gli utenti lavorano in differenti aree di business, le applicazioni su cui stanno lavorando richiedono l'accesso alle diverse risorse {{site.data.keyword.Bluemix_notm}} e non vi è alcuna sovrapposizione di attività.
 
-  Solution: You can create an organization for each business application delivery process. For example, one organization for retail banking, and one for investment banking.
+  Soluzione: puoi creare un'organizzazione per ogni processo di distribuzione delle applicazioni di business. Ad esempio, un'organizzazione per l'attività bancaria al dettaglio e una per l'attività di investimento.
 
-  ![Figure that shows segregation of users by business application delivery](images/bank_example.svg "Figure that shows segregation of users by business application delivery")
+  ![Figura che mostra la separazione degli utenti in base alla distribuzione delle applicazioni di business](images/bank_example.svg "Figure that shows segregation of users by business application delivery")
 
-  Figure 2. Example of a multi-organization architecture aligned to LOB delivery
+  Figura 2. Esempio di architettura a più organizzazioni allineata alla distribuzione LOB
 {: #bpfigure2}
 
-* **Scenario 2: Segregation based on type of users (internal users, external users)**
+* **Scenario 2: Separazione in base al tipo di utenti (utenti interni e utenti esterni)**
 
-  Description: Your company works with different partners and you require clear boundaries between internal and external users.
+  Descrizione: la tua azienda lavora con diversi partner e hai bisogno di stabilire dei chiari limiti tra gli utenti interni ed esterni.
 
-  Solution: You can create an organization to deliver applications that are used internally. In addition, you can create one organization  for each external partner.
+  Soluzione: puoi creare un'organizzazione per distribuire le applicazioni utilizzate internamente e puoi creare inoltre un'organizzazione per ogni partner esterno.
 
-* **Scenario 3: Isolation by project**
+* **Scenario 3: Isolamento in base al progetto**
 
-  Description: Your company runs hackathons to identify new services.  
+  Descrizione: la tua azienda organizza degli hackathon per identificare nuovi servizi.  
 
-  Solution: You can define one organization per hackathon and use the organization as a sandbox. After the hackathon, you can promote the sandbox organization into an additional organization in your account.
+  Soluzione: puoi definire un'organizzazione per ogni hackathon e utilizzare l'organizzazione come un sandbox. Dopo l'hackathon, puoi promuovere l'organizzazione sandbox in un'ulteriore organizzazione nel tuo account.
 
-* **Scenario 4: Isolation of users by delivery phase**
+* **Scenario 4: Isolamento di utenti in base alla fase di distribuzione**
 
-  Description: A company wants development, test, and production users to collaborate across a delivery, but their access is controlled by user role and job experience.
+  Descrizione: un'azienda vuole che gli utenti di sviluppo, test e produzione collaborino in una distribuzione, ma il loro accesso è controllato dal ruolo utente e dall'esperienza lavorativa.
 
-  Solution: You can create a single-organization and define a space for each delivery phase. Then, depending on the user role and job experience, grant the read and write access they require to complete their work and also collaborate within the organization.
+  Soluzione: puoi creare una singola organizzazione e definire uno spazio per ogni fase di distribuzione. Quindi, a seconda del ruolo utente e dell'esperienza lavorativa, concedi agli utenti l'accesso in lettura e scrittura richiesto per completare il loro lavoro e per collaborare all'interno dell'organizzazione.
 
-  ![Figure that shows isolation of users by delivery phase](images/user_groups_example.svg "Figure that shows isolation of users by delivery phase")
+  ![Figura che mostra l'isolamento degli utenti in base alla fase di distribuzione](images/user_groups_example.svg "Figure that shows isolation of users by delivery phase")
 
-   Figure 3. Example of a single-organization architecture aligned by delivery phase
+   Figura 3. Esempio di architettura a singola organizzazione allineata alla fase di distribuzione
 {: #bpfigure3}
 
-### Organization naming, restrictions, and management 
+### Denominazione, restrizioni e gestione dell'organizzazione 
 {: #orgadmin}   
 
-Consider the following organization guidance:
+Tieni conto delle seguenti indicazioni sull'organizzazione:
 
-* Define and enforce a naming convention. For example, define a naming convention where the name of the organization includes information about the business area, the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated), and the IT role (development, testing, or production). For organizations that are located in {{site.data.keyword.Bluemix_notm}} Public, you might want to add information about the region too. You can change the name of an organization after it is created. If an organization name is altered, notify all of the organization team members about the change.
-* Define the restrictions that apply to the organization. For example, define the role of each of the team members and the permissions they need to work in that organization.
-* Identify the manager of the organization. You might want to delegate the organization administration to more that one person.
-* Identify the area of the business that is allocated to this organization. The application usage that is generated in each of the spaces, within the organization, is accumulated and reported at the organization level.
+* Definisci e applica una convenzione di denominazione. Ad esempio, definisci una convenzione di denominazione in cui il nome dell'organizzazione include informazioni sull'area di business, sul tipo di cloud ({{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} locale o {{site.data.keyword.Bluemix_notm}} dedicato) e sul ruolo IT (sviluppo, test o produzione). Per le organizzazioni che si trovano in {{site.data.keyword.Bluemix_notm}} pubblico, potresti anche aggiungere informazioni sulla regione. Puoi modificare il nome di un'organizzazione dopo che è stata creata. Se un nome organizzazione viene modificato, avvisa tutti i membri del team dell'organizzazione in merito alla modifica.
+* Definisci le restrizioni applicabili all'organizzazione. Ad esempio, definisci il ruolo di ogni membro del team e le autorizzazioni necessarie per lavorare in tale organizzazione.
+* Identifica il gestore dell'organizzazione. Potresti voler delegare l'amministrazione dell'organizzazione a più di una persona.
+* Identifica l'area di business assegnata a questa organizzazione. L'utilizzo dell'applicazione generato in ciascuno spazio all'interno dell'organizzazione, viene accumulato e segnalato a livello dell'organizzazione.
 
-## Determining your spaces
+## Determinazione dei tuoi spazi
 {: #determinespaces}
 
-Within an organization, spaces provide an additional level of boundary enforcement and abstraction.
+All'interno di un'organizzazione, gli spazi forniscono un ulteriore livello di applicazione di limiti e astrazione.
 
-A space is a reserved area in the organization where users can develop and run applications and services. You can create any number of spaces in an organization, and you can control the users that have access to a space. See [Spaces](/docs/admin/orgs_spaces.html#spaceinfo "Spaces") for more details.
+Uno spazio è un'area riservata dell'organizzazione in cui gli utenti possono sviluppare ed eseguire applicazioni e servizi. Puoi creare un numero qualsiasi di spazi all'interno di un'organizzazione e puoi controllare gli utenti che hanno accesso a uno spazio. Per ulteriori dettagli, vedi [Spazi](/docs/admin/orgs_spaces.html#spaceinfo "Spaces").
 
-If you plan to define a large number of spaces, you might want to create an application to help manage the spaces. When the number of
-spaces exceeds sixty, you might want to consider defining another organization.
+Se intendi definire un numero elevato di spazi, potresti creare un'applicazione per facilitare la gestione di tali spazi. Se il numero di
+spazi supera sessanta, puoi valutare la possibilità di definire un'altra organizzazione.
 
-### Spaces for single-organization versus multi-organization
+### Spazi per singola organizzazione contro più organizzazioni
 {: #spaceconsiderations}
 
-When you adopt a single-organization architecture, the level of segregation and abstraction is provided by the spaces that you define within the organization. Consider the following guidance when you define spaces:
+Quando adotti un'architettura a singola organizzazione, il livello di separazione e astrazione viene fornito dagli spazi da te definiti all'interno dell'organizzazione. Tieni conto delle seguenti indicazioni quando definisci gli spazi:
 
-* Define a space to host a service that requires provisioning and configuring only once in the organization.
-* Define spaces based on the delivery lifecycle.
-  For example, you can define one or more spaces for applications that are being developed, one or more spaces for applications that are in the test phase, and one or more
-  spaces for applications that are in production.
-* If the delivery lifecycle boundary is not sufficient, you can achieve more segregation by defining one or more spaces per LOB and delivery phase.
-* Identify if you need to enforce boundaries for different users groups.
-  For example, your developers cannot develop the application and test it. You require a different set of users to test the application. In this scenario, you create two spaces, one for
-  developers of the application and one for testers of the application. Then grant each set of users access to the correct space.
+* Definisci uno spazio per ospitare un servizio che richieda di effettuare una sola volta il provisioning e la configurazione nell'organizzazione.
+* Definisci gli spazi in base al ciclo di vita della distribuzione.
+  Ad esempio, puoi definire uno o più spazi per le applicazioni da sviluppare, uno o più spazi per le applicazioni che si trovano già in fase di test e uno o più
+  spazi per le applicazioni che sono in produzione.
+* Se il limite del ciclo di vita della distribuzione non è sufficiente, puoi ottenere ulteriore separazione definendo uno o più spazi per ogni LOB e fase di distribuzione.
+* Stabilisci se hai bisogno di applicare dei limiti per i diversi gruppi di utenti.
+  Ad esempio, gli sviluppatori non possono sviluppare l'applicazione e testarla. Hai bisogno di un insieme di utenti diverso per testare l'applicazione. In questo scenario crei due spazi, uno per
+  gli sviluppatori dell'applicazione e uno per i tester. Ad ogni insieme di utenti concedi quindi l'accesso allo spazio corretto.
 
-When you implement a multi-organization architecture, you can segregate each organization by the LOB, the delivery lifecycle, or both. You can then define
-multiple spaces, which are based on the number of applications or projects that are delivered by the same department in the company. Consider the following guidance when you plan the spaces in an organization:
+Quando implementi un'architettura a più organizzazioni, puoi separare ogni organizzazione in base alla LOB e/o al ciclo di vita della distribuzione. Puoi quindi definire
+più spazi che si basano sul numero di applicazioni o progetti forniti dallo stesso reparto nell'azienda. Tieni conto delle seguenti indicazioni quando pianifichi gli spazi in un'organizzazione:
 
-* Define a space to host a service that requires provisioning and configuring only once in the organization.
-* Define a space per application, per group of related applications, or for a specific project.
-* If you need to enforce boundaries for different users, define a space for each set of users. When a user is granted a developer role in a space, that user has full access to any resources and {{site.data.keyword.Bluemix_notm}} services) that are provisioned and running in that space. When you need to enforce tighter security to prevent users controlling every resource, consider defining different spaces. Within any of these spaces, you can provison {{site.data.keyword.Bluemix_notm}} services that are used by the apps running in that space.
+* Definisci uno spazio per ospitare un servizio che richieda di effettuare una sola volta il provisioning e la configurazione nell'organizzazione.
+* Definisci uno spazio per ogni applicazione, per ogni gruppo di applicazioni correlate o per uno specifico progetto.
+* Se hai bisogno di applicare dei limiti per i diversi utenti, definisci uno spazio per ogni insieme di utenti. Quando a un utente viene concesso il ruolo di sviluppatore in uno spazio, tale utente ha accesso completo a tutte le risorse e ai servizi {{site.data.keyword.Bluemix_notm}} forniti e in esecuzione in questo spazio. Se hai bisogno di applicare una maggiore sicurezza per impedire agli utenti di controllare ogni risorsa, valuta la possibilità di definire più spazi. In tutti questi spazi, puoi fornire i servizi {{site.data.keyword.Bluemix_notm}} utilizzati dalle applicazioni in esecuzione in tale spazio.
 
-### Space naming, restrictions, and management  
+### Denominazione, restrizioni e gestione dello spazio  
 {: #spaceadmin}
 
-To define the different spaces for your cloud organization, consider the following guidance:
+Per definire i diversi spazi per la tua organizzazione cloud, tieni presenti le seguenti indicazioni:
 
-* Define and enforce a naming convention. For example, define a naming convention where the space name includes information about where the organization is located and the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local). You can change the name of a space after it is created. If a space name is altered, notify all of the space team members about the change.
-* Define the restrictions that apply to the space. For example, define the type of applications that can be developed, managed, and deployed in each space.
-* Identify the manager of the space. You might want to delegate the space administration to more than one person.
+* Definisci e applica una convenzione di denominazione. Ad esempio, definisci una convenzione di denominazione in cui il nome dello spazio include informazioni sulla posizione dell'organizzazione e sul tipo di cloud ({{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato o {{site.data.keyword.Bluemix_notm}} locale). Puoi modificare il nome di uno spazio dopo che è stato creato. Se un nome spazio viene modificato, avvisa tutti i membri del team dello spazio in merito alla modifica.
+* Definisci le restrizioni applicabili allo spazio. Ad esempio, definisci il tipo di applicazione che è possibile sviluppare, gestire e distribuire in ciascuno spazio.
+* Identifica il gestore dello spazio. Potresti voler delegare l'amministrazione dello spazio a più di una persona.
 
-## Determining quota for an organization
+## Determinazione della quota per un'organizzazione
 {: #determinequota}
 
-When you create an organization in {{site.data.keyword.Bluemix_notm}}, you provision infrastructure resources that include resources such as memory, Internet Protocol (IP), servers, and storage:
-*	For {{site.data.keyword.Bluemix_notm}} Public, a minimum set of resources is allocated by IBM to an organization. Based on the type of account, you have different resource allocations. These resources define the quota that is allocated by IBM to an organization.
-*	For {{site.data.keyword.Bluemix_notm}} Dedicated, you request a set of resources from IBM, and then you can distribute them between the different organizations in your {{site.data.keyword.Bluemix_notm}} Dedicated cloud environment.
-*	For {{site.data.keyword.Bluemix_notm}} Local, you provide the resources and then you can distribute them between organizations in your {{site.data.keyword.Bluemix_notm}} Local cloud environment.
+Quando crei un'organizzazione in {{site.data.keyword.Bluemix_notm}}, fornisci le risorse dell'infrastruttura che includono la memoria, l'IP (Internet Protocol), i server e l'archiviazione:
+*	Per {{site.data.keyword.Bluemix_notm}} pubblico, IBM assegna un insieme minimo di risorse a un'organizzazione. In base al tipo di account, hai diverse assegnazioni delle risorse. Queste risorse definiscono la quota che viene assegnata da IBM a un'organizzazione.
+*	Per {{site.data.keyword.Bluemix_notm}} dedicato, richiedi un insieme di risorse a IBM che potrai quindi distribuire tra le diverse organizzazioni nel tuo ambiente cloud {{site.data.keyword.Bluemix_notm}} dedicato.
+*	Per {{site.data.keyword.Bluemix_notm}} locale, fornisci tu le risorse che potrai quindi distribuire tra le organizzazioni nel tuo ambiente cloud {{site.data.keyword.Bluemix_notm}} locale.
 
-For {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated, you can request additional resources from IBM. For
-{{site.data.keyword.Bluemix_notm}} Local, you are responsible for providing any resources that might be required to run your business in the local cloud.
+Per {{site.data.keyword.Bluemix_notm}} pubblico e {{site.data.keyword.Bluemix_notm}} dedicato, puoi richiedere ulteriori risorse a IBM. Per
+{{site.data.keyword.Bluemix_notm}} locale, sei tu il responsabile di fornire tutte le risorse che potrebbero essere necessarie per gestire il tuo business nel cloud locale.
 
-The quota that is allocated to an organization represents the resources that are available within the organization. You manage the quota and you decide how the resources are distributed across the organization.
+La quota assegnata a un'organizzazione rappresenta le risorse disponibili all'interno dell'organizzazione. Sei tu che gestisci la quota e decidi in che modo vengono distribuite le risorse nell'organizzazione.
 
-### Managing and monitoring quota
+### Gestione e monitoraggio della quota
 {: #managequota}
 
-You manage and monitor the quota of an account by space and by infrastructure. Any resource that is provisioned in a space and is then used by the deployed application consumes a portion of the quota available to the organization.
-* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Public, see [Managing quota](/docs/admin/manageorg.html#managequota "Managing quota").
-* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Dedicated or {{site.data.keyword.Bluemix_notm}} Local, see [Viewing usage and reports](/docs/admin/index.html?pos=2#oc_resource "Viewing usage and reports").
+Puoi gestire e monitorare la quota di un account in base allo spazio e all'infrastruttura. Tutte le risorse fornite in uno spazio e quindi utilizzate dall'applicazione distribuita consumano una parte di quota disponibile nell'organizzazione.
+* Per ulteriori informazioni su come visualizzare e gestire la quota di un'organizzazione in {{site.data.keyword.Bluemix_notm}} pubblico, vedi [Gestione della quota](/docs/admin/manageorg.html#managequota "Managing quota").
+* Per ulteriori informazioni su come visualizzare e gestire la quota di un'organizzazione in {{site.data.keyword.Bluemix_notm}} dedicato o {{site.data.keyword.Bluemix_notm}} locale, vedi [Visualizzazione di utilizzo e report](/docs/admin/index.html?pos=2#oc_resource "Viewing usage and reports").
 
-## Assigning roles
+## Assegnazione di ruoli
 {: #roles}
 
-You can grant multiple roles to team members in a {{site.data.keyword.Bluemix_notm}} account. These roles define the permissions of the user to manage account and organization resources:
-* You can grant [user roles](/docs/iam/users_roles.html#userrolesinfo "user roles" ) to members of an organization. These roles define the level of access within the organization, and restrict who can access a space and its resources. For example, you can grant users different permissions to different spaces.
-* In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local only, you can grant [administrative roles](/docs/admin/index.html#oc_useradmin "administrative roles" ) to members of an account to manage system information, usage of account resources, reports and logs, catalog services, users, and resource usage per organization.
+In un account {{site.data.keyword.Bluemix_notm}}, puoi concedere più ruoli ai membri del team. Questi ruoli definiscono le autorizzazioni dell'utente per gestire le risorse dell'account e dell'organizzazione:
+* Puoi concedere i [ruoli utente](/docs/iam/users_roles.html#userrolesinfo "user roles") ai membri di un'organizzazione. Questi ruoli definiscono il livello di accesso all'interno dell'organizzazione e limitano l'accesso a uno spazio e alle sue risorse. Ad esempio, puoi concedere agli utenti differenti autorizzazioni per spazi diversi.
+* Solo in {{site.data.keyword.Bluemix_notm}} dedicato e {{site.data.keyword.Bluemix_notm}} locale, puoi concedere i [ruoli amministrativi](/docs/admin/index.html#oc_useradmin "administrative roles") ai membri di un account per gestire le informazioni di sistema, l'utilizzo delle risorse dell'account, i report e i log, i servizi di catalogo, gli utenti e l'utilizzo delle risorse per ogni organizzazione.
 
-### Account owner
+### Proprietario dell'account
 {: #accountowner}
 
-Whether you design a multi-organization architecture or a single-organization architecture, the account owner is the super user of the cloud environment.
+Sia che tu scelga di progettare un'architettura a più organizzazioni o un'architettura a singola organizzazione, il proprietario dell'account è il superuser dell'ambiente cloud.
 
-The account owner core tasks include:
+Le attività principali del proprietario dell'account includono:
 
-* Managing the resources of the global account.
-* Creating organizations.
-* Adding team members to the account.
+* Gestione delle risorse dell'account globale.
+* Creazione delle organizzazioni.
+* Aggiunta di membri del team all'account.
 
-To add team members to an account, use the email address of the user or a list of email addresses. In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}}
-Local, you can also use the company LDAP to add users, groups of users, or both. You can also import users from a file. For more information, see [Managing users and permissions](/docs/admin/index.html#oc_useradmin "Managing users and permissions").
+Per aggiungere i membri del team a un account, utilizza l'indirizzo e-mail dell'utente o un elenco di indirizzi e-mail. In {{site.data.keyword.Bluemix_notm}} dedicato e {{site.data.keyword.Bluemix_notm}}
+locale, puoi anche utilizzare il LDAP dell'azienda per aggiungere utenti e gruppi di utenti. Puoi anche importare gli utenti da un file. Per ulteriori informazioni, vedi [Gestione di utenti e autorizzazioni](/docs/admin/index.html#oc_useradmin "Managing users and permissions").
 
-The account owner can also perform the following tasks:
+Il proprietario dell'account può effettuare anche le seguenti attività:
 
-* Add one or more users as managers of an organization by assigning these users the **Manager** role. Consider adding two users as organization managers. The first user acts as the principal manager of the organization. The second user acts as the deputy manager, in case, the principal manager is unavailable.
-* In {{site.data.keyword.Bluemix_notm}} Public, and depending on the [account type](/docs/pricing/index.html#pay-accounts "account type"), setting spending notifications. First, the account owner defines the thresholds that are used to alert him when costs reach a certain limit. Then, [configures email notifications](/docs/admin/account.html#notifications "configures email notifications"). The account manager can use the information in the emails as alert notifications and might take action based on the information provided, for example upgrading the account. **Note:** The account owner is the only person that can receive spending notification emails.
-* Add one or more users as administrators of the account by assigning these users the **Admin** role. Consider adding a minimum of two users. The first user acts as the principal administrator of the account. The second user acts as the deputy administrator.
-* Define the account notifications to inform about maintenance updates or critical incident alerts. These notifications can be configured to send an email or a Short Message Service.
+* Aggiungere uno o più utenti come gestori di un'organizzazione assegnando a tali utenti il ruolo di **Gestore**. Valuta la possibilità di aggiungere due utenti come gestori dell'organizzazione. Il primo utente funge da gestore principale dell'organizzazione mentre il secondo utente funge da sostituto nel caso in cui il gestore principale non sia disponibile.
+* In {{site.data.keyword.Bluemix_notm}} pubblico e a seconda del [tipo di account](/docs/pricing/index.html#pay-accounts "account type"), impostare le notifiche di spesa. Innanzitutto, il proprietario dell'account definisce le soglie utilizzate per gli avvisi quando i costi raggiungono un certo limite. Quindi, [configura le notifiche e-mail](/docs/admin/account.html#notifications "configures email notifications"). Il gestore dell'account può utilizzare le informazioni contenute nelle e-mail come notifiche di avviso e potrebbe intervenire in base alle informazioni fornite, ad esempio aggiornando l'account. **Nota:** il proprietario dell'account è l'unica persona che può ricevere le e-mail di notifica di spesa.
+* Aggiungere uno o più utenti come amministratori dell'account assegnando a tali utenti il ruolo **Admin**. Valuta la possibilità di aggiungere almeno due utenti. Il primo utente funge da amministratore principale dell'account mentre il secondo utente funge da vice amministratore.
+* Definire le notifiche di account per informare sugli aggiornamenti di manutenzione o gli avvisi di incidenti critici. Queste notifiche possono essere configurate per l'invio di un'e-mail o un SMS.
 
-### User roles
+### Ruoli utente
 {: #userroles}
 
-User roles define the permissions that you can assign to a team member in an organization and define the level of access that a team member has within the organization and each space.
+I ruoli utente definiscono le autorizzazioni che puoi assegnare a un membro del team in un'organizzazione e definire il livello di accesso di cui dispone un membro del team all'interno dell'organizzazione e di ciascuno spazio.
 
-In a multi-organization architecture or in a single-organization architecture, define the team members and the permissions that each user requires to complete their work:
+In un'architettura a più organizzazioni o in un'architettura a singola organizzazione, definisci i membri del team e le autorizzazioni richieste da ciascun utente per completare il proprio lavoro:
 
-1. Identify the set of users that require access to an organization.
-2. Define the permissions for each team member in the organization and in a space of the organization.
-3. Select the role that grants a user the permissions they require.
+1. Identifica l'insieme di utenti che richiedono accesso a un'organizzazione.
+2. Definisci le autorizzazioni per ogni membro del team nell'organizzazione e in uno spazio dell'organizzazione.
+3. Seleziona il ruolo che conceda a un utente le autorizzazioni richieste.
 
-   * Organization manager
-   * Organization auditor
-   * Organization billing manager
-   * Space manager
-   * Space developer
-   * Space auditor
+   * Gestore organizzazione
+   * Revisore organizzazione
+   * Gestore fatturazione dell'organizzazione
+   * Gestore spazio
+   * Sviluppatore spazio
+   * Revisore spazio
 
-#### Organization manager
+#### Gestore organizzazione
 {: #bporgmgr}
 
-The tasks that an organization manager is responsible for includes creating spaces, distributing the quota between the spaces, inviting team members and optionally granting them specific roles, and defining custom domains.
+Le attività di cui è responsabile un gestore organizzazione includono la creazione di spazi, la distribuzione della quota tra gli spazi, l'invito dei membri del team e, facoltativamente, la concessione di specifici ruoli e la definizione di domini personalizzati.
 
-#### Organization auditor
+#### Revisore organizzazione
 {: #bporgauditor}
 
-The team members with the organization **Auditor** role can monitor the quota, the resource usage, and the team members for all of the spaces in an organization.
-The auditors can then report on the organization efficiency and highlight any potential problems.
+I membri del team con il ruolo **Revisore** dell'organizzazione possono monitorare la quota, l'utilizzo delle risorse e i membri del team di tutti gli spazi in un'organizzazione.
+I revisori possono quindi riferire in merito all'efficienza dell'organizzazione ed evidenziare eventuali problemi.
 
-* When you adopt a multi-organization architecture, you might want to grant the auditor role to the same team members for every organization that is part of the account.
-Then, these team members can monitor the quota across all of the organizations in your cloud environment and obtain a global view of the account.
-* When you adopt a single-organization architecture, grant the auditor role to the team members with the responsibility for monitoring the quota usage and overall efficiency
-of the organization.
+* Quando adotti un'architettura a più organizzazioni, potresti voler concedere il ruolo di revisore agli stessi membri del team per ogni organizzazione che fa parte dell'account.
+Questi membri del team possono quindi monitorare la quota in tutte le organizzazioni del tuo ambiente cloud e ottenere una visione globale dell'account.
+* Quando adotti un'architettura a singola organizzazione, concedi il ruolo di revisore ai membri del team con la responsabilità di monitorare l'utilizzo della quota e l'efficienza
+complessiva dell'organizzazione.
 
-#### Organization billing manager
+#### Gestore fatturazione dell'organizzazione
 {: #bporgbillingmgr}
 
-The team members with the **Billing Manager** role can monitor the costs of an organization.
+I membri del team con il ruolo **Gestore fatturazione** possono monitorare i costi di un'organizzazione.
 
-* When you adopt a multi-organization architecture, you might want to grant the billing role to the same set of team members for every organization that is part of the account. Then, these team members can then monitor the cost of each organization and obtain a global view of the account.
-* In a single-organization architecture, identify the users that are responsible for monitoring the cost.
+* Quando adotti un'architettura a più organizzazioni, potresti voler concedere il ruolo di gestore fatturazione allo stesso insieme di membri del team per ogni organizzazione che fa parte dell'account. Questi membri del team possono quindi monitorare il costo di ciascuna organizzazione e ottenere una visione globale dell'account.
+* In un'architettura a singola organizzazione, identifica gli utenti responsabili del monitoraggio dei costi.
 
-#### Space manager
+#### Gestore spazio
 {: #bpspacemgr}
 
-The space **Manager** is responsible for any work that is done within the space that they manage and control. The space manager can perform the following tasks:
+Il **Gestore** dello spazio è responsabile di qualsiasi lavoro svolto all'interno dello spazio che gestisce e controlla. Il gestore spazio può effettuare le seguenti attività:
 
-* Monitoring the quota that is allocated to the space.
-* Requesting additional resources to the organization manager.
-* Notifying the organization manager of resources that are not required.
-* Addind team members to the space with the **Developer** role.
-* Optionally, assigning the space **Manager** role to a team member to act as a deputy space manager in their absence.
+* Monitoraggio della quota assegnata allo spazio.
+* Richiesta di ulteriori risorse al gestore dell'organizzazione.
+* Notifica al gestore organizzazione in merito a risorse che non sono richieste.
+* Aggiunta di membri del team allo spazio con il ruolo **Sviluppatore**.
+* Facoltativamente, assegnazione del ruolo **Gestore** spazio a un membro del team in modo che funga da sostituto in sua assenza.
 
-#### Space developer
+#### Sviluppatore spazio
 {: #bpspacedev}
 
-A space developer can do the following tasks:
+Uno sviluppatore spazio può effettuare le seguenti attività:
 
-* Manage Cloud Foundry applications.
-* Provision and configure {{site.data.keyword.Bluemix_notm}} services.
-* Associate domains to applications.
+* Gestire le applicazioni Cloud Foundry.
+* Fornire e configurare i servizi {{site.data.keyword.Bluemix_notm}}.
+* Associare i domini alle applicazioni.
 
-#### Space auditor
+#### Revisore spazio
 {: #bpspaceauditor}
 
-For every space, you might want to grant the space **Auditor** role to the same team members with the organization **Auditor** role. In your enterprise, this role might have to be granted to a specific set of users.
+Per ogni spazio, potresti voler concedere il ruolo di **Revisore** spazio agli stessi membri del team con il ruolo di **Revisore** dell'organizzazione. Nella tua azienda, questo ruolo potrebbe essere concesso a uno specifico insieme di utenti.
 
-### Administrative roles for Dedicated and Local accounts
+### Ruoli amministrativi per gli account dedicato e locale
 {: #adminroles}
 
-[Administrative roles](/docs/hybrid/index.html#oc_useradmin "Managing users and permissions" ) define the permissions that you can grant to users to manage a {{site.data.keyword.Bluemix_notm}} Dedicated or a {{site.data.keyword.Bluemix_notm}} Local account.
-You can grant read or write permissions to allow a user to view system information, usage of the account resources, reports and logs, catalog services, users, and resource usage per organization.
+I [Ruoli amministrativi](/docs/hybrid/index.html#oc_useradmin "Managing users and permissions") definiscono le autorizzazioni che puoi concedere agli utenti per gestire un account {{site.data.keyword.Bluemix_notm}} dedicato o {{site.data.keyword.Bluemix_notm}} locale.
+Puoi concedere le autorizzazioni di lettura o scrittura per consentire a un utente di visualizzare le informazioni di sistema, l'utilizzo delle risorse dell'account, i report e i log, i servizi di catalogo, gli utenti e l'utilizzo delle risorse per ogni organizzazione.
 
-In a multi-organization architecture or in a single-organization architecture, define the users and the permissions that each user requires to manage the account:
+In un'architettura a più organizzazioni o in un'architettura a singola organizzazione, definisci gli utenti e le autorizzazioni richieste per gestire l'account:
 
-1. Identify the set of administration cloud team users and fgrant them the relevant administration permissions. Include the organization managers as members of this team.
-2. Define the permissions for these users in the account. Divide permissions to manage the catalog and reports between users of the team.
-3. Select one or more roles for each user to match the permissions required to manage the account:
+1. Identifica l'insieme di utenti del team cloud di amministrazione e concedi loro le relative autorizzazioni di amministrazione. Includi i gestori organizzazione come membri di questo team.
+2. Definisci le autorizzazioni per questi utenti nell'account. Suddividi le autorizzazioni per la gestione del catalogo e dei report tra gli utenti del team.
+3. Seleziona uno o più ruoli per ogni utente in modo da soddisfare le autorizzazioni richieste per gestire l'account:
 
-   * Admin role: Users have the authority to manage the entire org.
-   * User role: Organization managers with write permissions can add users to the account and their organizations. Organization managers with read permissions can view the list of members in the account.
-   * Catalog role: Users with write permissions can define and manage which Bluemix services and starters are visible to users in the {{site.data.keyword.Bluemix_notm}} catalog.
-   * Reports role: Users with write permissions can view and add reports that other users with read permissions can download. Grant read permissions to all members of the admin team.
-   * Login role: Grant this role to all members of the admin team. You can also grant this role to other users in the account that require access to view the account notifications and system information.
+   * Ruolo Admin: gli utenti hanno l'autorizzazione per gestire l'intera organizzazione.
+   * Ruolo Utente: i gestori dell'organizzazione con le autorizzazioni di scrittura possono aggiungere utenti all'account e alle proprie organizzazioni. I gestori dell'organizzazione con le autorizzazioni di lettura possono visualizzare l'elenco di membri nell'account.
+   * Ruolo Catalogo: gli utenti con le autorizzazioni di scrittura possono definire e gestire quali servizi e starter Bluemix rendere visibili agli utenti nel catalogo {{site.data.keyword.Bluemix_notm}}.
+   * Ruolo Report: gli utenti con le autorizzazioni di scrittura possono visualizzare e aggiungere report che altri utenti con autorizzazioni di lettura possono scaricare. Concedi le autorizzazioni di lettura a tutti i membri del team di amministrazione.
+   * Ruolo Accesso: concedi questo ruolo a tutti i membri del team di amministrazione. Puoi concedere questo ruolo anche ad altri utenti nell'account che richiedono l'accesso per visualizzare le notifiche di account e le informazioni sul sistema.

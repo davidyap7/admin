@@ -15,36 +15,36 @@ lastupdated: "2017-01-09"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Managing your {{site.data.keyword.Bluemix_notm}} account
+# Gestione del tuo account {{site.data.keyword.Bluemix_notm}}
 {: #mngacct}
 
-Go to the **Account** link to set notifications, view your account usage, or view your bill.
+Vai al link **Account** per impostare le notifiche, visualizzare l'utilizzo del tuo account o la tua fattura.
 {:shortdesc}
 
-## Signing up for {{site.data.keyword.Bluemix_notm}}
+## Registrazione a {{site.data.keyword.Bluemix_notm}}
 {: #signup}
 
-You can sign up for a {{site.data.keyword.Bluemix_notm}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications.  
+Puoi registrarti per un account {{site.data.keyword.Bluemix_notm}} utilizzando un ID IBM esistente, creando un nuovo ID IBM o utilizzando un ID federato. Un ID federato è un ID all'interno di un dominio aziendale che è stato registrato con IBM, in modo che le credenziali di dominio e utente possano essere utilizzate per accedere alle applicazioni Web.  
 
-A federated ID can be used to sign up for {{site.data.keyword.Bluemix_notm}} only if your company has already worked with IBM to register.  Registering a company's domain with IBM enables users to log in to IBM products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider. When you log in to {{site.data.keyword.Bluemix_notm}} with a federated ID, you are prompted to log in through your company's login page. For information about requesting to register your company or organization's domain with IBM, or for more information about the process, see [IBMid Enterprise Federation Adoption Guide ![External link icon](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. An IBM sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+Un ID federato può essere utilizzato per la registrazione a {{site.data.keyword.Bluemix_notm}} solo se la tua azienda ha già effettuato una registrazione con IBM.  La registrazione di un dominio aziendale con IBM consente agli utenti di accedere a prodotti e servizi IBM utilizzando le proprie credenziali aziendali esistenti. L'autenticazione viene quindi gestita dal provider di identità dell'azienda. Quando accedi a {{site.data.keyword.Bluemix_notm}} con un ID federato, ti viene richiesto di accedere tramite la pagina di accesso della tua azienda. Per informazioni sulla richiesta di registrazione del dominio della tua organizzazione o azienda con IBM o per ulteriori informazioni sul processo, vedi [IBMid Enterprise Federation Adoption Guide ![Icona link esterno](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Quando richiedi di registrare gli ID federati, è necessario uno sponsor IBM, ad esempio un rappresentate di offerte o clienti.
 
-| Sign up methods | Details |    
+| Metodi di registrazione | Dettagli |    
 |-----------------|---------|
-|Existing IBMid | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other IBM products and services. You are required to enter a phone number when signing up. |
-|New IBMid | If you don't yet have an IBMid, you can select to create one. The IBMid enables you to use one login user name for all IBM products and services that you use, including {{site.data.keyword.Bluemix_notm}}. You are required to enter your personal information including first and last name, phone number, and password for the new credentials. You can use this IBMid to log in when using other IBM products and services.  |
-|Federated ID | If your company has requested to register the user credentials from your company's domain with IBM, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You are required to enter a phone number when signing up. |
-{:caption="Table 1. Sign up methods" caption-side="top"}
+|ID IBM esistente | Se già disponi di un ID IBM, registrati a {{site.data.keyword.Bluemix_notm}} con le credenziali esistenti che utilizzi per i prodotti e servizi IBM. Durante la registrazione, ti viene richiesto di immettere un numero di telefono. |
+|Nuovo ID IBM | Se non hai ancora un ID IBM, puoi scegliere di crearne uno. L'ID IBM ti consente di utilizzare un unico nome utente di accesso per tutti i prodotti e servizi IBM che vorrai utilizzare, incluso {{site.data.keyword.Bluemix_notm}}. Ti viene richiesto di immettere i tuoi dati personali, tra cui nome e cognome, numero di telefono e password per le nuove credenziali. Puoi utilizzare questo ID IBM per eseguire l'accesso quando utilizzi altri servizi e prodotti IBM.  |
+|ID federato | Se la tua azienda ha richiesto di registrare le credenziali utente dal dominio aziendale con IBM, puoi registrarti a {{site.data.keyword.Bluemix_notm}} utilizzando le credenziali che usi già per l'accesso della tua azienda. Durante la registrazione, ti viene richiesto di immettere un numero di telefono. |
+{:caption="Tabella 1. Metodi di registrazione" caption-side="top"}
 
-## Setting notifications
+## Impostazione delle notifiche
 {: #notifications}
 
-Click **Account** &gt; **Notifications** to set up general account and spending notifications. Spending notifications are available only for Subscription and Pay-As-You-Go {{site.data.keyword.Bluemix_notm}} account owners.
+Fai clic su **Account** &gt; **Notifiche** per impostare l'account generale e le notifiche di spesa. Le notifiche di spesa sono disponibili solo per i proprietari degli account {{site.data.keyword.Bluemix_notm}} Pagamento a consumo e Sottoscrizione.
 
-You can set platform email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance, and you can set spending notifications that alert you when your account is close to the spending threshold that you specified. Complete the following tasks to set different notification types for your account.
+Puoi impostare le notifiche email della piattaforma per gli incidenti e la manutenzione pianificata {{site.data.keyword.Bluemix_notm}} e puoi impostare le notifiche di spesa per avvisarti quando il tuo account è vicino alla soglia di spesa che hai specificato. Completa le seguenti attività per impostare differenti tipi di notifica per il tuo account.
 
-### Setting platform notifications
+### Configurazione delle notifiche della piattaforma
 
-Click **Account** &gt; **Notifications** &gt; **Platform** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notification.
+Fai clic su **Account** &gt; **Notifiche** &gt; **Piattaforma** per impostare le notifiche e-mail per gli incidenti e la manutenzione pianificata {{site.data.keyword.Bluemix_notm}}. Puoi selezionare o cancellare ogni opzione per abilitare o disabilitare la notifica email.
 
 <!-- staging only
 
@@ -60,41 +60,43 @@ On the **Platform** tab you can also customize notifications for your orgs, spac
 
 staging only end -->
 
-### Setting spending notifications
+### Configurazione delle notifiche di spesa
 {: #spendingnotifications}
 
-If you are a Subscription or Pay-As-You-Go {{site.data.keyword.Bluemix_notm}} account owner, you can set up email spending notifications. Set notifications for total account, runtime, container, and service spending, as well as spending for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. You can edit each spending notification at any time as your needs change.
+Se sei il proprietario di un account {{site.data.keyword.Bluemix_notm}} Pagamento a consumo o Sottoscrizione, puoi impostare le notifiche di spesa via email. Imposta le notifiche per la spesa totale di account, runtime, contenitori e servizi, nonché la spesa per singoli servizi, tranne quelli di terze parti. Ricevi le notifiche quando raggiungi l'80%, il 90% e il 100% delle soglie di spesa da te specificate. Puoi modificare ogni notifica di spesa in qualsiasi momento, secondo le tue esigenze.
 
-Complete the following steps to set up email notifications for spending limits:
+Completa la seguente procedura per impostare le notifiche via email per i limiti di spesa:
 
 <ol>
-<li>Click **Account** &gt; **Notifications** &gt; **Spending**.</li>
-<li>Enter a numeric value to set the spending threshold for triggering a notification for each type of notification:<br />
+<li>Fai clic su **Account** &gt; **Notifiche** &gt; **Spesa**.</li>
+<li>Immetti un valore numerico per impostare la soglia di spesa per l'attivazione di una notifica per ciascun tipo di notifica:<br />
 <ul>
-<li>Total account</li>
-<li>Total runtime</li>
-<li>Total services</li>
-<li>Total container</li>
-<li>Spending for a specific service</li>
+<li>Totale account</li>
+<li>Totale runtime</li>
+<li>Totale servizi</li>
+<li>Totale contenitore</li>
+<li>Spesa per un servizio specifico</li>
 </ul>
 </li>
-<li>When you are finished, click **Save**.</li>
+<li>Al termine dell'operazione, fai clic su **Salva**.</li>
 </ol>
 
-**Note**: If you have a trial account, you can upgrade to a Subscription or Pay-As-You-Go account to set spending limits. For more information about Pay-As-You-Go and Subscription accounts, see [How you are billed](/docs/pricing/index.html#pay-accounts).
+**Nota**: se hai un account di prova, puoi eseguire l'upgrade a un account Sottoscrizione o Pagamento a consumo per impostare i limiti di spesa. Per ulteriori informazioni sugli account Pagamento a consumo e Sottoscrizione, vedi [Modalità di fatturazione](/docs/pricing/index.html#pay-accounts).
 
-## Viewing usage
+## Visualizzazione dell'utilizzo
 {: #acctusage}
 
-As an account owner or a billing manager for an org, you can use the Usage Dashboard page to see the real-time charges for the runtimes, containers, services, and support that are used per month in your organizations. You can see the runtime GB-hours and service consumption in all regions, or you can select to see a particular region.
+In qualità di proprietario dell'account o gestore della fatturazione per un'organizzazione, puoi utilizzare la pagina Dashboard di utilizzo per visualizzare gli addebiti in
+tempo reale per i runtime, i contenitori, i servizi e il supporto utilizzati al mese nelle tue organizzazioni. Puoi vedere i GB-ora di runtime e il consumo dei servizi in tutte le regioni oppure puoi
+selezionare la visualizzazione di una specifica regione.
 
-To open the Usage Dashboard page, click **Account** &gt; *your_account_name* &gt; **Usage Dashboard**. Billing managers can see the details for only the organizations in which they are billing managers.
+Per aprire la pagina Dashboard di utilizzo, fai clic su **Account** &gt; *nome_del_tuo_account* &gt; **Dashboard di utilizzo**. I gestori della fatturazione possono visualizzare i dettagli solo per le organizzazioni in cui ricoprono tale ruolo.
 
-The account owner is charged for the total usage that is incurred across all organizations at the end of each billing cycle. As an account owner, you can filter the usage summary by region and organization. You can also click a particular month to see the usage for that month. Select **All Organizations** from the **Organization** list to see the usage for all organizations in the account.
+Al proprietario dell'account viene addebitato l'utilizzo totale sostenuto su tutte le organizzazioni alla fine di ciascun ciclo di fatturazione. In qualità di proprietario dell'account, puoi filtrare il riepilogo dell'utilizzo in base alla regione e all'organizzazione. Puoi anche fare clic su uno specifico mese per visualizzare il relativo utilizzo. Seleziona **Tutte le organizzazioni** dall'elenco **Organizzazione** per visualizzare l'utilizzo per tutte le organizzazioni nell'account.
 
-## Updating billing information
+## Aggiornamento delle informazioni di fatturazione
 {: #account_billing}
 
-As the account owner, you can edit, add, or remove saved credit card information that is associated with your {{site.data.keyword.Bluemix_notm}} account. Click **Account** &gt; *your_account_name* &gt; **Billing**.
+In qualità di proprietario dell'account, puoi modificare, aggiungere o rimuovere le informazioni sulla carta di credito salvate che sono associate al tuo account {{site.data.keyword.Bluemix_notm}}. Fai clic su **Account** &gt; *nome_del_tuo_account* &gt; **Fatturazione**.
 
-If you have a SoftLayer account linked with your {{site.data.keyword.Bluemix_notm}} account, see [Billing for {{site.data.keyword.Bluemix_notm}} usage when accounts are linked](/docs/admin/softlayerlink.html#bill_usage) for more information about how you are billed.
+Se hai un account SoftLayer collegato al tuo account {{site.data.keyword.Bluemix_notm}}, vedi [Fatturazione per l'utilizzo di {{site.data.keyword.Bluemix_notm}} con account collegati](/docs/admin/softlayerlink.html#bill_usage) per ulteriori informazioni sulla fatturazione.

@@ -15,64 +15,64 @@ lastupdated: "2017-03-17"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Switching to IBMid
-Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix_notm}}. Existing SoftLayer accounts are being enabled to switch to IBMid authentication. A migration wizard guides you through this switch. 
+# Passaggio all'ID IBM
+L'autenticazione in SoftLayer utilizza adesso un ID IBM per fornire un singolo accesso per tutti i {{site.data.keyword.Bluemix_notm}}. Gli account SoftLayer esistenti verranno abilitati a passare all'autenticazione tramite ID IBM. Una procedura guidata di migrazione ti guiderà in questo passaggio. 
 {:shortdesc}
 
-When you begin the process to switch to an IBMid, you can always cancel the switch before you complete the process. However, each time that you log in, the prompt to switch to an IBMid is displayed. Each SoftLayer account that you plan to link to a {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address.
+Quando inizi il processo di passaggio a un ID IBM, puoi sempre annullare il passaggio prima di completare il processo. Tuttavia, ogni volta che accedi, viene visualizzato il prompt per passare a un ID IBM. Ogni account SoftLayer che prevedi di collegare a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco.
 
-To switch your existing SoftLayer account to an IBMid, complete the following steps:
-1. Log in to your SoftLayer account, and click **OK** when the prompt to switch to an IBMid is displayed.
+Per passare dal tuo account SoftLayer esistente a un ID IBM, completa la seguente procedura:
+1. Accedi al tuo account SoftLayer e fai clic su **OK** quando viene visualizzato il prompt per passare a un ID IBM.
 
-   If you are a master user and a prompt to switch to an IBMid is not displayed in the {{site.data.keyword.slportal}}, [Contact IBM support](/docs/support/index.html#contacting-support) for help.
+   Se sei un utente master e non visualizzi un prompt per passare a un ID IBM nel {{site.data.keyword.slportal}}, [contatta il supporto IBM](/docs/support/index.html#contacting-support) per assistenza.
   
-   If you previously logged in and you clicked **Later** in the prompt, but you want to switch to IBMid authentication in the current session, go to the Edit User Profile page and click **Switch to IBMid**.
+   Se hai già eseguito l'accesso e hai fatto clic su **Dopo** nel prompt, ma vuoi passare all'autenticazione con l'ID IBM nella sessione corrente, vai alla pagina Modifica profilo utente e fai clic su **Passa a ID IBM**.
 
-2. Follow the wizard prompts to create your IBMid. 
+2. Segui le istruzioni della procedura guidata per creare il tuo ID IBM. 
 
-   Enter an email address that is not currently is use by any IBMid. This email address is used as the user name for the new IBMid, and it's where your registratin code is sent after the IBMid is created. You can update the email address that is associated with the IBMid later on, but you can't change the user name.
+   Immetti un indirizzo e-mail che non sia attualmente utilizzato da nessun ID IBM. Questo indirizzo e-mail viene utilizzato come nome utente per il nuovo ID IBM ed è l'indirizzo a cui viene inviato il tuo codice di registrazione una volta che l'ID IBM è stato creato. Puoi aggiornare l'indirizzo e-mail associato all'ID IBM in un secondo momento, ma non puoi modificare il nome utente.
 
-3. When you receive your registration code, click the link in the email or copy the URL into a browser and enter your registration code.
+3. Quando ricevi il tuo codice di registrazione, fai clic sul link nell'e-mail o copia l'URL in un browser e immetti il codice di registrazione.
 
-   The registration code is valid for seven days and you can use it only once.
+   Il codice di registrazione è valido per sette giorni e puoi utilizzarlo solo una volta.
   
-4. After you submit your registration code, use your IBMid to log in to the {{site.data.keyword.slportal}}.
+4. Una volta inoltrato il codice di registrazione, utilizza il tuo ID IBM per accedere al {{site.data.keyword.slportal}}.
 
-   At the Account Login prompt, go to the **IBMid Account Login** section and click **Log in with IBMid**. Do not use the **Username** and **Password** fields that you used previously with your SoftLayer ID.
+   Al prompt di accesso dell'account, vai alla sezione **Accesso account ID IBM** e fai clic su **Accedi con ID IBM**. Non utilizzare i campi **Nome utente** e **Password** che utilizzavi in precedenza con il tuo ID SoftLayer.
 
-If you are a new customer, you're asked for your existing IBMid or to created a new IBMid when you check out your order. 
-  * To use an existing IBMid, enter the user name or the email address of the IBMid it if is unique (that is, it's not shared across multiple IBMids).
+Se sei un nuovo cliente, quando controlli il tuo ordine ti verrà chiesto il tuo ID IBM esistente o di creare un nuovo ID IBM. 
+  * Per utilizzare un ID IBM esistente, immetti il nome utente o l'indirizzo e-mail dell'ID IBM se è univoco (vale a dire, che non sia condiviso tra più ID IBM).
   
-  * To create a new IBMid, enter an email address that is not currently in use by any IBMid. This email address is the user name for the IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that's associated with the IBMid later on, but you can't change the user name. 
+  * Per creare un nuovo ID IBM, immetti un indirizzo e-mail che non sia attualmente utilizzato da nessun ID IBM. Questo indirizzo e-mail è il nome utente per l'ID IBM ed è l'indirizzo a cui viene inviato il tuo codice di registrazione una volta che l'ID IBM è stato creato. Puoi aggiornare l'indirizzo e-mail associato all'ID IBM in un secondo momento, ma non puoi modificare il nome utente. 
   
-To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing Bluemix](/docs/troubleshoot/ts_accessing.html#accessing).
+Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a Bluemix](/docs/troubleshoot/ts_accessing.html#accessing).
 
-## Enabling user accounts for IBMid authentication
+## Abilitazione degli account utente per l'autenticazione tramite ID IBM
 {: #link_accounts_resellers}
 
-In some cases, before a user can switch to an IBMid, a reseller or distributor must enable the account to use IBMid authentication. 
+In alcuni casi, prima che un utente possa passare a un ID IBM, un rivenditore o un distributore deve abilitare l'account ad utilizzare l'autenticazione tramite ID IBM. 
 
-  * IBMid authentication must be enabled for each existing user account that you want to link to a Bluemix account. Then, each user must complete the process to switch to an IBMid by using the migration wizard, as described in the previous section. Contact [IBM support](/docs/support/index.html#contacting-support) to enable an existing SoftLayer account to use IBMid authentication. 
+  * L'autenticazione tramite ID IBM deve essere abilitata per ogni account utente esistente che vuoi collegare a un account Bluemix. Quindi, ogni utente deve completare il processo di passaggio a un ID IBM utilizzando la procedura guidata di migrazione, come descritto nella sezione precedente. Contatta il [supporto IBM](/docs/support/index.html#contacting-support) per abilitare un account SoftLayer esistente all'utilizzo dell'autenticazione tramite ID IBM. 
   
-  * To ensure new user accounts are created with an IBMid, the `CREATE_NEW_ACCOUNT_WITH_IBMid_AUTHENTICATION` attribute must be set on the immediate master user account. Contact [IBM support](/docs/support/index.html#contacting-support) or your vendor to set the attribute for your accounts.  
+  * Per assicurarti che i nuovi account utente vengano creati con un ID IBM, l'attributo `CREATE_NEW_ACCOUNT_WITH_IBMid_AUTHENTICATION` deve essere impostato sull'account utente master immediato. Contatta il [supporto IBM](/docs/support/index.html#contacting-support) o il tuo fornitore per impostare l'attributo per i tuoi account.  
 
-## Linking IBMid user accounts
+## Collegamento degli account utente ID IBM
 {: #link_user_accounts}
 
-After your user accounts switch to IBMid authentication, resellers and distributors can link SoftLayer and {{site.data.keyword.Bluemix_notm}} accounts to make use of combined infrastructure and platform resources.
+Dopo che i tuoi account utente sono passati all'autenticazione tramite ID IBM, i rivenditori e i distributori possono collegare gli account SoftLayer e {{site.data.keyword.Bluemix_notm}} per utilizzare insieme le risorse dell'infrastruttura e della piattaforma.
 
-**Note**:
-  * The master user of the account that's being linked must have an IBMid.
-  * Each user account that you link to a {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address. Even though a single IBMid can own multiple SoftLayer accounts, you must change the master user to be a unique IBMid for each account. Contact [IBM SoftLayer support ![External link icon](../icons/launch-glyph.svg)](https://knowledgelayer.softlayer.com/topic/support){: new_window} to change the master user of a SoftLayer account.
-  * When you add new users to a linked account, you must add them to both the SoftLayer account and the {{site.data.keyword.Bluemix_notm}} account so that they can access all the capabilities of the unified console. 
+**Nota**:
+  * L'utente master dell'account che viene collegato deve avere un ID IBM.
+  * Ogni account utente che colleghi a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco. Anche se un singolo ID IBM può possedere più account SoftLayer, devi modificare l'utente master in modo da essere un ID IBM univoco per ogni account. Contatta il [supporto IBM SoftLayer![Icona link esterno](../icons/launch-glyph.svg)](https://knowledgelayer.softlayer.com/topic/support){: new_window} per modificare l'utente master di un account SoftLayer.
+  * Quando aggiungi nuovi utenti a un account collegato, devi aggiungerli a entrambi agli account SoftLayer e {{site.data.keyword.Bluemix_notm}} affinché possano accedere a tutte le funzionalità nella console unificata. 
   
-Complete the following steps to link each account to a {{site.data.keyword.Bluemix_notm}} account:
-1. To link to an existing {{site.data.keyword.Bluemix_notm}} account or to create a new one, log in to your SoftLayer account as the master user and click the {{site.data.keyword.Bluemix_notm}} link.
+Completa la seguente procedura per collegare tutti gli account all'account {{site.data.keyword.Bluemix_notm}}:
+1. Per il collegamento a un account {{site.data.keyword.Bluemix_notm}} esistente o per crearne uno nuovo, accedi al tuo account SoftLayer come utente master e fai clic sul link {{site.data.keyword.Bluemix_notm}}.
 
-   The IBMid that is the master user of the SoftLayer account must be the owner of the {{site.data.keyword.Bluemix_notm}} account you're linking to. 
+   L'ID IBM che è l'utente master dell'account SoftLayer deve essere il proprietario dell'account {{site.data.keyword.Bluemix_notm}} a cui ti colleghi. 
    
-2. Follow the wizard prompts, including adding the users in the SoftLayer account to the {{site.data.keyword.Bluemix_notm}} account.
-3. After you link the account, inform the end user of each account to migrate to IBMid by following the procedure described in the previous section.
+2. Segui le istruzioni nella procedura guidata, inclusa l'aggiunta di utenti nell'account SoftLayer all'account {{site.data.keyword.Bluemix_notm}}.
+3. Dopo aver collegato l'account, informa l'utente finale di ogni account di migrare all'ID IBM utilizzando la procedura descritta nella sezione precedente.
 
-**Recommendation**: Migrate only end user accounts to IBMid. Do not migrate brand accounts, which are parent accounts for end user accounts and do not contain any resources. Brand account users that migrate to IBMid lose the ability to log in to the Brand Agent Portal (BAP).  
+**Raccomandazione**: migra solo gli account dell'utente finale all'ID IBM. Non migrare gli account dell'azienda che sono account principali per gli account utente finale e non contengono alcuna risorsa. Gli utenti degli account dell'azienda che eseguono la migrazione all'ID IBM perdono la possibilità di accedere al portale BAP (Brand Agent Portal).  
   
