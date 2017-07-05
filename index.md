@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -56,7 +56,7 @@ You can view notifications for your local or dedicated environment to monitor th
 | **Event Type** | **Notification method** |       
 |-----------------|-------------------|
 | Maintenance updates | To see a full list and history of your pending and complete notifications, click **ADMINISTRATION &gt; SYSTEM INFORMATION** &gt; *Number* **pending**. You are also alerted about scheduled disruptive maintenance update events on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a subscription that sends an email to recipients of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.|
-| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  |  
+| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  | 
 | Threshold events | You can set up a notification subscription that sends an email to a recipient of your choice when thresholds for organization quota, physical disk, physical memory, reserved disk, or reserved memory are reached in your environment. Or, you can set up a subscription that uses webhooks to integrate the notifications with a web service of your choice.  |  
 | {{site.data.keyword.Bluemix_notm}} Status | You can always view the latest status for the platform, services, and your {{site.data.keyword.Bluemix_notm}} instance on the Status page. Click **Support** &gt; **Status**.  |
 {: caption="Table 2. Event types and notifications methods" caption-side="top"}
@@ -221,7 +221,8 @@ You can view scheduled and pending maintenance updates, if you have the superuse
 
 <dl>
 <dt>Non-disruptive updates</dt>
-<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval and will be applied during the preapproved, available maintenance windows that you set from the System Updates page.</dd>
+<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval and will be applied during the preapproved, available maintenance windows that you set from the System Updates page.
+<p>**Note**: Some platform services might require that at least one non-disruptive change window be defined during a set of predetermined time-slots at the service's discretion. Please check the service description for each dedicated service deployed to your environment.</p></dd>
 <dt>Disruptive updates</dt>
 <dd>A disruptive update might affect your environment, running applications, or your users' access to your applications. You must schedule and approve each of these maintenance updates within the allotted 21-day maintenance window. You can select the suggested deployment date and time, the option for any of your preapproved windows, or you can open the calendar to select three specific dates and times for IBM to choose from when scheduling the update.</dd>
 </dl>
@@ -362,18 +363,21 @@ In addition to the graphical representation, you can see the percentage of memor
 
 To see the usage of your memory, disk, or CPU by DEA, click **Breakdown**.  
 
-To see more detailed information about your physical and reserved memory or disk usage over time, click **History.** You can specify the time frame to view as either weekly or monthly. The historical usage view shows a graph of memory or disk usage over the time you choose.  
+To see more detailed information about your physical and reserved memory or disk usage over time, click **History.** You can view usage for the last 48 hours, the last 30 days, or the last 5 months. The points displayed for the last 48 hours represent the actual data that is collected once an hour. The points displayed for the last 30 days represent the average value for each day. The points displayed for the last 5 months represent the average value for each month. The last 30 days and last 5 months views can also display the maximum value for each day or month by toggling the radio button at the top of the chart. The historical usage view shows a graph of memory or disk usage over the time you choose.  
 	<dl>
 	<dt><strong>Reserved Limit</strong></dt>
-	<dd>Shown as a horizontal dotted line, the Reserved Limit is the total amount of memory or disk space that can be collectively reserved by all of the applications running in your environment.</dd>
+	<dd>Shown as a horizontal dashed line, the Reserved Limit is the total amount of memory or disk space that can be collectively reserved by all of the applications running in your environment.</dd>
 	<dt><strong>Reserved</strong></dt>
-	<dd>The Reserved area shows the memory or disk space that is currently collectively reserved by all of the applications running in your environment.
-	<p>To see which organizations have reserved the most memory at a particular point in time, hover over the dot along the Reserved area that is associated with that point in time. You can then click an organization in the pie chart that is displayed to see more information about that organization.</p></dd>
+	<dd>The Reserved line shows the memory or disk space that is currently collectively reserved by all of the applications running in your environment.</dd>
 	<dt><strong>Physical Limit</strong></dt>
-	<dd>Shown as a horizontal dotted line, the Physical Limit shows the amount of physical memory or disk space that was purchased for your environment.</dd>
+	<dd>Shown as a horizontal dashed line, the Physical Limit shows the amount of physical memory or disk space that was purchased for your environment.</dd>
 	<dt><strong>Physical</strong></dt>
-	<dd>The Physical area shows the amount of memory or disk space that is actually being used.</dd>
+	<dd>The Physical line shows the amount of memory or disk space that is actually being used.</dd>
 	</dl>
+	
+For each of the available historical usage views, at least two data points are required for the graph to render. This equates to data for at least two hours during the last 48 hours, two days during the last 30 days, and two months during the last 5 months. For the 30 day and 5 month views, partially complete averages or maximum values are returned for the current day or month and will adjust as more data is collected.
+
+The data powering these views is available via the [Metrics API](/docs/admin/index.html#envappmetricsapi). To see the actual API endpoints and data used to generate the view, click on the **Learn more about the API** link above the chart. If you click on any of the links in the dialog that appears, a new tab will open in your browser containing the JSON response of the metrics API endpoint. 
 
 #### Service usage details
 {: #servicesresourceusage}
@@ -1362,7 +1366,8 @@ command:
 ## API for metrics
 {: #envappmetricsapi}
 
-You can use three experimental APIs to gather metrics about your environment or applications. These APIs return an array of data points for the metrics that you requested over the time that you specified.
+You can use four APIs to gather metrics about your environment, applications and organizations. These APIs return an array of data points for the metrics that you requested over the time that you specified.
+
 
 The Metrics APIs that are described in the following sections can be accessed from the region-specific endpoint, for example:
 
@@ -1374,11 +1379,11 @@ The Metrics APIs that are described in the following sections can be accessed fr
 1. A user can make up to 200 API requests for metrics an hour.
 2. Each API request returns up to 200 data points per request. If more data is available, a URL is provided in the response for loading the next set of data.
 3. Each API request requires a user to have at least Basic Access to the Administration Console.  Additional permissions might be required, as specified below.
-4. Data are available up to 6 months back from the time the API request is made.
+4. Data are available up to 5 months back from the time the API request is made.
 
 ## Gathering metrics about your environment
 
-You can use the experimental environment API to gather high-level environment information over a time period that you specify. Available data points within the time that you specify are returned. Data is recorded approximately every hour. If, for example, you requested six hours of CPU data for the environment, the response would include CPU data for each of the six requested hours.
+You can use the environment API to gather high-level environment information over a time period that you specify. You can view the actual data samples, which are recorded approximately every hour, or statistics computed on the data samples. Statistics are available for memory and disk consumption only. The APIs allow you to specify the time range of the actual or statistical data returned. If, for example, you request six hours of CPU (actual) data for the environment, the response would include CPU data for each of the six requested hours.
 
 
 ### Environment endpoints
@@ -1731,6 +1736,239 @@ The following sections provide the data format.
 ```
 {
    docs: [],
+   next_url:
+}
+```
+{: screen}
+
+
+### Environment statistics endpoints
+
+You can view statistics computed on the metrics data for your environment's memory and disk consumption. Statistics returned are the average, the maximum and the minimum values of the data samples in each grouping of data. Data can either be grouped by day, where the statistics are computed for each day, or by month, where the statistics are computed for each month.
+
+You can use the following endpoints to invoke this API command:
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Note**: One of the following permissions are required to access these endpoints: **Basic Access**, **User Read**, **User Write**, or **Superuser**
+
+### Environment statistics query parameters
+
+Using the following query parameters, you can gather statistics for your disk and memory:
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">The earliest point in time from which data is returned. If no startTime is specified, the earliest available data point is included.</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">The latest point in time from which data is returned. If no endTime is specified, the most recent data point is used.</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">The grouping on which to compute statistics. Valid values are `day` and `month`. The default is day, returning the average usage values for each day in the specified time range.  Specifying a value of month returns the average usage values for each month.</dd>
+</dl>
+
+The following example uses the query parameters to gather memory statistics about your environment, averaged by day:
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Environment statistics data format
+
+The following sections provide the data format.
+
+ * To gather data records about your memory usage, use the following data format:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * To gather data records about your disk usage, use the following data format:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+### Environment metrics response format
+
+```
+{
+   docs: [
+   ],
    next_url:
 }
 ```
