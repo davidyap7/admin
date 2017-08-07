@@ -33,7 +33,7 @@ Si es un administrador de {{site.data.keyword.Bluemix_notm}} local o {{site.data
 ## Cambio de la foto de perfil
 {: #photo notoc}
 
-Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil de usuario**.
+Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil del usuario**.
 
   * Pulse **CARGAR UNA FOTO** para cargar una foto.
   * Para sustituir la foto actual con una nueva, pulse **CAMBIAR FOTO**.
@@ -46,7 +46,7 @@ Un ID de IBM es un ID único que utiliza para iniciar sesión en la cuenta de {{
 
 No es posible cambiar su IBMid, sin embargo, puede editar la información de perfil asociada al mismo como, por ejemplo, su nombre, correo electrónico, número de teléfono, contraseña o nombre de la empresa.
 
-1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil de usuario**.
+1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil del usuario**.
 2. Pulse **Editar el ID de IBM**.
 3. Edite la información de usuario.
 4. Pulse **Guardar**.
@@ -60,7 +60,7 @@ Si elige inhabilitar el seguimiento, es posible que no pueda utilizar algunas ca
 
 Para inhabilitar el seguimiento de las herramientas de análisis, realice los siguientes pasos:
 
-1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil de usuario**.
+1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil del usuario**.
 2. Establezca el seguimiento de las herramientas de análisis en **Desactivado**.
 
 ## Cómo enviar sus comentarios

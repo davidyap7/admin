@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -56,7 +56,7 @@ Puoi visualizzare le notifiche riguardanti il tuo ambiente locale o dedicato, al
 | **Tipo di evento** | **Metodo di notifica** |       
 |-----------------|-------------------|
 | Aggiornamenti di manutenzione | Per visualizzare uno storico e un elenco completo delle tue notifiche complete e in sospeso, fai clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA** &gt; *Numero* **in sospeso**. Ricevi anche un avviso degli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio nella pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione che invia un'e-mail a destinatari di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.|
-| Incidenti critici | Vieni avvisato degli incidenti critici sulla pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.  |  
+| Incidenti critici | Vieni avvisato degli incidenti critici sulla pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.  | 
 | Eventi di soglia | Puoi impostare una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta quando nel tuo ambiente vengono raggiunte le soglie per la quota dell'organizzazione, il disco fisico, la memoria fisica o la memoria riservata. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche con un servizio Web di tua scelta.  |  
 | Stato di {{site.data.keyword.Bluemix_notm}} | In qualsiasi momento puoi visualizzare l'ultimo stato della piattaforma, dei servizi e della tua istanza {{site.data.keyword.Bluemix_notm}} nella pagina Stato. Fai clic su **Supporto** &gt; **Stato**.  |
 {: caption="Tabella 2. Tipi di evento e metodi di notifica" caption-side="top"}
@@ -215,13 +215,14 @@ Puoi selezionare qualsiasi sottoscrizione di notifica salvata, visualizzare le a
 ## Aggiornamenti di manutenzione
 {: #oc_schedulemaintenance}
 
-Puoi visualizzare gli aggiornamenti di manutenzione pianificata e in sospeso solo se disponi dell'autorizzazione superuser (`ops.admin`), facendo clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso** per accedere alla pagina **Aggiornamenti di sistema**.  Tutti gli utenti del tuo ambiente possono visualizzare gli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio facendo clic su **Supporto** &gt; **Stato**.
+Puoi visualizzare gli aggiornamenti di manutenzione pianificati e in sospeso, se disponi dell'autorizzazione superuser (`ops.admin`), facendo clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso** per accedere alla pagina **Aggiornamenti di sistema**.  Tutti gli utenti del tuo ambiente possono visualizzare gli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio facendo clic su **Supporto** &gt; **Stato**.
 
 **Nota**: consultare la seguente sezione per [Impostazione di finestre di manutenzione preapprovate](index.html#preapprovedmaintenance). Queste finestre devono essere impostate per consentire a IBM di pianificare la manutenzione per il tuo ambiente.
 
 <dl>
 <dt>Aggiornamenti che non comportano interruzioni del servizio</dt>
-<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso e verrà applicato durante le finestre di manutenzione disponibili preapprovate da te impostate dalla pagina Aggiornamenti di sistema.</dd>
+<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso e verrà applicato durante le finestre di manutenzione disponibili preapprovate da te impostate dalla pagina Aggiornamenti di sistema.
+<p>**Nota**: alcuni servizi della piattaforma potrebbero richiedere che venga definita almeno una finestra di modifica senza interruzioni del servizio nel corso di una serie di fasce orarie predeterminate a discrezione del servizio. Controlla la descrizione del servizio per ogni servizio dedicato distribuito nel tuo ambiente.</p></dd>
 <dt>Aggiornamenti che comportano interruzioni del servizio</dt>
 <dd>Un aggiornamento che comporta interruzioni del servizio può influenzare il tuo ambiente, le applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Devi pianificare e approvare ciascuno di questi aggiornamenti di manutenzione entro la finestra di manutenzione di 21 giorni assegnata. Puoi selezionare l'ora e la data di distribuzione suggerita, l'opzione per qualsiasi finestra preapprovata da te oppure aprire il calendario per selezionare tre date/ore specifiche tra cui IBM può scegliere durante la pianificazione dell'aggiornamento.</dd>
 </dl>
@@ -240,7 +241,7 @@ Devi impostare un minimo di 12 ore disponibili in una settimana per un periodo m
 
 **Nota**: solo gli utenti con autorizzazione Superuser (`ops.admin`) possono pianificare e approvare gli aggiornamenti di manutenzione.
 
-1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso &gt; Gestisci disponibilità**.
+1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso&gt; Gestisci disponibilità**.
 2. Espandi la sezione **Gestisci finestre di aggiornamento disponibili**.
 3. Fai clic su **Aggiungi nuovo**.
 4. Imposta la prima finestra di disponibilità selezionando la frequenza, la durata e l'ora di inizio per la finestra.
@@ -255,7 +256,7 @@ Puoi scegliere di impostare specifiche finestre di aggiornamento non disponibili
 
 Devi impostare un minimo di 12 ore disponibili in una settimana per un periodo minimo di due giorni per ogni settimana. Se tenti di creare una finestra di aggiornamento non disponibile, potresti non riuscire a salvare le modifiche qualora questa nuova finestra faccia sì che il sistema scenda al di sotto del minimo settimanale richiesto. In questo caso, devi prima rimuovere alcune finestre di aggiornamento non disponibili esistenti o aggiungerne delle altre prima di poter salvare la nuova finestra di aggiornamento non disponibile. Per ulteriori informazioni, vedi [Impostazione delle finestre di manutenzione preapprovate](index.html#preapprovedmaintenance).
 
-1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso &gt; Gestisci disponibilità**.
+1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso&gt; Gestisci disponibilità**.
 2. Espandi la sezione **Gestisci finestre di aggiornamento non disponibili**.
 3. Fai clic su **Aggiungi nuovo**.
 4. Imposta la tua finestra non disponibile selezionando la frequenza, la durata e l'ora di inizio per la finestra.
@@ -268,7 +269,7 @@ Dopo che hai impostato le tue finestre di manutenzione preapprovate, gli aggiorn
 
 Per visualizzare i dettagli per un aggiornamento che non comporta l'interruzione del servizio, completa la seguente procedura:
 
-1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso**
+1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso**.
 2. Identifica le righe in cui **Pianificazione cliente obbligatoria** è impostato su **No**.
 3. Seleziona la riga per l'aggiornamento di cui visualizzare i dettagli.
 
@@ -276,7 +277,7 @@ Un aggiornamento che comporta interruzioni del servizio può influenzare il tuo 
 
 Per gli aggiornamenti che comportano un'interruzione del servizio che richiedono la tua approvazione, completa la seguente procedura:
 
-1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso**
+1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso**.
 2. Identifica le righe in cui **Pianificazione cliente obbligatoria** è impostato su **Sì**.
 3. Seleziona la riga per di un aggiornamento per esaminarne i dettagli, compresi la sua descrizione, la sua data e ora consigliata, i componenti interessati e la sua durata.
 4. Seleziona **Pianifica e approva**.
@@ -360,18 +361,21 @@ Oltre alla rappresentazione grafica, puoi visualizzare la percentuale di memoria
 
 Per visualizzare l'utilizzo della memoria, disco o CPU da parte di DEA, fai clic su **Suddivisione**.  
 
-Per informazioni più dettagliate sull'utilizzo della memoria o del disco fisico e riservato nel tempo, fai clic su **Cronologia.** Puoi specificare l'intervallo di tempo da visualizzare come settimanale o mensile. La vista dell'utilizzo cronologico mostra un grafico di utilizzo della memoria o del disco nel corso del tempo da te scelto.  
+Per informazioni più dettagliate sull'utilizzo della memoria o del disco fisico e riservato nel tempo, fai clic su **Cronologia.** Puoi visualizzare l'utilizzo per le ultime 48 ore, gli ultimi 30 giorni o gli ultimi 5 mesi. I punti visualizzati per le ultime 48 ore rappresentano i dati effettivi che vengono raccolti una volta all'ora. I punti visualizzati per gli ultimi 30 giorni rappresentano il valore medio per ciascun giorno. I punti visualizzati per gli ultimi 5 mesi rappresentano il valore medio per ciascun mese. Le viste degli ultimi 30 giorni e degli ultimi 5 mesi possono anche visualizzare il valore massimo per ogni giorno o mese selezionando il pulsante di opzione nella parte superiore del grafico. La vista dell'utilizzo cronologico mostra un grafico di utilizzo della memoria o del disco nel corso del tempo da te scelto.  
 	<dl>
 	<dt><strong>Limite riservato</strong></dt>
-	<dd>Indicato in forma di linea tratteggiata orizzontale, il limite riservato è la quantità totale di memoria o spazio su disco che può essere riservata in blocco da tutte le applicazioni in esecuzione nel tuo ambiente.</dd>
+	<dd>Indicato in forma di linea tratteggiata orizzontale, il limite riservato è la quantità totale di memoria o spazio su disco che può essere riservata collettivamente da tutte le applicazioni in esecuzione nel tuo ambiente. </dd>
 	<dt><strong>Riservato</strong></dt>
-	<dd>L'area Riservato mostra la quantità di memoria o di spazio su disco che è attualmente riservata in blocco da tutte le applicazioni in esecuzione nel tuo ambiente.
-	<p>Per vedere quali organizzazioni hanno riservato la maggior parte della memoria in un determinato momento, passa il mouse sopra il punto lungo l'area Riservato associato a quel momento nel tempo. Puoi quindi fare clic su un'organizzazione nel grafico a torta che viene mostrato per visualizzare ulteriori informazioni su tale organizzazione.</p></dd>
+	<dd>La linea Riservato mostra la quantità di memoria o di spazio su disco che è attualmente riservata collettivamente da tutte le applicazioni in esecuzione nel tuo ambiente.</dd>
 	<dt><strong>Limite fisico</strong></dt>
 	<dd>Indicato in forma di linea tratteggiata orizzontale, il limite fisico mostra la quantità fisica di memoria o spazio su disco che è stata acquistata per il tuo ambiente.</dd>
 	<dt><strong>Fisico</strong></dt>
-	<dd>L'area Fisico mostra la quantità di memoria o spazio su disco effettivamente utilizzata.</dd>
+	<dd>La linea Fisico mostra la quantità di memoria o spazio su disco effettivamente utilizzata.</dd>
 	</dl>
+	
+Per ciascuna delle viste di utilizzo cronologico disponibili, sono richiesti almeno due punti dati per la rappresentazione del grafico. Ciò equivale a dati per almeno due ore durante le ultime 48 ore, due giorni negli ultimi 30 giorni e due mesi negli ultimi 5 mesi. Per le viste di 30 giorni e 5 mesi, vengono restituiti i valori massimi o le medie parzialmente complete per il giorno o il mese corrente e verranno regolati man mano vengono raccolti altri dati. 
+
+I dati che alimentano queste viste sono disponibili tramite l'[API Metriche](/docs/admin/index.html#envappmetricsapi). Per visualizzare gli effettivi endpoint API e i dati utilizzati per generare la vista, fai clic sul link **Informazioni sull'API** sopra il grafico. Se fai clic su uno dei link nella finestra di dialogo visualizzata, nel browser verrà aperta una nuova scheda contenente la risposta JSON dell'endpoint API delle metriche. 
 
 #### Dettagli di utilizzo del servizio
 {: #servicesresourceusage}
@@ -460,10 +464,10 @@ La seguente tabella mostra l'elenco dei report di sicurezza generati per {{site.
 |-------------------|---------------------|
 | [Accessi firewall](/docs/hybrid/reports.html#firewalllogins) | Eventi relativi all'accesso dell'amministratore ai dispositivi firewall Vyatta. |
 | [Accessi firewall negati](/docs/hybrid/reports.html#firewalldenies) | Eventi generati da dispositivi firewall Vyatta quando una richiesta di accesso viene negata in base alle regole firewall in vigore. |
-| {{site.data.keyword.Bluemix_notm}} - [accesso amministratori](/docs/hybrid/reports.html#oslogin) | Eventi generati dal sistema operativo quando un amministratore avvia una sessione SSH su ogni sistema {{site.data.keyword.Bluemix_notm}}. |
-| [Accesso sviluppatori di applicazioni](/docs/hybrid/reports.html#loginserverlogins) {{site.data.keyword.Bluemix_notm}} | Eventi generati dal componente di accesso della piattaforma {{site.data.keyword.Bluemix_notm}} quando un utente di {{site.data.keyword.Bluemix_notm}} avvia una sessione utilizzando la riga di comando, le API REST o l'interfaccia utente {{site.data.keyword.Bluemix_notm}}. |
-| [Gestione sistema operativo](/docs/hybrid/reports.html#osadmin) {{site.data.keyword.Bluemix_notm}}  | Eventi generati dal sistema operativo quando un amministratore svolge un'azione all'interno di una sessione di lavoro corrente. |
-| [Gestione piattaforma](/docs/hybrid/reports.html#platformadmin){{site.data.keyword.Bluemix_notm}} (Cloud Foundry)  | Eventi relativi alle operazioni effettuate dall'utente della piattaforma {{site.data.keyword.Bluemix_notm}} utilizzando la riga di comando, le API REST o l'interfaccia utente {{site.data.keyword.Bluemix_notm}}. |
+| {{site.data.keyword.Bluemix_notm}}Accesso amministratori [](/docs/hybrid/reports.html#oslogin) | Eventi generati dal sistema operativo quando un amministratore avvia una sessione SSH su ogni sistema {{site.data.keyword.Bluemix_notm}}. |
+| {{site.data.keyword.Bluemix_notm}}Accesso sviluppatori di applicazioni [](/docs/hybrid/reports.html#loginserverlogins) | Eventi generati dal componente di accesso della piattaforma {{site.data.keyword.Bluemix_notm}} quando un utente di {{site.data.keyword.Bluemix_notm}} avvia una sessione utilizzando la riga di comando, le API REST o l'interfaccia utente {{site.data.keyword.Bluemix_notm}}. |
+| {{site.data.keyword.Bluemix_notm}}Gestione sistema operativo [](/docs/hybrid/reports.html#osadmin)  | Eventi generati dal sistema operativo quando un amministratore svolge un'azione all'interno di una sessione di lavoro corrente. |
+| {{site.data.keyword.Bluemix_notm}}Gestione piattaforma [ (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) | Eventi relativi alle operazioni effettuate dall'utente della piattaforma {{site.data.keyword.Bluemix_notm}} utilizzando la riga di comando, le API REST o l'interfaccia utente {{site.data.keyword.Bluemix_notm}}. |
 | [Gestione database interno](/docs/hybrid/reports.html#dbadmin) | Eventi relativi alle operazioni effettuate da un amministratore di database nei database interni {{site.data.keyword.Bluemix_notm}}. |
 | [Gestione utente](/docs/hybrid/reports.html#acusermgmt) | Eventi relativi alle azioni di gestione utente eseguite nella pagina Amministrazione. |
 | [Gestione catalogo](/docs/hybrid/reports.html#catalogmgmt) | Eventi relativi alle modifiche del catalogo dei servizi. |
@@ -488,8 +492,7 @@ La pagina Stato è la posizione centrale per trovare notifiche e annunci sugli e
 
 ### Stato della console di gestione
 
-Dopo la distribuzione iniziale del tuo ambiente {{site.data.keyword.Bluemix_notm}}, un controllo di verifica viene completato automaticamente sui componenti utilizzati per amministrare il tuo ambiente. Puoi andare alla pagina Controllo verifica console di gestione per controllare lo stato dei componenti dopo che è stato eseguito il controllo di verifica. Per accedere alla pagina,
-vai a <code>https://console.&lt;dominiosecondario&gt;.bluemix.net/check</code>, dove `<dominiosecondario>` è il nome della tua istanza locale o dedicata.
+Dopo la distribuzione iniziale del tuo ambiente {{site.data.keyword.Bluemix_notm}}, un controllo di verifica viene completato automaticamente sui componenti utilizzati per amministrare il tuo ambiente. Puoi andare alla pagina Controllo verifica console di gestione per controllare lo stato dei componenti dopo che è stato eseguito il controllo di verifica. Per accedere alla pagina, vai a <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, dove `<subdomain>` è il nome della tua istanza locale o dedicata. 
 
 Puoi eseguire una verifica in qualsiasi momento. Devi aver eseguito l'accesso per selezionare l'opzione per eseguire la verifica. Se riscontri dei malfunzionamenti mentre stai aggiungendo un utente, modificando un'organizzazione o gestendo i tuoi servizi, esegui questo controllo per identificare eventuali componenti malfunzionanti o disconnessi. Puoi aprire un ticket del supporto con le informazioni dal controllo per far risolvere rapidamente il problema.
 
@@ -669,7 +672,8 @@ Le seguenti tabelle possono aiutarti a compilare il file JSON.
 |notCreatableMessage (facoltativo) | Un messaggio che viene visualizzato nell'interfaccia utente {{site.data.keyword.Bluemix_notm}} se non è possibile creare le istanze del servizio. Se non specifichi questo campo, verrà visualizzato il seguente messaggio predefinito: Per ricevere una notifica sulla disponibilità del servizio, confermare l'indirizzo email o immettere un nuovo indirizzo. |
 |notCreatableRobotMessage (facoltativo) | Un messaggio che viene visualizzato nell'area commenti della pagina dei dettagli del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}. Il messaggio viene utilizzato per indicare che un servizio potrebbe avere un problema o altre cause che lo rendono non disponibile. Puoi specificare un messaggio per spiegare il motivo. Se non specifichi questo campo, verrà visualizzato il seguente messaggio predefinito: Questo servizio non è al momento disponibile. |
 |apiReferenceUrl (facoltativo) | L'URL dell'iframe nell'area Riferimento API nella pagina dei dettagli del servizio all'interno del catalogo. Se non viene utilizzato per la pagina dei dettagli del servizio nel Catalogo, puoi immettere il valore numerico assegnato alla Documentazione API REST del tuo servizio durante la registrazione nel microservizio Documentazione API REST di {{site.data.keyword.Bluemix_notm}}. In questo modo, la documentazione dell'API REST verrà visualizzata nel dashboard del servizio. |
-|sdkDownloadUrl (facoltativo) | L'URL della pagina Web che si apre quando fai clic sul pulsante Scarica SDK. Il pulsante Scarica SDK si trova nel tile del servizio nella pagina di panoramica dell'applicazione nel Dashboard. La pagina Web si apre in una scheda del browser. |
+|sdkDownloadUrl (facoltativo) | L'URL della pagina Web che si apre quando fai clic sul pulsante Scarica SDK. Il pulsante Scarica SDK si trova nel tile del servizio nella pagina di panoramica dell'applicazione nel Dashboard. La
+pagina web viene aperta in una nuova scheda del browser. |
 |serviceMonitorApi    | L'URL di un'API che restituisce i dati JSON, come mostrato nel seguente esempio, che segnala l'integrità del servizio. Devi avere serviceMonitorApi o serviceMonitorApp nei metadati del servizio. Consulta il seguente codice come esempio. |
 |serviceMonitorApp    | L'URL a un'applicazione che può essere distribuita in {{site.data.keyword.Bluemix_notm}} ed essere associata a un servizio per fornire l'output specifico dello stato del servizio. L'applicazione deve restituire il formato dei dati JSON uguale al serviceMonitorApi. Devi avere serviceMonitorApi o serviceMonitorApp nei metadati del servizio. Consulta il seguente codice come esempio. |
 {: caption="Tabella 11. Campi dei metadati" caption-side="top"}
@@ -729,7 +733,7 @@ Il seguente esempio mostra come la risposta JSON di GET /v2/catalog è associata
 
 Il seguente esempio mostra come la risposta JSON di GET /v2/catalog è associata alla pagina dei dettagli del servizio nel catalogo {{site.data.keyword.Bluemix_notm}}. In particolare, il modo in cui i campi dei metadati del piano descritti nella tabella precedente vengono associati all'interfaccia utente:
 
-![Dettagli dei metadati del piano nel catalogo.](images/plan_metadata.png "Vista dei valori metadati del piano nel catalogo")
+![Dettagli dei metadati del piano nel catalogo.](images/plan_metadata.png "Vista dei valori metadati del piano nel catalogo Bluemix")
 
 
 <!-- staging only end -->
@@ -1116,7 +1120,7 @@ utilizzare la API REST `Admin` per elencare tutte le organizzazioni. Devi dispor
 **Utenti** con l'accesso in **Lettura** per elencare
 le organizzazioni. Per elencare tutte le organizzazioni, esegui questo comando:
 
-`curl -b ./cookies.txt https://<il_tuo_host>.ibm.com/codi/v1/organizations | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/organizations | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1162,7 +1166,7 @@ l'API REST `Admin` per elencare gli utenti registrati. Devi disporre dell'autori
 **Utenti** con l'accesso in **Lettura** per elencare gli
 utenti registrati. Per elencare tutti gli utenti, esegui questo comando:
 
-`curl -b ./cookies.txt https://<il_tuo_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1255,7 +1259,7 @@ devi fornire le seguenti informazioni:
 
 Per fornire le informazioni, ti servi di un file JSON.
 
-`curl -b ./cookies.txt https://<il_tuo_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1341,7 +1345,7 @@ gli utenti, devi disporre dell'autorizzazione **Utenti** con l'accesso in **Scri
 
 Per rimuovere un utente, devi fornire l'ID dell'utente: Immetti il seguente comando:
 
-`curl -v -b ./cookies.txt -X DELETE https://<il_tuo_host>.ibm.com/codi/v1/users?user_id=<un_id_utente@dominio.com>`
+`curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
 
 <dl class="parml">
@@ -1376,7 +1380,8 @@ Il seguente esempio mostra l'output di questo
 ## API per le metriche
 {: #envappmetricsapi}
 
-Puoi utilizzare tre API sperimentali per raccogliere le metriche sul tuo ambiente o sulle tue applicazioni. Queste API restituiscono un array di punti dati per le metriche che hai richiesto nell'intervallo di tempo che hai specificato.
+Puoi utilizzare quattro API per raccogliere le metriche relative al tuo ambiente o alle tue applicazioni e organizzazioni. Queste API restituiscono un array di punti dati per le metriche che hai richiesto nell'intervallo di tempo che hai specificato.
+
 
 Puoi accedere alle API delle metriche descritte nelle seguenti sezioni dall'endpoint specifico della regione, ad esempio:
 
@@ -1388,11 +1393,11 @@ Puoi accedere alle API delle metriche descritte nelle seguenti sezioni dall'endp
 1. Un utente può effettuare fino a 200 richieste API per le metriche in un'ora.
 2. Ogni richiesta API restituisce fino a 200 punti dati per richiesta. Se sono disponibili più dati, viene fornito un URL per il caricamento della successiva serie di dati.
 3. Ogni richiesta API richiede che un utente disponga almeno dell'accesso di base alla Console di gestione.  Potrebbero essere richieste delle autorizzazioni aggiuntive, come specificato di seguito.
-4. I dati sono disponibili fino a sei mesi antecedenti al momento in cui viene effettuata la richiesta API.
+4. I dati sono disponibili fino a 5 mesi dal momento della richiesta API.
 
 ## Raccolta delle metriche sul tuo ambiente
 
-Puoi utilizzare l'API di ambiente sperimentale per raccogliere le informazioni sull'ambiente di alto livello in un periodo di tempo che specifichi. Vengono restituiti i punti dati nel periodo di tempo che specifichi. I dati sono registrati approssimativamente ogni ora. Se, ad esempio, hai richiesto sei ore di dati CPU per l'ambiente, la risposta includerà i dati CPU per ognuna delle sei ore richieste.
+Puoi utilizzare l'API di ambiente per raccogliere informazioni sull'ambiente di alto livello in un periodo di tempo specificato. Puoi visualizzare campioni di dati effettivi, che vengono registrati approssimativamente ogni ora, o le statistiche calcolate sui campioni di dati. Le statistiche sono disponibili solo per il consumo di memoria e disco. Le API ti consentono di specificare l'intervallo di tempo dei dati effettivi o statistici restituiti. Se, ad esempio,richiedi sei ore di dati CPU (effettivi) per l'ambiente, la risposta includerà i dati della CPU per ognuna delle sei ore richieste. 
 
 
 ### Endpoint di ambiente
@@ -1734,6 +1739,238 @@ Le seguenti sezioni forniscono il formato dei dati.
     "allocation": {
       "memory_gb": 571.8,
       "disk_gb": 1204
+    }
+  }
+}
+```
+{: screen}
+
+### Formato della risposta delle metriche di ambiente
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
+
+### Endpoint statistiche di ambiente
+
+Puoi visualizzare le statistiche calcolate sui dati delle metriche per il consumo di memoria e disco nel tuo ambiente. Le statistiche restituite sono i valori medi, i valori massimi e quelli minimi dei campioni di dati in ciascun raggruppamento di dati. I dati possono essere raggruppati per giorno, dove le statistiche vengono calcolate per ogni giorno, oppure per mese, in cui le statistiche vengono calcolate per ogni mese. 
+
+Puoi utilizzare i seguenti endpoint per richiamare questo comando API:
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Nota**: per accedere a questi endpoint, è richiesta una delle seguenti autorizzazioni: **Accesso di base**, **Lettura utente**, **Scrittura utente** o **Superuser**
+
+### Parametri di query delle statistiche di ambiente
+
+Utilizzando i seguenti parametri di query, puoi raccogliere le statistiche per il tuo disco e la tua memoria.
+
+<dl class="parml">
+<dt class="pt dlterm">OraInizio</dt>
+<dd class="pd">Il primo punto nel tempo da cui vengono restituiti i dati. Se non viene specificata una OraInizio, viene incluso il primo punto dati disponibile.</dd>
+<dt class="pt dlterm">OraFine</dt>
+<dd class="pd">L'ultimo  punto nel tempo da cui vengono restituiti i dati. Se non viene specificata alcuna OraFine, viene utilizzato il punto dati più recente.</dd>
+<dt class="pt dlterm">TipoMedia</dt>
+<dd class="pd">Il raggruppamento su cui calcolare le statistiche. I valori validi sono `giorno` e `mese`. Il valore predefinito è giorno, che restituisce i valori di utilizzo medio per ogni giorno nell'intervallo di tempo specificato. Se si specifica il valore mese, vengono restituiti i valori di utilizzo medio per ogni mese.</dd>
+</dl>
+
+Il seguente esempio utilizza i parametri di query per raccogliere le statistiche di memoria relative al tuo ambiente, calcolate in base alla media giornaliera:
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Formato dei dati delle statistiche di ambiente
+
+Le seguenti sezioni forniscono il formato dei dati.
+
+ * Per raccogliere i dati registrati sul tuo utilizzo della memoria, utilizza il seguente formato dei dati:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * Per raccogliere i dati registrati sul tuo utilizzo del disco, utilizza il seguente formato dei dati:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
     }
   }
 }

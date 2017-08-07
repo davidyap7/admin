@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -31,7 +31,7 @@ Si tiene acceso de administrador para {{site.data.keyword.Bluemix}} Local o {{si
 |Gestionar permisos de usuarios administrativos | Pulse **ADMINISTRACIÓN &gt; ADMINISTRACIÓN DE USUARIOS** para añadir usuarios, eliminar usuarios y ajustar permisos de usuario. Consultar [Gestión de usuarios y permisos](/docs/admin/index.html#oc_useradmin). |
 |Revisar informes y registros | Pulse **ADMINISTRACIÓN &gt; INFORMES Y REGISTROS** para ver informes de seguridad y registros de auditoría para su instancia. Ver [Visualización de informes](/docs/admin/index.html#oc_report). |
 |Ver información del sistema | Pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA** para ver información del sistema como actualizaciones de mantenimiento pendientes, el nombre y la versión de la instancia, la región, el URL de API, el URL de CLI, los detalles de configuración de LDAP, las correlaciones de usuario y de grupo, las estadísticas y los dominios compartidos. Consulte [Visualización de información del sistema](/docs/admin/index.html#oc_system). |
-|Ampliar notificaciones y configurar suscripciones de notificaciones | Pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Number* pendientes**. Puede usar webhooks para integrar con el servicio web que quiera para configurar la suscripción a notificación de sucesos para una actualización o incidencia. Consulte [Suscripción de notificaciones](/docs/admin/index.html#oc_eventsubscription). |
+|Ampliar notificaciones y configurar suscripciones de notificaciones | Pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes**. Puede usar webhooks para integrar con el servicio web que quiera para configurar la suscripción a notificación de sucesos para una actualización o incidencia. Consulte [Suscripción de notificaciones](/docs/admin/index.html#oc_eventsubscription). |
 {: caption="Tabla 1. Tareas administrativas para gestionar la instancia local o dedicada de {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 <!-- staging only for WoW start -->
@@ -58,7 +58,7 @@ tabla siguiente para obtener información sobre los distintos tipos de notificac
 | **Tipo de suceso** | **Método de notificación** |       
 |-----------------|-------------------|
 | Actualizaciones de mantenimiento | Para ver un listado completo y el historial de notificaciones pendientes y completas, pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA** &gt; *Número* **pendientes**. Los sucesos planificados de actualización disruptiva de mantenimiento también se informan mediante alertas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.|
-| Incidencias críticas | Se alerta sobre incidencias críticas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción a una notificación que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.  |  
+| Incidencias críticas | Se alerta sobre incidencias críticas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción a una notificación que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.  | 
 | Sucesos de umbral | Puede configurar una suscripción de notificación que envía un mensaje de correo electrónico a un destinatario de su elección cuando se alcancen en el entorno los umbrales para la cuota de organización, el disco físico, la memoria física, el disco reservado o la memoria reservada. O bien, puede configurar una suscripción que utilice a webhooks para integrar las notificaciones con el servicio de su elección.  |  
 | Estado de {{site.data.keyword.Bluemix_notm}} | Siempre puede ver el estado más reciente de la plataforma, servicios y de su instancia {{site.data.keyword.Bluemix_notm}} en la página Estado. Pulse **Soporte** &gt; **Estado**.  |
 {: caption="Tabla 2. Tipos de sucesos y métodos de notificación" caption-side="top"}
@@ -218,13 +218,14 @@ Puede seleccionar cualquier suscripción de notificaciones guardada, ver la acti
 ## Actualizaciones de mantenimiento
 {: #oc_schedulemaintenance}
 
-Puede ver las actualizaciones de mantenimiento planificadas y pendientes, si tiene permiso de superusuario (`ops.admin`) haciendo clic en **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes** para acceder a la página **Actualizaciones del sistema**.  Todos los usuarios de su entorno pueden ver los sucesos de actualización de mantenimiento disruptiva planificados pulsando **Soporte** &gt; **Estado**.
+Puede ver las actualizaciones de mantenimiento planificadas y pendientes, si tiene permiso de superusuario (`ops.admin`) haciendo clic en **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes** para acceder a la página **Actualizaciones del sistema**.  Todos los usuarios de su entorno pueden ver los sucesos de actualización de mantenimiento disruptiva planificados pulsando **Soporte** &gt; **Estado**.
 
 **Nota**: consulte la siguiente sección sobre la [configuración de ventanas de mantenimiento aprobadas con anterioridad](index.html#preapprovedmaintenance) para empezar. Estas ventanas deben establecerse para que IBM planifique el mantenimiento para el entorno.
 
 <dl>
 <dt>Actualizaciones no disruptivas</dt>
-<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso y se aplicará durante las ventanas de mantenimiento disponibles y con aprobación previa que establece desde la página Actualizaciones del sistema.</dd>
+<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso y se aplicará durante las ventanas de mantenimiento disponibles y con aprobación previa que establece desde la página Actualizaciones del sistema.
+<p>**Nota**: Es posible que algunos servicios de la plataforma requieran que al menos una ventana de cambio no disruptiva se defina durante un intervalo de tiempo predeterminado a discreción del servicio. Compruebe la descripción de servicio para cada uno de los servicios dedicados desplegados en su entorno.</p></dd>
 <dt>Actualizaciones disruptivas</dt>
 <dd>Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Debe planificar y aprobar cada una de estas ventanas de mantenimiento dentro de la ventana de mantenimiento de 21 días asignada. Puede seleccionar la fecha y hora de despliegue sugeridas, la opción para cualquier ventana ya aprobada, o bien abrir el calendario y seleccionar tres fechas y horas específicas para que IBM pueda elegir la planificación de la actualización.</dd>
 </dl>
@@ -243,7 +244,7 @@ Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínim
 
 **Nota**: los usuarios con permiso de superusuario (`ops.admin`) son los únicos que pueden planificar y aprobar actualizaciones de mantenimiento.
 
-1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes &gt; Gestionar disponibilidad**.
+1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes &gt; Gestionar disponibilidad**.
 2. Expanda la sección **Gestionar ventanas de actualización disponibles**.
 3. Pulse **Añadir nuevo**.
 4. Establezca la primera ventana de disponibilidad seleccionando la frecuencia, duración y hora de inicio para la ventana.
@@ -258,7 +259,7 @@ Puede elegir establecer ventanas de tiempo de actualización no disponibles espe
 
 Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínimo de dos días durante cada semana. Si intenta crear una ventana de actualización no disponible, es posible que no pueda guardar los cambios si esta ventana nueva hace que el sistema caiga por debajo del mínimo semanal requerido. En este caso, primero debe eliminar algunas de las ventanas de actualización no disponible existentes o añadir más ventanas de actualización disponible antes de guardar la nueva ventana de actualización no disponible. Consulte [Configuración de ventanas de mantenimiento con aprobación previa](index.html#preapprovedmaintenance) para obtener más información.
 
-1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes &gt; Gestionar disponibilidad**.
+1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes &gt; Gestionar disponibilidad**.
 2. Expanda la sección **Gestionar ventanas de actualización no disponibles**.
 3. Pulse **Añadir nuevo**.
 4. Establezca una ventana no disponible seleccionando la frecuencia, duración y hora de inicio para la ventana.
@@ -271,7 +272,7 @@ Después de establecer las ventanas de mantenimiento con aprobación previa, las
 
 Para ver los detalles para una actualización no disruptiva, realice los siguientes pasos:
 
-1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes**.
+1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes**.
 2. Identifique todas las filas que tengan **Planificación de cliente necesaria** establecida en **No**.
 3. Seleccione la fila para esa actualización para ver los detalles.
 
@@ -279,7 +280,7 @@ Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ej
 
 Para las actualizaciones disruptivas que no requieran su aprobación, realice los siguientes pasos:
 
-1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* de pendientes**.
+1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes**.
 2. Identifique todas las filas que tengan **Planificación de cliente necesaria** establecida en **Sí**.
 3. Seleccione la fila para esa actualización para revisar los detalles para la actualización incluida la descripción de la actualización, la fecha y hora sugerida para la actualización, los componentes afectados y la duración para la actualización.
 4. Seleccione **Planificar y aprobar**.
@@ -365,18 +366,21 @@ Además de la representación gráfica, podrá ver el porcentaje de memoria y es
 
 Para ver el uso de memoria, disco, o CPU mediante DEA, pulse **Desglose**.  
 
-Para ver información más detallada sobre el uso de memoria física y reservada o el uso del disco en el tiempo, pulse **Historial.** Puede especificar el marco temporal para ver un intervalo semanal o mensual. La vista Uso histórico muestra un gráfico del uso de memoria o de disco durante el tiempo que elija.  
+Para ver información más detallada sobre el uso de memoria física y reservada o el uso del disco en el tiempo, pulse **Historial.** Puede ver el uso de las últimas 48 horas, los últimos 30 días o los últimos 5 meses. Los puntos mostrados para las últimas 48 horas representan los datos reales que se recopilan una vez por hora. Los puntos mostrados para los últimos 30 días representan el valor promedio para cada día. Los puntos mostrados para los últimos 5 meses representan el valor promedio para cada mes. Las vistas de últimos 30 días y de los últimos 5 meses también pueden mostrar el valor máximo para cada día o mes, cambiando el botón de selección en la parte superior del gráfico. La vista Uso histórico muestra un gráfico del uso de memoria o de disco durante el tiempo que elija.  
 	<dl>
 	<dt><strong>Límite reservado</strong></dt>
-	<dd>El límite reservado, que se muestra como una línea de puntos horizontal, es la cantidad total de memoria o de espacio de disco que se puede reservar colectivamente para todas las aplicaciones que se ejecutan en el entorno.</dd>
+	<dd>El límite reservado, que se muestra como una línea discontinua horizontal, es la cantidad total de memoria o de espacio de disco que se puede reservar colectivamente para todas las aplicaciones que se ejecutan en el entorno.</dd>
 	<dt><strong>Reservado</strong></dt>
-	<dd>El área reservada muestra la memoria o el espacio de disco reservado colectivamente en estos momentos para todas las aplicaciones que se ejecutan en el entorno.
-	<p>Para ver las organizaciones que han reservado la mayor parte de la memoria en un momento determinado, pase el puntero del ratón sobre el punto del área reservada asociado con el momento en cuestión. A continuación, puede pulsar una organización en el gráfico circular mostrado para ver más información sobre la organización en cuestión.</p></dd>
+	<dd>La línea Reservado muestra la memoria o el espacio de disco reservado colectivamente en estos momentos para todas las aplicaciones que se ejecutan en el entorno.</dd>
 	<dt><strong>Límite físico</strong></dt>
-	<dd>El límite físico, que se muestra como una línea de puntos horizontal, muestra la cantidad de memoria física o de espacio de disco adquirido para su entorno.</dd>
+	<dd>El Límite físico, que se muestra como una línea discontinua horizontal, muestra la cantidad de memoria física o de espacio de disco adquirido para su entorno.</dd>
 	<dt><strong>Físico</strong></dt>
-	<dd>El área Físico muestra la cantidad de memoria o espacio de disco que se está utilizando en realidad.</dd>
+	<dd>La línea Físico muestra la cantidad de memoria o espacio de disco que se está utilizando en realidad.</dd>
 	</dl>
+	
+Para cada una de las vistas de uso histórico disponibles, al menos dos puntos de datos son necesarios para representar el gráfico. Esto equivale a los datos para al menos dos horas durante las últimas 48 horas, dos días durante los últimos 30 días, y dos meses durante los últimos 5 meses. Para las vistas de 30 días y 5 meses, se devuelven promedios parcialmente completados o valores máximos o valores máximos para el día o mes actual y se ajustarán a medida que se recopilan más datos.
+
+Los datos que alimentan estas vistas están disponibles a través de la [API para Métricas](/docs/admin/index.html#envappmetricsapi). Para ver los puntos finales de la API real y los datos utilizados para generar la vista, pulse en el enlace encima del gráfico **Obtenga más información acerca de la API**. Si pulsa en cualquiera de los enlaces en el diálogo que aparece, se abrirá un nuevo separador en el navegador que contiene la respuesta JSON de las métricas del punto final de la API. 
 
 #### Detalles de utilización del servicio
 {: #servicesresourceusage}
@@ -456,15 +460,15 @@ organizaciones, consulte [Administración de organizaciones](../admin/index.html
 
 Puede ver informes de seguridad y de registros, como por ejemplo los informes de DataPower, del cortafuegos, de la auditoría de inicio de sesión, para la instancia de {{site.data.keyword.Bluemix_notm}}. Para visualizar informes y registros, pulse **ADMINISTRACIÓN &gt; INFORMES Y REGISTROS**.
 
-Puede llevar a cabo las siguientes tareas desde el mosaico Informes y registros: 
+Puede llevar a cabo las siguientes tareas desde el mosaico Informes y registros:
 
 - Seleccionar las fechas de inicio y finalización en los campos para filtrar los informes y registros que se muestran.
 - Visualizar la lista de informes solicitados y los informes actualmente disponibles.
-- Buscar dentro del conjunto de informes y registros. La búsqueda se aplica a los nombres de informes y al contenido de texto que se incluye en los informes y los registros. También puede optar por filtrar la búsqueda por categoría. 
+- Buscar dentro del conjunto de informes y registros. La búsqueda se aplica a los nombres de informes y al contenido de texto que se incluye en los informes y los registros. También puede optar por filtrar la búsqueda por categoría.
 - Descargar un informe pulsando el icono ![Descargar](images/icon_download.png) para descargar el informe.
-- Si tiene acceso de escritura para el permiso de los informes, solicitar la generación de un informe. Puede elegir entre las siguientes seis categorías para generar un informe bajo demanda: gestión de usuarios de la consola de administración, administración de la plataforma {{site.data.keyword.Bluemix_notm}}, denegaciones de cortafuegos, inicios de sesión de cortafuegos, inicios de sesión de servidor e inicio de sesión de sistema operativo. Puede solicitar informes con datos con una antigüedad de hasta 90 días.  
+- Si tiene acceso de escritura para el permiso de los informes, solicitar la generación de un informe. Puede elegir entre las siguientes seis categorías para generar un informe bajo demanda: gestión de usuarios de la consola de administración, administración de la plataforma {{site.data.keyword.Bluemix_notm}}, denegaciones de cortafuegos, inicios de sesión de cortafuegos, inicios de sesión de servidor e inicio de sesión de sistema operativo. Puede solicitar informes con datos con una antigüedad de hasta 90 días.
 
-**Nota**: En este momento, la característica de solicitar un informe podría no estar disponible en todos los entornos. 
+**Nota**: En este momento, la característica de solicitar un informe podría no estar disponible en todos los entornos.
 
 La tabla siguiente muestra la lista de los informes de seguridad generados para {{site.data.keyword.Bluemix_notm}} local y {{site.data.keyword.Bluemix_notm}} dedicado. La mayoría de los informes se generan a diario. Sin embargo, los informes de cifrado y sucesos de gestión de claves se generan mensualmente. Todos los informes se conservan 90 días en la consola administrativa para su recuperación. Transcurridos 90 días, los informes están disponibles fuera de línea desde {{site.data.keyword.Bluemix_notm}} durante 9 meses. En total, los informes están disponibles para su recuperación un máximo de un año.
 
@@ -475,10 +479,10 @@ La tabla siguiente muestra la lista de los informes de seguridad generados para 
 |-------------------|---------------------|
 | [Inicios de sesión de cortafuegos](/docs/hybrid/reports.html#firewalllogins) | Sucesos relacionados con el inicio de sesión del administrador en los dispositivos de cortafuegos Vyatta. |
 | [Denegaciones de cortafuegos](/docs/hybrid/reports.html#firewalldenies) | Sucesos generados por los dispositivos cortafuegos Vyatta cuando se deniega una solicitud de acceso acuerdo con las reglas vigentes del cortafuegos. |
-| [Inicio de sesión de administradores](/docs/hybrid/reports.html#oslogin) de {{site.data.keyword.Bluemix_notm}}   | Sucesos generados por el sistema operativo cuando un administrador inicia una sesión SSH en cada sistema {{site.data.keyword.Bluemix_notm}}. |
-|  [Inicio de sesión de desarrolladores](/docs/hybrid/reports.html#loginserverlogins) de {{site.data.keyword.Bluemix_notm}}  | Sucesos generados por el componente de inicio de sesión de la plataforma {{site.data.keyword.Bluemix_notm}} cuando un usuario de la plataforma {{site.data.keyword.Bluemix_notm}} inicia sesión mediante la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
-| [Administración de sistema operativo](/docs/hybrid/reports.html#osadmin) de {{site.data.keyword.Bluemix_notm}}    | Sucesos generados por el sistema operativo cuando un administrador realiza una acción durante una sesión de trabajo actual. |
-| [Administración de plataforma (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) de {{site.data.keyword.Bluemix_notm}}   | Sucesos relacionados con operaciones realizadas por el usuario de la plataforma {{site.data.keyword.Bluemix_notm}} utilizando la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
+| [Inicio de sesión de administradores](/docs/hybrid/reports.html#oslogin) de {{site.data.keyword.Bluemix_notm}} | Sucesos generados por el sistema operativo cuando un administrador inicia una sesión SSH en cada sistema {{site.data.keyword.Bluemix_notm}}. |
+| [Inicio de sesión de desarrolladores](/docs/hybrid/reports.html#loginserverlogins) de {{site.data.keyword.Bluemix_notm}} | Sucesos generados por el componente de inicio de sesión de la plataforma {{site.data.keyword.Bluemix_notm}} cuando un usuario de la plataforma {{site.data.keyword.Bluemix_notm}} inicia sesión mediante la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
+| [Administración de sistema operativo](/docs/hybrid/reports.html#osadmin) de {{site.data.keyword.Bluemix_notm}}  | Sucesos generados por el sistema operativo cuando un administrador realiza una acción durante una sesión de trabajo actual. |
+| [Administración de plataforma (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) de {{site.data.keyword.Bluemix_notm}} | Sucesos relacionados con operaciones realizadas por el usuario de la plataforma {{site.data.keyword.Bluemix_notm}} utilizando la línea de mandatos, las API REST o la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. |
 | [Administración de base de datos interna](/docs/hybrid/reports.html#dbadmin) | Sucesos relacionados con las operaciones realizadas por un administrador de bases de datos en las bases de datos internas de {{site.data.keyword.Bluemix_notm}}. |
 | [Gestión de usuarios](/docs/hybrid/reports.html#acusermgmt) | Sucesos relacionados con acciones de gestión de usuarios realizadas en la página Administración. |
 | [Gestión de catálogos](/docs/hybrid/reports.html#catalogmgmt) | Sucesos relacionados con cambios en el catálogo de servicios. |
@@ -486,7 +490,7 @@ La tabla siguiente muestra la lista de los informes de seguridad generados para 
 | [Revisiones de acceso](/docs/hybrid/reports.html#securityreportsmgmt) | Revisiones para accesos privilegiados. |
 | Gestión de cambios de software | Actividad de gestión de cambios. |
 | [Gestión de certificados de clave](/docs/hybrid/reports.html#keymgmt) | Operaciones de gestión de certificados de clave. |
-| [Notificaciones del sistema](/docs/hybrid/reports.html#systemnotifications) | Sucesos relacionados con la configuración de suscripciones de notificaciones o ventanas de despliegue de actualización de software.  |
+| [Notificaciones del sistema](/docs/hybrid/reports.html#systemnotifications) | Sucesos relacionados con la configuración de suscripciones de notificaciones o ventanas de despliegue de actualización de software. |
 
 {: caption="Tabla 9. Lista de informes de seguridad" caption-side="top"}
 
@@ -503,7 +507,7 @@ La página Estado es el recurso central para buscar notificaciones y anuncios so
 
 ### Estado de consola de administración
 
-Después del despliegue inicial del entorno {{site.data.keyword.Bluemix_notm}}, se lleva a cabo automáticamente una comprobación de verificación en los componentes que se utilizan para administrar el entorno. Puede ir a la página Comprobación de verificación de consola de administración para comprobar el estado de los componentes después de ejecutar la comprobación de verificación. Para acceder a la página, vaya a <code>https://console.&lt;subdominio&gt;.bluemix.net/check</code>, donde `<subdominio>` es el nombre de la instancia local o dedicada.
+Después del despliegue inicial del entorno {{site.data.keyword.Bluemix_notm}}, se lleva a cabo automáticamente una comprobación de verificación en los componentes que se utilizan para administrar el entorno. Puede ir a la página Comprobación de verificación de consola de administración para comprobar el estado de los componentes después de ejecutar la comprobación de verificación. Para acceder a la página, vaya a <code>https://console.&lt;subdominio&gt;.bluemix.net/check</code>, donde `<subdomain>` es el nombre de la instancia local o dedicada.
 
 Puede ejecutar una verificación en cualquier momento. Debe iniciar la sesión para seleccionar la opción para ejecutar la verificación. Si encuentra errores al añadir un usuario, editar una organización o gestionar los servicios, ejecute esta comprobación para identificar si cualquiera de los componentes está fallando o está desconectado. Puede abrir una incidencia de soporte con la información de la comprobación para resolver el problema rápidamente.
 
@@ -998,7 +1002,7 @@ Es posible asignar a los usuarios los permisos siguientes con niveles de acceso 
 | Superuser | Los usuarios con el permiso **Superuser** establecido en **Activado** pueden editar los permisos de otros usuarios. Si tiene el permiso activado, tendrá habilitado de forma automática el acceso completo a todos los demás permisos. Además de las tareas descritas para cada permiso en esta tabla, también puede configurar suscripciones de notificaciones para que se le avise directamente sobre incidencias o mantenimiento, mantenimiento planificado, ejecutar comprobaciones de verificación sobre componentes de consola y crear organizaciones y espacios para el entorno. Este permiso equivale al rol de administrador (admin) de la consola de administración.  |
 | Basic Access | Los usuarios con el permiso **Basic Access** establecido en **Activado** pueden ver la opción de la página Administración en la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}. Los usuarios que tienen el permiso habilitado pueden acceder a los mosaicos [Información del sistema](#oc_system) y [Uso de recursos](#oc_resource). Sin este permiso, los usuarios no pueden ver ni acceder a la opción de menú Administración. Este permiso equivale al rol de administrador (admin) de la consola de administración. Este permiso equivale al permiso de inicio de sesión utilizado previamente para la consola de administración. |
 | Catalog | A los usuarios con el permiso **Catalog** se les puede asignar el acceso de **Lectura** o **Escritura** (modificar) los servicios que están disponibles en la instancia local o dedicada. El acceso de lectura permite que el usuario pueda acceder al mosaico Gestión de catálogos para ver los servicios disponibles. El acceso de escritura permite que el usuario pueda acceder al mosaico [Gestión de catálogos](#oc_catalog) para ver servicios, editar la visibilidad de los servicios, registrar servicios personalizados y controlar la lista de prioridades del paquete de compilación. |  
-| Reports | A los usuarios con el permiso **Reports** se les puede asignar acceso **Lectura** o **Escritura** (modificar) sobre los informes de seguridad. El acceso de lectura permite que el usuario pueda acceder al mosaico Informes y registros para descargar informes. El acceso de escritura permite que el usuario pueda ver el mosaico [Informes y registros](#oc_report), así como utilizar la CLI para cargar nuevos informes y crear nuevas categorías para que los usuarios accedan a ellas. |
+| Informes | A los usuarios con el permiso **Reports** se les puede asignar acceso **Lectura** o **Escritura** (modificar) sobre los informes de seguridad. El acceso de lectura permite que el usuario pueda acceder al mosaico Informes y registros para descargar informes. El acceso de escritura permite que el usuario pueda ver el mosaico [Informes y registros](#oc_report), así como utilizar la CLI para cargar nuevos informes y crear nuevas categorías para que los usuarios accedan a ellas. |
 | Users | A los usuarios con el permiso **Users** se les puede asignar el acceso de **Lectura** (ver) sobre la lista de usuarios o de **Escritura** (añadir o eliminar) sobre los usuarios. Este permiso no le permite definir permisos para otros usuarios. El acceso de escritura permite que el usuario pueda añadir nuevos usuarios al entorno, suprimir usuarios del entorno y añadir usuarios existentes a las organizaciones que ya existen en el entorno. Además, el acceso de **Escritura** permite que el usuario pueda añadir nuevas organizaciones, suprimir organizaciones y editar los usuarios dentro de las organizaciones. |
 {: caption="Tabla 14. Permisos" caption-side="top"}
 
@@ -1017,14 +1021,14 @@ Para utilizar los mandatos de API REST, primero debe autenticarse. Para generar 
 
 Para poder ejecutar cualquier solicitud de la API `Admin`, debe iniciar una sesión en la consola de administración.
 
-Para iniciar la sesión en la Consola de administración, puede utilizar la autenticación de acceso básica en el
-punto final `https://console.<region>.bluemix.net/login`. El servidor devuelve una cookie con la sesión. Utilice dicha cookie para todas las operaciones con la consola de administración.
+Para iniciar la sesión en la Consola de administración, puede utilizar la autenticación de acceso básica en el punto final
+`https://console.<region>.bluemix.net/login`. .bluemix.net/login` endpoint. El servidor devuelve una cookie con la sesión. Utilice dicha cookie para todas las operaciones con la consola de administración.
 
 **Nota:** La sesión deja de ser válida si no se utiliza durante unas cuantas horas.
 
 Para iniciar una sesión en la consola de administración, ejecute el mandato siguiente:
 
-`curl --user <id_usuario>:<contraseña> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
+`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1084,7 +1088,7 @@ Al iniciar sesión en la consola de administración, el servidor devolverá una 
 
 Para almacenar cookies una vez que haya iniciado sesión, utilice la opción `-c`, tal como se muestra en el siguiente ejemplo de CURL:
 
-`curl --user <id_usuario>:<contraseña> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
+`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
 {: codeblock}
 
 ### Reutilización de cookies
@@ -1092,7 +1096,7 @@ Para almacenar cookies una vez que haya iniciado sesión, utilice la opción `-c
 
 Para reutilizar cookies, utilice la opción `-b` con el nombre de archivo de la cookie que haya asignado con la opción `-c`, tal como se muestra en el siguiente ejemplo de CURL:
 
-`curl --user <id_usuario>:<contraseña> -b ./cookies.txt`
+`curl --user <user_id>:<password> -b ./cookies.txt`
 {: codeblock}
 
 ## Gestión de usuarios con la API REST de administración
@@ -1117,7 +1121,7 @@ Cuando añada un usuario, debe especificar una organización. Puede utilizar la 
 **Users** con acceso **Lectura** para poder listar
 organizaciones. Para listar todas las organizaciones, ejecute el mandato siguiente:
 
-`curl -b ./cookies.txt https://<su_host>.ibm.com/codi/v1/organizations | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/organizations | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1161,7 +1165,7 @@ la API REST de `Admin` para obtener una lista de los usuarios registrados. Debe 
 el permiso **Users** con acceso **Lectura** para poder listar usuarios registrados.
 Para listar todos los usuarios, ejecute el mandato siguiente:
 
-`curl -b ./cookies.txt https://<su_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1251,7 +1255,7 @@ organización, o a varias organizaciones. Para añadir un usuario, debe proporci
 
 Debe proporcionar la información en un archivo JSON.
 
-`curl -b ./cookies.txt https://<su_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1331,7 +1335,7 @@ Puede utilizar la API REST `Admin` para eliminar usuarios de la instancia de
 
 Para eliminar un usuario, debe especificar el ID del usuario. Ejecute el mandato siguiente:
 
-`curl -v -b ./cookies.txt -X DELETE https://<su_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
+`curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
 
 <dl class="parml">
@@ -1365,7 +1369,8 @@ El siguiente ejemplo muestra la salida de este mandato:
 ## API para métricas
 {: #envappmetricsapi}
 
-Puede utilizar tres API experimentales para recopilar métricas sobre el entorno o las aplicaciones. Estas API devuelven una matriz de puntos de datos correspondientes a las métricas que ha solicitado durante el periodo de tiempo especificado.
+Puede utilizar cuatro API para recopilar métricas sobre su entorno, aplicaciones y organizaciones. Estas API devuelven una matriz de puntos de datos correspondientes a las métricas que ha solicitado durante el periodo de tiempo especificado.
+
 
 Se puede acceder a las API para métricas que se describen en las secciones desde el punto final específico de la región, por ejemplo:
 
@@ -1377,11 +1382,11 @@ Se puede acceder a las API para métricas que se describen en las secciones desd
 1. Un usuario puede realizar un máximo de 200 solicitudes de API para métricas por hora.
 2. Cada solicitud de API devuelve un máximo de 200 puntos de datos por solicitud. Si hay más datos disponibles, se proporciona un URL en la respuesta para cargar el siguiente conjunto de datos.
 3. Cada solicitud de API necesita que un usuario tenga al menos Acceso básico a la consola de administración.  Es posible que se necesiten permisos adicionales, como se especifica más abajo.
-4. Los datos están disponibles hasta un máximo de 6 meses desde el momento en que se realiza la solicitud de API. 
+4. Los datos están disponibles hasta un máximo de 5 meses desde el momento en que se realiza la solicitud de API.
 
 ## Obtención de métricas sobre el entorno
 
-Puede utilizar la API de entorno experimental para obtener información sobre el entorno durante el periodo de tiempo que especifique. Se devuelven los puntos de datos disponibles dentro del periodo de tiempo que especifique. Se registran datos cada hora aproximadamente. Si, por ejemplo, ha solicitado seis horas de datos de CPU para el entorno, la respuesta incluirá datos de CPU correspondientes a cada una de las seis horas solicitadas.
+Puede utilizar la API de entorno para obtener información sobre el entorno durante el periodo de tiempo que especifique. Puede ver las muestras de datos reales, que se registran aproximadamente cada hora, o estadísticas calculadas en las muestras de datos. Las estadísticas están disponibles sólo para el consumo de memoria y disco. Las API permiten especificar el intervalo de tiempo de los datos reales o estadísticos devueltos. Si, por ejemplo, solicita seis horas de datos de CPU (reales) para el entorno, la respuesta incluirá datos de CPU correspondientes a cada una de las seis horas solicitadas.
 
 
 ### Puntos finales del entorno
@@ -1723,6 +1728,238 @@ En las secciones siguientes se proporciona al formato de los datos.
     "allocation": {
       "memory_gb": 571.8,
       "disk_gb": 1204
+    }
+  }
+}
+```
+{: screen}
+
+### Formato de respuesta de las métricas del entorno
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
+
+### Puntos finales de estadísticas de entorno
+
+Puede ver estadísticas calculadas en las métricas de datos para la memoria de su entorno y el consumo de disco. Las estadísticas devueltas son el promedio, el número máximo y los valores mínimos de las muestras de datos en cada agrupación de datos. Los datos pueden ser agrupados por día, donde las estadísticas se calculan para cada día o por mes, donde las estadísticas se calculan para cada mes.
+
+Puede utilizar los siguientes puntos finales para invocar este mandato de API:
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Nota**: Es necesario uno de los siguientes permisos para acceder a estos puntos finales: **acceso básico**, **lectura de usuario**, **escritura de usuario**, o **Superusuario**
+
+### Parámetros de consulta de las estadísticas de entorno
+
+Con los siguientes parámetros de consulta, puede obtener estadísticas correspondientes al disco y la memoria:
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">El primer punto en el tiempo a partir del que se devuelven datos. Si no se especifica startTime, se incluye el punto de datos más antiguo disponible.</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">El último punto en el tiempo a partir del que se devuelven datos. Si no se especifica endTime, se utiliza el punto de datos más reciente.</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">La agrupación en el que puede calcular las estadísticas. Los valores válidos son `day` y `month`. El valor predeterminado es día, que devuelve el promedio de valores de uso para cada día en el intervalo de tiempo especificado.  Si especifica un valor de mes devuelve el promedio de valores de uso para cada mes.</dd>
+</dl>
+
+El ejemplo siguiente utiliza los parámetros de consulta para obtener estadísticas sobre el entorno, con un promedio por día:
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Formato de los datos de las estadísticas del entorno
+
+En las secciones siguientes se proporciona al formato de los datos.
+
+ * Para obtener registros de datos sobre el uso de memoria, utilice el siguiente formato de datos:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * Para obtener registros de datos sobre el uso de disco, utilice el siguiente formato de datos:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+      "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
     }
   }
 }

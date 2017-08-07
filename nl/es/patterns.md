@@ -121,7 +121,7 @@ proyectos específicos, permisos de usuarios, o una combinación de estos compon
 Al implementar una arquitectura de organización única, la organización incluirá todos los recursos de nube, los servicios y las aplicaciones que puede utilizar para desarrollar, gestionar y
 desplegar aplicaciones de nube. En {{site.data.keyword.Bluemix_notm}} Público, la organización proporciona segregación entre cuentas y está disponible en todas las regiones.
 
- ![Figura que muestra la arquitectura de organización única en {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
+ ![Figura que muestra la arquitectura de organización única en {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figura que muestra la arquitectura de organización única en {{site.data.keyword.Bluemix_notm}}")
 
  Figura 1. Ejemplo de una arquitectura de organización única para {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado y
 {{site.data.keyword.Bluemix_notm}} Local
@@ -149,7 +149,7 @@ Los casos de ejemplo siguientes muestran distintos enfoques que puede adoptar al
 
   Solución: Puede crear una organización para cada proceso de entrega de aplicación empresarial. Por ejemplo, una organización para banca comercial, y otra para banca de inversión.
 
-  ![Figura que muestra la segregación de usuarios por entrega de aplicación empresarial](images/bank_example.svg "Figure that shows segregation of users by business application delivery")
+  ![Figura que muestra la segregación de usuarios por entrega de aplicación empresarial](images/bank_example.svg "Figura que muestra la segregación de usuarios por entrega de aplicación empresarial")
 
   Figura 2. Ejemplo de una arquitectura de varias organizaciones alineada con la entrega de LOB
 {: #bpfigure2}
@@ -172,7 +172,7 @@ Los casos de ejemplo siguientes muestran distintos enfoques que puede adoptar al
 
   Solución: Puede crear una única organización y definir un espacio para cada fase de entrega. A continuación, en función del rol de usuario y de la experiencia laboral, otorgue el acceso de lectura y de escritura que necesiten para finalizar su trabajo y colaborar también dentro de la organización.
 
-  ![Figura que muestra el aislamiento de usuarios por fase de entrega](images/user_groups_example.svg "Figure that shows isolation of users by delivery phase")
+  ![Figura que muestra el aislamiento de usuarios por fase de entrega](images/user_groups_example.svg "Figura que muestra el aislamiento de usuarios por fase de entrega")
 
    Figura 3. Ejemplo de una arquitectura de organización única alineada por fase de entrega
 {: #bpfigure3}

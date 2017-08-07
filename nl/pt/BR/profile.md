@@ -17,7 +17,7 @@ lastupdated: "2017-03-29"
 # Configurando seu Perfil
 {: #usersettings}
 
-Quando você estiver iniciando o {{site.data.keyword.Bluemix}} pela primeira vez, desejará configurar o perfil de sua conta. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário** para configurar ou atualizar suas configurações de perfil.
+Quando você estiver iniciando o {{site.data.keyword.Bluemix}} pela primeira vez, desejará configurar o perfil de sua conta. Acesse o **ícone {{site.data.keyword.avatar}}** ![Ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário** para configurar ou atualizar suas configurações de perfil.
 {:shortdesc}
 
 É possível configurar ou atualizar as informações a seguir:
@@ -33,7 +33,7 @@ Se você for um administrador para o {{site.data.keyword.Bluemix_notm}} Local ou
 ## Mudando a sua foto do perfil
 {: #photo notoc}
 
-Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
+Acesse o **ícone {{site.data.keyword.avatar}}** ![Ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
 
   * Para incluir uma foto, clique em **FAZER UPLOAD DE UMA FOTO**.
   * Para substituir sua foto atual por uma nova, clique em **MUDAR FOTO**.
@@ -46,7 +46,7 @@ Um IBMid é um ID único usado para efetuar login na conta do {{site.data.keywor
 
 Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil associadas a ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
+1. Acesse o **ícone {{site.data.keyword.avatar}}** ![Ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
 2. Clique em **Editar seu IBMid**.
 3. Edite as informações sobre o usuário.
 4. Clique **Salvar.**
@@ -60,12 +60,12 @@ Se você optar por desativar o rastreamento, talvez não seja possível usar alg
 
 Para desativar o rastreamento de analítica, conclua as etapas a seguir:
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
+1. Acesse o **ícone {{site.data.keyword.avatar}}** ![Ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil do usuário**.
 2. Configure o rastreamento de analítica como **desligado**.
 
 ## Fornecendo feedback
 {: #feedback}
 
-Para enviar ideias para melhorias do {{site.data.keyword.Bluemix_notm}} e de serviços, acesse [IBM Cloud Ideas ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Para obter mais informações sobre como usar o novo portal de ideias, veja [Pense, escreva, envie: novo portal de ideais do IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
+Para enviar ideias para melhorias do {{site.data.keyword.Bluemix_notm}} e de serviços, acesse [Ideias do IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Para obter mais informações sobre como usar o novo portal de ideias, veja [Think, write, submit: New ideas portal for IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
 
-Para fornecer feedback sobre a documentação, clique no link **Feedback** em cada página ou colabore conosco, clicando no link **Editar no GitHub** após o título. Para obter mais informações sobre como contribuir com os docs, veja [Quando se trata de docs, todos podem contribuir no Bluemix ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
+Para fornecer feedback sobre a documentação, clique no link **Feedback** em cada página ou colabore conosco, clicando no link **Editar no GitHub** após o título. Para obter mais informações sobre como contribuir com os docs, veja [When it comes to docs, everyone can contribute in Bluemix ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

@@ -121,7 +121,7 @@ specifici progetti, autorizzazioni utente o una combinazione di questi component
 Quando implementi un'architettura a singola organizzazione, questa include ogni risorsa cloud, servizio e applicazione da te utilizzati per sviluppare, gestire e
 distribuire le applicazioni cloud. In {{site.data.keyword.Bluemix_notm}} pubblico, l'organizzazione fornisce la separazione tra gli account ed è disponibile in tutte le regioni.
 
- ![Figura che mostra l'architettura a singola organizzazione in {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
+ ![Figura che mostra l'architettura a singola organizzazione in {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figura che mostra l'architettura a singola organizzazione in {{site.data.keyword.Bluemix_notm}}")
 
  Figura 1. Esempio di architettura a singola organizzazione per {{site.data.keyword.Bluemix_notm}} pubblico, {{site.data.keyword.Bluemix_notm}} dedicato e
  {{site.data.keyword.Bluemix_notm}} locale
@@ -150,7 +150,7 @@ I seguenti scenari mostrano i diversi approcci che puoi adottare per definire il
 
   Soluzione: puoi creare un'organizzazione per ogni processo di distribuzione delle applicazioni di business. Ad esempio, un'organizzazione per l'attività bancaria al dettaglio e una per l'attività di investimento.
 
-  ![Figura che mostra la separazione degli utenti in base alla distribuzione delle applicazioni di business](images/bank_example.svg "Figure that shows segregation of users by business application delivery")
+  ![Figura che mostra la separazione degli utenti in base alla distribuzione delle applicazioni di business](images/bank_example.svg "Figura che mostra la separazione degli utenti in base alla distribuzione delle applicazioni di business")
 
   Figura 2. Esempio di architettura a più organizzazioni allineata alla distribuzione LOB
 {: #bpfigure2}
@@ -173,7 +173,7 @@ I seguenti scenari mostrano i diversi approcci che puoi adottare per definire il
 
   Soluzione: puoi creare una singola organizzazione e definire uno spazio per ogni fase di distribuzione. Quindi, a seconda del ruolo utente e dell'esperienza lavorativa, concedi agli utenti l'accesso in lettura e scrittura richiesto per completare il loro lavoro e per collaborare all'interno dell'organizzazione.
 
-  ![Figura che mostra l'isolamento degli utenti in base alla fase di distribuzione](images/user_groups_example.svg "Figure that shows isolation of users by delivery phase")
+  ![Figura che mostra l'isolamento degli utenti in base alla fase di distribuzione](images/user_groups_example.svg "Figura che mostra l'isolamento degli utenti in base alla fase di distribuzione")
 
    Figura 3. Esempio di architettura a singola organizzazione allineata alla fase di distribuzione
 {: #bpfigure3}

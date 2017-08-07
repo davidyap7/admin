@@ -81,7 +81,7 @@ Completa la seguente procedura per impostare le notifiche via email per i limiti
 <li>Al termine dell'operazione, fai clic su **Salva**.</li>
 </ol>
 
-**Nota**: se hai un account di prova, puoi eseguire l'upgrade a un account Sottoscrizione o Pagamento a consumo per impostare i limiti di spesa. Per ulteriori informazioni sugli account Pagamento a consumo e Sottoscrizione, vedi [Modalità di fatturazione](/docs/pricing/index.html#pay-accounts).
+**Nota**: se hai un account di prova, puoi eseguire l'upgrade a un account Sottoscrizione o Pagamento a consumo per impostare i limiti di spesa. Per ulteriori informazioni sugli account Pagamento a consumo e Sottoscrizione, consulta [Modalità di fatturazione](/docs/pricing/index.html#pay-accounts).
 
 ## Visualizzazione dell'utilizzo
 {: #acctusage}

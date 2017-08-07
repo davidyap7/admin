@@ -33,7 +33,7 @@ os usuários efetuem log-in nos produtos e serviços IBM usando suas credenciais
 da empresa existentes. A autenticação então é manipulada pelo provedor de identidade da
 sua empresa. Quando você efetuar log-in no {{site.data.keyword.Bluemix_notm}} com
 um ID federado, será solicitado a efetuar log-in por meio da página de log-in de sua
-empresa. Para obter informações sobre como solicitar o registro do domínio da sua empresa ou organização na IBM ou para obter mais informações sobre o processo, veja o [IBMid Enterprise Federation Adoption Guide ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Um patrocinador IBM, como um defensor da oferta
+empresa. Para obter informações sobre como solicitar para registrar o domínio de sua empresa ou organização com a IBM ou para obter mais informações sobre o processo, veja [IBMid Enterprise Federation Adoption Guide ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Um patrocinador IBM, como um defensor da oferta
 ou do cliente, é necessário quando você solicita o registro de IDs federados.
 
 | Métodos de inscrição | Detalhes |    

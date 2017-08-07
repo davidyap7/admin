@@ -34,7 +34,7 @@ Conclua as etapas a seguir para renomear sua organização:
 ## Excluindo organizações e espaços
 {: #deleteorgs}
 
-Como o proprietário da conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para excluir uma organização.
+Como proprietário da conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para excluir uma organização.
 
 **Nota**: Não é possível inverter operações de exclusão. Você perderá todos os seus apps e serviços que estão associados à organização.
 

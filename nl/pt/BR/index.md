@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -53,10 +53,10 @@ Também é possível sempre saber o status de seu ambiente, verificando a págin
 
 {: #ld_table2}
 
-| **Tipo de evento** | **Método de Notificação** |       
+| **Tipo de evento** | **Método de notificação** |       
 |-----------------|-------------------|
 | Atualizações de Manutenção | Para ver uma lista completa e o histórico de suas notificações pendentes e completas, clique em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA** &gt; *Número* **pendente**. Você também é alertado sobre eventos de atualização de manutenção disruptiva planejada na página Status. Clique em **Suporte** &gt; **Status**. É possível ampliar o recurso de notificação configurando uma assinatura que envia um e-mail a destinatários de sua opção. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.|
-| Incidentes críticos | Você é alertado sobre incidentes críticos na página Status. Clique em **Suporte** &gt; **Status**. É possível estender o recurso de notificação configurando uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.  |  
+| Incidentes críticos | Você é alertado sobre incidentes críticos na página Status. Clique em **Suporte** &gt; **Status**. É possível estender o recurso de notificação configurando uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.  | 
 | Eventos de limite | É possível configurar uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha quando os limites para cota da organização, disco físico, memória física, disco reservado ou memória reservada são atingidos em seu ambiente. Ou é possível configurar uma assinatura que usa webhooks para integrar as notificações a um serviço da web de sua opção.  |  
 | {{site.data.keyword.Bluemix_notm}} Status | É sempre possível visualizar o status mais recente para a plataforma, os serviços e a sua instância do {{site.data.keyword.Bluemix_notm}} na página Status. Clique em **Suporte** &gt; **Status**.  |
 {: caption="Tabela 2. Tipos de eventos e métodos de notificações" caption-side="top"}
@@ -177,7 +177,7 @@ Uma notificação de limite de Cota da organização inclui somente as organiza�
 
 {: #payload}
 
-| **Valor IBM** | **Descrição** | **Tipo do evento** |
+| **Valor IBM** | **Descrição** | **Tipo de evento** |
 |----------------|----------------|------------------------|
 | {{content.category}} | Serviços afetados | Incidente |
 | {{content.disruption}} | Componentes afetados | Atualização de manutenção |
@@ -196,7 +196,7 @@ Uma notificação de limite de Cota da organização inclui somente as organiza�
 
 {: #threshpayload}
 
-| **Valor IBM** | **Descrição** | **Tipo do evento** |
+| **Valor IBM** | **Descrição** | **Tipo de evento** |
 |----------------|----------------|------------------------|
 | {{content.org_quota}} | Limite de cota da organização | Limite |
 | {{content.physical_disk}} | Limite de disco físico | Limite |
@@ -215,13 +215,14 @@ Quando a notificação de assinatura é salva, você recebe notificações por m
 ## Atualizações de Manutenção
 {: #oc_schedulemaintenance}
 
-É possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página de **Atualizações do sistema**.  Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
+Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações do sistema**. Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
 
 **Nota**: consulte a seção a seguir para [Configurar janelas de manutenção pré-aprovadas](index.html#preapprovedmaintenance) para iniciar. Essas janelas devem ser configuradas em ordem para a IBM planejar a manutenção para o seu ambiente.
 
 <dl>
 <dt>Atualizações sem interrupção</dt>
-<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso e será aplicado durante as janelas de manutenção pré-aprovadas, disponíveis que você configurar a partir da página Atualizações do sistema.</dd>
+<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso e será aplicado durante as janelas de manutenção pré-aprovadas, disponíveis que você configurar a partir da página Atualizações do sistema.
+<p>**Nota**: alguns serviços de plataforma podem requerer que pelo menos uma janela de mudança sem interrupção seja definida durante um conjunto de intervalos de tempo predeterminados a critério do serviço. Verifique a descrição do serviço de cada serviço dedicado implementado em seu ambiente.</p></dd>
 <dt>Atualizações disruptivas</dt>
 <dd>Uma atualização disruptiva pode afetar o seu ambiente, os aplicativos em execução ou o acesso de seus usuários aos aplicativos. Deve-se planejar e aprovar cada uma dessas atualizações de manutenção dentro da janela de manutenção atribuída de 21 dias. É possível selecionar a data e hora sugeridas de implementação, a opção para qualquer uma de suas janelas pré-aprovadas ou é possível abrir o calendário para selecionar três datas e horas específicas para a IBM escolher ao planejar a atualização.</dd>
 </dl>
@@ -240,7 +241,7 @@ Para salvar suas mudanças, deve-se ainda cumprir o mínimo necessário de tempo
 
 **Nota**: somente usuários com a permissão de super usuário (`ops.admin`) podem planejar e aprovar atualizações de manutenção.
 
-1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar Disponibilidade**.
+1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar disponibilidade**.
 2. Expanda a seção **Gerenciar janelas de atualização disponíveis**.
 3. Clique em **Incluir novo**.
 4. Configure a sua primeira janela de disponibilidade, selecionando a frequência, a duração e o horário de início para a janela.
@@ -255,7 +256,7 @@ Para salvar suas mudanças, deve-se ainda cumprir o mínimo necessário de tempo
 
 É necessário configurar no mínimo 12 horas disponíveis por semana para no mínimo dois dias durante cada semana. Se você tentar criar uma janela de atualização indisponível, poderá não ser capaz de salvar suas mudanças se essa nova janela fizer com que o sistema caia abaixo do mínimo semanal requerido. Nesse caso, deve-se primeiro remover algumas das janelas de atualização indisponíveis existentes ou incluir mais janelas de atualização disponíveis antes de poder salvar a nova janela de atualização indisponível. Consulte [Configurando janelas de manutenção pré-aprovadas](index.html#preapprovedmaintenance) para obter mais informações.
 
-1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar Disponibilidade**.
+1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar disponibilidade**.
 2. Expanda a seção **Gerenciar janelas de atualização indisponíveis**.
 3. Clique em **Incluir novo**.
 4. Configure a sua janela indisponível, selecionando a frequência, a duração e o horário de início para a janela.
@@ -362,18 +363,21 @@ Além da representação gráfica, é possível ver a porcentagem de memória e 
 
 Para ver o uso de sua memória, disco ou CPU pelo DEA, clique em **Detalhamento**.  
 
-Para ver informações mais detalhadas sobre sua memória física e reservada ou sobre o uso do disco ao longo do tempo, clique em **Histórico**. É possível especificar o prazo para visualizar como semanal ou mensal. A visualização de uso histórico mostra um gráfico de memória ou o uso do disco durante o tempo que você escolher.  
+Para ver informações mais detalhadas sobre sua memória física e reservada ou sobre o uso do disco ao longo do tempo, clique em **Histórico**. É possível visualizar o uso das últimas 48 horas, dos últimos 30 dias ou dos últimos 5 meses. Os pontos exibidos para as últimas 48 horas representam os dados reais coletados uma vez por hora. Os pontos exibidos para os últimos 30 dias representam o valor médio de cada dia. Os pontos exibidos para os últimos 5 meses representam o valor médio de cada mês. As visualizações dos últimos 30 dias e dos últimos 5 meses também podem exibir o valor máximo de cada dia ou mês alternando o botão de opções na parte superior do gráfico. A visualização de uso histórico mostra um gráfico de memória ou o uso do disco durante o tempo que você escolher.  
 	<dl>
 	<dt><strong>Limite reservado</strong></dt>
-	<dd>Mostrado como uma linha pontilhada horizontal, o Limite reservado é a quantia total de memória ou espaço em disco que pode ser coletivamente reservada por todos os aplicativos em execução em seu ambiente.</dd>
+	<dd>Mostrado como uma linha tracejada horizontal, o Limite reservado é a quantia total de memória ou espaço em disco que pode ser reservada coletivamente por todos os aplicativos em execução em seu ambiente.</dd>
 	<dt><strong>Reservada</strong></dt>
-	<dd>A Área reservada mostra o espaço de memória ou disco que está atualmente reservada coletivamente por todos os aplicativos em execução em seu ambiente.
-	<p>Para ver quais organizações reservaram mais memória em um determinado momento, passe o mouse sobre o ponto ao longo da Área reservada que está associado a esse momento. Em seguida, é possível clicar em uma organização no gráfico de pizza que é exibido para ver mais informações sobre essa organização.</p></dd>
+	<dd>A linha Reservada mostra a memória ou o espaço em disco reservado coletivamente atualmente por todos os aplicativos em execução em seu ambiente.</dd>
 	<dt><strong>Limite físico</strong></dt>
-	<dd>Mostrado como uma linha pontilhada horizontal, o Limite físico mostra a quantia de memória física ou o espaço em disco que foi adquirido para seu ambiente.</dd>
+	<dd>Mostrado como uma linha tracejada horizontal, o Limite físico mostra a quantia de memória física ou espaço em disco que foi comprada para seu ambiente.</dd>
 	<dt><strong>Física</strong></dt>
-	<dd>A Área física mostra a quantia de memória ou espaço em disco que realmente está sendo usado.</dd>
+	<dd>A linha Física mostra a quantia de memória ou espaço em disco que está realmente sendo usada.</dd>
 	</dl>
+	
+Para cada uma das visualizações de uso histórico disponíveis, pelo menos dois pontos de dados são necessários para que o gráfico seja renderizado. Isso equivale a dados de pelo menos duas horas durante as últimas 48 horas, dois dias durante os últimos 30 dias e dois meses durante os últimos 5 meses. Para as visualizações de 30 dias e 5 meses, valores médios ou máximos parcialmente completos são retornados para o dia ou o mês atual e serão ajustados conforme mais dados forem coletados.
+
+Os dados que alimentam essas visualizações estão disponíveis por meio de [API de métricas](/docs/admin/index.html#envappmetricsapi). Para ver os terminais de API reais e os dados usados para gerar a visualização, clique no link **Saiba mais sobre a API** acima do gráfico. Se você clicar em qualquer um dos links no diálogo que aparece, uma nova guia será aberta em seu navegador contendo a resposta JSON do terminal de API de métricas. 
 
 #### Detalhes de uso do serviço
 {: #servicesresourceusage}
@@ -462,18 +466,18 @@ A tabela a seguir mostra a lista de relatórios de segurança gerados para o {{s
 |-------------------|---------------------|
 | [Logins de firewall](/docs/hybrid/reports.html#firewalllogins) | Eventos relacionados a login do administrador para os dispositivos de firewall Vyatta. |
 | [Negações de firewall](/docs/hybrid/reports.html#firewalldenies) | Eventos gerados pelos dispositivos de firewall Vyatta quando uma solicitação para acessar é negada de acordo com as regras de firewall que estão em vigor. |
-| {{site.data.keyword.Bluemix_notm}} [administradores de login](/docs/hybrid/reports.html#oslogin) | Eventos gerados pelo sistema operacional quando um administrador inicia uma sessão SSH em cada sistema {{site.data.keyword.Bluemix_notm}}. |
-| {{site.data.keyword.Bluemix_notm}} [Os desenvolvedores de aplicativos de login](/docs/hybrid/reports.html#loginserverlogins) | Eventos gerados pelo componente de login da plataforma {{site.data.keyword.Bluemix_notm}} quando um usuário da plataforma {{site.data.keyword.Bluemix_notm}} inicia uma sessão usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
-| {{site.data.keyword.Bluemix_notm}} [administração do sistema operacional](/docs/hybrid/reports.html#osadmin)  | Eventos gerados pelo sistema operacional quando um administrador executa ação em uma sessão de trabalho atual. |
-| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) plataforma de administração](/docs/hybrid/reports.html#platformadmin) | Eventos relacionados a operações executadas pelo usuário da plataforma {{site.data.keyword.Bluemix_notm}} usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
-| [Administração de banco de dados](/docs/hybrid/reports.html#dbadmin) | Eventos relacionados a operações executadas por um administrador de banco de dados nos bancos de dados internos do {{site.data.keyword.Bluemix_notm}}. |
-| [Gerenciamento de usuários](/docs/hybrid/reports.html#acusermgmt) | Eventos relacionados a ações de gerenciamento do usuário executadas na página Administração. |
-| [Gerenciamento de Catálogo](/docs/hybrid/reports.html#catalogmgmt) | Eventos relacionados a mudanças no Catálogo de serviços. |
-| [Relatórios de Segurança](/docs/hybrid/reports.html#securityreportsmgmt) | Eventos relacionados a ações de gerenciamento de relatórios de segurança executadas na página Administração. |
+| [Login de administradores](/docs/hybrid/reports.html#oslogin) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo sistema operacional quando um administrador inicia uma sessão SSH em cada sistema {{site.data.keyword.Bluemix_notm}}. |
+| [Login de desenvolvedores de aplicativos](/docs/hybrid/reports.html#loginserverlogins) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo componente de login da plataforma {{site.data.keyword.Bluemix_notm}} quando um usuário da plataforma {{site.data.keyword.Bluemix_notm}} inicia uma sessão usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
+| [Administração do sistema operacional](/docs/hybrid/reports.html#osadmin) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo sistema operacional quando um administrador executa ação em uma sessão de trabalho atual. |
+| [(Cloud Foundry) Administração da plataforma](/docs/hybrid/reports.html#platformadmin) do {{site.data.keyword.Bluemix_notm}} | Eventos relacionados a operações executadas pelo usuário da plataforma {{site.data.keyword.Bluemix_notm}} usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
+| [Administração do banco de dados interno](/docs/hybrid/reports.html#dbadmin) | Eventos relacionados a operações executadas por um administrador de banco de dados nos bancos de dados internos do {{site.data.keyword.Bluemix_notm}}. |
+| [Gerenciamento de usuário](/docs/hybrid/reports.html#acusermgmt) | Eventos relacionados a ações de gerenciamento do usuário executadas na página Administração. |
+| [Gerenciamento de catálogo](/docs/hybrid/reports.html#catalogmgmt) | Eventos relacionados a mudanças no Catálogo de serviços. |
+| [Gerenciamento de relatórios de segurança](/docs/hybrid/reports.html#securityreportsmgmt) | Eventos relacionados a ações de gerenciamento de relatórios de segurança executadas na página Administração. |
 | [Revisões de acesso](/docs/hybrid/reports.html#securityreportsmgmt) | Revisões para acessos privilegiados. |
 | Gerenciamento de mudanças de software | Atividade de gerenciamento de mudanças. |
-| [Gerenciamento de Certificado de Chave](/docs/hybrid/reports.html#keymgmt) | As operações de gerenciamento de certificado de chave. |
-| [Notificações do Sistema](/docs/hybrid/reports.html#systemnotifications) | Eventos relacionados à configuração das janelas de implementação de atualização de software ou assinaturas de notificação. |
+| [Gerenciamento de certificado-chave](/docs/hybrid/reports.html#keymgmt) | As operações de gerenciamento de certificado de chave. |
+| [Notificações do sistema](/docs/hybrid/reports.html#systemnotifications) | Eventos relacionados à configuração das janelas de implementação de atualização de software ou assinaturas de notificação. |
 
 {: caption="Tabela 9. Lista de relatórios de segurança" caption-side="top"}
 
@@ -490,7 +494,7 @@ A página Status é o local central para localizar notificações e anúncios so
 
 ### Status do console de administração
 
-Após a implementação inicial do seu ambiente do {{site.data.keyword.Bluemix_notm}}, uma verificação é concluída automaticamente nos componentes que são usados para administrar o seu ambiente. É possível acessar a página Verificação do console administrativo, para verificar o status dos componentes após a verificação ter sido executada. Para acessar a página, acesse <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, em que `<subdomain>` é o nome de sua instância local ou dedicada.
+Após a implementação inicial do seu ambiente do {{site.data.keyword.Bluemix_notm}}, uma verificação é concluída automaticamente nos componentes que são usados para administrar o seu ambiente. É possível acessar a página Verificação do console administrativo, para verificar o status dos componentes após a verificação ter sido executada. Para acessar a página, acesse <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, em que `<subdomain>` é o nome da instância local ou dedicada.
 
 É possível executar uma verificação a qualquer momento. Deve-se ter efetuado login a fim de selecionar a opção para executar a verificação. Se você encontrar falhas enquanto estiver incluindo um usuário, editando uma organização ou gerenciando os seus serviços, execute esta verificação para identificar se quaisquer componentes estão falhando ou estão desconectados. É possível abrir um chamado de suporte com as informações da verificação, para ter o problema resolvido rapidamente.
 
@@ -524,11 +528,11 @@ Também é possível gerenciar a ordem de prioridade dos buildpacks disponíveis
 ### Registrando um broker de serviço
 {: #servicebrokerui}
 
-Caso você tenha um serviço que queira exibir no catálogo do {{site.data.keyword.Bluemix_notm}}, deve-se implementar e registrar um [broker de serviço ![Ícone de link externo](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Após registrar seu broker, será possível escolher quais organizações podem acessar o serviço em sua instância local ou dedicada.
+Se você tiver um serviço que deseja exibir no catálogo do {{site.data.keyword.Bluemix_notm}}, deverá implementar e registrar um [broker de serviço ![Ícone de link externo](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Após registrar seu broker, será possível escolher quais organizações podem acessar o serviço em sua instância local ou dedicada.
 
 Os métodos para trabalhar com o seu broker de serviço variam, dependendo de quantos serviços ele gerencia ou se ele já foi registrado com o {{site.data.keyword.Bluemix_notm}}.
 
-- Se o seu broker de serviço gerenciar um serviço, será possível usar a interface com o usuário para registrá-lo após a implementação da [API do broker de serviço ![Ícone de link externo](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Consulte [Registrando um broker de serviço que gerencia um serviço](index.html#registerbrokerui).
+- Se o broker de serviço gerenciar um serviço, será possível usar a interface com o usuário para registrá-lo após a implementação da [API do broker de serviço ![Ícone de link externo](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Consulte [Registrando um broker de serviço que gerencia um serviço](index.html#registerbrokerui).
 - Se o seu broker de serviço gerenciar múltiplos serviços, use a CLI cf com o plug-in da CLI do administrador do [{{site.data.keyword.Bluemix_notm}} ](../cli/plugins/bluemix_admin/index.html) (subcomando `ba`) ou use a [API de serviço customizado](index.html#servicebrokerapi).
 - Se seu broker de serviço já estiver registrado e você desejar atualizar ou excluir o mesmo, use a CLI cf com o [plug-in de administrador do {{site.data.keyword.Bluemix_notm}}](../cli/plugins/bluemix_admin/index.html) (subcomando `ba`) ou use a [API de serviço customizada](index.html#servicebrokerapi).
 
@@ -633,12 +637,12 @@ As tabelas a seguir podem ajudá-lo a preencher o arquivo de JSON.
 
 {: #ld_table10}
 
-| **Campos de JSON** | **Descrição** |
+| **Campos JSON** | **Descrição** |
 |-----------------|-----------------|
 |ligáveis   | Um valor booleano que indica se as instâncias de serviço podem ser ligadas a aplicativos.  |
 |Descrição | A descrição do serviço que é exibida quando você usa o comando cf marketplace ou passa o mouse sobre o ícone de serviço no catálogo da interface com o usuário do {{site.data.keyword.Bluemix_notm}}. É possível incluir uma única sentença ou frase para a descrição. |
 |Nome | O nome do serviço que é exibido na interface de linha de comandos cf. Esse nome deve ser exclusivo no {{site.data.keyword.Bluemix_notm}} e deve usar letras minúsculas e não deve conter espaços. Não é possível mudar o nome do serviço após registrar o serviço com o {{site.data.keyword.Bluemix_notm}}. |
-|ID  | O ID do serviço. Esse ID deve ser exclusivo no {{site.data.keyword.Bluemix_notm}} e deve ser um GUID (Identificador Exclusivo Global). Não é possível mudar o ID do serviço depois de registrar o serviço com o {{site.data.keyword.Bluemix_notm}}. |
+|id  | O ID do serviço. Esse ID deve ser exclusivo no {{site.data.keyword.Bluemix_notm}} e deve ser um GUID (Identificador Exclusivo Global). Não é possível mudar o ID do serviço depois de registrar o serviço com o {{site.data.keyword.Bluemix_notm}}. |
 |meta-dados | Os metadados de plano de serviço que são exibidos no catálogo do {{site.data.keyword.Bluemix_notm}} e na folha de precificação. O campo de metadados é um campo opcional. É possível especificar mais campos para os metadados. Consulte a tabela a seguir para [Campos de metadados](index.html#metadatafields) para obter mais informações. |
 |planejamentos | Uma matriz de definições de plano de serviço. Consulte a tabela a seguir para [Campos de plano](index.html#planfields) para obter mais informações. |
 {: caption="Tabela 10. Campos JSON" caption-side="top"}
@@ -699,24 +703,24 @@ As tabelas a seguir podem ajudá-lo a preencher o arquivo de JSON.
 
 O exemplo a seguir mostra como a resposta de JSON de GET /v2/catalog é mapeada para a página de detalhes do serviço no catálogo do {{site.data.keyword.Bluemix_notm}}:
 
-![Detalhes do serviço no catálogo.](images/metadata.png "Visualização de detalhes do serviço do catálogo do Bluemix")
+![Detalhes de serviço no catálogo.](images/metadata.png "Visualização de detalhes de serviço do Catálogo do Bluemix")
 
 
 {: #planfields}
 
-| **Valores de plano** | **Descrição** |
+| **Valores de planos** | **Descrição** |
 |---------------------|-----------------|
 |Nome       | O nome do plano de serviço que é usado na interface de linha de comandos cf. Por exemplo, o nome do plano é exibido na saída do comando cf marketplace. O nome do plano deve estar em letras minúsculas e não deve conter espaços e deve ser exclusivo dentro do serviço.  |
 |Descrição       | A descrição do plano de serviço. A descrição é exibida após você selecionar um plano na página de detalhes do serviço no catálogo do {{site.data.keyword.Bluemix_notm}}. |
 |grátis      | Um valor booleano que indica se o plano de serviço é grátis. O valor padrão é verdadeiro. |
-|ID       | O ID do plano de serviço. O ID deve ser exclusivo e deve ser um GUID.  |
+|id       | O ID do plano de serviço. O ID deve ser exclusivo e deve ser um GUID.  |
 |metadados (opcional)    | Os metadados de plano de serviço que são exibidos no catálogo do {{site.data.keyword.Bluemix_notm}} e na folha de precificação. O campo de metadados é um campo opcional. É possível especificar os campos a seguir no campo de metadados: displayName, tipo (assinatura, reservável, planDetails), custo, custos (unitId, unidade, partNumber) e paidOnly. Consulte a tabela a seguir para [Campos de metadados de plano](index.html#planmetadata) para obter mais informações. |
 {: caption="Tabela 12. Campos de plano" caption-side="top"}
 
 
 {: #planmetadata}
 
-| **Valores de metadados de plano** | **Descrição** |
+| **Valores de metadados do plano** | **Descrição** |
 |------------------------|-----------------|
 |nome de exibição             | O nome do plano que é exibido na interface com o usuário do {{site.data.keyword.Bluemix_notm}}. Esse nome é exibido na página de detalhes do serviço no catálogo e na folha de precificação.   |
 |type                    | O tipo do plano. É possível usar os valores a seguir para esse campo: assinatura (Um plano de assinatura. O valor-padrão é falso.), reservável (Um plano reservável. Esse valor é usado quando o plano é um plano de assinatura, ou seja, o valor de plan.metadata.subscription é verdadeiro. O valor-padrão é falso.), planDetails (Uma quantidade e descrição detalhadas dos recursos que podem ser usados com o plano. Esse valor é usado quando o plano é reservável, ou seja, o valor de plan.metadata.reserveable é verdadeiro.) |
@@ -727,7 +731,7 @@ O exemplo a seguir mostra como a resposta de JSON de GET /v2/catalog é mapeada 
 
 O exemplo a seguir mostra como a resposta de JSON de GET /v2/catalog é mapeada para a página de detalhes do serviço no catálogo do {{site.data.keyword.Bluemix_notm}}. Especificamente, como os campos de metadados do plano descritos na tabela anterior mapeiam para a interface com o usuário:
 
-![Detalhes de metadados de plano no catálogo.](images/plan_metadata.png "Visualização de valores de metadados de plano de catálogo do Bluemix")
+![Detalhes de metadados de plano no catálogo.](images/plan_metadata.png "Visualização de valores de metadados de plano do Catálogo do Bluemix")
 
 
 <!-- staging only end -->
@@ -922,8 +926,7 @@ de **Usuários** com acesso de **Gravação**, será possível incluir usuários
 
   **Nota**: quando a operação de inclusão é bem-sucedida, o usuário é incluído na tabela para você visualizar e procurar. Quando os usuários são incluídos, eles não possuem permissões designadas.
 
-* Incluir um grupo de usuário a partir do seu diretório LDAP. Se você tiver a permissão de **Super usuário** ou a permissão
-de **Usuários** com acesso de **Gravação**, será possível incluir usuários.
+* Incluir um grupo de usuário a partir do seu diretório LDAP. Se você tiver a permissão de **Super usuário** ou a permissão de **Usuários** com acesso de **Gravação**, será possível incluir usuários.
 
   1. Clique em **Incluir grupo de usuários**.
   2. No campo de **Procura**digite um nome do grupo para procurar e selecione o nome do grupo na lista preenchida.
@@ -971,7 +974,7 @@ Os usuários podem ser designados com as permissões a seguir com níveis de ace
 
 {: #ld_table14}
 
-| **Permissão do usuário** | **Descrição** |       
+| **Permissão de usuário** | **Descrição** |       
 |-----------------|-------------------|
 | Superusuário | Os usuários com permissão de **Super usuário** configurada como **Ligado** podem editar permissões para outros usuários. Se você tiver a permissão ativa, ela ativa automaticamente o acesso total a todas as outras permissões. Além das tarefas descritas para cada permissão nesta tabela, ele também pode configurar assinaturas de notificação para ser alertado diretamente sobre manutenção ou incidentes, planejar manutenção, executar verificações em componentes do console e criar organizações e espaços para o ambiente. Essa permissão é equivalente à função do administrador (admin) para o console do administrador.  |
 | Acesso básico | Os usuários com permissão de **Acesso básico** configurada como **Ligado** têm permissão para ver a opção da página de Administração na interface com o usuário do {{site.data.keyword.Bluemix_notm}}. Usuários com a permissão ativada podem acessar os quadros de [Informações do sistema](#oc_system) e de [Uso de recursos](#oc_resource). Sem essa permissão, os usuários não podem ver ou acessar a opção de menu de Administração. Essa permissão é equivalente à função do administrador (admin) para o console do administrador. Essa permissão é equivalente à permissão de login usada anteriormente para o console do administrador. |
@@ -997,7 +1000,7 @@ Para usar comandos da API de REST, é necessário primeiro autenticar. Para gera
 Antes que quaisquer solicitações de API `Admin` possam ser executadas, deve-se efetuar login no
 Console administrativo.
 
-Para efetuar login no Console administrativo, é possível usar a autenticação de acesso básico no
+Para efetuar login no Console do administrador, será possível usar autenticação de acesso básico no
 terminal `https://console.<region>.bluemix.net/login`. O servidor retorna um cookie com a
 sua sessão. Use esse cookie para todas as operações com o Console administrativo.
 
@@ -1019,8 +1022,7 @@ Para efetuar login no Console administrativo, execute o comando a seguir:
 <dd class="pd">Envia um cabeçalho Aceitar.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste
-comando:
+O exemplo a seguir mostra a saída a partir deste comando:
 ```
 {
     "message": "Logged in",
@@ -1095,9 +1097,9 @@ Embora seja possível optar por usar outras ferramentas, as ferramentas a seguir
 usar outras ferramentas também.
 * cURL, para inserir solicitações API REST como comandos. cURL é um utilitário grátis que pode
 ser usado para enviar solicitações de HTTP para um servidor e receber as respostas do servidor por meio de uma interface de linha de comandos. É possível
-fazer download de cURL por meio do [site de Download do cURL ![Ícone de link externo](../icons/launch-glyph.svg)](http://curl.haxx.se/download.html){: new_window}.
+fazer download de cURL do [site Download de cURL ![Ícone de link externo](../icons/launch-glyph.svg)](http://curl.haxx.se/download.html){: new_window}.
 * Python, para usar a ferramenta JSON de pretty-print do Python. Essa ferramenta opcional considera o texto JSON como entrada e
-fornece saída fácil de ler. É possível fazer download do Python por meio do [site de Downloads do Python ![Ícone de link externo](../icons/launch-glyph.svg)](https://www.python.org/downloads){: new_window}.
+fornece saída fácil de ler. É possível fazer download de Python do [site Downloads de Python ![Ícone de link externo](../icons/launch-glyph.svg)](https://www.python.org/downloads){: new_window}.
 
 
 ### Listando organizações
@@ -1297,8 +1299,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 POST para o servidor HTTP.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste
-comando:
+O exemplo a seguir mostra a saída a partir deste comando:
 
 ```
 * Conectado ao host local (127.0.0.1) porta 3000 (#0)
@@ -1338,8 +1339,7 @@ Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute
 <dd class="pd">Especifica uma solicitação DELETE.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste
-comando:
+O exemplo a seguir mostra a saída a partir deste comando:
 
 ```
  * connect to ::1 port 3000 failed: Connection refused
@@ -1365,7 +1365,8 @@ comando:
 ## API para métricas
 {: #envappmetricsapi}
 
-É possível usar três APIs experimentais para reunir métricas sobre seu ambiente ou aplicativos. Essas APIs retornam uma matriz de pontos de dados para as métricas solicitadas durante o tempo especificado.
+É possível usar quatro APIs para reunir métricas sobre o seu ambiente, aplicativos e organizações. Essas APIs retornam uma matriz de pontos de dados para as métricas solicitadas durante o tempo especificado.
+
 
 As APIs métricas que são descritas nas seções a seguir podem ser acessadas do terminal específico da região, por exemplo:
 
@@ -1377,11 +1378,11 @@ As APIs métricas que são descritas nas seções a seguir podem ser acessadas d
 1. Um usuário pode fazer até 200 solicitações de API para métricas dentro de uma hora.
 2. Cada solicitação de API retorna até 200 pontos de dados por solicitação. Se mais dados estiverem disponíveis, uma URL será fornecida para carregar o próximo conjunto de dados.
 3. Cada solicitação de API requer que um usuário tenha pelo menos Acesso básico ao Console de administração.  Permissões adicionais podem ser necessárias, conforme especificado abaixo.
-4. Os dados estão disponíveis até 6 meses atrás do horário em que a solicitação de API é feita.
+4. Os dados ficam disponíveis até 5 meses do momento em que a solicitação de API é feita.
 
 ## Reunindo métricas sobre seu ambiente
 
-É possível usar a API de ambiente experimental para reunir informações de alto nível do ambiente durante um período especificado. Os pontos de dados disponíveis dentro do tempo especificado são retornados. Os dados são registrados aproximadamente a cada hora. Se, por exemplo, você solicitasse seis horas de dados de CPU para o ambiente, a resposta incluiria dados de CPU para cada uma das seis horas solicitadas.
+É possível usar a API do ambiente para reunir informações de ambiente de alto nível em um período de tempo especificado. É possível visualizar as amostras de dados reais registradas aproximadamente a cada hora ou as estatísticas calculadas nas amostras de dados. As estatísticas ficam disponíveis para consumo de memória e disco somente. As APIs permitem especificar o intervalo de tempo dos dados reais ou estatísticos retornados. Se, por exemplo, você solicitasse seis horas de dados de CPU (reais) para o ambiente, a resposta incluiria os dados de CPU de cada uma das seis horas solicitadas.
 
 
 ### Terminais de ambiente
@@ -1723,6 +1724,238 @@ As seções a seguir fornecem o formato de dados.
     "allocation": {
       "memory_gb": 571.8,
       "disk_gb": 1204
+    }
+  }
+}
+```
+{: screen}
+
+### Formato de resposta de métricas de ambiente
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
+
+### Terminais de estatísticas do ambiente
+
+É possível visualizar as estatísticas calculadas nos dados de métricas para consumo de memória e disco de seu ambiente. As estatísticas retornadas são os valores médio, máximo e mínimo das amostras de dados em cada agrupamento de dados. Os dados podem ser agrupados por dia, no qual as estatísticas são calculadas para cada dia; ou por mês, no qual as estatísticas são calculadas para cada mês.
+
+É possível usar os terminais a seguir para chamar este comando de API:
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Nota**: uma das permissões a seguir é necessária para acessar estes terminais: **Acesso básico**, **Leitura de usuário**, **Gravação de usuário** ou **Superusuário**
+
+### Parâmetros de consulta de estatísticas do ambiente
+
+Usando os parâmetros de consulta a seguir, é possível reunir estatísticas para seu disco e memória:
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">O momento mais antigo a partir do qual os dados são retornados. Se nenhum startTime for especificado, o ponto de dados disponível mais antigo será incluído.</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">O momento mais recente a partir do qual os dados são retornados. Se nenhum endTime for especificado, o ponto de dados mais recente será usado.</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">O agrupamento no qual calcular estatísticas. Os valores válidos são `day` e `month`. O padrão é day, retornando os valores de uso médio de cada dia no intervalo de tempo especificado. Especificar um valor de month retorna os valores de uso médio de cada mês.</dd>
+</dl>
+
+O exemplo a seguir usa os parâmetros de consulta para reunir estatísticas de memória sobre o seu ambiente, com a média feita por dia:
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Formato de dados de estatísticas do ambiente
+
+As seções a seguir fornecem o formato de dados.
+
+ * Para reunir registros de dados sobre seu uso de memória, use o formato de dados a seguir:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * Para reunir registros de dados sobre seu uso de disco, use o formato de dados a seguir:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
     }
   }
 }
