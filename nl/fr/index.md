@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -31,8 +31,8 @@ Si vous disposez d'un accès administrateur pour l'environnement {{site.data.key
 |Gérer les droits d'administrateur | Cliquez sur **ADMINISTRATION &gt; ADMINISTRATION DES UTILISATEURS** pour ajouter des utilisateurs, retirer des utilisateurs et ajuster les droits des utilisateurs. Voir [Gestion des utilisateurs et des droits](/docs/admin/index.html#oc_useradmin). |
 |Consulter les rapports et les journaux | Cliquez sur **ADMINISTRATION &gt; RAPPORTS ET JOURNAUX** afin d'afficher des rapports de sécurité et des journaux d'audit pour votre instance. Voir [Affichage des rapports](/docs/admin/index.html#oc_report). |
 |Afficher les informations système | Cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME** afin d'afficher des informations système, telles que les mises à jour de maintenance en attente, le nom et la version de votre instance, la région, l'adresse URL de l'API, l'adresse URL de l'interface de ligne de commande, les détails de la configuration LDAP, les mappages des groupes et des utilisateurs, des statistiques et les domaines partagés. Voir [Affichage des informations système](/docs/admin/index.html#oc_system). |
-|Etendre des notifications et configurer des abonnements à des notifications | Cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* mises à jour en attente**. Vous pouvez utiliser des webhooks pour l'intégration à un service Web de votre choix afin de configurer un abonnement aux notifications d'événement pour une mise à jour ou un incident. Voir [Notifications et abonnements à des notifications](/docs/admin/index.html#oc_eventsubscription). |
-{: caption="Tableau 1. Tâches d'administration pour la gestion de votre instance {{site.data.keyword.Bluemix_notm}} locale ou dédiée " caption-side="top"}
+|Etendre des notifications et configurer des abonnements à des notifications | Cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente**. Vous pouvez utiliser des webhooks pour l'intégration à un service Web de votre choix afin de configurer un abonnement aux notifications d'événement pour une mise à jour ou un incident. Voir [Notifications et abonnements à des notifications](/docs/admin/index.html#oc_eventsubscription). |
+{: caption="Tableau 1. Tâches d'administration pour la gestion de votre instance {{site.data.keyword.Bluemix_notm}} locale ou dédiée" caption-side="top"}
 
 <!-- staging only for WoW start -->
 
@@ -56,7 +56,7 @@ Vous pouvez afficher les notifications pour votre environnement local ou dédié
 | **Type d'événement** | **Méthode de notification** |       
 |-----------------|-------------------|
 | Mises à jour de maintenance | Pour afficher la liste complète ainsi que l'historique de vos notifications en attente et consultées, cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME** &gt; *Nombre* **en attente**. Vous êtes également prévenu en cas d'événements de mise à jour de maintenance planifiés avec interruption dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement envoyant un courrier électronique aux destinataires de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.|
-| Incidents critiques | Vous êtes prévenu en cas d'incident critique dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement aux notifications qui envoie un courrier électronique au destinataire de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.  |  
+| Incidents critiques | Vous êtes prévenu en cas d'incident critique dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement aux notifications qui envoie un courrier électronique au destinataire de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.  | 
 | Evénements de seuil | Vous pouvez configurer un abonnement de notification qui envoie un courrier électronique au destinataire de votre choix lorsque les seuils pour le quota d'organisation, le disque physique, la mémoire physique, le disque réservé ou la mémoire réservée sont atteints dans votre environnement. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications au service Web de votre choix.  |  
 | Statut {{site.data.keyword.Bluemix_notm}} | Vous pouvez toujours examiner le statut le plus récent de la plateforme, des services et de votre instance {{site.data.keyword.Bluemix_notm}} sur la page Statut. Cliquez sur **Support** &gt; **Statut**.  |
 {: caption="Tableau 2. Types d'événement et méthodes de notification" caption-side="top"}
@@ -221,7 +221,8 @@ Vous pouvez afficher les mises à jour de maintenance planifiées et en attente,
 
 <dl>
 <dt>Mises à jour sans interruption</dt>
-<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas et est appliquée au cours des fenêtres de disponibilité pré-approuvées pour la maintenance que vous avez définies dans la page Mises à jour du système.</dd>
+<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas et est appliquée au cours des fenêtres de disponibilité pré-approuvées pour la maintenance que vous avez définies dans la page Mises à jour du système.
+<p>**Remarque** : pour certains services de plateforme, la définition d'au moins une fenêtre de changements sans interruption peut s'avérer nécessaire durant un ensemble de créneaux horaires prédéterminés, à la discrétion du service. Vérifiez la description de service de chaque service dédié déployé sur votre environnement.</p></dd>
 <dt>Mises à jour avec interruption</dt>
 <dd>Une mise à jour avec interruption peut avoir un impact sur votre environnement, les applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Vous devez planifier et approuver chacune de ces mises à jour de maintenance dans la fenêtre de maintenance de 21 jours allouée. Vous pouvez sélectionner la date et l'heure de déploiement suggérées, l'option pour n'importe laquelle de vos fenêtres pré-approuvées, ou bien ouvrir le calendrier afin de sélectionner trois dates et heures spécifiques parmi lesquelles IBM pourra choisir pour planifier la mise à jour.</dd>
 </dl>
@@ -268,7 +269,7 @@ Une fois que vous avez défini vos fenêtres de maintenance pré-approuvées, le
 
 Afin d'afficher les détails d'une mise à jour sans interruption, procédez comme suit :
 
-1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre * en attente**.
+1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente**.
 2. Identifiez les lignes pour lesquelles **Customer Scheduling Required** a pour valeur **No**.
 3. Sélectionnez la ligne de cette mise à jour pour afficher les détails.
 
@@ -276,7 +277,7 @@ Une mise à jour avec interruption peut avoir un impact sur votre environnement,
 
 Pour les mises à jour avec interruption requérant votre approbation, procédez comme suit :
 
-1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre * en attente**.
+1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente**.
 2. Identifiez les lignes pour lesquelles **Customer Scheduling Required** a pour valeur **Yes**.
 3. Sélectionnez la ligne de cette mise à jour afin de consulter les détails de la mise à jour, notamment sa description, la date et l'heure suggérées pour la mise à jour, les composants affectés et la durée de la mise à jour.
 4. Sélectionnez **Planifier et approuver**.
@@ -360,18 +361,21 @@ En plus de la représentation graphique, vous pouvez afficher le pourcentage de 
 
 Pour afficher l'utilisation de votre mémoire, de votre disque ou de votre unité centrale par agent DEA, cliquez sur **Répartition**.  
 
-Pour des informations plus détaillées sur votre utilisation de la mémoire réservée et physique ou du disque pour une période donnée, cliquez sur **Historique**. Vous pouvez choisir d'afficher les données hebdomadaires ou mensuelles. La vue de l'utilisation historique affiche un graphique de l'utilisation de la mémoire ou du disque pour la période que vous choisissez.  
+Pour des informations plus détaillées sur votre utilisation de la mémoire réservée et physique ou du disque pour une période donnée, cliquez sur **Historique**. Vous pouvez afficher l'utilisation pour les 48 dernières heures, les 30 derniers jours ou les 5 derniers mois. Les points affichés pour les 48 dernières heures représentent les données réelles qui sont collectées toutes les heures. Les points affichés pour les 30 derniers jours représentent la valeur moyenne pour chaque jour. Les points affichés pour les 5 derniers mois représentent la valeur moyenne pour chaque mois. Le bouton d'option à bascule situé en haut du graphique dans les vues des 30 derniers jours et des 5 derniers mois permet aussi d'afficher la valeur maximale pour chaque jour ou chaque mois. La vue de l'utilisation historique affiche un graphique de l'utilisation de la mémoire ou du disque pour la période que vous choisissez.  
 	<dl>
 	<dt><strong>Limite mémoire réservée</strong></dt>
-	<dd>Affichée sous forme de ligne en pointillés horizontale, la limite mémoire réservée est la quantité totale de mémoire ou d'espace disque qui peut être réservée collectivement par toutes les applications qui s'exécutent dans votre environnement.</dd>
+	<dd>Affichée sous forme de ligne en tirets horizontale, la limite mémoire réservée est la quantité totale de mémoire ou d'espace disque qui peut être réservée collectivement par toutes les applications qui s'exécutent dans votre environnement.</dd>
 	<dt><strong>Réservée</strong></dt>
-	<dd>La zone Réservée indique la mémoire ou l'espace disque qui est réservé collectivement par toutes les applications qui s'exécutent dans votre environnement.
-	<p>Pour identifier les organisations qui ont réservé le plus de mémoire à un moment précis, passez votre souris sur le point à côté de la zone Réservée qui est associée à ce moment. Ensuite, vous pouvez cliquer sur une organisation dans le graphique circulaire pour afficher davantage d'informations sur cette organisation.</p></dd>
+	<dd>La ligne Réservée indique la mémoire ou l'espace disque qui est réservé collectivement par toutes les applications qui s'exécutent dans votre environnement.</dd>
 	<dt><strong>Limite physique</strong></dt>
-	<dd>Affichée sous forme de ligne en pointillés horizontale, la limite physique indique la quantité de mémoire physique ou d'espace disque qui a été achetée pour votre environnement.</dd>
+	<dd>Affichée sous forme de ligne en tirets horizontale, la limite physique indique la quantité de mémoire physique ou d'espace disque qui a été achetée pour votre environnement.</dd>
 	<dt><strong>Physique</strong></dt>
-	<dd>La zone Physique affiche la quantité de mémoire ou d'espace disque utilisée.</dd>
+	<dd>La ligne Physique affiche la quantité de mémoire ou d'espace disque utilisée.</dd>
 	</dl>
+	
+Pour chacune des vues de l'utilisation historique disponibles, au moins deux points de données doivent être affichés par le graphique. Cela équivaut à des données pour au moins deux heures au cours des 48 dernières heures, deux jours au cours des 30 derniers jours et deux mois au cours des 5 derniers mois. Pour les vues des 30 derniers jours et des 5 derniers mois, des valeurs moyennes partiellement complètes ou des valeurs maximales sont renvoyées pour le jour ou le mois en cours et seront ajustées à mesure que d'autres données seront collectées.
+
+Les données qui alimentent ces vues sont disponibles via l'[API de mesures](/docs/admin/index.html#envappmetricsapi). Pour voir les noeuds finaux d'API réels et les données utilisés pour générer la vue, cliquez sur lien **En savoir plus sur les API** au-dessus du graphique. Si vous cliquez sur l'un des liens contenus dans la boîte de dialogue qui apparaît, la réponse JSON du noeud final d'API de mesures s'affiche dans un nouvel onglet qui s'ouvre dans votre navigateur. 
 
 #### Détails sur l'utilisation du service
 {: #servicesresourceusage}
@@ -459,18 +463,18 @@ Le tableau ci-dessous présente la liste des rapports de sécurité qui sont gé
 |-------------------|---------------------|
 | [Connexions au pare-feu](/docs/hybrid/reports.html#firewalllogins) | Evénements liés à la connexion de l'administrateur aux unités de pare-feu Vyatta. |
 | [Refus du pare-feu](/docs/hybrid/reports.html#firewalldenies) | Evénements générés par les unités de pare-feu Vyatta lorsqu'une demande d'accès est refusée selon les règles de pare-feu appliquées. |
-| Connexion d'administrateurs {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#oslogin) | Evénements générés par le système d'exploitation lorsqu'un administrateur démarre une session SSH sur chaque système {{site.data.keyword.Bluemix_notm}}. |
-| Connexion des développeurs d'applications {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#loginserverlogins) | Evénements générés par le composant de connexion à la plateforme {{site.data.keyword.Bluemix_notm}} lorsqu'un utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} démarre une session via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
-| Administration du système d'exploitation {{site.data.keyword.Bluemix_notm}} [](/docs/hybrid/reports.html#osadmin)  | Evénements générés par le système d'exploitation lorsqu'un administrateur effectue une action dans une session de travail en cours. |
-| Administration de la plateforme {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) | Evénements liés aux opérations effectuées par l'utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
-| Administration de la base de données interne [](/docs/hybrid/reports.html#dbadmin) | Evénements liés aux opérations effectuées par un administrateur de base de données sur les bases de données internes {{site.data.keyword.Bluemix_notm}}. |
+| [Connexion d'administrateurs](/docs/hybrid/reports.html#oslogin) {{site.data.keyword.Bluemix_notm}} | Evénements générés par le système d'exploitation lorsqu'un administrateur démarre une session SSH sur chaque système {{site.data.keyword.Bluemix_notm}}. |
+| [Connexion des développeurs d'applications](/docs/hybrid/reports.html#loginserverlogins) {{site.data.keyword.Bluemix_notm}} | Evénements générés par le composant de connexion à la plateforme {{site.data.keyword.Bluemix_notm}} lorsqu'un utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} démarre une session via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
+| [Administration du système d'exploitation](/docs/hybrid/reports.html#osadmin) {{site.data.keyword.Bluemix_notm}}  | Evénements générés par le système d'exploitation lorsqu'un administrateur effectue une action dans une session de travail en cours. |
+| [Administration de la plateforme (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) {{site.data.keyword.Bluemix_notm}} | Evénements liés aux opérations effectuées par l'utilisateur de la plateforme {{site.data.keyword.Bluemix_notm}} via la ligne de commande, les API REST ou l'interface utilisateur {{site.data.keyword.Bluemix_notm}}. |
+| [Administration de la base de données interne](/docs/hybrid/reports.html#dbadmin) | Evénements liés aux opérations effectuées par un administrateur de base de données sur les bases de données internes {{site.data.keyword.Bluemix_notm}}. |
 | [Gestion des utilisateurs](/docs/hybrid/reports.html#acusermgmt) | Evénements liés aux actions de gestion des utilisateurs effectuées dans la page Administration. |
-| Gestion du catalogue [](/docs/hybrid/reports.html#catalogmgmt) | Evénements liés aux modifications du catalogue des services. |
-| Gestion des rapports de sécurité [](/docs/hybrid/reports.html#securityreportsmgmt) | Evénements liés aux actions de gestion des rapports de sécurité effectuées dans la page Administration. |
+| [Gestion du catalogue](/docs/hybrid/reports.html#catalogmgmt) | Evénements liés aux modifications du catalogue des services. |
+| [Gestion des rapports de sécurité](/docs/hybrid/reports.html#securityreportsmgmt) | Evénements liés aux actions de gestion des rapports de sécurité effectuées dans la page Administration. |
 | [Révisions d'accès](/docs/hybrid/reports.html#securityreportsmgmt) | Révisions pour les accès privilégiés. |
 | Gestion des modifications logicielles | Activité de gestion des modifications. |
-| Gestion du certificat de clé [](/docs/hybrid/reports.html#keymgmt) | Opérations de gestion de certificat de clé. |
-| Notifications système [](/docs/hybrid/reports.html#systemnotifications) | Evénements liés à la configuration des fenêtres de déploiement de mises à jour de logiciel ou d'abonnement aux notifications. |
+| [Gestion de certificat de clé](/docs/hybrid/reports.html#keymgmt) | Opérations de gestion de certificat de clé. |
+| [Notifications système](/docs/hybrid/reports.html#systemnotifications) | Evénements liés à la configuration des fenêtres de déploiement de mises à jour de logiciel ou d'abonnement aux notifications. |
 
 {: caption="Tableau 9. Liste des rapports de sécurité" caption-side="top"}
 
@@ -487,7 +491,7 @@ La page Statut est l'emplacement central pour rechercher des notifications et de
 
 ### Statut de la console d'administration
 
-Après le déploiement initial de votre environnement {{site.data.keyword.Bluemix_notm}}, une vérification est effectuée automatiquement sur les composants utilisés pour administrer l'environnement. Vous pouvez accéder à la page Vérification de la console d'administration afin de vérifier le statut des composants après l'exécution de la vérification. Pour ouvrir cette page, accédez à <code>https://console.&lt;sous-domaine&gt;.bluemix.net/check</code>, où `<sous-domaine>` est le nom de votre instance locale ou dédiée.
+Après le déploiement initial de votre environnement {{site.data.keyword.Bluemix_notm}}, une vérification est effectuée automatiquement sur les composants utilisés pour administrer l'environnement. Vous pouvez accéder à la page Vérification de la console d'administration afin de vérifier le statut des composants après l'exécution de la vérification. Pour ouvrir cette page, accédez à <code>https://console.&lt;sous-domaine&gt;.bluemix.net/check</code>, où `<subdomain>` est le nom de votre instance locale ou dédiée.
 
 Vous pouvez effectuer une vérification à tout moment. Vous devez être connecté pour pouvoir sélectionner l'option d'exécution de la vérification. Si vous rencontrez des problèmes lors de l'ajout d'un utilisateur, de l'édition d'une organisation ou de la gestion de vos services, exécutez cette vérification afin de déterminer si des composants sont défaillants ou déconnectés. Vous pouvez ouvrir un ticket de demande de service avec les informations générées par la vérification pour une résolution rapide du problème.
 
@@ -517,11 +521,11 @@ Vous pouvez également gérer l'ordre de priorité des packs de construction dis
 ### Enregistrement d'un courtier de services
 {: #servicebrokerui}
 
-Si vous voulez afficher un service dans votre catalogue {{site.data.keyword.Bluemix_notm}}, vous devez implémenter et enregistrer un [courtier de services ![Icône de lien externe](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Une fois votre courtier enregistré, vous pouvez choisir les organisations qui peuvent accéder au service dans votre instance locale ou dédiée.
+Si vous voulez afficher un service dans votre catalogue {{site.data.keyword.Bluemix_notm}}, vous devez implémenter et enregistrer un [courtier de services ![External link icon](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Une fois votre courtier enregistré, vous pouvez choisir les organisations qui peuvent accéder au service dans votre instance locale ou dédiée.
 
 Les méthodes d'utilisation de votre courtier de services dépendent du nombre de services qu'il gère ou varient selon qu'il a déjà été enregistré dans {{site.data.keyword.Bluemix_notm}} ou non.
 
-- Si votre courtier de services gère un service, vous pouvez vous servir de l'interface utilisateur pour l'enregistrer après avoir implémenté l'[API de courtier de services ![Icône de lien externe](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Voir [Enregistrement d'un courtier de services qui gère un service](index.html#registerbrokerui).
+- Si votre courtier de services gère un service, vous pouvez vous servir de l'interface utilisateur pour l'enregistrer après avoir implémenté l'[API de courtier de services ![External link icon](../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/services/api.html){: new_window}. Voir [Enregistrement d'un courtier de services qui gère un service](index.html#registerbrokerui).
 - Si votre courtier de services gère plusieurs services, utilisez l'interface de ligne de commande cf avec le plug-in d'[interface de ligne de commande d'administration de {{site.data.keyword.Bluemix_notm}}](../cli/plugins/bluemix_admin/index.html) (sous-commande `ba`), ou utiliser l'[API de service personnalisé](index.html#servicebrokerapi).
 - Si votre courtier de services est déjà enregistré et que vous voulez le mettre à jour ou le supprimer, utilisez l'interface de ligne de commande cf avec le plug-in d'[interface de ligne de commande d'administration {{site.data.keyword.Bluemix_notm}}](../cli/plugins/bluemix_admin/index.html) (sous-commande `ba`) ou utilisez l'[API de service personnalisé](index.html#servicebrokerapi).
 
@@ -532,7 +536,7 @@ Les méthodes d'utilisation de votre courtier de services dépendent du nombre d
 
 Prenez connaissance des informations suivantes et effectuez les étapes d'enregistrement de votre courtier de services :
 
-**Avant de commencer** : <a href="http://docs.cloudfoundry.org/services/api.html" target="_blank">implémentez l'API de courtier de services Cloud Foundry <img src="../icons/launch-glyph.svg" alt="Icône de lien externe"></a> pour permettre la communication entre votre service et {{site.data.keyword.Bluemix_notm}}. L'API de courtier de services est un ensemble de noeuds finaux REST consommés par {{site.data.keyword.Bluemix_notm}}.
+**Avant de commencer** : <a href="http://docs.cloudfoundry.org/services/api.html" target="_blank">implémentez l'API de courtier de services Cloud Foundry <img src="../icons/launch-glyph.svg" alt="External link icon"></a> pour permettre la communication entre votre service et {{site.data.keyword.Bluemix_notm}}. L'API de courtier de services est un ensemble de noeuds finaux REST consommés par {{site.data.keyword.Bluemix_notm}}.
 
 Lorsque vous implémentez le courtier de services, dans la réponse JSON de <code>GET /v2/catalog</code>, vous devez fournir les définitions pour vos service et vos plans de service, notamment les informations relatives au service que vous voulez afficher. Par exemple, examinez l'exemple de code JSON de la réponse du catalogue (GET) :
 
@@ -721,7 +725,7 @@ L'exemple suivant montre comment la réponse JSON de GET /v2/catalog est mappée
 
 L'exemple ci-après montre comment la réponse JSON de GET /v2/catalog est mappée à la page des détails du service dans le catalogue {{site.data.keyword.Bluemix_notm}}. Il illustre notamment comment les zones de métadonnées de plan décrites dans le tableau précédent sont mappées à l'interface utilisateur :
 
-![Détails des métadonnées de plan dans le catalogue Bluemix.](images/plan_metadata.png "Vue des valeurs des métadonnées de plan dans le catalogue Bluemix")
+![Détails des métadonnées de plan dans le catalogue.](images/plan_metadata.png "Vue des valeurs de métadonnées de plan dans le catalogue Bluemix")
 
 
 <!-- staging only end -->
@@ -1065,8 +1069,8 @@ Les noeuds finaux de l'API REST `Admin` et les réponses JSON sont fournis sur u
 Si vous disposez des droits **Superutilisateur** ou **Utilisateurs** avec un accès **Ecriture**, vous pouvez ajouter ou retirer des utilisateurs. Vous devez disposer du droit **Superutilisateur** pour éditer les droits des autres utilisateurs.
 
 Bien que vous puissiez choisir d'utiliser d'autres outils, les outils suivants sont prérequis pour les exemples ci-après.
-* cURL, pour entrer les demandes d'API REST sous forme de commandes. cURL est un utilitaire gratuit que vous pouvez utiliser pour envoyer des demandes HTTP à un serveur et recevoir les réponses du serveur via une interface de ligne de commande. Vous pouvez le télécharger depuis le [site de téléchargement cURL ![Icône de lien externe](../icons/launch-glyph.svg)](http://curl.haxx.se/download.html){: new_window}.
-* Python, pour utiliser l'outil JSON de formatage de Python. Cet outil facultatif transforme le texte JSON en entrée en sortie facile à lire. Vous pouvez télécharger Python depuis le [site des téléchargements Python ![Icône de lien externe](../icons/launch-glyph.svg)](https://www.python.org/downloads){: new_window}.
+* cURL, pour entrer les demandes d'API REST sous forme de commandes. cURL est un utilitaire gratuit que vous pouvez utiliser pour envoyer des demandes HTTP à un serveur et recevoir les réponses du serveur via une interface de ligne de commande. Vous pouvez le télécharger depuis le [site de téléchargement cURL ![External link icon](../icons/launch-glyph.svg)](http://curl.haxx.se/download.html){: new_window}.
+* Python, pour utiliser l'outil JSON de formatage de Python. Cet outil facultatif transforme le texte JSON en entrée en sortie facile à lire. Vous pouvez télécharger Python depuis le [site des téléchargements Python ![External link icon](../icons/launch-glyph.svg)](https://www.python.org/downloads){: new_window}.
 
 
 ### Liste des organisations
@@ -1074,7 +1078,7 @@ Bien que vous puissiez choisir d'utiliser d'autres outils, les outils suivants s
 
 Lorsque vous ajoutez un utilisateur, vous devez spécifier une organisation. Vous pouvez utiliser l'API REST `Admin` pour répertorier toutes les organisations. Vous devez disposer du droit **Utilisateurs** avec l'accès **Lecture** pour pouvoir répertorier les organisations. Pour répertorier toutes les organisations, exécutez la commande suivante :
 
-`curl -b ./cookies.txt https://<votre_hôte>.ibm.com/codi/v1/organizations | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/organizations | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1115,7 +1119,7 @@ cette commande :
 
 Vous pouvez déterminer si un utilisateur a déjà été ajouté à votre environnement {{site.data.keyword.Bluemix_notm}} en utilisant l'API REST `Admin` afin de répertorier les utilisateurs enregistrés. Vous devez disposer du droit **Utilisateurs** avec l'accès **Lecture** pour pouvoir répertorier les utilisateurs enregistrés. Pour répertorier tous les utilisateurs, exécutez la commande suivante :
 
-`curl -b ./cookies.txt https://<votre_hôte>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1202,7 +1206,7 @@ Vous pouvez ajouter un utilisateur ou une liste d'utilisateurs. Vous pouvez ajou
 Vous
 fournissez les informations dans un fichier JSON.
 
-`curl -b ./cookies.txt https://<votre_hôte>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1282,8 +1286,7 @@ Vous pouvez utiliser l'API REST `Admin` pour retirer des utilisateurs de l'insta
 
 Pour retirer un utilisateur, vous devez fournir l'ID de l'utilisateur. Exécutez la commande suivante :
 
-`curl -v -b ./cookies.txt -X DELETE
-https://<votre_hôte>.ibm.com/codi/v1/users?user_id=<un_id_utilisateur@domaine.com>`
+`curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
 
 <dl class="parml">
@@ -1315,14 +1318,15 @@ cette commande :
  ```
 {: screen}
 
-## API pour métriques
+## API pour mesures
 {: #envappmetricsapi}
 
-Vous pouvez employer trois API expérimentales pour regrouper des mesures relatives à votre environnement ou à vos applications. Ces API renvoient un tableau de points de données des mesures demandées sur la durée indiquée.
+Vous pouvez employer quatre API pour regrouper des mesures relatives à votre environnement, vos applications et vos organisations. Ces API renvoient un tableau de points de données des mesures demandées sur la durée indiquée.
+
 
 Les API de mesures décrites dans les sections suivantes sont accessibles à partir du noeud final spécifique de la région, par exemple :
 
-`https://console.<région>.bluemix.net/admin/metrics`
+`https://console.<region>.bluemix.net/admin/metrics`
 {: codeblock}
 
 **Remarques** :
@@ -1330,11 +1334,11 @@ Les API de mesures décrites dans les sections suivantes sont accessibles à par
 1. Un utilisateur peut effectuer jusqu'à 200 demandes d'API de mesures par heure.
 2. Chaque demande d'API renvoie jusqu'à 200 points de données par demande. Si des données supplémentaires sont disponibles, une URL est fournie en réponse au chargement de l'ensemble de données suivant.
 3. Chaque demande d'API nécessite qu'un utilisateur dispose au moins des droits d'accès de base à la console d'administration.  Des droits supplémentaires peuvent être nécessaires, comme indiqué ci-dessous.
-4. Des données sont disponibles jusqu'à 6 mois en arrière de la date de la demande d'API.
+4. Des données sont disponibles jusqu'à 5 mois en arrière à partir de la date de la demande d'API.
 
 ## Regroupement des mesures relatives à votre environnement
 
-Vous pouvez utiliser l'API d'environnement expérimentale pour regrouper des informations de niveau supérieur relatives à votre environnement sur une période que vous définissez. Les points de données disponibles sur la durée indiquée sont renvoyés. Les données sont enregistrées environ toutes les heures. SI, par exemple, vous avez demandé six heures de données relatives à l'unité centrale de votre environnement, la réponse inclut les données relatives à l'unité centrale pour chacune des six heures demandées.
+Vous pouvez utiliser l'API d'environnement pour regrouper des informations de niveau supérieur relatives à votre environnement sur une période que vous définissez. Vous pouvez afficher les échantillons de données réelles, enregistrés à peu près toutes les heures, ou les statistiques calculées sur les échantillons de données. Les statistiques sont disponibles uniquement pour la consommation de la mémoire et du disque. Les API vous permettent de spécifier l'intervalle des données statistiques ou réelles qui sont renvoyées. Si, par exemple, vous demandez six heures de données (réelles) relatives à l'unité centrale de votre environnement, la réponse inclut les données relatives à l'unité centrale pour chacune des six heures demandées.
 
 
 ### Noeuds finaux d'environnement
@@ -1692,6 +1696,238 @@ Les sections suivantes indiquent le format des données.
 ```
 {: screen}
 
+
+### Noeuds finaux de statistiques d'environnement
+
+Vous pouvez afficher des statistiques calculées sur les données de mesure concernant la consommation de mémoire et de disque de votre environnement. Les statistiques renvoyées correspondent aux valeurs moyenne, maximale et minimale des échantillons de données dans chaque regroupement de données. Les données peuvent être regroupées par jour, auquel cas, les statistiques sont calculées pour chaque jour, ou par mois, auquel cas, les statistiques étant calculées pour chaque mois.
+
+Vous pouvez utiliser les noeuds finaux suivants pour appeler cette commande d'API :
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Remarque** : l'un des droits suivants sont nécessaires pour accéder à ces noeuds finaux : **Accès de base**, **Accès en lecture de l'utilisateur**, **Accès en écriture de l'utilisateur** ou **Superutilisateur**
+
+### Paramètres de requête des statistiques d'environnement
+
+Les paramètres de requête suivants vous permettent de regrouper les statistiques relatives à votre disque et à votre mémoire :
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">Point le plus ancien dans le temps à partir duquel les données sont renvoyées. Si aucun paramètre startTime n'est indiqué, le point de données disponible le plus récent est inclus.</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">Point le plus récent dans le temps à partir duquel les données sont renvoyées. Si aucun paramètre endTime n'est indiqué, le point de données le plus récent est utilisé.</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">Regroupement sur lequel calculer les statistiques. Les valeurs valides sont `day` et `month`. day (valeur par défaut) renvoie les valeurs d'utilisation moyennes pour chaque jour dans l'intervalle spécifié.  Si la valeur month est spécifiée, les valeurs d'utilisation moyennes pour chaque mois sont renvoyées.</dd>
+</dl>
+
+L'exemple suivant utilise les paramètres de requête pour regrouper des statistiques de mémoire sur votre environnement, en moyenne par jour :
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Format des données statistiques relatives à votre environnement
+
+Les sections suivantes indiquent le format des données.
+
+ * Pour regrouper les enregistrements de données concernant l'utilisation de la mémoire, employez le format de données suivant :
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * Pour regrouper les enregistrements de données concernant l'utilisation du disque, employez le format de données suivant :
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+### Format de réponse des mesures relatives à l'environnement
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
 ## Regroupement des mesures relatives à vos organisations
 
 Des données sont enregistrées pour toutes les organisations environ toutes les heures. Une demande de mesure particulière renvoie ces informations pour toutes les organisations de chaque échantillon de données de la période indiquée, dans l'ordre décroissant de la mesure demandée. Par exemple, si vous demandez la mesure relative à la mémoire de toutes les organisations sur une période de six heures dans un environnement comportant 200 applications, 1200 enregistrements sont renvoyés : 200 par heure.
@@ -1781,7 +2017,7 @@ Utilisez les paramètres de requête suivants pour regrouper des mesures concern
 L'exemple suivant regroupe les mesures concernant vos applications :
 
 ```
-curl -b ./cookies.txt --header "Accept: application/json" https://console.<région>.bluemix.net/admin/metrics/api/v1/app/cpu/physical?count=5&startTime=2016-12-02T16:54:09.467Z
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/app/cpu/physical?count=5&startTime=2016-12-02T16:54:09.467Z
 ```
 {: codeblock}
 
@@ -2011,7 +2247,7 @@ Content-Type: application/json
 
 Vous pouvez gérer les utilisateurs pour votre environnement {{site.data.keyword.Bluemix_notm}} via l'interface de ligne de commande Cloud Foundry, avec le plug-in d'interface de ligne de commande d'administration {{site.data.keyword.Bluemix_notm}}. Vous devez télécharger ce plug-in pour votre interface de ligne de commande Cloud Foundry.
 
-Avant de commencer, installez l'interface de ligne de commande cf. Le plug-in d'interface de ligne de commande d'administration {{site.data.keyword.Bluemix_notm}} requiert cf version 6.11.2 ou ultérieure. [Télécharger l'interface de ligne de commande Cloud Foundry ![Icône de lien externe](../icons/launch-glyph.svg)](https://github.com/cloudfoundry/cli/releases){: new_window}.
+Avant de commencer, installez l'interface de ligne de commande cf. Le plug-in d'interface de ligne de commande d'administration {{site.data.keyword.Bluemix_notm}} requiert cf version 6.11.2 ou ultérieure. [Télécharger l'interface de ligne de commande Cloud Foundry ![External link icon](../icons/launch-glyph.svg)](https://github.com/cloudfoundry/cli/releases){: new_window}.
 
 **Restriction :** l'interface de ligne de commande Cloud Foundry n'est pas prise en charge par Cygwin. Utilisez-la dans une fenêtre de ligne de commande autre que Cygwin.
 

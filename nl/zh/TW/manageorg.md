@@ -83,7 +83,7 @@ lastupdated: "2017-04-11"
 **附註：**{{site.data.keyword.Bluemix_notm}} 雪梨地區尚無法使用容器。 
 
 如需容器的相關資訊，請參閱「容器」文件中的[配額](/docs/containers/container_planning.html#container_planning_quota)。
-若要變更配置給組織的配額，您必須開啟支援問題單。如需開啟支援問題單的相關資訊，請參閱[取得客戶支援](/docs/support/index.html#contacting-support)。 
+若要變更配置給組織的配額，您必須開立支援問題單。如需開立支援問題單的相關資訊，請參閱[取得客戶支援](/docs/support/index.html#contacting-support)。 
 
 ## 管理網域
 {: #managedomains}

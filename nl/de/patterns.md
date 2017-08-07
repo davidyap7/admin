@@ -108,7 +108,7 @@ Zur Implementierung einer Architektur mit einer Einzelorganisation erstellen Sie
 
 Zur Implementierung einer Architektur mit mehreren Organisationen, erstellen Sie ein Konto in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated oder {{site.data.keyword.Bluemix_notm}} Local. Anschließend können Sie Organisationen definieren, die verschiedenen Geschäftsfeldern (LOBs), Bereitstellungsphasen, bestimmten Projekten, Benutzerberechtigungen oder einer Kombination dieser Komponenten entsprechen. Daraufhin können Sie mehrere Bereiche definieren, die auf Anwendungen oder Projekten basieren, die von derselben Abteilung im Unternehmen bereitgestellt werden.
 
-**Hinweis:** Sie müssen ein belastbares Konto haben, wie zum Beispiel ein nutzungsabhängiges Konto oder ein Abonnement, um mehrere Organisationen definieren zu können.
+**Hinweis:** Sie müssen ein gebührenpflichtiges Konto haben, wie zum Beispiel ein nutzungsabhängiges Konto oder ein Abonnement, um mehrere Organisationen definieren zu können.
 
 ### Organisationsaspekte
 {: #orgconsiderations}
@@ -220,7 +220,7 @@ Beachten Sie bei der Definition der verschiedenen Bereiche für Ihre Cloudorgani
 ## Kontingent für eine Organisation bestimmen
 {: #determinequota}
 
-Wenn Sie eine Organisation in {{site.data.keyword.Bluemix_notm}} erstellen, stellen Sie Infrastrukturressourcen bereit, zu denen Ressourcen wie Arbeitspeicher, Internet Protocol (IP), Server und Speicherplatz gehören:
+Wenn Sie eine Organisation in {{site.data.keyword.Bluemix_notm}} erstellen, stellen Sie Infrastrukturressourcen bereit, zu denen Ressourcen wie Arbeitsspeicher, Internet Protocol (IP), Server und Speicherplatz gehören:
 *	Bei {{site.data.keyword.Bluemix_notm}} Public wird einer Organisation ein minimaler Satz von Ressourcen durch IBM zugeordnet. Abhängig vom Kontotyp haben Sie verschiedene Ressourcenzuordnungen. Diese Ressourcen definieren das Kontingent, das einer Organisation durch IBM zugeordnet wird.
 *	Bei {{site.data.keyword.Bluemix_notm}} Dedicated fordern Sie einen Satz von Ressourcen von IBM an, den Sie dann auf die verschiedenen Organisationen in Ihrer {{site.data.keyword.Bluemix_notm}} Dedicated-Cloudumgebung verteilen können.
 *	Bei {{site.data.keyword.Bluemix_notm}} Local stellen Sie die Ressourcen bereit, die Sie auf die Organisationen in Ihrer {{site.data.keyword.Bluemix_notm}} Local-Cloudumgebung verteilen können.

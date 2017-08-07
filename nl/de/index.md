@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Sie über Administratorzugriff für {{site.data.keyword.Bluemix}} Local ode
 |Administratorberechtigungen verwalten | Klicken Sie auf **Verwaltung &gt; Benutzeradministration**, um Benutzer hinzuzufügen, Benutzer zu entfernen und Benutzerberechtigungen anzupassen. Siehe [Benutzer und Berechtigungen verwalten](/docs/admin/index.html#oc_useradmin). |
 |Berichte und Protokolle prüfen | Klicken Sie auf **Verwaltung &gt; Berichte und Protokolle**, um Sicherheitsberichte und Prüfprotokolle für Ihre Instanz anzuzeigen. Siehe [Berichte anzeigen](/docs/admin/index.html#oc_report). |
 |Systeminformationen anzeigen | Klicken Sie auf **Verwaltung &gt; Systeminformationen**, um Systeminformationen wie anstehende Wartungsaktualisierungen, Name und Version Ihrer Instanz, Region, API-URL, CLI-URL, LDAP-Konfigurationsdetails, Gruppen- und Benutzerzuordnungen, Statistiken und gemeinsam genutzte Domänen anzuzeigen. Siehe [Systeminformationen anzeigen](/docs/admin/index.html#oc_system). |
-|Benachrichtigungen erweitern und Benachrichtigungsabonnements einrichten | Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend**. Sie können Web-Hooks zur Integration in einen Web-Service Ihrer Wahl verwenden, um ein Abonnement für Ereignisbenachrichtigungen für eine Aktualisierung oder einen Vorfall einzurichten. Siehe [Benachrichtigungen und Benachrichtigungsabonnements](/docs/admin/index.html#oc_eventsubscription). |
+|Benachrichtigungen erweitern und Benachrichtigungsabonnements einrichten | Klicken Sie auf **Verwaltung &gt; Systemverwaltung &gt; *Anzahl* anstehend**. Sie können Web-Hooks zur Integration in einen Web-Service Ihrer Wahl verwenden, um ein Abonnement für Ereignisbenachrichtigungen für eine Aktualisierung oder einen Vorfall einzurichten. Siehe [Benachrichtigungen und Benachrichtigungsabonnements](/docs/admin/index.html#oc_eventsubscription). |
 {: caption="Tabelle 1. Verwaltungstasks zur Verwaltung Ihrer lokalen oder dedizierten {{site.data.keyword.Bluemix_notm}}-Instanz" caption-side="top"}
 
 <!-- staging only for WoW start -->
@@ -56,7 +56,7 @@ Sie können Benachrichtigungen für Ihre lokale oder dedizierte Umgebung anzeige
 | **Ereignistyp** | **Benachrichtigungsmethode** |       
 |-----------------|-------------------|
 | Wartungsaktualisierungen | Zum Anzeigen einer vollständigen Liste und des Verlaufs der anstehenden und abgeschlossenen Benachrichtigungen klicken Sie auf **Verwaltung &gt; Systeminformationen** &gt; *Anzahl* **Anstehend**. Sie werden auch über geplante Wartungsaktualisierungsereignisse mit Unterbrechungen auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Abonnement einrichten, das eine E-Mail an die Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.|
-| Kritische Vorfälle | Sie werden über kritische Vorfälle auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  |  
+| Kritische Vorfälle | Sie werden über kritische Vorfälle auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  | 
 | Schwellenwertereignisse | Sie können ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet, wenn in Ihrer Umgebung Schwellenwerte für Organisationskontingent, physische Platte, physischen Speicher, reservierte Platte oder reservierten Speicher erreicht wurden. Alternativ können Sie ein Abonnement einrichten, das die Benachrichtigungen mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  |  
 | {{site.data.keyword.Bluemix_notm}}-Status | Sie können den neuesten Status für die Plattform, die Services und Ihre {{site.data.keyword.Bluemix_notm}}-Instanz immer auf der Seite 'Status' anzeigen. Klicken Sie auf **Support** &gt; **Status**.  |
 {: caption="Tabelle 2. Ereignistypen und Benachrichtigungsmethoden" caption-side="top"}
@@ -221,7 +221,8 @@ Wenn Sie die Superuserberechtigung (`ops.admin`) besitzen, können Sie geplante 
 
 <dl>
 <dt>Unterbrechungsfreie Aktualisierungen</dt>
-<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung und wird während der vorab genehmigten, verfügbaren Wartungszeiten angewendet, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben.</dd>
+<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung und wird während der vorab genehmigten, verfügbaren Wartungszeiten angewendet, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben.
+<p>**Hinweis**: Einige Plattformservices setzen möglicherweise die Definition mindestens eines Zeitfensters für unterbrechungsfreie Wartung während vordefinierter Zeiträume nach Bedarf des Service voraus. Überprüfen Sie die Servicebeschreibung für jeden dedizierten Service, der in Ihrer Umgebung bereitgestellt ist. </p></dd>
 <dt>Aktualisierung mit Unterbrechungen</dt>
 <dd>Eine Aktualisierung mit Unterbrechungen kann sich auf Ihre Umgebung, die Ausführung von Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen auswirken. Sie müssen jede dieser Wartungsaktualisierungen innerhalb des zugeteilten Wartungszeitraums von 21 Tagen terminieren und genehmigen. Sie können den vorgeschlagenen Bereitstellungszeitpunkt (Datum und Uhrzeit) oder die Option für ein zuvor genehmigtes Fenster auswählen. Alternativ können Sie auch den Kalender öffnen, um drei bestimmte Daten und Uhrzeiten auszuwählen, aus denen IBM dann bei der Planung der Aktualisierung auswählt.</dd>
 </dl>
@@ -268,7 +269,7 @@ Nachdem Sie Ihre vorab genehmigten Wartungszeiten festgelegt haben, werden unter
 
 Um die Details für eine unterbrechungsfreie Aktualisierung anzuzeigen, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend**.
+1. Klicken Sie auf **Verwaltung &gt; Systemverwaltung &gt; *Anzahl* anstehend**.
 2. Suchen Sie Zeilen, bei denen für **Angepasste Terminplanung erforderlich** die Einstellung **Nein** festgelegt ist.
 3. Wählen Sie die Zeile für die Aktualisierung aus, um die Details anzuzeigen.
 
@@ -276,7 +277,7 @@ Eine Aktualisierung mit Unterbrechungen kann sich auf Ihre Umgebung, die Ausfüh
 
 Führen Sie für Aktualisierungen mit Unterbrechung, die Ihre Genehmigung erfordern, folgende Schritte durch:
 
-1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend**.
+1. Klicken Sie auf **Verwaltung &gt; Systemverwaltung &gt; *Anzahl* anstehend**.
 2. Suchen Sie Zeilen, bei denen für **Angepasste Terminplanung erforderlich** die Einstellung **Ja** festgelegt ist.
 3. Wählen Sie die Zeile für die Aktualisierung aus, um die Details für die Aktualisierung einschließlich der Aktualisierungsbeschreibung, des vorgeschlagenen Datums und der vorgeschlagenen Uhrzeit für die Aktualisierung, die betroffenen Komponenten sowie die Dauer der Aktualisierung zu überprüfen.
 4. Wählen Sie **Planen und Genehmigen** aus.
@@ -359,18 +360,23 @@ Neben der grafischen Darstellung wird der Prozentsatz der Speicher- und Plattenk
 
 Um die Nutzung Ihres Speichers, Ihrer Platte, Ihrer CPU oder Ihres DEA anzuzeigen, klicken Sie auf **Aufgliederung**.  
 
-Um weitere Informationen zur physischen und reservierten Speicher- oder Plattennutzung im Zeitverlauf anzuzeigen, klicken Sie auf **Protokoll**. Sie können einen wöchentlichen oder monatlichen Zeitrahmen auswählen. In der Ansicht für die vergangene Nutzung wird ein Diagramm zur Speicher- oder Plattennutzung im ausgewählten Zeitraum angezeigt.  
+Um weitere Informationen zur physischen und reservierten Speicher- oder Plattennutzung im Zeitverlauf anzuzeigen, klicken Sie auf **Protokoll**. 
+Sie können die Nutzung für die letzten 48 Stunden, die letzten 30 Tage oder die letzten fünf Monate anzeigen. Die für die letzten 48 Stunden angezeigten Punkte stellen die eigentlichen Daten, die einmal pro Stunde erfasst werden. Die für die letzten 30 Tage angezeigten Punkte stellen den Durchschnittswert für jeden Tag dar. Die für die letzten 30 Tage angezeigten Punkte stellen den Durchschnittswert für jeden Monat dar. In den Ansichten für die letzten 30 Tage und die letzten 5 Monate können Sie auch den Maximalwert für jeden Tag oder Monat anzeigen, indem Sie das Optionsfeld oben im Diagramm verwenden. In der Ansicht für die vergangene Nutzung wird ein Diagramm zur Speicher- oder Plattennutzung im ausgewählten Zeitraum angezeigt.  
 	<dl>
 	<dt><strong>Reservierter Grenzwert</strong></dt>
-	<dd>Zeigt eine horizontale, gepunktete Linie an. Der Grenzwert für den reservierten Speicher ist die gesamte Speicher- oder Plattenkapazität, die von allen aktiven Anwendungen in Ihrer Umgebung gemeinsam reserviert werden kann.</dd>
+	<dd>Zeigt eine horizontale, gestrichelte Linie an. Der Grenzwert für den reservierten Speicher ist die gesamte Speicher- oder Plattenkapazität, die von allen aktiven Anwendungen in Ihrer Umgebung gemeinsam reserviert werden kann.</dd>
 	<dt><strong>Reserviert</strong></dt>
-	<dd>Im Abschnitt 'Reserviert' wird die Speicher- oder Plattenkapazität angezeigt, die zurzeit von allen aktiven Anwendungen in Ihrer Umgebung reserviert ist.
-	<p>Um anzuzeigen, welche Organisationen zu einem bestimmten Zeitpunkt den meisten Speicher reserviert haben, bewegen Sie den Mauszeiger im reservierten Bereich über einen Punkt, der den gewünschten Zeitpunkt darstellt. Klicken Sie dann im angezeigten Kreisdiagramm auf eine Organisation, um weitere Informationen zu dieser Organisation anzuzeigen.</p></dd>
+	<dd>In der Zeile 'Reserviert' wird die Speicher- oder Plattenkapazität angezeigt, die zurzeit von allen aktiven Anwendungen in Ihrer Umgebung reserviert ist. 	</dd>
 	<dt><strong>Physischer Speicher - Grenzwert</strong></dt>
-	<dd>Zeigt eine horizontale, gepunktete Linie an. Der Grenzwert für den physischen Speicher ist die gesamte physische Speicher- oder Plattenkapazität, die für Ihre Umgebung erworben wurde.</dd>
+	<dd>Zeigt eine horizontale, gestrichelte Linie an. Der Grenzwert für den physischen Speicher ist die gesamte physische Speicher- oder Plattenkapazität, die für Ihre Umgebung erworben wurde.</dd>
 	<dt><strong>Physisch</strong></dt>
-	<dd>Im Bereich 'Physisch' wird die Speicher- oder Plattenkapazität angezeigt, die zurzeit tatsächlich genutzt wird.</dd>
+	<dd>In der Zeile 'Physisch' wird die Speicher- oder Plattenkapazität angezeigt, die zurzeit tatsächlich genutzt wird.</dd>
 	</dl>
+	
+Für jede der verfügbaren Ansichten zur vergangenen Nutzung sind mindestens zwei Datenpunkte zur Wiedergabe des Diagramms. Dies entspricht den Daten für mindestens zwei Stunden in den letzten 48 Stunden, für zwei Tage in den letzten 30 Tagen und für zwei Monate in den letzten fünf Monaten. 
+Bei den Ansichten für 30 Tage und für 5 Monate werden vorläufige Durchschnitts- oder Höchstwerte für den aktuellen Tag oder Monat zurückgegeben, die dann angepasst werden, wenn weitere Daten zur Verfügung stehen. 
+
+Die Daten für diese Ansichten stehen über die [Metrik-API](/docs/admin/index.html#envappmetricsapi) zur Verfügung. Um die tatsächlichen API-Endpunkten und -Daten anzuzeigen, die zum Generieren der Ansicht verwendet werden, klicken Sie auf den Link **Weitere Informationen zu der API** über dem Diagramm. Wenn Sie auf einen der Links im daraufhin angezeigten Dialog klicken, wird im Browser eine neue Registerkarte mit der JSON-Antwort des Metrik-API-Endpunkts geöffnet.  
 
 #### Details zur Verwendung des Service
 {: #servicesresourceusage}
@@ -446,7 +452,7 @@ Sie können über die Kachel 'Berichte und Protokolle' die folgenden Tasks ausf�
 - Suchen Sie in Ihrer Sammlung von Berichten und Protokollen. Bei der Suche werden die
 Berichtsnamen ebenso wie der Textinhalt in den Berichten und Protokollen einbezogen. Sie können Ihre Suche auch nach der Kategorie filtern.
 - Laden Sie einen Bericht herunter, indem Sie auf das ![Downloadsymbol](images/icon_download.png) klicken.
-- Fordern Sie die Generierung eines Berichts an, sofern Sie Schreibzugriff für die Berichtsberechtigung haben. Sie können je nach Bedarf aus den folgenden sechs Kategorien zum Generieren eines Berichts auswählen: 'Admininistrationskonsole - Benutzermanagement', '{{site.data.keyword.Bluemix_notm}}-Plattform - Administration', 'Zurückgewiesene Firewallanmeldungen', 'Firewallanmeldungen', 'Anmeldung über den Anmeldeserver' und 'Betriebssystemanmeldung'. Sie können Berichte für Daten anfordern, die bis zu 90 Tage alt sind.
+- Fordern Sie die Generierung eines Berichts an, sofern Sie Schreibzugriff für die Berichtsberechtigung haben. Sie können je nach Bedarf aus den folgenden sechs Kategorien zum Generieren eines Berichts auswählen: 'Administrationskonsole - Benutzermanagement', '{{site.data.keyword.Bluemix_notm}}-Plattform - Administration', 'Zurückgewiesene Firewallanmeldungen', 'Firewallanmeldungen', 'Anmeldung über den Anmeldeserver' und 'Betriebssystemanmeldung'. Sie können Berichte für Daten anfordern, die bis zu 90 Tage alt sind.
 
 **Hinweis**: Die Funktion zur Berichtsanforderung ist derzeit möglicherweise nicht in allen Umgebungen verfügbar.
 
@@ -461,7 +467,7 @@ In der folgenden Tabelle sind Sicherheitsberichte aufgelistet, die für {{site.d
 | [Firewall-Ablehnungen](/docs/hybrid/reports.html#firewalldenies) | Ereignisse, die von den Vyatta-Firewall-Geräten generiert werden, wenn eine Zugriffsanforderung im Einklang mit den bestehenden Firewallregeln abgelehnt wird. |
 | {{site.data.keyword.Bluemix_notm}} [-Administratoranmeldung](/docs/hybrid/reports.html#oslogin) | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine SSH-Sitzung auf einem beliebigen {{site.data.keyword.Bluemix_notm}}-System startet. |
 | {{site.data.keyword.Bluemix_notm}} [-Anwendungsentwickleranmeldung](/docs/hybrid/reports.html#loginserverlogins) | Ereignisse, die von der Anmeldungskomponente der {{site.data.keyword.Bluemix_notm}}-Plattform generiert werden, wenn ein {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer eine Sitzung über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle startet. |
-| {{site.data.keyword.Bluemix_notm}} [-Betriebssystemverwaltung](/docs/hybrid/reports.html#osadmin)  | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine Aktion innerhalb einer aktuellen Arbeitssitzung ausführt. |
+| {{site.data.keyword.Bluemix_notm}} [-Betriebssystemverwaltung](/docs/hybrid/reports.html#osadmin) | Ereignisse, die vom Betriebssystem generiert werden, wenn ein Administrator eine Aktion innerhalb einer aktuellen Arbeitssitzung ausführt. |
 | {{site.data.keyword.Bluemix_notm}} [-Plattformverwaltung (Cloud Foundry)](/docs/hybrid/reports.html#platformadmin) | Ereignisse im Zusammenhang mit Operationen, die vom {{site.data.keyword.Bluemix_notm}}-Plattformbenutzer über die Befehlszeile, die REST-APIs oder die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle ausgeführt werden. |
 | [Interne Datenbankverwaltung](/docs/hybrid/reports.html#dbadmin) | Ereignisse im Zusammenhang mit Operationen, die von einem Datenbankadministrator in den internen {{site.data.keyword.Bluemix_notm}}-Datenbanken ausgeführt werden. |
 | [Benutzermanagement](/docs/hybrid/reports.html#acusermgmt) | Ereignisse im Zusammenhang mit Benutzerverwaltungsaktionen, die auf der Verwaltungsseite ausgeführt werden. |
@@ -698,7 +704,7 @@ Mithilfe der folgenden Tabellen können Sie die JSON-Datei füllen.
 
 Im folgenden Beispiel wird dargestellt, wie eine JSON-Antwort von 'GET /v2/catalog' der Seite mit den Servicedetails im {{site.data.keyword.Bluemix_notm}}-Katalog zugeordnet wird:
 
-![Servicedetails im Katalog.](images/metadata.png "Ansicht der Servicedetails im Bluemix-Katalog")
+![Ansicht der Servicedetails im Bluemix-Katalog.](images/metadata.png "Ansicht der Servicedetails im Bluemix-Katalog")
 
 
 {: #planfields}
@@ -726,7 +732,7 @@ Im folgenden Beispiel wird dargestellt, wie eine JSON-Antwort von 'GET /v2/catal
 
 Im folgenden Beispiel wird dargestellt, wie eine JSON-Antwort von 'GET /v2/catalog' der Seite mit den Servicedetails im {{site.data.keyword.Bluemix_notm}}-Katalog zugeordnet wird. Es wird insbesondere dargestellt, wie die Planmetadatenfelder, die in der Tabelle oben beschrieben werden, der Benutzerschnittstelle zugeordnet werden:
 
-![Planmetadatendetails im Katalog.](images/plan_metadata.png "Ansicht der Planmetadatenwerte im Bluemix-Katalog")
+![Ansicht der Planmetadatenwerte im Bluemix-Katalog.](images/plan_metadata.png "Ansicht der Planmetadatenwerte im Bluemix-Katalog")
 
 
 <!-- staging only end -->
@@ -865,7 +871,7 @@ Ein Kontingent stellt die Ressourcengrenzen für die Organisationen in Ihrer Umg
 
 Im Bereich der Organisationsliste werden alle Organisationen in der {{site.data.keyword.Bluemix_notm}}-Umgebung angezeigt und Sie können Aktionen für einzelne Organisationen durch Klicken auf den Organisationsnamen ausführen.
 
-- Löschen Sie eine Organisation, indem Sie auf das Symbol **Löschen** ![Löschen](images/icon_trash.svg) in der Spalte 'Aktionen' klicken.
+- Löschen Sie eine Organisation, indem Sie auf das Symbol **Löschen** ![Löschen](images/icon_trash.svg) in der Spalte 'Aktionen' klicken. 
 - Zeigen Sie den Kontingentplan für eine Organisation an, indem Sie auf den Namen der Organisation in der Liste klicken. Auf der Seite **Organisationen verwalten** für die ausgewählte Organisation können Sie die folgenden Nutzungsinformationen anzeigen:
 
   - Anzahl der Services, die zurzeit verwendet werden.
@@ -986,13 +992,14 @@ Für die Verwendung der REST-API-Befehle müssen Sie sich zunächst authentifizi
 
 Vor dem Ausführen von `Admin`-API-Anforderungen müssen Sie sich bei der Administrationskonsole anmelden.
 
-Zum Anmelden bei der Administrationskonsole können Sie die Basiszugriffsauthentifizierung am Endpunkt `https://console.<region>.bluemix.net/login` verwenden. Der Server gibt ein Cookie mit Ihrer Sitzung zurück. Dieses Cookie verwenden Sie für alle Operationen mit der Administrationskonsole.
+Zum Anmelden bei der Administrationskonsole können Sie die Basiszugriffsauthentifizierung am Endpunkt
+`https://console.<region>.bluemix.net/login` verwenden. Der Server gibt ein Cookie mit Ihrer Sitzung zurück. Dieses Cookie verwenden Sie für alle Operationen mit der Administrationskonsole.
 
 **Anmerkung:** Die Sitzung wird ungültig, wenn Sie mehrere Stunden lang nicht genutzt wird.
 
 Führen Sie zum Anmelden bei der Administrationskonsole den folgenden Befehl aus:
 
-`curl --user <Benutzer-ID>:<Kennwort> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
+`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1052,7 +1059,7 @@ Wenn Sie sich bei der Administratorkonsole anmelden, gibt der Server ein Cookie 
 
 Zum Speichern von Cookies nach der Anmeldung verwenden Sie die Option `-c` wie im folgenden CURL-Beispiel:
 
-`curl --user <Benutzer-ID>:<Kennwort> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
+`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/login | python -m json.tool`
 {: codeblock}
 
 ### Cookies wiederverwenden
@@ -1060,7 +1067,7 @@ Zum Speichern von Cookies nach der Anmeldung verwenden Sie die Option `-c` wie i
 
 Zur Wiederverwendung von Cookies verwenden Sie die Option `-b` mit dem Dateinamen des Cookies, den Sie mit der Option `-c` zugewiesen haben, wie im folgenden CURL-Beispiel gezeigt:
 
-`curl --user <Benutzer-ID>:<Kennwort> -b ./cookies.txt`
+`curl --user <user_id>:<password> -b ./cookies.txt`
 {: codeblock}
 
 ## Benutzer mit der Admin-REST-API verwalten
@@ -1083,7 +1090,7 @@ cURL von der [cURL-Download-Site ![Symbol für externen Link](../icons/launch-gl
 
 Beim Hinzufügen eines Benutzers müssen Sie eine Organisation angeben. Sie können die `Admin`-REST-API verwenden, um alle Organisationen aufzulisten. Zum Auflisten der Organisationen müssen Sie die Berechtigung **Users** mit dem Zugriff **Lesen** besitzen. Führen Sie zum Auflisten von Organisationen den folgenden Befehl aus:
 
-`curl -b ./cookies.txt https://<eigener Host>.ibm.com/codi/v1/organizations | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/organizations | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1123,7 +1130,7 @@ Das folgende Beispiel zeigt die Ausgabe dieses Befehls:
 
 Sie können feststellen, ob ein Benutzer bereits zu Ihrer {{site.data.keyword.Bluemix_notm}}-Umgebung hinzugefügt wurde, und zwar mithilfe der REST-API `Admin` zum Auflisten der registrierten Benutzer. Zum Auflisten der registrierten Benutzer müssen Sie die Berechtigung **Users** mit dem Zugriff **Lesen** besitzen. Zum Auflisten aller Benutzer führen Sie den folgenden Befehl aus:
 
-`curl -b ./cookies.txt https://<eigener Host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1202,13 +1209,13 @@ PUT console.<subdomain>.bluemix.net/codi/env_config/allow_managers?flag=<TRUE or
 
 Sie können einen Benutzer oder eine Liste von Benutzern hinzufügen. Dabei können Benutzer einer einzelnen Organisation oder mehreren Organisationen hinzugefügt werden. Zum Hinzufügen eines Benutzers müssen Sie die folgenden Informationen angeben:
 
-* Vorname (fist_name) und Familienname (last_name) des Benutzers. Geben Sie den Vornamen (`"first_name"`) und den Familiennamen (`"last_name"`) aus [Benutzer auflisten](index.html#listingusr) an.
+* Vorname (first_name) und Familienname (last_name) des Benutzers. Geben Sie den Vornamen (`"first_name"`) und den Familiennamen (`"last_name"`) aus [Benutzer auflisten](index.html#listingusr) an.
 * E-Mail-Adresse und Benutzer-ID: Geben Sie die Benutzer-ID (`"user_id"`) aus [Benutzer auflisten](index.html#listingusr) für die E-Mail-Adresse und für die Benutzer-ID an.
 * `"guid"`. Geben Sie die GUID der Organisation aus [Organisationen auflisten](index.html#listingorg) an.
 
 Diese Informationen werden in einer JSON-Datei angegeben.
 
-`curl -b ./cookies.txt https://<eigener Host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -1287,7 +1294,7 @@ Sie können die REST-API `Admin` verwenden, um Benutzer aus der {{site.data.keyw
 
 Beim Entfernen eines Benutzers müssen Sie die Benutzer-ID des Benutzers angeben. Führen Sie den folgenden Befehl aus:
 
-`curl -v -b ./cookies.txt -X DELETE https://<eigener Host>.ibm.com/codi/v1/users?user_id=<Benutzer-ID@Domäne.com>`
+`curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
 
 <dl class="parml">
@@ -1321,7 +1328,8 @@ Das folgende Beispiel zeigt die Ausgabe dieses Befehls:
 ## API für Metriken
 {: #envappmetricsapi}
 
-Zur Erfassung von Metriken über Ihre Umgebung oder Anwendungen können Sie drei experimentelle APIs verwenden. Diese APIs geben ein Array von Datenpunkten für die angeforderten Metriken und den von Ihnen angegebenen Zeitraum zurück.
+Zur Erfassung von Metriken über Ihre Umgebung, Anwendungen und Organisationen können Sie vier APIs verwenden. Diese APIs geben ein Array von Datenpunkten für die angeforderten Metriken und den von Ihnen angegebenen Zeitraum zurück.
+
 
 Auf die in den folgenden Abschnitten beschriebenen Metrik-APIs kann über den regionsspezifischen Endpunkt zugegriffen werden. Beispiel:
 
@@ -1333,11 +1341,11 @@ Auf die in den folgenden Abschnitten beschriebenen Metrik-APIs kann über den re
 1. Ein Benutzer kann pro Stunde bis zu 200 API-Anforderungen für Metriken absetzen.
 2. Jede API-Anforderung gibt bis zu 200 Datenpunkte pro Anforderung zurück. Falls mehr Daten verfügbar sind, wird in der Antwort eine URL bereitgestellt, mit deren Hilfe die nächste Gruppe von Daten geladen werden kann.
 3. Jede API-Anforderung erfordert mindestens Basiszugriff eines Benutzers auf die Administrationskonsole.  Weitere Berechtigungen können wie nachfolgend beschrieben erforderlich sein.
-4. Es stehen Daten bis zu 6 Monaten rückwirkend ab dem Zeitpunkt der API-Anforderung zur Verfügung.
+4. Es stehen Daten bis zu 5 Monaten rückwirkend ab dem Zeitpunkt der API-Anforderung zur Verfügung. 
 
 ## Metriken über Ihre Umgebung erfassen
 
-Mit der experimentellen Umgebungs-API können Sie allgemeine Information zur Umgebung für einen von Ihnen angegebenen Zeitraum erfassen. Zurückgegeben werden die verfügbaren Datenpunkte im angegebenen Zeitraum. Daten werden ungefähr ein Mal pro Stunde aufgezeichnet. Falls Sie beispielsweise sechs Stunden von CPU-Daten für die Umgebung angefordert haben, würde die Antwort CPU-Daten für jede der angeforderten sechs Stunden enthalten.
+Mit der Umgebungs-API können Sie allgemeine Information zur Umgebung für einen von Ihnen angegebenen Zeitraum erfassen. Sie können die Datenstichproben selbst, die etwa jede Stunde aufgezeichnet werden, oder für die Datenstichproben berechnete Statistiken anzeigen. Statistiken sind nur für die Speicher- und Plattenbelegung verfügbar. Die APIs ermöglichen es Ihnen, den Zeitbereich der zurückgegebenen tatsächlichen oder statistischen Daten anzugeben. Falls Sie beispielsweise sechs Stunden von tatsächlichen CPU-Daten für die Umgebung angefordert haben, würde die Antwort CPU-Daten für jede der angeforderten sechs Stunden enthalten. 
 
 
 ### Umgebungsendpunkte
@@ -1695,6 +1703,238 @@ Das Datenformat ist in den folgenden Abschnitten erläutert.
 ```
 {: screen}
 
+
+### Endpunkte für die Umgebungsstatistik
+
+Sie können Statistiken anzeigen, die auf der Basis der gemessenen Speicher- und Plattenbelegung Ihrer Umgebung berechnet wurden. Die zurückgegebenen Statistiken umfassen die Durchschnitts-, Höchst- und Mindestwerte der Datenstichproben in jeder Datengruppierung. Die Daten können entweder nach Tag gruppiert werden, wobei die Statistiken für jeden Tag berechnet werden, oder nach Monat, wobei die Statistiken für jeden Monat berechnet werden. 
+
+Zum Aufrufen dieses API-Befehls können Sie die folgenden Endpunkte verwenden:
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**Hinweis:**  Eine der folgenden Berechtigungen ist für den Zugriff auf diese Endpunkte erforderlich: **Basiszugriff**, **Benutzerlesezugriff**, **Benutzerschreibzugriff** oder **Superuser**.
+
+### Abfrageparameter für Umgebungsstatistiken
+
+Mit den folgenden Abfrageparametern können Sie Statistikdaten für Ihre Festplatte und den Speicher erfassen: 
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">Der früheste Zeitpunkt, für den Daten zurückgegeben werden. Falls der Parameter 'startTime' nicht angegeben ist, wird der früheste verfügbare Datenpunkt einbezogen.</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">Der späteste Zeitpunkt, für den Daten zurückgegeben werden. Falls der Parameter 'endTime' nicht angegeben ist, wird der neueste Datenpunkt verwendet.</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">Die Gruppierung, für die Statistikdaten berechnet werden sollen. Gültige Werte sind `day` und `month`. Der Standardwert 'day' gibt die durchschnittlichen Nutzungswerte für jeden Tag im angegebenen Zeitraum zurück. Bei Angabe des Werts 'month' werden die durchschnittlichen Nutzungswerte für jeden Monat zurückgegeben. </dd>
+</dl>
+
+Im folgenden Beispiel werden die Abfrageparameter zum Erfassen von Speicherstatistiken (Tagesdurchschnitt) für die Umgebung verwendet: 
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### Datenformat für Umgebungsstatistiken
+
+Das Datenformat ist in den folgenden Abschnitten erläutert.
+
+ * Um Datensätze über die Hauptspeicherbelegung zu erfassen, verwenden Sie das folgende Datenformat:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * Um Datensätze über die Plattenbelegung zu erfassen, verwenden Sie das folgende Datenformat:
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+        "total": {
+          "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+        "total": {
+          "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+        "total": {
+          "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+    "allocated": {
+        "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+### Antwortformat für Umgebungsmetriken
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
 ## Metriken über Ihre Organisationen
 
 Für alle Organisationen werden ungefähr ein Mal pro Stunde Daten aufgezeichnet. Eine Anforderung für eine bestimmte Metrik gibt Informationen zu allen Organisationen in jeder Datenstichprobe für den von Ihnen angeforderten Zeitraum zurück, die gemäß der angeforderten Metrik in absteigender Reihenfolge sortiert sind. Wenn Sie beispielsweise alle Organisationen nach Hauptspeicher für einen sechsstündigen Zeitraum in einer Umgebung anfordern, die 200 Apps enthält, werden 1200 Datensätze (jeweils 200 für jede Stunde) zurückgegeben.
@@ -1784,7 +2024,7 @@ Mit den folgenden Abfrageparametern können Sie Metriken für Ihre Anwendungen e
 Mit dem folgenden Beispiel werden Metriken zu Ihren Anwendungen erfasst:
 
 ```
-curl -b ./cookies.txt --header "Accept: application/json" https://console.<Region>.bluemix.net/admin/metrics/api/v1/app/cpu/physical?count=5&startTime=2016-12-02T16:54:09.467Z
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/app/cpu/physical?count=5&startTime=2016-12-02T16:54:09.467Z
 ```
 {: codeblock}
 

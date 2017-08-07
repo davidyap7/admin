@@ -33,7 +33,7 @@ Wenn Sie Administrator für {{site.data.keyword.Bluemix_notm}} Local oder {{site
 ## Profilfoto ändern
 {: #photo notoc}
 
-Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**.
+Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**. 
 
   * Um ein Foto hinzuzufügen, klicken Sie auf **Foto hochzuladen**.
   * Um das aktuelle Foto durch ein neues zu ersetzen, klicken Sie auf **Foto ändern**.
@@ -46,7 +46,7 @@ Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data
 
 Sie können Ihre IBMid nicht ändern, aber Sie können Ihre Profilinformationen bearbeiten, die der ID zugeordnet sind, z. B. Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihr Kennwort oder Ihren Firmenname.
 
-1. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**.
+1. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**. 
 2. Klicken Sie auf **Eigene IBMid bearbeiten**.
 3. Bearbeiten Sie Ihre Benutzerdaten.
 4. Klicken Sie auf **Speichern**.
@@ -60,7 +60,7 @@ Wenn Sie die Aufzeichnung inaktivieren, können Sie möglicherweise einige Funkt
 
 Um die Analyseaufzeichnung zu inaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**.
+1. Klicken Sie auf das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Benutzerprofil**. 
 2. Legen Sie für die Analyseaufzeichnung **Aus** fest.
 
 ## Feedback geben

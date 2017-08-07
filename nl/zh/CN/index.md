@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -22,16 +22,16 @@ lastupdated: "2017-05-30"
 
 {: #ld_table1}
 
-| 我能执行哪些操作？ | 详细信息 |    
+| 我能执行哪些操作？| 详细信息|    
 |----------------|---------|
-|监视系统使用情况 | 单击**管理 &gt; 使用情况**。查看系统信息、监视 CPU 使用情况以及计划使用情况，以便做出最佳业务决策。请参阅[查看使用情况信息](/docs/admin/index.html#oc_resource)。|
-|管理目录 | 单击**管理 &gt; 目录管理**可管理哪些服务对用户和组织可视。请参阅[管理目录](/docs/admin/index.html#oc_catalog)。|
-|管理组织 | 单击**管理 &gt; 组织管理**可创建组织、监视组织配额以及基于需求快速做出决策。请参阅[管理组织](/docs/admin/index.html#oc_organizations)。|
-|创建空间和分配用户角色 | 单击**帐户** &gt; **管理组织**以在组织内创建空间。添加用户并为用户分配组织和空间角色。请参阅[管理组织](/docs/admin/orgs_spaces.html)。 |
-|对管理用户许可权进行管理 | 单击**管理 &gt; 用户管理**可添加用户、除去用户和调整用户许可权。请参阅[管理用户和许可权](/docs/admin/index.html#oc_useradmin)。 |
-|查看报告和日志 | 单击**管理 &gt; 报告和日志**可查看针对您实例的安全报告和审计日志。请参阅[查看报告](/docs/admin/index.html#oc_report)。 |
-|查看系统信息 | 单击**管理 &gt; 系统信息**可查看系统信息，例如暂挂维护更新数、实例的名称和版本、区域、API URL、CLI URL、LDAP 配置详细信息、组和用户映射、统计信息以及共享域。请参阅[查看系统信息](/docs/admin/index.html#oc_system)。 |
-|扩展通知和设置通知预订 | 单击**管理 &gt; 系统信息 &gt; *Number* 个暂挂**。可以使用 Webhook 来与所选 Web 服务集成，以设置某个更新或事件的事件通知预订。请参阅[通知和通知预订](/docs/admin/index.html#oc_eventsubscription)。 |
+|监视系统使用情况| 单击**管理 &gt; 使用情况**。查看系统信息、监视 CPU 使用情况以及计划使用情况，以便做出最佳业务决策。请参阅[查看使用情况信息](/docs/admin/index.html#oc_resource)。|
+|管理目录| 单击**管理 &gt; 目录管理**可管理哪些服务对用户和组织可视。请参阅[管理目录](/docs/admin/index.html#oc_catalog)。|
+|管理组织| 单击**管理 &gt; 组织管理**可创建组织、监视组织配额以及基于需求快速做出决策。请参阅[管理组织](/docs/admin/index.html#oc_organizations)。|
+|创建空间和分配用户角色| 单击**帐户** &gt; **管理组织**以在组织内创建空间。添加用户并为用户分配组织和空间角色。请参阅[管理组织](/docs/admin/orgs_spaces.html)。|
+|对管理用户许可权进行管理| 单击**管理 &gt; 用户管理**可添加用户、除去用户和调整用户许可权。请参阅[管理用户和许可权](/docs/admin/index.html#oc_useradmin)。|
+|查看报告和日志| 单击**管理 &gt; 报告和日志**可查看针对您实例的安全报告和审计日志。请参阅[查看报告](/docs/admin/index.html#oc_report)。|
+|查看系统信息| 单击**管理 &gt; 系统信息**可查看系统信息，例如暂挂维护更新数、实例的名称和版本、区域、API URL、CLI URL、LDAP 配置详细信息、组和用户映射、统计信息以及共享域。请参阅[查看系统信息](/docs/admin/index.html#oc_system)。|
+|扩展通知和设置通知预订| 单击**管理 &gt; 系统信息 &gt; *Number* 个暂挂**。可以使用 Webhook 来与所选 Web 服务集成，以设置某个更新或事件的事件通知预订。请参阅[通知和通知预订](/docs/admin/index.html#oc_eventsubscription)。|
 {: caption="表 1. 用于管理 {{site.data.keyword.Bluemix_notm}} Local 或 Dedicated 实例的管理任务" caption-side="top"}
 
 <!-- staging only for WoW start -->
@@ -53,12 +53,12 @@ lastupdated: "2017-05-30"
 
 {: #ld_table2}
 
-| **事件类型** | **通知方法** |       
+| **事件类型**| **通知方法**|       
 |-----------------|-------------------|
-| 维护更新 | 要查看暂挂和完成的通知的完整列表和历史记录，请单击**管理 &gt; 系统信息** &gt; *数字* **个暂挂**。您还可以在“状态”页面上发出有关安排的中断性维护更新事件的警报。单击**支持** &gt; **状态**。您可以通过设置预订，向您选择的收件人发送电子邮件，来扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。|
-| 严重事件 | 您将在“状态”页面上获得有关严重事件的警报。单击**支持** &gt; **状态**。您可以通过设置通知预订，向您选择的收件人发送电子邮件，以扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。  |  
-| 阈值事件 | 您可以设置通知预订，以在环境中的组织配额、物理磁盘、物理内存、保留磁盘或保留内存达到阈值时，向您选择的收件人发送电子邮件。或者，您可以设置预订，使用 Webhook 将通知与您选择的 Web Service 相集成。  |  
-| {{site.data.keyword.Bluemix_notm}} 状态 | 您始终可以在“状态”页面查看平台、服务和您的 {{site.data.keyword.Bluemix_notm}} 实例的最新状态。单击**支持** &gt; **状态**。  |
+| 维护更新| 要查看暂挂和完成的通知的完整列表和历史记录，请单击**管理 &gt; 系统信息** &gt; *数字* **个暂挂**。您还可以在“状态”页面上发出有关安排的中断性维护更新事件的警报。单击**支持** &gt; **状态**。您可以通过设置预订，向您选择的收件人发送电子邮件，来扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。|
+| 严重事件| 您将在“状态”页面上获得有关严重事件的警报。单击**支持** &gt; **状态**。您可以通过设置通知预订，向您选择的收件人发送电子邮件，以扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。| 
+| 阈值事件| 您可以设置通知预订，以在环境中的组织配额、物理磁盘、物理内存、保留磁盘或保留内存达到阈值时，向您选择的收件人发送电子邮件。或者，您可以设置预订，使用 Webhook 将通知与您选择的 Web Service 相集成。|  
+| {{site.data.keyword.Bluemix_notm}} 状态| 您始终可以在“状态”页面查看平台、服务和您的 {{site.data.keyword.Bluemix_notm}} 实例的最新状态。单击**支持** &gt; **状态**。|
 {: caption="表 2. 事件类型和通知方法" caption-side="top"}
 
 ### 设置通知预订
@@ -89,35 +89,36 @@ lastupdated: "2017-05-30"
 
 {: #emailnotmaintinc}
 
-| **字段** | **描述** |
+| **字段**| **描述**|
 |-----------------|-------------------|
-| 已启用 | 选择要启用电子邮件通知的选项。清除选项将禁用电子邮件通知。缺省情况下，会启用预订。 |
-| 类型 | 选择**电子邮件**。 |
-| 事件 | 选择要预订有关**维护**事件的通知还是**事件**的通知。 |
-| 组合通知 | 选中该选项可将所有区域的事件通知组合到单个通知。此选项仅可用于事件。
- |
-| 主题 | 输入电子邮件的主题行。这是必填字段。  |
-| 主体 | 输入要在电子邮件中发送的消息体文本。您可以使用 IBM 有效内容值，向电子邮件通知填充相关信息。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。使用基本 HTML 标记，来构建您的电子邮件。这是必填字段。 |
-| 收件人 | 使用电子邮件通知收件人的逗号分隔列表，输入一个或多个电子邮件地址。展开“抄送”或“密件抄送”选项，将电子邮件抄送给其他人。这是必填字段。 |
-| 描述 | 添加要创建的预订的唯一描述。 |
+| 已启用| 选择要启用电子邮件通知的选项。清除选项将禁用电子邮件通知。缺省情况下，会启用预订。|
+| 类型| 选择**电子邮件**。|
+| 事件| 选择要预订有关**维护**事件的通知还是**事件**的通知。|
+| 组合通知| 选中该选项可将所有区域的事件通知组合到单个通知。此选项仅可用于事件。
+|
+| 主题| 输入电子邮件的主题行。这是必填字段。|
+| 主体| 输入要在电子邮件中发送的消息体文本。您可以使用 IBM 有效内容值，向电子邮件通知填充相关信息。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。使用基本 HTML 标记，来构建您的电子邮件。这是必填字段。|
+| 收件人| 使用电子邮件通知收件人的逗号分隔列表，输入一个或多个电子邮件地址。展开“抄送”或“密件抄送”选项，将电子邮件抄送给其他人。这是必填字段。|
+| 描述
+| 添加要创建的预订的唯一描述。|
 {: caption="表 3. 关于阈值的电子邮件通知预订的字段" caption-side="top"}
 
 
 {: #emailnottrhesh}
 
-| **字段** | **描述** |
+| **字段**| **描述**|
 |-----------------|-------------------|
-| 已启用 | 选择要启用电子邮件通知的选项。清除选项将禁用电子邮件通知。缺省情况下，会启用预订。 |
-| 类型 | 选择**电子邮件**。 |
-| 事件 | 选择**阈值**。 |
-| 阈值 | 选择要获取相关通知的阈值的类型：组织配额、物理磁盘、物理内存、保留磁盘或保留内存。 |
-| 阈值方向 | 选择在超过设置的“跨越阈值时通知”值时希望数据移入的方向，即“升序”或“降序”。例如，如果“跨越阈值时通知”值为 50%，并且方向为“降序”，那么仅当使用量百分比从大于或等于 50% 变为小于 50% 时，才会向您发送通知。如果将方向设置为“升序”，那么当使用量百分比从小于 50% 变为大于 50% 时，会向您发送通知。|
-| 超过 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“升序”属性，那么当阈值高于此百分比时，会发送电子邮件通知。 |
-| 低于 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“降序”属性，那么当阈值低于此百分比时，会发送电子邮件通知。 |
-| 描述 | 添加要创建的预订的唯一描述。 |
-| 主题 | 输入电子邮件的主题行。这是必填字段。  |
-| 消息体 | 输入要在电子邮件中发送的消息体文本。您可以使用 IBM 有效内容值，向电子邮件通知填充相关信息。请参阅[阈值有效内容部分值](index.html#threshpayload)表，以识别可以使用的值。使用基本 HTML 标记，来构建您的电子邮件。这是必填字段。 |
-| 收件人 | 使用电子邮件通知收件人的逗号分隔列表，输入一个或多个电子邮件地址。展开“抄送”或“密件抄送”选项，将电子邮件抄送给其他人。这是必填字段。 |
+| 已启用| 选择要启用电子邮件通知的选项。清除选项将禁用电子邮件通知。缺省情况下，会启用预订。|
+| 类型| 选择**电子邮件**。|
+| 事件| 选择**阈值**。|
+| 阈值| 选择要获取相关通知的阈值的类型：组织配额、物理磁盘、物理内存、保留磁盘或保留内存。|
+| 阈值方向| 选择在超过设置的“跨越阈值时通知”值时希望数据移入的方向，即“升序”或“降序”。例如，如果“跨越阈值时通知”值为 50%，并且方向为“降序”，那么仅当使用量百分比从大于或等于 50% 变为小于 50% 时，才会向您发送通知。如果将方向设置为“升序”，那么当使用量百分比从小于 50% 变为大于 50% 时，会向您发送通知。|| 超过 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“升序”属性，那么当阈值高于此百分比时，会发送电子邮件通知。|
+| 低于 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“降序”属性，那么当阈值低于此百分比时，会发送电子邮件通知。|
+| 描述
+| 添加要创建的预订的唯一描述。|
+| 主题| 输入电子邮件的主题行。这是必填字段。|
+| 消息体| 输入要在电子邮件中发送的消息体文本。您可以使用 IBM 有效内容值，向电子邮件通知填充相关信息。请参阅[阈值有效内容部分值](index.html#threshpayload)表，以识别可以使用的值。使用基本 HTML 标记，来构建您的电子邮件。这是必填字段。|
+| 收件人| 使用电子邮件通知收件人的逗号分隔列表，输入一个或多个电子邮件地址。展开“抄送”或“密件抄送”选项，将电子邮件抄送给其他人。这是必填字段。|
 {: caption="表 4. 关于维护更新或事件的电子邮件通知预订的字段" caption-side="top"}
 
 阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会向您发送通知。
@@ -128,47 +129,49 @@ lastupdated: "2017-05-30"
 
 {: #webhooknotsub}
 
-| **字段** | **描述** |
+| **字段**| **描述**|
 |-----------------|-------------------|
-| 已启用 | 选中该选项可启用通知。清除该选项会禁用通知。缺省情况下，会启用预订。 |
-| 类型 | 选择 **Webhook** |
-| 事件 | 选择要预订有关**维护**事件的通知还是**事件**的通知。 |
-| 授权 | 选择是否启用授权。选项为：**基本**或**无**。 |
-| 用户名 | 如果选择**基本**授权，请输入您的 Web Service 的用户名。如果不想使用个人凭证，那么可以设置功能标识以专门用于 {{site.data.keyword.Bluemix_notm}}。 |
-| 密码 | 如果选择**基本**授权，请输入您的 Web Service 的密码。 |
-| 描述 | 添加要创建的预订的唯一描述。 |
-| 新事件 | 选中此选项可启用新维护或事件的通知。清除该选项会禁用通知。 |
-| 方法 | 选择 **GET**、**POST** 或 **PUT**。 |
-| URL | 输入要连接到 Web Service 的 URL。 |
-| 响应属性 | 此可选字段是属性名称，用于标识发送 POST 或 PUT 请求时 Web Service 创建的资源。如果为新事件提供响应属性，并且选择为事件更改创建预订，那么还必须为“事件更改”预订提供该响应属性。根据使用的 Web Service，可以将其指定为 URL 的一部分或指定为有效内容值。  |
-| 有效内容 | 如果选择了 POST 或 PUT 方法，请输入特定于要使用的 Web Service 的属性，以及与属性成对的用于 IBM 通知的有效内容值。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。如果未在此部分中输入信息，您会收到不含任何更多信息的通知。 |
-| 事件更改 | 选中此选项可创建有关已对其创建预订的维护或事件的更改的通知预订。清除该选项会禁用通知。 |
-| 使用新事件的值和有效内容 | 使用“新事件”部分中的“方法”、URL 和“有效内容”字段的内容。请注意，如果选中此选项，那么这些字段在“事件更改”部分中不可做进一步编辑。 |
-| 方法 | 选择 **GET**、**POST** 或 **PUT**。 |
-| URL | 输入要连接到 Web Service 的 URL。 |
-| 有效内容 | 如果选择了 POST 或 PUT 方法，请输入特定于要使用的 Web Service 的属性，以及与属性成对的用于 IBM 通知的有效内容值。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。如果未在此部分中输入信息，您会收到不含任何更多信息的通知。 |
-| 组合通知 | 选中该选项可将所有区域的事件通知组合到单个通知。此选项仅可用于事件。
- |
+| 已启用| 选中该选项可启用通知。清除该选项会禁用通知。缺省情况下，会启用预订。|
+| 类型| 选择 **Webhook**|
+| 事件| 选择要预订有关**维护**事件的通知还是**事件**的通知。|
+| 授权| 选择是否启用授权。选项为：**基本**或**无**。|
+| 用户名| 如果选择**基本**授权，请输入您的 Web Service 的用户名。如果不想使用个人凭证，那么可以设置功能标识以专门用于 {{site.data.keyword.Bluemix_notm}}。|
+| 密码| 如果选择**基本**授权，请输入您的 Web Service 的密码。|
+| 描述
+| 添加要创建的预订的唯一描述。|
+| 新事件| 选中此选项可启用新维护或事件的通知。清除该选项会禁用通知。|
+| 方法| 选择 **GET**、**POST** 或 **PUT**。|
+| URL| 输入要连接到 Web Service 的 URL。|
+| 响应属性| 此可选字段是属性名称，用于标识发送 POST 或 PUT 请求时 Web Service 创建的资源。如果为新事件提供响应属性，并且选择为事件更改创建预订，那么还必须为“事件更改”预订提供该响应属性。根据使用的 Web Service，可以将其指定为 URL 的一部分或指定为有效内容值。|
+| 有效内容| 如果选择了 POST 或 PUT 方法，请输入特定于要使用的 Web Service 的属性，以及与属性成对的用于 IBM 通知的有效内容值。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。如果未在此部分中输入信息，您会收到不含任何更多信息的通知。|
+| 事件更改| 选中此选项可创建有关已对其创建预订的维护或事件的更改的通知预订。清除该选项会禁用通知。|
+| 使用新事件的值和有效内容| 使用“新事件”部分中的“方法”、URL 和“有效内容”字段的内容。请注意，如果选中此选项，那么这些字段在“事件更改”部分中不可做进一步编辑。|
+| 方法| 选择 **GET**、**POST** 或 **PUT**。|
+| URL| 输入要连接到 Web Service 的 URL。|
+| 有效内容| 如果选择了 POST 或 PUT 方法，请输入特定于要使用的 Web Service 的属性，以及与属性成对的用于 IBM 通知的有效内容值。请参阅[维护和事件有效内容部分值](index.html#payload)表，以识别可以使用的值。如果未在此部分中输入信息，您会收到不含任何更多信息的通知。|
+| 组合通知| 选中该选项可将所有区域的事件通知组合到单个通知。此选项仅可用于事件。
+|
 {: caption="表 5. 关于维护或事件的 Webhook 通知预订的表单字段" caption-side="top"}
 
 
 {: #webhooknotthresh}
 
-| **字段** | **描述** |
+| **字段**| **描述**|
 |-----------------|-------------------|
-| 已启用 | 选中该选项可启用通知。清除该选项会禁用通知。缺省情况下，会启用预订。 |
-| 类型 | 选择 **Webhook**。 |
-| 事件 | 选择**阈值**。 |
-| 阈值 | 选择要获取相关通知的阈值的类型：组织配额、物理磁盘、物理内存、保留磁盘或保留内存。|
-| 阈值方向 | 选择是要以“升序”还是“降序”查看阈值数据。  |
-| 低于 (%) 时通知 | 如果选择**降序****阈值方向**，请输入达到时发送通知的阈值百分比。当阈值低于此百分比时，会发送 Webhook 通知。 |
-| 超过 (%) 时通知 | 如果选择**升序****阈值方向**，请输入达到时发送通知的阈值百分比。当阈值高于此百分比时，会发送 Webhook 通知。 |
-| 描述 | 添加要创建的预订的唯一描述。 |
-| 授权 | 选择是否启用授权。选项为：**基本**或**无**。 |
-| 用户名 | 如果选择基本授权，请输入您的 Web Service 的用户名。如果不想使用个人凭证，那么可以设置功能标识以专门用于 {{site.data.keyword.Bluemix_notm}}。 |
-| 密码 | 如果选择基本授权，请输入您的 Web Service 的密码。 |
-| 方法 | 选择 **GET**、**POST** 或 **PUT**。 |
-| URL | 输入要连接到 Web Service 的 URL。 |
+| 已启用| 选中该选项可启用通知。清除该选项会禁用通知。缺省情况下，会启用预订。|
+| 类型| 选择 **Webhook**。|
+| 事件| 选择**阈值**。|
+| 阈值| 选择要获取相关通知的阈值的类型：组织配额、物理磁盘、物理内存、保留磁盘或保留内存。|
+| 阈值方向| 选择是要以“升序”还是“降序”查看阈值数据。|
+| 低于 (%) 时通知 | 如果选择**降序****阈值方向**，请输入达到时发送通知的阈值百分比。当阈值低于此百分比时，会发送 Webhook 通知。|
+| 超过 (%) 时通知 | 如果选择**升序****阈值方向**，请输入达到时发送通知的阈值百分比。当阈值高于此百分比时，会发送 Webhook 通知。|
+| 描述
+| 添加要创建的预订的唯一描述。|
+| 授权| 选择是否启用授权。选项为：**基本**或**无**。|
+| 用户名| 如果选择基本授权，请输入您的 Web Service 的用户名。如果不想使用个人凭证，那么可以设置功能标识以专门用于 {{site.data.keyword.Bluemix_notm}}。|
+| 密码| 如果选择基本授权，请输入您的 Web Service 的密码。|
+| 方法| 选择 **GET**、**POST** 或 **PUT**。|
+| URL| 输入要连接到 Web Service 的 URL。|
 {: caption="表 6. 关于阈值的 Webhook 通知预订的表单字段" caption-side="top"}
 
 阈值数据每 6 个小时收集一次。当值跨越设置的阈值时，只发送一次通知。如果选择“升序”，那么当值低于阈值，然后再次高于阈值时，才会发送新通知。同样，如果选择“降序”，那么仅当值高于设置的阈值，然后再次低于阈值时，才会再次向您发送通知。
@@ -179,32 +182,32 @@ lastupdated: "2017-05-30"
 
 {: #payload}
 
-| **IBM 值** | **描述** | **事件类型** |
+| **IBM 值**| **描述**| **事件类型** |
 |----------------|----------------|------------------------|
-| {{content.category}} | 受影响的服务 | 事件 |
-| {{content.disruption}} | 受影响的组件 | 维护更新 |
-| {{content.message}} | 消息描述 |   维护更新和事件 |
-| {{content.scheduleWindow.start}} | 安排的更新开始日期 | 维护更新 |
-| {{content.scheduleWindow.end}} | 安排的更新结束时间 | 维护更新 |
-| {{content.severity}} | 严重性分级 | 事件 |
-| {{content.subCategoryName}} | 受影响的组件 | 事件 |
-| {{content.title}} | 消息标题 | 维护更新和事件 |
-| {{region}} | 受影响的区域 | 维护更新和事件 |
-| {{status}} | 更新的状态 | 维护更新 |
-| {{type}} | 更新或事件 | 维护更新和事件 |
-| {{workitem}} | 工作项编号 | 维护更新和事件 |
+| {{content.category}} | 受影响的服务| 事件|
+| {{content.disruption}} | 受影响的组件| 维护更新|
+| {{content.message}} | 消息描述|   维护更新和事件|
+| {{content.scheduleWindow.start}} | 安排的更新开始日期| 维护更新|
+| {{content.scheduleWindow.end}} | 安排的更新结束时间| 维护更新|
+| {{content.severity}} | 严重性分级| 事件|
+| {{content.subCategoryName}} | 受影响的组件| 事件|
+| {{content.title}} | 消息标题| 维护更新和事件|
+| {{region}} | 受影响的区域| 维护更新和事件|
+| {{status}} | 更新的状态| 维护更新|
+| {{type}} | 更新或事件| 维护更新和事件|
+| {{workitem}} | 工作项编号| 维护更新和事件|
 {: caption="表 7. 维护和事件有效内容部分值" caption-side="top"}
 
 
 {: #threshpayload}
 
-| **IBM 值** | **描述** | **事件类型** |
+| **IBM 值**| **描述**| **事件类型** |
 |----------------|----------------|------------------------|
-| {{content.org_quota}} | 组织配额阈值 | 阈值 |
-| {{content.physical_disk}} | 物理磁盘阈值 | 阈值 |
-| {{content.physical_memory}} | 物理内存阈值 | 阈值 |  
-| {{content.reserved_disk}} | 保留磁盘阈值 | 阈值 |
-| {{content.reserved_memory}} | 保留内存阈值 | 阈值 |
+| {{content.org_quota}} | 组织配额阈值| 阈值|
+| {{content.physical_disk}} | 物理磁盘阈值| 阈值|
+| {{content.physical_memory}} | 物理内存阈值| 阈值|  
+| {{content.reserved_disk}} | 保留磁盘阈值| 阈值|
+| {{content.reserved_memory}} | 保留内存阈值| 阈值|
 {: caption="表 8. 阈值有效内容部分值" caption-side="top"}
 
 保存通知预订时，您会通过设置的方法接收通知。通知仍将在以下位置中进行发布：  
@@ -217,13 +220,13 @@ lastupdated: "2017-05-30"
 ## 维护更新
 {: #oc_schedulemaintenance}
 
-如果您具有 Superuser 许可权 (`ops.admin`)，那么可以通过单击**管理 &gt; 系统信息 &gt; *数字* 个暂挂**来访问**系统更新**页面，从而查看安排的和暂挂的维护更新。环境中的所有用户都可以通过单击**支持** &gt; **状态**来查看安排的中断性维护更新事件。
+如果您具有 Superuser 许可权 (`ops.admin`)，那么可以通过单击**管理 &gt; 系统信息 &gt; *Number* 个暂挂**来访问**系统更新**页面，从而查看安排的和暂挂的维护更新。环境中的所有用户都可以通过单击**支持** &gt; **状态**来查看安排的中断性维护更新事件。
 
 **注**：请参阅以下[设置预先批准的维护时段](index.html#preapprovedmaintenance)部分，以开始进行操作。必须设置这些时段，IBM 才能安排对您环境的维护。
 
 <dl>
 <dt>非中断性更新</dt>
-<dd>非中断性更新不会影响您的环境和正在运行的应用程序，也不会影响用户对您应用程序的访问。此更新类型不需要逐个批准更新，并将在“系统更新”页面中设置的预先批准的可用维护时段内应用。</dd>
+<dd>非中断性更新不会影响您的环境和正在运行的应用程序，也不会影响用户对您应用程序的访问。此更新类型不需要逐个批准更新，并将在“系统更新”页面中设置的预先批准的可用维护时段内应用。<p>**注**：某些平台服务可能需要在预先确定的一组时隙内至少定义一个非中断性更改窗口，具体由服务决定。请检查部署到您环境的每个专用服务的服务描述。</p></dd>
 <dt>中断性更新</dt>
 <dd>中断性更新可能会影响您的环境、正在运行的应用程序，或影响用户对您应用程序的访问。必须安排并批准每个维护更新在分配的 21 天维护时段内执行。您可以选择建议的部署日期和时间（任何预先批准的时段的选项），也可以打开日历，选择三个特定时间和日期，供 IBM 在安排更新时选择使用。</dd>
 </dl>
@@ -242,7 +245,7 @@ lastupdated: "2017-05-30"
 
 **注**：只有具有 Superuser 许可权 (`ops.admin`) 的用户才可以安排和批准维护更新。
 
-1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂 &gt; 管理可用性**。
+1. 转至**管理 &gt; 系统信息 &gt; *Number* 个暂挂 &gt; 管理可用性**。
 2. 展开**管理可用更新时段**部分。
 3. 单击**添加新项**。
 4. 通过选择时段的频率、持续时间和开始时间，设置第一个可用时段。
@@ -257,7 +260,7 @@ lastupdated: "2017-05-30"
 
 您需要每周至少设置两天，并且一周至少设置 12 小时的可用小时数。尝试创建不可用更新时段时，如果此新时段会使系统每周运行更新的时间少于最低必需时间，那么可能无法保存更改。在这种情况下，必须首先除去某些现有的不可用更新时段，或者添加更多可用更新时段后，才能保存新的不可用更新时段。有关更多信息，请参阅[设置预先批准的维护时段](index.html#preapprovedmaintenance)。
 
-1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂 &gt; 管理可用性**。
+1. 转至**管理 &gt; 系统信息 &gt; *Number* 个暂挂 &gt; 管理可用性**。
 2. 展开**管理不可用更新时段**部分。
 3. 单击**添加新项**。
 4. 通过选择时段的频率、持续时间和开始时间，设置不可用时段。
@@ -270,7 +273,7 @@ lastupdated: "2017-05-30"
 
 要查看非中断性更新的详细信息，请完成以下步骤：
 
-1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂**。
+1. 转至**管理 &gt; 系统信息 &gt; *Number* 个暂挂**。
 2. 确定**需要客户安排**设置为**否**的任何行。
 3. 选择该更新所在的行以查看详细信息。
 
@@ -278,7 +281,7 @@ lastupdated: "2017-05-30"
 
 对于需要批准的中断性更新，请完成以下步骤：
 
-1. 转至**管理 &gt; 系统信息 &gt; *数字* 个暂挂**。
+1. 转至**管理 &gt; 系统信息 &gt; *Number* 个暂挂**。
 2. 确定**需要客户安排**设置为**是**的任何行。
 3. 选择该更新所在行，以查看更新的详细信息，包括更新描述、建议的更新日期和时间、受影响的组件以及更新的持续时间。
 4. 选择**安排和批准**。
@@ -359,17 +362,21 @@ lastupdated: "2017-05-30"
 
 要查看按 DEA 列出的内存、磁盘或 CPU 使用情况，请单击**细目**。  
 
-要查看一段时间内有关内存或磁盘的物理和保留使用量的更详细信息，请单击**历史记录**。可以将查看的时间范围指定为每周或每月。“历史使用情况”视图显示在所选时间内的内存或磁盘的使用情况图。  
+要查看一段时间内有关内存或磁盘的物理和保留使用量的更详细信息，请单击**历史记录**。您可以查看过去 48 小时、过去 30 天或过去 5 个月的使用情况。为过去 48 小时显示的点表示每小时收集一次的实际数据。为过去 30 天显示的点表示每天的平均值。为过去 5 个月显示的点表示每个月的平均值。过去 30 天和过去 5 个月的视图还可以通过切换图表顶部的单选按钮来显示每天或每月的最大值。“历史使用情况”视图显示在所选时间内的内存或磁盘的使用情况图。  
 	<dl>
 	<dt><strong>保留限制</strong></dt>
-	<dd>“保留限制”显示为水平虚线图，等于可为环境中运行的所有应用程序总体保留的内存或磁盘空间总量。</dd>
+	<dd>“保留限制”显示为水平虚线图，等于可为您环境中运行的所有应用程序总体保留的内存或磁盘空间总量。</dd>
 	<dt><strong>保留</strong></dt>
-	<dd>“保留”面积图显示当前为环境中运行的所有应用程序总体保留的内存或磁盘空间。<p>要查看在特定时间点保留内存最多的组织，请将鼠标悬停在“保留”面积图上与该时间点关联的点上。然后，可以在显示的饼图中单击组织以查看有关该组织的更多信息。</p></dd>
+	<dd>“保留”折线图显示当前为您环境中运行的所有应用程序总体保留的内存或磁盘空间。</dd>
 	<dt><strong>物理限制</strong></dt>
-	<dd>“物理限制”显示为水平虚线图，显示购买用于环境的物理内存或磁盘空间量。</dd>
+	<dd>“物理限制”显示为水平虚线图，显示为您环境购买的物理内存或磁盘空间量。</dd>
 	<dt><strong>物理</strong></dt>
-	<dd>“物理”面积图显示实际使用的内存或磁盘空间量。</dd>
+	<dd>“物理”折线图显示实际在使用的内存或磁盘空间量。</dd>
 	</dl>
+	
+对于每个可用的历史使用情况视图，至少需要两个数据点才能呈现图形。这相当于对于过去 48 小时，至少需要两个小时的数据，对于过去 30 天，至少两天的数据，对于过去 5 个月，至少两个月的数据。对于 30 天和 5 个月的视图，将返回当天或当月的部分完整平均值或最大值，并且将随着收集更多数据而进行调整。
+
+支持这些视图的数据可通过[度量值 API](/docs/admin/index.html#envappmetricsapi) 来获取。要查看用于生成视图的实际 API 端点和数据，请单击图表上方的**了解有关 API 的更多信息**链接。如果单击显示的对话框中的任一链接，将在浏览器中打开一个新选项卡，其中包含度量值 API 端点的 JSON 响应。 
 
 #### 服务使用量详细信息
 {: #servicesresourceusage}
@@ -453,22 +460,22 @@ lastupdated: "2017-05-30"
 
 {: #ld_table9}
 
-| **报告** | **描述** |      
+| **报告**| **描述**|      
 |-------------------|---------------------|
-| [防火墙登录](/docs/hybrid/reports.html#firewalllogins) | 与管理员登录到 Vyatta 防火墙设备相关的事件。 |
-| [防火墙拒绝](/docs/hybrid/reports.html#firewalldenies) | 根据适用的防火墙规则，访问请求被拒绝时，Vyatta 防火墙设备生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} [管理员登录](/docs/hybrid/reports.html#oslogin) | 管理员在每个 {{site.data.keyword.Bluemix_notm}} 系统上启动 SSH 会话时，操作系统生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} [应用程序开发者登录](/docs/hybrid/reports.html#loginserverlogins) | {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面启动会话时，{{site.data.keyword.Bluemix_notm}} 平台登录组件生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} [操作系统管理](/docs/hybrid/reports.html#osadmin)  | 管理员在当前工作会话中执行操作时，操作系统生成的事件。 |
-| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) 平台管理](/docs/hybrid/reports.html#platformadmin) | 与 {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面执行的操作相关的事件。 |
-| [内部数据库管理](/docs/hybrid/reports.html#dbadmin) | 与数据库管理员在 {{site.data.keyword.Bluemix_notm}} 内部数据库上执行的操作相关的事件。 |
-| [用户管理](/docs/hybrid/reports.html#acusermgmt) | 与在“管理”页面上执行的用户管理操作相关的事件。 |
-| [目录管理](/docs/hybrid/reports.html#catalogmgmt) | 与服务“目录”更改相关的事件。 |
-| [安全报告管理](/docs/hybrid/reports.html#securityreportsmgmt) | 与在“管理”页面上执行的安全报告管理操作相关的事件。 |
-| [访问审核](/docs/hybrid/reports.html#securityreportsmgmt) | 对特权访问的审核。 |
-| 软件变更管理 | 变更管理活动。 |
-| [密钥证书管理](/docs/hybrid/reports.html#keymgmt) | 密钥证书管理操作。 |
-| [系统通知](/docs/hybrid/reports.html#systemnotifications) | 与配置软件更新部署窗口或通知预订相关的事件。 |
+| [防火墙登录](/docs/hybrid/reports.html#firewalllogins)| 与管理员登录到 Vyatta 防火墙设备相关的事件。|
+| [防火墙拒绝](/docs/hybrid/reports.html#firewalldenies)| 根据现有防火墙规则访问请求被拒绝时 Vyatta 防火墙设备生成的事件。|
+| {{site.data.keyword.Bluemix_notm}} [管理员登录](/docs/hybrid/reports.html#oslogin)| 管理员在每个 {{site.data.keyword.Bluemix_notm}} 系统上启动 SSH 会话时操作系统生成的事件。|
+| {{site.data.keyword.Bluemix_notm}} [应用程序开发者登录](/docs/hybrid/reports.html#loginserverlogins)| {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面启动会话时，{{site.data.keyword.Bluemix_notm}} 平台登录组件生成的事件。|
+| {{site.data.keyword.Bluemix_notm}} [操作系统管理](/docs/hybrid/reports.html#osadmin)| 管理员在当前工作会话中执行操作时操作系统生成的事件。|
+| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) 平台管理](/docs/hybrid/reports.html#platformadmin)| 与 {{site.data.keyword.Bluemix_notm}} 平台用户使用命令行、REST API 或 {{site.data.keyword.Bluemix_notm}} 用户界面执行的操作相关的事件。|
+| [内部数据库管理](/docs/hybrid/reports.html#dbadmin)| 与数据库管理员在 {{site.data.keyword.Bluemix_notm}} 内部数据库上执行的操作相关的事件。|
+| [用户管理](/docs/hybrid/reports.html#acusermgmt)| 与在“管理”页面上执行的用户管理操作相关的事件。|
+| [目录管理](/docs/hybrid/reports.html#catalogmgmt)| 与服务“目录”更改相关的事件。|
+| [安全报告管理](/docs/hybrid/reports.html#securityreportsmgmt)| 与在“管理”页面上执行的安全报告管理操作相关的事件。|
+| [访问审核](/docs/hybrid/reports.html#securityreportsmgmt)| 对特权访问的审核。|
+| 软件变更管理| 变更管理活动。|
+| [密钥证书管理](/docs/hybrid/reports.html#keymgmt)| 密钥证书管理操作。|
+| [系统通知](/docs/hybrid/reports.html#systemnotifications)| 与配置软件更新部署窗口或通知预订相关的事件。|
 
 {: caption="表 9. 安全报告列表" caption-side="top"}
 
@@ -626,43 +633,43 @@ lastupdated: "2017-05-30"
 
 {: #ld_table10}
 
-| **JSON 字段** | **描述** |
+| **JSON 字段**| **描述**|
 |-----------------|-----------------|
-|bindable   | 布尔值，指示服务实例是否可以绑定到应用程序。  |
-|描述 | 服务描述，使用 cf marketplace 命令时显示，或者将鼠标悬停在 {{site.data.keyword.Bluemix_notm}} 用户界面的“目录”中的相应服务图标上时显示。可以为描述添加单个语句或短语。 |
-|name | 服务的名称，在 cf 命令行界面中显示。此名称必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须使用小写字母且不能包含空格。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的名称。 |
-|id  | 服务的标识。此标识必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须是 GUID（全局唯一标识）。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的标识。 |
-|metadata | 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以指定 metadata 的更多字段。请参阅下表 [Metadata 字段](index.html#metadatafields)，以获取更多信息。 |
-|plans | 一组服务套餐定义。请参阅下表 [Plan 字段](index.html#planfields)，以获取更多信息。 |
+|bindable| 布尔值，指示服务实例是否可以绑定到应用程序。|
+|描述| 服务描述，使用 cf marketplace 命令时显示，或者将鼠标悬停在 {{site.data.keyword.Bluemix_notm}} 用户界面的“目录”中的相应服务图标上时显示。可以为描述添加单个语句或短语。|
+|name| 服务的名称，在 cf 命令行界面中显示。此名称必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须使用小写字母且不能包含空格。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的名称。|
+|id| 服务的标识。此标识必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须是 GUID（全局唯一标识）。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的标识。|
+|metadata| 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以指定 metadata 的更多字段。请参阅下表 [Metadata 字段](index.html#metadatafields)，以获取更多信息。|
+|plans| 一组服务套餐定义。请参阅下表 [Plan 字段](index.html#planfields)，以获取更多信息。|
 {: caption="表 10. JSON 字段" caption-side="top"}
 
 
 {: #metadatafields}
 
-| **Metadata 值** | **描述** |
+| **Metadata 值**| **描述**|
 |---------------------|-----------------|
-|displayName          | 套餐的名称，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示。此名称会同时显示在“目录”中的服务详细信息页面上以及价格表上。套餐名称仅第一个字母大写。请勿使用“Default”作为缺省套餐名称；请改为使用“Standard”。 |
-|providerDisplayName | 服务提供者的名称 |
-|longDescription | 服务的详细描述。请考虑至少对详细描述使用两个语句。 |
-|plans                | 一组服务套餐定义。plans 字段的每组条目都由以下字段组成：name、description、free、id 和 metadata。请参阅下表 [Plan 字段](index.html#planfields)，以获取更多信息。 |
-|bullets | 为服务显示的一组字符串。可使用 bullets 来提供详细描述以及其他信息。bullets 字段必须至少包含两个 bullet 元素。每个 bullet 都包含 title 和 description 字段。 |
-|imageUrl | 大型 PNG 图像（50 x 50 像素）的 URL。 |
-|smallImageUrl | 小型 PNG 图像（24 x 24 像素）的 URL。 |
-|mediumImageUrl | 中型 PNG 图像（32 x 32 像素）的 URL。 |
-|featuredImageUrl | 特色图像的（64 x 64 像素）的 URL。 |
-|documentationUrl | 有关服务的文档的 URL。 |
-|termsUrl | 包含协议条款的 PDF 文件的 URL。 |
-|media（可选） | 一组元素，用于显示在 {{site.data.keyword.Bluemix_notm}} 用户界面中介绍服务的视频和截屏。media 元素可以包含以下字段：type（image、youtube 或 video）、thumbnailUrl（media 元素的预览图像的 URL）、url（截屏或 YouTube 视频的 URL）、source（未在 YouTube 上托管的视频的来源。视频来源的“类型”必须受 HTML5 支持。对于 video，请包含“type”和“url”。）和 caption（media 元素的文字说明。文字说明有助于身有残疾的人员进行访问以了解 media 元素。）. |
-|serviceKeysSupported | 布尔值，指示是否支持服务密钥 API。服务密钥 API 用于支持服务在 {{site.data.keyword.Bluemix_notm}} 外部使用。缺省值为 false。 |
-|plan_updateable | 布尔值，指示服务是否支持更改套餐。缺省值为 false。 |
-|embeddableDashboard（可选） | 此字段指示服务仪表板在 {{site.data.keyword.Bluemix_notm}} 用户界面中的显示方式。如果未指定此字段，仪表板将嵌入用户界面中，但限制为宽度不低于 960px，并且仪表板围绕 iFrame 有更多水平内边距。可以使用 true、false、drilldown 或 launch。对于此值，可以使用以下字段：true、false、drilldown 和 launch。  |
-|notCreatable（可选） | 布尔值，指示是否可以通过 {{site.data.keyword.Bluemix_notm}} 用户界面和 cf 命令行界面创建服务实例。值为 true 表示无法通过 {{site.data.keyword.Bluemix_notm}} 用户界面或 cf 命令行界面创建服务实例。缺省值为 false。 |
-|notCreatableMessage（可选） | 无法创建服务实例时，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示的消息。如果未指定此字段，那么将显示以下缺省消息：可用时进行通知，请确认您的电子邮件地址，或输入其他电子邮件地址。 |
-|notCreatableRobotMessage（可选） | 在 {{site.data.keyword.Bluemix_notm}} 用户界面的服务详细信息页面中的对话气泡中显示的消息。此消息用于指示服务可能存在问题，或者指示导致服务不可用的其他原因。可以指定消息来说明原因。如果未指定此字段，那么将显示以下缺省消息：此服务当前不可用。 |
-|apiReferenceUrl（可选） | iFrame 的 URL，位于“目录”中服务详细信息页面上的“API 引用”区域中。如果未用于“目录”中的服务详细信息页面，那么可以输入在“{{site.data.keyword.Bluemix_notm}} REST API 文档”微服务中注册服务时，分配给服务的“REST API 文档”的数字值。这将在服务仪表板中显示 REST API 文档。 |
-|sdkDownloadUrl（可选） | 单击“下载 SDK”按钮时打开的 Web 页面的 URL。“下载 SDK”按钮位于“仪表板”中“应用程序概述”页面的服务磁贴上。Web 页面会在新的浏览器选项卡中打开。 |
-|serviceMonitorApi    | 返回 JSON 数据的 API 的 URL，如以下示例中所示，用于报告服务运行状况。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。 |
-|serviceMonitorApp    | 应用程序的 URL，该应用程序可部署到 {{site.data.keyword.Bluemix_notm}} 并绑定服务，以提供特定于服务状态的输出。应用程序返回的 JSON 数据格式必须与 serviceMonitorApi 相同。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。 |
+|displayName| 套餐的名称，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示。此名称会同时显示在“目录”中的服务详细信息页面上以及价格表上。套餐名称仅第一个字母大写。请勿使用“Default”作为缺省套餐名称；请改为使用“Standard”。|
+|providerDisplayName| 服务提供者的名称|
+|longDescription| 服务的详细描述。请考虑至少对详细描述使用两个语句。|
+|plans| 一组服务套餐定义。plans 字段的每组条目都由以下字段组成：name、description、free、id 和 metadata。请参阅下表 [Plan 字段](index.html#planfields)，以获取更多信息。|
+|bullets| 为服务显示的一组字符串。可使用 bullets 来提供详细描述以及其他信息。bullets 字段必须至少包含两个 bullet 元素。每个 bullet 都包含 title 和 description 字段。|
+|imageUrl| 大型 PNG 图像（50 x 50 像素）的 URL。|
+|smallImageUrl| 小型 PNG 图像（24 x 24 像素）的 URL。|
+|mediumImageUrl| 中型 PNG 图像（32 x 32 像素）的 URL。|
+|featuredImageUrl| 特色图像的（64 x 64 像素）的 URL。|
+|documentationUrl| 有关服务的文档的 URL。|
+|termsUrl| 包含协议条款的 PDF 文件的 URL。|
+|media（可选）| 一组元素，用于显示在 {{site.data.keyword.Bluemix_notm}} 用户界面中介绍服务的视频和截屏。media 元素可以包含以下字段：type（image、youtube 或 video）、thumbnailUrl（media 元素的预览图像的 URL）、url（截屏或 YouTube 视频的 URL）、source（未在 YouTube 上托管的视频的来源。视频来源的“类型”必须受 HTML5 支持。对于 video，请包含“type”和“url”。）和 caption（media 元素的文字说明。文字说明有助于身有残疾的人员进行访问以了解 media 元素。）. |
+|serviceKeysSupported| 布尔值，指示是否支持服务密钥 API。服务密钥 API 用于支持服务在 {{site.data.keyword.Bluemix_notm}} 外部使用。缺省值为 false。|
+|plan_updateable| 布尔值，指示服务是否支持更改套餐。缺省值为 false。|
+|embeddableDashboard（可选）| 此字段指示服务仪表板在 {{site.data.keyword.Bluemix_notm}} 用户界面中的显示方式。如果未指定此字段，仪表板将嵌入用户界面中，但限制为宽度不低于 960px，并且仪表板围绕 iFrame 有更多水平内边距。可以使用 true、false、drilldown 或 launch。对于此值，可以使用以下字段：true、false、drilldown 和 launch。|
+|notCreatable（可选）| 布尔值，指示是否可以通过 {{site.data.keyword.Bluemix_notm}} 用户界面和 cf 命令行界面创建服务实例。值为 true 表示无法通过 {{site.data.keyword.Bluemix_notm}} 用户界面或 cf 命令行界面创建服务实例。缺省值为 false。|
+|notCreatableMessage（可选）| 无法创建服务实例时，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示的消息。如果未指定此字段，那么将显示以下缺省消息：可用时进行通知，请确认您的电子邮件地址，或输入其他电子邮件地址。|
+|notCreatableRobotMessage（可选）| 在 {{site.data.keyword.Bluemix_notm}} 用户界面的服务详细信息页面中的对话气泡中显示的消息。此消息用于指示服务可能存在问题，或者指示导致服务不可用的其他原因。可以指定消息来说明原因。如果未指定此字段，那么将显示以下缺省消息：此服务当前不可用。|
+|apiReferenceUrl（可选）| iFrame 的 URL，位于“目录”中服务详细信息页面上的“API 引用”区域中。如果未用于“目录”中的服务详细信息页面，那么可以输入在“{{site.data.keyword.Bluemix_notm}} REST API 文档”微服务中注册服务时，分配给服务的“REST API 文档”的数字值。这将在服务仪表板中显示 REST API 文档。|
+|sdkDownloadUrl（可选）| 单击“下载 SDK”按钮时打开的 Web 页面的 URL。“下载 SDK”按钮位于“仪表板”中“应用程序概述”页面的服务磁贴上。Web 页面会在新的浏览器选项卡中打开。|
+|serviceMonitorApi| 返回 JSON 数据的 API 的 URL，如以下示例中所示，用于报告服务运行状况。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。|
+|serviceMonitorApp| 应用程序的 URL，该应用程序可部署到 {{site.data.keyword.Bluemix_notm}} 并绑定服务，以提供特定于服务状态的输出。应用程序返回的 JSON 数据格式必须与 serviceMonitorApi 相同。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。|
 {: caption="表 11. 元数据字段" caption-side="top"}
 
 
@@ -692,35 +699,35 @@ lastupdated: "2017-05-30"
 
 以下示例显示了 GET /v2/catalog 的 JSON 响应如何映射到 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面：
 
-![“目录”中的服务详细信息。](images/metadata.png "Bluemix“目录”的服务详细信息视图")
+![目录中的服务详细信息。](images/metadata.png "Bluemix“目录”服务详细视图")
 
 
 {: #planfields}
 
-| **Plan 值** | **描述** |
+| **Plan 值**| **描述**|
 |---------------------|-----------------|
-|name       | 服务套餐的名称，在 cf 命令行界面中使用。例如，套餐名称显示在 cf marketplace 命令的输出中。套餐名称必须为小写字母且不能包含空格，并且必须在服务中唯一。  |
-|描述       | 服务套餐的描述。在 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面上选择套餐后，会显示相应描述。 |
-|free      | 布尔值，指示服务套餐是否免费。缺省值为 true。 |
-|id       | 服务套餐的标识。标识必须唯一，并且必须为 GUID。  |
-|metadata（可选）    | 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以在 metadata 字段内指定以下字段：displayName, type（subscription、reservable 或 planDetails）、bullets、costs（unitId、unit 或 partNumber）和 paidOnly。请参阅下表 [Plan metadata 字段](index.html#planmetadata)，以获取更多信息。 |
+|name| 服务套餐的名称，在 cf 命令行界面中使用。例如，套餐名称显示在 cf marketplace 命令的输出中。套餐名称必须为小写字母且不能包含空格，并且必须在服务中唯一。|
+|描述| 服务套餐的描述。在 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面上选择套餐后，会显示相应描述。|
+|free| 布尔值，指示服务套餐是否免费。缺省值为 true。|
+|id| 服务套餐的标识。标识必须唯一，并且必须为 GUID。|
+|metadata（可选）| 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以在 metadata 字段内指定以下字段：displayName, type（subscription、reservable 或 planDetails）、bullets、costs（unitId、unit 或 partNumber）和 paidOnly。请参阅下表 [Plan metadata 字段](index.html#planmetadata)，以获取更多信息。|
 {: caption="表 12. 套餐字段" caption-side="top"}
 
 
 {: #planmetadata}
 
-| **Plan metadata 值** | **描述** |
+| **Plan metadata 值**| **描述**|
 |------------------------|-----------------|
-|displayName             | 套餐的名称，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示。此名称会同时显示在“目录”中的服务详细信息页面上以及价格表上。   |
-|type                    | 套餐的类型。此字段可以使用以下值：subscription（预订套餐。缺省值为 false。）、reservable（可保留套餐。仅当套餐是预订套餐，即 plan.metadata.subscription 的值为 true 时，才使用此值。缺省值为 false。）或 planDetails（可用于套餐的资源的详细数量和描述。仅当套餐是可保留套餐，即 plan.metadata.reserveable 的值为 true 时，才使用此值。） |
-|bullets                 | 可用于套餐的资源的描述。描述会显示在“目录”中服务详细信息页面上的**功能**列中以及价格表上。 |
-|costs                   | 有关服务的成本信息，显示在“目录”中服务详细信息页面上的“价格”列中以及价格表上。每组条目都包含以下字段：unitId（单位标识。使用复数形式并且所有字母均大写。对于免费套餐，此字段是可选的。）、unit（用于计算服务费用的度量值。此字段的值在 {{site.data.keyword.Bluemix_notm}} 用户界面中用于表示费用度量值。）和 partNumber（记帐系统使用的 `part_number` 标识。对于免费套餐，此字段是可选的。）.   |
-|paidOnly（可选）     | 布尔值，指示此服务套餐是否只可用于 {{site.data.keyword.Bluemix_notm}} 付费帐户。值为 **true** 表示此服务套餐只可用于付费帐户，不能添加到试用帐户。值为 **false** 表示此服务套餐可以添加到付费帐户和试用帐户。缺省值为 **false**。	  |
+|displayName| 套餐的名称，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示。此名称会同时显示在“目录”中的服务详细信息页面上以及价格表上。|
+|type| 套餐的类型。此字段可以使用以下值：subscription（预订套餐。缺省值为 false。）、reservable（可保留套餐。仅当套餐是预订套餐，即 plan.metadata.subscription 的值为 true 时，才使用此值。缺省值为 false。）或 planDetails（可用于套餐的资源的详细数量和描述。仅当套餐是可保留套餐，即 plan.metadata.reserveable 的值为 true 时，才使用此值。）|
+|bullets| 可用于套餐的资源的描述。描述会显示在“目录”中服务详细信息页面上的**功能**列中以及价格表上。|
+|costs| 有关服务的成本信息，显示在“目录”中服务详细信息页面上的“价格”列中以及价格表上。每组条目都包含以下字段：unitId（单位标识。使用复数形式并且所有字母均大写。对于免费套餐，此字段是可选的。）、unit（用于计算服务费用的度量值。此字段的值在 {{site.data.keyword.Bluemix_notm}} 用户界面中用于表示费用度量值。）和 partNumber（记帐系统使用的 `part_number` 标识。对于免费套餐，此字段是可选的。）.   |
+|paidOnly（可选）| 布尔值，指示此服务套餐是否只可用于 {{site.data.keyword.Bluemix_notm}} 付费帐户。值为 **true** 表示此服务套餐只可用于付费帐户，不能添加到试用帐户。值为 **false** 表示此服务套餐可以添加到付费帐户和试用帐户。缺省值为 **false**。|
 {: caption="表 13. 套餐元数据字段" caption-side="top"}
 
 以下示例显示了 GET /v2/catalog 的 JSON 响应如何映射到 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面。具体而言，即上表中描述的 plan metadata 字段如何映射到用户界面：
 
-![“目录”中的 plan metadata 详细信息。](images/plan_metadata.png "Bluemix“目录”plan metadata 值视图")
+![目录中的 Plan metadata 详细信息。](images/plan_metadata.png "Bluemix“目录”plan metadata 值视图")
 
 
 <!-- staging only end -->
@@ -950,13 +957,13 @@ lastupdated: "2017-05-30"
 
 {: #ld_table14}
 
-| **用户许可权** | **描述** |       
+| **用户许可权**| **描述**|       
 |-----------------|-------------------|
-| Superuser | **Superuser** 许可权设置为**打开**的用户可以编辑其他用户的许可权。如果您打开该许可权，那么它会自动对所有其他许可权启用完全访问权。除了针对此表中每个许可权所概括的任务之外，它们还可以设置通知预订，以直接获取有关维护或事件的警报、安排维护、对控制台组件运行验证检查，以及为环境创建组织和空间。此许可权等同于管理控制台的管理员 (admin) 角色。  |
-| Basic Access | **Basic Access** 许可权设置为**打开**的用户可以在 {{site.data.keyword.Bluemix_notm}} 用户界面查看“管理”页面选项。启用该许可权的用户可以访问[系统信息](#oc_system)和[资源使用情况](#oc_resource)磁贴。没有此许可权，用户无法查看或访问“管理”菜单选项。此许可权等同于管理控制台的管理员 (admin) 角色。此许可权等同于先前使用的管理控制台的登录许可权。 |
-| 目录 | 可以为拥有 **Catalog** 许可权的用户分配 **Read** 或 **Write**（修改）的访问权，以指出本地或专用实例中哪些服务可用。Read 访问权允许用户访问“目录管理”磁贴，以查看可用的服务。Write 访问权允许用户访问[目录管理](#oc_catalog)磁贴，以查看服务、编辑服务的可视性、注册定制服务并控制 buildpack 优先级列表。 |  
-| Reports | 可以为拥有 **Reports** 许可权的用户分配 **Read** 或 **Write**（修改）安全报告的访问权。Read 访问权允许用户访问“报告和日志”磁贴，以下载报告。Write 访问权允许用户查看[报告和日志](#oc_report)磁贴，以及使用 CLI 上传新报告，并创建新类别以供用户访问。 |
-| Users | 可以为拥有 **Users** 许可权的用户分配针对用户列表执行 **Read**（查看）操作或针对用户执行 **Write**（添加或除去）操作的访问权。此许可权不允许为其他用户设置许可权。Write 访问权允许用户向环境添加新用户、从环境删除用户，并向环境内已经存在的组织添加现有用户。此外，**Write** 访问权允许用户添加新组织、删除组织并编辑组织内的用户。 |
+| Superuser| **Superuser** 许可权设置为**打开**的用户可以编辑其他用户的许可权。如果您打开该许可权，那么它会自动对所有其他许可权启用完全访问权。除了针对此表中每个许可权所概括的任务之外，它们还可以设置通知预订，以直接获取有关维护或事件的警报、安排维护、对控制台组件运行验证检查，以及为环境创建组织和空间。此许可权等同于管理控制台的管理员 (admin) 角色。|
+| Basic Access| **Basic Access** 许可权设置为**打开**的用户可以在 {{site.data.keyword.Bluemix_notm}} 用户界面查看“管理”页面选项。启用该许可权的用户可以访问[系统信息](#oc_system)和[资源使用情况](#oc_resource)磁贴。没有此许可权，用户无法查看或访问“管理”菜单选项。此许可权等同于管理控制台的管理员 (admin) 角色。此许可权等同于先前使用的管理控制台的登录许可权。|
+| 目录| 可以为拥有 **Catalog** 许可权的用户分配 **Read** 或 **Write**（修改）的访问权，以指出本地或专用实例中哪些服务可用。Read 访问权允许用户访问“目录管理”磁贴，以查看可用的服务。Write 访问权允许用户访问[目录管理](#oc_catalog)磁贴，以查看服务、编辑服务的可视性、注册定制服务并控制 buildpack 优先级列表。|  
+| Reports| 可以为拥有 **Reports** 许可权的用户分配 **Read** 或 **Write**（修改）安全报告的访问权。Read 访问权允许用户访问“报告和日志”磁贴，以下载报告。Write 访问权允许用户查看[报告和日志](#oc_report)磁贴，以及使用 CLI 上传新报告，并创建新类别以供用户访问。|
+| Users| 可以为拥有 **Users** 许可权的用户分配针对用户列表执行 **Read**（查看）操作或针对用户执行 **Write**（添加或除去）操作的访问权。此许可权不允许为其他用户设置许可权。Write 访问权允许用户向环境添加新用户、从环境删除用户，并向环境内已经存在的组织添加现有用户。此外，**Write** 访问权允许用户添加新组织、删除组织并编辑组织内的用户。|
 {: caption="表 14. 许可权" caption-side="top"}
 
 ## 使用 REST API
@@ -1306,7 +1313,8 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 ## 用于度量值的 API
 {: #envappmetricsapi}
 
-您可以使用三个试验性 API 来收集有关环境或应用程序的度量值。这些 API 会针对指定时间段内所请求的度量值返回一组数据点。
+您可以使用四个 API 来收集有关环境、应用程序和组织的度量值。这些 API 会针对指定时间段内所请求的度量值返回一组数据点。
+
 
 以下各部分中描述的度量值 API 可以从特定于区域的端点进行访问，例如：
 
@@ -1318,11 +1326,11 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 1. 用户每小时最多可以对度量值发起 200 个 API 请求。
 2. 每个 API 请求最多可返回 200 个数据点。如果有更多数据可用，将在响应中提供 URL，以用于装入下一组数据。
 3. 每个 API 请求都需要用户至少具有对管理控制台的基本访问权。可能还需要其他许可权，如下面所指定。
-4. 可以使用从发出 API 请求开始 6 个月前的数据。
+4. 可以使用发出 API 请求之前最长 5 个月的数据。
 
 ## 收集有关环境的度量值
 
-您可以使用试验性环境 API 来收集指定时间段内的高级别环境信息。这将返回指定时间内的可用数据点。数据大约每小时记录一次。例如，如果请求 6 个小时的环境 CPU 数据，那么响应将包含请求 6 个小时内每个小时的 CPU 数据。
+您可以使用环境 API 来收集指定时间段内的高级别环境信息。可以查看实际数据样本（大约每小时记录一次）或基于数据样本计算的统计信息。仅提供了有关内存和磁盘使用量的统计信息。这些 API 允许您指定返回的实际数据或统计数据的时间范围。例如，如果请求 6 个小时的环境 CPU（实际）数据，那么响应将包含请求的 6 个小时内每个小时的 CPU 数据。
 
 
 ### 环境端点
@@ -1680,6 +1688,238 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 ```
 {: screen}
 
+
+### 环境统计信息端点
+
+您可以查看基于您环境的内存和磁盘使用量度量值数据计算的统计信息。返回的统计信息是每个数据分组中数据样本的平均值、最大值和最小值。可以按天（针对每天计算统计信息）或按月（针对每月计算统计信息）对数据进行分组。
+
+您可以使用以下端点来调用此 API 命令：
+* `/api/v1/env/stats/system/disk`
+* `/api/v1/env/stats/system/memory`
+
+**注**：访问这些端点需要以下某个许可权：**基本访问权**、**用户读许可权**、**用户写许可权**或**超级用户**
+
+### 环境统计信息查询参数
+
+使用以下查询参数可以收集磁盘和内存的统计信息：
+
+<dl class="parml">
+<dt class="pt dlterm">startTime</dt>
+<dd class="pd">开始返回数据的最早时间点。如果未指定 startTime，那么将包含最早的可用数据点。</dd>
+<dt class="pt dlterm">endTime</dt>
+<dd class="pd">结束返回数据的最晚时间点。如果未指定 endTime，那么将使用最新的数据点。</dd>
+<dt class="pt dlterm">averageType</dt>
+<dd class="pd">要对其计算统计信息的分组。有效值为 `day` 和 `month`。缺省值为 day，将返回指定时间范围内每天的平均使用量值。指定值 month 将返回每个月的平均使用量值。</dd>
+</dl>
+
+以下示例使用查询参数来收集有关环境的内存统计信息（按天计算平均值）：
+
+```
+curl -b ./cookies.txt --header "Accept: application/json" https://console.<region>.bluemix.net/admin/metrics/api/v1/env/stats/system/memory
+```
+{: codeblock}
+
+
+### 环境统计信息数据格式
+
+以下各部分提供了数据格式。
+
+ * 要收集有关内存使用情况的数据记录，请使用以下数据格式：
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "memory": {
+    "dea": {
+      "physical": {
+      "total": {
+      "average_gb": 864,
+          "max_gb": 864,
+          "min_gb": 864
+        },
+        "used": {
+          "average_gb": 63.41959999999999,
+          "max_gb": 63.61,
+          "min_gb": 63.12
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 1728,
+          "max_gb": 1728,
+          "min_gb": 1728
+        },
+        "total_allocated": {
+          "average_gb": 54.78000000000001,
+          "max_gb": 55.97,
+          "min_gb": 52.72
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+      "total": {
+      "average_gb": 640,
+          "max_gb": 640,
+          "min_gb": 640
+        },
+        "used": {
+          "average_gb": 286.1068,
+          "max_gb": 295.8,
+          "min_gb": 284.3
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 1600,
+          "max_gb": 1600,
+          "min_gb": 1600
+        },
+        "total_allocated": {
+          "average_gb": 1200.3043999999998,
+          "max_gb": 1259.45,
+          "min_gb": 1191.33
+        }
+      }
+    },
+    "total": {
+      "physical": {
+      "total": {
+      "average_gb": 1504,
+          "max_gb": 1504,
+          "min_gb": 1504
+        },
+        "used": {
+          "average_gb": 349.52639999999997,
+          "max_gb": 359.02,
+          "min_gb": 347.64
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 3328,
+          "max_gb": 3328,
+          "min_gb": 3328
+        },
+        "total_allocated": {
+          "average_gb": 1255.0844,
+          "max_gb": 1313.67,
+          "min_gb": 1245.8
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+ * 要收集有关磁盘使用情况的数据记录，请使用以下数据格式：
+
+```
+{
+  "metadata": {
+    "range_start": 1498003200000,
+    "range_end": 1498089599999,
+    "sample_count": 25
+  },
+  "disk": {
+    "dea": {
+      "physical": {
+      "total": {
+      "average_gb": 8100,
+          "max_gb": 8100,
+          "min_gb": 8100
+        },
+        "used": {
+          "average_gb": 325.32,
+          "max_gb": 330,
+          "min_gb": 324
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 16200,
+          "max_gb": 16200,
+          "min_gb": 16200
+        },
+        "total_allocated": {
+          "average_gb": 98.39,
+          "max_gb": 100.75,
+          "min_gb": 95.75
+        }
+      }
+    },
+    "cell": {
+      "physical": {
+      "total": {
+      "average_gb": 6000,
+          "max_gb": 6000,
+          "min_gb": 6000
+        },
+        "used": {
+          "average_gb": 1539.48,
+          "max_gb": 1557,
+          "min_gb": 1533
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 12000,
+          "max_gb": 12000,
+          "min_gb": 12000
+        },
+        "total_allocated": {
+          "average_gb": 1985.13,
+          "max_gb": 2184.25,
+          "min_gb": 1958.25
+        }
+      }
+    },
+    "total": {
+      "physical": {
+      "total": {
+      "average_gb": 14100,
+          "max_gb": 14100,
+          "min_gb": 14100
+        },
+        "used": {
+          "average_gb": 1864.8,
+          "max_gb": 1881,
+          "min_gb": 1857
+        }
+      },
+    "allocated": {
+      "reserved": {
+          "average_gb": 28200,
+          "max_gb": 28200,
+          "min_gb": 28200
+        },
+        "total_allocated": {
+          "average_gb": 2083.52,
+          "max_gb": 2281,
+          "min_gb": 2056
+        }
+      }
+    }
+  }
+}
+```
+{: screen}
+
+### 环境度量值响应格式
+
+```
+{
+   docs: [],
+   next_url:
+}
+```
+{: screen}
+
 ## 收集有关组织的度量值
 
 大约每小时为所有组织记录一次数据。对特定度量值的请求会返回指定时间段内每次数据采样中的所有组织的信息，信息按请求的度量值降序排列。例如，如果在具有 200 个应用程序的环境中请求 6 小时时间段内按内存列出的所有组织，将返回 1200 个记录，每次返回 200 个。
@@ -1816,13 +2056,13 @@ POST /codi/v1/serviceBrokers
 
 {: #ld_table15}
 
-| **名称** | **描述** |
+| **名称**| **描述**|
 |-----------------|-------------------|
-| name | 服务代理程序的名称。 |
-| auth_username | 用于与服务代理程序连接的用户名。 |
-| auth_password | 用于与服务代理程序连接的密码。 |
-| broker_url | 用于连接服务代理程序的 URL。 |
-| owningOrganization | 将服务列入白名单时要使用的初始组织。 |
+| name| 服务代理程序的名称。|
+| auth_username| 用于与服务代理程序连接的用户名。|
+| auth_password| 用于与服务代理程序连接的密码。|
+| broker_url| 用于连接服务代理程序的 URL。|
+| owningOrganization| 将服务列入白名单时要使用的初始组织。|
 {: caption="表 15. 字段" caption-side="top"}
 
 #### 主体
@@ -1891,13 +2131,13 @@ Content-Type: application/json
 
 {: #ld_table16}
 
-| **名称** | **描述** |
+| **名称**| **描述**|
 |-----------------|-------------------|
-| name | 服务代理程序的名称。此名称是创建服务时使用的名称，无法更改。 |
-| auth_username | 用于与服务代理程序连接的用户名。 |
-| auth_password | 用于与服务代理程序连接的密码。 |
-| broker_url | 用于连接服务代理程序的 URL。 |
-| owningOrganization | 将服务列入白名单时要使用的初始组织。 |
+| name| 服务代理程序的名称。此名称是创建服务时使用的名称，无法更改。|
+| auth_username| 用于与服务代理程序连接的用户名。|
+| auth_password| 用于与服务代理程序连接的密码。|
+| broker_url| 用于连接服务代理程序的 URL。|
+| owningOrganization| 将服务列入白名单时要使用的初始组织。|
 {: caption="表 16. 请求" caption-side="top"}
 
 #### 主体
@@ -1957,9 +2197,9 @@ Content-Type: application/json
 
 {: #ld_table17}
 
-| **名称** | **描述** |
+| **名称**| **描述**|
 |-----------------|-------------------|
-| name | 服务代理程序的名称。此名称是创建服务时使用的名称，无法更改。 |
+| name| 服务代理程序的名称。此名称是创建服务时使用的名称，无法更改。|
 {: caption="表 17. 参数" caption-side="top"}
 
 ### 路径

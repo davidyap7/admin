@@ -33,10 +33,7 @@ Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_no
 ## Modification de la photo de votre profil
 {: #photo notoc}
 
-Cliquez sur l'icône
-**{{site.data.keyword.avatar}}**
-![Icône Avatar](../icons/i-avatar-icon.svg) &gt;
-**Profil utilisateur**.
+Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur**.
 
   * Pour ajouter une photo, cliquez sur **Télécharger une photo**.
   * Pour remplacer votre photo actuelle par une autre, cliquez sur **Changer de photo**.
@@ -50,10 +47,7 @@ fonctions d'infrastructure, de services et d'application. Il est identique à l'
 
 Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société.
 
-1. Cliquez sur l'icône
-**{{site.data.keyword.avatar}}**
-![Icône Avatar](../icons/i-avatar-icon.svg) &gt;
-**Profil utilisateur**.
+1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur**.
 2. Cliquez sur l'option permettant d'**éditer votre IBMid**.
 3. Editez vos informations utilisateur.
 4. Cliquez sur **Sauvegarder**.
@@ -68,15 +62,12 @@ Si vous choisissez de désactiver le suivi, il se peut que vous ne puissiez pas 
 
 Afin de désactiver le suivi pour analyse, procédez comme suit :
 
-1. Cliquez sur l'icône
-**{{site.data.keyword.avatar}}**
-![icône Avatar](../icons/i-avatar-icon.svg) &gt;
-**Profil utilisateur**.
+1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur**.
 2. Désactivez le suivi pour analyse en spécifiant **off**.
 
 ## Envoi de commentaires
 {: #feedback}
 
-Pour soumettre des idées qui pourraient améliorer {{site.data.keyword.Bluemix_notm}}  et les services, accédez à [IBM Cloud Ideas ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Pour plus d'informations sur l'utilisation du nouveau portail d'idées, voir [Think, write, submit: New ideas portal for IBM Cloud ![Icône de lien externe](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
+Pour soumettre des idées qui pourraient améliorer {{site.data.keyword.Bluemix_notm}}  et les services, accédez à [IBM Cloud Ideas ![External link icon](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Pour plus d'informations sur l'utilisation du nouveau portail d'idées, voir [Think, write, submit: New ideas portal for IBM Cloud ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
 
-Pour nous faire part de vos commentaires sur la documentation, cliquez sur le lien **Feedback** sur chaque page, ou collaborez avec nous en cliquant sur le lien d'**édition dans GitHub** après le titre. Pour plus d'informations sur la contribution à la documentation, voir [When it comes to docs, everyone can contribute in Bluemix ![Icône de lien externe](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
+Pour nous faire part de vos commentaires sur la documentation, cliquez sur le lien **Feedback** sur chaque page, ou collaborez avec nous en cliquant sur le lien d'**édition dans GitHub** après le titre. Pour plus d'informations sur la contribution à la documentation, voir [When it comes to docs, everyone can contribute in Bluemix ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

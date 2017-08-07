@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um die Benutzerrollen für einen bestimm
 ## Kontingent verwalten
 {: #managequota}
 
-Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie das verwendete und zugeordnete Kontingent für eine Organisation anzeigen. Das Kontingent stellt die Ressourcengrenzen für die Organisation dar, die beim Erstellen der Organisation zugeordnet wird. Abhängig davon, ob Sie über ein Testkonto oder ein belastbares Konto verfügen, können die für eine Organisation verfügbaren Ressourcen variieren. Jede Anwendung oder jeder Service in einem Bereich der Organisation trägt zur Nutzung des zugeordneten Kontingents bei.
+Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie das verwendete und zugeordnete Kontingent für eine Organisation anzeigen. Das Kontingent stellt die Ressourcengrenzen für die Organisation dar, die beim Erstellen der Organisation zugeordnet wird. Abhängig davon, ob Sie über ein Testkonto oder ein gebührenpflichtiges Konto verfügen, können die für eine Organisation verfügbaren Ressourcen variieren. Jede Anwendung oder jeder Service in einem Bereich der Organisation trägt zur Nutzung des zugeordneten Kontingents bei.
 
 Führen Sie die folgenden Schritte aus, um das verwendete und zugeordnete Kontingent für eine Organisation anzuzeigen:
 1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.

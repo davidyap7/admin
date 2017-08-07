@@ -33,7 +33,7 @@ Procédez comme suit pour renommer votre organisation :
 ## Suppression d'organisations et d'espaces
 {: #deleteorgs}
 
-En tant que propriétaire de compte, prenez contact avec le [support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour supprimer une organisation.
+En tant que propriétaire de compte, prenez contact avec le [support {{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour supprimer une organisation.
 
 **Remarque** : les opérations de suppression sont irréversibles. Vous perdez toutes vos applis et tous les services qui sont associés à l'organisation.
 
