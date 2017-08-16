@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-23"
+lastupdated: "2017-08-16"
 
 
 ---
@@ -24,7 +24,7 @@ You can set platform email notifications for {{site.data.keyword.Bluemix_notm}} 
 ## Setting platform notifications
 {: #platform}
 
-From the console menu bar, click **Manage > Account > Notifications > Platform** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance, as well as security notifications and other announcements. You can select or clear each option to enable or disable the email notifications.
+From the console menu bar, click **Manage > Account > Notifications > Platform Notifications** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notifications.
 
 ## Setting spending notifications
 {: #spending}
@@ -32,7 +32,7 @@ From the console menu bar, click **Manage > Account > Notifications > Platform**
 If you are a Pay-As-You-Go or Subscription account owner, you can set up email spending notifications. Set notifications for total account, runtime, container, and service spending, as well as spending for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. You can edit each spending notification at any time as your needs change.
 
 Complete the following steps to set up email notifications for spending limits:
-1. From the menu bar, click **Manage > Account > Notifications > Spending**. 
+1. From the menu bar, click **Manage > Account > Notifications > Spending**.
 2. Enter a numeric value to set the threshold for triggering a specific type of spending notification:
     * Total account
     * Total runtime
