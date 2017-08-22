@@ -40,8 +40,8 @@ Führen Sie folgende Schritte aus, um von Ihrem bisherigen SoftLayer-Konto zu ei
 
    Wechseln Sie bei der Eingabeaufforderung 'Kontoanmeldung' in den Abschnitt für die **Kontoanmeldung mit IBMid** und klicken Sie auf **Mit IBM ID anmelden**. Verwenden Sie nicht die Felder **Benutzername** und **Kennwort**, die Sie zuvor mit Ihrer SoftLayer-ID verwendet haben.
 
-Wenn Sie ein neuer Kunde sind, werden Sie beim Überprüfen Ihrer Bestellung nach Ihrer vorhandenen IBMid gefragt oder zum Erstellen einer neuen IBMid aufgefordert. 
-  * Zur Verwendung einer bestehenden IBMid geben Sie den Benutzernamen oder die E-Mail-Adresse der IBMid ein, falls diese eindeutig ist (also nicht von mehreren IBMids gemeinsam genutzt wird). 
+Wenn Sie ein neuer Kunde sind, werden Sie beim Überprüfen Ihrer Bestellung nach Ihrer vorhandenen IBMid gefragt oder zum Erstellen einer neuen IBMid aufgefordert.
+  * Zur Verwendung einer bestehenden IBMid geben Sie den Benutzernamen oder die E-Mail-Adresse der IBMid ein, falls diese eindeutig ist (also nicht von mehreren IBMids gemeinsam genutzt wird).
 
   * Geben Sie zum Erstellen einer neuen IBMid eine E-Mail-Adresse ein, die noch nicht von einer IBMid verwendet wird. Diese E-Mail-Adresse ist der Benutzername für die IBMid; an diese Adresse wird Ihr Registrierungscode gesendet, nachdem die IBMid erstellt wurde. Sie können die E-Mail-Adresse, die der IBMid zugeordnet ist, zu einem späteren Zeitpunkt aktualisieren, jedoch nicht den Benutzernamen ändern.
 

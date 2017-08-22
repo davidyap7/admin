@@ -364,7 +364,7 @@ Per visualizzare l'utilizzo della memoria, disco o CPU da parte di DEA, fai clic
 Per informazioni più dettagliate sull'utilizzo della memoria o del disco fisico e riservato nel tempo, fai clic su **Cronologia.** Puoi visualizzare l'utilizzo per le ultime 48 ore, gli ultimi 30 giorni o gli ultimi 5 mesi. I punti visualizzati per le ultime 48 ore rappresentano i dati effettivi che vengono raccolti una volta all'ora. I punti visualizzati per gli ultimi 30 giorni rappresentano il valore medio per ciascun giorno. I punti visualizzati per gli ultimi 5 mesi rappresentano il valore medio per ciascun mese. Le viste degli ultimi 30 giorni e degli ultimi 5 mesi possono anche visualizzare il valore massimo per ogni giorno o mese selezionando il pulsante di opzione nella parte superiore del grafico. La vista dell'utilizzo cronologico mostra un grafico di utilizzo della memoria o del disco nel corso del tempo da te scelto.  
 	<dl>
 	<dt><strong>Limite riservato</strong></dt>
-	<dd>Indicato in forma di linea tratteggiata orizzontale, il limite riservato è la quantità totale di memoria o spazio su disco che può essere riservata collettivamente da tutte le applicazioni in esecuzione nel tuo ambiente. </dd>
+	<dd>Indicato in forma di linea tratteggiata orizzontale, il limite riservato è la quantità totale di memoria o spazio su disco che può essere riservata collettivamente da tutte le applicazioni in esecuzione nel tuo ambiente.</dd>
 	<dt><strong>Riservato</strong></dt>
 	<dd>La linea Riservato mostra la quantità di memoria o di spazio su disco che è attualmente riservata collettivamente da tutte le applicazioni in esecuzione nel tuo ambiente.</dd>
 	<dt><strong>Limite fisico</strong></dt>
@@ -373,7 +373,7 @@ Per informazioni più dettagliate sull'utilizzo della memoria o del disco fisico
 	<dd>La linea Fisico mostra la quantità di memoria o spazio su disco effettivamente utilizzata.</dd>
 	</dl>
 	
-Per ciascuna delle viste di utilizzo cronologico disponibili, sono richiesti almeno due punti dati per la rappresentazione del grafico. Ciò equivale a dati per almeno due ore durante le ultime 48 ore, due giorni negli ultimi 30 giorni e due mesi negli ultimi 5 mesi. Per le viste di 30 giorni e 5 mesi, vengono restituiti i valori massimi o le medie parzialmente complete per il giorno o il mese corrente e verranno regolati man mano vengono raccolti altri dati. 
+Per ciascuna delle viste di utilizzo cronologico disponibili, sono richiesti almeno due punti dati per la rappresentazione del grafico. Ciò equivale a dati per almeno due ore durante le ultime 48 ore, due giorni negli ultimi 30 giorni e due mesi negli ultimi 5 mesi. Per le viste di 30 giorni e 5 mesi, vengono restituiti i valori massimi o le medie parzialmente complete per il giorno o il mese corrente e verranno regolati man mano vengono raccolti altri dati.
 
 I dati che alimentano queste viste sono disponibili tramite l'[API Metriche](/docs/admin/index.html#envappmetricsapi). Per visualizzare gli effettivi endpoint API e i dati utilizzati per generare la vista, fai clic sul link **Informazioni sull'API** sopra il grafico. Se fai clic su uno dei link nella finestra di dialogo visualizzata, nel browser verrà aperta una nuova scheda contenente la risposta JSON dell'endpoint API delle metriche. 
 
@@ -492,7 +492,7 @@ La pagina Stato è la posizione centrale per trovare notifiche e annunci sugli e
 
 ### Stato della console di gestione
 
-Dopo la distribuzione iniziale del tuo ambiente {{site.data.keyword.Bluemix_notm}}, un controllo di verifica viene completato automaticamente sui componenti utilizzati per amministrare il tuo ambiente. Puoi andare alla pagina Controllo verifica console di gestione per controllare lo stato dei componenti dopo che è stato eseguito il controllo di verifica. Per accedere alla pagina, vai a <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, dove `<subdomain>` è il nome della tua istanza locale o dedicata. 
+Dopo la distribuzione iniziale del tuo ambiente {{site.data.keyword.Bluemix_notm}}, un controllo di verifica viene completato automaticamente sui componenti utilizzati per amministrare il tuo ambiente. Puoi andare alla pagina Controllo verifica console di gestione per controllare lo stato dei componenti dopo che è stato eseguito il controllo di verifica. Per accedere alla pagina, vai a <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, dove `<subdomain>` è il nome della tua istanza locale o dedicata.
 
 Puoi eseguire una verifica in qualsiasi momento. Devi aver eseguito l'accesso per selezionare l'opzione per eseguire la verifica. Se riscontri dei malfunzionamenti mentre stai aggiungendo un utente, modificando un'organizzazione o gestendo i tuoi servizi, esegui questo controllo per identificare eventuali componenti malfunzionanti o disconnessi. Puoi aprire un ticket del supporto con le informazioni dal controllo per far risolvere rapidamente il problema.
 
@@ -641,7 +641,7 @@ Le seguenti tabelle possono aiutarti a compilare il file JSON.
 | **Campi JSON** | **Descrizione** |
 |-----------------|-----------------|
 |bindable   | Un valore booleano che indica se le istanze del servizio possono essere associate tramite bind alle applicazioni.  |
-|description | La descrizione del servizio visualizzata quando utilizzi il comando cf marketplace o passi il mouse sull'icona del servizio nel catalogo dell'interfaccia utente {{site.data.keyword.Bluemix_notm}}. Puoi aggiungere una singola parola o frase per la descrizione. |
+|descrizione | La descrizione del servizio visualizzata quando utilizzi il comando cf marketplace o passi il mouse sull'icona del servizio nel catalogo dell'interfaccia utente {{site.data.keyword.Bluemix_notm}}. Puoi aggiungere una singola parola o frase per la descrizione. |
 |name | Il nome del servizio visualizzato nell'interfaccia riga di comando cf. Questo nome deve essere univoco all'interno di {{site.data.keyword.Bluemix_notm}}, deve utilizzare lettere minuscole e non può contenere spazi. Dopo aver registrato il servizio con {{site.data.keyword.Bluemix_notm}}, non potrai più modificarne il nome. |
 |ID  | L'ID del servizio. Questo ID deve essere univoco in {{site.data.keyword.Bluemix_notm}} e deve essere un GUID (Globally Unique Identifier). Dopo aver registrato il servizio con {{site.data.keyword.Bluemix_notm}}, non potrai più modificare l'ID. |
 |metadata | I metadati del piano di servizio visualizzati nel catalogo {{site.data.keyword.Bluemix_notm}} e nel listino prezzi. Il campo dei metadati è facoltativo. Puoi specificare più campi per i metadati. Per ulteriori informazioni, vedi la seguente tabella per i [campi Metadati](index.html#metadatafields). |
@@ -713,7 +713,7 @@ Il seguente esempio mostra come la risposta JSON di GET /v2/catalog è associata
 | **Valori del piano** | **Descrizione** |
 |---------------------|-----------------|
 |name       | Il nome del piano di servizio utilizzato nell'interfaccia riga di comando cf. Il nome del piano viene, ad esempio, visualizzato nell'output del comando cf marketplace. Il nome del piano deve essere in lettere minuscole, non può contenere spazi e deve essere univoco all'interno del servizio.  |
-|description       | La descrizione del piano di servizio. La descrizione viene visualizzata quando selezioni una piano nella pagina dei dettagli del servizio nel catalogo {{site.data.keyword.Bluemix_notm}}. |
+|descrizione       | La descrizione del piano di servizio. La descrizione viene visualizzata quando selezioni una piano nella pagina dei dettagli del servizio nel catalogo {{site.data.keyword.Bluemix_notm}}. |
 |free      | Un valore booleano che indica se il piano di servizio è gratuito. Il valore predefinito è true. |
 |ID       | L'ID del piano di servizio. L'ID deve essere univoco e deve essere un GUID.  |
 |metadata (facoltativo)    | I metadati del piano di servizio visualizzati nel catalogo {{site.data.keyword.Bluemix_notm}} e nel listino prezzi. Il campo dei metadati è facoltativo. Nel campo metadata puoi specificare i seguenti campi: displayName, type (subscription, reservable, planDetails), bullets, costs (unitId, unit, partNumber) e paidOnly. Per ulteriori informazioni, vedi la seguente tabella per i [campi Metadati del piano](index.html#planmetadata). |
@@ -1397,7 +1397,7 @@ Puoi accedere alle API delle metriche descritte nelle seguenti sezioni dall'endp
 
 ## Raccolta delle metriche sul tuo ambiente
 
-Puoi utilizzare l'API di ambiente per raccogliere informazioni sull'ambiente di alto livello in un periodo di tempo specificato. Puoi visualizzare campioni di dati effettivi, che vengono registrati approssimativamente ogni ora, o le statistiche calcolate sui campioni di dati. Le statistiche sono disponibili solo per il consumo di memoria e disco. Le API ti consentono di specificare l'intervallo di tempo dei dati effettivi o statistici restituiti. Se, ad esempio,richiedi sei ore di dati CPU (effettivi) per l'ambiente, la risposta includerà i dati della CPU per ognuna delle sei ore richieste. 
+Puoi utilizzare l'API di ambiente per raccogliere informazioni sull'ambiente di alto livello in un periodo di tempo specificato. Puoi visualizzare campioni di dati effettivi, che vengono registrati approssimativamente ogni ora, o le statistiche calcolate sui campioni di dati. Le statistiche sono disponibili solo per il consumo di memoria e disco. Le API ti consentono di specificare l'intervallo di tempo dei dati effettivi o statistici restituiti. Se, ad esempio,richiedi sei ore di dati CPU (effettivi) per l'ambiente, la risposta includerà i dati della CPU per ognuna delle sei ore richieste.
 
 
 ### Endpoint di ambiente
@@ -1758,7 +1758,7 @@ Le seguenti sezioni forniscono il formato dei dati.
 
 ### Endpoint statistiche di ambiente
 
-Puoi visualizzare le statistiche calcolate sui dati delle metriche per il consumo di memoria e disco nel tuo ambiente. Le statistiche restituite sono i valori medi, i valori massimi e quelli minimi dei campioni di dati in ciascun raggruppamento di dati. I dati possono essere raggruppati per giorno, dove le statistiche vengono calcolate per ogni giorno, oppure per mese, in cui le statistiche vengono calcolate per ogni mese. 
+Puoi visualizzare le statistiche calcolate sui dati delle metriche per il consumo di memoria e disco nel tuo ambiente. Le statistiche restituite sono i valori medi, i valori massimi e quelli minimi dei campioni di dati in ciascun raggruppamento di dati. I dati possono essere raggruppati per giorno, dove le statistiche vengono calcolate per ogni giorno, oppure per mese, in cui le statistiche vengono calcolate per ogni mese.
 
 Puoi utilizzare i seguenti endpoint per richiamare questo comando API:
 * `/api/v1/env/stats/system/disk`
@@ -1776,7 +1776,7 @@ Utilizzando i seguenti parametri di query, puoi raccogliere le statistiche per i
 <dt class="pt dlterm">OraFine</dt>
 <dd class="pd">L'ultimo  punto nel tempo da cui vengono restituiti i dati. Se non viene specificata alcuna OraFine, viene utilizzato il punto dati più recente.</dd>
 <dt class="pt dlterm">TipoMedia</dt>
-<dd class="pd">Il raggruppamento su cui calcolare le statistiche. I valori validi sono `giorno` e `mese`. Il valore predefinito è giorno, che restituisce i valori di utilizzo medio per ogni giorno nell'intervallo di tempo specificato. Se si specifica il valore mese, vengono restituiti i valori di utilizzo medio per ogni mese.</dd>
+<dd class="pd">Il raggruppamento su cui calcolare le statistiche. I valori validi sono `giorno` e `mese`. Il valore predefinito è giorno, che restituisce i valori di utilizzo medio per ogni giorno nell'intervallo di tempo specificato.  Se si specifica il valore mese, vengono restituiti i valori di utilizzo medio per ogni mese.</dd>
 </dl>
 
 Il seguente esempio utilizza i parametri di query per raccogliere le statistiche di memoria relative al tuo ambiente, calcolate in base alla media giornaliera:

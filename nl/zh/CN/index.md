@@ -72,7 +72,7 @@ lastupdated: "2017-07-05"
 
 要从**通知预订**页面创建电子邮件或 Webhook 预订，请完成以下步骤：
 
-1. 浏览到**通知预订**页面。转至**系统信息 &gt; 环境 &gt; 预订**。
+1. 导航至**通知预订**页面。转至**系统信息 &gt; 环境 &gt; 预订**。
 2. 单击**添加预订**。
 3. 填写通知预订表单。
 
@@ -112,7 +112,8 @@ lastupdated: "2017-07-05"
 | 类型| 选择**电子邮件**。|
 | 事件| 选择**阈值**。|
 | 阈值| 选择要获取相关通知的阈值的类型：组织配额、物理磁盘、物理内存、保留磁盘或保留内存。|
-| 阈值方向| 选择在超过设置的“跨越阈值时通知”值时希望数据移入的方向，即“升序”或“降序”。例如，如果“跨越阈值时通知”值为 50%，并且方向为“降序”，那么仅当使用量百分比从大于或等于 50% 变为小于 50% 时，才会向您发送通知。如果将方向设置为“升序”，那么当使用量百分比从小于 50% 变为大于 50% 时，会向您发送通知。|| 超过 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“升序”属性，那么当阈值高于此百分比时，会发送电子邮件通知。|
+| 阈值方向| 选择在超过设置的“跨越阈值时通知”值时希望数据移入的方向，即“升序”或“降序”。例如，如果“跨越阈值时通知”值为 50%，并且方向为“降序”，那么仅当使用量百分比从大于或等于 50% 变为小于 50% 时，才会向您发送通知。如果将方向设置为“升序”，那么当使用量百分比从小于 50% 变为大于 50% 时，会向您发送通知。|
+| 超过 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“升序”属性，那么当阈值高于此百分比时，会发送电子邮件通知。|
 | 低于 (%) 时通知 | 输入达到时发送通知的阈值百分比。如果在“阈值方向”字段中选择“降序”属性，那么当阈值低于此百分比时，会发送电子邮件通知。|
 | 描述
 | 添加要创建的预订的唯一描述。|
@@ -609,8 +610,8 @@ lastupdated: "2017-07-05"
             "id":"cool-service-plan-id",
             "metadata":{
                "bullets":[
-                                    "1 GB Min per instance. 10 GB Max per instance."
-],
+                  "1 GB Min per instance. 10 GB Max per instance."
+               ],
                "costs":[
                   {
                      "unitId":"INSTANCES_PER_MONTH",
@@ -636,7 +637,7 @@ lastupdated: "2017-07-05"
 | **JSON 字段**| **描述**|
 |-----------------|-----------------|
 |bindable| 布尔值，指示服务实例是否可以绑定到应用程序。|
-|描述| 服务描述，使用 cf marketplace 命令时显示，或者将鼠标悬停在 {{site.data.keyword.Bluemix_notm}} 用户界面的“目录”中的相应服务图标上时显示。可以为描述添加单个语句或短语。|
+|description | 服务描述，使用 cf marketplace 命令时显示，或者将鼠标悬停在 {{site.data.keyword.Bluemix_notm}} 用户界面的“目录”中的相应服务图标上时显示。可以为描述添加单个语句或短语。|
 |name| 服务的名称，在 cf 命令行界面中显示。此名称必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须使用小写字母且不能包含空格。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的名称。|
 |id| 服务的标识。此标识必须在 {{site.data.keyword.Bluemix_notm}} 中唯一，并且必须是 GUID（全局唯一标识）。向 {{site.data.keyword.Bluemix_notm}} 注册服务后，不能更改该服务的标识。|
 |metadata| 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以指定 metadata 的更多字段。请参阅下表 [Metadata 字段](index.html#metadatafields)，以获取更多信息。|
@@ -707,7 +708,7 @@ lastupdated: "2017-07-05"
 | **Plan 值**| **描述**|
 |---------------------|-----------------|
 |name| 服务套餐的名称，在 cf 命令行界面中使用。例如，套餐名称显示在 cf marketplace 命令的输出中。套餐名称必须为小写字母且不能包含空格，并且必须在服务中唯一。|
-|描述| 服务套餐的描述。在 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面上选择套餐后，会显示相应描述。|
+|description       | 服务套餐的描述。在 {{site.data.keyword.Bluemix_notm}}“目录”中的服务详细信息页面上选择套餐后，会显示相应描述。|
 |free| 布尔值，指示服务套餐是否免费。缺省值为 true。|
 |id| 服务套餐的标识。标识必须唯一，并且必须为 GUID。|
 |metadata（可选）| 服务套餐元数据，在 {{site.data.keyword.Bluemix_notm}}“目录”和价格表中显示。metadata 字段是可选字段。可以在 metadata 字段内指定以下字段：displayName, type（subscription、reservable 或 planDetails）、bullets、costs（unitId、unit 或 partNumber）和 paidOnly。请参阅下表 [Plan metadata 字段](index.html#planmetadata)，以获取更多信息。|
@@ -1064,7 +1065,7 @@ password <password>`
 
 您可以使用 `Admin` REST API 为 {{site.data.keyword.Bluemix_notm}} 实例添加和除去用户。为了能够从命令行执行基本操作，提供了试验性 `Admin` REST API 端点和 JSON 响应。本信息的示例中的端点和 URL 可能会发生变化，也可能会临时通知停止使用。
 
-如果您拥有 **Superuser** 许可权或者具有 **Write** 访问权的 **Users** 许可权，那么可以添加或移除用户。必须拥有 **Superuser** 许可权，才能编辑其他用户的许可权。
+如果您拥有 **Superuser** 许可权或者具有 **Write** 访问权的 **Users** 许可权，那么可以添加或除去用户。必须拥有 **Superuser** 许可权，才能编辑其他用户的许可权。
 
 虽然可以选择使用其他工具，但下面是使用后续示例时所需的必备工具：
 * cURL - 将 REST API 请求作为命令进行输入。cURL 是一个免费的实用程序，可用于通过命令行界面将 HTTP 请求发送到服务器并接收服务器响应。可以从 [cURL 下载站点 ![外部链接图标](../icons/launch-glyph.svg)](http://curl.haxx.se/download.html){: new_window} 来下载 cURL。
@@ -1914,7 +1915,8 @@ curl -b ./cookies.txt --header "Accept: application/json" https://console.<regio
 
 ```
 {
-   docs: [],
+   docs: [
+   ],
    next_url:
 }
 ```

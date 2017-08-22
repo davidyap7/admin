@@ -141,7 +141,7 @@ lastupdated: "2017-07-05"
 | 新事件| 選取此選項，以啟用新維護或突發事件的通知。清除此選項以停用通知。|
 | 方法| 選取 **GET**、**POST** 或 **PUT**。|
 | URL| 輸入要連接至 Web 服務的 URL。|
-| 回應內容| 此選用欄位是內容名稱，用於在傳送 POST 或 PUT 要求時識別 Web 服務所建立的資源。如果您提供新事件的回應內容，並選擇建立事件變更的訂閱，則必須同時將它提供給「事件變更」訂閱。視您使用的 Web 服務而定，您可以將它指定為 URL 的一部分，或指定為有效負載值。|
+| 回應內容| 這個選用性欄位是內容名稱，用於在傳送 POST 或 PUT 要求時識別 Web 服務所建立的資源。如果您提供新事件的回應內容，並選擇建立事件變更的訂閱，則必須同時將它提供給「事件變更」訂閱。視您使用的 Web 服務而定，您可以將它指定為 URL 的一部分，或指定為有效負載值。|
 | 有效負載| 如果您已選取 POST 或 PUT 方法，請輸入您所使用之 Web 服務特有的內容（與用於 IBM 通知的有效負載值成對）。請參閱[維護及突發事件有效負載區段值](index.html#payload)表格來識別您可以使用的值。如果您未在此區段中輸入資訊，則會收到沒有任何其他資訊的通知。|
 | 事件變更| 選取此選項，以建立關於您已建立訂閱之維護或突發事件變更的通知訂閱。清除此選項以停用通知。|
 | 使用新事件的值及有效負載| 使用「新事件」區段中「方法」、URL 及「有效負載」欄位的內容。請注意，如果勾選此選項，就無法在「事件變更」區段中進一步編輯這些欄位。|
@@ -639,7 +639,7 @@ lastupdated: "2017-07-05"
 |description| 服務的說明，在您使用 cf marketplace 指令或移至 {{site.data.keyword.Bluemix_notm}} 使用者介面之型錄中的服務圖示上方時顯示。您可以新增一個句子或一個詞組來作為說明。|
 |name| cf 指令行介面中所顯示服務的名稱。此名稱在 {{site.data.keyword.Bluemix_notm}} 中必須是唯一的、必須使用小寫字母，而且不得包含空格。在您向 {{site.data.keyword.Bluemix_notm}} 登錄服務之後，即無法變更服務的名稱。|
 |id| 服務的 ID。此 ID 在 {{site.data.keyword.Bluemix_notm}} 中必須是唯一的，而且必須是 GUID（廣域唯一 ID）。在您向 {{site.data.keyword.Bluemix_notm}} 登錄服務之後，即無法變更服務的 ID。|
-|metadata| {{site.data.keyword.Bluemix_notm}} 型錄及定價單中顯示的服務方案 meta 資料。metadata 欄位是選用欄位。您可以指定 meta 資料的其他欄位。如需相關資訊，請參閱下列 [meta 資料欄位](index.html#metadatafields)表格。|
+|metadata| {{site.data.keyword.Bluemix_notm}} 型錄及定價單中顯示的服務方案 meta 資料。metadata 欄位是選用性欄位。您可以指定 meta 資料的其他欄位。如需相關資訊，請參閱下列 [meta 資料欄位](index.html#metadatafields)表格。|
 |plans| 服務方案定義的陣列。如需相關資訊，請參閱下列[方案欄位](index.html#planfields)表格。|
 {: caption="表 10. JSON 欄位" caption-side="top"}
 
@@ -710,7 +710,7 @@ lastupdated: "2017-07-05"
 |description| 服務方案的說明。在 {{site.data.keyword.Bluemix_notm}} 型錄的服務詳細資料頁面上選取方案之後，會顯示此說明。|
 |free| 布林值，指出服務方案是否免費。預設值為 true。|
 |id| 服務方案的 ID。ID 必須是唯一的，而且必須是 GUID。|
-|metadata（選用）| {{site.data.keyword.Bluemix_notm}} 型錄及定價單中顯示的服務方案 meta 資料。metadata 欄位是選用欄位。您可以在 metadata 欄位內指定下列欄位：displayName、type（subscription、reservable、planDetails）、bullets、costs（unitId、unit、partNumber）及 paidOnly。如需相關資訊，請參閱下列[方案 meta 資料欄位](index.html#planmetadata)表格。|
+|metadata（選用）| {{site.data.keyword.Bluemix_notm}} 型錄及定價單中顯示的服務方案 meta 資料。metadata 欄位是選用性欄位。您可以在 metadata 欄位內指定下列欄位：displayName、type（subscription、reservable、planDetails）、bullets、costs（unitId、unit、partNumber）及 paidOnly。如需相關資訊，請參閱下列[方案 meta 資料欄位](index.html#planmetadata)表格。|
 {: caption="表 12. 方案欄位" caption-side="top"}
 
 
@@ -927,7 +927,7 @@ lastupdated: "2017-07-05"
 
   1. 按一下**匯入使用者**。
   2. 按一下**下載範本 (.CSV)**，以下載具有您可填寫之必要直欄的試算表，或者您可以使用包含下列必要直欄標頭的試算表來建立您自己的試算表：**使用者 ID**、**電子郵件**和**組織**。範本中還包含兩個選用性直欄：**名字**和**姓氏**。
-  3. 填寫必要直欄的使用者值。如果您沒有使用 LDAP 目錄，請為您所匯入的使用者使用必要和選用的直欄標頭。
+  3. 填寫必要直欄的使用者值。如果您沒有使用 LDAP 目錄，請為您所匯入的使用者使用必要和選用性直欄標頭。
   4. 儲存檔案，然後按一下**上傳檔案**。
 
   **附註**：只要您有所有必要直欄，試算表內的直欄可以是任意順序。如果匯入成功，您會收到確認訊息，指出已新增所有使用者。如果部分使用者的匯入成功，但無法匯入某些使用者，請檢閱錯誤訊息，以對無法新增的使用者採取動作。
@@ -1004,7 +1004,7 @@ lastupdated: "2017-07-05"
 <dd class="pd">傳送「接受」標頭。</dd>
 </dl>
 
-下列範例顯示此指令的輸出：
+下列範例顯示這個指令的輸出：
 ```
 {
     "message": "Logged in",
@@ -1046,7 +1046,7 @@ password <password>`
 ### 儲存 Cookie
 {: #auth_apistorecook}
 
-當您登入「管理主控台」時，伺服器會傳回 Cookie 與您的階段作業。在使用「管理主控台」的所有作業的未來 API 呼叫的登入處理程序期間，需要該 Cookie。您可以儲存 Cookie，以供稍後使用。
+當您登入「管理主控台」時，伺服器會傳回 Cookie 與您的階段作業。在使用「管理主控台」的所有作業的未來 API 呼叫的登入處理程序期間，需要該 Cookie。您可以儲存 Cookie，以供之後使用。
 
 若要在登入之後儲存 Cookie，請使用 `-c` 選項，如下列 CURL 範例所示：
 
@@ -1093,7 +1093,7 @@ password <password>`
 * `"guid"`，組織的 GUID
 * `"name"`，組織的名稱
 
-下列範例顯示此指令的輸出：
+下列範例顯示這個指令的輸出：
 ```
 {
      "resources": [
@@ -1133,7 +1133,7 @@ password <password>`
 * `"guid"`，組織的 GUID。
 * 指派給「管理主控台」使用者的 `"permissions"`。
 
-下列範例顯示此指令的輸出：
+下列範例顯示這個指令的輸出：
 
 ```
 {
@@ -1253,7 +1253,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 <dd class="pd">指定 POST 要求中要傳送給 HTTP 伺服器的資料（在此案例中為 `user.json` 檔案）。</dd>
 </dl>
 
-下列範例顯示此指令的輸出：
+下列範例顯示這個指令的輸出：
 
 ```
 * Connected to localhost (127.0.0.1) port 3000 (#0)
@@ -1291,7 +1291,7 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 <dd class="pd">指定 DELETE 要求。</dd>
 </dl>
 
-下列範例顯示此指令的輸出：
+下列範例顯示這個指令的輸出：
 
 ```
  * connect to ::1 port 3000 failed: Connection refused

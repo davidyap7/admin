@@ -215,7 +215,7 @@ Quando a notificação de assinatura é salva, você recebe notificações por m
 ## Atualizações de Manutenção
 {: #oc_schedulemaintenance}
 
-Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações do sistema**. Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
+Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações do sistema**.  Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
 
 **Nota**: consulte a seção a seguir para [Configurar janelas de manutenção pré-aprovadas](index.html#preapprovedmaintenance) para iniciar. Essas janelas devem ser configuradas em ordem para a IBM planejar a manutenção para o seu ambiente.
 
@@ -468,7 +468,7 @@ A tabela a seguir mostra a lista de relatórios de segurança gerados para o {{s
 | [Negações de firewall](/docs/hybrid/reports.html#firewalldenies) | Eventos gerados pelos dispositivos de firewall Vyatta quando uma solicitação para acessar é negada de acordo com as regras de firewall que estão em vigor. |
 | [Login de administradores](/docs/hybrid/reports.html#oslogin) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo sistema operacional quando um administrador inicia uma sessão SSH em cada sistema {{site.data.keyword.Bluemix_notm}}. |
 | [Login de desenvolvedores de aplicativos](/docs/hybrid/reports.html#loginserverlogins) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo componente de login da plataforma {{site.data.keyword.Bluemix_notm}} quando um usuário da plataforma {{site.data.keyword.Bluemix_notm}} inicia uma sessão usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
-| [Administração do sistema operacional](/docs/hybrid/reports.html#osadmin) do {{site.data.keyword.Bluemix_notm}} | Eventos gerados pelo sistema operacional quando um administrador executa ação em uma sessão de trabalho atual. |
+| [Administração do sistema operacional](/docs/hybrid/reports.html#osadmin) do {{site.data.keyword.Bluemix_notm}}  | Eventos gerados pelo sistema operacional quando um administrador executa ação em uma sessão de trabalho atual. |
 | [(Cloud Foundry) Administração da plataforma](/docs/hybrid/reports.html#platformadmin) do {{site.data.keyword.Bluemix_notm}} | Eventos relacionados a operações executadas pelo usuário da plataforma {{site.data.keyword.Bluemix_notm}} usando a linha de comandos, as APIs REST ou a interface com o usuário do {{site.data.keyword.Bluemix_notm}}. |
 | [Administração do banco de dados interno](/docs/hybrid/reports.html#dbadmin) | Eventos relacionados a operações executadas por um administrador de banco de dados nos bancos de dados internos do {{site.data.keyword.Bluemix_notm}}. |
 | [Gerenciamento de usuário](/docs/hybrid/reports.html#acusermgmt) | Eventos relacionados a ações de gerenciamento do usuário executadas na página Administração. |
@@ -671,7 +671,7 @@ As tabelas a seguir podem ajudá-lo a preencher o arquivo de JSON.
 |notCreatableMessage (opcional) | Uma mensagem que será exibida na interface com o usuário do {{site.data.keyword.Bluemix_notm}} se as instâncias de serviço não puderem ser criadas. Se você não especificar esse campo, a mensagem padrão a seguir será exibida: A ser notificado quando estiver disponível, confirme o seu endereço de e-mail ou insira um endereço de e-mail diferente. |
 |notCreatableRobotMessage (opcional) | Uma mensagem que é exibida na bolha de fala da página de detalhes do serviço na interface com o usuário do {{site.data.keyword.Bluemix_notm}}. A mensagem é usada para indicar se um serviço pode ter um problema ou outro motivo que esteja causando sua indisponibilidade. É possível especificar uma mensagem para explicar o motivo. Se você não especificar esse campo, a mensagem padrão a seguir será exibida: Esse serviço está indisponível atualmente. |
 |apiReferenceUrl (opcional) | A URL do iframe na área Referência da API na página de detalhes do serviço em Catálogo. Se não usado para a página de detalhes do serviço no Catálogo, será possível inserir o valor numérico designado para o seu Doc da API REST para seu serviço ao registrá-lo no microsserviço do Doc da API REST do {{site.data.keyword.Bluemix_notm}}. Isso exibirá o seu Doc da API REST no painel de serviço. |
-|sdkDownloadUrl (opcional) | A URL da página da web que será aberta quando você clicar no botão Download SDK. O botão Download SDK está no ladrilho de serviço da página de visão geral do aplicativo no	Painel. A página da web é aberta em uma nova guia do navegador. |
+|sdkDownloadUrl (opcional) | A URL da página da web que será aberta quando você clicar no botão Download SDK. O botão Download SDK está no tile de serviço da página de visão geral do aplicativo no	Painel. A página da web é aberta em uma nova guia do navegador. |
 |serviceMonitorApi    | A URL para uma API que retorna os dados de JSON, conforme mostrado no exemplo a seguir, que relata o funcionamento do serviço. Deve-se ter serviceMonitorApi ou serviceMonitorApp em seus metadados de serviço. Consulte a amostra de código a seguir para obter um exemplo. |
 |serviceMonitorApp    | A URL para um aplicativo que pode ser implementado no {{site.data.keyword.Bluemix_notm}} e ligado a um serviço para fornecer a saída específica de status de serviço. O aplicativo deve retornar o mesmo formato de dados de JSON que a serviceMonitorApi. Deve-se ter serviceMonitorApi ou serviceMonitorApp em seus metadados de serviço. Consulte a amostra de código a seguir para obter um exemplo. |
 {: caption="Tabela 11. Campos de metadados" caption-side="top"}
@@ -1022,7 +1022,8 @@ Para efetuar login no Console administrativo, execute o comando a seguir:
 <dd class="pd">Envia um cabeçalho Aceitar.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste comando:
+O exemplo a seguir mostra a saída a partir deste
+comando:
 ```
 {
     "message": "Logged in",
@@ -1299,7 +1300,8 @@ curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.
 POST para o servidor HTTP.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste comando:
+O exemplo a seguir mostra a saída a partir deste
+comando:
 
 ```
 * Conectado ao host local (127.0.0.1) porta 3000 (#0)
@@ -1329,7 +1331,7 @@ O exemplo a seguir mostra a saída a partir deste comando:
 remover usuários da instância do {{site.data.keyword.Bluemix_notm}}. Deve-se ter
 permissão de **Usuários** com acesso de **Gravação** para remover usuários.
 
-Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute o comando a seguir:
+Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute seguinte o comando: 
 
 `curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
@@ -1339,7 +1341,8 @@ Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute
 <dd class="pd">Especifica uma solicitação DELETE.</dd>
 </dl>
 
-O exemplo a seguir mostra a saída a partir deste comando:
+O exemplo a seguir mostra a saída a partir deste
+comando:
 
 ```
  * connect to ::1 port 3000 failed: Connection refused
@@ -1761,7 +1764,7 @@ Usando os parâmetros de consulta a seguir, é possível reunir estatísticas pa
 <dt class="pt dlterm">endTime</dt>
 <dd class="pd">O momento mais recente a partir do qual os dados são retornados. Se nenhum endTime for especificado, o ponto de dados mais recente será usado.</dd>
 <dt class="pt dlterm">averageType</dt>
-<dd class="pd">O agrupamento no qual calcular estatísticas. Os valores válidos são `day` e `month`. O padrão é day, retornando os valores de uso médio de cada dia no intervalo de tempo especificado. Especificar um valor de month retorna os valores de uso médio de cada mês.</dd>
+<dd class="pd">O agrupamento no qual calcular estatísticas. Os valores válidos são `day` e `month`. O padrão é day, retornando os valores de uso médio de cada dia no intervalo de tempo especificado.  Especificar um valor de month retorna os valores de uso médio de cada mês.</dd>
 </dl>
 
 O exemplo a seguir usa os parâmetros de consulta para reunir estatísticas de memória sobre o seu ambiente, com a média feita por dia:
