@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ When you design a cloud solution, also think about account security and operatio
 To cater for your project needs, {{site.data.keyword.Bluemix}} offers three types of cloud environments.
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): The infrastructure resources are shared by different companies and users.
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): You use your own dedicated SoftLayer infrastructure, which you can connect securely to the {{site.data.keyword.Bluemix_notm}} Public cloud and your own network.
+* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): You use your own dedicated {{site.data.keyword.BluSoftlayer_notm}}, which you can connect securely to the {{site.data.keyword.Bluemix_notm}} Public cloud and your own network.
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): Sits behind your company firewall, which can protect your most sensitive workloads and can connect securely to both {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated clouds.
 
 As part of deciding which type of cloud environment you need, plan the structure of your account, organizations, spaces, resources, and team members.
