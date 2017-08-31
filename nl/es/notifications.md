@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-23"
+lastupdated: "2017-08-16"
 
 
 ---
@@ -25,7 +25,7 @@ Puede establecer notificaciones de correo electrónico de plataforma para incide
 ## Establecimiento de notificaciones de plataforma
 {: #platform}
 
-Desde la barra de menús de la consola, pulse **Gestionar > Cuenta > Notificaciones > Plataforma** para establecer las notificaciones de correo electrónico para el mantenimiento planificado, los incidentes y las notificaciones de seguridad y otros anuncios, de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
+Desde la barra de menús de la consola, pulse **Gestionar > Cuenta > Notificaciones > Notificaciones de plataforma** para establecer las notificaciones de correo electrónico para el mantenimiento planificado y los incidentes de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
 
 ## Establecimiento de notificaciones de gastos
 {: #spending}
@@ -33,7 +33,7 @@ Desde la barra de menús de la consola, pulse **Gestionar > Cuenta > Notificacio
 Si es el propietario de una cuenta de Suscripción o Pago según uso, configure las notificaciones de gasto a través del correo electrónico. Establezca notificaciones sobre el gasto total de la cuenta, tiempo de ejecución, contenedor y servicio, así como sobre el gasto de servicios individuales, sin incluir los servicios de terceros. Recibe notificaciones al alcanzar el 80%, 90%, y 100% de los umbrales de gasto que especifique. Puede editar cada notificación de gasto en cualquier momento en el que necesite el cambio.
 
 Complete los siguientes pasos para configurar notificaciones por correo electrónico para los límites de gasto:
-1. Desde la barra de menús, pulse **Gestionar > Cuenta > Notificaciones > Gastos**. 
+1. Desde la barra de menús, pulse **Gestionar > Cuenta > Notificaciones > Gastos**.
 2. Entre un valor numérico para establecer el umbral para desencadenar un tipo específico de notificación de gasto:
     * Total de cuenta
     * Total de tiempo de ejecución

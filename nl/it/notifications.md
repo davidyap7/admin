@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-23"
+lastupdated: "2017-08-16"
 
 
 ---
@@ -24,7 +24,7 @@ Puoi impostare le notifiche email della piattaforma per gli incidenti e la manut
 ## Configurazione delle notifiche della piattaforma
 {: #platform}
 
-Dalla barra dei menu, fai clic su **Gestisci > Account > Notifiche > Piattaforma** per impostare le notifiche e-mail per gli incidenti e la manutenzione pianificata di {{site.data.keyword.Bluemix_notm}}, così come le notifiche di sicurezza e altri annunci. Puoi selezionare o deselezionare ogni opzione per abilitare o disabilitare le notifiche e-mail.
+Dalla barra dei menu, fai clic su **Gestisci > Account > Notifiche > Notifiche Piattaforma** per impostare le notifiche e-mail per gli incidenti e la manutenzione pianificata di {{site.data.keyword.Bluemix_notm}}. Puoi selezionare o deselezionare ogni opzione per abilitare o disabilitare le notifiche e-mail.
 
 ## Configurazione delle notifiche di spesa
 {: #spending}
@@ -32,7 +32,7 @@ Dalla barra dei menu, fai clic su **Gestisci > Account > Notifiche > Piattaforma
 Se sei il proprietario di un account Pagamento a consumo o Sottoscrizione, puoi impostare le notifiche di spesa via e-mail. Imposta le notifiche per la spesa totale di account, runtime, contenitori e servizi, nonché la spesa per singoli servizi, tranne quelli di terze parti. Ricevi le notifiche quando raggiungi l'80%, il 90% e il 100% delle soglie di spesa da te specificate. Puoi modificare ogni notifica di spesa in qualsiasi momento, secondo le tue esigenze.
 
 Completa la seguente procedura per impostare le notifiche via email per i limiti di spesa:
-1. Dalla barra dei menu, fai clic su **Gestisci > Account > Notifiche > Spesa**. 
+1. Dalla barra dei menu, fai clic su **Gestisci > Account > Notifiche > Spesa**.
 2. Immetti un valore numerico per impostare la soglia per l'attivazione di uno specifico tipo di notifica di spesa:
     * Totale account
     * Totale runtime

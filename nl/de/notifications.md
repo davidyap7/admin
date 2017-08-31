@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-23"
+lastupdated: "2017-08-16"
 
 
 ---
@@ -24,7 +24,7 @@ Sie können Plattform-E-Mail-Benachrichtigungen für {{site.data.keyword.Bluemix
 ## Plattformbenachrichtigungen einstellen
 {: #platform}
 
-Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Benachrichtigungen > Plattform**, um E-Mail-Benachrichtigungen für {{site.data.keyword.Bluemix_notm}}-Vorfälle und geplante Wartungsmaßnahmen sowie Sicherheitsbenachrichtigungen und andere Mitteilungen festzulegen. Sie können jede einzelne Option auswählen oder abwählen, um E-Mail-Benachrichtigungen zu aktivieren oder zu inaktivieren.
+Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Benachrichtigungen > Plattformbenachrichtigungen**, um E-Mail-Benachrichtigungen für Vorfälle und geplante Wartung in {{site.data.keyword.Bluemix_notm}} festzulegen. Sie können jede einzelne Option auswählen oder abwählen, um E-Mail-Benachrichtigungen zu aktivieren oder zu inaktivieren.
 
 ## Ausgabebenachrichtigungen einstellen
 {: #spending}
@@ -32,7 +32,7 @@ Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Benachricht
 Wenn Sie Eigner eines Abonnementkontos oder eines nutzungsabhängigen Kontos sind, können Sie E-Mail-Benachrichtigungen über Ausgaben konfigurieren. Legen Sie Benachrichtigungen über Gesamtsumme, Laufzeit, Container und Serviceausgaben sowie Ausgaben für einzelne Services ausschließlich der Services anderer Anbieter fest. Sie erhalten Benachrichtigungen, wenn Sie 80 %, 90 % und 100 % des angegebenen Schwellenwerts für die Ausgaben erreicht haben. Sie können jede Benachrichtigung über Ausgaben jederzeit bearbeiten, wenn sich Ihre Anforderungen ändern.
 
 Führen Sie die folgenden Schritte aus, um E-Mail-Benachrichtigungen für Ausgabenlimits einzurichten:
-1. Klicken Sie in der Menüleiste auf **Verwalten > Konto > Benachrichtigungen > Ausgaben**. 
+1. Klicken Sie in der Menüleiste auf **Verwalten > Konto > Benachrichtigungen > Ausgaben**.
 2. Geben Sie einen numerischen Wert ein, um den Schwellenwert zum Auslösen einer bestimmten Art von Benachrichtigung über Ausgaben festzulegen:
     * Gesamtausgaben - Konto
     * Gesamtausgaben - Laufzeit

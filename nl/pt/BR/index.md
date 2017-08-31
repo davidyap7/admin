@@ -671,7 +671,7 @@ As tabelas a seguir podem ajudá-lo a preencher o arquivo de JSON.
 |notCreatableMessage (opcional) | Uma mensagem que será exibida na interface com o usuário do {{site.data.keyword.Bluemix_notm}} se as instâncias de serviço não puderem ser criadas. Se você não especificar esse campo, a mensagem padrão a seguir será exibida: A ser notificado quando estiver disponível, confirme o seu endereço de e-mail ou insira um endereço de e-mail diferente. |
 |notCreatableRobotMessage (opcional) | Uma mensagem que é exibida na bolha de fala da página de detalhes do serviço na interface com o usuário do {{site.data.keyword.Bluemix_notm}}. A mensagem é usada para indicar se um serviço pode ter um problema ou outro motivo que esteja causando sua indisponibilidade. É possível especificar uma mensagem para explicar o motivo. Se você não especificar esse campo, a mensagem padrão a seguir será exibida: Esse serviço está indisponível atualmente. |
 |apiReferenceUrl (opcional) | A URL do iframe na área Referência da API na página de detalhes do serviço em Catálogo. Se não usado para a página de detalhes do serviço no Catálogo, será possível inserir o valor numérico designado para o seu Doc da API REST para seu serviço ao registrá-lo no microsserviço do Doc da API REST do {{site.data.keyword.Bluemix_notm}}. Isso exibirá o seu Doc da API REST no painel de serviço. |
-|sdkDownloadUrl (opcional) | A URL da página da web que será aberta quando você clicar no botão Download SDK. O botão Download SDK está no tile de serviço da página de visão geral do aplicativo no	Painel. A página da web é aberta em uma nova guia do navegador. |
+|sdkDownloadUrl (opcional) | A URL da página da web que será aberta quando você clicar no botão Download SDK. O botão Download SDK está no ladrilho de serviço da página de visão geral do aplicativo no	Painel. A página da web é aberta em uma nova guia do navegador. |
 |serviceMonitorApi    | A URL para uma API que retorna os dados de JSON, conforme mostrado no exemplo a seguir, que relata o funcionamento do serviço. Deve-se ter serviceMonitorApi ou serviceMonitorApp em seus metadados de serviço. Consulte a amostra de código a seguir para obter um exemplo. |
 |serviceMonitorApp    | A URL para um aplicativo que pode ser implementado no {{site.data.keyword.Bluemix_notm}} e ligado a um serviço para fornecer a saída específica de status de serviço. O aplicativo deve retornar o mesmo formato de dados de JSON que a serviceMonitorApi. Deve-se ter serviceMonitorApi ou serviceMonitorApp em seus metadados de serviço. Consulte a amostra de código a seguir para obter um exemplo. |
 {: caption="Tabela 11. Campos de metadados" caption-side="top"}
@@ -1331,7 +1331,7 @@ comando:
 remover usuários da instância do {{site.data.keyword.Bluemix_notm}}. Deve-se ter
 permissão de **Usuários** com acesso de **Gravação** para remover usuários.
 
-Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute seguinte o comando: 
+Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute o comando a seguir:
 
 `curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-23"
+lastupdated: "2017-08-16"
 
 
 ---
@@ -24,7 +24,7 @@ Vous pouvez définir des notifications de plateforme par courrier électronique 
 ## Définition de notifications de plateforme
 {: #platform}
 
-Dans la barre de menu de la console, cliquez sur **Gérer > Compte > Notifications > Plateforme** pour définir des notifications par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}, ainsi que des notifications de sécurité et d'autres annonces. Vous pouvez sélectionner ou désélectionner chaque option pour activer ou désactiver les notifications par courrier électronique.
+Dans la barre de menu de la console, cliquez sur **Gérer > Compte > Notifications > Notifications relatives à la plateforme** pour définir des notifications par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}. Vous pouvez sélectionner ou désélectionner chaque option pour activer ou désactiver les notifications par courrier électronique.
 
 ## Définition de notifications relatives aux dépenses
 {: #spending}
@@ -35,7 +35,7 @@ notifications lorsque vous atteignez 80 %, 90 % et 100 % des seuils que vous ave
 relative aux dépenses à tout moment, selon l'évolution de vos besoins.
 
 Procédez comme suit afin de configurer des notifications par courrier électronique pour les plafonds des dépenses :
-1. Dans la barre de menu, cliquez sur **Gérer > Compte > Notifications > Dépenses**. 
+1. Dans la barre de menu, cliquez sur **Gérer > Compte > Notifications > Dépenses**.
 2. Entrez une valeur numérique afin de définir le seuil pour le déclenchement d'un type spécifique de notification relative aux dépenses :
     * Total lié au compte
     * Total lié à l'exécution
