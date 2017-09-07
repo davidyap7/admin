@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -215,20 +215,20 @@ You can select any saved notification subscription, view the recent activity, or
 ## Maintenance updates
 {: #oc_schedulemaintenance}
 
-You can view scheduled and pending maintenance updates, if you have the superuser permission (`ops.admin`), by clicking **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending** to access the **System Updates** page.  All users of your environment can view the scheduled disruptive maintenance update events by clicking **Support** &gt; **Status**.
+You can view scheduled and pending maintenance updates, if you have the superuser permission (`ops.admin`), by clicking **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending** to access the **Maintenance Updates** page.  All users of your environment can view the scheduled disruptive maintenance update events by clicking **Support** &gt; **Status**.
 
-**Note**: See the following section for [Setting preapproved maintenance windows](index.html#preapprovedmaintenance) to get you started. These windows must be set in order for IBM to schedule maintenance for your environment.
+**Note**: See the following section for [Setting preapproved update windows](index.html#preapprovedmaintenance) to get you started. These windows must be set in order for IBM to schedule maintenance for your environment.
 
 <dl>
 <dt>Non-disruptive updates</dt>
-<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval and will be applied during the preapproved, available maintenance windows that you set from the System Updates page.
+<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval and will be applied during the preapproved, available maintenance windows that you set from the Maintenance Updates page.
 <p>**Note**: Some platform services might require that at least one non-disruptive change window be defined during a set of predetermined time-slots at the service's discretion. Please check the service description for each dedicated service deployed to your environment.</p></dd>
 <dt>Disruptive updates</dt>
 <dd>A disruptive update might affect your environment, running applications, or your users' access to your applications. You must schedule and approve each of these maintenance updates within the allotted 21-day maintenance window. You can select the suggested deployment date and time, the option for any of your preapproved windows, or you can open the calendar to select three specific dates and times for IBM to choose from when scheduling the update.</dd>
 </dl>
 
 
-### Setting preapproved maintenance windows
+### Setting preapproved update windows
 {: #preapprovedmaintenance}
 
 Non-disruptive maintenance updates are scheduled to run during preapproved windows of time. By default, two weekly available update windows are created for your system. These windows are typically set to recur every Saturday and Sunday night. You can change the default settings in one of the following ways:
@@ -242,30 +242,30 @@ You are required to set a minimum of 12 available hours in a week for a minimum 
 **Note**: Only users with the Superuser permission (`ops.admin`) can schedule and approve maintenance updates.
 
 1. Go to **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending &gt; Manage Availability**.
-2. Expand the **Manage Available Update Windows** section.
+2. Navigate to the **Update Windows** section.
 3. Click **Add new**.
-4. Set your first availability window by selecting the frequency, duration, and start time for the window.
-5. Optional: Select **Mark as preferred**, if you'd like to set your recurring availability window as a preferred time for deployments to be scheduled. Preferred windows are given priority, when possible.
+4. Set your first update window by selecting the frequency, duration, and start time for the window.
+5. Optional: Select **Mark as preferred**, if you'd like to set your recurring update window as a preferred time for deployments to be scheduled. Preferred windows are given priority, when possible.
 6. Click **Submit**.
 7. Repeat this process until you have met the minimum requirements for the weekly windows.
 
-### Setting unavailable maintenance windows
+### Setting blackout windows
 {: #blockpreapprovedmaintenance}
 
-You can choose to set specific unavailable update windows of time in which your environment is not available for non-disruptive maintenance updates. For example, you might choose a high traffic weekend or holiday when you do not want to apply any maintenance to ensure that your applications are available for your users.
-
-You are required to set a minimum of 12 available hours in a week for a minimum of two days during each week. If you attempt to create an unavailable update window, you might not be able to save your changes if this new window would cause your system to drop below the weekly required minimum. In this case, you must first either remove some of the existing unavailable update windows or add more available update windows before you can save the new unavailable update window. See [Setting preapproved maintenance windows](index.html#preapprovedmaintenance) for more information.
+You can choose to set specific blackout windows of time in which your environment is not available for non-disruptive maintenance updates. For example, you might choose a high traffic weekend or holiday when you do not want to apply any maintenance to ensure that your applications are available for your users.
 
 1. Go to **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending &gt; Manage Availability**.
-2. Expand the **Manage Unavailable Update Windows** section.
+2. Navigate to the **Blackout Windows** section.
 3. Click **Add new**.
-4. Set your unavailable window by selecting the frequency, duration, and start time for the window.
+4. Set your blackout window by selecting the frequency, duration, and start time for the window.
 5. Click **Submit**.
+
+Blackout dates will require IBM approval, and the time it takes to gain approval will vary. When the requested blackout dates are approved, IBM will cancel any existing updates that are currently scheduled during the unavailable window. IBM will also create new records for these updates and schedule them outside the approved blackout dates.
 
 ### Scheduling and approving updates
 {: #scheduleandapprove}
 
-After you set your preapproved maintenance windows, non-disruptive updates will be automatically scheduled during those times. Your explicit approval for these types of updates is not required. However, you can view the details for each maintenance update including what is being updated, how long the update will take, and when the update is scheduled.
+After you set your update windows, non-disruptive updates will be automatically scheduled during those times. Your explicit approval for these types of updates is not required. However, you can view the details for each maintenance update including what is being updated, how long the update will take, and when the update is scheduled.
 
 To view the details for a non-disruptive update, complete the following steps:
 
@@ -285,7 +285,7 @@ For disruptive updates that do require your approval, complete the following ste
 6. Optional: From the list of selected alternative dates in the calendar, select the ones that you want to be set as preferred dates for deployment. Each selected date is noted as preferred for the deployer who is scheduling the deployment. IBM attempts to schedule maintenance during preferred update windows.
 7. Select **Submit** when you are finished.
 
-Based on your selection, the update is scheduled for deployment during the suggested date that you accepted, during one of your preapproved windows, or one of the specific dates and times that you selected. When the update is scheduled for deployment by IBM, you see the scheduled date reflected in the details for the update on the **System Updates** page. You can reschedule an already planned deployment only if a day (24 hours) before the scheduled start date and time remains. Once you have rescheduled a deployment, you can't reschedule it again.
+Based on your selection, the update is scheduled for deployment during the suggested date that you accepted, during one of your preapproved windows, or one of the specific dates and times that you selected. When the update is scheduled for deployment by IBM, you see the scheduled date reflected in the details for the update on the **Maintenance Updates** page. You can reschedule an already planned deployment only if a day (24 hours) before the scheduled start date and time remains. Once you have rescheduled a deployment, you can't reschedule it again.
 
 
 ## Viewing system information
@@ -303,12 +303,12 @@ update notifications that require action on your part. There are two types that 
 
 <dl>
 <dt>Non-disruptive updates</dt>
-<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval. These updates are applied in the preapproved, available maintenance windows that you set from the System Updates page.</dd>
+<dd>A non-disruptive update does not affect your environment, your running applications, or your users' access to your applications. This update type does not require case-by-case approval. These updates are applied in the preapproved update windows that you set from the System Updates page.</dd>
 <dt>Disruptive updates</dt>
 <dd>A disruptive update might affect your environment, running applications, or your users' access to your applications. You have the ability to schedule and approve each of these maintenance updates within the allotted 21-day maintenance window to ensure that the update is not applied during critical business hours. You can select the suggested deployment date and time that is based on your preapproved update windows, or you can select two more times and dates for IBM to choose from when applying the update.</dd>
 </dl>
 
-For more information about setting preapproved maintenance windows, and setting specific unavailable dates for maintenance, see [Maintenance updates](index.html#oc_schedulemaintenance).
+For more information about setting preapproved update windows, and setting specific blackout dates for maintenance, see [Maintenance updates](index.html#oc_schedulemaintenance).
 
 ### General system information
 
@@ -386,7 +386,7 @@ The **Service** tab shows the total service usage in relation to the maximum cap
 
 **Note**: Service consumption information may not be available in all environments at this time. This feature is available for Cloudant, MessageHub, API Connect, and Session Cache.
 
-
+**Note**: A Cloudant cluster consists of at least 3 nodes, and each document in the database is replicated across 3 nodes for high availability and disaster recovery.  Cloudant service usage information includes available space and allocated space across all nodes that make up the cluster.  For example, if a single Cloudant cluster contains 3 nodes, each with 1000 GB capacity, the capacity limit will show as 3000 GB.  The percent consumed includes all documents located on all nodes.
 
 ### Account usage
 {: #accountusage}
