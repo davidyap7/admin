@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ Quando progetti una soluzione cloud, considera anche i requisiti funzionali e di
 Per soddisfare le tue esigenze di progetto, {{site.data.keyword.Bluemix}} offre tre tipi di ambiente cloud.
 
 * [{{site.data.keyword.Bluemix_notm}} pubblico](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): le risorse dell'infrastruttura sono condivise da differenti aziende e utenti.
-* [{{site.data.keyword.Bluemix_notm}} dedicato](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): utilizza la tua propria infrastruttura SoftLayer dedicata, che puoi collegare in modo sicuro al cloud {{site.data.keyword.Bluemix_notm}} pubblico e alla tua rete.
+* [{{site.data.keyword.Bluemix_notm}} dedicato](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): utilizza il tuo proprio {{site.data.keyword.BluSoftlayer_notm}} dedicato, che puoi collegare in modo sicuro al cloud {{site.data.keyword.Bluemix_notm}} pubblico e alla tua rete.
 * [{{site.data.keyword.Bluemix_notm}} locale](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): si trova dietro il tuo firewall aziendale, può proteggere i tuoi carichi di lavoro più sensibili e può connettersi in modo sicuro ai cloud {{site.data.keyword.Bluemix_notm}} pubblico e {{site.data.keyword.Bluemix_notm}} dedicato.
 
 Quando devi decidere quale tipo di ambiente cloud ti serve, pianifica la struttura dei tuoi account, organizzazioni, spazi, risorse e membri del team.

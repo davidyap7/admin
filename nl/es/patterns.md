@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ Al diseñar una solución en la nube, piense también en la seguridad de la cuen
 Para cubrir las necesidades del proyecto, {{site.data.keyword.Bluemix}} ofrece tres tipos de entornos de nube.
 
 * [{{site.data.keyword.Bluemix_notm}} Público](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): Los recursos de infraestructura los comparten distintas empresas y usuarios.
-* [{{site.data.keyword.Bluemix_notm}} Dedicado](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): Utilice su propia infraestructura de SoftLayer dedicada, que puede conectar de forma segura a la nube Pública de {{site.data.keyword.Bluemix_notm}} y a su propia red.
+* [{{site.data.keyword.Bluemix_notm}} Dedicado](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): Utilice su propia infraestructura de {{site.data.keyword.BluSoftlayer_notm}} dedicada, que puede conectar de forma segura a la nube Pública de {{site.data.keyword.Bluemix_notm}} y a su propia red.
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): Se encuentra detrás del cortafuegos de la empresa, que puede proteger sus cargas de trabajo más sensibles y puede conectarse de forma segura a las nubes Pública de {{site.data.keyword.Bluemix_notm}} y Dedicada de {{site.data.keyword.Bluemix_notm}}.
 
 Como parte de la decisión de qué tipo de entorno de nube necesita, planifique la estructura de su cuenta, de las organizaciones, de los espacios, de los recursos y de los miembros del equipo.

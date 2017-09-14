@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -215,20 +215,20 @@ Puoi selezionare qualsiasi sottoscrizione di notifica salvata, visualizzare le a
 ## Aggiornamenti di manutenzione
 {: #oc_schedulemaintenance}
 
-Puoi visualizzare gli aggiornamenti di manutenzione pianificati e in sospeso, se disponi dell'autorizzazione superuser (`ops.admin`), facendo clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso** per accedere alla pagina **Aggiornamenti di sistema**.  Tutti gli utenti del tuo ambiente possono visualizzare gli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio facendo clic su **Supporto** &gt; **Stato**.
+Puoi visualizzare gli aggiornamenti di manutenzione pianificata e in sospeso solo se disponi dell'autorizzazione superuser (`ops.admin`), facendo clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso** per accedere alla pagina **Aggiornamenti di manutenzione**.  Tutti gli utenti del tuo ambiente possono visualizzare gli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio facendo clic su **Supporto** &gt; **Stato**.
 
-**Nota**: consultare la seguente sezione per [Impostazione di finestre di manutenzione preapprovate](index.html#preapprovedmaintenance). Queste finestre devono essere impostate per consentire a IBM di pianificare la manutenzione per il tuo ambiente.
+**Nota**: per iniziare, consulta la seguente sezione per l'[Impostazione di finestre di aggiornamento preapprovate](index.html#preapprovedmaintenance). Queste finestre devono essere impostate per consentire a IBM di pianificare la manutenzione per il tuo ambiente.
 
 <dl>
 <dt>Aggiornamenti che non comportano interruzioni del servizio</dt>
-<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso e verrà applicato durante le finestre di manutenzione disponibili preapprovate da te impostate dalla pagina Aggiornamenti di sistema.
+<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso e verrà applicato durante le finestre di manutenzione disponibili preapprovate da te impostate dalla pagina Aggiornamenti di manutenzione.
 <p>**Nota**: alcuni servizi della piattaforma potrebbero richiedere che venga definita almeno una finestra di modifica senza interruzioni del servizio nel corso di una serie di fasce orarie predeterminate a discrezione del servizio. Controlla la descrizione del servizio per ogni servizio dedicato distribuito nel tuo ambiente.</p></dd>
 <dt>Aggiornamenti che comportano interruzioni del servizio</dt>
 <dd>Un aggiornamento che comporta interruzioni del servizio può influenzare il tuo ambiente, le applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Devi pianificare e approvare ciascuno di questi aggiornamenti di manutenzione entro la finestra di manutenzione di 21 giorni assegnata. Puoi selezionare l'ora e la data di distribuzione suggerita, l'opzione per qualsiasi finestra preapprovata da te oppure aprire il calendario per selezionare tre date/ore specifiche tra cui IBM può scegliere durante la pianificazione dell'aggiornamento.</dd>
 </dl>
 
 
-### Impostazione delle finestre di manutenzione preapprovate
+### Impostazione di finestre di aggiornamento preapprovate
 {: #preapprovedmaintenance}
 
 Gli aggiornamenti di manutenzione che non comportano interruzioni del servizio sono pianificati per essere eseguiti durante finestre temporali preapprovate. Per impostazione predefinita, vengono create due finestre di aggiornamenti disponibili settimanali per il tuo sistema. Queste finestre sono in genere impostate per ripetersi ogni sabato e domenica sera. Puoi modificare le impostazioni predefinite in uno dei seguenti modi:
@@ -242,30 +242,30 @@ Devi impostare un minimo di 12 ore disponibili in una settimana per un periodo m
 **Nota**: solo gli utenti con autorizzazione Superuser (`ops.admin`) possono pianificare e approvare gli aggiornamenti di manutenzione.
 
 1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso&gt; Gestisci disponibilità**.
-2. Espandi la sezione **Gestisci finestre di aggiornamento disponibili**.
+2. Passa alla sezione **Finestre di aggiornamento**.
 3. Fai clic su **Aggiungi nuovo**.
-4. Imposta la prima finestra di disponibilità selezionando la frequenza, la durata e l'ora di inizio per la finestra.
-5. Facoltativo: seleziona **Contrassegna come preferito**, se vuoi impostare la tua finestra di disponibilità ricorrente come orario preferito per le distribuzioni da pianificare. Le finestre temporali preferiti avranno la priorità, laddove possibile.
+4. Imposta la tua prima finestra di aggiornamento selezionando la frequenza, la durata e l'ora di inizio per la finestra.
+5. Facoltativo: seleziona **Contrassegna come preferito**, se vuoi impostare la tua finestra di aggiornamento ricorrente come orario preferito per le distribuzioni da pianificare. Le finestre temporali preferite avranno la priorità, laddove possibile.
 6. Fai clic su **Inoltra**.
 7. Ripeti questo processo finché non hai soddisfatto i requisiti minimi per le finestre temporali settimanali.
 
-### Impostazione delle finestre di manutenzione non disponibili
+### Impostazione delle finestre di blackout
 {: #blockpreapprovedmaintenance}
 
-Puoi scegliere di impostare specifiche finestre di aggiornamento non disponibili in cui il tuo ambiente non sarà disponibile per gli aggiornamenti di manutenzione che non comportano interruzioni del servizio. Ad esempio, puoi scegliere un fine settimana o una vacanza ad alto traffico in cui non applicare alcuna manutenzione per garantire che le tue applicazioni siano disponibili ai tuoi utenti.
-
-Devi impostare un minimo di 12 ore disponibili in una settimana per un periodo minimo di due giorni per ogni settimana. Se tenti di creare una finestra di aggiornamento non disponibile, potresti non riuscire a salvare le modifiche qualora questa nuova finestra faccia sì che il sistema scenda al di sotto del minimo settimanale richiesto. In questo caso, devi prima rimuovere alcune finestre di aggiornamento non disponibili esistenti o aggiungerne delle altre prima di poter salvare la nuova finestra di aggiornamento non disponibile. Per ulteriori informazioni, vedi [Impostazione delle finestre di manutenzione preapprovate](index.html#preapprovedmaintenance).
+Puoi scegliere di impostare specifiche finestre temporali di blackout in cui il tuo ambiente non sarà disponibile per gli aggiornamenti di manutenzione che non comportano interruzioni del servizio. Ad esempio, puoi scegliere un fine settimana o una vacanza ad alto traffico in cui non applicare alcuna manutenzione per garantire che le tue applicazioni siano disponibili ai tuoi utenti.
 
 1. Vai a **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA &gt; *Numero* in sospeso&gt; Gestisci disponibilità**.
-2. Espandi la sezione **Gestisci finestre di aggiornamento non disponibili**.
+2. Passa alla sezione **Finestre di blackout**.
 3. Fai clic su **Aggiungi nuovo**.
-4. Imposta la tua finestra non disponibile selezionando la frequenza, la durata e l'ora di inizio per la finestra.
+4. Imposta la tua finestra di blackout selezionando la frequenza, la durata e l'ora di inizio per la finestra.
 5. Fai clic su **Inoltra**.
+
+Le date di blackout richiedono l'approvazione IBM e il tempo necessario per ottenere l'approvazione può variare. Quando le date di blackout richieste vengono approvate, IBM annullerà gli aggiornamenti esistenti attualmente pianificati durante la finestra non disponibile. Inoltre, IBM creerà nuovi record per questi aggiornamenti e li pianificherà al di fuori delle date di blackout approvate.
 
 ### Pianificazione e approvazione di aggiornamenti
 {: #scheduleandapprove}
 
-Dopo che hai impostato le tue finestre di manutenzione preapprovate, gli aggiornamenti che non comportano interruzioni del servizio verranno automaticamente pianificati durante questi periodi. Per questi tipi di aggiornamenti non è richiesta la tua approvazione esplicita. Puoi tuttavia visualizzare i dettagli per ciascun aggiornamento di manutenzione, compresa l'indicazione di cosa si sta aggiornando, quanto ci vorrà per l'aggiornamento e quando esso è pianificato.
+Dopo che hai impostato le tue finestre di aggiornamento, gli aggiornamenti che non comportano interruzioni del servizio verranno automaticamente pianificati durante questi periodi. Per questi tipi di aggiornamenti non è richiesta la tua approvazione esplicita. Puoi tuttavia visualizzare i dettagli per ciascun aggiornamento di manutenzione, compresa l'indicazione di cosa si sta aggiornando, quanto ci vorrà per l'aggiornamento e quando esso è pianificato.
 
 Per visualizzare i dettagli per un aggiornamento che non comporta l'interruzione del servizio, completa la seguente procedura:
 
@@ -285,7 +285,7 @@ Per gli aggiornamenti che comportano un'interruzione del servizio che richiedono
 6. Facoltativo: dall'elenco di date alternative selezionate nel calendario, seleziona quelle che desideri impostare come preferite per la distribuzione. Ogni data selezionata viene indicata come preferita per il deployer che pianificherà la distribuzione. IBM tenta di pianificare la manutenzione durante le finestre di aggiornamento preferite.
 7. Quando hai finito, seleziona **Invia**.
 
-A seconda della tua selezione, l'aggiornamento viene pianificato in modo da essere distribuito durante la data suggerita che hai accettato, durante una delle tue finestre temporali preapprovate o in una delle date e ore specifiche che hai selezionato. Quando IBM pianifica la distribuzione dell'aggiornamento, la data prevista viene rispecchiata nei dettagli dell'aggiornamento, sulla pagina **Aggiornamenti di sistema**. Puoi ripianificare una distribuzione già pianificata solo un giorno (24 ore) prima della data e ora di inizio pianificata. Dopo aver ripianificato una distribuzione, non potrai ripianificarla di nuovo.
+A seconda della tua selezione, l'aggiornamento viene pianificato in modo da essere distribuito durante la data suggerita che hai accettato, durante una delle tue finestre temporali preapprovate o in una delle date e ore specifiche che hai selezionato. Quando IBM pianifica la distribuzione dell'aggiornamento, la data prevista viene rispecchiata nei dettagli dell'aggiornamento, sulla pagina **Aggiornamenti di manutenzione**. Puoi ripianificare una distribuzione già pianificata solo un giorno (24 ore) prima della data e ora di inizio pianificata. Dopo aver ripianificato una distribuzione, non potrai ripianificarla di nuovo.
 
 
 ## Visualizzazione delle informazioni sul sistema
@@ -303,12 +303,12 @@ aggiornamenti in sospeso che richiedono un tuo intervento. Ci sono due tipi che 
 
 <dl>
 <dt>Aggiornamenti che non comportano interruzioni del servizio</dt>
-<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso. Questi aggiornamenti sono applicati nelle finestre di manutenzione disponibili preapprovate da te impostate dalla pagina Aggiornamenti di sistema.</dd>
+<dd>Un aggiornamento che non comporta interruzioni del servizio non influenza il tuo ambiente, le tue applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Questo tipo di aggiornamento non richiede un'approvazione caso per caso. Questi aggiornamenti sono applicati nelle finestre di aggiornamento preapprovate da te impostate dalla pagina Aggiornamenti di sistema.</dd>
 <dt>Aggiornamenti che comportano interruzioni del servizio</dt>
 <dd>Un aggiornamento che comporta interruzioni del servizio può influenzare il tuo ambiente, le applicazioni in esecuzione o l'accesso dei tuoi utenti alle tue applicazioni. Puoi pianificare e approvare ciascuno di questi aggiornamenti di manutenzione entro la finestra di manutenzione di 21 giorni assegnata per garantire che l'aggiornamento non venga applicato durante ore lavorative critiche. Puoi selezionare la data e ora di distribuzione consigliata, che si basa sulle tue finestre di aggiornamento preapprovate, oppure selezionare due ore e date aggiuntive tra cui IBM può scegliere durante l'applicazione dell'aggiornamento.</dd>
 </dl>
 
-Per ulteriori informazioni sull'impostazione delle finestre di manutenzione preapprovate e sull'impostazione di specifiche date non disponibili per la manutenzione, vedi [Aggiornamenti di manutenzione](index.html#oc_schedulemaintenance).
+Per ulteriori informazioni sull'impostazione delle finestre di aggiornamento preapprovate e sull'impostazione di specifiche date di blackout per la manutenzione, vedi [Aggiornamenti di manutenzione](index.html#oc_schedulemaintenance).
 
 ### Informazioni generali sul sistema
 
@@ -384,7 +384,7 @@ La scheda **Servizio** mostra l'utilizzo totale del servizio in relazione alla c
 
 **Nota**: in questo momento, le informazioni sul consumo del servizio potrebbero non essere disponibili in tutti gli ambienti. Questa funzione è disponibile per Cloudant, MessageHub, API Connect e Session Cache.
 
-
+**Nota**: un cluster Cloudant è costituito da almeno 3 nodi e ogni documento nel database viene replicato nei 3 nodi per garantire l'alta disponibilità e il ripristino di emergenza. Le informazioni di utilizzo del servizio Cloudant includono lo spazio disponibile e lo spazio assegnato in tutti i nodi che costituiscono il cluster. Ad esempio, se un singolo cluster Cloudant contiene 3 nodi, ognuno con una capacità di 1000 GB, il limite di capacità verrà mostrato come 3000 GB.  La percentuale consumata comprende tutti i documenti presenti su tutti i nodi.
 
 ### Utilizzo dell'account
 {: #accountusage}

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ Lorsque vous concevez une solution de cloud, prenez également en compte les exi
 Pour répondre aux besoins de votre projet, {{site.data.keyword.Bluemix}} offre trois types d'environnements de cloud.
 
 * [Environnement {{site.data.keyword.Bluemix_notm}} public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} public") : les ressources d'infrastructure sont partagées par différentes sociétés et différents utilisateurs.
-* [Environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} dédié") : vous utilisez votre propre infrastructure SoftLayer dédiée, que vous pouvez connecter de manière sécurisée au cloud {{site.data.keyword.Bluemix_notm}} public et à votre propre réseau.
+* [Environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} dédié") : vous utilisez votre propre infrastructure {{site.data.keyword.BluSoftlayer_notm}} dédiée, que vous pouvez connecter de manière sécurisée au cloud {{site.data.keyword.Bluemix_notm}} public et à votre propre réseau.
 * [{{site.data.keyword.Bluemix_notm}} local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local") : se trouve derrière le pare-feu de votre entreprise et peut protéger les charges de travail les plus sensibles et se connecter de manière sécurisée aux clouds {{site.data.keyword.Bluemix_notm}} public et  {{site.data.keyword.Bluemix_notm}} dédié.
 
 Lorsque vous déterminez le type d'environnement de cloud dont vous avez besoin, planifiez la structure de votre compte, de vos organisations, de vos espaces, de vos ressources et des membres de votre équipe.

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -33,7 +33,7 @@ lastupdated: "2017-04-07"
 設計雲端解決方案時，也請思考帳戶安全，以及作業需求、國家/地區法規、市場指引和公司政策。為了滿足您的專案需求，{{site.data.keyword.Bluemix}} 提供三種類型的雲端環境。
 
 * [{{site.data.keyword.Bluemix_notm}} 公用](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} 公用")：由不同的公司及使用者共用的基礎架構資源。
-* [{{site.data.keyword.Bluemix_notm}} 專用](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} 專用")：您使用自己專用的 SoftLayer 基礎架構，可以將其安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」雲端和您自己的網路。
+* [{{site.data.keyword.Bluemix_notm}} 專用](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} 專用")：您使用自己專用的 {{site.data.keyword.BluSoftlayer_notm}}，可以將其安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」雲端和您自己的網路。
 * [{{site.data.keyword.Bluemix_notm}} 本端](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} 本端")：位於公司防火牆後面，可保護您最機密的工作負載，並可安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」和「{{site.data.keyword.Bluemix_notm}} 專用」雲端。
 
 在決定您需要哪種類型的雲端環境時，就要計劃帳戶、組織、空間、資源和團隊成員的結構。

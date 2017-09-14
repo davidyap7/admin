@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ Ao projetar uma solução em nuvem, pense também sobre a segurança da conta e 
 Para atender às suas necessidades do projeto, o {{site.data.keyword.Bluemix}} oferece três tipos de ambientes de nuvem.
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): os recursos de infraestrutura são compartilhados por diferentes empresas e usuários.
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): você usa a sua própria infraestrutura SoftLayer dedicada, que é possível conectar com segurança à nuvem do {{site.data.keyword.Bluemix_notm}} Public e sua própria rede.
+* [{{site.data.keyword.Bluemix_notm}} Dedicado](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicado"): você usa o seu próprio {{site.data.keyword.BluSoftlayer_notm}} dedicado, que pode ser conectado com segurança à nuvem pública do {{site.data.keyword.Bluemix_notm}} e à sua própria rede.
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): fica sob o firewall da empresa, que pode proteger as cargas de trabalho mais sensíveis e pode conectar-se com segurança às nuvens do {{site.data.keyword.Bluemix_notm}} Public e do {{site.data.keyword.Bluemix_notm}} Dedicated.
 
 Como parte da decisão de qual tipo de ambiente de nuvem você precisa, planeje a estrutura de sua conta, organizações, espaços, recursos e membros da equipe.

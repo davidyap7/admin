@@ -15,7 +15,8 @@ lastupdated: "2017-03-29"
 
 # Bluemix への登録
 
-{{site.data.keyword.Bluemix}} アカウントの登録には、既存の IBM ID を使用するか、新規 IBM ID を作成するか、フェデレーテッド ID を使用することができます。フェデレーテッド ID は、IBM に登録済みの会社ドメイン内の ID で、これにより、ドメインとユーザーの資格情報を使用して IBM Web アプリケーションにアクセスできます。{:shortdesc}
+{{site.data.keyword.Bluemix}} アカウントの登録には、既存の IBM ID を使用するか、新規 IBM ID を作成するか、フェデレーテッド ID を使用することができます。Aフェデレーテッド ID は、IBM に登録済みの会社ドメイン内の ID で、これにより、ドメインとユーザーの資格情報を使用して IBM Web アプリケーションにアクセスできます。
+{:shortdesc}
 
 {{site.data.keyword.Bluemix_notm}} アカウントの登録には、既存の IBM ID を使用するか、新規 IBM ID を作成するか、フェデレーテッド ID を使用することができます。フェデレーテッド ID は、IBM に登録済みの会社ドメイン内の ID で、これにより、ドメインとユーザーの資格情報を使用して IBM Web アプリケーションにアクセスできます。  
 

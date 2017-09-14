@@ -14,7 +14,7 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="BluemixSoftLayerBill.svg">
+   sodipodi:docname="bluemixsoftlayerbill.svg">
   <metadata
      id="metadata153">
     <rdf:RDF>
@@ -39,9 +39,9 @@
      inkscape:window-height="1027"
      id="namedview151"
      showgrid="false"
-     inkscape:zoom="0.67414251"
-     inkscape:cx="773.97194"
-     inkscape:cy="177.06101"
+     inkscape:zoom="0.95338148"
+     inkscape:cx="858.19367"
+     inkscape:cy="376.8265"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -229,12 +229,11 @@
              id="Link-Bluemix-and"
              font-size="32"
              font-weight="bold"
-             style="font-weight:bold;font-size:32px;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232"
-             x="-22">
+             style="font-weight:bold;font-size:32px;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="262.95599"
+               x="284.95599"
                y="441"
-               id="tspan89">Collega gli account Bluemix</tspan>
+               id="tspan89">Collega Bluemix e</tspan>
           </text>
           <text
              id="SoftLayer-accounts"
@@ -244,51 +243,50 @@
             <tspan
                x="265.91599"
                y="480"
-               id="tspan92">e SoftLayer</tspan>
+               id="tspan92">l'account SoftLayer</tspan>
           </text>
           <text
              id="For-the-next-billing-cycle,-you"
              font-size="30"
              font-weight="normal"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="-146">
+             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
-               x="969.28497"
+               x="1115.285"
                y="433"
-               id="tspan95">Per il successivo ciclo di fatturazione</tspan>
+               id="tspan95">Per il ciclo di fatturazione</tspan>
           </text>
           <text
              id="will-receive-a-singl"
              font-size="30"
              font-weight="normal"
              style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="-112">
+             x="-52">
             <tspan
-               x="1009.395"
+               x="1069.395"
                y="465"
-               id="tspan98">riceverai una sola fattura Bluemix</tspan>
+               id="tspan98">successivo, riceverai una sola</tspan>
           </text>
           <text
              id="bill-that-includes-your-SoftLayer"
              font-size="30"
              font-weight="normal"
              style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="-26">
+             x="-80">
             <tspan
-               x="1074"
+               x="1020"
                y="497"
-               id="tspan101">che include i tuoi addebiti</tspan>
+               id="tspan101">fattura Bluemix che include i tuoi</tspan>
           </text>
           <text
              id="and-Bluemix-charges"
              font-size="30"
              font-weight="normal"
              style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="-34">
+             x="-88">
             <tspan
-               x="1136.005"
+               x="1082.005"
                y="529"
-               id="tspan104">SoftLayer e Bluemix</tspan>
+               id="tspan104">addebiti Bluemix e SoftLayer.</tspan>
           </text>
           <text
              id="text106"
@@ -316,23 +314,21 @@
              id="After-you-link-accounts,-you"
              font-size="30"
              font-weight="normal"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314"
-             x="-40">
+             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
-               x="440.04001"
+               x="480.04001"
                y="203"
-               id="tspan114">Dopo aver collegato gli account, riceverai</tspan>
+               id="tspan114">Dopo aver collegato gli account,</tspan>
           </text>
           <text
              id="will-receive-a-separate-bill-for-your"
              font-size="30"
              font-weight="normal"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314"
-             x="10">
+             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
-               x="449"
+               x="439"
                y="235"
-               id="tspan117">una fattura separata per il tuo utilizzo di</tspan>
+               id="tspan117">riceverari una fattura separata per il tuo utilizzo di</tspan>
           </text>
           <text
              id="Bluemix-usage-for-the-current"
@@ -352,7 +348,7 @@
             <tspan
                x="525.03998"
                y="299"
-               id="tspan123">del mese corrente</tspan>
+               id="tspan123">del mese corrente.</tspan>
           </text>
           <text
              id="You-might-receive-a-separate-bill"
@@ -368,23 +364,21 @@
              id="for-SoftLayer-usage-for-the-current"
              font-size="30"
              font-weight="normal"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="-70">
+             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
-               x="639.92999"
+               x="709.92999"
                y="671"
-               id="tspan129">per l'utilizzo di SoftLayer per il ciclo di fatturazione</tspan>
+               id="tspan129">per l'utilizzo SoftLayer per il ciclo di fatturazione</tspan>
           </text>
           <text
              id="billing-cycle,-depending-on-when-you"
              font-size="30"
              font-weight="normal"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232"
-             x="82">
+             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
-               x="774"
+               x="692"
                y="703"
-               id="tspan132">corrente, a seconda di quando</tspan>
+               id="tspan132">corrente, a seconda di quando ti sei collegato</tspan>
           </text>
           <text
              id="linked-your-accounts."
@@ -394,7 +388,7 @@
             <tspan
                x="798.72998"
                y="735"
-               id="tspan135">hai collegato i tuoi account.</tspan>
+               id="tspan135">ai tuoi account.</tspan>
           </text>
           <g
              id="Group-2"

@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -215,20 +215,20 @@ Quando a notificação de assinatura é salva, você recebe notificações por m
 ## Atualizações de Manutenção
 {: #oc_schedulemaintenance}
 
-Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações do sistema**.  Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
+Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações de manutenção**. Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
 
-**Nota**: consulte a seção a seguir para [Configurar janelas de manutenção pré-aprovadas](index.html#preapprovedmaintenance) para iniciar. Essas janelas devem ser configuradas em ordem para a IBM planejar a manutenção para o seu ambiente.
+**Nota**: veja a seção a seguir para [Configurar janelas de atualização pré-aprovadas](index.html#preapprovedmaintenance) para iniciar. Essas janelas devem ser configuradas em ordem para a IBM planejar a manutenção para o seu ambiente.
 
 <dl>
 <dt>Atualizações sem interrupção</dt>
-<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso e será aplicado durante as janelas de manutenção pré-aprovadas, disponíveis que você configurar a partir da página Atualizações do sistema.
+<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso e será aplicado durante as janelas de manutenção pré-aprovadas e disponíveis que você configurar na página Atualizações de manutenção.
 <p>**Nota**: alguns serviços de plataforma podem requerer que pelo menos uma janela de mudança sem interrupção seja definida durante um conjunto de intervalos de tempo predeterminados a critério do serviço. Verifique a descrição do serviço de cada serviço dedicado implementado em seu ambiente.</p></dd>
 <dt>Atualizações disruptivas</dt>
 <dd>Uma atualização disruptiva pode afetar o seu ambiente, os aplicativos em execução ou o acesso de seus usuários aos aplicativos. Deve-se planejar e aprovar cada uma dessas atualizações de manutenção dentro da janela de manutenção atribuída de 21 dias. É possível selecionar a data e hora sugeridas de implementação, a opção para qualquer uma de suas janelas pré-aprovadas ou é possível abrir o calendário para selecionar três datas e horas específicas para a IBM escolher ao planejar a atualização.</dd>
 </dl>
 
 
-### Configurando janelas de manutenção pré-aprovadas
+### Configurando janelas de atualização pré-aprovadas
 {: #preapprovedmaintenance}
 
 As atualizações de manutenção sem interrupção são planejadas para executar durante as janelas de tempo pré-aprovadas. Por padrão, duas janelas de atualização disponíveis semanalmente são criadas para seu sistema. Essas janelas geralmente são configuradas para ocorrer a cada sábado e domingo à noite. É possível mudar as configurações padrão de uma das maneiras a seguir:
@@ -242,30 +242,30 @@ Para salvar suas mudanças, deve-se ainda cumprir o mínimo necessário de tempo
 **Nota**: somente usuários com a permissão de super usuário (`ops.admin`) podem planejar e aprovar atualizações de manutenção.
 
 1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar disponibilidade**.
-2. Expanda a seção **Gerenciar janelas de atualização disponíveis**.
+2. Navegue para a seção **Janelas de atualização**.
 3. Clique em **Incluir novo**.
-4. Configure a sua primeira janela de disponibilidade, selecionando a frequência, a duração e o horário de início para a janela.
-5. Opcional: Selecione **Marcar como preferencial**, se você gostaria de definir seu período de disponibilidade recorrente como um tempo preferencial para implementações a serem planejadas. Os períodos preferenciais têm prioridade, quando possível.
+4. Configure a sua primeira janela de atualização, selecionando a frequência, a duração e o horário de início para a janela.
+5. Opcional: selecione **Marcar como preferencial** se você gostaria de configurar sua janela de atualização recorrente como um horário preferencial para implementações a serem planejadas. Os períodos preferenciais têm prioridade, quando possível.
 6. Clique em **Enviar**.
 7. Repita esse processo até ter atendido aos requisitos mínimos para as janelas semanais.
 
-### Configurando janelas de manutenção indisponíveis
+### Configurando janelas de blecaute
 {: #blockpreapprovedmaintenance}
 
-É possível escolher configurar janelas de tempo de atualização indisponíveis específicas nas quais seu ambiente não está disponível para atualizações de manutenção sem interrupção. Por exemplo, é possível escolher um final de semana ou feriado de alto tráfego quando você não deseja aplicar nenhuma manutenção para assegurar que seus aplicativos estarão disponíveis para seus usuários.
-
-É necessário configurar no mínimo 12 horas disponíveis por semana para no mínimo dois dias durante cada semana. Se você tentar criar uma janela de atualização indisponível, poderá não ser capaz de salvar suas mudanças se essa nova janela fizer com que o sistema caia abaixo do mínimo semanal requerido. Nesse caso, deve-se primeiro remover algumas das janelas de atualização indisponíveis existentes ou incluir mais janelas de atualização disponíveis antes de poder salvar a nova janela de atualização indisponível. Consulte [Configurando janelas de manutenção pré-aprovadas](index.html#preapprovedmaintenance) para obter mais informações.
+É possível escolher configurar janelas de tempo de blecaute específicas nas quais seu ambiente não está disponível para atualizações de manutenção sem interrupção. Por exemplo, é possível escolher um final de semana ou feriado de alto tráfego quando você não deseja aplicar nenhuma manutenção para assegurar que seus aplicativos estarão disponíveis para seus usuários.
 
 1. Acesse **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente &gt; Gerenciar disponibilidade**.
-2. Expanda a seção **Gerenciar janelas de atualização indisponíveis**.
+2. Navegue para a seção **Janelas de blecaute**.
 3. Clique em **Incluir novo**.
-4. Configure a sua janela indisponível, selecionando a frequência, a duração e o horário de início para a janela.
+4. Configure a sua janela de blecaute, selecionando a frequência, a duração e o horário de início para a janela.
 5. Clique em **Enviar**.
+
+As datas de blecaute irão requerer aprovação da IBM e o tempo que leva para obter aprovação irá variar. Quando as datas de blecaute solicitadas forem aprovadas, a IBM irá cancelar quaisquer atualizações existentes que estão atualmente planejadas durante a janela indisponível. A IBM também irá criar novos registros para essas atualizações e irá planejá-las fora das datas de blecaute aprovadas.
 
 ### Planejando e aprovando atualizações
 {: #scheduleandapprove}
 
-Após você configurar as suas janelas de manutenção pré-aprovadas, atualizações sem interrupção serão planejadas automaticamente durante esses horários. A sua aprovação explícita para esses tipos de atualizações não é necessária. No entanto, é possível visualizar os detalhes de cada atualização de manutenção incluindo o que está sendo atualizado, quanto tempo a atualização levará e para quando a atualização está planejada.
+Após você configurar as suas janelas de atualização, as atualizações sem interrupção serão planejadas automaticamente durante esses horários. A sua aprovação explícita para esses tipos de atualizações não é necessária. No entanto, é possível visualizar os detalhes de cada atualização de manutenção incluindo o que está sendo atualizado, quanto tempo a atualização levará e para quando a atualização está planejada.
 
 Para visualizar os detalhes para uma atualização sem interrupção, conclua as etapas a seguir:
 
@@ -285,7 +285,7 @@ Para atualizações disruptivas que requerem a sua aprovação, conclua as etapa
 6. Opcional: Na lista de datas alternativas selecionadas no calendário, selecione aquelas que você deseja configurar como datas preferenciais para implementação. Cada data selecionada é mencionada como preferencial para o implementador que está planejando a implementação. A IBM tenta planejar a manutenção durante as janelas de atualização preferenciais.
 7. Selecione **Enviar** quando tiver concluído.
 
-Com base em sua seleção, a atualização será planejada para implementação durante a data sugerida que você aceitou, durante uma de suas janelas pré-aprovadas ou uma das datas e horas específicas que você selecionou. Quando a atualização estiver planejada para implementação pela IBM, você verá a data planejada refletida nos detalhes para a atualização na página **Atualizações do Sistema**. É possível replanejar uma implementação já planejadas somente se um dia (24 horas) antes a data e hora de início planejada permanecer. Uma vez replanejada uma implementação, não será possível replanejá-la novamente.
+Com base em sua seleção, a atualização será planejada para implementação durante a data sugerida que você aceitou, durante uma de suas janelas pré-aprovadas ou uma das datas e horas específicas que você selecionou. Quando a atualização estiver planejada para implementação pela IBM, você verá a data planejada refletida nos detalhes para a atualização na página **Atualizações de manutenção**. É possível replanejar uma implementação já planejadas somente se um dia (24 horas) antes a data e hora de início planejada permanecer. Uma vez replanejada uma implementação, não será possível replanejá-la novamente.
 
 
 ## Visualizando as informações do sistema
@@ -303,12 +303,12 @@ pendentes que requerem ação de sua parte. Há dois tipos que você pode ver:
 
 <dl>
 <dt>Atualizações sem interrupção</dt>
-<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso. Essas atualizações são aplicadas nas janelas de manutenção pré-aprovadas e disponíveis que você configura na página Atualizações do sistema.</dd>
+<dd>Uma atualização sem interrupção não afeta o seu ambiente, os seus aplicativos em execução ou o acesso de seus usuários aos seus aplicativos. Esse tipo de atualização não requer aprovação caso a caso. Essas atualizações são aplicadas às janelas de manutenção pré-aprovadas que você configura na página Atualizações do sistema.</dd>
 <dt>Atualizações disruptivas</dt>
 <dd>Uma atualização disruptiva pode afetar o seu ambiente, os aplicativos em execução ou o acesso de seus usuários aos aplicativos. Você tem a capacidade de planejar e aprovar cada uma dessas atualizações de manutenção dentro da janela de manutenção atribuída de 21 dias, para assegurar que a atualização não seja aplicada durante as horas críticas de negócios. É possível selecionar a data e hora de implementação sugeridas, que são baseadas em suas janelas de manutenção pré-aprovadas ou é possível selecionar dois horários e duas datas adicionais para a IBM escolher ao aplicar a atualização.</dd>
 </dl>
 
-Para obter mais informações sobre a configuração de janelas de manutenção pré-aprovadas e datas indisponíveis específicas para manutenção, consulte [Atualizações de manutenção](index.html#oc_schedulemaintenance).
+Para obter mais informações sobre a configuração de janelas de atualização pré-aprovadas e a configuração de datas de blecaute específicas para manutenção, veja [Atualizações de manutenção](index.html#oc_schedulemaintenance).
 
 ### Informações gerais do sistema
 
@@ -386,7 +386,7 @@ A guia **Serviço** mostra o uso total de serviço em relação à capacidade m�
 
 **Nota**: as informações de consumo de serviço poderão não estar disponíveis em todos os ambientes neste momento. Esse recurso está disponível para o Cloudant, o MessageHub, o API Connect e o Session Cache.
 
-
+**Nota**: um cluster do Cloudant consiste em pelo menos 3 nós e cada documento no banco de dados é replicado em 3 nós para alta disponibilidade e recuperação de desastre. As informações de uso do serviço Cloudant incluem espaço disponível e espaço alocado em todos os nós que compõem o cluster. Por exemplo, se um único cluster do Cloudant contiver 3 nós, cada um com 1000 GB de capacidade, o limite de capacidade será mostrado como 3000 GB. O percentual consumido inclui todos os documentos localizados em todos os nós.
 
 ### Uso de conta
 {: #accountusage}
@@ -926,7 +926,8 @@ de **Usuários** com acesso de **Gravação**, será possível incluir usuários
 
   **Nota**: quando a operação de inclusão é bem-sucedida, o usuário é incluído na tabela para você visualizar e procurar. Quando os usuários são incluídos, eles não possuem permissões designadas.
 
-* Incluir um grupo de usuário a partir do seu diretório LDAP. Se você tiver a permissão de **Super usuário** ou a permissão de **Usuários** com acesso de **Gravação**, será possível incluir usuários.
+* Incluir um grupo de usuário a partir do seu diretório LDAP. Se você tiver a permissão de **Super usuário** ou a permissão
+de **Usuários** com acesso de **Gravação**, será possível incluir usuários.
 
   1. Clique em **Incluir grupo de usuários**.
   2. No campo de **Procura**digite um nome do grupo para procurar e selecione o nome do grupo na lista preenchida.

@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -215,20 +215,20 @@ Sie können ein beliebiges gespeichertes Benachrichtigungsabonnement auswählen,
 ## Wartungsaktualisierungen
 {: #oc_schedulemaintenance}
 
-Wenn Sie die Superuserberechtigung (`ops.admin`) besitzen, können Sie geplante und ausstehende Wartungsaktualisierungen anzeigen, indem Sie über **VERWALTUNG &gt; SYSTEMINFORMATIONEN &gt; *Anzahl* anstehend** auf die Seite **Systemaktualisierungen** zugreifen.  Alle Benutzer Ihrer Umgebung können die geplanten Wartungsaktualisierungsereignisse mit Unterbrechungen anzeigen, indem sie auf **Support** &gt; **Status** klicken.
+Wenn Sie die Superuserberechtigung (`ops.admin`) besitzen, können Sie geplante und ausstehende Wartungsaktualisierungen anzeigen, indem Sie über **VERWALTUNG &gt; SYSTEMINFORMATIONEN &gt; *Anzahl* anstehend** auf die Seite **Wartungsaktualisierung** zugreifen.  Alle Benutzer Ihrer Umgebung können die geplanten Wartungsaktualisierungsereignisse mit Unterbrechungen anzeigen, indem sie auf **Support** &gt; **Status** klicken.
 
-**Hinweis:** Lesen Sie als Einführung den Abschnitt [Vorab genehmigte Wartungszeiten einstellen](index.html#preapprovedmaintenance). Diese Fenster müssen definiert sein, damit IBM die Wartungszeiten für Ihre Umgebung planen kann.
+**Hinweis:** Lesen Sie als Einführung den Abschnitt [Vorab genehmigte Aktualisierungszeiten festlegen](index.html#preapprovedmaintenance). Diese Fenster müssen definiert sein, damit IBM die Wartungszeiten für Ihre Umgebung planen kann.
 
 <dl>
 <dt>Unterbrechungsfreie Aktualisierungen</dt>
-<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung und wird während der vorab genehmigten, verfügbaren Wartungszeiten angewendet, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben.
+<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung und wird während der vorab genehmigten, verfügbaren Wartungszeiten angewendet, die Sie auf der Seite 'Wartungsaktualisierungen' festgelegt haben.
 <p>**Hinweis**: Einige Plattformservices setzen möglicherweise die Definition mindestens eines Zeitfensters für unterbrechungsfreie Wartung während vordefinierter Zeiträume nach Bedarf des Service voraus. Überprüfen Sie die Servicebeschreibung für jeden dedizierten Service, der in Ihrer Umgebung bereitgestellt ist.</p></dd>
 <dt>Aktualisierung mit Unterbrechungen</dt>
 <dd>Eine Aktualisierung mit Unterbrechungen kann sich auf Ihre Umgebung, die Ausführung von Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen auswirken. Sie müssen jede dieser Wartungsaktualisierungen innerhalb des zugeteilten Wartungszeitraums von 21 Tagen terminieren und genehmigen. Sie können den vorgeschlagenen Bereitstellungszeitpunkt (Datum und Uhrzeit) oder die Option für ein zuvor genehmigtes Fenster auswählen. Alternativ können Sie auch den Kalender öffnen, um drei bestimmte Daten und Uhrzeiten auszuwählen, aus denen IBM dann bei der Planung der Aktualisierung auswählt.</dd>
 </dl>
 
 
-### Vorab genehmigte Wartungszeiten einstellen
+### Vorab genehmigte Aktualisierungszeiten festlegen
 {: #preapprovedmaintenance}
 
 Die Ausführung unterbrechungsfreier Wartungsaktualisierungen wird für zuvor genehmigte Zeitfenster geplant. Standardmäßig werden für Ihr System zwei wöchentlich verfügbare Aktualisierungs-Zeitfenster erstellt. Diese Zeitfenster sind normalerweise auf samstags abends und sonntags abends festgelegt. Zum Ändern der Standardeinstellungen stehen Ihnen folgende Möglichkeiten zur Verfügung:
@@ -242,30 +242,30 @@ Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen
 **Hinweis:** Nur Benutzer mit der Superuserberechtigung (`ops.admin`) können Wartungsaktualisierungen planen und genehmigen.
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
-2. Erweitern Sie den Abschnitt zum Thema **Verfügbare Aktualisierungszeiten verwalten**.
+2. Navigieren Sie zum Abschnitt **Aktualisierungsfenster**. 
 3. Klicken Sie auf **Neues hinzufügen**.
-4. Legen Sie das erste verfügbare Zeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
-5. Optional: Wählen Sie **Als bevorzugt markieren** aus, um das wiederkehrende Zeitfenster als bevorzugtes Zeitfenster für geplante Bereitstellungen festzulegen. Bevorzugte Zeitfenster haben Priorität, sofern dies möglich ist.
+4. Legen Sie das erste verfügbare Aktualisierungsfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
+5. Optional: Wählen Sie **Als bevorzugt markieren** aus, um das wiederkehrende Aktualisierungsfenster als bevorzugtes Zeitfenster für geplante Bereitstellungen festzulegen. Bevorzugte Zeitfenster haben Priorität, sofern dies möglich ist.
 6. Klicken Sie auf **Abschicken**.
 7. Wiederholen Sie diesen Vorgang, bis Sie die Mindestanforderungen für die wöchentlichen Zeitfenster erfüllt haben.
 
-### Nicht verfügbare Wartungszeiten festlegen
+### Ausfallzeitfenster festlegen
 {: #blockpreapprovedmaintenance}
 
-Sie können bestimmte nicht verfügbare Aktualisierungsfenster festlegen, in der Ihre Umgebung nicht für unterbrechungsfreie Wartungsaktualisierungen zur Verfügung steht. So können Sie zum Beispiel ein Wochenende oder einen Feiertag mit hohem Datenverkehr auswählen, an denen Sie keine Wartung wünschen, um sicherzugehen, dass Ihre Anwendungen für Ihre Benutzer zur Verfügung stehen.
-
-Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen der Woche festlegen. Wenn Sie versuchen, ein nicht verfügbares Aktualisierungsfenster zu erstellen, können Sie Ihre Änderungen möglicherweise nicht speichern, wenn dieses neue Fenster dazu führen würde, dass Ihr System das wöchentlich mindestens erforderliche Zeitfenster nicht einhält. In diesem Fall müssen Sie zunächst entweder einige der vorhandenen nicht verfügbaren Aktualisierungsfenster entfernen oder weitere verfügbare Aktualisierungsfenster hinzufügen, bevor Sie das neue nicht verfügbare Aktualisierungsfenster speichern können. Weitere Informationen hierzu finden Sie unter [Vorab genehmigte Wartungszeiten einstellen](index.html#preapprovedmaintenance).
+Sie können bestimmte Ausfallzeitfenster festlegen, in denen Ihre Umgebung nicht für unterbrechungsfreie Wartungsaktualisierungen zur Verfügung steht. So können Sie zum Beispiel ein Wochenende oder einen Feiertag mit hohem Datenverkehr auswählen, an denen Sie keine Wartung wünschen, um sicherzugehen, dass Ihre Anwendungen für Ihre Benutzer zur Verfügung stehen.
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
-2. Erweitern Sie den Abschnitt zum Thema **Nicht verfügbare Aktualisierungszeiten verwalten**.
+2. Navigieren Sie zum Abschnitt **Ausfallzeitfenster**. 
 3. Klicken Sie auf **Neues hinzufügen**.
-4. Legen Sie das erste nicht verfügbare Zeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
+4. Legen Sie das erste nicht Ausfallzeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
 5. Klicken Sie auf **Abschicken**.
+
+Für Ausfallzeiten ist eine Genehmigung durch IBM erforderlich, die für die Genehmigung benötigte Zeit kann dabei variieren. Wenn die angeforderten Ausfallzeiten genehmigt sind, storniert IBM vorhandene Aktualisierungen, die momentan über das Nichtverfügbarkeitsfenster geplant sind. Darüber hinaus erstellt IBM neue Datensätze für diese Aktualisierungen und plant sie außerhalb der genehmigten Ausfallzeiten ein. 
 
 ### Aktualisierungen planen und genehmigen
 {: #scheduleandapprove}
 
-Nachdem Sie Ihre vorab genehmigten Wartungszeiten festgelegt haben, werden unterbrechungsfreie Aktualisierungen automatisch während dieser Zeiten geplant. Ihre explizite Genehmigung für diese Aktualisierungstypen ist nicht erforderlich. Sie können jedoch die Details für jede Wartungsaktualisierung einschließlich der aktualisierten Komponenten, der Dauer der Aktualisierung und des geplanten Aktualisierungstermins anzeigen.
+Nachdem Sie Ihre Aktualisierungszeitfenster festgelegt haben, werden unterbrechungsfreie Aktualisierungen automatisch während dieser Zeiten geplant. Ihre explizite Genehmigung für diese Aktualisierungstypen ist nicht erforderlich. Sie können jedoch die Details für jede Wartungsaktualisierung einschließlich der aktualisierten Komponenten, der Dauer der Aktualisierung und des geplanten Aktualisierungstermins anzeigen.
 
 Um die Details für eine unterbrechungsfreie Aktualisierung anzuzeigen, führen Sie die folgenden Schritte aus:
 
@@ -285,7 +285,7 @@ Führen Sie für Aktualisierungen mit Unterbrechung, die Ihre Genehmigung erford
 6. Optional: Wählen Sie in der Liste der ausgewählten alternativen Datumsangaben im Kalender die Angaben aus, die Sie als bevorzugte Datumsangaben für die Bereitstellung festlegen möchten. Jedes ausgewählte Datum wird für den Bereitsteller, der die Bereitstellung plant, als bevorzugt markiert. IBM versucht, Wartungen innerhalb der bevorzugten Aktualisierungsfenster zu planen.
 7. Wenn der Vorgang abgeschlossen ist, wählen Sie **Abschicken** aus.
 
-Das Bereitstellen der Aktualisierung wird auf Grundlage Ihrer Auswahl an dem vorgeschlagenen Datum, das Sie genehmigt haben, in einem vorab genehmigten Zeitfenster oder an einem von Ihnen ausgewählten Datum zur ausgewählten Uhrzeit geplant. Wenn das Bereitstellen der Aktualisierung von IBM geplant wird, sehen Sie das geplante Datum in den Details zur Aktualisierung auf der Seite **Systemaktualisierungen**. Die erneute Planung einer bereits geplanten Bereitstellung ist nur dann möglich, wenn zwischen dem geplanten Startzeitpunkt ein Tag (24 Stunden) liegt. Nach der erneuten Planung einer Bereitstellung kann diese nicht mehr neu geplant werden.
+Das Bereitstellen der Aktualisierung wird auf Grundlage Ihrer Auswahl an dem vorgeschlagenen Datum, das Sie genehmigt haben, in einem vorab genehmigten Zeitfenster oder an einem von Ihnen ausgewählten Datum zur ausgewählten Uhrzeit geplant. Wenn das Bereitstellen der Aktualisierung von IBM geplant wird, sehen Sie das geplante Datum in den Details zur Aktualisierung auf der Seite **Wartungsaktualisierungen**. Die erneute Planung einer bereits geplanten Bereitstellung ist nur dann möglich, wenn zwischen dem geplanten Startzeitpunkt ein Tag (24 Stunden) liegt. Nach der erneuten Planung einer Bereitstellung kann diese nicht mehr neu geplant werden.
 
 
 ## Systeminformationen anzeigen
@@ -302,12 +302,12 @@ für die eine Aktion Ihrerseits erforderlich ist. Es gibt zwei Typen, die Ihnen 
 
 <dl>
 <dt>Unterbrechungsfreie Aktualisierungen</dt>
-<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung. Diese Aktualisierungen werden in den vorab genehmigten, verfügbaren Wartungszeiten, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben, angewendet.</dd>
+<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung. Diese Aktualisierungen werden in den vorab genehmigten Aktualisierungzeitfenstern, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben, angewendet.</dd>
 <dt>Aktualisierung mit Unterbrechungen</dt>
 <dd>Eine Aktualisierung mit Unterbrechungen kann sich auf Ihre Umgebung, die Ausführung von Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen auswirken. Sie können jede dieser Wartungsaktualisierungen innerhalb des zugeteilten Wartungszeitraums von 21 Tagen terminieren und genehmigen, um sicherzustellen, dass die Aktualisierung nicht während kritischer Geschäftszeiten angewendet wird. Sie können das vorgeschlagene Implementierungsdatum und die vorgeschlagene Uhrzeit auswählen, die auf Ihren vorab genehmigten Aktualisierungsfenstern basieren, oder Sie können zwei weitere Uhrzeiten und Daten auswählen, aus denen IBM dann bei der Anwendung der Aktualisierung auswählen kann.</dd>
 </dl>
 
-Weitere Informationen zum Festlegen vorab genehmigter Wartungszeiten und zum Festlegen bestimmter Zeiten, die für die Wartung nicht verfügbar sind, finden Sie im Abschnitt zu [Wartungsaktualisierungen](index.html#oc_schedulemaintenance).
+Weitere Informationen zum Festlegen vorab genehmigter Aktualisierungszeitfenster und zum Festlegen bestimmter Ausfallzeiten für die Wartung finden Sie im Abschnitt zu [Wartungsaktualisierungen](index.html#oc_schedulemaintenance).
 
 ### Allgemeines Systeminformationen
 
@@ -383,7 +383,7 @@ Die Registerkarte **Service** zeigt die Gesamtnutzung des Service in Bezug auf d
 
 **Hinweis**: Die Informationen zur Servicenutzung sind möglicherweise zu diesem Zeitpunkt nicht in allen Umgebungen vorhanden. Dieses Feature ist für Cloudant, MessageHub, API Connect und Session Cache verfügbar.
 
-
+**Hinweis**: Ein Cloudant-Cluster besteht aus mindestens 3 Knoten und jedes Dokument in der Datenbank wird auf die 3 Knoten repliziert, um die Hochverfügbarkeit und die Verfügbarkeit für die Disaster-Recovery sicherzustellen. Nutzungsinformationen für Cloudant-Services umfassen Daten zum verfügbaren Speicherplatz und zum zugeordneten Speicherplatz in allen Knoten, aus denen der Cluster besteht. Enthält ein einzelner Cloudant-Cluster beispielsweise 3 Knoten, von denen jeder eine Kapazität von 1000 GB aufweist, wird das Kapazitätslimit mit 3000 GB angegeben. Der Prozentsatz des belegten Speicherplatzes umfasst alle Dokumente in allen Knoten.
 
 ### Kontonutzung
 {: #accountusage}

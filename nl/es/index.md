@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -218,57 +218,57 @@ Puede seleccionar cualquier suscripción de notificaciones guardada, ver la acti
 ## Actualizaciones de mantenimiento
 {: #oc_schedulemaintenance}
 
-Puede ver las actualizaciones de mantenimiento planificadas y pendientes, si tiene permiso de superusuario (`ops.admin`) haciendo clic en **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes** para acceder a la página **Actualizaciones del sistema**.  Todos los usuarios de su entorno pueden ver los sucesos de actualización de mantenimiento disruptiva planificados pulsando **Soporte** &gt; **Estado**.
+Puede ver las actualizaciones de mantenimiento planificadas y pendientes, si tiene permiso de superusuario (`ops.admin`) haciendo clic en **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes** para acceder a la página **Actualizaciones de mantenimiento**.  Todos los usuarios de su entorno pueden ver los sucesos de actualización de mantenimiento disruptiva planificados pulsando **Soporte** &gt; **Estado**.
 
-**Nota**: consulte la siguiente sección sobre la [configuración de ventanas de mantenimiento aprobadas con anterioridad](index.html#preapprovedmaintenance) para empezar. Estas ventanas deben establecerse para que IBM planifique el mantenimiento para el entorno.
+**Nota**: Consulte la siguiente sección sobre la [configuración de períodos de actualización preaprobados](index.html#preapprovedmaintenance) para empezar. Estos períodos deben establecerse para que IBM planifique el mantenimiento para el entorno.
 
 <dl>
 <dt>Actualizaciones no disruptivas</dt>
-<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso y se aplicará durante las ventanas de mantenimiento disponibles y con aprobación previa que establece desde la página Actualizaciones del sistema.
-<p>**Nota**: Es posible que algunos servicios de la plataforma requieran que al menos una ventana de cambio no disruptiva se defina durante un intervalo de tiempo predeterminado a discreción del servicio. Compruebe la descripción de servicio para cada uno de los servicios dedicados desplegados en su entorno.</p></dd>
+<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso y se aplicará durante los períodos de mantenimiento disponibles y preaprobados que establece desde la página Actualizaciones de mantenimiento.
+<p>**Nota**: Es posible que algunos servicios de la plataforma requieran que al menos un período de cambio no disruptivo se defina durante un intervalo de tiempo predeterminado a discreción del servicio. Compruebe la descripción de servicio para cada uno de los servicios dedicados desplegados en su entorno.</p></dd>
 <dt>Actualizaciones disruptivas</dt>
-<dd>Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Debe planificar y aprobar cada una de estas ventanas de mantenimiento dentro de la ventana de mantenimiento de 21 días asignada. Puede seleccionar la fecha y hora de despliegue sugeridas, la opción para cualquier ventana ya aprobada, o bien abrir el calendario y seleccionar tres fechas y horas específicas para que IBM pueda elegir la planificación de la actualización.</dd>
+<dd>Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Debe planificar y aprobar cada uno de estos períodos de mantenimiento dentro del período de mantenimiento de 21 días asignado. Puede seleccionar la fecha y hora de despliegue sugeridas, la opción para cualquier período preaprobado, o bien abrir el calendario y seleccionar tres fechas y horas específicas para que IBM pueda elegir la planificación de la actualización.</dd>
 </dl>
 
 
-### Configuración de ventanas de mantenimiento con aprobación previa
+### Configuración de períodos de actualización preaprobados
 {: #preapprovedmaintenance}
 
-Está planificada la ejecución de actualizaciones de mantenimiento no disruptivas durante las ventanas de tiempo preaprobadas. De forma predeterminada, se crean para el sistema dos ventanas de actualizaciones disponibles cada semana. Estas ventanas se suelen establecer para recurrir durante la noche de cada sábado y domingo. Puede cambiar los valores predeterminados de una de las siguientes formas:
- * Edite las ventanas de actualización predeterminadas seleccionando un día distinto o una hora de inicio distinta, o los dos
- * Cree una ventana de actualización y, a continuación, suprima la ventana de actualización predeterminada
+Está planificada la ejecución de actualizaciones de mantenimiento no disruptivas durante los períodos de tiempo preaprobados. De forma predeterminada, se crean para el sistema dos períodos de actualizaciones disponibles cada semana. Estos períodos se suelen establecer para recurrir durante la noche de cada sábado y domingo. Puede cambiar los valores predeterminados de una de las siguientes formas:
+ * Edite los períodos de actualización predeterminados seleccionando un día distinto o una hora de inicio distinta, o los dos
+ * Cree un período de actualización y, a continuación, suprima el período de actualización predeterminado
 
 Para guardar los cambios, debe seguir cumpliendo el mínimo de tiempo necesario cada semana.
 
-Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínimo de dos días durante cada semana. Por ejemplo, puede establecer ventanas de seis horas en dos días independientes, o puede establecer ventanas de cuatro horas en tres días independientes. Para asegurarse de que las ventanas proporcionan el tiempo suficiente para aplicar una actualización, cada ventana debe tener una duración mínima de 4 horas.  
+Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínimo de dos días durante cada semana. Por ejemplo, puede establecer períodos de seis horas en dos días independientes, o puede establecer períodos de cuatro horas en tres días independientes. Para asegurarse de que los períodos proporcionan el tiempo suficiente para aplicar una actualización, cada período debe tener una duración mínima de 4 horas.  
 
 **Nota**: los usuarios con permiso de superusuario (`ops.admin`) son los únicos que pueden planificar y aprobar actualizaciones de mantenimiento.
 
 1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes &gt; Gestionar disponibilidad**.
-2. Expanda la sección **Gestionar ventanas de actualización disponibles**.
+2. Vaya a la sección **Períodos de actualización**.
 3. Pulse **Añadir nuevo**.
-4. Establezca la primera ventana de disponibilidad seleccionando la frecuencia, duración y hora de inicio para la ventana.
-5. Opcional: seleccione **Marcar como preferido** si le gustaría establecer su ventana de disponibilidad recurrente como la hora preferida para que se planifiquen los despliegues. Las ventanas preferidas tienen prioridad, siempre que sea posible.
+4. Establezca el primer período de actualización seleccionando la frecuencia, duración y hora de inicio del período.
+5. Opcional: seleccione **Marcar como preferido** si desea establecer su período de actualización recurrente como la hora preferida para que se planifiquen los despliegues. Los períodos preferidos tienen prioridad, siempre que sea posible.
 6. Pulse **Enviar**.
-7. Repita este proceso hasta que haya satisfecho los requisitos mínimos para las ventanas semanales.
+7. Repita este proceso hasta que haya satisfecho los requisitos mínimos para los períodos semanales.
 
-### Configuración de ventanas de mantenimiento no disponibles
+### Establecimiento de períodos de no disponibilidad
 {: #blockpreapprovedmaintenance}
 
-Puede elegir establecer ventanas de tiempo de actualización no disponibles específicas en las que el entorno no está disponible para actualizaciones de mantenimiento no disruptivas. Por ejemplo, puede elegir vacaciones o un fin de semana con mucho tráfico cuando no desea que se aplique ningún mantenimiento para garantizar que las aplicaciones están disponibles para los usuarios.
-
-Debe establecer un mínimo de 12 horas disponibles a la semana durante un mínimo de dos días durante cada semana. Si intenta crear una ventana de actualización no disponible, es posible que no pueda guardar los cambios si esta ventana nueva hace que el sistema caiga por debajo del mínimo semanal requerido. En este caso, primero debe eliminar algunas de las ventanas de actualización no disponible existentes o añadir más ventanas de actualización disponible antes de guardar la nueva ventana de actualización no disponible. Consulte [Configuración de ventanas de mantenimiento con aprobación previa](index.html#preapprovedmaintenance) para obtener más información.
+Puede elegir establecer períodos de tiempo de no disponibilidad específicos en los que el entorno no está disponible para actualizaciones de mantenimiento no disruptivas. Por ejemplo, puede elegir vacaciones o un fin de semana con mucho tráfico cuando no desea que se aplique ningún mantenimiento para garantizar que las aplicaciones están disponibles para los usuarios.
 
 1. Vaya a **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA &gt; *Número* pendientes &gt; Gestionar disponibilidad**.
-2. Expanda la sección **Gestionar ventanas de actualización no disponibles**.
+2. Vaya a la sección **Períodos de no disponibilidad**.
 3. Pulse **Añadir nuevo**.
-4. Establezca una ventana no disponible seleccionando la frecuencia, duración y hora de inicio para la ventana.
+4. Establezca el período de no disponibilidad seleccionando la frecuencia, duración y hora de inicio del período.
 5. Pulse **Enviar**.
+
+Las fechas de no disponibilidad requieren aprobación de IBM, y el tiempo que se tarda en obtener la aprobación puede variar. Al aprobarse las fechas de no disponibilidad solicitadas, IBM cancelará todas las actualizaciones existentes que actualmente estén planificadas durante el período de no disponibilidad. IBM también creará nuevos registros para estas actualizaciones y las planificará fuera de las fechas de no disponibilidad aprobadas.
 
 ### Planificación y aprobación de actualizaciones
 {: #scheduleandapprove}
 
-Después de establecer las ventanas de mantenimiento con aprobación previa, las actualizaciones no disruptivas se planificarán automáticamente durante estas horas. La aprobación explícita para estos tipos de actualizaciones no es necesaria. Sin embargo, puede ver los detalles para cada actualización de mantenimiento incluyendo lo que se está actualizando, el tiempo que tardará la actualización y cuando se ha planificado la actualización.
+Después de establecer los períodos de actualización, las actualizaciones no disruptivas se planificarán automáticamente durante estas horas. La aprobación explícita para estos tipos de actualizaciones no es necesaria. Sin embargo, puede ver los detalles para cada actualización de mantenimiento incluyendo lo que se está actualizando, el tiempo que tardará la actualización y cuando se ha planificado la actualización.
 
 Para ver los detalles para una actualización no disruptiva, realice los siguientes pasos:
 
@@ -276,7 +276,7 @@ Para ver los detalles para una actualización no disruptiva, realice los siguien
 2. Identifique todas las filas que tengan **Planificación de cliente necesaria** establecida en **No**.
 3. Seleccione la fila para esa actualización para ver los detalles.
 
-Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Debe planificar y aprobar cada una de estas ventanas de mantenimiento dentro de la ventana de mantenimiento de 21 días asignada. Puede seleccionar la fecha y hora de despliegue sugeridas, la opción para cualquier ventana ya aprobada, o bien abrir el calendario y seleccionar tres fechas y horas específicas para que IBM pueda elegir la planificación de la actualización.
+Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Debe planificar y aprobar cada uno de estos períodos de mantenimiento dentro del período de mantenimiento de 21 días asignado. Puede seleccionar la fecha y hora de despliegue sugeridas, la opción para cualquier período preaprobado, o bien abrir el calendario y seleccionar tres fechas y horas específicas para que IBM pueda elegir la planificación de la actualización.
 
 Para las actualizaciones disruptivas que no requieran su aprobación, realice los siguientes pasos:
 
@@ -284,11 +284,11 @@ Para las actualizaciones disruptivas que no requieran su aprobación, realice lo
 2. Identifique todas las filas que tengan **Planificación de cliente necesaria** establecida en **Sí**.
 3. Seleccione la fila para esa actualización para revisar los detalles para la actualización incluida la descripción de la actualización, la fecha y hora sugerida para la actualización, los componentes afectados y la duración para la actualización.
 4. Seleccione **Planificar y aprobar**.
-5. Elija entre las siguientes opciones: **Fecha sugerida**, **Fechas alternativas** o **Cualquier ventana ya aprobada**. Si selecciona **Fechas alternativas**, puede abrir el calendario para seleccionar tres opciones entre las que IBM pueda elegir.
-6. Opcional: en la lista de fechas alternativas seleccionadas en el calendario, seleccione las que desee establecer como fechas preferidas para el despliegue. Cada fecha seleccionada se anota como preferida para el desplegador que planifica el despliegue. IBM intentará planificar el mantenimiento durante las ventanas de actualización preferidas.
+5. Elija entre las siguientes opciones: **Fecha sugerida**, **Fechas alternativas** o **Cualquier período preaprobado**. Si selecciona **Fechas alternativas**, puede abrir el calendario para seleccionar tres opciones entre las que IBM pueda elegir.
+6. Opcional: en la lista de fechas alternativas seleccionadas en el calendario, seleccione las que desee establecer como fechas preferidas para el despliegue. Cada fecha seleccionada se anota como preferida para el desplegador que planifica el despliegue. IBM intentará planificar el mantenimiento durante los períodos de actualización preferidos.
 7. Seleccione **Enviar** cuando haya finalizado.
 
-Basándose en la selección, la actualización se planifica para el despliegue durante la fecha sugerida que acepte, durante una de las ventanas con aprobación previa, o en una de las fechas y horas seleccionadas. Cuando la actualización ha sido planificada para el despliegue por IBM, verá la fecha planificada reflejada en los detalles para la actualización en la página **Actualizaciones del sistema**. Puede volver a plantificar un despliegue ya planificado únicamente si queda un día (24 horas) para la fecha y hora de inicio planificadas. Una vez que haya vuelto a plantificar un despliegue, no podrá volver a planificarlo de nuevo.
+Basándose en la selección, la actualización se planifica para el despliegue durante la fecha sugerida que acepte, durante uno de los períodos preaprobados, o en una de las fechas y horas seleccionadas. Cuando la actualización ha sido planificada para el despliegue por IBM, verá la fecha planificada reflejada en los detalles para la actualización en la página **Actualizaciones de mantenimiento**. Puede volver a plantificar un despliegue ya planificado únicamente si queda un día (24 horas) para la fecha y hora de inicio planificadas. Una vez que haya vuelto a plantificar un despliegue, no podrá volver a planificarlo de nuevo.
 
 
 ## Visualización de la información del sistema
@@ -306,12 +306,12 @@ que requieren acción por su parte. Hay dos tipos que se pueden ver:
 
 <dl>
 <dt>Actualizaciones no disruptivas</dt>
-<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso. Estas actualizaciones se aplican en las ventanas de mantenimiento disponibles y con aprobación previa que establece desde la página Actualizaciones del sistema.</dd>
+<dd>Una actualización no disruptiva no afecta al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. Este tipo de actualización no requiere aprobación caso por caso. Estas actualizaciones se aplican en los períodos de actualización preaprobados que establece desde la página Actualizaciones del sistema.</dd>
 <dt>Actualizaciones disruptivas</dt>
-<dd>Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. El usuario tiene la capacidad de planificar y aprobar cada una de estas actualizaciones de mantenimiento con la ventana de mantenimiento de 21 días asignada para asegurarse de que la actualización no se aplica durante las horas empresariales críticas. Puede seleccionar una fecha y hora de despliegue sugerida basándose en las ventanas de actualización con aprobación previa, o puede seleccionar dos horas y fechas adicionales para que IBM elija una de ellas para aplicar la actualización.</dd>
+<dd>Una actualización disruptiva puede afectar al entorno, a las aplicaciones en ejecución o al acceso de los usuarios a las aplicaciones. El usuario tiene la capacidad de planificar y aprobar cada una de estas actualizaciones de mantenimiento con el período de mantenimiento de 21 días asignado para asegurarse de que la actualización no se aplica durante las horas empresariales críticas. Puede seleccionar una fecha y hora de despliegue sugerida basándose en los períodos de actualización preaprobados, o puede seleccionar dos horas y fechas adicionales para que IBM elija una de ellas para aplicar la actualización.</dd>
 </dl>
 
-Para obtener más información sobre el establecimiento de ventanas de mantenimiento preaprobadas y el establecimiento de fechas no disponibles específicas para mantenimiento, consulte [Actualizaciones de mantenimiento](index.html#oc_schedulemaintenance).
+Para obtener más información sobre cómo establecer períodos de actualización preaprobados y fechas de no disponibilidad para mantenimiento, consulte [Actualizaciones de mantenimiento](index.html#oc_schedulemaintenance).
 
 ### Información general del sistema
 
@@ -389,7 +389,7 @@ El separador **Servicio** muestra la utilización total del servicio con relaci�
 
 **Nota**: Actualmente, la información de consumo del servicio podría no estar disponible en todos los entornos. Esta característica está disponible para Cloudant, MessageHub, API Connect y Session Cache.
 
-
+**Nota**: Un clúster de Cloudant está formado por al menos 3 nodos, y cada documento de la base de datos está replicado entre 3 nodos para obtener alta disponibilidad y recuperación tras desastre. La información de uso del servicio Cloudant incluye el espacio disponible y el espacio asignado de todos los nodos que forman el clúster. Por ejemplo, si un solo clúster de Cloudant contiene 3 nodos, cada uno con 1000 GB de capacidad, el límite de capacidad se mostrará como 3000 GB. El porcentaje consumido incluye todos los documentos que se encuentran en todos los nodos.
 
 ### Uso de cuenta
 {: #accountusage}
@@ -490,7 +490,7 @@ La tabla siguiente muestra la lista de los informes de seguridad generados para 
 | [Revisiones de acceso](/docs/hybrid/reports.html#securityreportsmgmt) | Revisiones para accesos privilegiados. |
 | Gestión de cambios de software | Actividad de gestión de cambios. |
 | [Gestión de certificados de clave](/docs/hybrid/reports.html#keymgmt) | Operaciones de gestión de certificados de clave. |
-| [Notificaciones del sistema](/docs/hybrid/reports.html#systemnotifications) | Sucesos relacionados con la configuración de suscripciones de notificaciones o ventanas de despliegue de actualización de software. |
+| [Notificaciones del sistema](/docs/hybrid/reports.html#systemnotifications) | Sucesos relacionados con la configuración de suscripciones de notificaciones o períodos de despliegue de actualizaciones de software. |
 
 {: caption="Tabla 9. Lista de informes de seguridad" caption-side="top"}
 
@@ -1436,7 +1436,7 @@ En las secciones siguientes se proporciona al formato de los datos.
           "percent": 38.99
         }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 3456,
         "total_allocated": {
           "value_gb": 2575.18,
@@ -1452,7 +1452,7 @@ En las secciones siguientes se proporciona al formato de los datos.
         "percent": 38.99
       }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 1728,
       "total_allocated": {
           "value_gb": 1287.59,
@@ -1468,7 +1468,7 @@ En las secciones siguientes se proporciona al formato de los datos.
         "percent": 38.99
       }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 1728,
       "total_allocated": {
           "value_gb": 1287.59,
@@ -1521,7 +1521,7 @@ En las secciones siguientes se proporciona al formato de los datos.
           "percent": 9.96
         }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 32400,
         "total_allocated": {
           "value_gb": 3979,
@@ -1537,7 +1537,7 @@ En las secciones siguientes se proporciona al formato de los datos.
         "percent": 9.96
       }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 16200,
       "total_allocated": {
           "value_gb": 1989.5,
@@ -1553,7 +1553,7 @@ En las secciones siguientes se proporciona al formato de los datos.
         "percent": 9.96
       }
       },
-    "allocated": {
+      "allocated": {
         "reserved_gb": 16200,
       "total_allocated": {
           "value_gb": 1989.5,

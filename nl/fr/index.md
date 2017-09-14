@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-09-07"
 
 ---
 
@@ -215,20 +215,20 @@ Vous pouvez sélectionner n'importe quel abonnement aux notifications sauvegard�
 ## Mises à jour de maintenance
 {: #oc_schedulemaintenance}
 
-Vous pouvez afficher les mises à jour de maintenance planifiées et en attente, si vous disposez du droit de superutilisateur (`ops.admin`), en cliquant sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente** pour accéder à la page **Mises à jour du système**.  Tous les utilisateurs de votre environnement peuvent afficher les événements de mise à jour de maintenance planifiés avec interruption en cliquant sur **Support** &gt; **Statut**.
+Si vous disposez de droits superutilisateur (`ops.admin`), vous pouvez examiner les mises à jour de maintenance planifiées et en attente en cliquant sur **Administration &gt; Informations système &gt; *Nombre* en attente** pour accéder à la page **Mises à jour de maintenance**. Tous les utilisateurs de votre environnement peuvent afficher les événements de mise à jour de maintenance planifiés avec interruption en cliquant sur **Support** &gt; **Statut**.
 
-**Remarque **: reportez-vous tout d'abord à la section [Définition de fenêtres de maintenance pré-approuvées](index.html#preapprovedmaintenance) ci-dessous. Ces fenêtres doivent être définies pour qu'IBM puisse planifier la maintenance de votre environnement.
+**Remarque** : reportez-vous tout d'abord à la section [Définition de fenêtres de mise à jour pré-approuvées](index.html#preapprovedmaintenance) pour vous familiariser. Ces fenêtres doivent être définies pour qu'IBM puisse planifier la maintenance de votre environnement.
 
 <dl>
 <dt>Mises à jour sans interruption</dt>
-<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas et est appliquée au cours des fenêtres de disponibilité pré-approuvées pour la maintenance que vous avez définies dans la page Mises à jour du système.
+<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas et est appliqué au cours des fenêtres de disponibilité pré-approuvées pour la maintenance que vous avez définies dans la page Mises à jour de maintenance.
 <p>**Remarque** : pour certains services de plateforme, la définition d'au moins une fenêtre de changements sans interruption peut s'avérer nécessaire durant un ensemble de créneaux horaires prédéterminés, à la discrétion du service. Vérifiez la description de service de chaque service dédié déployé sur votre environnement.</p></dd>
 <dt>Mises à jour avec interruption</dt>
 <dd>Une mise à jour avec interruption peut avoir un impact sur votre environnement, les applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Vous devez planifier et approuver chacune de ces mises à jour de maintenance dans la fenêtre de maintenance de 21 jours allouée. Vous pouvez sélectionner la date et l'heure de déploiement suggérées, l'option pour n'importe laquelle de vos fenêtres pré-approuvées, ou bien ouvrir le calendrier afin de sélectionner trois dates et heures spécifiques parmi lesquelles IBM pourra choisir pour planifier la mise à jour.</dd>
 </dl>
 
 
-### Définition de fenêtres de maintenance pré-approuvées
+### Définition de fenêtres de mise à jour pré-approuvées
 {: #preapprovedmaintenance}
 
 L'exécution des mises à jour de maintenance sans interruption est planifiée au cours d'une fenêtre de temps préalablement approuvée. Par défaut, deux fenêtres de disponibilité pour les mises à jour par semaine sont créées pour votre système. En général, elles sont définies pour se reproduire tous les samedis et dimanches soir. Vous pouvez changer les paramètres par défaut de l'une des façons suivantes :
@@ -242,30 +242,30 @@ Vous devez définir au minimum 12 heures disponibles réparties sur au moins deu
 **Remarque **: seuls les utilisateurs disposant de l'autorisation de superutilisateur (`ops.admin`) peuvent planifier et approuver des mises à jour de maintenance.
 
 1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente &gt; Gérer la disponibilité**.
-2. Développez la section **Gérer les fenêtres de disponibilité pour les mises à jour**.
+2. Accédez à la section **Fenêtres de mise à jour**.
 3. Cliquez sur **Ajouter**.
-4. Définissez votre première fenêtre de disponibilité en sélectionnant la fréquence, la durée et l'heure de début de la fenêtre.
-5. Facultatif : sélectionnez **Marquer comme préféré** si vous souhaitez définir votre fenêtre de disponibilité récurrente comme période de planification préférée pour vos déploiements. Les fenêtres préférées sont prioritaires, chaque fois que cela est possible.
+4. Définissez votre première fenêtre de mise à jour en sélectionnant la fréquence, la durée et l'heure de début de la fenêtre.
+5. Facultatif : sélectionnez **Marquer comme préféré** si vous souhaitez définir votre fenêtre de mise à jour récurrente comme période de planification préférée pour vos déploiements. Les fenêtres préférées sont prioritaires, chaque fois que cela est possible.
 6. Cliquez sur **Soumettre**.
 7. Répétez ce processus jusqu'à ce que vous ayez rempli les exigences minimales pour les fenêtres hebdomadaires.
 
-### Définition de fenêtres d'indisponibilité pour la maintenance
+### Définition de fenêtres d'indisponibilité
 {: #blockpreapprovedmaintenance}
 
-Vous pouvez choisir de définir des fenêtres d'indisponibilité pour les mises à jour spécifiques au cours desquelles votre environnement ne peut pas faire l'objet de mises à jour de maintenance sans interruption. Par exemple, vous pouvez choisir un week-end ou un jour férié pendant lequel l'activité est élevée et vous ne voulez pas appliquer de maintenance, afin de garantir que vos applications seront disponibles pour vos utilisateurs.
-
-Vous devez définir au minimum 12 heures disponibles réparties sur au moins deux jours de la semaine. Lorsque vous tentez de créer une fenêtre d'indisponibilité pour les mises à jour, il se peut que vous ne parveniez pas à sauvegarder vos modifications si avec cette nouvelle fenêtre, votre système passe sous le minimum hebdomadaire requis. Dans ce cas, vous devez d'abord supprimer certaines des fenêtres d'indisponibilité pour les mises à jour existantes et ajouter d'autres fenêtres de disponibilité pour les mises à jour avant de pouvoir sauvegarder la nouvelle fenêtre d'indisponibilité pour les mises à jour. Voir [Définition de fenêtres de maintenance pré-approuvées](index.html#preapprovedmaintenance) pour plus d'informations.
+Vous pouvez choisir de définir des fenêtres d'indisponibilités spécifiques au cours desquelles votre environnement ne peut pas faire l'objet de mises à jour de maintenance sans interruption. Par exemple, vous pouvez choisir un week-end ou un jour férié pendant lequel l'activité est élevée et vous ne voulez pas appliquer de maintenance, afin de garantir que vos applications seront disponibles pour vos utilisateurs.
 
 1. Accédez à **ADMINISTRATION &gt; INFORMATIONS SYSTEME &gt; *Nombre* en attente &gt; Gérer la disponibilité**.
-2. Développez la section **Gérer les fenêtres d'indisponibilité pour les mises à jour**.
+2. Accédez à la section **Fenêtres d'indisponibilité**.
 3. Cliquez sur **Ajouter**.
 4. Définissez votre fenêtre d'indisponibilité en sélectionnant la fréquence, la durée et l'heure de début de la fenêtre.
 5. Cliquez sur **Soumettre**.
 
+Les dates d'indisponibilité doivent être approuvées par IBM et le délai d'approbation est variable. Une fois les dates acceptées, IBM annule toutes les mises à jour actuellement prévues dans le cadre de la fenêtre d'indisponibilité. IBM crée également de nouveaux enregistrements pour ces mises à jour et planifie ces dernières en dehors des dates d'indisponibilité approuvées.
+
 ### Planification et approbation des mises à jour
 {: #scheduleandapprove}
 
-Une fois que vous avez défini vos fenêtres de maintenance pré-approuvées, les mises à jour sans interruption sont planifiées automatiquement à ces heures. Votre approbation explicite pour ces types de mise à jour n'est pas requise. Toutefois, vous pouvez afficher les détails de chaque mise à jour de maintenance, notamment les éléments mis à jour, la durée de la mise à jour et l'heure de planification de la mise à jour.
+Une fois que vous avez défini vos fenêtres de mise à jour, les mises à jour sans interruption sont planifiées automatiquement à ces heures. Votre approbation explicite pour ces types de mise à jour n'est pas requise. Toutefois, vous pouvez afficher les détails de chaque mise à jour de maintenance, notamment les éléments mis à jour, la durée de la mise à jour et l'heure de planification de la mise à jour.
 
 Afin d'afficher les détails d'une mise à jour sans interruption, procédez comme suit :
 
@@ -285,7 +285,7 @@ Pour les mises à jour avec interruption requérant votre approbation, procédez
 6. Facultatif : dans la liste des autres dates sélectionnées dans le calendrier, sélectionnez celles que vous souhaitez définir comme date préférées pour le déploiement. Chaque date sélectionnée est indiquée comme date préférée pour le déployeur qui planifie le déploiement. IBM essaie de planifier la maintenance dans les fenêtres de mises à jour préférées.
 7. Quand vous avez terminé, cliquez sur **Soumettre**.
 
-En fonction de votre sélection, la mise à jour est planifiée pour son déploiement à la date suggérée que vous avez acceptée, lors d'une des fenêtres pré-approuvées ou à l'une des dates et heures spécifiques que vous avez sélectionnées. Lorsque la mise à jour est planifiée pour son déploiement par IBM, la date planifiée est indiquée dans les détails de la mise à jour sur la page **Mises à jour du système**. Vous pouvez replanifier un déploiement déjà planifié uniquement si un jour (24 heures) avant la date et l'heure de début planifiées est conservé. Une fois que vous avez replanifié un déploiement, vous ne pouvez plus le redéployer à nouveau.
+En fonction de votre sélection, la mise à jour est planifiée pour son déploiement à la date suggérée que vous avez acceptée, lors d'une des fenêtres pré-approuvées ou à l'une des dates et heures spécifiques que vous avez sélectionnées. Lorsque la mise à jour est planifiée de manière à être déployée par IBM, la date planifiée apparaît dans les détails de la mise à jour sur la page **Mises à jour de maintenance**. Vous pouvez replanifier un déploiement déjà planifié uniquement si un jour (24 heures) avant la date et l'heure de début planifiées est conservé. Une fois que vous avez replanifié un déploiement, vous ne pouvez plus le redéployer à nouveau.
 
 
 ## Affichage des informations système
@@ -301,12 +301,12 @@ La section Mises à jour affiche le nombre de notifications relatives à des mis
 
 <dl>
 <dt>Mises à jour sans interruption</dt>
-<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas. Ces mises à jour sont appliquées au cours des fenêtres de disponibilité pré-approuvées pour la maintenance que vous avez définies dans la page Mises à jour du système.</dd>
+<dd>Une mise à jour sans interruption n'a pas d'impact sur votre environnement, vos applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Ce type de mise à jour ne requiert pas d'approbation au cas par cas. Ces mises à jour sont appliquées dans les fenêtres de mise à jour pré-approuvées que vous avez définies sur la page Mises à jour du système.</dd>
 <dt>Mises à jour avec interruption</dt>
 <dd>Une mise à jour avec interruption peut avoir un impact sur votre environnement, les applications en cours d'exécution ou l'accès de vos utilisateurs à vos applications. Vous pouvez planifier et approuver chacune de ces mises à jour de maintenance dans la fenêtre de maintenance de 21 jours allouée pour vous assurer que la mise à jour ne sera pas appliquée pendant les heures de bureau critiques. Vous pouvez sélectionner la date et l'heure de déploiement suggérées en fonction de vos fenêtres de mise à jour pré-approuvées ou sélectionner deux combinaisons date-heure supplémentaires parmi lesquelles IBM pourra choisir lors de l'application de la mise à jour.</dd>
 </dl>
 
-Pour plus d'informations sur la définition de fenêtres de maintenance pré-approuvées et la définition de dates d'indisponibilité spécifiques pour la maintenance, voir [Mises à jour de maintenance](index.html#oc_schedulemaintenance).
+Pour plus d'informations sur la définition de fenêtres de mise à jour pré-approuvées, ainsi que sur la définition de dates d'indisponibilité spécifiques pour la maintenance, voir [Mises à jour de maintenance](index.html#oc_schedulemaintenance).
 
 ### Informations système générales
 
@@ -384,7 +384,7 @@ L'onglet **Service** affiche l'utilisation totale du service par rapport à la c
 
 **Remarque** : à l'heure actuelle, il se peut que les informations sur la consommation du service ne soient pas disponibles dans tous les environnements. Cette fonction est disponible pour Cloudant, MessageHub, API Connect et Session Cache.
 
-
+**Remarque** : un cluster Cloudant se compose d'au moins 3 noeuds, et chaque document au sein de la base de données est répliqué dans 3 noeuds pour la haute disponibilité et la reprise après incident. Les informations relatives à l'utilisation du service Cloudant incluent l'espace disponible et l'espace alloué dans tous les noeuds qui font partie du cluster. Par exemple, si un cluster Cloudant unique contient 3 noeuds, chacun d'une capacité de 1000 Go, la limite de capacité est de 3000 Go. Le pourcentage de consommation englobe tous les documents de tous les noeuds.
 
 ### Utilisation du compte
 {: #accountusage}

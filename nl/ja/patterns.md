@@ -3,7 +3,7 @@
 
 
 copyright:years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -32,7 +32,7 @@ lastupdated: "2017-04-07"
 プロジェクトのニーズに対応するために、{{site.data.keyword.Bluemix}} では 3 つのタイプのクラウド環境が提供されています。
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): インフラストラクチャー・リソースが、異なる会社およびユーザーで共有されます。
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): {{site.data.keyword.Bluemix_notm}} Public クラウドと独自のネットワークに安全に接続できる、専用の SoftLayer インフラストラクチャーを使用します。
+* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): {{site.data.keyword.Bluemix_notm}} Public クラウドと独自のネットワークに安全に接続できる、専用の {{site.data.keyword.BluSoftlayer_notm}} を使用します。
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): 機密性の高いワークロードを保護し、{{site.data.keyword.Bluemix_notm}} Public クラウドおよび {{site.data.keyword.Bluemix_notm}} Dedicated クラウドに安全に接続できる企業ファイアウォールの後ろに位置します。
 
 必要なクラウド環境のタイプを決定する一環として、アカウント、組織、スペース、リソース、およびチーム・メンバーの構造を計画します。

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -34,7 +34,7 @@ Beim Entwurf einer Cloudlösung sind darüber hinaus auch Aspekte der Kontosiche
 Zur Erfüllung Ihrer jeweiligen Projektanforderungen werden mit {{site.data.keyword.Bluemix}} drei Typen von Cloudumgebungen angeboten.
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): Die Infrastrukturressourcen werden von verschiedenen Unternehmen und Benutzern gemeinsam genutzt.
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): Sie verwenden eine eigene dedizierte SoftLayer-Infrastruktur, die Sie sicher mit der {{site.data.keyword.Bluemix_notm}} Public-Cloud und dem eigenem Netz verbinden können.
+* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): Sie verwenden eine eigene dedizierte Instanz von {{site.data.keyword.BluSoftlayer_notm}}, die Sie sicher mit der {{site.data.keyword.Bluemix_notm}} Public-Cloud und dem eigenem Netz verbinden können.
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): Diese Infrastruktur befindet sich hinter der Firewall Ihres Unternehmens, die Ihre sensibelsten Workloads schützen und sichere Verbindungen zu {{site.data.keyword.Bluemix_notm}} Public- und {{site.data.keyword.Bluemix_notm}} Dedicated-Clouds herstellen kann.
 
 Planen Sie bei der Entscheidung, welcher Typ von Cloudumgebung benötigt wird, die Struktur Ihrer Konten, Organisationen, Bereiche, Ressourcen und Teammitglieder.

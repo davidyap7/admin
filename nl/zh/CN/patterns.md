@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -33,7 +33,7 @@ lastupdated: "2017-04-07"
 设计云解决方案时，还请考虑帐户安全和运营需求、国家或地区法规、市场监管指令以及公司政策。为了满足项目需求，{{site.data.keyword.Bluemix}} 提供了三种类型的云环境。
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public")：基础架构资源由不同的公司和用户共享。
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated")：您使用自己的专用 SoftLayer 基础架构，通过该基础架构，可以安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 云和您自己的网络。
+* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated")：您使用自己的专用 {{site.data.keyword.BluSoftlayer_notm}}，可安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 云和您自己的网络。
 * [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local")：位于公司防火墙后，可以保护您最敏感的工作负载，并可以安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 云和 {{site.data.keyword.Bluemix_notm}} Dedicated 云。
 
 在决定需要的云环境类型的同时，请规划帐户、组织、空间、资源和团队成员的结构。

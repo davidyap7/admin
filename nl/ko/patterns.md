@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-07"
+lastupdated: "2017-08-30"
 
 
 ---
@@ -33,7 +33,7 @@ lastupdated: "2017-04-07"
 클라우드 솔루션을 디자인할 때 계정 보안과 운영 요구사항, 지역 규정, 시장 지침과 기업 정책에 대해서도 생각하십시오. 프로젝트 요구사항을 충족하도록 {{site.data.keyword.Bluemix}}에서 세 가지 유형의 클라우드 환경을 제공합니다.
 
 * [{{site.data.keyword.Bluemix_notm}} 퍼블릭](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} 퍼블릭"): 여러 회사와 사용자가 인프라 리소스를 공유합니다.
-* [{{site.data.keyword.Bluemix_notm}} 데디케이티드](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} 데디케이티드"): {{site.data.keyword.Bluemix_notm}} 퍼블릭 클라우드와 고유 네트워크에 안전하게 연결할 수 있는 고유 데디케이티드 SoftLayer 인프라를 사용합니다.
+* [{{site.data.keyword.Bluemix_notm}} 데디케이티드](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} 데디케이티드"): {{site.data.keyword.Bluemix_notm}} 퍼블릭 클라우드와 고유 네트워크에 안전하게 연결할 수 있는 고유 데디케이티드 {{site.data.keyword.BluSoftlayer_notm}}를 사용합니다.
 * [{{site.data.keyword.Bluemix_notm}} 로컬](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} 로컬"): 회사 방화벽 뒤에 위치하여 대부분의 중요한 워크로드를 보호하고 {{site.data.keyword.Bluemix_notm}} 퍼블릭 클라우드와 {{site.data.keyword.Bluemix_notm}} 데디케이티드 클라우드에 안전하게 연결할 수 있습니다.
 
 필요한 클라우드 환경의 유형을 결정하는 과정의 일부로 계정, 조직, 영역, 리소스 및 팀 구성원의 구조를 계획하십시오.
