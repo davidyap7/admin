@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-06-06"
+lastupdated: "2017-09-12"
 
 
 ---
@@ -75,3 +75,10 @@ Siga estos pasos para enlazar cada cuenta a una cuenta de {{site.data.keyword.Bl
 3. Después de que haya enlazado la cuenta, informe al usuario final de cada cuenta para que migre a un IBMid siguiendo el procedimiento que se ha descrito en la sección anterior.
 
 **Recomendación**: Migre únicamente cuentas de usuario final a IBMid. No migre cuentas derivadas, que son cuentas padre de cuentas de usuario final y no contienen recursos. Los usuarios de cuentas derivadas que migren a un IBMid pierden la posibilidad de iniciar una sesión en el Brand Agent Portal (BAP).  
+
+## Uso de la autenticación de dos factores en cuentas enlazadas
+{: #2fa}
+
+Si ha habilitado la autenticación de dos factores para su cuenta existente de SoftLayer, se le seguirá pidiendo que especifique el código de seguridad cuando inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Sin embargo, la autenticación de dos factores sólo se aplica a los recursos de la cuenta de Infraestructura. Puede realizar varias acciones en los recursos en su cuenta de {{site.data.keyword.Bluemix_notm}} sin realizar la autenticación de dos factores.
+
+La autenticación de dos factores no es por IBMid. Sigue siendo por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.

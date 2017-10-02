@@ -384,7 +384,7 @@ La scheda **Servizio** mostra l'utilizzo totale del servizio in relazione alla c
 
 **Nota**: in questo momento, le informazioni sul consumo del servizio potrebbero non essere disponibili in tutti gli ambienti. Questa funzione è disponibile per Cloudant, MessageHub, API Connect e Session Cache.
 
-**Nota**: un cluster Cloudant è costituito da almeno 3 nodi e ogni documento nel database viene replicato nei 3 nodi per garantire l'alta disponibilità e il ripristino di emergenza. Le informazioni di utilizzo del servizio Cloudant includono lo spazio disponibile e lo spazio assegnato in tutti i nodi che costituiscono il cluster. Ad esempio, se un singolo cluster Cloudant contiene 3 nodi, ognuno con una capacità di 1000 GB, il limite di capacità verrà mostrato come 3000 GB.  La percentuale consumata comprende tutti i documenti presenti su tutti i nodi.
+**Nota**: un cluster Cloudant è costituito da almeno 3 nodi e ogni documento nel database viene replicato nei 3 nodi per garantire l'alta disponibilità e il ripristino di emergenza.  Le informazioni di utilizzo del servizio Cloudant includono lo spazio disponibile e lo spazio assegnato in tutti i nodi che costituiscono il cluster.  Ad esempio, se un singolo cluster Cloudant contiene 3 nodi, ognuno con una capacità di 1000 GB, il limite di capacità verrà mostrato come 3000 GB.  La percentuale consumata comprende tutti i documenti presenti su tutti i nodi.
 
 ### Utilizzo dell'account
 {: #accountusage}
@@ -785,7 +785,7 @@ Puoi creare degli spazi nella tua organizzazione; ad esempio,
 uno spazio *dev* come un ambiente di sviluppo,
 uno spazio *test* come un ambiente di test e uno
 spazio *production* come un ambiente di produzione. Puoi quindi associare
-le tue applicazioni agli spazi. Per creare uno spazio completa la seguente procedura:
+le tue applicazioni agli spazi. Per creare uno spazio, completa la seguente procedura:
 
 1. Dalla barra dei menu, fai clic su **Account** &gt; **Gestisci organizzazioni**.
 2. Seleziona l'organizzazione a cui vuoi aggiungere uno spazio.

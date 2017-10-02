@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-06-06"
+lastupdated: "2017-09-12"
 
 
 ---
@@ -75,3 +75,10 @@ Completa la seguente procedura per collegare tutti gli account all'account {{sit
 3. Dopo aver collegato l'account, informa l'utente finale di ogni account di migrare all'ID IBM utilizzando la procedura descritta nella sezione precedente.
 
 **Raccomandazione**: migra solo gli account dell'utente finale all'ID IBM. Non migrare gli account dell'azienda che sono account principali per gli account utente finale e non contengono alcuna risorsa. Gli utenti degli account dell'azienda che eseguono la migrazione all'ID IBM perdono la possibilità di accedere al portale BAP (Brand Agent Portal).  
+
+## Utilizzo dell'autenticazione a due fattori negli account collegati
+{: #2fa}
+
+Se hai abilitato l'autenticazione a due fattori per il tuo account SoftLayer esistente, ti verrà ancora richiesto di immettere il tuo codice di sicurezza quando accedi alla console {{site.data.keyword.Bluemix_notm}}. Tuttavia, l'autenticazione a due fattori si applica solo alle risorse nel tuo account Infrastruttura. Potresti essere in grado di effettuare diverse operazioni sulle risorse nel tuo account {{site.data.keyword.Bluemix_notm}} senza dover eseguire l'autenticazione a due fattori.
+
+L'autenticazione a due fattori non è per ogni ID IBM, ma è tuttora per ogni account. Quando un ID IBM è associato a più account e tu passi da un account all'altro, devi confermare la tua identità ogni volta che passi a un account diverso che richiede l'autenticazione a due fattori. Ciò è vero anche se l'account precedente e il nuovo account sono entrambi configurati con lo stesso meccanismo di autenticazione a due fattori.

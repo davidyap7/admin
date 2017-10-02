@@ -215,7 +215,7 @@ Vous pouvez sélectionner n'importe quel abonnement aux notifications sauvegard�
 ## Mises à jour de maintenance
 {: #oc_schedulemaintenance}
 
-Si vous disposez de droits superutilisateur (`ops.admin`), vous pouvez examiner les mises à jour de maintenance planifiées et en attente en cliquant sur **Administration &gt; Informations système &gt; *Nombre* en attente** pour accéder à la page **Mises à jour de maintenance**. Tous les utilisateurs de votre environnement peuvent afficher les événements de mise à jour de maintenance planifiés avec interruption en cliquant sur **Support** &gt; **Statut**.
+Si vous disposez de droits superutilisateur (`ops.admin`), vous pouvez examiner les mises à jour de maintenance planifiées et en attente en cliquant sur **Administration &gt; Informations système &gt; *Nombre* en attente** pour accéder à la page **Mises à jour de maintenance**.  Tous les utilisateurs de votre environnement peuvent afficher les événements de mise à jour de maintenance planifiés avec interruption en cliquant sur **Support** &gt; **Statut**.
 
 **Remarque** : reportez-vous tout d'abord à la section [Définition de fenêtres de mise à jour pré-approuvées](index.html#preapprovedmaintenance) pour vous familiariser. Ces fenêtres doivent être définies pour qu'IBM puisse planifier la maintenance de votre environnement.
 
@@ -384,7 +384,7 @@ L'onglet **Service** affiche l'utilisation totale du service par rapport à la c
 
 **Remarque** : à l'heure actuelle, il se peut que les informations sur la consommation du service ne soient pas disponibles dans tous les environnements. Cette fonction est disponible pour Cloudant, MessageHub, API Connect et Session Cache.
 
-**Remarque** : un cluster Cloudant se compose d'au moins 3 noeuds, et chaque document au sein de la base de données est répliqué dans 3 noeuds pour la haute disponibilité et la reprise après incident. Les informations relatives à l'utilisation du service Cloudant incluent l'espace disponible et l'espace alloué dans tous les noeuds qui font partie du cluster. Par exemple, si un cluster Cloudant unique contient 3 noeuds, chacun d'une capacité de 1000 Go, la limite de capacité est de 3000 Go. Le pourcentage de consommation englobe tous les documents de tous les noeuds.
+**Remarque** : un cluster Cloudant se compose d'au moins 3 noeuds, et chaque document au sein de la base de données est répliqué dans 3 noeuds pour la haute disponibilité et la reprise après incident.  Les informations relatives à l'utilisation du service Cloudant incluent l'espace disponible et l'espace alloué dans tous les noeuds qui font partie du cluster.  Par exemple, si un cluster Cloudant unique contient 3 noeuds, chacun d'une capacité de 1000 Go, la limite de capacité est de 3000 Go.  Le pourcentage de consommation englobe tous les documents de tous les noeuds.
 
 ### Utilisation du compte
 {: #accountusage}

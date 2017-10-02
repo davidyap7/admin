@@ -215,7 +215,7 @@ Quando a notificação de assinatura é salva, você recebe notificações por m
 ## Atualizações de Manutenção
 {: #oc_schedulemaintenance}
 
-Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações de manutenção**. Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
+Será possível visualizar atualizações de manutenção planejadas e pendentes, se você tiver a permissão de superusuário (`ops.admin`), clicando em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA &gt; *Número* pendente** para acessar a página **Atualizações de manutenção**.  Todos os usuários de seu ambiente podem visualizar os eventos de atualização de manutenção disruptiva planejada, clicando em **Suporte** &gt; **Status**.
 
 **Nota**: veja a seção a seguir para [Configurar janelas de atualização pré-aprovadas](index.html#preapprovedmaintenance) para iniciar. Essas janelas devem ser configuradas em ordem para a IBM planejar a manutenção para o seu ambiente.
 
@@ -386,7 +386,7 @@ A guia **Serviço** mostra o uso total de serviço em relação à capacidade m�
 
 **Nota**: as informações de consumo de serviço poderão não estar disponíveis em todos os ambientes neste momento. Esse recurso está disponível para o Cloudant, o MessageHub, o API Connect e o Session Cache.
 
-**Nota**: um cluster do Cloudant consiste em pelo menos 3 nós e cada documento no banco de dados é replicado em 3 nós para alta disponibilidade e recuperação de desastre. As informações de uso do serviço Cloudant incluem espaço disponível e espaço alocado em todos os nós que compõem o cluster. Por exemplo, se um único cluster do Cloudant contiver 3 nós, cada um com 1000 GB de capacidade, o limite de capacidade será mostrado como 3000 GB. O percentual consumido inclui todos os documentos localizados em todos os nós.
+**Nota**: um cluster do Cloudant consiste em pelo menos 3 nós e cada documento no banco de dados é replicado em 3 nós para alta disponibilidade e recuperação de desastre.  As informações de uso do serviço Cloudant incluem espaço disponível e espaço alocado em todos os nós que compõem o cluster.  Por exemplo, se um único cluster do Cloudant contiver 3 nós, cada um com 1000 GB de capacidade, o limite de capacidade será mostrado como 3000 GB.  O percentual consumido inclui todos os documentos localizados em todos os nós.
 
 ### Uso de conta
 {: #accountusage}

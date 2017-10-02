@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-06-06"
+lastupdated: "2017-09-12"
 
 
 ---
@@ -75,3 +75,10 @@ Pour lier chaque compte à un compte {{site.data.keyword.Bluemix_notm}}, procéd
 3. Après avoir lié le compte, indiquez à l'utilisateur final de chaque compte qu'il doit migrer vers l'IBMid en suivant la procédure décrite dans la section précédente.
 
 **Recommandation** : migrez uniquement les comptes d'utilisateur final vers l'IBMid. Ne migrez pas les comptes de marque, qui sont les comptes parent des comptes utilisateur final et qui ne contiennent aucune ressource. Les utilisateurs des comptes de marque qui migrent vers l'IBMid perdent la possibilité de se connecter à Brand Agent Portal (BAP).  
+
+## Utilisation de l'authentification à deux facteurs dans les comptes liés
+{: #2fa}
+
+Si vous avez activé l'authentification à deux facteurs pour votre compte SoftLayer existant, il est néanmoins toujours demandé d'entrer votre code de sécurité quand vous vous connectez à la console {{site.data.keyword.Bluemix_notm}}. Toutefois, l'authentification à deux facteurs ne s'applique qu'aux ressources de votre compte d'infrastructure. Vous pouvez être en mesure de procéder à diverses actions sur les ressources de votre compte {{site.data.keyword.Bluemix_notm}} sans passer par l'authentification à deux facteurs.
+
+L'authentification à deux facteurs ne se fait pas par IBMid mais toujours par compte. Quand un IBMid est associé à plusieurs comptes et que vous passez d'un compte à l'autre, vous devez confirmer votre identité chaque fois que vous utilisez un compte différent qui nécessite une authentification à deux facteurs. Cette règle s'applique même si le compte précédent et le nouveau compte sont tous les deux configurés avec le même mécanisme d'authentification à deux facteurs.

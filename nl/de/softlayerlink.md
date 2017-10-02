@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-06-06"
+lastupdated: "2017-09-12"
 
 
 ---
@@ -74,4 +74,11 @@ Führen Sie die folgenden Schritte aus, um jedes Konto mit einem {{site.data.key
 2. Befolgen Sie die Eingabeaufforderungen im Assistenten und fügen Sie die Benutzer im SoftLayer-Konto dem {{site.data.keyword.Bluemix_notm}}-Konto hinzu.
 3. Nachdem Sie das Konto verknüpft haben, informieren Sie die Endbenutzer der einzelnen Konten darüber, dass sie zur IBMid migrieren müssen. Dabei sollte das im vorherigen Abschnitt beschriebene Verfahren verwendet werden.
 
-**Empfehlung**: Migrieren Sie nur Endbenutzerkonten zur IBMid. Migrieren Sie keine Brandkonten. Dies sind übergeordnete Konten für Endbenutzerkonten und enthalten keine Ressourcen. Brandkontenbenutzer, die zur IBMid migrieren, können sich anschließend nicht mehr bei beim BAP (Brand Agent Portal) anmelden.  
+**Empfehlung**: Migrieren Sie nur Endbenutzerkonten zur IBMid. Migrieren Sie keine Brandkonten. Dies sind übergeordnete Konten für Endbenutzerkonten und enthalten keine Ressourcen. Brandkontenbenutzer, die zur IBMid migrieren, können sich anschließend nicht mehr beim BAP (Brand Agent Portal) anmelden.  
+
+## Nutzung von Zwei-Faktor-Authentifizierung in verknüpften Konten
+{: #2fa}
+
+Wenn Sie die Zwei-Faktor-Authentifizierung für Ihr vorhandenes SoftLayer-Konto aktiviert haben, müssen Sie weiterhin Ihren Sicherheitscode eingeben, wenn Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Die Zwei-Faktor-Authentifizierung ist jedoch nur für die Ressourcen in Ihrem Infrastrukturkonto anwendbar. Sie können für die Ressourcen in Ihrem {{site.data.keyword.Bluemix_notm}}-Konto möglicherweise verschiedene Aktionen durchführen, ohne die Zwei-Faktor-Authentifizierung vornehmen zu müssen.
+
+Die Zwei-Faktor-Authentifizierung erfolgt nicht pro IBMid. Sie erfolgt weiterhin pro Konto. Wenn eine IBMid mehreren Konten zugeordnet ist und Sie zwischen den Konten wechseln, müssen Sie Ihre Identität bei jedem Wechsel zu einem anderen Konto bestätigen, für das eine Zwei-Faktor-Authentifizierung erforderlich ist. Dies gilt auch, wenn das vorherige Konto und das neue Konto beide mit demselben Mechanismus für die Zwei-Faktor-Authentifizierung konfiguriert sind.

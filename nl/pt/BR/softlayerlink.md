@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-06-06"
+lastupdated: "2017-09-12"
 
 
 ---
@@ -75,3 +75,10 @@ Conclua as etapas a seguir para vincular cada conta a uma conta do {{site.data.k
 3. Depois de vincular a conta, informe ao usuário final de cada conta para migrar para o IBMid seguindo o procedimento descrito na seção anterior.
 
 **Recomendação**: migre apenas as contas do usuário final para o IBMid. Não migre contas da marca, que são contas pai para contas do usuário final e não contêm recursos. Os usuários de conta da marca que migram para o IBMid perdem a capacidade de efetuar login no Brand Agent Portal (BAP).  
+
+## Uso da autenticação de dois fatores em contas vinculadas
+{: #2fa}
+
+Se você ativar a autenticação de dois fatores para sua conta existente do SoftLayer, ainda será necessário inserir o código de segurança ao efetuar login no console do {{site.data.keyword.Bluemix_notm}}. No entanto, a autenticação de dois fatores é aplicada apenas aos recursos em sua conta de infraestrutura. Você pode fazer várias ações nos recursos em sua conta do {{site.data.keyword.Bluemix_notm}} sem fazer a autenticação de dois fatores.
+
+A autenticação de dois fatores não é por IBMid. Ela ainda é por conta. Quando um IBMid está associado a várias contas e você alterna entre elas, é necessário confirmar sua identidade toda vez que você muda para uma conta diferente que requer autenticação de dois fatores. Isso é verdadeiro mesmo se a conta anterior e a nova estão ambas configuradas com o mesmo mecanismo de autenticação de dois fatores.

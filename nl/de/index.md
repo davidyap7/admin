@@ -242,7 +242,7 @@ Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen
 **Hinweis:** Nur Benutzer mit der Superuserberechtigung (`ops.admin`) können Wartungsaktualisierungen planen und genehmigen.
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
-2. Navigieren Sie zum Abschnitt **Aktualisierungsfenster**. 
+2. Navigieren Sie zum Abschnitt **Aktualisierungsfenster**.
 3. Klicken Sie auf **Neues hinzufügen**.
 4. Legen Sie das erste verfügbare Aktualisierungsfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
 5. Optional: Wählen Sie **Als bevorzugt markieren** aus, um das wiederkehrende Aktualisierungsfenster als bevorzugtes Zeitfenster für geplante Bereitstellungen festzulegen. Bevorzugte Zeitfenster haben Priorität, sofern dies möglich ist.
@@ -255,12 +255,12 @@ Sie müssen mindestens 12 verfügbare Stunden pro Woche an mindestens zwei Tagen
 Sie können bestimmte Ausfallzeitfenster festlegen, in denen Ihre Umgebung nicht für unterbrechungsfreie Wartungsaktualisierungen zur Verfügung steht. So können Sie zum Beispiel ein Wochenende oder einen Feiertag mit hohem Datenverkehr auswählen, an denen Sie keine Wartung wünschen, um sicherzugehen, dass Ihre Anwendungen für Ihre Benutzer zur Verfügung stehen.
 
 1. Klicken Sie auf **Verwaltung &gt; Systeminformationen &gt; *Anzahl* anstehend &gt; Verfügbarkeit verwalten**.
-2. Navigieren Sie zum Abschnitt **Ausfallzeitfenster**. 
+2. Navigieren Sie zum Abschnitt **Ausfallzeitfenster**.
 3. Klicken Sie auf **Neues hinzufügen**.
 4. Legen Sie das erste nicht Ausfallzeitfenster fest, indem Sie die Häufigkeit, die Dauer und die Anfangszeit für das Fenster auswählen.
 5. Klicken Sie auf **Abschicken**.
 
-Für Ausfallzeiten ist eine Genehmigung durch IBM erforderlich, die für die Genehmigung benötigte Zeit kann dabei variieren. Wenn die angeforderten Ausfallzeiten genehmigt sind, storniert IBM vorhandene Aktualisierungen, die momentan über das Nichtverfügbarkeitsfenster geplant sind. Darüber hinaus erstellt IBM neue Datensätze für diese Aktualisierungen und plant sie außerhalb der genehmigten Ausfallzeiten ein. 
+Für Ausfallzeiten ist eine Genehmigung durch IBM erforderlich, die für die Genehmigung benötigte Zeit kann dabei variieren. Wenn die angeforderten Ausfallzeiten genehmigt sind, storniert IBM vorhandene Aktualisierungen, die momentan über das Nichtverfügbarkeitsfenster geplant sind. Darüber hinaus erstellt IBM neue Datensätze für diese Aktualisierungen und plant sie außerhalb der genehmigten Ausfallzeiten ein.
 
 ### Aktualisierungen planen und genehmigen
 {: #scheduleandapprove}
@@ -383,7 +383,7 @@ Die Registerkarte **Service** zeigt die Gesamtnutzung des Service in Bezug auf d
 
 **Hinweis**: Die Informationen zur Servicenutzung sind möglicherweise zu diesem Zeitpunkt nicht in allen Umgebungen vorhanden. Dieses Feature ist für Cloudant, MessageHub, API Connect und Session Cache verfügbar.
 
-**Hinweis**: Ein Cloudant-Cluster besteht aus mindestens 3 Knoten und jedes Dokument in der Datenbank wird auf die 3 Knoten repliziert, um die Hochverfügbarkeit und die Verfügbarkeit für die Disaster-Recovery sicherzustellen. Nutzungsinformationen für Cloudant-Services umfassen Daten zum verfügbaren Speicherplatz und zum zugeordneten Speicherplatz in allen Knoten, aus denen der Cluster besteht. Enthält ein einzelner Cloudant-Cluster beispielsweise 3 Knoten, von denen jeder eine Kapazität von 1000 GB aufweist, wird das Kapazitätslimit mit 3000 GB angegeben. Der Prozentsatz des belegten Speicherplatzes umfasst alle Dokumente in allen Knoten.
+**Hinweis**: Ein Cloudant-Cluster besteht aus mindestens 3 Knoten und jedes Dokument in der Datenbank wird auf die 3 Knoten repliziert, um die Hochverfügbarkeit und die Verfügbarkeit für die Disaster-Recovery sicherzustellen.  Nutzungsinformationen für Cloudant-Services umfassen Daten zum verfügbaren Speicherplatz und zum zugeordneten Speicherplatz in allen Knoten, aus denen der Cluster besteht.  Enthält ein einzelner Cloudant-Cluster beispielsweise 3 Knoten, von denen jeder eine Kapazität von 1000 GB aufweist, wird das Kapazitätslimit mit 3000 GB angegeben.  Der Prozentsatz des belegten Speicherplatzes umfasst alle Dokumente in allen Knoten.
 
 ### Kontonutzung
 {: #accountusage}

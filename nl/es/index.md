@@ -389,7 +389,7 @@ El separador **Servicio** muestra la utilización total del servicio con relaci�
 
 **Nota**: Actualmente, la información de consumo del servicio podría no estar disponible en todos los entornos. Esta característica está disponible para Cloudant, MessageHub, API Connect y Session Cache.
 
-**Nota**: Un clúster de Cloudant está formado por al menos 3 nodos, y cada documento de la base de datos está replicado entre 3 nodos para obtener alta disponibilidad y recuperación tras desastre. La información de uso del servicio Cloudant incluye el espacio disponible y el espacio asignado de todos los nodos que forman el clúster. Por ejemplo, si un solo clúster de Cloudant contiene 3 nodos, cada uno con 1000 GB de capacidad, el límite de capacidad se mostrará como 3000 GB. El porcentaje consumido incluye todos los documentos que se encuentran en todos los nodos.
+**Nota**: Un clúster de Cloudant está formado por al menos 3 nodos, y cada documento de la base de datos está replicado entre 3 nodos para obtener alta disponibilidad y recuperación tras desastre.  La información de uso del servicio Cloudant incluye el espacio disponible y el espacio asignado de todos los nodos que forman el clúster.  Por ejemplo, si un solo clúster de Cloudant contiene 3 nodos, cada uno con 1000 GB de capacidad, el límite de capacidad se mostrará como 3000 GB.  El porcentaje consumido incluye todos los documentos que se encuentran en todos los nodos.
 
 ### Uso de cuenta
 {: #accountusage}
