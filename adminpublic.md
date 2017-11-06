@@ -20,9 +20,11 @@ lastupdated: "2017-03-29"
 You can sign up for a {{site.data.keyword.Bluemix}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications.
 {:shortdesc}
 
-You can sign up for a {{site.data.keyword.Bluemix_notm}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications.  
+You can sign up for a {{site.data.keyword.Bluemix_notm}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications.
 
 A federated ID can be used to sign up for {{site.data.keyword.Bluemix_notm}} only if your company has already worked with IBM to register.  Registering a company's domain with IBM enables users to log in to IBM products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider. When you log in to {{site.data.keyword.Bluemix_notm}} with a federated ID, you are prompted to log in through your company's login page. For information about requesting to register your company or organization's domain with IBM, or for more information about the process, see [IBMid Enterprise Federation Adoption Guide ![External link icon](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. An IBM sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+
+IBM leverages the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation.  SAML 2.0 is a standard version for exchanging authentication data between security domains.  It is an XML-based protocol that uses a security token containing assertions to pass information between the organizations "Identity Provider", and the IBM Rely Party (RP) - otherwise known as the Service Provider.
 
 | Sign up methods | Details |    
 |-----------------|---------|
