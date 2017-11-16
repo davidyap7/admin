@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-13"
+lastupdated: "2017-11-16"
 
 
 ---
@@ -31,7 +31,7 @@ To easily view the resources contained within a resource group, filter by resour
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.
 
-If you have a Lite or Promo account, you can't create additional resource groups, but you can rename your default resource group. 
+If you have a Lite or Promo account, you can't create additional resource groups, but you can rename your default resource group.
 
 Each resource group is free, however connections between a resource group and a Cloud Foundry org or space count toward your account quota. For more information, see [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
 {: tip}
@@ -58,4 +58,3 @@ The {{site.data.keyword.Bluemix_notm}} CLI has mulitple commands that support re
 Cloud IAM gives you the flexibility to provide fine-grained user access to resources in your account. You can use Cloud IAM to assign policies to users, which provide user access to all resources in a resource group, a single service type within a resource group, or an individual service instance in the account. Providing users access to resources within a resource group does not give them access to manage the resource group itself. You can set access for the ability to view, edit, and manage the actual resource group separately.
 
 For more information on managing access to resource groups, see [Managing IAM access](/docs/iam/mngiam.html#iammanidaccser).
-

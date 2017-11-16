@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-17"
+lastupdated: "2017-11-16"
 
 
 ---
@@ -40,5 +40,5 @@ If you are a Pay-As-You-Go or Subscription account owner, you can set up email s
     * Total container
     * Spending for a specific service
   3. Click **Save**.
-  
+
 If you have a Lite or Promo account, you can upgrade to a Pay-As-You-Go or Subscription account to set spending limits. For more information about Pay-As-You-Go and Subscription accounts, see [Account types](/docs/pricing/index.html).

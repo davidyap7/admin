@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ You can view notifications for your local or dedicated environment to monitor th
 | **Event Type** | **Notification method** |       
 |-----------------|-------------------|
 | Maintenance updates | To see a full list and history of your pending and complete notifications, click **ADMINISTRATION &gt; SYSTEM INFORMATION** &gt; *Number* **pending**. You are also alerted about scheduled disruptive maintenance update events on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a subscription that sends an email to recipients of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.|
-| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  | 
+| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  |
 | Threshold events | You can set up a notification subscription that sends an email to a recipient of your choice when thresholds for organization quota, physical disk, physical memory, reserved disk, or reserved memory are reached in your environment. Or, you can set up a subscription that uses webhooks to integrate the notifications with a web service of your choice.  |  
 | {{site.data.keyword.Bluemix_notm}} Status | You can always view the latest status for the platform, services, and your {{site.data.keyword.Bluemix_notm}} instance on the Status page. Click **Support** &gt; **Status**.  |
 {: caption="Table 2. Event types and notifications methods" caption-side="top"}
@@ -374,10 +374,10 @@ To see more detailed information about your physical and reserved memory or disk
 	<dt><strong>Physical</strong></dt>
 	<dd>The Physical line shows the amount of memory or disk space that is actually being used.</dd>
 	</dl>
-	
+
 For each of the available historical usage views, at least two data points are required for the graph to render. This equates to data for at least two hours during the last 48 hours, two days during the last 30 days, and two months during the last 5 months. For the 30 day and 5 month views, partially complete averages or maximum values are returned for the current day or month and will adjust as more data is collected.
 
-The data powering these views is available via the [Metrics API](/docs/admin/index.html#envappmetricsapi). To see the actual API endpoints and data used to generate the view, click on the **Learn more about the API** link above the chart. If you click on any of the links in the dialog that appears, a new tab will open in your browser containing the JSON response of the metrics API endpoint. 
+The data powering these views is available via the [Metrics API](/docs/admin/index.html#envappmetricsapi). To see the actual API endpoints and data used to generate the view, click on the **Learn more about the API** link above the chart. If you click on any of the links in the dialog that appears, a new tab will open in your browser containing the JSON response of the metrics API endpoint.
 
 #### Service usage details
 {: #servicesresourceusage}

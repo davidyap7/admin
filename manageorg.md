@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-17"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -34,7 +34,7 @@ Complete the following steps to rename your organization:
 
 ### Deleting an org
 
-You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. 
+You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed.
 
 ### Deleting a space
 
@@ -48,7 +48,7 @@ Complete the following steps to delete a space:
 ## Editing user roles
 {: #listmembers}
 
-### Editing user roles for a specific org 
+### Editing user roles for a specific org
 
 Complete the following steps to edit the users roles for a specific org:
 
@@ -76,7 +76,7 @@ To view the used and allocated quota for an org, complete the following steps:
 2. Identify the organization that you want to view the quota for, and click **View Details**.
 3. Click **Edit Org**.
 4. If you have spaces defined in more than one region, select the specific region that you want to view.
-5. Click **QUOTA**. 
+5. Click **QUOTA**.
 6. By default, the **Cloud Foundry** quota page opens. You can view the quota details for the following resources:
  * MEMORY
  * SERVICES
@@ -88,11 +88,11 @@ To view the used and allocated quota for an org, complete the following steps:
  * FILE SHARES
 8. Click **Virtual Servers** to view the virtual machines.
 
-Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region. 
+Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region.
 {: tip}
 
 For more information about containers, see [Quota](/docs/containers/container_planning.html#container_planning_quota) in the Containers documentation.
-To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support). 
+To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support).
 
 ## Managing domains
 {: #managedomains}

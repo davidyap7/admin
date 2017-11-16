@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-17"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2017-10-17"
 As an account owner, you can manage your organizations and spaces from the Manage Organizations page in the {{site.data.keyword.Bluemix}} console. Organization managers can also use the Manage Organizations page to manage any organizations where they are set as the manager.
 {:shortdesc}
 
-To manage organizations and spaces, click **Manage** &gt; **Account** &gt; **Organizations**. 
+To manage organizations and spaces, click **Manage** &gt; **Account** &gt; **Organizations**.
 
 You must be the account owner of a Pay-As-You-Go account to create an organization.
 {: tip}
@@ -44,8 +44,8 @@ In a Subscription account, quota is a user defined limit that triggers spending 
 
 In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable collaboration among users and to facilitate the logical grouping of project resources in the following ways:
 
-   * You can group a set of spaces, apps, services, domains, routes, and users together in organizations. 
-   * You can manage the access to the spaces and organizations on a per-user basis. 
+   * You can group a set of spaces, apps, services, domains, routes, and users together in organizations.
+   * You can manage the access to the spaces and organizations on a per-user basis.
 
 When you create an organization, the name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a new name. After you create the organization, you're automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add users, and create or delete spaces in the organization.
 
