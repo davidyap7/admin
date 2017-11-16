@@ -3,12 +3,13 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-11"
+lastupdated: "2017-11-16"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:screen: .screen}
 {:new_window: target="_blank"}
 
@@ -16,16 +17,14 @@ lastupdated: "2017-04-11"
 As an account owner or an organization manager, you can perform org management tasks, including renaming your org, deleting an org or space, updating org or space roles, and managing quota and domains.
 {:shortdesc}
 
-From the console menu bar, click **Manage > Account > Organizations** to manage your orgs. 
-
-**Note:** You can view resources of only one organization at a time. If you are a member of multiple organizations, you can switch organizations from the user account preferences link in the console menu bar.
+To manage your orgs from the {{site.data.keyword.Bluemix}} console, click **Manage > Account > Organizations**. You can view resources of only one organization at a time. If you are a member of multiple organizations, you can switch organizations from the user account preferences link in the console menu bar.
 
 ## Renaming orgs
 {: #orgrename}
 
 Complete the following steps to rename your organization:
 1. Click **Manage** > **Account** > **Organizations**.
-2. Identify the org that you want to rename, and click **View Details**.
+2. Determine which org you want to rename, and click **View Details**.
 3. Click **Edit Org**.
 4. Click **Edit** next to the name of the org.
 5. Type the new org name, and click **Save**.
@@ -33,42 +32,51 @@ Complete the following steps to rename your organization:
 ## Deleting orgs and spaces
 {: #deleteorgs}
 
-As the account owner, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} to delete an organization.
+### Deleting an org
 
-**Note**: Deleting operations cannot be reversed. You lose all your apps and services that are associated with the org.
+You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed.
 
-Complete the following steps to delete an org or space:
+### Deleting a space
+
+Complete the following steps to delete a space:
+
 1. Click **Manage** > **Account** > **Organizations**.
-2. Identify the org that you want to edit, and click **View Details**.
-3. Identify the space that you want to delete, and click **Edit Space**.
+2. Select the org that you want to edit, and click **View Details**.
+3. Determine which space to delete, and click **Edit Space**.
 4. Click **Delete Space**.
 
 ## Editing user roles
 {: #listmembers}
 
+### Editing user roles for a specific org
+
 Complete the following steps to edit the users roles for a specific org:
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
-2. Identify the organization that you want to view the members for, and click **View Details**.
-3. Click **Edit Org**.
+
+1. Click **Manage** > **Account** > **Organizations**.
+2. Determine which organization you want to edit, and click **View Details** then **Edit Org**.
 4. You can see the members of your organization and their roles in the **USERS** tab.
 
+### Editing user roles for a specific space
+
 Complete the following steps to edit the user roles for a specific space:
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
-2. Identify the organization that you want to view the members for, and click **View Details**.
-3. Identify the space that you want to view the members for, and click **Edit Space**.
+
+1. Click **Manage** > **Account** > **Organizations**.
+2. Select the organization that you want to view the members for, and click **View Details**.
+3. Determine which space you want to edit, and click **Edit Space**.
 4. You can see the members of your space and their roles in the **USERS** tab.
 
 ## Managing quota
 {: #managequota}
 
-As a {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the used and allocated quota for an organization. The quota represents the resource limits for the organization, which is assigned when the organization is created. Depending on whether you have a trial account or a billable account, the resources that are available to an organization vary. Any application or service in a space within the organization contributes to the usage of the allocated quota.
+As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the used and allocated quota for an organization. The quota represents the resource limits for the organization, which is assigned when the organization is created. The resources that are available to an organization vary depending on whether you have a free account or a billable account. Any application or service in a space within the organization contributes to the usage of the allocated quota.
 
 To view the used and allocated quota for an org, complete the following steps:
+
 1. Click **Manage** &gt; **Account** &gt; **Organizations**.
 2. Identify the organization that you want to view the quota for, and click **View Details**.
 3. Click **Edit Org**.
 4. If you have spaces defined in more than one region, select the specific region that you want to view.
-5. Click **QUOTA**. 
+5. Click **QUOTA**.
 6. By default, the **Cloud Foundry** quota page opens. You can view the quota details for the following resources:
  * MEMORY
  * SERVICES
@@ -80,15 +88,16 @@ To view the used and allocated quota for an org, complete the following steps:
  * FILE SHARES
 8. Click **Virtual Servers** to view the virtual machines.
 
-**Note:** Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region. 
+Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region.
+{: tip}
 
 For more information about containers, see [Quota](/docs/containers/container_planning.html#container_planning_quota) in the Containers documentation.
-To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support). 
+To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support).
 
 ## Managing domains
 {: #managedomains}
 
-As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an organization and its spaces. As a space manager, the **Domains** tab for a space is a read-only list of the domains that are assigned to the space.
+As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an organization and its spaces. As a space manager, the **Domains** tab for a space is a read-only list of the domains that are assigned to the space.
 
 1. Click **Manage** &gt; **Account** &gt; **Organizations**.
 2. Identify the organization that you want to view or edits domains for.

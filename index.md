@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ You can view notifications for your local or dedicated environment to monitor th
 | **Event Type** | **Notification method** |       
 |-----------------|-------------------|
 | Maintenance updates | To see a full list and history of your pending and complete notifications, click **ADMINISTRATION &gt; SYSTEM INFORMATION** &gt; *Number* **pending**. You are also alerted about scheduled disruptive maintenance update events on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a subscription that sends an email to recipients of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.|
-| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  | 
+| Critical incidents | You are alerted about critical incidents on the Status page. Click **Support** &gt; **Status**. You can extend the notification capability by setting up a notification subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  |
 | Threshold events | You can set up a notification subscription that sends an email to a recipient of your choice when thresholds for organization quota, physical disk, physical memory, reserved disk, or reserved memory are reached in your environment. Or, you can set up a subscription that uses webhooks to integrate the notifications with a web service of your choice.  |  
 | {{site.data.keyword.Bluemix_notm}} Status | You can always view the latest status for the platform, services, and your {{site.data.keyword.Bluemix_notm}} instance on the Status page. Click **Support** &gt; **Status**.  |
 {: caption="Table 2. Event types and notifications methods" caption-side="top"}
@@ -374,10 +374,10 @@ To see more detailed information about your physical and reserved memory or disk
 	<dt><strong>Physical</strong></dt>
 	<dd>The Physical line shows the amount of memory or disk space that is actually being used.</dd>
 	</dl>
-	
+
 For each of the available historical usage views, at least two data points are required for the graph to render. This equates to data for at least two hours during the last 48 hours, two days during the last 30 days, and two months during the last 5 months. For the 30 day and 5 month views, partially complete averages or maximum values are returned for the current day or month and will adjust as more data is collected.
 
-The data powering these views is available via the [Metrics API](/docs/admin/index.html#envappmetricsapi). To see the actual API endpoints and data used to generate the view, click on the **Learn more about the API** link above the chart. If you click on any of the links in the dialog that appears, a new tab will open in your browser containing the JSON response of the metrics API endpoint. 
+The data powering these views is available via the [Metrics API](/docs/admin/index.html#envappmetricsapi). To see the actual API endpoints and data used to generate the view, click on the **Learn more about the API** link above the chart. If you click on any of the links in the dialog that appears, a new tab will open in your browser containing the JSON response of the metrics API endpoint.
 
 #### Service usage details
 {: #servicesresourceusage}
@@ -446,47 +446,37 @@ For more information about viewing usage per org, adjusting quota plans, and man
 
 You can view security reports and logs, such as DataPower&trade;, firewall, and login audit reports, for your {{site.data.keyword.Bluemix_notm}} instance. To view reports and logs, click **ADMINISTRATION &gt; REPORTS AND LOGS**.
 
-In the past, security reports were generated regularly, but the resulting data footprint could overwhelm the environment and impact its performance. Consequently, reports are now generated only on-demand.
+You can do the following tasks from the Reports and Logs tile:
 
-You can perform the following tasks from the Reports and Logs page:
-
-- **Request** a report for specific types of events occurring within a given time period. The user must have write access to reports in order to request them. Reports can be generated for the following categories:
-	- Admin Console User Management
-	- {{site.data.keyword.Bluemix_notm}} Platform Administration
-	- Firewall Denies
-	- Firewall Logins
-	- Login Server Login
-	- Operating System Login
-
-You can request reports for data that is up to 90 days old. You can request reports for data that is up to 90 days old.  Report requests are tracked in a Report Requests table.  Once the report is generated, it becomes available in the Reports Available table. 
-- Browse the list of report requests.
-- Search, sort (by category, filename or creation date) and sort the list of available reports (by category and time period).
-- View the contents of a report.
-- Download reports.
-- Delete reports.
-
-The following table shows the list of security reports that are generated for {{site.data.keyword.Bluemix_notm}} Local and {{site.data.keyword.Bluemix_notm}} Dedicated.  Only six of these report categories can be generated on-demand. Although reports from the other categories are no longer generated regularly, there may be report instances from those other categories, generated back when all reports were generated regularly. 
+- Select start and end dates from the fields to filter which reports and logs are displayed.
+- View your list of requested reports and currently available reports.
+- Search within your collection of reports and logs. The search applies to report names as well as text content that is contained within the reports and logs. You can also choose to filter your search by the category.
+- Download a report by clicking the ![Download](images/icon_download.png) icon to download the report.
+- Request a report to be generated, if you have write access for the reports permission. You can choose from the following six categories for generating a report on demand: Admin Console User Management, {{site.data.keyword.Bluemix_notm}} Platform Administration, Firewall Denies, Firewall Logins, Login Server Login, and Operating System Login. You can request reports for data that is up to 90 days old.
 
 **Note**: The request a report feature might not be available in all environments at this time.
 
+The following table shows the list of security reports that are generated for {{site.data.keyword.Bluemix_notm}} Local and {{site.data.keyword.Bluemix_notm}} Dedicated. Most reports are generated on a daily basis. However, the encryption and key management events reports are generated monthly. All reports are retained for 90 days in the administration console for your retrieval. After that 90 days, the reports are available offline per request from {{site.data.keyword.Bluemix_notm}} for 9 months. In total, reports are available for retrieval for up to 1 year.
+
+
 {: #ld_table9}
 
-| **Report** | **Description** | On Demand |  
-|-------------------|---------------------|---------------|
-| [Firewall logins](/docs/hybrid/reports.html#firewalllogins) | Events related to administrator login to the Vyatta firewall devices. | Yes |
-| [Firewall denies](/docs/hybrid/reports.html#firewalldenies) | Events generated by the Vyatta firewall devices when a request to access is denied according to the firewall rules that are in place. | Yes |
-| {{site.data.keyword.Bluemix_notm}} [Administrators login](/docs/hybrid/reports.html#oslogin) | Events generated by the operating system when an administrator starts an SSH session on every {{site.data.keyword.Bluemix_notm}} system. | No |
-| {{site.data.keyword.Bluemix_notm}} [Application developers login](/docs/hybrid/reports.html#loginserverlogins) | Events generated by the {{site.data.keyword.Bluemix_notm}} platform login component when a {{site.data.keyword.Bluemix_notm}} platform user starts a session by using the command line, the REST APIs, or the {{site.data.keyword.Bluemix_notm}} user interface. | Yes |
-| {{site.data.keyword.Bluemix_notm}} [Operating system administration](/docs/hybrid/reports.html#osadmin)  | Events generated by the operating system when an administrator performs action within a current working session. | Yes |
-| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) platform administration](/docs/hybrid/reports.html#platformadmin) | Events related to operations performed by the {{site.data.keyword.Bluemix_notm}} platform user by using the command line, the REST APIs, or the {{site.data.keyword.Bluemix_notm}} user interface. | Yes |
-| [Internal database administration](/docs/hybrid/reports.html#dbadmin) | Events related to operations performed by a database administrator on the {{site.data.keyword.Bluemix_notm}} internal databases. | No |
-| [User management](/docs/hybrid/reports.html#acusermgmt) | Events related to user management actions performed on the Administration page. | Yes |
-| [Catalog management](/docs/hybrid/reports.html#catalogmgmt) | Events related to services Catalog changes. | No |
-| [Security reports management](/docs/hybrid/reports.html#securityreportsmgmt) | Events related to security reports management actions performed on the Administration page. | No |
-| [Access reviews](/docs/hybrid/reports.html#securityreportsmgmt) | Reviews for privileged accesses. | No |
-| Management of software changes | Change management activity. | No |
-| [Key certificate management](/docs/hybrid/reports.html#keymgmt) | Key certificate management operations. | No |
-| [System notifications](/docs/hybrid/reports.html#systemnotifications) | Events related to configure the software update deployment windows or notification subscriptions. | No |
+| **Report** | **Description** |      
+|-------------------|---------------------|
+| [Firewall logins](/docs/hybrid/reports.html#firewalllogins) | Events related to administrator login to the Vyatta firewall devices. |
+| [Firewall denies](/docs/hybrid/reports.html#firewalldenies) | Events generated by the Vyatta firewall devices when a request to access is denied according to the firewall rules that are in place. |
+| {{site.data.keyword.Bluemix_notm}} [administrators login](/docs/hybrid/reports.html#oslogin) | Events generated by the operating system when an administrator starts an SSH session on every {{site.data.keyword.Bluemix_notm}} system. |
+| {{site.data.keyword.Bluemix_notm}} [application developers login](/docs/hybrid/reports.html#loginserverlogins) | Events generated by the {{site.data.keyword.Bluemix_notm}} platform login component when a {{site.data.keyword.Bluemix_notm}} platform user starts a session by using the command line, the REST APIs, or the {{site.data.keyword.Bluemix_notm}} user interface. |
+| {{site.data.keyword.Bluemix_notm}} [operating system administration](/docs/hybrid/reports.html#osadmin)  | Events generated by the operating system when an administrator performs action within a current working session. |
+| {{site.data.keyword.Bluemix_notm}} [(Cloud Foundry) platform administration](/docs/hybrid/reports.html#platformadmin) | Events related to operations performed by the {{site.data.keyword.Bluemix_notm}} platform user by using the command line, the REST APIs, or the {{site.data.keyword.Bluemix_notm}} user interface. |
+| [Internal database administration](/docs/hybrid/reports.html#dbadmin) | Events related to operations performed by a database administrator on the {{site.data.keyword.Bluemix_notm}} internal databases. |
+| [User management](/docs/hybrid/reports.html#acusermgmt) | Events related to user management actions performed on the Administration page. |
+| [Catalog management](/docs/hybrid/reports.html#catalogmgmt) | Events related to services Catalog changes. |
+| [Security reports management](/docs/hybrid/reports.html#securityreportsmgmt) | Events related to security reports management actions performed on the Administration page. |
+| [Access reviews](/docs/hybrid/reports.html#securityreportsmgmt) | Reviews for privileged accesses. |
+| Management of software changes | Change management activity. |
+| [Key certificate management](/docs/hybrid/reports.html#keymgmt) | Key certificate management operations. |
+| [System notifications](/docs/hybrid/reports.html#systemnotifications) | Events related to configure the software update deployment windows or notification subscriptions. |
 
 {: caption="Table 9. Security report list" caption-side="top"}
 
@@ -869,7 +859,7 @@ A quota represents the resource limits for the organizations in your environment
 <dd>The maximum number of public IP addresses that you cal allocate across all spaces of an organization.</dd>
 </dl>
 <strong>Note</strong>: If you do not yet have containers in your environment or if you do not yet have the containers in your environment set up, you get an error message.
-<p>For more information about containers, see [About IBM containers](/docs/containers/container_ov.html). For more information about container quotas, see [Quota and Bluemix accounts](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>For more information about containers, see [About IBM containers](/docs/containers/container_ov.html). For more information about container quotas, see [Quota and {{site.data.keyword.Bluemix_notm}} accounts](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Note:</strong> Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region.</li>
 </ul>
 <li>To save any changes that you made on the Manage Organization page, click <strong>SAVE</strong>.</li>
