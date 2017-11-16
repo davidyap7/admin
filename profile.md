@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-29"
+lastupdated: "2017-10-17"
 
 ---
 
@@ -66,6 +66,6 @@ To disable analytics tracking, complete the following steps:
 ## Providing feedback
 {: #feedback}
 
-To submit ideas for {{site.data.keyword.Bluemix_notm}} and services improvements, go to [IBM Cloud Ideas ![External link icon](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. For more information on how to use the new idea portal, see [Think, write, submit: New ideas portal for IBM Cloud ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
+To submit ideas for {{site.data.keyword.Bluemix_notm}} and services improvements, go to [IBM Cloud Ideas ![External link icon](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. For more information on how to use the idea portal, see [Think, write, submit: New ideas portal for IBM Cloud ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
 
-To provide feedback on the documentation, click the **Feedback** link on each page, or collaborate with us by clicking the **Edit in GitHub** link after the title. For more information on contributing to the docs, see [When it comes to docs, everyone can contribute in Bluemix ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
+To provide feedback on the documentation, click the **Feedback** link on each page, or collaborate with us by clicking the **Edit in GitHub** link after the title. For more information on contributing to the docs, see [When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
