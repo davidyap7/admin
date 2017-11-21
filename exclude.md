@@ -23,7 +23,7 @@ If you're an administrator for the account, you can choose to hide a public reso
 ## How do I know if I have access?
 {: #find-access}
 
-You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that has been added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information see [Managing access to your account](access.md).
+You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that has been added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information see [Managing access to your account](access.html).
 
 ## Step 1: Find a resource
 {: #find-resource}
