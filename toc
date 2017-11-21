@@ -14,6 +14,13 @@ Managing your account
     resourcegroups.md
 
     {: .topicgroup}
+Managing catalog visiblity
+    access.md
+    include.md
+    exclude.md
+    owners.md
+
+    {: .topicgroup}
     Orgs
         orgs_spaces.md
         manageorg.md
