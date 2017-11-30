@@ -12,7 +12,7 @@ lastupdated: "2017-11-21"
 {:screen: .screen}
 {:tip: .tip}
 
-# Changing account ownership
+# Changing private resource ownership
 
 You can change account ownership with the command line interface. After you've created and customized private resources in your catalog, you can transfer ownership of those resources to someone else. After you transfer ownership, you won't be able to see the resource from your account. Changing account ownership cannot be undone, so exercise caution.
 {:shortdesc: .shortdesc}
