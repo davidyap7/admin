@@ -5,20 +5,21 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-08-30"
+lastupdated: "2017-11-16"
 
 
 ---
 
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
-# Configuración del entorno de Bluemix
+# Configuración del entorno de {{site.data.keyword.Bluemix_notm}}
 {: #patterns}
 
-Para un proyecto satisfactorio, tómese tiempo para planificar y diseñar qué recursos necesita y cuáles son sus requisitos empresariales. Para ayudarle a empezar con el proyecto en la nube, tenga en cuenta las preguntas siguientes:
+Para un proyecto satisfactorio, tómese tiempo para planificar y diseñar qué recursos necesita y cuáles son sus requisitos empresariales. Para ayudarle a empezar, tenga en cuenta las preguntas siguientes:
 
 * ¿Cuántas aplicaciones se desarrollarán, y de qué tipo?
 * ¿A qué servicios necesitarán acceder las aplicaciones?
@@ -30,12 +31,11 @@ Para un proyecto satisfactorio, tómese tiempo para planificar y diseñar qué r
 
 {:shortdesc}
 
-Al diseñar una solución en la nube, piense también en la seguridad de la cuenta y en los requisitos operativos, en las regulaciones del país, en las directivas del mercado y en las políticas corporativas.
-Para cubrir las necesidades del proyecto, {{site.data.keyword.Bluemix}} ofrece tres tipos de entornos de nube.
+Al diseñar una solución en la nube, piense también en la seguridad de la cuenta y en los requisitos operativos, en las regulaciones del país, en las directivas del mercado y en las políticas corporativas. Para cubrir las necesidades de su proyecto, {{site.data.keyword.Bluemix}} ofrece tres tipos de entornos de nube.
 
 * [{{site.data.keyword.Bluemix_notm}} Público](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): Los recursos de infraestructura los comparten distintas empresas y usuarios.
-* [{{site.data.keyword.Bluemix_notm}} Dedicado](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated"): Utilice su propia infraestructura de {{site.data.keyword.BluSoftlayer_notm}} dedicada, que puede conectar de forma segura a la nube Pública de {{site.data.keyword.Bluemix_notm}} y a su propia red.
-* [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local"): Se encuentra detrás del cortafuegos de la empresa, que puede proteger sus cargas de trabajo más sensibles y puede conectarse de forma segura a las nubes Pública de {{site.data.keyword.Bluemix_notm}} y Dedicada de {{site.data.keyword.Bluemix_notm}}.
+* [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}"): Utilice su propio {{site.data.keyword.BluSoftlayer_notm}} dedicado, que puede conectar de forma segura a {{site.data.keyword.Bluemix_notm}} público y a su propia red.
+* [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}"): Ocupa detrás del cortafuegos de la empresa, que puede proteger las cargas de trabajo más sensibles y puede conectarse de forma segura a los entornos de {{site.data.keyword.Bluemix_notm}} público y {{site.data.keyword.Bluemix_dedicated_notm}}.
 
 Como parte de la decisión de qué tipo de entorno de nube necesita, planifique la estructura de su cuenta, de las organizaciones, de los espacios, de los recursos y de los miembros del equipo.
 
@@ -73,8 +73,7 @@ Tenga en cuenta la escala y el ámbito de las aplicaciones que tiene intención 
 
 Cree organizaciones de {{site.data.keyword.Bluemix_notm}} independientes cuando haya personas trabajando en distintas áreas empresariales y donde sus actividades no se solapen. Si hay dos grupos totalmente independientes, la creación de una organización para cada uno de ellos define los límites claros para la entrega y la gestión de los profesionales y los recursos del equipo. Puede definir una API para la comunicación entre las organizaciones.  
 
-Las organizaciones de {{site.data.keyword.Bluemix_notm}} pueden crearse para que coincidan con el modo en que desea trabajar en lugar de con la estructura de una empresa. Normalmente, las organizaciones de la empresa pueden cambiar, pero el desarrollo y el mantenimiento de una aplicación continuará independientemente.
-Diseñe el entorno de {{site.data.keyword.Bluemix_notm}} durante el tiempo de vida de las aplicaciones y no en la estructura de organización de la empresa.
+Las organizaciones de {{site.data.keyword.Bluemix_notm}} pueden crearse para que coincidan con el modo en que desea trabajar en lugar de con la estructura de una empresa. Normalmente, las organizaciones de la empresa pueden cambiar, pero el desarrollo y el mantenimiento de una aplicación continuará independientemente. Diseñe el entorno de {{site.data.keyword.Bluemix_notm}} durante el tiempo de vida de las aplicaciones y no en la estructura de organización de la empresa.
 
 El desarrollo y el despliegue iterativos pueden dar lugar a que las aplicaciones se expandan rápidamente. El diseño del proceso de entrega debe ser capaz de aumentar de forma rápida y sencilla. Deseará un desarrollo continuo con una tasa de despliegue rápida. Tener los espacios de desarrollo y de producción en la misma organización de {{site.data.keyword.Bluemix_notm}} proporcionará acceso a los mismos recursos. La gestión de distintos espacios dentro de una sola organización reduce la sobrecarga administrativa. El personal de desarrollo, de prueba y de operaciones puede colaborar fácilmente si está trabajando dentro de la misma organización de {{site.data.keyword.Bluemix_notm}}.
 
@@ -89,10 +88,10 @@ Identifique todas las personas que necesitarán acceso a cada espacio y organiza
 ## Determinación de la arquitectura de la organización
 {: #orgstructure}
 
-Para diseñar un entorno de nube que utilice {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado, {{site.data.keyword.Bluemix_notm}} Local, o cualquier combinación, puede utilizar las siguientes arquitecturas de organización:
+Para diseñar un entorno que utilice {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}}, {{site.data.keyword.Bluemix_local_notm}} o cualquier combinación, puede utilizar las siguientes arquitecturas de organización:
 
-* Organización única: Considere la posibilidad de utilizar esta arquitectura si necesita el mismo conjunto de usuarios para acceder a los recursos disponibles en cualquier lugar de la organización en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado, o {{site.data.keyword.Bluemix_notm}} Local.
-* Organización múltiple: Considere la posibilidad de utilizar esta arquitectura si necesita aislamiento entre distintos entornos de {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado, o {{site.data.keyword.Bluemix_notm}} Local.
+* Organización única: Considere la posibilidad de utilizar esta arquitectura si necesita el mismo conjunto de usuarios para acceder a los recursos disponibles en cualquier lugar de la organización en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}}, o {{site.data.keyword.Bluemix_local_notm}}.
+* Organización múltiple: Considere la posibilidad de utilizar esta arquitectura si necesita aislamiento entre distintos entornos de {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}} o {{site.data.keyword.Bluemix_local_notm}}.
 
 ### Una única organización en comparación con varias organizaciones
 {: #singleormulti}
@@ -105,15 +104,15 @@ Las dos arquitecturas de organización dan soporte a los siguientes principios:
 * Imposición de límites para aplicaciones, proyectos, o ambos.
 * Autorización para gestionar recursos otorgados por el rol de usuario.
 
-Para implementar la arquitectura de una organización única, cree una cuenta en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado o
-{{site.data.keyword.Bluemix_notm}} Local, y defina una organización. A continuación, puede definir varios espacios que se basan en distintas líneas de negocio (LOB),
+Para implementar la arquitectura de una organización única, cree una cuenta en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}} o
+{{site.data.keyword.Bluemix_local_notm}} y defina una organización. A continuación, puede definir varios espacios que se basan en distintas líneas de negocio (LOB),
 las fases de entrega, proyectos específicos, aplicaciones, permisos de usuarios, o una combinación de estos componentes.
 
-Para implementar una arquitectura de organización múltiple, cree una cuenta en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado,
-o {{site.data.keyword.Bluemix_notm}} Local. A continuación, puede definir las organizaciones que se corresponden con distintas LOB, fases de entrega,
+Para implementar una arquitectura de organización múltiple, cree una cuenta en {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}} o {{site.data.keyword.Bluemix_local_notm}}. A continuación, puede definir las organizaciones que se corresponden con distintas LOB, fases de entrega,
 proyectos específicos, permisos de usuarios, o una combinación de estos componentes. A continuación, puede definir diversos espacios que se basan en aplicaciones o proyectos entregados por el mismo departamento de la empresa.
 
-**Nota:** Debe tener una cuenta facturable, como por ejemplo Pago según uso o Suscripción, para definir varias organizaciones.
+Debe tener una cuenta facturable, como por ejemplo Pago según uso o Suscripción, para definir varias organizaciones.
+{: tip}
 
 ### Consideraciones sobre la organización
 {: #orgconsiderations}
@@ -123,8 +122,7 @@ desplegar aplicaciones de nube. En {{site.data.keyword.Bluemix_notm}} Público, 
 
  ![Figura que muestra la arquitectura de organización única en {{site.data.keyword.Bluemix_notm}}](images/singleorg_example.svg "Figura que muestra la arquitectura de organización única en {{site.data.keyword.Bluemix_notm}}")
 
- Figura 1. Ejemplo de una arquitectura de organización única para {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado y
-{{site.data.keyword.Bluemix_notm}} Local
+ Figura 1. Ejemplo de una arquitectura de organización única para {{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_dedicated_notm}} y {{site.data.keyword.Bluemix_local_notm}}
 {: #bpfigure1}
 
 Al implementar una arquitectura de organización múltiple, las organizaciones proporcionarán el primer nivel de imposición de límites y de abstracción, que puede utilizar para controlar y definir qué se puede hacer y quién lo puede hacer. Diseñe cada organización en torno a las distintas LOB, las fases de entrega, los roles de los usuarios, los proyectos específicos, o una combinación de estos componentes.  
@@ -137,12 +135,12 @@ El número de organizaciones que necesita depende de varios factores:
 
 Cuando está definiendo las distintas organizaciones para la estructura de nube, tenga en cuenta la orientación siguiente:
 
-* Defina y, a continuación, aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de la organización incluya información sobre el área de negocio, el tipo de nube ({{site.data.keyword.Bluemix_notm}} Pública, {{site.data.keyword.Bluemix_notm}} Local, o {{site.data.keyword.Bluemix_notm}} Dedicada), y la fase del proceso (desarrollo, pruebas o producción). Para las organizaciones que se encuentran en {{site.data.keyword.Bluemix_notm}} Público, es posible que desee añadir también información sobre la región.
+* Defina y, a continuación, aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de la organización incluya información sobre el área de negocio, el tipo de nube y la fase del proceso (desarrollo, pruebas o producción). Para las organizaciones que se encuentran en {{site.data.keyword.Bluemix_notm}} Público, es posible que desee añadir también información sobre la región.
 * Defina las restricciones que se aplican a la organización. Por ejemplo, defina el rol de los miembros del equipo que van a trabajar en dicha organización.
 * Identifique al gestor de la organización.
 * Identifique el área de la empresa que se asigna a esta organización.
 
-Los casos de ejemplo siguientes muestran distintos enfoques que puede adoptar al definir el número de organizaciones de {{site.data.keyword.Bluemix_notm}} en un entorno de nube:
+Los casos de ejemplo siguientes muestran distintos enfoques que puede adoptar al definir el número de organizaciones de {{site.data.keyword.Bluemix_notm}} en un entorno:
 * **Caso de ejemplo 1: Segregación de los grupos de usuarios por entrega de aplicación empresarial**
 
  Descripción: Las reglas empresariales requieren que las apps de cada LOB deban estar desarrolladas, gestionadas y desplegadas por los usuarios de cada LOB. Se debe imponer seguridad para que los usuarios sólo puedan acceder a las apps que sean relevantes para su parte del negocio. Por lo tanto, los usuarios trabajan en distintas áreas de negocio, las aplicaciones en las que están trabajando necesitan acceso a distintos recursos de {{site.data.keyword.Bluemix_notm}}, y no hay solapamiento de actividades.
@@ -177,12 +175,12 @@ Los casos de ejemplo siguientes muestran distintos enfoques que puede adoptar al
    Figura 3. Ejemplo de una arquitectura de organización única alineada por fase de entrega
 {: #bpfigure3}
 
-### Denominación, restricciones y gestión de la organización 
+### Denominación, restricciones y gestión de la organización
 {: #orgadmin}   
 
 Tenga en cuenta la siguiente orientación de organización:
 
-* Defina y aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de la organización incluya información sobre el área de negocio, el tipo de nube ({{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Local, o {{site.data.keyword.Bluemix_notm}} Dedicado), y el rol de TI (desarrollo, prueba o producción). Para las organizaciones que se encuentran en {{site.data.keyword.Bluemix_notm}} Público, es posible que desee añadir también información sobre la región. Puede cambiar el nombre de una organización una vez que esté creada. Si el nombre de una organización se altera, notifique a todos los miembros del equipo de la organización sobre el cambio.
+* Defina y aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de la organización incluya información sobre el área de negocio, el tipo de nube y el rol de TI (desarrollo, pruebas o producción). Para las organizaciones que se encuentran en {{site.data.keyword.Bluemix_notm}} Público, es posible que desee añadir también información sobre la región. Puede cambiar el nombre de una organización una vez que esté creada. Si el nombre de una organización se altera, notifique a todos los miembros del equipo de la organización sobre el cambio.
 * Defina las restricciones que se aplican a la organización. Por ejemplo, defina el rol de cada uno de los miembros del equipo y los permisos que necesitan para trabajar en dicha organización.
 * Identifique al gestor de la organización. Es posible que desee delegar la administración de la organización a más de una persona.
 * Identifique el área de la empresa que se asigna a esta organización. El uso de la aplicación que se genera en cada uno de los espacios, dentro de la organización, se acumula y se notifica a nivel de organización.
@@ -220,7 +218,7 @@ varios espacios, que se basan en el número de aplicaciones o proyectos que entr
 
 Para definir los distintos espacios para la organización de la nube, tenga en cuenta las siguientes instrucciones:
 
-* Defina y aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de espacio incluya información sobre el lugar donde está ubicada la organización y el tipo de nube ({{site.data.keyword.Bluemix_notm}} Público, {{site.data.keyword.Bluemix_notm}} Dedicado o {{site.data.keyword.Bluemix_notm}} Local). Puede cambiar el nombre de un espacio una vez que se haya creado. Si se altera un nombre de espacio, notifique a todos los miembros del equipo del espacio sobre el cambio.
+* Defina y aplique un convenio de denominación. Por ejemplo, defina un convenio de denominación donde el nombre de espacio incluya información sobre el lugar donde está ubicada la organización y el tipo de nube. Puede cambiar el nombre de un espacio una vez que se haya creado. Si se altera un nombre de espacio, notifique a todos los miembros del equipo del espacio sobre el cambio.
 * Defina las restricciones que se aplican al espacio. Por ejemplo, defina el tipo de aplicaciones que se pueden desarrollar, gestionar y desplegar en cada espacio.
 * Identifique al gestor del espacio. Es posible que desee delegar la administración del espacio a más de una persona.
 
@@ -229,10 +227,10 @@ Para definir los distintos espacios para la organización de la nube, tenga en c
 
 Al crear una organización en {{site.data.keyword.Bluemix_notm}}, suministrará recursos de infraestructura entre los que se incluyen recursos como la memoria, IP (Internet Protocol, protocolo de Internet), servidores y almacenamiento:
 *	Para {{site.data.keyword.Bluemix_notm}} Público, IBM asignará un conjunto mínimo de recursos a una organización. En función del tipo de cuenta, tendrá distintas asignaciones de recursos. Estos recursos definen la cuota asignada por IBM a una organización.
-*	Para {{site.data.keyword.Bluemix_notm}} Dedicado, solicite un conjunto de recursos a IBM, y a continuación podrá distribuirlos entre las distintas organizaciones del entorno de nube de {{site.data.keyword.Bluemix_notm}} Dedicado.
-*	Para {{site.data.keyword.Bluemix_notm}} Local, proporcione los recursos y entonces podrá distribuirlos entre las organizaciones del entorno de nube de {{site.data.keyword.Bluemix_notm}} Local.
+*	Para {{site.data.keyword.Bluemix_dedicated_notm}}, solicite un conjunto de recursos a IBM, y a continuación podrá distribuirlos entre las distintas organizaciones del entorno de {{site.data.keyword.Bluemix_dedicated_notm}}.
+*	Para {{site.data.keyword.Bluemix_local_notm}}, proporcione los recursos y entonces podrá distribuirlos entre las organizaciones del entorno de {{site.data.keyword.Bluemix_local_notm}}.
 
-Para {{site.data.keyword.Bluemix_notm}} Público y {{site.data.keyword.Bluemix_notm}} Dedicado, podrá solicitar recursos adicionales de IBM. Para {{site.data.keyword.Bluemix_notm}} Local, es responsable de proporcionar los recursos que puedan ser necesarios para gestionar su empresa en la nube local.
+Para {{site.data.keyword.Bluemix_notm}} Público y {{site.data.keyword.Bluemix_dedicated_notm}}, podrá solicitar recursos adicionales de IBM. Para {{site.data.keyword.Bluemix_local_notm}}, es responsable de proporcionar los recursos que puedan ser necesarios para gestionar su empresa en este entorno.
 
 La cuota que se asigna a una organización representa los recursos disponibles de la organización. Gestione la cuota y decida cómo se distribuirán los recursos en la organización.
 
@@ -241,14 +239,14 @@ La cuota que se asigna a una organización representa los recursos disponibles d
 
 Gestione y supervise la cuota de una cuenta por espacio y por infraestructura. Cualquier recurso que se suministra en un espacio y que después utiliza la aplicación desplegada consume una parte de la cuota disponible para la organización.
 * Para obtener más información sobre cómo ver y gestionar la cuota de una organización en {{site.data.keyword.Bluemix_notm}} Público, consulte [Gestión de cuota](/docs/admin/manageorg.html#managequota "Managing quota").
-* Para obtener más información sobre cómo ver y gestionar la cuota de una organización en {{site.data.keyword.Bluemix_notm}} Dedicado o {{site.data.keyword.Bluemix_notm}} Local, consulte [Visualización de uso e informes](/docs/admin/index.html?pos=2#oc_resource "Visualización de uso e informes").
+* Para obtener más información sobre cómo ver y gestionar la cuota de una organización en {{site.data.keyword.Bluemix_dedicated_notm}} o {{site.data.keyword.Bluemix_local_notm}}, consulte [Visualización de uso e informes](/docs/admin/index.html?pos=2#oc_resource "Visualización de uso e informes").
 
 ## Asignación de roles
 {: #roles}
 
 Puede otorgar varios roles a miembros del equipo en una cuenta de {{site.data.keyword.Bluemix_notm}}. Estos roles definen los permisos del usuario para gestionar los recursos de la cuenta y de la organización:
 * Puede otorgar [roles de usuario](/docs/iam/users_roles.html#userrolesinfo "user roles") a miembros de una organización. Estos roles definen el nivel de acceso dentro de la organización, y restringen quién puede acceder a un espacio y a sus recursos. Por ejemplo, puede otorgar a los usuarios distintos permisos en distintos espacios.
-* Sólo en {{site.data.keyword.Bluemix_notm}} Dedicado y {{site.data.keyword.Bluemix_notm}} Local, puede otorgar [roles administrativos](/docs/admin/index.html#oc_useradmin "administrative roles") a miembros de una cuenta para gestionar información del sistema, uso de los recursos de una cuenta, informes y registros, servicios de catálogo, usuarios y uso de recursos por organización.
+* Sólo en {{site.data.keyword.Bluemix_dedicated_notm}} y {{site.data.keyword.Bluemix_local_notm}}, puede otorgar [roles administrativos](/docs/admin/index.html#oc_useradmin "roles administrativos") a miembros de una cuenta para gestionar información del sistema, uso de los recursos de una cuenta, informes y registros, servicios de catálogo, usuarios y uso de recursos por organización.
 
 ### Propietario de la cuenta
 {: #accountowner}
@@ -261,12 +259,12 @@ Entre las tareas principales del propietario de la cuenta se incluyen las siguie
 * Creación de organizaciones.
 * Adición de los miembros del equipo a la cuenta.
 
-Para añadir miembros del equipo a una cuenta, utilice la dirección de correo electrónico del usuario o una lista de direcciones de correo electrónico. En {{site.data.keyword.Bluemix_notm}} Dedicado y {{site.data.keyword.Bluemix_notm}} Local, también puede utilizar el LDAP de la empresa para añadir usuarios, grupos de usuarios, o ambos. También puede importar usuarios desde un archivo. Para obtener más información, consulte [Gestión de usuarios y permisos](/docs/admin/index.html#oc_useradmin "Managing users and permissions").
+Para añadir miembros del equipo a una cuenta, utilice la dirección de correo electrónico del usuario o una lista de direcciones de correo electrónico. En {{site.data.keyword.Bluemix_dedicated_notm}} y {{site.data.keyword.Bluemix_local_notm}}, también puede utilizar el LDAP de la empresa para añadir usuarios, grupos de usuarios, o ambos. También puede importar usuarios desde un archivo. Para obtener más información, consulte [Gestión de usuarios y permisos](/docs/admin/index.html#oc_useradmin "Managing users and permissions").
 
 El propietario de cuenta también puede realizar las tareas siguientes:
 
 * Añada uno o varios usuarios como gestores de una organización asignando a estos usuarios el rol **Gestor**. Considere la posibilidad de añadir dos usuarios como gestores de la organización. El primer usuario actúa como el gestor principal de la organización. El segundo usuario actúa como el gestor adjunto, en caso de que el gestor principal no esté disponible.
-* En {{site.data.keyword.Bluemix_notm}} Público, y dependiendo del [tipo de cuenta](/docs/pricing/index.html#pay-accounts "account type"), estableciendo notificaciones de gasto. En primer lugar, el propietario de la cuenta definirá los umbrales que se utilizan para alertarle de cuando los costes lleguen a un determinado límite. A continuación, [configurará las notificaciones por correo electrónico](/docs/admin/account.html#notifications "configures email notifications"). El gestor de la cuenta puede utilizar la información de los mensajes de correo electrónico como notificaciones de alerta y pueden realizar acciones en función de la información proporcionada, por ejemplo actualizando la cuenta. **Nota:** El propietario de la cuenta es la única persona que puede recibir correos electrónicos de notificaciones de gasto.
+* En {{site.data.keyword.Bluemix_notm}} Público, y dependiendo del [tipo de cuenta](/docs/pricing/index.html#pay-accounts "account type"), estableciendo notificaciones de gasto. En primer lugar, el propietario de la cuenta definirá los umbrales que se utilizan para alertarle de cuando los costes lleguen a un determinado límite. A continuación, [configurará las notificaciones por correo electrónico](/docs/admin/account.html#notifications "configures email notifications"). El gestor de la cuenta puede utilizar la información de los mensajes de correo electrónico como notificaciones de alerta y pueden realizar acciones en función de la información proporcionada, por ejemplo actualizando la cuenta. Tenga en cuenta que el propietario de la cuenta es la única persona que puede recibir correos electrónicos de notificaciones de gasto.
 * Añada uno o varios usuarios como administradores de la cuenta asignando a estos usuarios el rol **Admin**. Considere la posibilidad de añadir un mínimo de dos usuarios. El primer usuario actúa como el administrador principal de la cuenta. El segundo usuario actúa como el administrador adjunto.
 * Defina las notificaciones de la cuenta para informar sobre las actualizaciones de mantenimiento o las alertas de incidencias críticas. Estas notificaciones se pueden configurar para enviar un correo electrónico o un SMS (Short Message Service, servicio de mensajes cortos).
 
@@ -340,8 +338,7 @@ Para todos los espacios, es posible que desee otorgar el rol **Auditor** de espa
 ### Roles administrativos para cuentas locales y dedicadas
 {: #adminroles}
 
-Los [roles administrativos](/docs/hybrid/index.html#oc_useradmin "Gestión de usuarios y permisos") definen los permisos que puede otorgar a los usuarios para gestionar una cuenta {{site.data.keyword.Bluemix_notm}} Dedicado o {{site.data.keyword.Bluemix_notm}} Local.
-Puede otorgar permisos de lectura o de grabación para permitir que un usuario vea información del sistema, uso de los recursos de la cuenta, informes y registros, servicios de catálogo, usuarios, y uso de recursos por organización.
+Los [roles administrativos](/docs/hybrid/index.html#oc_useradmin "Gestión de usuarios y permisos") definen los permisos que puede otorgar a los usuarios para gestionar una cuenta {{site.data.keyword.Bluemix_dedicated_notm}} o {{site.data.keyword.Bluemix_local_notm}}. Puede otorgar permisos de lectura o de grabación para permitir que un usuario vea información del sistema, uso de los recursos de la cuenta, informes y registros, servicios de catálogo, usuarios, y uso de recursos por organización.
 
 En una arquitectura con varias organizaciones o con una única organización, defina los usuarios y los permisos que necesita cada usuario para gestionar la cuenta:
 
@@ -351,6 +348,6 @@ En una arquitectura con varias organizaciones o con una única organización, de
 
    * Rol de administrador: Los usuarios tendrán la autorización para gestionar toda la organización.
    * Rol de usuario: Los gestores de organización con permisos de escritura pueden añadir usuarios a la cuenta y sus organizaciones. Los gestores de organización con permisos de lectura pueden ver la lista de miembros en la cuenta.
-   * Rol de catálogo: Los usuarios con permisos de escritura pueden definir y gestionar los iniciadores y servicios de Bluemix visibles en el catálogo de {{site.data.keyword.Bluemix_notm}} para los usuarios.
+   * Rol de catálogo: Los usuarios con permisos de escritura pueden definir y gestionar los iniciadores y servicios de {{site.data.keyword.Bluemix_notm}} visibles en el catálogo de {{site.data.keyword.Bluemix_notm}} para los usuarios.
    * Rol de informes: Los usuarios con permisos de escritura pueden ver y añadir informes que otros usuarios con permisos de lectura pueden descargar. Otorgue permisos de lectura a todos los miembros del equipo de administración.
    * Rol de inicio de sesión: Otorgue este rol a todos los miembros del equipo de administración. También puede otorgar este rol a otros usuarios de la cuenta que necesitan acceso para ver las notificaciones de la cuenta y la información del sistema.
