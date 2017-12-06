@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-21"
+lastupdated: "2017-12-06"
 
 ---
 
@@ -36,6 +36,8 @@ Enter the following command to allow an account to see your private resource.
 `bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 After the includes-add flag, you can add a comma separated list of emails or IDs associated with accounts.
+
+After you run the command, the process to include the resource takes 30 minutes. After 30 minutes, log out and back in to your account to see the included resource.
 
 ## Remove an account from the includes list
 {: #remove-exclude}
@@ -77,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-You can get the resource ID for the child deployment and then include an account by using the following command. `bx catalog entry-visibility-set <service-id> ——includes-add <some-other-account>`.
+You can get the resource ID for the child deployment and then include an account by using the following command. `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 The children of an object can inherit visibility in complex ways. If the child object is private, it has its own visibility configuration. However, if the child object is set to public, it inherits the visibility of its parent. Setting visibility on a private child object may restrict its visibility more than the parent.
 

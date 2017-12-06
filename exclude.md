@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-21"
+lastupdated: "2017-12-06"
 
 ---
 
@@ -37,11 +37,15 @@ Enter `bx catalog service <service-id or service-name>`. Using what you found in
 ## Step 3: Hide the resource
 {: #vis-exc}
 
-Enter the following command to prevent another in your account from seeing a public resource.
+Enter the following command to prevent your account from seeing a public resource.
 
 `bx catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
 After the excludes flag, you can add a comma separated list of emails or account ID associated with accounts.
+
+After you run the command, the process to hide the resource takes 30 minutes. After 30 minutes, log out and back in to your account to see the hidden resource.
+
+**Note:** Entries that you hide are not available from the UI and bx CLI. The hidden entries are still visible in the Cloud Foundry marketplace, but a hidden plan cannot be provisioned from Cloud Foundry. Admins of the excluded account can still see the resource.
 
 ## Remove an account from the excludes list
 {: #remove-exclude}
