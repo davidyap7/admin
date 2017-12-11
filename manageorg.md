@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -23,7 +23,7 @@ To manage your orgs from the {{site.data.keyword.Bluemix}} console, click **Mana
 {: #orgrename}
 
 Complete the following steps to rename your organization:
-1. Click **Manage** > **Account** > **Organizations**.
+1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
 2. Determine which org you want to rename, and click **View Details**.
 3. Click **Edit Org**.
 4. Click **Edit** next to the name of the org.
@@ -40,7 +40,7 @@ You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.htm
 
 Complete the following steps to delete a space:
 
-1. Click **Manage** > **Account** > **Organizations**.
+1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
 2. Select the org that you want to edit, and click **View Details**.
 3. Determine which space to delete, and click **Edit Space**.
 4. Click **Delete Space**.
@@ -52,7 +52,7 @@ Complete the following steps to delete a space:
 
 Complete the following steps to edit the users roles for a specific org:
 
-1. Click **Manage** > **Account** > **Organizations**.
+1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
 2. Determine which organization you want to edit, and click **View Details** then **Edit Org**.
 4. You can see the members of your organization and their roles in the **USERS** tab.
 
@@ -60,7 +60,7 @@ Complete the following steps to edit the users roles for a specific org:
 
 Complete the following steps to edit the user roles for a specific space:
 
-1. Click **Manage** > **Account** > **Organizations**.
+1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
 2. Select the organization that you want to view the members for, and click **View Details**.
 3. Determine which space you want to edit, and click **Edit Space**.
 4. You can see the members of your space and their roles in the **USERS** tab.
@@ -72,7 +72,7 @@ As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, 
 
 To view the used and allocated quota for an org, complete the following steps:
 
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 2. Identify the organization that you want to view the quota for, and click **View Details**.
 3. Click **Edit Org**.
 4. If you have spaces defined in more than one region, select the specific region that you want to view.
@@ -99,7 +99,7 @@ To change the quota that is allocated to an organization, you must open a suppor
 
 As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an organization and its spaces. As a space manager, the **Domains** tab for a space is a read-only list of the domains that are assigned to the space.
 
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 2. Identify the organization that you want to view or edits domains for.
 3. Select **View Details** for that org.
 4. Click **Edit Org**.
