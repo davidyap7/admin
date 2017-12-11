@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -33,7 +33,7 @@ If you're an administrator for {{site.data.keyword.Bluemix_notm}} Local or {{sit
 ## Changing your profile photo
 {: #photo notoc}
 
-Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **User Profile**.
+Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile**.
 
   * To add a photo, click **UPLOAD A PHOTO**.
   * To replace your current photo with a new one, click **CHANGE PHOTO**.
@@ -46,7 +46,7 @@ An IBMid is a single ID that you use to log into your {{site.data.keyword.Bluemi
 
 You can't change your IBMid, but you can edit your profile information associated with it, such as your name, email, phone number, password, or company name.
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **User Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile**.
 2. Click **edit your IBMid**.
 3. Edit your user information.
 4. Click **Save**.
