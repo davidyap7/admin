@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -20,12 +20,12 @@ lastupdated: "2017-11-16"
 Sign up to get notified about your {{site.data.keyword.Bluemix_notm}} account spending limits and  maintenance updates to the Public regions of the {{site.data.keyword.Bluemix_notm}} platform. Spending notifications are available only for Pay-As-You-Go and Subscription account owners.
 {:shortdesc}
 
-You can set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance, and you can set spending notifications that alert you when your account is close to the spending threshold that you specified. Go to **Manage > Account > Notifications** to set different notification types for your account.
+You can set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance, and you can set spending notifications that alert you when your account is close to the spending threshold that you specified. Go to **Manage > Account > Platform Notifications** to set different notification types for your account.
 
 ## Setting platform notifications
 {: #platform}
 
-From the console menu bar, click **Manage > Account > Notifications > Platform Notifications** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notifications.
+From the console menu bar, click **Manage > Account > Platform Notifications** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notifications.
 
 ## Setting spending notifications
 {: #spending}
