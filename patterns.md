@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -33,7 +33,7 @@ For a successful project, take time to plan and design which resources you need 
 
 When you design a cloud solution, also think about account security and operational requirements, country regulations, market directives, and corporate policies. To cater to your project needs, {{site.data.keyword.Bluemix}} offers three types of cloud environments.
 
-* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): The infrastructure resources are shared by different companies and users.
+* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/ibm-cloud.html "{{site.data.keyword.Bluemix_notm}} Public"): The infrastructure resources are shared by different companies and users.
 * [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}"): You use your own dedicated {{site.data.keyword.BluSoftlayer_notm}}, which you can connect securely to {{site.data.keyword.Bluemix_notm}} Public and your own network.
 * [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}"): Sits behind your company firewall, which can protect your most sensitive workloads and can connect securely to both {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_dedicated_notm}} environments.
 
@@ -259,7 +259,7 @@ To add team members to an account, use the email address of the user or a list o
 The account owner can also perform the following tasks:
 
 * Add one or more users as managers of an organization by assigning these users the **Manager** role. Consider adding two users as organization managers. The first user acts as the principal manager of the organization. The second user acts as the deputy manager, in case, the principal manager is unavailable.
-* In {{site.data.keyword.Bluemix_notm}} Public, and depending on the [account type](/docs/pricing/index.html#pay-accounts "account type"), setting spending notifications. First, the account owner defines the thresholds that are used to alert him when costs reach a certain limit. Then, [configures email notifications](/docs/admin/account.html#notifications "configures email notifications"). The account manager can use the information in the emails as alert notifications and might take action based on the information provided, for example upgrading the account. Note that he account owner is the only person that can receive spending notification emails.
+* In {{site.data.keyword.Bluemix_notm}} Public, and depending on the [account type](/docs/pricing/index.html#pay-accounts "account type"), setting spending notifications. First, the account owner defines the thresholds that are used to alert him when costs reach a certain limit. Then, [configures email notifications](/docs/admin/notifications.html#setting-notifications "configures email notifications"). The account manager can use the information in the emails as alert notifications and might take action based on the information provided, for example upgrading the account. Note that he account owner is the only person that can receive spending notification emails.
 * Add one or more users as administrators of the account by assigning these users the **Admin** role. Consider adding a minimum of two users. The first user acts as the principal administrator of the account. The second user acts as the deputy administrator.
 * Define the account notifications to inform about maintenance updates or critical incident alerts. These notifications can be configured to send an email or a Short Message Service.
 
