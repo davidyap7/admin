@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -46,7 +46,7 @@ Each resource group is free, however connections between a resource group and a 
 Your first resource group is created and named `Default` for you. You can choose to update the name of this group or any other groups that you create.
 
 1. Go to **Manage** &gt; **Account** &gt; **Resource Groups**.
-2. Click **Edit**.
+2. Click **Rename**.
 3. Enter a unique name and click **Save**.
 
 ## Managing resource groups and resources by using the {{site.data.keyword.Bluemix_notm}} CLI
