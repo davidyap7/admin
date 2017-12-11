@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2017-11-16"
 As an account owner, you can manage your organizations and spaces from the Manage Organizations page in the {{site.data.keyword.Bluemix}} console. Organization managers can also use the Manage Organizations page to manage any organizations where they are set as the manager.
 {:shortdesc}
 
-To manage organizations and spaces, click **Manage** &gt; **Account** &gt; **Organizations**.
+To manage organizations and spaces, click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 
 You must be the account owner of a Pay-As-You-Go account to create an organization.
 {: tip}
@@ -59,8 +59,8 @@ The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assi
 
 Only Pay-As-You-Go account owners can create an organization. You can create an organization by completing the following steps:
 
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
-2. Click **Add a New Org**.
+1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
+2. Click **Add a New Cloud Foundry Org**.
 3. Enter the org name.
 4. Click **Add**.
 
@@ -82,8 +82,8 @@ A user must be assigned at least one of the permissions in the space.
 
 You can create spaces in your organization; for example, a *dev* space as a development environment, a *test* space as a testing environment, and a *production* space as a production environment. Then, you can associate your apps with spaces. Complete the following steps to create a space:
 
-1. Click **Manage** &gt; **Account** &gt; **Organizations**.
+1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 2. Determine the organization that you want to add a space to and select **View Details**.
-4. Click **Add a Space**.
+4. Click **Add a Cloud Foundry Space**.
 5. Enter the space name.
 6. Click **Add**.
