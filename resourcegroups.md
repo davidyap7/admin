@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-12-11"
+lastupdated: "2017-12-12"
 
 
 ---
@@ -31,7 +31,7 @@ To easily view the resources contained within a resource group, filter by resour
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.
 
-If you have a Lite or trial account, you can't create additional resource groups, but you can rename your default resource group.
+If you have a Lite account or a 30-day trial, you can't create additional resource groups, but you can rename your default resource group.
 
 Each resource group is free, however connections between a resource group and a Cloud Foundry org or space count toward your account quota. For more information, see [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
 {: tip}
