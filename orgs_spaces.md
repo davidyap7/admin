@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-12-11"
+lastupdated: "2017-12-12"
 
 ---
 
@@ -21,8 +21,6 @@ As an account owner, you can manage your organizations and spaces from the Manag
 
 To manage organizations and spaces, click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 
-You must be the account owner of a Pay-As-You-Go account to create an organization.
-{: tip}
 
 ## Creating organizations
 {: #createorg}
@@ -57,7 +55,7 @@ The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assi
    * Organization billing manager
    * Organization auditor
 
-Only Pay-As-You-Go account owners can create an organization. You can create an organization by completing the following steps:
+You can create an organization by completing the following steps:
 
 1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
 2. Click **Add a New Cloud Foundry Org**.
