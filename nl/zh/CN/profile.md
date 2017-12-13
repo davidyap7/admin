@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-29"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -66,6 +66,6 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix_notm}} 帐户以获�
 ## 提供反馈
 {: #feedback}
 
-要提交针对 {{site.data.keyword.Bluemix_notm}} 和服务改进的想法，请转至 [IBM Cloud Ideas ![外部链接图标](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}。有关如何使用新构想门户网站的更多信息，请参阅 [Think, write, submit: New ideas portal for IBM Cloud ![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}。
+要提交针对 {{site.data.keyword.Bluemix_notm}} 和服务改进的想法，请转至 [IBM Cloud Ideas ![外部链接图标](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}。有关如何使用构想门户网站的更多信息，请参阅 [Think, write, submit: New ideas portal for IBM Cloud ![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}。
 
-要提供有关文档的反馈，请单击每个页面上的**反馈**链接，或者通过单击标题后的**在 GitHub 中编辑**链接来与我们协作。有关如何帮助改进文档的更多信息，请参阅 [When it comes to docs, everyone can contribute in Bluemix![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}。
+要提供有关文档的反馈，请单击每个页面上的**反馈**链接，或者通过单击标题后的**在 GitHub 中编辑**链接来与我们协作。有关如何帮助改进文档的更多信息，请参阅 [When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}。

@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ lastupdated: "2017-09-07"
 | **事件类型**| **通知方法**|       
 |-----------------|-------------------|
 | 维护更新| 要查看暂挂和完成的通知的完整列表和历史记录，请单击**管理 &gt; 系统信息** &gt; *数字* **个暂挂**。您还可以在“状态”页面上发出有关安排的中断性维护更新事件的警报。单击**支持** &gt; **状态**。您可以通过设置预订，向您选择的收件人发送电子邮件，来扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。|
-| 严重事件| 您将在“状态”页面上获得有关严重事件的警报。单击**支持** &gt; **状态**。您可以通过设置通知预订，向您选择的收件人发送电子邮件，以扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。| 
+| 严重事件| 您将在“状态”页面上获得有关严重事件的警报。单击**支持** &gt; **状态**。您可以通过设置通知预订，向您选择的收件人发送电子邮件，以扩展通知功能。或者，您可以设置预订，使用 Webhook 将“管理”页面的通知与您选择的 Web Service 相集成。|
 | 阈值事件| 您可以设置通知预订，以在环境中的组织配额、物理磁盘、物理内存、保留磁盘或保留内存达到阈值时，向您选择的收件人发送电子邮件。或者，您可以设置预订，使用 Webhook 将通知与您选择的 Web Service 相集成。|  
 | {{site.data.keyword.Bluemix_notm}} 状态| 您始终可以在“状态”页面查看平台、服务和您的 {{site.data.keyword.Bluemix_notm}} 实例的最新状态。单击**支持** &gt; **状态**。|
 {: caption="表 2. 事件类型和通知方法" caption-side="top"}
@@ -374,10 +374,10 @@ lastupdated: "2017-09-07"
 	<dt><strong>物理</strong></dt>
 	<dd>“物理”折线图显示实际在使用的内存或磁盘空间量。</dd>
 	</dl>
-	
+
 对于每个可用的历史使用情况视图，至少需要两个数据点才能呈现图形。这相当于对于过去 48 小时，至少需要两个小时的数据，对于过去 30 天，至少两天的数据，对于过去 5 个月，至少两个月的数据。对于 30 天和 5 个月的视图，将返回当天或当月的部分完整平均值或最大值，并且将随着收集更多数据而进行调整。
 
-支持这些视图的数据可通过[度量值 API](/docs/admin/index.html#envappmetricsapi) 来获取。要查看用于生成视图的实际 API 端点和数据，请单击图表上方的**了解有关 API 的更多信息**链接。如果单击显示的对话框中的任一链接，将在浏览器中打开一个新选项卡，其中包含度量值 API 端点的 JSON 响应。 
+支持这些视图的数据可通过[度量值 API](/docs/admin/index.html#envappmetricsapi) 来获取。要查看用于生成视图的实际 API 端点和数据，请单击图表上方的**了解有关 API 的更多信息**链接。如果单击显示的对话框中的任一链接，将在浏览器中打开一个新选项卡，其中包含度量值 API 端点的 JSON 响应。
 
 #### 服务使用量详细信息
 {: #servicesresourceusage}
@@ -667,7 +667,7 @@ lastupdated: "2017-09-07"
 |notCreatable（可选）| 布尔值，指示是否可以通过 {{site.data.keyword.Bluemix_notm}} 用户界面和 cf 命令行界面创建服务实例。值为 true 表示无法通过 {{site.data.keyword.Bluemix_notm}} 用户界面或 cf 命令行界面创建服务实例。缺省值为 false。|
 |notCreatableMessage（可选）| 无法创建服务实例时，在 {{site.data.keyword.Bluemix_notm}} 用户界面中显示的消息。如果未指定此字段，那么将显示以下缺省消息：可用时进行通知，请确认您的电子邮件地址，或输入其他电子邮件地址。|
 |notCreatableRobotMessage（可选）| 在 {{site.data.keyword.Bluemix_notm}} 用户界面的服务详细信息页面中的对话气泡中显示的消息。此消息用于指示服务可能存在问题，或者指示导致服务不可用的其他原因。可以指定消息来说明原因。如果未指定此字段，那么将显示以下缺省消息：此服务当前不可用。|
-|apiReferenceUrl（可选）| iFrame 的 URL，位于“目录”中服务详细信息页面上的“API 引用”区域中。如果未用于“目录”中的服务详细信息页面，那么可以输入在“{{site.data.keyword.Bluemix_notm}} REST API 文档”微服务中注册服务时，分配给服务的“REST API 文档”的数字值。这将在服务仪表板中显示 REST API 文档。|
+|apiReferenceUrl（可选）| iFrame 的 URL，位于“目录”中服务详细信息页面上的“API 参考”区域中。如果未用于“目录”中的服务详细信息页面，那么可以输入在“{{site.data.keyword.Bluemix_notm}} REST API 文档”微服务中注册服务时，分配给服务的“REST API 文档”的数字值。这将在服务仪表板中显示 REST API 文档。|
 |sdkDownloadUrl（可选）| 单击“下载 SDK”按钮时打开的 Web 页面的 URL。“下载 SDK”按钮位于“仪表板”中“应用程序概述”页面的服务磁贴上。Web 页面会在新的浏览器选项卡中打开。|
 |serviceMonitorApi| 返回 JSON 数据的 API 的 URL，如以下示例中所示，用于报告服务运行状况。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。|
 |serviceMonitorApp| 应用程序的 URL，该应用程序可部署到 {{site.data.keyword.Bluemix_notm}} 并绑定服务，以提供特定于服务状态的输出。应用程序返回的 JSON 数据格式必须与 serviceMonitorApi 相同。必须在服务元数据中具有 serviceMonitorApi 或 serviceMonitorApp。请参阅以下代码样本以获取示例。|
@@ -850,7 +850,7 @@ lastupdated: "2017-09-07"
 <dd>可以在组织的所有空间中分配的最大公共 IP 地址数。</dd>
 </dl>
 <strong>注</strong>：如果环境中尚无容器，或者如果在环境中尚未设置容器，那么您将收到错误消息。
-<p>有关容器的更多信息，请参阅[关于 IBM Containers](/docs/containers/container_ov.html)。有关容器配额的更多信息，请参阅[配额和 Bluemix 帐户](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
+<p>有关容器的更多信息，请参阅[关于 IBM Containers](/docs/containers/container_ov.html)。有关容器配额的更多信息，请参阅[配额和 {{site.data.keyword.Bluemix_notm}} 帐户](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
 <strong>注：</strong>在 {{site.data.keyword.Bluemix_notm}} 悉尼区域中无法使用容器。</li>
 </ul>
 <li>要保存在“管理组织”页面上进行的任何更改，请单击<strong>保存</strong>。</li>

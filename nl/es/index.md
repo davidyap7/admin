@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -58,7 +58,7 @@ tabla siguiente para obtener información sobre los distintos tipos de notificac
 | **Tipo de suceso** | **Método de notificación** |       
 |-----------------|-------------------|
 | Actualizaciones de mantenimiento | Para ver un listado completo y el historial de notificaciones pendientes y completas, pulse **ADMINISTRACIÓN &gt; INFORMACIÓN DEL SISTEMA** &gt; *Número* **pendientes**. Los sucesos planificados de actualización disruptiva de mantenimiento también se informan mediante alertas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.|
-| Incidencias críticas | Se alerta sobre incidencias críticas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción a una notificación que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.  | 
+| Incidencias críticas | Se alerta sobre incidencias críticas en la página Estado. Pulse **Soporte** &gt; **Estado**. Puede ampliar la capacidad de notificación configurando una suscripción a una notificación que envíe un mensaje de correo electrónico a los destinatarios que usted elija. También puede configurar una suscripción que utilice a webhooks para integrar las notificaciones de la página de administración con el servicio de su elección.  |
 | Sucesos de umbral | Puede configurar una suscripción de notificación que envía un mensaje de correo electrónico a un destinatario de su elección cuando se alcancen en el entorno los umbrales para la cuota de organización, el disco físico, la memoria física, el disco reservado o la memoria reservada. O bien, puede configurar una suscripción que utilice a webhooks para integrar las notificaciones con el servicio de su elección.  |  
 | Estado de {{site.data.keyword.Bluemix_notm}} | Siempre puede ver el estado más reciente de la plataforma, servicios y de su instancia {{site.data.keyword.Bluemix_notm}} en la página Estado. Pulse **Soporte** &gt; **Estado**.  |
 {: caption="Tabla 2. Tipos de sucesos y métodos de notificación" caption-side="top"}
@@ -377,10 +377,10 @@ Para ver información más detallada sobre el uso de memoria física y reservada
 	<dt><strong>Físico</strong></dt>
 	<dd>La línea Físico muestra la cantidad de memoria o espacio de disco que se está utilizando en realidad.</dd>
 	</dl>
-	
+
 Para cada una de las vistas de uso histórico disponibles, al menos dos puntos de datos son necesarios para representar el gráfico. Esto equivale a los datos para al menos dos horas durante las últimas 48 horas, dos días durante los últimos 30 días, y dos meses durante los últimos 5 meses. Para las vistas de 30 días y 5 meses, se devuelven promedios parcialmente completados o valores máximos o valores máximos para el día o mes actual y se ajustarán a medida que se recopilan más datos.
 
-Los datos que alimentan estas vistas están disponibles a través de la [API para Métricas](/docs/admin/index.html#envappmetricsapi). Para ver los puntos finales de la API real y los datos utilizados para generar la vista, pulse en el enlace encima del gráfico **Obtenga más información acerca de la API**. Si pulsa en cualquiera de los enlaces en el diálogo que aparece, se abrirá un nuevo separador en el navegador que contiene la respuesta JSON de las métricas del punto final de la API. 
+Los datos que alimentan estas vistas están disponibles a través de la [API para Métricas](/docs/admin/index.html#envappmetricsapi). Para ver los puntos finales de la API real y los datos utilizados para generar la vista, pulse en el enlace encima del gráfico **Obtenga más información acerca de la API**. Si pulsa en cualquiera de los enlaces en el diálogo que aparece, se abrirá un nuevo separador en el navegador que contiene la respuesta JSON de las métricas del punto final de la API.
 
 #### Detalles de utilización del servicio
 {: #servicesresourceusage}
@@ -874,7 +874,7 @@ Una cuota representa los límites de recursos para las organizaciones del entorn
 <dd>El número máximo de direcciones IP públicas que puede asignar entre todos los espacios de una organización.</dd>
 </dl>
 <strong>Nota</strong>: si aún no tiene contenedores en su entorno o si aún no tiene los contenedores del entorno configurados, recibirá un mensaje de error.
-<p>Para obtener más información sobre contenedores, consulte [Acerca de los contenedores de IBM](/docs/containers/container_ov.html). Para obtener más información sobre cuotas de contenedor, consulte [Cuota y cuentas de Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>Para obtener más información sobre contenedores, consulte [Acerca de los contenedores de IBM](/docs/containers/container_ov.html). Para obtener más información sobre las cuotas de contenedor, consulte [Cuota y cuentas de {{site.data.keyword.Bluemix_notm}}](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Nota:</strong> Los contenedores no están disponibles en la región Sídney de {{site.data.keyword.Bluemix_notm}}.</li>
 </ul>
 <li>Para guardar los cambios que haya efectuado en la página Gestionar

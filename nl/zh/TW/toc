@@ -9,20 +9,21 @@
     帳戶設定
         adminpublic.md
         profile.md
-    
+
     softlayerlink.md
+    resourcegroups.md
 
     {: .topicgroup}
     組織
         orgs_spaces.md
         manageorg.md
-        
+
     notifications.md
     {: .navgroup-end}
 
     {: .navgroup id="learn"}
-    {: .topicgroup}  
+    {: .topicgroup}
     最佳作法
         patterns.md
-        
+
     {: .navgroup-end}

@@ -2,29 +2,27 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-05-03"
+  anos: 2015, 2017 última atualização: "16-11-2017"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # Criando organizações e espaços
 {: #orgsspacesusers}
 
-Como um proprietário da conta, é possível gerenciar suas organizações usando a página
-Gerenciar organizações. Gerenciadores de organização também podem usar a página Gerenciar Organizações,
+Como proprietário da conta, é possível gerenciar suas organizações e espaços por meio da página Gerenciar organizações no console do {{site.data.keyword.Bluemix}}. Gerenciadores de organização também podem usar a página Gerenciar Organizações,
 para gerenciar quaisquer organizações na qual eles estão configurados como o gerente.
 {:shortdesc}
 
-Para gerenciar usuários em sua conta, na barra de menus do {{site.data.keyword.Bluemix_notm}},
-clique em **Gerenciar** &gt; **Conta** &gt;
-**Usuários**. 
+Para gerenciar organizações e espaços, clique em **Gerenciar** &gt; **Conta** &gt; **Organizações**.
 
-**Observação**: deve-se ser o proprietário de uma conta pay-as-you-go para criar uma organização.
+Deve-se ser o proprietário da conta de uma conta Pagamento por uso para criar uma organização.
+{: tip}
 
 ## Criando Organizações
 {: #createorg}
@@ -32,7 +30,7 @@ clique em **Gerenciar** &gt; **Conta** &gt;
 As organizações podem abranger múltiplas regiões e elas são definidas pelos itens a seguir:
 
 <dl>
-<dt>Os membros da equipe</dt>
+<dt>Usuários</dt>
 <dd>A função com permissão básica em organizações e espaços. Você deve estar designado a
 uma organização para poder receber permissões para os espaços dentro da organização. Para
 obter informações detalhadas, veja
@@ -47,37 +45,29 @@ maneira, quando o
 receber uma solicitação para o domínio customizado, ele poderá roteá-lo corretamente
 para o aplicativo.</p></dd>
 <dt>Cota</dt>
-<dd>Representa os recursos que estão disponíveis para uma organização, incluindo o número de serviços e a quantia de memória que pode ser alocada para uso pela organização. As cotas são designadas quando as organizações são criadas. Qualquer aplicativo ou serviço em um espaço dentro de uma organização contribui para o uso da cota. Com planos de Pagamento por uso ou de Assinatura, é possível ajustar a sua cota para aplicativos e contêineres do Cloud Foundry
-conforme as necessidades de mudança da sua organização. Consulte [Gerenciando cota](/docs/admin/manageorg.html#managequota).
-<p>**Nota:** em uma conta da Assinatura, a cota é um limite definido pelo usuário que aciona notificações de gasto.</p></dd>
+<dd>Representa os recursos que estão disponíveis para uma organização, incluindo o número de serviços e a quantia de memória que pode ser alocada para uso pela organização. As cotas são designadas quando as organizações são criadas. Qualquer aplicativo ou serviço em um espaço dentro de uma organização contribui para o uso da cota. Com as contas de Pagamento por uso ou Assinatura, é possível ajustar sua cota para aplicativos e contêineres do Cloud Foundry conforme as necessidades de sua organização mudam. Consulte [Gerenciando cota](/docs/admin/manageorg.html#managequota).</dd>
 </dl>
 
-No {{site.data.keyword.Bluemix_notm}}, é possível usar organizações para permitir a colaboração entre membros da equipe e para facilitar o agrupamento lógico de recursos do projeto das
-seguintes maneiras:
+Em uma conta de Assinatura, a cota é um limite definido pelo usuário que aciona notificações de gastos.
+{: tip}
 
-<ul>
-<li>É possível agrupar um conjunto de espaços, aplicativos, serviços, domínios, rotas e membros da equipe juntos em organizações.</li>
-<li>É possível gerenciar o acesso aos espaços e organizações por usuário.</li>
-</ul>
+No {{site.data.keyword.Bluemix_notm}}, é possível usar organizações para permitir a colaboração entre usuários e para facilitar o agrupamento lógico de recursos de projetos das maneiras a seguir:
 
-Ao
-criar uma organização, o nome da organização deve ser exclusivo no {{site.data.keyword.Bluemix_notm}}. Se o nome da organização já estiver em uso por outro usuário do
-{{site.data.keyword.Bluemix_notm}} Public, Dedicated ou
-Local, então, deverá especificar um novo nome. Depois de criar a organização, você será designado automaticamente com a permissão de
-*Gerenciador de organização*, que permite editar o nome da organização, incluir membros da equipe e criar ou excluir espaços na organização.
+   * É possível agrupar um conjunto de espaços, apps, serviços, domínios, rotas e usuários em organizações.
+   * É possível gerenciar o acesso aos espaços e organizações por usuário.
+
+Ao criar uma organização, o nome deve ser exclusivo no {{site.data.keyword.Bluemix_notm}}. Se o nome da organização já está em uso por outro usuário do {{site.data.keyword.Bluemix_notm}} Public, Dedicated ou Local, deve-se especificar um novo nome. Depois de criar a organização, você é designado automaticamente à permissão *Gerenciador de organização*, que permite editar o nome da organização, incluir usuários e criar ou excluir espaços na organização.
 
 É possível usar o comando [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) para excluir organizações. Ao excluir uma organização, todos os espaços, aplicativos e serviços
 dentro da organização são excluídos.
 
-As [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir podem ser designadas para membros da equipe em uma organização:
+As [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir podem ser designadas a usuários em uma organização. Todos os usuários convidados para a conta são designados à função de auditor por padrão.
 
-<ul>
-<li>Gerente da organização</li>
-<li>Gerente de faturamento da organização</li>
-<li>Auditor da organização</li>
-</ul>
+   * Gerente da organização
+   * Gerente de faturamento da organização
+   * Auditor da organização
 
-Somente proprietários da conta com contas de Pagamento por uso podem criar uma organização. É possível criar uma organização concluindo as etapas a seguir:
+Somente proprietários da conta Pagamento por uso podem criar uma organização. É possível criar uma organização concluindo as etapas a seguir:
 
 1. Clique em **Gerenciar** &gt; **Conta** &gt;
 **Organizações**.
@@ -90,19 +80,19 @@ Somente proprietários da conta com contas de Pagamento por uso podem criar uma 
 ## Criando Espaços
 {: #spaceinfo}
 
-Dentro de uma organização, é possível usar espaços para agrupar um conjunto de aplicativos, serviços e membros da equipe. Espaços são ligados a uma região específica no
+Dentro de uma organização, é possível usar espaços para
+agrupar um conjunto de aplicativos, serviços e usuários. Espaços são ligados a uma região específica no
 {{site.data.keyword.Bluemix_notm}}.
 
-Após incluir membros da equipe em uma organização, é possível conceder a eles permissões para os espaços. Semelhantes às organizações, os espaços também têm um conjunto de
+Depois de incluir usuários em uma organização, é possível conceder a eles permissões para os espaços. Semelhantes às organizações, os espaços também têm um conjunto de
 [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) com permissões específicas que são designadas a membros da equipe:
 
-<ul>
-<li>Gerente de espaço</li>
-<li>Desenvolvedor de espaço</li>
-<li>Auditor de espaço</li>
-</ul>
+  * Gerente de espaço
+  * Desenvolvedor de espaço
+  * Auditor de espaço
 
-**Nota**: um membro da equipe deve ser designado a pelo menos uma das permissões no espaço.
+Deve-se atribuir a um usuário pelo menos uma das permissões no espaço.
+{: tip}
 
 É possível criar espaços em
 sua organização, por exemplo, um espaço *dev* como
@@ -112,8 +102,7 @@ produção. Em seguida, é possível associar os apps aos espaços. Conclua as e
 
 1. Clique em **Gerenciar** &gt; **Conta** &gt;
 **Organizações**.
-2. Identifique a organização na qual você deseja incluir um espaço e selecione **Visualizar
-detalhes**.
+2. Determine a organização que você deseja incluir um espaço e selecione **Visualizar detalhes**.
 4. Clique em **Incluir um espaço**.
 5. Insira o nome de espaço.
 6. Clique em ** Adicionar**.

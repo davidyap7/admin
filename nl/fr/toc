@@ -9,20 +9,21 @@ Gestion de votre compte
     Configuration du compte
         adminpublic.md
         profile.md
-    
+
     softlayerlink.md
+    resourcegroups.md
 
     {: .topicgroup}
     Organisations
         orgs_spaces.md
         manageorg.md
-        
+
     notifications.md
     {: .navgroup-end}
 
     {: .navgroup id="learn"}
-    {: .topicgroup}  
+    {: .topicgroup}
     Meilleures pratiques
         patterns.md
-        
+
     {: .navgroup-end}

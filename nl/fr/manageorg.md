@@ -3,12 +3,13 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-11"
+lastupdated: "2017-11-16"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:screen: .screen}
 {:new_window: target="_blank"}
 
@@ -16,16 +17,14 @@ lastupdated: "2017-04-11"
 En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez effectuer des tâches de gestion de l'organisation, notamment renommer votre organisation, supprimer une organisation ou un espace, mettre à jour les rôles d'organisation ou d'espace et gérer le quota et les domaines.
 {:shortdesc}
 
-Dans la barre de menu de la console, sélectionnez **Gérer > Compte > Organisations** pour gérer vos organisations. 
-
-**Remarque :** vous pouvez afficher les ressources d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à l'autre depuis le lien des préférences du compte utilisateur dans la barre de menu de la console.
+Pour gérer vos organisations à partir de la console {{site.data.keyword.Bluemix}}, cliquez **Gérer > Compte > Organisations**. Vous ne pouvez afficher les ressources que d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à l'autre depuis le lien des préférences du compte utilisateur dans la barre de menus de la console.
 
 ## Modification du nom d'une organisation
 {: #orgrename}
 
 Procédez comme suit pour renommer votre organisation :
 1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
-2. Identifiez l'organisation à renommer et cliquez sur **Afficher les détails**.
+2. Déterminez quelle organisation vous voulez renommer, puis cliquez sur **Afficher les détails**.
 3. Cliquez sur **Editer l'organisation**.
 4. Cliquez sur **Editer** à côté du nom de l'organisation.
 5. Entrez le nouveau nom d'organisation et cliquez sur **Sauvegarder**.
@@ -33,42 +32,51 @@ Procédez comme suit pour renommer votre organisation :
 ## Suppression d'organisations et d'espaces
 {: #deleteorgs}
 
-En tant que propriétaire de compte, prenez contact avec le [support {{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour supprimer une organisation.
+### Suppression d'une organisation
 
-**Remarque** : les opérations de suppression sont irréversibles. Vous perdez toutes vos applis et tous les services qui sont associés à l'organisation.
+Vous pouvez utiliser la commande [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) pour supprimer des organisations. Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés. N'oubliez pas qu'une opération de suppression est irréversible.
 
-Procédez comme suit pour supprimer une organisation ou un espace :
+### Suppression d'un espace
+
+Pour supprimer un espace, procédez comme suit :
+
 1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
-2. Identifiez l'organisation à éditer et cliquez sur **Afficher les détails**.
-3. Identifiez l'espace à supprimer et cliquez sur **Editer l'espace**.
+2. Sélectionnez l'organisation à éditer, puis cliquez sur **Afficher les détails**.
+3. Déterminez l'espace à supprimer, puis cliquez sur **Editer l'espace**.
 4. Cliquez sur **Supprimer l'espace**.
 
 ## Edition des rôles utilisateur
 {: #listmembers}
 
+### Edition des rôles utilisateur d'une organisation spécifique
+
 Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation spécifique :
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
-2. Identifiez l'organisation dont vous voulez afficher les membres, puis cliquez sur **Afficher les détails**.
-3. Cliquez sur **Editer l'organisation**.
+
+1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+2. Déterminez quelle organisation vous voulez éditer et cliquez sur **Afficher les détails**, puis sur **Editer l'organisation**.
 4. Les membres de votre organisation et leurs rôles s'affichent dans l'onglet **UTILISATEURS**.
 
+### Edition des rôles utilisateur d'un espace spécifique
+
 Procédez comme suit afin d'éditer les rôles utilisateur pour un espace spécifique :
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
-2. Identifiez l'organisation dont vous voulez afficher les membres, puis cliquez sur **Afficher les détails**.
-3. Identifiez l'espace dont vous voulez afficher les membres, puis cliquez sur **Editer l'espace**.
+
+1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+2. Sélectionnez l'organisation dont vous voulez afficher les membres, puis cliquez sur **Afficher les détails**.
+3. Déterminez l'espace à éditer, puis cliquez sur **Editer l'espace**.
 4. Les membres de votre espace et leurs rôles s'affichent dans l'onglet **UTILISATEURS**.
 
 ## Gestion du quota
 {: #managequota}
 
-En tant que propriétaire de compte {{site.data.keyword.Bluemix_notm}} ou responsable de l'organisation, vous pouvez afficher le quota alloué et le quota utilisé pour une organisation. Le quota représente les limites de ressources pour l'organisation et est affecté lorsque l'organisation est créée. Selon que vous disposez d'un compte d'essai ou d'un compte facturable, les ressources disponibles pour une organisation varient. Toute application ou tout service dans un espace de l'organisation contribue à l'utilisation du quota alloué.
+En tant que propriétaire de compte {{site.data.keyword.Bluemix_notm}} ou responsable de l'organisation, vous pouvez afficher le quota alloué et le quota utilisé pour une organisation. Le quota représente les limites de ressources pour l'organisation et est affecté lorsque l'organisation est créée. Les ressources disponibles pour une organisation varient selon que vous disposez d'un compte gratuit ou facturable. Toute application ou tout service dans un espace de l'organisation contribue à l'utilisation du quota alloué.
 
 Procédez comme suit afin d'afficher le quota utilisé et le quota alloué pour une organisation :
+
 1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
 2. Identifiez l'organisation pour laquelle afficher le quota, puis cliquez sur **Afficher les détails**.
 3. Cliquez sur **Editer l'organisation**.
 4. Si des espaces sont définis dans plusieurs régions, sélectionnez la région que vous souhaitez visualiser.
-5. Cliquez sur **QUOTA**. 
+5. Cliquez sur **QUOTA**.
 6. Par défaut, la page du quota **Cloud Foundry** s'ouvre. Vous pouvez afficher les détails de quota des ressources suivantes :
  * MEMOIRE
  * Services
@@ -80,15 +88,16 @@ Procédez comme suit afin d'afficher le quota utilisé et le quota alloué pour 
  * PARTAGE DE FICHIERS
 8. Cliquez sur **Serveurs virtuels** pour visualiser les machines virtuelles.
 
-**Remarque :** les conteneurs ne sont pas disponibles dans la région {{site.data.keyword.Bluemix_notm}} Sydney. 
+Les conteneurs ne sont pas disponibles dans la région {{site.data.keyword.Bluemix_notm}} Sydney.
+{: tip}
 
 Pour plus d'informations sur les conteneurs, voir [Quota](/docs/containers/container_planning.html#container_planning_quota) dans la documentation sur les conteneurs.
-Pour modifier le quota alloué à une organisation, vous devez ouvrir un ticket de demande de service. Pour plus d'informations sur l'ouverture d'un ticket de demande de service, voir [Support client](/docs/support/index.html#contacting-support). 
+Pour modifier le quota alloué à une organisation, vous devez ouvrir un ticket de demande de service. Pour plus d'informations sur l'ouverture d'un ticket de demande de service, voir [Support client](/docs/support/index.html#contacting-support).
 
 ## Gestion des domaines
 {: #managedomains}
 
-En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez afficher le domaine de système et ajouter des données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, l'onglet **Domaines** d'un espace est une liste en lecture seule des domaines affectés à l'espace.
+En tant que propriétaire de compte {{site.data.keyword.Bluemix_notm}} ou responsable de l'organisation, ous pouvez afficher le domaine de système et ajouter des données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, l'onglet **Domaines** d'un espace est une liste en lecture seule des domaines affectés à l'espace.
 
 1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
 2. Identifiez l'organisation que vous désirez éditer ou éditer les domaines.

@@ -5,20 +5,21 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-08-30"
+lastupdated: "2017-11-16"
 
 
 ---
 
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
-# 設定 Bluemix 環境
+# 設定 {{site.data.keyword.Bluemix_notm}} 環境
 {: #patterns}
 
-一個成功的專案，需要花時間計劃和設計您需要哪些資源，以及您的企業需求為何。為了協助您開始進行雲端專案，請考量下列問題：
+一個成功的專案，需要花時間計劃和設計您需要哪些資源，以及您的企業需求為何。為了協助您開始使用，請考量下列問題：
 
 * 將要開發的應用程式數量及類型？
 * 應用程式需要存取哪些服務？
@@ -33,8 +34,8 @@ lastupdated: "2017-08-30"
 設計雲端解決方案時，也請思考帳戶安全，以及作業需求、國家/地區法規、市場指引和公司政策。為了滿足您的專案需求，{{site.data.keyword.Bluemix}} 提供三種類型的雲端環境。
 
 * [{{site.data.keyword.Bluemix_notm}} 公用](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} 公用")：由不同的公司及使用者共用的基礎架構資源。
-* [{{site.data.keyword.Bluemix_notm}} 專用](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} 專用")：您使用自己專用的 {{site.data.keyword.BluSoftlayer_notm}}，可以將其安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」雲端和您自己的網路。
-* [{{site.data.keyword.Bluemix_notm}} 本端](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} 本端")：位於公司防火牆後面，可保護您最機密的工作負載，並可安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」和「{{site.data.keyword.Bluemix_notm}} 專用」雲端。
+* [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}")：您使用自己專用的 {{site.data.keyword.BluSoftlayer_notm}}，可以將其安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」及您自己的網路。
+* [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}")：受公司防火牆保護，可保護您最機密的工作負載，並可安全地連接至「{{site.data.keyword.Bluemix_notm}} 公用」及 {{site.data.keyword.Bluemix_dedicated_notm}} 環境。
 
 在決定您需要哪種類型的雲端環境時，就要計劃帳戶、組織、空間、資源和團隊成員的結構。
 
@@ -66,7 +67,7 @@ lastupdated: "2017-08-30"
 ## 決定您的 {{site.data.keyword.Bluemix_notm}} 環境
 {: #bpimplementation}
 
-您可以實作讓開發人員和測試人員能夠與其他團隊成員分工合作的環境，而不是傳統嚴格定義的開發、測試和正式作業方法。在設計您要用來開發及交付應用程式的方法時，您可以建立 {{site.data.keyword.Bluemix_notm}} 空間來實踐該方法。您可以考慮從空間層次逐層向上設計 {{site.data.keyword.Bluemix_notm}} 環境，而不是從組織層次逐層向下設計環境。
+您可以實作讓開發人員及測試人員能夠與其他團隊成員分工合作的環境，而不是傳統嚴格定義的開發、測試及正式作業方法。在設計您要用來開發及交付應用程式的方法時，您可以建立 {{site.data.keyword.Bluemix_notm}} 空間來實踐該方法。您可以考慮從空間層次逐層向上設計 {{site.data.keyword.Bluemix_notm}} 環境，而不是從組織層次逐層向下設計環境。
 
 考量您計劃要開發及部署之應用程式的規模和範圍。{{site.data.keyword.Bluemix_notm}} 空間可以用來作為緊密連接或定義的一個以上應用程式的開發環境。例如，除了開發空間之外，您可能還想要建立用於單元測試、效能測試和整合測試的空間。您也可以為建置、編譯打包和正式作業定義空間。您建立的每一個空間都可以與相同組織內的不同團隊成員共用。
 
@@ -87,10 +88,10 @@ lastupdated: "2017-08-30"
 ## 決定您的組織架構
 {: #orgstructure}
 
-若要設計使用「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」、「{{site.data.keyword.Bluemix_notm}} 本端」或任何組合的雲端環境，您可以使用下列組織架構：
+若要設計使用「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}}、{{site.data.keyword.Bluemix_local_notm}} 或任何組合的環境，您可以使用下列組織架構：
 
-* 單一組織：如果您需要同一組使用者存取組織中任何地方的可用資源，無論是在「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」中，可以考慮使用此架構。
-* 多組織：如果您需要「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」中的不同環境各自獨立，可以考慮使用此架構。
+* 單一組織：如果您需要同一組使用者存取組織中任何地方的可用資源，無論是在「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中，都可以考慮使用此架構。
+* 多組織：如果您需要「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中的不同環境各自獨立，則可以考慮使用此架構。
 
 ### 單一組織與多組織
 {: #singleormulti}
@@ -102,11 +103,12 @@ lastupdated: "2017-08-30"
 * 應用程式及/或專案的界限強制執行。
 * 依使用者角色授與的資源管理授權。
 
-若要實作單一組織架構，請在「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」中建立帳戶，並定義一個組織。然後，您可以根據不同事業線 (LOB)、交付階段、特定專案、應用程式、使用者許可權或這些元件的組合，來定義多個空間。
+若要實作單一組織架構，請在「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中建立帳戶，並定義一個組織。然後，您可以根據不同事業線 (LOB)、交付階段、特定專案、應用程式、使用者許可權或這些元件的組合，來定義多個空間。
 
-若要實作多組織架構，請在「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」中建立帳戶。接下來，您可以定義對應於不同 LOB、交付階段、特定專案、使用者許可權或這些元件之組合的組織。然後，您可以根據公司中相同部門交付的應用程式或專案來定義多個空間。
+若要實作多組織架構，請在「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中建立帳戶。接下來，您可以定義對應於不同 LOB、交付階段、特定專案、使用者許可權或這些元件之組合的組織。然後，您可以根據公司中相同部門交付的應用程式或專案來定義多個空間。
 
-**附註：**您必須具有計費的帳戶（例如「隨收隨付制」或「訂閱」），才能定義多個組織。
+您必須具有計費帳戶（例如「隨收隨付制」或「訂閱」），才能定義多個組織。
+{: tip}
 
 ### 組織考量
 {: #orgconsiderations}
@@ -115,7 +117,7 @@ lastupdated: "2017-08-30"
 
  ![此圖顯示 {{site.data.keyword.Bluemix_notm}} 中的單一組織架構](images/singleorg_example.svg "此圖顯示 {{site.data.keyword.Bluemix_notm}} 中的單一組織架構")
 
- 圖 1.「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」和「{{site.data.keyword.Bluemix_notm}} 本端」的單一組織架構範例
+ 圖 1.「{{site.data.keyword.Bluemix_notm}} 公用」、{{site.data.keyword.Bluemix_dedicated_notm}} 及 {{site.data.keyword.Bluemix_local_notm}} 的單一組織架構範例
 {: #bpfigure1}
 
 當您實作多組織架構時，組織會提供第一層的界限強制執行和抽象化，您可用來控制及定義哪些人可以執行哪些作業。您可以根據不同 LOB、交付階段、使用者角色、特定專案或這些元件的組合，來設計每一個組織。  
@@ -128,12 +130,12 @@ lastupdated: "2017-08-30"
 
 當您為雲端結構定義不同的組織時，請考量下列指引：
 
-* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓組織的名稱包括業務領域、雲端類型（「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 本端」或「{{site.data.keyword.Bluemix_notm}} 專用」）和處理程序階段（開發、測試或正式作業）的相關資訊。對於位在「{{site.data.keyword.Bluemix_notm}} 公用」中的組織，您可能還會想要新增地區的相關資訊。
+* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓組織的名稱包括業務領域、雲端類型及處理程序階段（開發、測試或正式作業）的相關資訊。對於位在「{{site.data.keyword.Bluemix_notm}} 公用」中的組織，您可能還會想要新增地區的相關資訊。
 * 定義適用於組織的限制。例如，定義將在該組織中工作之團隊成員的角色。
 * 識別組織的管理員。
 * 識別配置給此組織的業務領域。
 
-下列情境顯示當您定義雲端環境中的 {{site.data.keyword.Bluemix_notm}} 組織數目時，可以採用的不同方法：
+下列情境顯示當您定義環境中的 {{site.data.keyword.Bluemix_notm}} 組織數目時，可以採用的不同方法：
 * **情境 1：依商業應用程式交付來隔離使用者群組**
 
  說明：公司規則要求每一個 LOB 的應用程式都必須由各 LOB 的使用者來開發、管理及部署。必須強制執行安全保護措施，讓使用者只能存取與其業務部分相關的應用程式。因此，使用者會在不同的業務領域中工作，他們處理的應用程式需要存取不同的 {{site.data.keyword.Bluemix_notm}} 資源，而且沒有活動重疊。
@@ -168,12 +170,12 @@ lastupdated: "2017-08-30"
    圖 3. 配合交付階段的單一組織架構範例
 {: #bpfigure3}
 
-### 組織命名、限制和管理 
+### 組織命名、限制和管理
 {: #orgadmin}   
 
 請考量下列組織指引：
 
-* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓組織的名稱包括業務領域、雲端類型（「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 本端」或「{{site.data.keyword.Bluemix_notm}} 專用」）和 IT 角色（開發、測試或正式作業）的相關資訊。對於位在「{{site.data.keyword.Bluemix_notm}} 公用」中的組織，您可能還會想要新增地區的相關資訊。您可以在建立組織名稱之後予以變更。如果組織名稱有所變更，請將變更資訊通知所有組織團隊成員。
+* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓組織的名稱包括業務領域、雲端類型及 IT 角色（開發、測試或正式作業）的相關資訊。對於位在「{{site.data.keyword.Bluemix_notm}} 公用」中的組織，您可能還會想要新增地區的相關資訊。您可以在建立組織名稱之後予以變更。如果組織名稱有所變更，請將變更資訊通知所有組織團隊成員。
 * 定義適用於組織的限制。例如，定義每一個團隊成員的角色，以及他們在該組織中工作所需的許可權。
 * 識別組織的管理員。您可能會想要將組織管理工作委派給多個人員。
 * 識別配置給此組織的業務領域。在組織內每一個空間中產生的應用程式用量會累計，並且在組織層次提報。
@@ -208,7 +210,7 @@ lastupdated: "2017-08-30"
 
 若要為雲端組織定義不同的空間，請考量下列指引：
 
-* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓空間名稱包括組織所在位置以及雲端類型（「{{site.data.keyword.Bluemix_notm}} 公用」、「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」）的相關資訊。您可以在建立空間名稱之後予以變更。如果空間名稱有所變更，請將變更資訊通知所有空間團隊成員。
+* 定義並強制執行命名慣例。例如，定義一個命名慣例，讓空間名稱包括組織所在位置以及雲端類型的相關資訊。您可以在建立空間名稱之後予以變更。如果空間名稱有所變更，請將變更資訊通知所有空間團隊成員。
 * 定義適用於空間的限制。例如，定義可以在每一個空間中開發、管理及部署的應用程式類型。
 * 識別空間的管理員。您可能會想要將空間管理工作委派給多個人員。
 
@@ -217,10 +219,10 @@ lastupdated: "2017-08-30"
 
 當您在 {{site.data.keyword.Bluemix_notm}} 中建立組織時，會佈建基礎架構資源，其中包括例如記憶體、網際網路通訊協定 (IP)、伺服器和儲存空間等資源：
 *	若為「{{site.data.keyword.Bluemix_notm}} 公用」，IBM 會配置一組最基本的資源給組織。根據帳戶類型，您會有不同的資源配置。這些資源會定義 IBM 配置給組織的配額。
-*	若為「{{site.data.keyword.Bluemix_notm}} 專用」，您可以向 IBM 要求一組資源，然後將其分配給「{{site.data.keyword.Bluemix_notm}} 專用」雲端環境中的不同組織。
-*	若為「{{site.data.keyword.Bluemix_notm}} 本端」，則是由您提供資源，然後將其分配給「{{site.data.keyword.Bluemix_notm}} 本端」雲端環境中的不同組織。
+*	若為 {{site.data.keyword.Bluemix_dedicated_notm}}，您可以向 IBM 要求一組資源，然後將其分配給 {{site.data.keyword.Bluemix_dedicated_notm}} 環境中的不同組織。
+*	若為 {{site.data.keyword.Bluemix_local_notm}}，則是由您提供資源，然後將其分配給 {{site.data.keyword.Bluemix_local_notm}} 環境中的不同組織。
 
-若為「{{site.data.keyword.Bluemix_notm}} 公用」和「{{site.data.keyword.Bluemix_notm}} 專用」，您可以向 IBM 要求額外的資源。若為「{{site.data.keyword.Bluemix_notm}} 本端」，則由您負責提供在本端雲端中營運可能需要的任何資源。
+若為「{{site.data.keyword.Bluemix_notm}} 公用」及 {{site.data.keyword.Bluemix_dedicated_notm}}，您可以向 IBM 要求額外的資源。若為 {{site.data.keyword.Bluemix_local_notm}}，則由您負責提供在此環境中營運可能需要的任何資源。
 
 配置給組織的配額，即代表組織內可用的資源。您可以管理配額，並決定如何將資源分配至整個組織。
 
@@ -229,14 +231,14 @@ lastupdated: "2017-08-30"
 
 您可以依空間和依基礎架構來管理及監視帳戶的配額。佈建在空間中，然後由已部署應用程式使用的任何資源，都會耗用組織可用的一部分配額。
 * 如需如何在「{{site.data.keyword.Bluemix_notm}} 公用」中檢視及管理組織配額的相關資訊，請參閱[管理配額](/docs/admin/manageorg.html#managequota "管理配額")。
-* 如需如何在「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」中檢視及管理組織配額的相關資訊，請參閱[檢視用量及報告](/docs/admin/index.html?pos=2#oc_resource "檢視用量及報告")。
+* 如需如何在 {{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中檢視及管理組織配額的相關資訊，請參閱[檢視用量及報告](/docs/admin/index.html?pos=2#oc_resource "檢視用量及報告")。
 
 ## 指派角色
 {: #roles}
 
-您可以授與多個角色給 {{site.data.keyword.Bluemix_notm}} 帳戶中的團隊成員。這些角色定義了使用者用來管理帳戶和組織資源的許可權：
+您可以將多個角色授與 {{site.data.keyword.Bluemix_notm}} 帳戶中的團隊成員。這些角色定義了使用者用來管理帳戶和組織資源的許可權：
 * 您可以將[使用者角色](/docs/iam/users_roles.html#userrolesinfo "使用者角色")授與給組織的成員。這些角色定義在組織內的存取層次，並限制哪些人可以存取空間及其資源。例如，您可以授與使用者不同空間的不同許可權。
-* 只有在「{{site.data.keyword.Bluemix_notm}} 專用」和「{{site.data.keyword.Bluemix_notm}} 本端」中，您才可以將[管理角色](/docs/admin/index.html#oc_useradmin "管理角色")授與給帳戶成員，以供其管理系統資訊、帳戶資源用量、報告和日誌、型錄服務、使用者，以及每個組織的資源用量。
+* 只有在 {{site.data.keyword.Bluemix_dedicated_notm}} 及 {{site.data.keyword.Bluemix_local_notm}} 中，您才可以將[管理角色](/docs/admin/index.html#oc_useradmin "管理角色")授與帳戶成員，以供其管理系統資訊、帳戶資源用量、報告和日誌、型錄服務、使用者，以及每個組織的資源用量。
 
 ### 帳戶擁有者
 {: #accountowner}
@@ -249,12 +251,12 @@ lastupdated: "2017-08-30"
 * 建立組織。
 * 新增團隊成員至帳戶。
 
-若要新增團隊成員至帳戶，請利用使用者的電子郵件位址，或是電子郵件位址清單。在「{{site.data.keyword.Bluemix_notm}} 專用」和「{{site.data.keyword.Bluemix_notm}} 本端」中，您也可以使用公司 LDAP 來新增使用者及/或使用者群組。您也可以從檔案匯入使用者。如需相關資訊，請參閱[管理使用者及許可權](/docs/admin/index.html#oc_useradmin "管理使用者及許可權")。
+若要新增團隊成員至帳戶，請利用使用者的電子郵件位址，或是電子郵件位址清單。在 {{site.data.keyword.Bluemix_dedicated_notm}} 及 {{site.data.keyword.Bluemix_local_notm}} 中，您也可以使用公司 LDAP 來新增使用者及（或）使用者群組。您也可以從檔案匯入使用者。如需相關資訊，請參閱[管理使用者及許可權](/docs/admin/index.html#oc_useradmin "管理使用者及許可權")。
 
 帳戶擁有者也可以執行下列作業：
 
 * 指派**管理者**角色給一位以上使用者，以新增這些使用者作為組織的管理員。請考慮新增兩位使用者作為組織管理員。第一位使用者擔任組織的主要管理員。第二位使用者擔任代理管理員，以在主要管理員無法執行工作時代理其職務。
-* 在「{{site.data.keyword.Bluemix_notm}} 公用」中（視[帳戶類型](/docs/pricing/index.html#pay-accounts "帳戶類型")而定），設定消費通知。首先，帳戶擁有者要定義當成本達到特定限制時，用來提出警示的臨界值。然後，[配置電子郵件通知](/docs/admin/account.html#notifications "配置電子郵件通知")。帳戶管理員可以使用電子郵件中的資訊作為警示通知，並可根據所提供的資訊來採取動作，例如升級帳戶。**附註：**帳戶擁有者是唯一可以接收消費通知電子郵件的人員。
+* 在「{{site.data.keyword.Bluemix_notm}} 公用」中（視[帳戶類型](/docs/pricing/index.html#pay-accounts "帳戶類型")而定），設定消費通知。首先，帳戶擁有者要定義當成本達到特定限制時，用來提出警示的臨界值。然後，[配置電子郵件通知](/docs/admin/account.html#notifications "配置電子郵件通知")。帳戶管理員可以使用電子郵件中的資訊作為警示通知，並可根據所提供的資訊來採取動作，例如升級帳戶。請注意，帳戶擁有者是唯一可以接收消費通知電子郵件的人員。
 * 指派**管理**角色給一位以上使用者，以新增這些使用者作為帳戶的管理者。請考慮至少新增兩位使用者。第一位使用者擔任帳戶的主要管理者。第二位使用者擔任代理管理者。
 * 定義帳戶通知，以通知維護更新或重要突發事件警示的相關資訊。您可以配置這些通知，以傳送電子郵件或「簡訊服務」。
 
@@ -325,8 +327,7 @@ lastupdated: "2017-08-30"
 ### 專用及本端帳戶的管理角色
 {: #adminroles}
 
-[管理角色](/docs/hybrid/index.html#oc_useradmin "管理使用者及許可權")定義您可以授與使用者以用來管理「{{site.data.keyword.Bluemix_notm}} 專用」或「{{site.data.keyword.Bluemix_notm}} 本端」帳戶的許可權。
-您可以授與讀取或寫入權，讓使用者能夠檢視系統資訊、帳戶資源用量、報告和日誌、型錄服務、使用者，以及每個組織的資源用量。
+[管理角色](/docs/hybrid/index.html#oc_useradmin "管理使用者及許可權")定義您可以授與使用者以用來管理 {{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 帳戶的許可權。您可以授與讀取或寫入權，讓使用者能夠檢視系統資訊、帳戶資源用量、報告和日誌、型錄服務、使用者，以及每個組織的資源用量。
 
 在多組織架構或單一組織架構中，定義使用者以及每位使用者管理帳戶時所需的許可權。
 
@@ -336,6 +337,6 @@ lastupdated: "2017-08-30"
 
    * 管理角色：使用者有權管理整個組織。
    * 使用者角色：具有寫入權的組織管理員，可以將使用者新增至帳戶及其組織。具有讀取權的組織管理員，可以檢視帳戶中的成員清單。
-   * 型錄角色：具有寫入權的使用者可以定義及管理使用者可以在 {{site.data.keyword.Bluemix_notm}} 型錄中看到哪些 Bluemix 服務和入門範本。
+   * 型錄角色：具有寫入權的使用者可以定義及管理使用者可以在 {{site.data.keyword.Bluemix_notm}} 型錄中看到哪些 {{site.data.keyword.Bluemix_notm}} 服務及入門範本。
    * 報告角色：具有寫入權的使用者可以檢視及新增報告，而其他具有讀取權的使用者可以下載。將讀取權授與給管理團隊的所有成員。
    * 登入角色：將此角色授與給管理團隊的所有成員。您也可以將此角色授與給帳戶中需要存取權的其他使用者，讓他們能夠檢視帳戶通知和系統資訊。

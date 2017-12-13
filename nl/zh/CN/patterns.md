@@ -5,20 +5,21 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-08-30"
+lastupdated: "2017-11-16"
 
 
 ---
 
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen:.screen}
-{:codeblock:.codeblock}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
-# 设置 Bluemix 环境
+# 设置 {{site.data.keyword.Bluemix_notm}} 环境
 {: #patterns}
 
-要想成功实施项目，需要花时间规划和设计需要哪些资源，以及您的企业需求是什么。为了帮助您开始使用云项目，请考虑以下问题：
+要想成功实施项目，需要花时间规划和设计需要哪些资源，以及您的企业需求是什么。为了帮助您开始使用项目，请考虑以下问题：
 
 * 将开发哪种类型的应用程序，打算开发多少个？
 * 应用程序需要访问哪些服务？
@@ -33,8 +34,8 @@ lastupdated: "2017-08-30"
 设计云解决方案时，还请考虑帐户安全和运营需求、国家或地区法规、市场监管指令以及公司政策。为了满足项目需求，{{site.data.keyword.Bluemix}} 提供了三种类型的云环境。
 
 * [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public")：基础架构资源由不同的公司和用户共享。
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated")：您使用自己的专用 {{site.data.keyword.BluSoftlayer_notm}}，可安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 云和您自己的网络。
-* [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local")：位于公司防火墙后，可以保护您最敏感的工作负载，并可以安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 云和 {{site.data.keyword.Bluemix_notm}} Dedicated 云。
+* [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}")：您使用自己的专用 {{site.data.keyword.BluSoftlayer_notm}}，可将其安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 和您自己的网络。
+* [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}")：位于公司防火墙后，可以保护您最敏感的工作负载，并可以安全地连接到 {{site.data.keyword.Bluemix_notm}} Public 和 {{site.data.keyword.Bluemix_dedicated_notm}} 环境。
 
 在决定需要的云环境类型的同时，请规划帐户、组织、空间、资源和团队成员的结构。
 
@@ -88,10 +89,10 @@ lastupdated: "2017-08-30"
 ## 确定组织体系结构
 {: #orgstructure}
 
-要设计使用 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated、{{site.data.keyword.Bluemix_notm}} Local 或上述各项任意组合的云环境，可以使用以下组织体系结构：
+要设计使用 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}}、{{site.data.keyword.Bluemix_local_notm}} 或上述各项任意组合的环境，可以使用以下组织体系结构：
 
-* 单组织：如果需要同一组用户来访问在组织中 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 中任何位置提供的资源，请考虑使用此体系结构。
-* 多组织：如果在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 内的不同环境之间需要隔离，请考虑使用此体系结构。
+* 单组织：如果需要同一组用户来访问在组织中 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中任何位置提供的资源，请考虑使用此体系结构。
+* 多组织：如果在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 内的不同环境之间需要隔离，请考虑使用此体系结构。
 
 ### 单组织相较于多组织
 {: #singleormulti}
@@ -103,11 +104,12 @@ lastupdated: "2017-08-30"
 * 对应用程序和/或项目强制实施边界。
 * 按用户角色授予管理资源的权限。
 
-要实施单组织体系结构，请在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 中创建一个帐户，并定义一个组织。然后，可以基于不同的业务线 (LOB)、交付阶段、特定项目、应用程序、用户许可权或以上各项的组合来定义多个空间。
+要实施单组织体系结构，请在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中创建一个帐户，并定义一个组织。然后，可以基于不同的业务线 (LOB)、交付阶段、特定项目、应用程序、用户许可权或以上各项的组合来定义多个空间。
 
-要实施多组织体系结构，请在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 中创建一个帐户。接着，可为不同的 LOB、交付阶段、特定项目、用户许可权或以上各项的组合定义对应的组织。随后，可以基于公司中同一部门交付的应用程序或项目来定义多个空间。
+要实施多组织体系结构，请在 {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中创建一个帐户。接着，可为不同的 LOB、交付阶段、特定项目、用户许可权或以上各项的组合定义对应的组织。随后，可以基于公司中同一部门交付的应用程序或项目来定义多个空间。
 
-**注：**您必须拥有计费帐户（例如，“现买现付”帐户或“预订”帐户）才可定义多个组织。
+您必须拥有计费帐户（例如，现买现付帐户或预订帐户）才可定义多个组织。
+{: tip}
 
 ### 组织注意事项
 {: #orgconsiderations}
@@ -116,7 +118,7 @@ lastupdated: "2017-08-30"
 
  ![此图显示 {{site.data.keyword.Bluemix_notm}} 中的单组织体系结构](images/singleorg_example.svg "此图显示 {{site.data.keyword.Bluemix_notm}} 中的单组织体系结构")
 
- 图 1. {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 和 {{site.data.keyword.Bluemix_notm}} Local 的单组织体系结构示例
+ 图 1. {{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_dedicated_notm}} 和 {{site.data.keyword.Bluemix_local_notm}} 的单组织体系结构示例
 {: #bpfigure1}
 
 实施多组织体系结构时，组织将提供第一级边界强制实施和抽象，可用于控制和定义可以执行的操作以及执行者。根据不同的 LOB、交付阶段、用户的角色、特定项目或以上各项的组合来设计每个组织。  
@@ -129,12 +131,12 @@ lastupdated: "2017-08-30"
 
 如果要为云结构定义不同组织，请考虑以下指导信息：
 
-* 定义并强制实施命名约定。例如，定义命名约定，使组织的名称包含有关业务领域、云类型（{{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated）和过程阶段（开发、测试或生产）的信息。对于位于 {{site.data.keyword.Bluemix_notm}} Public 中的组织，可能还要添加有关区域的信息。
+* 定义并强制实施命名约定。例如，定义命名约定，使组织的名称包含有关业务领域、云类型和过程阶段（开发、测试或生产）的信息。对于位于 {{site.data.keyword.Bluemix_notm}} Public 中的组织，可能还要添加有关区域的信息。
 * 定义适用于组织的限制。例如，定义将在该组织中工作的团队成员的角色。
 * 确定组织的管理员。
 * 确定分配给此组织的业务领域。
 
-以下场景显示了在云环境中定义 {{site.data.keyword.Bluemix_notm}} 组织数量时可采用的不同方法：
+以下场景显示了在环境中定义 {{site.data.keyword.Bluemix_notm}} 组织数量时可采用的不同方法：
 * **场景 1：按业务应用程序交付隔离用户组**
 
  描述：公司规则要求每个 LOB 的应用程序都必须由每个 LOB 中的用户进行开发、管理和部署。必须强制实施安全性，以便用户只能访问与其业务部分相关的应用程序。因此，用户在不同的业务领域工作，他们使用的应用程序需要访问不同的 {{site.data.keyword.Bluemix_notm}} 资源，并且没有活动重叠。
@@ -169,12 +171,12 @@ lastupdated: "2017-08-30"
    图 3. 按交付阶段对应的单组织体系结构示例
 {: #bpfigure3}
 
-### 组织命名、限制和管理 
+### 组织命名、限制和管理
 {: #orgadmin}   
 
 请考虑以下组织指导信息：
 
-* 定义并强制实施命名约定。例如，定义命名约定，使组织的名称包含有关业务领域、云类型（{{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated）和 IT 角色（开发、测试或生产）的信息。对于位于 {{site.data.keyword.Bluemix_notm}} Public 中的组织，可能还要添加有关区域的信息。创建组织后，可以更改其名称。如果更改了组织名称，请向该组织所有团队成员通知此更改。
+* 定义并强制实施命名约定。例如，定义命名约定，使组织的名称包含有关业务领域、云类型和 IT 角色（开发、测试或生产）的信息。对于位于 {{site.data.keyword.Bluemix_notm}} Public 中的组织，可能还要添加有关区域的信息。创建组织后，可以更改其名称。如果更改了组织名称，请向该组织所有团队成员通知此更改。
 * 定义适用于组织的限制。例如，定义每个团队成员的角色及其在该组织中工作所需的许可权。
 * 确定组织的管理员。您可能希望将组织管理授权给多人。
 * 确定分配给此组织的业务领域。在组织内每个空间中生成的应用程序使用量会进行累计并在组织级别进行报告。
@@ -209,7 +211,7 @@ lastupdated: "2017-08-30"
 
 要为云组织定义不同的空间，请考虑以下指导信息：
 
-* 定义并强制实施命名约定。例如，定义命名约定，使空间名称包含有关组织位置和云类型（{{site.data.keyword.Bluemix_notm}} Public、{{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local）的信息。创建空间后，可以更改其名称。如果更改了空间名称，请向该空间所有团队成员通知此更改。
+* 定义并强制实施命名约定。例如，定义命名约定，使空间名称包含有关组织位置和云类型的信息。创建空间后，可以更改其名称。如果更改了空间名称，请向该空间所有团队成员通知此更改。
 * 定义适用于空间的限制。例如，定义可以在每个空间中开发、管理和部署的应用程序类型。
 * 确定空间的管理员。您可能希望将空间管理授权给多人。
 
@@ -218,10 +220,10 @@ lastupdated: "2017-08-30"
 
 在 {{site.data.keyword.Bluemix_notm}} 中创建组织时，您将供应基础架构资源，其中包括内存、因特网协议 (IP)、服务器和存储器之类的资源：
 *	对于 {{site.data.keyword.Bluemix_notm}} Public，IBM 将为组织分配最少的一组资源。根据帐户类型，将有不同的资源分配。这些资源将定义 IBM 分配给组织的配额。
-*	对于 {{site.data.keyword.Bluemix_notm}} Dedicated，您可向 IBM 请求一组资源，然后在 {{site.data.keyword.Bluemix_notm}} Dedicated 云环境中的不同组织之间分发这些资源。
-*	对于 {{site.data.keyword.Bluemix_notm}} Local，您可提供资源，然后在 {{site.data.keyword.Bluemix_notm}} Local 云环境中的各组织之间分发这些资源。
+*	对于 {{site.data.keyword.Bluemix_dedicated_notm}}，您可向 IBM 请求一组资源，然后在 {{site.data.keyword.Bluemix_dedicated_notm}} 环境中的不同组织之间分发这些资源。
+*	对于 {{site.data.keyword.Bluemix_local_notm}}，您可提供资源，然后在 {{site.data.keyword.Bluemix_local_notm}} 环境中的各组织之间分发这些资源。
 
-对于 {{site.data.keyword.Bluemix_notm}} Public 和 {{site.data.keyword.Bluemix_notm}} Dedicated，可以向 IBM 请求额外的资源。对于 {{site.data.keyword.Bluemix_notm}} Local，由您负责提供在本地云中运行业务可能需要的任何资源。
+对于 {{site.data.keyword.Bluemix_notm}} Public 和 {{site.data.keyword.Bluemix_dedicated_notm}}，可以向 IBM 请求额外的资源。对于 {{site.data.keyword.Bluemix_local_notm}}，由您负责提供在此环境中运行业务可能需要的任何资源。
 
 分配给组织的配额表示在该组织内可用的资源。由您管理配额并决定如何在组织中分发这些资源。
 
@@ -230,14 +232,14 @@ lastupdated: "2017-08-30"
 
 您可按空间和按基础架构来管理和监视帐户配额。在空间中供应并随后由部署的应用程序使用的任何资源都将消耗可用于组织的配额的一部分。
 * 有关如何在 {{site.data.keyword.Bluemix_notm}} Public 中查看和管理组织配额的更多信息，请参阅[管理配额](/docs/admin/manageorg.html#managequota "管理配额")。
-* 有关如何在 {{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 中查看和管理组织配额的更多信息，请参阅[查看使用情况和报告](/docs/admin/index.html?pos=2#oc_resource "查看使用情况和报告")。
+* 有关如何在 {{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 中查看和管理组织配额的更多信息，请参阅[查看使用情况和报告](/docs/admin/index.html?pos=2#oc_resource "查看使用情况和报告")。
 
 ## 分配角色
 {: #roles}
 
 可以向 {{site.data.keyword.Bluemix_notm}} 帐户中的团队成员授予多个角色。这些角色定义了用户管理帐户和组织资源的许可权：
-* 可以向组织成员授予[用户角色](/docs/iam/users_roles.html#userrolesinfo "用户角色")。这些角色定义了组织内的访问权级别，并限制谁可以访问空间及其资源。例如，可以向用户授予对不同空间的不同许可权。
-* 仅在 {{site.data.keyword.Bluemix_notm}} Dedicated 和 {{site.data.keyword.Bluemix_notm}} Local 中，可以向帐户成员授予[管理角色](/docs/admin/index.html#oc_useradmin "管理角色")来管理系统信息、帐户资源使用情况、报告和日志、目录服务、用户以及每个组织的资源使用情况。
+* 可以向组织成员授予[用户角色](/docs/iam/users_roles.html#userrolesinfo "用户角色")。这些角色定义了组织内的访问级别，并限制谁可以访问空间及其资源。例如，可以向用户授予对不同空间的不同许可权。
+* 仅在 {{site.data.keyword.Bluemix_dedicated_notm}} 和 {{site.data.keyword.Bluemix_local_notm}} 中，可以向帐户成员授予[管理角色](/docs/admin/index.html#oc_useradmin "管理角色")来管理系统信息、帐户资源使用情况、报告和日志、目录服务、用户以及每个组织的资源使用情况。
 
 ### 帐户所有者
 {: #accountowner}
@@ -250,19 +252,19 @@ lastupdated: "2017-08-30"
 * 创建组织。
 * 将团队成员添加到该帐户。
 
-要将团队成员添加到帐户，请使用用户的电子邮件地址或电子邮件地址列表。在 {{site.data.keyword.Bluemix_notm}} Dedicated 和 {{site.data.keyword.Bluemix_notm}} Local 中，还可以使用公司的 LDAP 来添加用户和/或用户组。还可以从文件导入用户。有关更多信息，请参阅[管理用户和许可权](/docs/admin/index.html#oc_useradmin "管理用户和许可权")。
+要将团队成员添加到帐户，请使用用户的电子邮件地址或电子邮件地址列表。在 {{site.data.keyword.Bluemix_dedicated_notm}} 和 {{site.data.keyword.Bluemix_local_notm}} 中，还可以使用公司的 LDAP 来添加用户和/或用户组。还可以从文件导入用户。有关更多信息，请参阅[管理用户和许可权](/docs/admin/index.html#oc_useradmin "管理用户和许可权")。
 
 帐户所有者还可以执行以下任务：
 
 * 通过为一个或多个用户分配**管理员**角色，将这些用户添加为组织管理员。请考虑将两个用户添加为组织管理员。第一个用户充当组织的主管理员。第二个用户充当副管理员，以备主管理员不在时负责工作。
-* 在 {{site.data.keyword.Bluemix_notm}} Public 中，根据[帐户类型](/docs/pricing/index.html#pay-accounts "帐户类型")设置花费通知。首先，帐户所有者定义用于在成本达到特定限制时向其发出警报的阈值。然后，[配置电子邮件通知](/docs/admin/account.html#notifications "配置电子邮件通知")。帐户管理员可以将电子邮件中的信息用作警报通知，并可根据提供的信息执行操作，例如升级帐户。**注：**只有帐户所有者一个人可以接收花费通知电子邮件。
+* 在 {{site.data.keyword.Bluemix_notm}} Public 中，根据[帐户类型](/docs/pricing/index.html#pay-accounts "帐户类型")设置花费通知。首先，帐户所有者定义用于在成本达到特定限制时向其发出警报的阈值。然后，[配置电子邮件通知](/docs/admin/account.html#notifications "配置电子邮件通知")。帐户管理员可以将电子邮件中的信息用作警报通知，并可根据提供的信息执行操作，例如升级帐户。请注意，只有帐户所有者一个人可以接收花费通知电子邮件。
 * 通过为一个或多个用户分配**管理员**角色，将这些用户添加为帐户管理员。请考虑至少添加两个用户。第一个用户充当帐户的主管理员。第二个用户充当副管理员。
 * 定义帐户通知，以通知有关维护更新或严重事件警报的信息。可以将这些通知配置为发送电子邮件或短信。
 
 ### 用户角色
 {: #userroles}
 
-用户角色定义了可以分配给组织中团队成员的许可权，并定义了团队成员在组织以及每个空间中具有的访问权级别。
+用户角色定义了可以分配给组织中团队成员的许可权，并定义了团队成员在组织以及每个空间中具有的访问级别。
 
 在多组织体系结构或单组织体系结构中，定义团队成员以及每个用户完成其工作所需的许可权：
 
@@ -326,7 +328,7 @@ lastupdated: "2017-08-30"
 ### Dedicated 和 Local 帐户的管理角色
 {: #adminroles}
 
-[管理角色](/docs/hybrid/index.html#oc_useradmin "管理用户和许可权")定义可以授予用户以管理 {{site.data.keyword.Bluemix_notm}} Dedicated 或 {{site.data.keyword.Bluemix_notm}} Local 帐户的许可权。您可以授予读或写许可权，以允许用户查看系统信息、帐户资源使用情况、报告和日志、目录服务、用户以及每个组织的资源使用情况。
+[管理角色](/docs/hybrid/index.html#oc_useradmin "管理用户和许可权")定义可以授予用户以用于管理 {{site.data.keyword.Bluemix_dedicated_notm}} 或 {{site.data.keyword.Bluemix_local_notm}} 帐户的许可权。您可以授予读或写许可权，以允许用户查看系统信息、帐户资源使用情况、报告和日志、目录服务、用户以及每个组织的资源使用情况。
 
 在多组织体系结构或单组织体系结构中，定义用户以及每个用户管理帐户所需的许可权：
 
@@ -336,6 +338,6 @@ lastupdated: "2017-08-30"
 
    * 管理角色：用户有权管理整个组织。
    * 用户角色：具有写许可权的组织管理员可以将用户添加到帐户及其组织。具有读许可权的组织管理员可以查看帐户中成员的列表。
-   * 目录角色：具有写许可权的用户可以定义和管理用户可以在 {{site.data.keyword.Bluemix_notm}}“目录”中看到哪些 Bluemix 服务和入门模板。
+   * 目录角色：具有写许可权的用户可以定义和管理用户可以在 {{site.data.keyword.Bluemix_notm}}“目录”中看到哪些 {{site.data.keyword.Bluemix_notm}} 服务和入门模板。
    * 报告角色：具有写许可权的用户可以查看和添加报告，其他具有读许可权的用户可以下载这些报告。向管理员团队中的所有成员授予读许可权。
    * 登录角色：向管理员团队中的所有成员授予此角色。您还可以向帐户中需要访问权来查看帐户通知和系统信息的其他用户授予此角色。

@@ -9,20 +9,21 @@
     帐户设置
         adminpublic.md
         profile.md
-    
+
     softlayerlink.md
+    resourcegroups.md
 
     {: .topicgroup}
     组织
         orgs_spaces.md
         manageorg.md
-        
+
     notifications.md
     {: .navgroup-end}
 
     {: .navgroup id="learn"}
-    {: .topicgroup}  
+    {: .topicgroup}
     最佳做法
         patterns.md
-        
+
     {: .navgroup-end}

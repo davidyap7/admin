@@ -4,8 +4,7 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-03-29"
+  anos: 2015, 2017 última atualização: "16-11-2017"
 
 ---
 
@@ -66,6 +65,6 @@ Para desativar o rastreamento de analítica, conclua as etapas a seguir:
 ## Fornecendo feedback
 {: #feedback}
 
-Para enviar ideias para melhorias do {{site.data.keyword.Bluemix_notm}} e de serviços, acesse [Ideias do IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Para obter mais informações sobre como usar o novo portal de ideias, veja [Think, write, submit: New ideas portal for IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
+Para enviar ideias para melhorias do {{site.data.keyword.Bluemix_notm}} e de serviços, acesse [Ideias do IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Para obter mais informações sobre como usar o portal de ideia, veja [Think, write, submit: New ideas portal for IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
 
-Para fornecer feedback sobre a documentação, clique no link **Feedback** em cada página ou colabore conosco, clicando no link **Editar no GitHub** após o título. Para obter mais informações sobre como contribuir com os docs, veja [When it comes to docs, everyone can contribute in Bluemix ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
+Para fornecer feedback sobre a documentação, clique no link **Feedback** em cada página ou colabore conosco, clicando no link **Editar no GitHub** após o título. Para obter mais informações sobre como contribuir com os docs, veja'[Quando se trata de docs, todos podem contribuir no {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

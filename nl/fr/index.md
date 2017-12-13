@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ Vous pouvez afficher les notifications pour votre environnement local ou dédié
 | **Type d'événement** | **Méthode de notification** |       
 |-----------------|-------------------|
 | Mises à jour de maintenance | Pour afficher la liste complète ainsi que l'historique de vos notifications en attente et consultées, cliquez sur **ADMINISTRATION &gt; INFORMATIONS SYSTEME** &gt; *Nombre* **en attente**. Vous êtes également prévenu en cas d'événements de mise à jour de maintenance planifiés avec interruption dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement envoyant un courrier électronique aux destinataires de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.|
-| Incidents critiques | Vous êtes prévenu en cas d'incident critique dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement aux notifications qui envoie un courrier électronique au destinataire de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.  | 
+| Incidents critiques | Vous êtes prévenu en cas d'incident critique dans la page Statut. Cliquez sur **Support** &gt; **Statut**. Vous pouvez étendre la capacité de notification en configurant un abonnement aux notifications qui envoie un courrier électronique au destinataire de votre choix. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications de la page Administration au service Web de votre choix.  |
 | Evénements de seuil | Vous pouvez configurer un abonnement de notification qui envoie un courrier électronique au destinataire de votre choix lorsque les seuils pour le quota d'organisation, le disque physique, la mémoire physique, le disque réservé ou la mémoire réservée sont atteints dans votre environnement. Vous pouvez également configurer un abonnement utilisant des webhooks pour intégrer les notifications au service Web de votre choix.  |  
 | Statut {{site.data.keyword.Bluemix_notm}} | Vous pouvez toujours examiner le statut le plus récent de la plateforme, des services et de votre instance {{site.data.keyword.Bluemix_notm}} sur la page Statut. Cliquez sur **Support** &gt; **Statut**.  |
 {: caption="Tableau 2. Types d'événement et méthodes de notification" caption-side="top"}
@@ -372,10 +372,10 @@ Pour des informations plus détaillées sur votre utilisation de la mémoire ré
 	<dt><strong>Physique</strong></dt>
 	<dd>La ligne Physique affiche la quantité de mémoire ou d'espace disque utilisée.</dd>
 	</dl>
-	
+
 Pour chacune des vues de l'utilisation historique disponibles, au moins deux points de données doivent être affichés par le graphique. Cela équivaut à des données pour au moins deux heures au cours des 48 dernières heures, deux jours au cours des 30 derniers jours et deux mois au cours des 5 derniers mois. Pour les vues des 30 derniers jours et des 5 derniers mois, des valeurs moyennes partiellement complètes ou des valeurs maximales sont renvoyées pour le jour ou le mois en cours et seront ajustées à mesure que d'autres données seront collectées.
 
-Les données qui alimentent ces vues sont disponibles via l'[API de mesures](/docs/admin/index.html#envappmetricsapi). Pour voir les noeuds finaux d'API réels et les données utilisés pour générer la vue, cliquez sur lien **En savoir plus sur les API** au-dessus du graphique. Si vous cliquez sur l'un des liens contenus dans la boîte de dialogue qui apparaît, la réponse JSON du noeud final d'API de mesures s'affiche dans un nouvel onglet qui s'ouvre dans votre navigateur. 
+Les données qui alimentent ces vues sont disponibles via l'[API de mesures](/docs/admin/index.html#envappmetricsapi). Pour voir les noeuds finaux d'API réels et les données utilisés pour générer la vue, cliquez sur lien **En savoir plus sur les API** au-dessus du graphique. Si vous cliquez sur l'un des liens contenus dans la boîte de dialogue qui apparaît, la réponse JSON du noeud final d'API de mesures s'affiche dans un nouvel onglet qui s'ouvre dans votre navigateur.
 
 #### Détails sur l'utilisation du service
 {: #servicesresourceusage}
@@ -775,7 +775,7 @@ Pour créer une organisation et ajouter des responsables, procédez comme suit :
 
 Vous pouvez créer des espaces dans votre organisation, par exemple un espace *dev* comme environnement de développement, un espace *test* comme environnement de test et un espace *production* comme environnement de production. Ensuite, vous pouvez associer vos applications à des espaces. Procédez comme suit pour créer un espace :
 
-1. Dans la barre de menu, cliquez sur **Compte** &gt; **Gérer les organisations**.
+1. Dans la barre de menus, cliquez sur **Compte** &gt; **Gérer les organisations**.
 2. Sélectionnez l'organisation à laquelle ajouter un espace.
 3. Cliquez sur **Créer un espace**.
 4. Entrez un nom d'espace.
@@ -848,7 +848,7 @@ Un quota représente les limites de ressources pour les organisations de votre e
 <dd>Nombre maximal d'adresses IP publiques pouvant être allouées entre tous les espaces d'une organisation.</dd>
 </dl>
 <strong>Remarque</strong> : si vous ne disposez pas encore de conteneurs dans votre environnement, ou si les conteneurs de votre environnement ne sont pas encore configurés, vous obtenez un message d'erreur.
-<p>Pour plus d'informations sur les conteneurs, voir [A propos d'IBM containers](/docs/containers/container_ov.html). Pour plus d'informations sur les quotas de conteneur, voir [Quota et comptes Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>Pour plus d'informations sur les conteneurs, voir [A propos d'IBM containers](/docs/containers/container_ov.html). Pour plus d'informations sur les quotas de conteneur, voir [Quota et comptes {{site.data.keyword.Bluemix_notm}}](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Remarque :</strong> Les conteneurs ne sont pas disponibles dans la région {{site.data.keyword.Bluemix_notm}} Sydney.</li>
 </ul>
 <li>Pour sauvegarder les modifications que vous avez apportées dans la page Gérer l'organisation, cliquez sur <strong>SAUVEGARDER</strong>.</li>

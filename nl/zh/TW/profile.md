@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-29"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -66,6 +66,6 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix_notm}} 帳戶以便使用�
 ## 提供意見
 {: #feedback}
 
-若要提交 {{site.data.keyword.Bluemix_notm}} 及服務增進功能的構想，請前往 [IBM Cloud Ideas ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}。如需如何使用新構想入口網站的相關資訊，請參閱 [Think, write, submit: New ideas portal for IBM Cloud ![外部鏈結圖示](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}。
+若要提交 {{site.data.keyword.Bluemix_notm}} 及服務增進功能的構想，請前往 [IBM Cloud Ideas ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}。如需如何使用構想入口網站的相關資訊，請參閱[思考、撰寫、提交：IBM Cloud 的新構想入口網站 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}。
 
-若要提供有關文件的意見，請按一下每一個頁面上的**意見**鏈結，或者按一下標題後面的**在 GitHub 中編輯**鏈結，以與我們分工合作。如需撰寫文件的相關資訊，請參閱 [When it comes to docs, everyone can contribute in Bluemix ![外部鏈結圖示](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}。
+若要提供有關文件的意見，請按一下每一個頁面上的**意見**鏈結，或者按一下標題後面的**在 GitHub 中編輯**鏈結，以與我們分工合作。如需撰寫文件的相關資訊，請參閱[記載到文件時，每個人都可以在 {{site.data.keyword.Bluemix_notm}} 中參與 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}。

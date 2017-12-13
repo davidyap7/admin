@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ Também é possível sempre saber o status de seu ambiente, verificando a págin
 | **Tipo de evento** | **Método de notificação** |       
 |-----------------|-------------------|
 | Atualizações de Manutenção | Para ver uma lista completa e o histórico de suas notificações pendentes e completas, clique em **ADMINISTRAÇÃO &gt; INFORMAÇÕES DO SISTEMA** &gt; *Número* **pendente**. Você também é alertado sobre eventos de atualização de manutenção disruptiva planejada na página Status. Clique em **Suporte** &gt; **Status**. É possível ampliar o recurso de notificação configurando uma assinatura que envia um e-mail a destinatários de sua opção. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.|
-| Incidentes críticos | Você é alertado sobre incidentes críticos na página Status. Clique em **Suporte** &gt; **Status**. É possível estender o recurso de notificação configurando uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.  | 
+| Incidentes críticos | Você é alertado sobre incidentes críticos na página Status. Clique em **Suporte** &gt; **Status**. É possível estender o recurso de notificação configurando uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha. Ou é possível configurar uma assinatura que use webhooks para integrar as notificações a partir da página Administração com um serviço da web de sua opção.  |
 | Eventos de limite | É possível configurar uma assinatura de notificação que envia um e-mail para um destinatário de sua escolha quando os limites para cota da organização, disco físico, memória física, disco reservado ou memória reservada são atingidos em seu ambiente. Ou é possível configurar uma assinatura que usa webhooks para integrar as notificações a um serviço da web de sua opção.  |  
 | {{site.data.keyword.Bluemix_notm}} Status | É sempre possível visualizar o status mais recente para a plataforma, os serviços e a sua instância do {{site.data.keyword.Bluemix_notm}} na página Status. Clique em **Suporte** &gt; **Status**.  |
 {: caption="Tabela 2. Tipos de eventos e métodos de notificações" caption-side="top"}
@@ -374,10 +374,10 @@ Para ver informações mais detalhadas sobre sua memória física e reservada ou
 	<dt><strong>Física</strong></dt>
 	<dd>A linha Física mostra a quantia de memória ou espaço em disco que está realmente sendo usada.</dd>
 	</dl>
-	
+
 Para cada uma das visualizações de uso histórico disponíveis, pelo menos dois pontos de dados são necessários para que o gráfico seja renderizado. Isso equivale a dados de pelo menos duas horas durante as últimas 48 horas, dois dias durante os últimos 30 dias e dois meses durante os últimos 5 meses. Para as visualizações de 30 dias e 5 meses, valores médios ou máximos parcialmente completos são retornados para o dia ou o mês atual e serão ajustados conforme mais dados forem coletados.
 
-Os dados que alimentam essas visualizações estão disponíveis por meio de [API de métricas](/docs/admin/index.html#envappmetricsapi). Para ver os terminais de API reais e os dados usados para gerar a visualização, clique no link **Saiba mais sobre a API** acima do gráfico. Se você clicar em qualquer um dos links no diálogo que aparece, uma nova guia será aberta em seu navegador contendo a resposta JSON do terminal de API de métricas. 
+Os dados que alimentam essas visualizações estão disponíveis por meio de [API de métricas](/docs/admin/index.html#envappmetricsapi). Para ver os terminais de API reais e os dados usados para gerar a visualização, clique no link **Saiba mais sobre a API** acima do gráfico. Se você clicar em qualquer um dos links no diálogo que aparece, uma nova guia será aberta em seu navegador contendo a resposta JSON do terminal de API de métricas.
 
 #### Detalhes de uso do serviço
 {: #servicesresourceusage}
@@ -861,7 +861,7 @@ Uma cota representa os limites de recurso para as organizações em seu ambiente
 <dd>O número máximo de endereços IP públicos que podem ser alocados em todos os espaços de uma organização.</dd>
 </dl>
 <strong>Nota</strong>: se você ainda não tiver contêineres em seu ambiente ou se ainda não tiver os contêineres na configuração de seu ambiente, você receberá uma mensagem de erro.
-<p>Para obter mais informações sobre contêineres, veja [Sobre contêineres IBM](/docs/containers/container_ov.html). Para obter mais informações sobre cotas de contêiner, veja [Cota e contas do Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>Para obter mais informações sobre contêineres, veja [Sobre contêineres IBM](/docs/containers/container_ov.html). Para obter mais informações sobre cotas de contêiner, veja [Cota e contas do {{site.data.keyword.Bluemix_notm}}](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Nota:</strong> Os contêineres não estão disponíveis na região de Sydney do {{site.data.keyword.Bluemix_notm}}.</li>
 </ul>
 <li>Para salvar qualquer mudança feita na página Gerenciar organização, clique em <strong>SALVAR</strong>.</li>
@@ -1332,7 +1332,7 @@ comando:
 remover usuários da instância do {{site.data.keyword.Bluemix_notm}}. Deve-se ter
 permissão de **Usuários** com acesso de **Gravação** para remover usuários.
 
-Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute o comando a seguir:
+Para remover um usuário, deve-se fornecer o ID de usuário do usuário. Execute o seguinte comando:
 
 `curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}

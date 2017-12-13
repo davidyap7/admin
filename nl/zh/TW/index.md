@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ lastupdated: "2017-09-07"
 | **事件類型** | **通知方法** |       
 |-----------------|-------------------|
 | 維護更新| 若要查看擱置及完成通知的完整清單及歷程，請按一下**管理 &gt; 系統資訊** &gt; *數字* **個擱置**。您也會在「狀態」頁面上收到有關已排定之干擾性維護更新事件的警示。按一下**支援** &gt; **狀態**。若要擴充通知功能，您可以設定訂閱來傳送電子郵件給您選擇的收件者。或者，您可以將訂閱設定為使用 Webhook，將「管理」頁面的通知與您選擇的 Web 服務整合。|
-| 重要突發事件| 您可以在「狀態」頁面上收到有關重要突發事件的警示。按一下**支援** &gt; **狀態**。擴充通知功能的方式是設定通知訂閱，以將電子郵件傳送給您選擇的收件者。或者，您可以將訂閱設定為使用 Webhook，將「管理」頁面的通知與您選擇的 Web 服務整合。| 
+| 重要突發事件| 您可以在「狀態」頁面上收到有關重要突發事件的警示。按一下**支援** &gt; **狀態**。擴充通知功能的方式是設定通知訂閱，以將電子郵件傳送給您選擇的收件者。或者，您可以將訂閱設定為使用 Webhook，將「管理」頁面的通知與您選擇的 Web 服務整合。|
 | 臨界事件| 您可以設定通知訂閱，在您的環境達到組織配額、實體磁碟、實體記憶體、保留磁碟或保留記憶體的臨界值時，將電子郵件傳送給您選擇的收件者。或者，您可以設定訂閱，使用 Webhook 將通知與您選擇的 Web 服務整合。|  
 | {{site.data.keyword.Bluemix_notm}} 狀態| 您可以隨時在「狀態」頁面上檢視平台、服務及 {{site.data.keyword.Bluemix_notm}} 實例的最新狀態。按一下**支援** &gt; **狀態**。|
 {: caption="表 2. 事件類型及通知方法" caption-side="top"}
@@ -373,10 +373,10 @@ lastupdated: "2017-09-07"
 	<dt><strong>實體</strong></dt>
 	<dd>「實體」這條線會顯示實際使用的記憶體或磁碟空間量。</dd>
 	</dl>
-	
+
 針對每一個可用的歷程用量視圖，至少需要有兩個資料點，才能呈現圖形。這相當於過去 48 小時期間至少兩小時、過去 30 天期間至少兩天以及過去 5 個月期間至少兩個月的資料。針對 30 天及 5 個月視圖，傳回當天或當月的局部完成平均值或最大值，並會隨著收集到更多資料而進行調整。
 
-提供這些視圖的資料是透過[度量值 API](/docs/admin/index.html#envappmetricsapi) 取得。若要查看用來產生視圖的實際 API 端點及資料，請按一下圖表上方的**進一步瞭解 API** 鏈結。如果您按一下所顯示對話框中的任何鏈結，則會在包含度量值 API 端點之 JSON 回應的瀏覽器中開啟新的標籤。 
+提供這些視圖的資料是透過[度量值 API](/docs/admin/index.html#envappmetricsapi) 取得。若要查看用來產生視圖的實際 API 端點及資料，請按一下圖表上方的**進一步瞭解 API** 鏈結。如果您按一下所顯示對話框中的任何鏈結，則會在包含度量值 API 端點之 JSON 回應的瀏覽器中開啟新的標籤。
 
 #### 服務用量詳細資料
 {: #servicesresourceusage}
@@ -851,7 +851,7 @@ lastupdated: "2017-09-07"
 <dd>您可配置至組織之所有空間的公用 IP 位址數目上限。</dd>
 </dl>
 <strong>附註</strong>：如果環境中還沒有容器，或環境中尚未設定容器，則會收到一則錯誤訊息。
-<p>如需容器的相關資訊，請參閱[關於 IBM Containers](/docs/containers/container_ov.html)。如需容器配額的相關資訊，請參閱[配額及 Bluemix 帳戶](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
+<p>如需容器的相關資訊，請參閱[關於 IBM Containers](/docs/containers/container_ov.html)。如需容器配額的相關資訊，請參閱[配額及 {{site.data.keyword.Bluemix_notm}} 帳戶](/docs/containers/container_planning_org_ov.html#container_planning_quota)。</p>
 <strong>附註：</strong>{{site.data.keyword.Bluemix_notm}} 雪梨地區尚無法使用容器。</li>
 </ul>
 <li>若要儲存您在「管理組織」頁面上所做的任何變更，請按一下<strong>儲存</strong>。</li>
