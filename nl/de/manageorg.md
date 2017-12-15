@@ -3,12 +3,13 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-04-11"
+lastupdated: "2017-11-16"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:screen: .screen}
 {:new_window: target="_blank"}
 
@@ -16,16 +17,14 @@ lastupdated: "2017-04-11"
 Als Kontoeigner oder Organisationsmanager können Sie Management-Tasks für die Organisation, wie das Umbenennen der Organisation, das Löschen einer Organisation oder eines Bereichs, das Aktualisieren von Organisations- oder Bereichsrollen und das Verwalten von Kontingenten und Domänen, durchführen.
 {:shortdesc}
 
-Klicken Sie zum Verwalten von Organisationen in der Menüleiste der Konsole auf **Verwalten > Konto > Organisationen**. 
-
-**Hinweis:** Sie können immer nur die Ressourcen von einer Organisation anzeigen. Wenn Sie ein Mitglied mehrerer Organisationen sind, können Sie in der Menüleiste der Konsole über den Link mit den Benutzerkontovorgaben zwischen den Organisationen umschalten.
+Klicken Sie zum Verwalten Ihrer Organisationen in der {{site.data.keyword.Bluemix}}-Konsole auf **Verwalten > Konto > Organisationen**. Sie können immer nur die Ressourcen einer Organisation anzeigen. Wenn Sie ein Mitglied mehrerer Organisationen sind, können Sie in der Menüleiste der Konsole über den Link mit den Benutzerkontovorgaben zwischen den Organisationen umschalten.
 
 ## Organisationen umbenennen
 {: #orgrename}
 
 Führen Sie die folgenden Schritte aus, um Ihre Organisation umzubenennen:
 1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
-2. Ermitteln Sie die Organisation, die Sie umbenennen möchten, und klicken Sie auf **Details anzeigen**.
+2. Legen Sie die Organisation fest, die Sie umbenennen möchten, und klicken Sie auf **Details anzeigen**.
 3. Klicken Sie auf **Organisation bearbeiten**.
 4. Klicken Sie neben dem Namen der Organisation auf **Bearbeiten**.
 5. Geben Sie den neuen Organisationsnamen ein und klicken Sie auf **Speichern**.
@@ -33,42 +32,51 @@ Führen Sie die folgenden Schritte aus, um Ihre Organisation umzubenennen:
 ## Organisationen und Bereiche löschen
 {: #deleteorgs}
 
-Setzen Sie sich als Kontoeigner zum Löschen einer Organisation mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} in Verbindung.
+### Organisation löschen
 
-**Hinweis:** Das Löschen von Operationen kann nicht rückgängig gemacht werden. Sie verlieren alle Ihre Apps und Services, die der Organisation zugeordnet sind.
+Sie können Organisationen mit dem Befehl [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) löschen. Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht. Beachten Sie hierbei unbedingt, dass das Löschen von Operationen nicht rückgängig gemacht werden kann. 
 
-Führen Sie die folgenden Schritte aus, um eine Organisation oder einen Bereich löschen:
+### Bereich löschen
+
+Führen Sie die folgenden Schritte aus, um einen Bereich zu löschen:
+
 1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
-2. Ermitteln Sie die Organisation, die bearbeitet werden soll, und klicken Sie auf **Details anzeigen**.
+2. Wählen Sie die Organisation aus, die bearbeitet werden soll, und klicken Sie auf **Details anzeigen**.
 3. Ermitteln Sie den Bereich, den Sie löschen möchten, und klicken Sie auf **Bereich bearbeiten**.
 4. Klicken Sie auf **Bereich löschen**.
 
 ## Benutzerrollen bearbeiten
 {: #listmembers}
 
+### Benutzerrollen für eine bestimmte Organisation bearbeiten
+
 Führen Sie die folgenden Schritte aus, um die Benutzerrollen für eine bestimmte Organisation zu bearbeiten:
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
-2. Ermitteln Sie die Organisation, deren Mitglieder Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
-3. Klicken Sie auf **Organisation bearbeiten**.
+
+1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+2. Legen Sie die Organisation fest, die Sie bearbeiten möchten, und klicken Sie auf **Details anzeigen** und dann auf **Organisation bearbeiten**.
 4. Sie können die Mitglieder Ihrer Organisation und deren Rollen auf der Registerkarte **Benutzer** anzeigen.
 
+### Benutzerrollen für einen bestimmten Bereich bearbeiten
+
 Führen Sie die folgenden Schritte aus, um die Benutzerrollen für einen bestimmten Bereich zu bearbeiten:
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
-2. Ermitteln Sie die Organisation, deren Mitglieder Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
-3. Ermitteln Sie den Bereich, dessen Mitglieder Sie anzeigen möchten, und klicken Sie auf **Bereich bearbeiten**.
+
+1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+2. Wählen Sie die Organisation aus, deren Mitglieder Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
+3. Ermitteln Sie den Bereich, den Sie bearbeiten möchten, und klicken Sie auf **Bereich bearbeiten**.
 4. Sie können die Mitglieder Ihres Bereichs und deren Rollen auf der Registerkarte **Benutzer** anzeigen.
 
 ## Kontingent verwalten
 {: #managequota}
 
-Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie das verwendete und zugeordnete Kontingent für eine Organisation anzeigen. Das Kontingent stellt die Ressourcengrenzen für die Organisation dar, die beim Erstellen der Organisation zugeordnet wird. Abhängig davon, ob Sie über ein Testkonto oder ein gebührenpflichtiges Konto verfügen, können die für eine Organisation verfügbaren Ressourcen variieren. Jede Anwendung oder jeder Service in einem Bereich der Organisation trägt zur Nutzung des zugeordneten Kontingents bei.
+Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie das verwendete und zugeordnete Kontingent für eine Organisation anzeigen. Das Kontingent stellt die Ressourcengrenzen für die Organisation dar, die beim Erstellen der Organisation zugeordnet wird. Die Ressourcen, die für eine Organisation verfügbar sind, variieren abhängig davon, ob Sie über ein kostenloses Konto oder ein gebührenpflichtiges Konto verfügen. Jede Anwendung oder jeder Service in einem Bereich der Organisation trägt zur Nutzung des zugeordneten Kontingents bei.
 
 Führen Sie die folgenden Schritte aus, um das verwendete und zugeordnete Kontingent für eine Organisation anzuzeigen:
+
 1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
 2. Ermitteln Sie die Organisation, deren Kontingent Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
 3. Klicken Sie auf **Organisation bearbeiten**.
 4. Wenn Bereiche in mehreren Regionen definiert wurden, dann wählen Sie die Region aus, die Sie anzeigen möchten.
-5. Klicken Sie auf **Kontingent**. 
+5. Klicken Sie auf **Kontingent**.
 6. Standardmäßig wird die Kontingentseite **Cloud Foundry** geöffnet. Sie können die Kontingentdetails für die folgenden Ressourcen anzeigen:
  * SPEICHER
  * SERVICES
@@ -80,15 +88,16 @@ Führen Sie die folgenden Schritte aus, um das verwendete und zugeordnete Kontin
  * DATEIFREIGABEN
 8. Klicken Sie auf **Virtuelle Server**, um die virtuellen Maschinen anzuzeigen.
 
-**Hinweis:** In der {{site.data.keyword.Bluemix_notm}}-Region 'Sydney' stehen keine Container zur Verfügung. 
+In der {{site.data.keyword.Bluemix_notm}}-Region 'Sydney' stehen keine Container zur Verfügung.
+{: tip}
 
 Weitere Informationen zu Containern finden Sie unter dem Thema [Kontingent](/docs/containers/container_planning.html#container_planning_quota) in der Dokumentation zu Containern.
-Um das Kontingent zu ändern, das einer Organisation zugeordnet ist, müssen Sie ein Support-Ticket öffnen. Weitere Informationen zum Öffnen eines Support-Tickets finden Sie unter dem Thema [Kundenunterstützung abrufen](/docs/support/index.html#contacting-support). 
+Um das Kontingent zu ändern, das einer Organisation zugeordnet ist, müssen Sie ein Support-Ticket öffnen. Weitere Informationen zum Öffnen eines Support-Tickets finden Sie unter dem Thema [Kundenunterstützung abrufen](/docs/support/index.html#contacting-support).
 
 ## Domänen verwalten
 {: #managedomains}
 
-Als Kontoeigner oder Organisationsmanager können Sie die Systemdomäne anzeigen und angepasste Domänen für Anwendungen hinzufügen, die innerhalb der Organisation und ihren Bereichen erstellt wurden. Als Bereichsmanager enthält Ihre Registerkarte **Domänen** für einen Bereich eine schreibgeschützte Liste der Domänen, die dem Bereich zugeordnet sind.
+Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie die Systemdomäne anzeigen und angepasste Domänen für Anwendungen hinzufügen, die innerhalb einer Organisation und ihren Bereichen erstellt werden. Als Bereichsmanager enthält Ihre Registerkarte **Domänen** für einen Bereich eine schreibgeschützte Liste der Domänen, die dem Bereich zugeordnet sind.
 
 1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
 2. Ermitteln Sie die Organisation, für die Sie Domänen anzeigen oder bearbeiten möchten.

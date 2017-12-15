@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-29"
+lastupdated: "2017-11-16"
 
 
 ---
@@ -15,14 +15,15 @@ lastupdated: "2017-03-29"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Bei Bluemix anmelden
+# {{site.data.keyword.Bluemix_notm}}-Anmeldung
 
 Sie können sich unter Verwendung einer vorhandenen IBMid, durch Erstellung einer neuen IBMid oder unter Verwendung einer eingebundenen ID für ein {{site.data.keyword.Bluemix}}-Konto anmelden. Eine eingebundene ID ist eine ID innerhalb einer Unternehmensdomäne, die für IBM registriert wurde, um über die Domäne und die Benutzerberechtigungsnachweise auf IBM Webanwendungen zugreifen zu können.
-{:shortdesc}
+{:shortdesc}  
 
-Sie können sich unter Verwendung einer vorhandenen IBMid, durch Erstellung einer neuen IBMid oder unter Verwendung einer eingebundenen ID für ein {{site.data.keyword.Bluemix_notm}}-Konto anmelden. Eine eingebundene ID ist eine ID innerhalb einer Unternehmensdomäne, die für IBM registriert wurde, um über die Domäne und die Benutzerberechtigungsnachweise auf IBM Webanwendungen zugreifen zu können.  
-
+{: #federatedid}
 Die Anmeldung an {{site.data.keyword.Bluemix_notm}} mit einer eingebundenen ID ist nur dann möglich, wenn Ihr Unternehmen bereits bei IBM registriert wurde.  Nach der Registrierung der Unternehmensdomäne bei IBM können sich die Benutzer unter Verwendung der bestehenden Benutzerberechtigungsnachweise des Unternehmens bei IBM Produkten und Services anmelden. Die Authentifizierung erfolgt über den Identitätsprovider Ihres Unternehmens. Bei der Anmeldung an {{site.data.keyword.Bluemix_notm}} mit einer eingebundenen ID werden Sie zur Anmeldung über die Anmeldeseite Ihres Unternehmens aufgefordert. Weitere Informationen zum Anfordern der Registrierung der Domäne Ihres Unternehmens oder Ihrer Organisation bei IBM und zu den hierfür erforderlichen Schritten finden Sie in der Veröffentlichung [IBMid Enterprise Federation Adoption Guide ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Für die Registrierung eingebundener IDs muss ein IBM Sponsor, wie beispielsweise ein Angebotsmanager oder Kundenansprechpartner, kontaktiert werden.
+
+IBM nutzt Security Assertion Markup Language 2.0 (SAML 2.0) für diese Identitätseinbindung. SAML 2.0 ist eine Standardversion für den Austausch von Authentifizierungsdaten zwischen Sicherheitsdomänen. Es handelt sich dabei um ein XML-basiertes Protokoll, das ein Sicherheitstoken mit Zusicherungen verwendet, die zum Übergeben von Informationen zwischen dem sog. "Identity Provider" der Organisationen und der "IBM Rely Party (RP)" dient, die auch als Service-Provider bezeichnet wird. 
 
 | Anmeldemethoden | Details |    
 |-----------------|---------|

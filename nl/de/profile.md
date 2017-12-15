@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-03-29"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -66,6 +66,6 @@ Um die Analyseaufzeichnung zu inaktivieren, führen Sie die folgenden Schritte a
 ## Feedback geben
 {: #feedback}
 
-Um Ideen zu {{site.data.keyword.Bluemix_notm}} und zu Serviceverbesserungen einzubringen, gehen Sie auf [IBM Cloud Ideas ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Weitere Informationen zur Verwendung des neuen Ideen-Portals finden Sie unter [Think, write, submit: New ideas portal for IBM Cloud ![Symbol für externen Link](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
+Um Ideen zu {{site.data.keyword.Bluemix_notm}} und zu Serviceverbesserungen einzubringen, gehen Sie auf [IBM Cloud Ideas ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Weitere Informationen zur Verwendung des Ideen-Portals finden Sie unter [Think, write, submit: New ideas portal for IBM Cloud ![Symbol für externen Link](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
 
-Um Feedback zur Dokumentation zu geben, klicken Sie auf den Link **Feedback** auf jeder Seite oder arbeiten Sie mit uns zusammen, indem Sie auf den Link **In GitHub bearbeiten** nach dem Titel klicken. Weitere Informationen zu Beiträgen für die Dokumentation finden Sie unter [When it comes to docs, everyone can contribute in Bluemix ![Symbol für externen Link](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.
+Um Feedback zur Dokumentation zu geben, klicken Sie auf den Link **Feedback** auf jeder Seite oder arbeiten Sie mit uns zusammen, indem Sie auf den Link **In GitHub bearbeiten** nach dem Titel klicken. Weitere Informationen zu Beiträgen für die Dokumentation finden Sie unter [When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![Symbol für externen Link](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

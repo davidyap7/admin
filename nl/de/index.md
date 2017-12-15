@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ Sie können Benachrichtigungen für Ihre lokale oder dedizierte Umgebung anzeige
 | **Ereignistyp** | **Benachrichtigungsmethode** |       
 |-----------------|-------------------|
 | Wartungsaktualisierungen | Zum Anzeigen einer vollständigen Liste und des Verlaufs der anstehenden und abgeschlossenen Benachrichtigungen klicken Sie auf **Verwaltung &gt; Systeminformationen** &gt; *Anzahl* **Anstehend**. Sie werden auch über geplante Wartungsaktualisierungsereignisse mit Unterbrechungen auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Abonnement einrichten, das eine E-Mail an die Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.|
-| Kritische Vorfälle | Sie werden über kritische Vorfälle auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  | 
+| Kritische Vorfälle | Sie werden über kritische Vorfälle auf der Seite 'Status' benachrichtigt. Klicken Sie auf **Support** &gt; **Status**. Sie können die Benachrichtigungsfunktion erweitern, indem Sie ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet. Sie können auch ein Abonnement einrichten, das die Benachrichtigungen auf der Seite 'Verwaltung' mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  |
 | Schwellenwertereignisse | Sie können ein Benachrichtigungsabonnement einrichten, das eine E-Mail an einen Empfänger Ihrer Wahl sendet, wenn in Ihrer Umgebung Schwellenwerte für Organisationskontingent, physische Platte, physischen Speicher, reservierte Platte oder reservierten Speicher erreicht wurden. Alternativ können Sie ein Abonnement einrichten, das die Benachrichtigungen mithilfe von Web-Hooks in einen Web-Service Ihrer Wahl integriert.  |  
 | {{site.data.keyword.Bluemix_notm}}-Status | Sie können den neuesten Status für die Plattform, die Services und Ihre {{site.data.keyword.Bluemix_notm}}-Instanz immer auf der Seite 'Status' anzeigen. Klicken Sie auf **Support** &gt; **Status**.  |
 {: caption="Tabelle 2. Ereignistypen und Benachrichtigungsmethoden" caption-side="top"}
@@ -371,10 +371,10 @@ Um weitere Informationen zur physischen und reservierten Speicher- oder Plattenn
 	<dt><strong>Physisch</strong></dt>
 	<dd>In der Zeile 'Physisch' wird die Speicher- oder Plattenkapazität angezeigt, die zurzeit tatsächlich genutzt wird.</dd>
 	</dl>
-	
+
 Für jede der verfügbaren Ansichten zur vergangenen Nutzung sind mindestens zwei Datenpunkte zur Wiedergabe des Diagramms. Dies entspricht den Daten für mindestens zwei Stunden in den letzten 48 Stunden, für zwei Tage in den letzten 30 Tagen und für zwei Monate in den letzten fünf Monaten. Bei den Ansichten für 30 Tage und für 5 Monate werden vorläufige Durchschnitts- oder Höchstwerte für den aktuellen Tag oder Monat zurückgegeben, die dann angepasst werden, wenn weitere Daten zur Verfügung stehen.
 
-Die Daten für diese Ansichten stehen über die [Metrik-API](/docs/admin/index.html#envappmetricsapi) zur Verfügung. Um die tatsächlichen API-Endpunkten und -Daten anzuzeigen, die zum Generieren der Ansicht verwendet werden, klicken Sie auf den Link **Weitere Informationen zu der API** über dem Diagramm. Wenn Sie auf einen der Links im daraufhin angezeigten Dialog klicken, wird im Browser eine neue Registerkarte mit der JSON-Antwort des Metrik-API-Endpunkts geöffnet. 
+Die Daten für diese Ansichten stehen über die [Metrik-API](/docs/admin/index.html#envappmetricsapi) zur Verfügung. Um die tatsächlichen API-Endpunkten und -Daten anzuzeigen, die zum Generieren der Ansicht verwendet werden, klicken Sie auf den Link **Weitere Informationen zu der API** über dem Diagramm. Wenn Sie auf einen der Links im daraufhin angezeigten Dialog klicken, wird im Browser eine neue Registerkarte mit der JSON-Antwort des Metrik-API-Endpunkts geöffnet.
 
 #### Details zur Verwendung des Service
 {: #servicesresourceusage}
@@ -388,7 +388,7 @@ Die Registerkarte **Service** zeigt die Gesamtnutzung des Service in Bezug auf d
 ### Kontonutzung
 {: #accountusage}
 
-Sie können die monatliche Nutzung für Ihr Konto für Ihre dedizierte oder lokale Umgebung anzeigen. Mithilfe dieser Daten können Sie ermitteln, wie viel bestimmten Organisationen auf Grundlage ihrer Nutzung zu berechnen ist. Alle Administrationskonsolenbenutzer mit der Berechtigung **Benutzer** und mit dem Zugriffsrecht **Lesen** können die Kontonutzungsdaten anzeigen. Abrechnungsmanager der Organisation können außerdem die Kontonutzungsdaten für ihre Organisationen anzeigen, selbst wenn Abrechnungsmanagern die Administrationskonsolenberechtigung **Benutzer** nicht zugewiesen wurde. Administratoren der Administrationskonsole (Superuserberechtigung) können Organisationen die Rolle eines Abrechnungsmanagers zuweisen, indem sie auf **Konto** &gt; **Organisationen verwalten** klicken.
+Sie können die monatliche Nutzung für Ihr Konto für Ihre dedizierte oder lokale Umgebung anzeigen. Mithilfe dieser Daten können Sie ermitteln, wie viel bestimmten Organisationen auf Grundlage ihrer Nutzung zu berechnen ist. Alle Administrationskonsolenbenutzer mit der Berechtigung **Benutzer** und mit den Zugriffsberechtigungen für **Lesen** können die Kontonutzungsdaten anzeigen. Abrechnungsmanager der Organisation können außerdem die Kontonutzungsdaten für ihre Organisationen anzeigen, selbst wenn Abrechnungsmanagern die Administrationskonsolenberechtigung **Benutzer** nicht zugewiesen wurde. Administratoren der Administrationskonsole (Superuserberechtigung) können Organisationen die Rolle eines Abrechnungsmanagers zuweisen, indem sie auf **Konto** &gt; **Organisationen verwalten** klicken.
 
 Führen Sie die folgenden Schritte durch, um die Kontonutzungsdaten anzuzeigen:
 
@@ -857,7 +857,7 @@ Ein Kontingent stellt die Ressourcengrenzen für die Organisationen in Ihrer Umg
 <dd>Die maximale Anzahl öffentlicher IP-Adressen, die Sie bereichsübergreifend in einer Organisation zuordnen können.</dd>
 </dl>
 <strong>Hinweis:</strong> Wenn in Ihrer Umgebung noch keine Container vorhanden oder konfiguriert sind, wird eine Fehlernachricht angezeigt.
-<p>Weitere Informationen zu Containern finden Sie in den [Informationen zu IBM Containern](/docs/containers/container_ov.html). Weitere Informationen zu Containerkontingenten finden Sie unter [Kontingent und Bluemix-Konten](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>Weitere Informationen zu Containern finden Sie in den [Informationen zu IBM Containern](/docs/containers/container_ov.html). Weitere Informationen zu Containerkontingenten finden Sie unter [Kontingent und {{site.data.keyword.Bluemix_notm}}-Konten](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Hinweis:</strong> In der {{site.data.keyword.Bluemix_notm}}-Region 'Sydney' stehen keine Container zur Verfügung.</li>
 </ul>
 <li>Speichern Sie Ihre Änderungen auf der Seite 'Organisation verwalten', indem Sie auf <strong>Speichern</strong> klicken.</li>

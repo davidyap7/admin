@@ -9,20 +9,21 @@ Eigenes Konto verwalten
     Kontoeinrichtung
         adminpublic.md
         profile.md
-    
+
     softlayerlink.md
+    resourcegroups.md
 
     {: .topicgroup}
     Organisationen
         orgs_spaces.md
         manageorg.md
-        
+
     notifications.md
     {: .navgroup-end}
 
     {: .navgroup id="learn"}
-    {: .topicgroup}  
+    {: .topicgroup}
     Bewährte Verfahren
         patterns.md
-        
+
     {: .navgroup-end}
