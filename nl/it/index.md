@@ -3,7 +3,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -56,7 +56,7 @@ Puoi visualizzare le notifiche riguardanti il tuo ambiente locale o dedicato, al
 | **Tipo di evento** | **Metodo di notifica** |       
 |-----------------|-------------------|
 | Aggiornamenti di manutenzione | Per visualizzare uno storico e un elenco completo delle tue notifiche complete e in sospeso, fai clic su **AMMINISTRAZIONE &gt; INFORMAZIONI DI SISTEMA** &gt; *Numero* **in sospeso**. Ricevi anche un avviso degli eventi di aggiornamento della manutenzione pianificata con interruzioni del servizio nella pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione che invia un'e-mail a destinatari di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.|
-| Incidenti critici | Vieni avvisato degli incidenti critici sulla pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.  | 
+| Incidenti critici | Vieni avvisato degli incidenti critici sulla pagina Stato. Fai clic su **Supporto** &gt; **Stato**. Puoi estendere la funzionalità di notifica impostando una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche provenienti dalla pagina Amministrazione con un servizio Web a scelta.  |
 | Eventi di soglia | Puoi impostare una sottoscrizione di notifica che invia un'e-mail a un destinatario di tua scelta quando nel tuo ambiente vengono raggiunte le soglie per la quota dell'organizzazione, il disco fisico, la memoria fisica o la memoria riservata. In alternativa, puoi impostare una sottoscrizione che utilizza dei webhook per integrare le notifiche con un servizio Web di tua scelta.  |  
 | Stato di {{site.data.keyword.Bluemix_notm}} | In qualsiasi momento puoi visualizzare l'ultimo stato della piattaforma, dei servizi e della tua istanza {{site.data.keyword.Bluemix_notm}} nella pagina Stato. Fai clic su **Supporto** &gt; **Stato**.  |
 {: caption="Tabella 2. Tipi di evento e metodi di notifica" caption-side="top"}
@@ -372,10 +372,10 @@ Per informazioni più dettagliate sull'utilizzo della memoria o del disco fisico
 	<dt><strong>Fisico</strong></dt>
 	<dd>La linea Fisico mostra la quantità di memoria o spazio su disco effettivamente utilizzata.</dd>
 	</dl>
-	
+
 Per ciascuna delle viste di utilizzo cronologico disponibili, sono richiesti almeno due punti dati per la rappresentazione del grafico. Ciò equivale a dati per almeno due ore durante le ultime 48 ore, due giorni negli ultimi 30 giorni e due mesi negli ultimi 5 mesi. Per le viste di 30 giorni e 5 mesi, vengono restituiti i valori massimi o le medie parzialmente complete per il giorno o il mese corrente e verranno regolati man mano vengono raccolti altri dati.
 
-I dati che alimentano queste viste sono disponibili tramite l'[API Metriche](/docs/admin/index.html#envappmetricsapi). Per visualizzare gli effettivi endpoint API e i dati utilizzati per generare la vista, fai clic sul link **Informazioni sull'API** sopra il grafico. Se fai clic su uno dei link nella finestra di dialogo visualizzata, nel browser verrà aperta una nuova scheda contenente la risposta JSON dell'endpoint API delle metriche. 
+I dati che alimentano queste viste sono disponibili tramite l'[API Metriche](/docs/admin/index.html#envappmetricsapi). Per visualizzare gli effettivi endpoint API e i dati utilizzati per generare la vista, fai clic sul link **Informazioni sull'API** sopra il grafico. Se fai clic su uno dei link nella finestra di dialogo visualizzata, nel browser verrà aperta una nuova scheda contenente la risposta JSON dell'endpoint API delle metriche.
 
 #### Dettagli di utilizzo del servizio
 {: #servicesresourceusage}
@@ -669,7 +669,7 @@ Le seguenti tabelle possono aiutarti a compilare il file JSON.
 |plan_updateable | Un valore booleano che indica se il servizio supporta le modifiche del piano. Il valore predefinito è false. |
 |embeddableDashboard (facoltativo) | Un campo che indica come viene visualizzato il dashboard del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}. Se non specifichi questo campo, il dashboard viene integrato ma viene limitato a una larghezza minima di 960px e il dashboard avrà un ulteriore riempimento orizzontale intorno all'iframe. Puoi utilizzare true, false, drilldown o launch. Per questo valore puoi utilizzare i seguenti campi: true, false, drilldown e launch.  |
 |notCreatable (facoltativo) | Un valore booleano che indica se le istanze per il servizio possono essere create dall'interfaccia utente {{site.data.keyword.Bluemix_notm}} e dall'interfaccia riga di comando cf. Il valore true significa che le istanze del servizio non possono essere create né dall'interfaccia utente {{site.data.keyword.Bluemix_notm}} né dall'interfaccia riga di comando cf. Il valore predefinito è false. |
-|notCreatableMessage (facoltativo) | Un messaggio che viene visualizzato nell'interfaccia utente {{site.data.keyword.Bluemix_notm}} se non è possibile creare le istanze del servizio. Se non specifichi questo campo, verrà visualizzato il seguente messaggio predefinito: Per ricevere una notifica sulla disponibilità del servizio, confermare l'indirizzo email o immettere un nuovo indirizzo. |
+|notCreatableMessage (facoltativo) | Un messaggio che viene visualizzato nell'interfaccia utente {{site.data.keyword.Bluemix_notm}} se non è possibile creare le istanze del servizio. Se non specifichi questo campo, verrà visualizzato il seguente messaggio predefinito: Per ricevere una notifica sulla disponibilità del servizio, confermare l'indirizzo e-mail o immettere un nuovo indirizzo. |
 |notCreatableRobotMessage (facoltativo) | Un messaggio che viene visualizzato nell'area commenti della pagina dei dettagli del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}. Il messaggio viene utilizzato per indicare che un servizio potrebbe avere un problema o altre cause che lo rendono non disponibile. Puoi specificare un messaggio per spiegare il motivo. Se non specifichi questo campo, verrà visualizzato il seguente messaggio predefinito: Questo servizio non è al momento disponibile. |
 |apiReferenceUrl (facoltativo) | L'URL dell'iframe nell'area Riferimento API nella pagina dei dettagli del servizio all'interno del catalogo. Se non viene utilizzato per la pagina dei dettagli del servizio nel Catalogo, puoi immettere il valore numerico assegnato alla Documentazione API REST del tuo servizio durante la registrazione nel microservizio Documentazione API REST di {{site.data.keyword.Bluemix_notm}}. In questo modo, la documentazione dell'API REST verrà visualizzata nel dashboard del servizio. |
 |sdkDownloadUrl (facoltativo) | L'URL della pagina Web che si apre quando fai clic sul pulsante Scarica SDK. Il pulsante Scarica SDK si trova nel tile del servizio nella pagina di panoramica dell'applicazione nel Dashboard. La
@@ -776,7 +776,7 @@ Per creare un'organizzazione e aggiungere gestori, completa la seguente procedur
 
 1. Fai clic su <strong>CREA ORGANIZZAZIONE</strong>.
 2. Immetti un nome per l'organizzazione.
-3. Immetti il nome o l'email della persona che vuoi aggiungere come gestore. Puoi aggiungere più di un gestore immettendo e selezionando più nomi.
+3. Immetti il nome o l'e-mail della persona che vuoi aggiungere come gestore. Puoi aggiungere più di un gestore immettendo e selezionando più nomi.
 4. Fai clic su <strong>CREA ORGANIZZAZIONE</strong> per salvare le tue modifiche e creare l'organizzazione.
 
 ### Creazione di spazi
@@ -864,7 +864,7 @@ dell'organizzazione, riceverai un messaggio.</p></li>
 <dd>Il numero massimo di indirizzi IP pubblici che puoi assegnare tra tutti gli spazi di un'organizzazione.</dd>
 </dl>
 <strong>Nota</strong>: se non disponi ancora di contenitori nel tuo ambiente o se non li hai ancora configurati, ricevi un messaggio di errore.
-<p>Per ulteriori informazioni sui contenitori, vedi [Informazioni su IBM Containers](/docs/containers/container_ov.html). Per ulteriori informazioni sulle quote del contenitore, vedi [Quota e account Bluemix](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
+<p>Per ulteriori informazioni sui contenitori, vedi [Informazioni su IBM Containers](/docs/containers/container_ov.html). Per ulteriori informazioni sulle quote del contenitore, vedi [Quota e account {{site.data.keyword.Bluemix_notm}}](/docs/containers/container_planning_org_ov.html#container_planning_quota).</p>
 <strong>Nota:</strong> i contenitori non sono disponibili nella regione {{site.data.keyword.Bluemix_notm}} Sydney.</li>
 </ul>
 <li>Per salvare le eventuali modifiche apportate nella pagina Gestisci organizzazione, fai clic su <strong>SALVA</strong>.</li>
@@ -924,7 +924,7 @@ A seconda del tuo accesso di **Lettura** o **Scrittura** per le autorizzazioni d
 **Utenti** con l'accesso in **Scrittura**, puoi aggiungere gli utenti.
 
   1. Per aggiungere un singolo utente dalla tua directory LDAP, fai clic su **Aggiungi utente**.
-  2. Nel campo **Ricerca**, immetti l'indirizzo email per l'utente e seleziona quindi l'utente dall'elenco compilato.
+  2. Nel campo **Ricerca**, immetti l'indirizzo e-mail per l'utente e seleziona quindi l'utente dall'elenco compilato.
   3. Quindi, dal campo **Organizzazione**, scegli l'organizzazione a cui vuoi aggiungere l'utente immettendo il nome dell'organizzazione e selezionandolo dall'elenco compilato.
   4. Per aggiungere l'utente all'organizzazione selezionata, fai clic su **Aggiungi utente**.
 
@@ -943,7 +943,7 @@ non dispongono di autorizzazioni.
 completata correttamente, l'utente o il gruppo viene aggiunto alla tabella per consentirti operazioni di visualizzazione e ricerca. Quando gli utenti vengono aggiunti,
 non dispongono di autorizzazioni.
 
-* Aggiungi un gruppo di utenti importando un foglio di calcolo che include ID utente, indirizzi email utente e l'organizzazione a cui intendi aggiungere l'utente. Se disponi dell'autorizzazione **Superuser** o **Utenti** con l'accesso in **Scrittura**, puoi aggiungere gli utenti.
+* Aggiungi un gruppo di utenti importando un foglio di calcolo che include ID utente, indirizzi e-mail utente e l'organizzazione a cui intendi aggiungere l'utente. Se disponi dell'autorizzazione **Superuser** o **Utenti** con l'accesso in **Scrittura**, puoi aggiungere gli utenti.
 
 **Nota**: immetti gli ID utente che corrispondono ai valori utilizzati nel tuo registro utenti.
 
@@ -1178,7 +1178,7 @@ un cookie.</dd>
 Per ciascun utente registrato, i risultati includono le seguenti informazioni:
 * `"first_name"` (nome) e
                                 `"last_name"` (cognome)
-* `"user_id"`, ID utente e indirizzo email
+* `"user_id"`, ID utente e indirizzo e-mail
 * `"guid"`, GUID dell'organizzazione.
 * `"permissions"`, ossia le autorizzazioni assegnate all'utente per la Console di gestione.
 
@@ -1253,7 +1253,7 @@ o più organizzazioni. Per aggiungere un utente,
 devi fornire le seguenti informazioni:
 
 * Nome e cognome dell'utente. Fornisci `"nome"` e `"cognome"` da [Elenco degli utenti](index.html#listingusr).
-* Indirizzo email e ID utente: fornisci l'`"id_utente"` da [Elenco degli utenti](index.html#listingusr) sia per l'indirizzo email sia per l'ID utente.
+* Indirizzo e-mail e ID utente: fornisci l'`"id_utente"` da [Elenco degli utenti](index.html#listingusr) sia per l'indirizzo e-mail sia per l'ID utente.
 * `"guid"`. Fornisci il GUID dell'organizzazione da [Elenco delle organizzazioni](index.html#listingorg).
 
 Per fornire le informazioni, ti servi di un file JSON.
@@ -1276,7 +1276,7 @@ questo contenuto:</p>
 {
     "members": [
         {
-            "emails": [
+            "e-mails": [
                 "un_id_utente@dominio.com"
             ],
             "first_name": "un_nome",
