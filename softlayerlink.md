@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-01-03"
 
 
 ---
@@ -60,7 +60,7 @@ In some cases, before a user can switch to an IBMid, a reseller or distributor m
 ## Linking IBMid user accounts
 {: #link_user_accounts}
 
-After your user accounts switch to IBMid authentication, resellers and distributors can link SoftLayer and {{site.data.keyword.Bluemix_notm}} accounts to make use of combined infrastructure and platform resources. Be sure to review the following important notes:
+After your user accounts switch to IBMid authentication, resellers and distributors can link SoftLayer and {{site.data.keyword.Bluemix_notm}} accounts to make use of combined infrastructure and platform resources. By linking the accounts and by using IBMid, users can quickly access and purchase infrastructure and platform resources with a single ID. Be sure to review the following important notes:
 
   * The master user of the account that's being linked must have an IBMid.
   * Each user account that you link to an {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address. Even though a single IBMid can own multiple SoftLayer accounts, you must change the master user to be a unique IBMid for each account. Contact [IBM SoftLayer support ![External link icon](../icons/launch-glyph.svg)](https://knowledgelayer.softlayer.com/topic/support){: new_window} to change the master user of a SoftLayer account.
