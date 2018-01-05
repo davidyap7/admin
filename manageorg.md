@@ -82,16 +82,8 @@ To view the used and allocated quota for an org, complete the following steps:
  * SERVICES
  * PLAN
  * PRICE
-7. Click **Containers** to view the used and available container quota allocation. The container allocation varies depending on your pricing plan. You can view the quota details for the following resources:
- * MEMORY
- * PUBLIC IP
- * FILE SHARES
-8. Click **Virtual Servers** to view the virtual machines.
+7. Click **Virtual Servers** to view the virtual machines.
 
-Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region.
-{: tip}
-
-For more information about containers, see [Quota](/docs/containers/container_planning.html#container_planning_quota) in the Containers documentation.
 To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/support/index.html#contacting-support).
 
 ## Managing domains
