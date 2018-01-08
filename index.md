@@ -519,7 +519,7 @@ You can also manage the priority order of available buildpacks to be chosen base
 1. Go to **ADMINISTRATION &gt; CATALOG MANAGEMENT**
 2. Go to the **Compute** section.
 3. Select **Buildpack priority**.
-4. Select the buildpack option that you want to prioritize higher or lower within the list.
+4. Select the buildpack option that you want to prioritize within the list.
 5. With the option selected, use the arrows to move the option within the list.
 
 <!-- staging only end -->
