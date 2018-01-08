@@ -135,7 +135,8 @@ When you are defining the different organizations for your cloud structure, cons
 * Identify the area of the business that is allocated to this organization.
 
 The following scenarios show different approaches that you can adopt when you define the number of {{site.data.keyword.Bluemix_notm}} organizations in an environment:
-* **Scenario 1: Segregation of user groups by business application delivery**
+
+#### Scenario 1: Segregation of user groups by business application delivery
 
  Description: Corporate rules require that the apps of each LOB must be developed, managed, and deployed by users from each LOB. Security must be enforced so that users can access only the apps that are relevant to their part of the business. So, the users work in different business areas, the applications they are working on require access to different {{site.data.keyword.Bluemix_notm}} resources, and there is no activity overlap.
 
@@ -146,19 +147,19 @@ The following scenarios show different approaches that you can adopt when you de
   Figure 2. Example of a multi-organization architecture aligned to LOB delivery
 {: #bpfigure2}
 
-* **Scenario 2: Segregation based on type of users (internal users, external users)**
+#### Scenario 2: Segregation based on type of users (internal users, external users)
 
   Description: Your company works with different partners and you require clear boundaries between internal and external users.
 
   Solution: You can create an organization to deliver applications that are used internally. In addition, you can create one organization  for each external partner.
 
-* **Scenario 3: Isolation by project**
+#### Scenario 3: Isolation by project
 
   Description: Your company runs hackathons to identify new services.  
 
   Solution: You can define one organization per hackathon and use the organization as a sandbox. After the hackathon, you can promote the sandbox organization into an additional organization in your account.
 
-* **Scenario 4: Isolation of users by delivery phase**
+#### Scenario 4: Isolation of users by delivery phase
 
   Description: A company wants development, test, and production users to collaborate across a delivery, but their access is controlled by user role and job experience.
 
