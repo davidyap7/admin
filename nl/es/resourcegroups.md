@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-12"
 
 
 ---
@@ -31,7 +31,7 @@ Para ver fácilmente los recursos que contiene un grupo de recursos, filtre por 
 
 Si tiene una cuenta de Pago según uso o de Suscripción, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. También puede agrupar recursos para facilitarles la asignación de acceso a los usuarios a más de una instancia a la vez.
 
-Si tiene una cuenta Lite o de prueba, no puede crear grupos de recursos adicionales pero puede renombrar su grupo de recursos predeterminado.
+Si tiene una cuenta Lite o una prueba de 30 días, no puede crear grupos de recursos adicionales pero puede renombrar su grupo de recursos predeterminado.
 
 Cada grupo de recursos es gratuito, sin embargo, las conexiones entre un grupo de recursos y una organización o espacio de Cloud Foundry se tienen en cuenta en su cuota de cuenta. Para obtener más información, consulte [¿Qué es un alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -46,7 +46,7 @@ Cada grupo de recursos es gratuito, sin embargo, las conexiones entre un grupo d
 Su primer grupo de recursos se crea y se llama `Default`. Puede actualizar el nombre de este grupo o cualquier otro grupo que cree.
 
 1. Vaya a **Gestionar** &gt; **Cuenta** &gt; **Grupos de recursos**.
-2. Pulse **Editar**.
+2. Pulse **Renombrar**.
 3. Especifique un nombre exclusivo y pulse **Guardar**.
 
 ## Gestión de grupos de recursos utilizando la CLI de {{site.data.keyword.Bluemix_notm}}

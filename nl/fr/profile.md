@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -33,7 +33,7 @@ Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_no
 ## Modification de la photo de votre profil
 {: #photo notoc}
 
-Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur**.
+Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
 
   * Pour ajouter une photo, cliquez sur **Télécharger une photo**.
   * Pour remplacer votre photo actuelle par une autre, cliquez sur **Changer de photo**.
@@ -47,7 +47,7 @@ fonctions d'infrastructure, de services et d'application. Il est identique à l'
 
 Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société.
 
-1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil utilisateur**.
+1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
 2. Cliquez sur l'option permettant d'**éditer votre IBMid**.
 3. Editez vos informations utilisateur.
 4. Cliquez sur **Sauvegarder**.

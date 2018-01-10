@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -33,7 +33,7 @@ Para un proyecto satisfactorio, tómese tiempo para planificar y diseñar qué r
 
 Al diseñar una solución en la nube, piense también en la seguridad de la cuenta y en los requisitos operativos, en las regulaciones del país, en las directivas del mercado y en las políticas corporativas. Para cubrir las necesidades de su proyecto, {{site.data.keyword.Bluemix}} ofrece tres tipos de entornos de nube.
 
-* [{{site.data.keyword.Bluemix_notm}} Público](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): Los recursos de infraestructura los comparten distintas empresas y usuarios.
+* [{{site.data.keyword.Bluemix_notm}} Público](/docs/overview/ibm-cloud.html "{{site.data.keyword.Bluemix_notm}} Public"): Los recursos de infraestructura los comparten distintas empresas y usuarios.
 * [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}"): Utilice su propio {{site.data.keyword.BluSoftlayer_notm}} dedicado, que puede conectar de forma segura a {{site.data.keyword.Bluemix_notm}} público y a su propia red.
 * [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}"): Ocupa detrás del cortafuegos de la empresa, que puede proteger las cargas de trabajo más sensibles y puede conectarse de forma segura a los entornos de {{site.data.keyword.Bluemix_notm}} público y {{site.data.keyword.Bluemix_dedicated_notm}}.
 
@@ -264,7 +264,7 @@ Para añadir miembros del equipo a una cuenta, utilice la dirección de correo e
 El propietario de cuenta también puede realizar las tareas siguientes:
 
 * Añada uno o varios usuarios como gestores de una organización asignando a estos usuarios el rol **Gestor**. Considere la posibilidad de añadir dos usuarios como gestores de la organización. El primer usuario actúa como el gestor principal de la organización. El segundo usuario actúa como el gestor adjunto, en caso de que el gestor principal no esté disponible.
-* En {{site.data.keyword.Bluemix_notm}} Público, y dependiendo del [tipo de cuenta](/docs/pricing/index.html#pay-accounts "account type"), estableciendo notificaciones de gasto. En primer lugar, el propietario de la cuenta definirá los umbrales que se utilizan para alertarle de cuando los costes lleguen a un determinado límite. A continuación, [configurará las notificaciones por correo electrónico](/docs/admin/account.html#notifications "configures email notifications"). El gestor de la cuenta puede utilizar la información de los mensajes de correo electrónico como notificaciones de alerta y pueden realizar acciones en función de la información proporcionada, por ejemplo actualizando la cuenta. Tenga en cuenta que el propietario de la cuenta es la única persona que puede recibir correos electrónicos de notificaciones de gasto.
+* En {{site.data.keyword.Bluemix_notm}} Público, y dependiendo del [tipo de cuenta](/docs/pricing/index.html#pay-accounts "account type"), estableciendo notificaciones de gasto. En primer lugar, el propietario de la cuenta definirá los umbrales que se utilizan para alertarle de cuando los costes lleguen a un determinado límite. A continuación, [configurará las notificaciones por correo electrónico](/docs/admin/notifications.html#setting-notifications "configures email notifications"). El gestor de la cuenta puede utilizar la información de los mensajes de correo electrónico como notificaciones de alerta y pueden realizar acciones en función de la información proporcionada, por ejemplo actualizando la cuenta. Tenga en cuenta que el propietario de la cuenta es la única persona que puede recibir correos electrónicos de notificaciones de gasto.
 * Añada uno o varios usuarios como administradores de la cuenta asignando a estos usuarios el rol **Admin**. Considere la posibilidad de añadir un mínimo de dos usuarios. El primer usuario actúa como el administrador principal de la cuenta. El segundo usuario actúa como el administrador adjunto.
 * Defina las notificaciones de la cuenta para informar sobre las actualizaciones de mantenimiento o las alertas de incidencias críticas. Estas notificaciones se pueden configurar para enviar un correo electrónico o un SMS (Short Message Service, servicio de mensajes cortos).
 

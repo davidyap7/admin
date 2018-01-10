@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-12"
 
 ---
 
@@ -19,10 +19,8 @@ lastupdated: "2017-11-16"
 En tant que propriétaire de compte, vous pouvez gérer vos organisations et vos espaces depuis la page Gérer les organisations dans la console {{site.data.keyword.Bluemix}}. Un responsable de l'organisation peut également utiliser la page Gérer les organisations afin de gérer les organisations dont il est responsable.
 {:shortdesc}
 
-Pour gérer des organisations et les espaces, cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
+Pour gérer les organisations et les espaces, cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
 
-Vous devez être propriétaire d'un compte Paiement à la carte pour pouvoir créer une organisation.
-{: tip}
 
 ## Création d'organisations
 {: #createorg}
@@ -57,10 +55,10 @@ Les [rôles utilisateur](/docs/iam/users_roles.html#userrolesinfo) suivants peuv
    * Responsable de la facturation de l'organisation
    * Auditeur de l'organisation
 
-Seuls les propriétaires de compte de type Paiement à la carte peuvent créer une organisation. Vous pouvez créer une organisation comme suit :
+Vous pouvez créer une organisation comme suit :
 
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
-2. Cliquez sur **Ajouter une nouvelle organisation**.
+1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
+2. Cliquez sur **Ajouter une nouvelle organisation Cloud Foundry**.
 3. Entrez le nom de l'organisation.
 4. Cliquez sur **Ajouter**.
 
@@ -82,8 +80,8 @@ Un utilisateur doit disposer d'au moins l'un des droits dans l'espace.
 
 Vous pouvez créer des espaces dans votre organisation, par exemple un espace *dev* comme environnement de développement, un espace *test* comme environnement de test et un espace *production* comme environnement de production. Ensuite, vous pouvez associer vos applications à des espaces. Procédez comme suit pour créer un espace :
 
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
+1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
 2. Déterminez l'organisation à laquelle vous désirez ajouter un espace, puis sélectionnez **Afficher les détails**.
-4. Cliquez sur **Ajouter un espace**.
+4. Cliquez sur **Ajouter un espace Cloud Foundry**.
 5. Entrez le nom de l'espace.
 6. Cliquez sur **Ajouter**.

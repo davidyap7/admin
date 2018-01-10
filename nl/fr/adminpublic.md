@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 # Inscription à {{site.data.keyword.Bluemix_notm}}
 
-Vous pouvez vous inscrire à un compte {{site.data.keyword.Bluemix}} en utilisant un IBMid existant, en créant un nouvel IBMid ou en utilisant un ID fédéré. Un ID fédéré est un ID présent dans le domaine d'une société qui a été enregistré auprès d'IBM de sorte que le domaine et les données d'identification de l'utilisateur puissent être utilisés pour accéder aux applications Web IBM.
+Vous pouvez vous inscrire à un compte {{site.data.keyword.Bluemix}} en accédant à la page d'accueil [{{site.data.keyword.Bluemix_notm}} ](https://console.bluemix.net/) puis en sélectionnant **Créer un compte gratuit**. Vous pouvez utiliser un IBMid existant, créer un nouvel IBMid ou vous servir d'un ID fédéré. Un ID fédéré est un ID présent dans le domaine d'une société qui a été enregistré auprès d'IBM de sorte que le domaine et les données d'identification de l'utilisateur puissent être utilisés pour accéder aux applications Web IBM.
 {:shortdesc}  
 
 {: #federatedid}

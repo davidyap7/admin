@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -23,7 +23,7 @@ Para gestionar sus organizaciones desde la consola de {{site.data.keyword.Bluemi
 {: #orgrename}
 
 Siga los pasos siguientes para cambiar el nombre de la organización:
-1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
+1. Pulse **Gestionar** > **Cuenta** > **Organizaciones de Cloud Foundry**.
 2. Determine qué organización desea renombrar y pulse **Ver detalles**.
 3. Pulse **Editar organización**.
 4. Pulse **Editar** junto al nombre de la organización.
@@ -40,7 +40,7 @@ Utilice el mandato [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.
 
 Complete los siguientes pasos para suprimir un espacio:
 
-1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
+1. Pulse **Gestionar** > **Cuenta** > **Organizaciones de Cloud Foundry**.
 2. Seleccione la organización que desea editar y pulse **Ver detalles**.
 3. Determine qué espacio desea suprimir y pulse **Editar espacio**.
 4. Pulse **Suprimir espacio**.
@@ -52,7 +52,7 @@ Complete los siguientes pasos para suprimir un espacio:
 
 Siga los siguientes pasos para editar los roles de usuario de una organización específica:
 
-1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
+1. Pulse **Gestionar** > **Cuenta** > **Organizaciones de Cloud Foundry**.
 2. Determine qué organización desea editar y pulse **Ver detalles** y luego **Editar organización**.
 4. Puede ver los miembros de su organización y sus roles en el separador **USUARIOS**.
 
@@ -60,7 +60,7 @@ Siga los siguientes pasos para editar los roles de usuario de una organización 
 
 Siga los siguientes pasos para editar los roles de usuario de un espacio específico:
 
-1. Pulse **Gestionar** > **Cuenta** > **Organizaciones**.
+1. Pulse **Gestionar** > **Cuenta** > **Organizaciones de Cloud Foundry**.
 2. Seleccione la organización para la que desea ver los miembros y pulse **Ver detalles**.
 3. Determine qué espacio desea editar y pulse **Editar espacio**.
 4. Puede ver los miembros de su espacio y sus roles en el separador **USUARIOS**.
@@ -72,7 +72,7 @@ Como propietario de cuenta o gestor de organización de {{site.data.keyword.Blue
 
 Para ver la cuota utilizada y asignada a una organización, realice los pasos siguientes:
 
-1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
+1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones de Cloud Foundry**.
 2. Identifique la organización para la que desea ver la cuota y pulse **Ver detalles**.
 3. Pulse **Editar organización**.
 4. Si tiene espacios definidos en más de una región, seleccione la región específica que desee ver.
@@ -99,7 +99,7 @@ Para cambiar la cuota asignada para una organización, debe abrir una incidencia
 
 Como propietario de cuenta de {{site.data.keyword.Bluemix_notm}} o gestor de organización, puede ver el dominio del sistema y añadir dominios personalizados para aplicaciones que están incluidas dentro una organización y sus espacios. Como gestor de espacios, el separador **Dominios** para un espacio es una lista de solo lectura de los dominios asignados al espacio.
 
-1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
+1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones de Cloud Foundry**.
 2. Identifique la organización para la que desea ver o editar los dominios.
 3. Seleccione **Ver detalles** para esa organización.
 4. Pulse **Editar organización**.

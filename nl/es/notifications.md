@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -21,12 +21,12 @@ Regístrese para que se le notifiquen las actualizaciones sobre los límites de 
 {:shortdesc}
 
 Puede establecer notificaciones de correo electrónico para incidencias de
-{{site.data.keyword.Bluemix_notm}} y mantenimiento planificado, así como establecer notificaciones de gastos que le avisen cuando la cuenta esté cerca del umbral de gasto que haya especificado. Vaya a **Gestionar > Cuenta > Notificaciones** para establecer los distintos tipos de notificaciones para su cuenta.
+{{site.data.keyword.Bluemix_notm}} y mantenimiento planificado, así como establecer notificaciones de gastos que le avisen cuando la cuenta esté cerca del umbral de gasto que haya especificado. Vaya a **Gestionar > Cuenta > Notificaciones de plataforma** para establecer los distintos tipos de notificaciones para su cuenta.
 
 ## Establecimiento de notificaciones de plataforma
 {: #platform}
 
-Desde la barra de menús de la consola, pulse **Gestionar > Cuenta > Notificaciones > Notificaciones de plataforma** para establecer las notificaciones de correo electrónico para el mantenimiento planificado y los incidentes de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
+Desde la barra de menús de la consola, pulse **Gestionar > Cuenta > Notificaciones de plataforma** para establecer las notificaciones de correo electrónico para el mantenimiento planificado y los incidentes de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
 
 ## Establecimiento de notificaciones de gastos
 {: #spending}

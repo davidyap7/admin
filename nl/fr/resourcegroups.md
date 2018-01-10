@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-12"
 
 
 ---
@@ -31,7 +31,7 @@ Pour afficher facilement les ressources que contient un groupe de ressources, fi
 
 Si vous disposez d'un compte Paiement à la carte ou Abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Vous pouvez également regrouper des ressources afin de faciliter l'affectation d'accès utilisateur à plusieurs instances à la fois.
 
-Si vous disposez d'un compte Lite ou d'un compte d'essai, vous ne pouvez pas créer de groupes de ressources supplémentaires, mais vous pouvez renommer votre groupe de ressources par défaut.
+Si vous disposez d'un compte Lite ou d'un compte d'essai de 30 jours, vous ne pouvez pas créer de groupes de ressources supplémentaires, mais vous pouvez renommer votre groupe de ressources par défaut.
 
 Tous les groupes de ressources sont gratuits, en revanche, les connexions entre un groupe de ressources et une organisation ou un espace Cloud Foundry sont décomptées de votre quota de compte. Pour plus d'informations, voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias).
 {: tip}
@@ -46,7 +46,7 @@ Tous les groupes de ressources sont gratuits, en revanche, les connexions entre 
 Votre premier groupe de ressources, automatiquement nommé `Default`, est créé. Vous pouvez modifier le nom de ce groupe ou de tout autre groupe que vous créez.
 
 1. Accédez à **Gérer** &gt; **Compte** &gt; **Groupes de ressources**.
-2. Cliquez sur **Editer**.
+2. Cliquez sur **Renommer**.
 3. Entrez un nom unique, puis cliquez sur **Sauvegarder**.
 
 ## Gestion des groupes de ressources et des ressources à l'aide de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}

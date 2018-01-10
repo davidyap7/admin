@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -33,7 +33,7 @@ lastupdated: "2017-11-16"
 
 클라우드 솔루션을 디자인할 때 계정 보안과 운영 요구사항, 지역 규정, 시장 지침과 기업 정책에 대해서도 생각하십시오. 프로젝트 요구사항을 충족할 수 있도록 {{site.data.keyword.Bluemix}}에서는 세 가지 유형의 클라우드 환경을 제공합니다. 
 
-* [{{site.data.keyword.Bluemix_notm}} 퍼블릭](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} 퍼블릭"): 여러 회사와 사용자가 인프라 리소스를 공유합니다.
+* [{{site.data.keyword.Bluemix_notm}} 퍼블릭](/docs/overview/ibm-cloud.html "{{site.data.keyword.Bluemix_notm}} 퍼블릭"): 여러 회사와 사용자가 인프라 리소스를 공유합니다.
 * [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}"): {{site.data.keyword.Bluemix_notm}} 퍼블릭 및 자체 네트워크에 안전하게 연결할 수 있는 자체 데디케이티드 {{site.data.keyword.BluSoftlayer_notm}}를 사용합니다. 
 * [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}"): 가장 민감한 워크로드를 보호하고 {{site.data.keyword.Bluemix_notm}} 퍼블릭 및 {{site.data.keyword.Bluemix_dedicated_notm}} 환경 모두에 안전하게 연결할 수 있는 회사 방화벽 뒤에 위치합니다. 
 
@@ -266,7 +266,7 @@ lastupdated: "2017-11-16"
 계정 소유자는 다음 태스크도 수행할 수 있습니다.
 
 * 사용자에게 **관리자** 역할을 지정하여 조직의 관리자로서 하나 이상의 사용자를 추가합니다. 두 사용자를 조직 관리자로 추가하는 것을 고려합니다. 첫 번째 사용자는 조직의 주요 관리자 역할을 합니다. 두 번째 사용자는 주요 관리자가 없을 경우 관리자 대리 역할을 수행합니다.
-* {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 그리고 [계정 유형](/docs/pricing/index.html#pay-accounts "계정 유형")에 따라 지출 알림을 설정합니다. 먼저 계정 소유자가 비용이 특정 한계에 도달할 때 경고하는 데 사용되는 임계값을 정의합니다. 그런 다음 [이메일 알림을 구성](/docs/admin/account.html#notifications "이메일 알림 구성")합니다. 계정 관리자는 경보 알림으로 발송되는 이메일의 정보를 사용할 수 있으며, 제공된 정보를 기반으로 계정 업그레이드와 같은 조치를 수행할 수 있습니다. 참고로, 계정 소유자는 지출 알림 이메일을 수신할 수 있는 유일한 사람입니다. 
+* {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 그리고 [계정 유형](/docs/pricing/index.html#pay-accounts "계정 유형")에 따라 지출 알림을 설정합니다. 먼저 계정 소유자가 비용이 특정 한계에 도달할 때 경고하는 데 사용되는 임계값을 정의합니다. 그런 다음 [이메일 알림을 구성](/docs/admin/notifications.html#setting-notifications "이메일 알림 구성")합니다. 계정 관리자는 경보 알림으로 발송되는 이메일의 정보를 사용할 수 있으며, 제공된 정보를 기반으로 계정 업그레이드와 같은 조치를 수행할 수 있습니다. 참고로, 계정 소유자는 지출 알림 이메일을 수신할 수 있는 유일한 사람입니다. 
 * 사용자에게 **관리** 역할을 지정하여 계정의 관리자로서 하나 이상의 사용자를 추가합니다. 둘 이상의 사용자 추가를 고려합니다. 첫 번째 사용자는 계정의 주요 관리자 역할을 합니다. 두 번째 사용자는 관리자 대리 역할을 수행합니다.
 * 유지보수 업데이트 또는 중요 인시던트 경보에 대해 알리는 계정 알림을 정의합니다. 이메일 또는 SMS(Short Message Service)를 발송하도록 이러한 알림을 구성할 수 있습니다.
 

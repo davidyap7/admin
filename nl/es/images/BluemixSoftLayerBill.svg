@@ -13,7 +13,7 @@
    viewBox="0 0 1523 741"
    version="1.1"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="BluemixSoftLayerBill.svg">
   <metadata
      id="metadata153">
@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1857"
-     inkscape:window-height="1057"
+     inkscape:window-width="1618"
+     inkscape:window-height="1027"
      id="namedview151"
      showgrid="false"
      inkscape:zoom="0.7222587"
-     inkscape:cx="757.86442"
+     inkscape:cx="842.46015"
      inkscape:cy="300.2311"
-     inkscape:window-x="55"
+     inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Page-1" />
+     inkscape:current-layer="BluemixSoftLayerBill" />
   <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
   <title
      id="title4">BluemixSoftLayerBill_v2</title>
@@ -81,25 +81,23 @@
              points="147 253 399.6837 254 411.5038 294" />
           <text
              id="Bluemix-bill"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
                x="14.424"
                y="307"
-               id="tspan19">Factura de Bluemix</tspan>
+               id="tspan19">Factura de IBM Cloud</tspan>
           </text>
           <text
              id="SoftLayer-bill"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="0.952"
+               x="0.95200002"
                y="597"
-               id="tspan22">Factura de SoftLayer</tspan>
+               id="tspan22">Factura de Infraestructura</tspan>
           </text>
           <g
              id="g24"
@@ -120,14 +118,13 @@
           </g>
           <text
              id="text30"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="848.952"
+               x="848.95203"
                y="594"
-               id="tspan32">Factura de SoftLayer</tspan>
+               id="tspan32">Factura de Infraestructura</tspan>
           </text>
           <g
              id="g34"
@@ -165,14 +162,13 @@
           </g>
           <text
              id="text54"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="609.924"
+               x="609.92401"
                y="161"
-               id="tspan56">Factura de Bluemix</tspan>
+               id="tspan56">Factura de IBM Cloud</tspan>
           </text>
           <g
              id="g58"
@@ -231,32 +227,30 @@
           </g>
           <text
              id="Link-Bluemix-and"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="284.956"
+               x="284.95599"
                y="441"
                id="tspan89">Enlace de cuentas de</tspan>
           </text>
           <text
              id="SoftLayer-accounts"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
-               x="265.916"
+               x="265.91599"
                y="480"
-               id="tspan92">Bluemix y SoftLayer</tspan>
+               id="tspan92">IBM Cloud e Infraestructura</tspan>
           </text>
           <text
              id="For-the-next-billing-cycle,-you"
              font-size="30"
              font-weight="normal"
              x="-52"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="1063.285"
                y="433"
@@ -267,7 +261,7 @@
              font-size="30"
              font-weight="normal"
              x="-12.107421"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="1109.2876"
                y="465"
@@ -278,33 +272,32 @@
              font-size="30"
              font-weight="normal"
              x="-8.0717621"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="1091.9282"
                y="497"
-               id="tspan101">Bluemix que incluye los cargos</tspan>
+               id="tspan101">IBM Cloud que incluye los cargos</tspan>
           </text>
           <text
              id="and-Bluemix-charges"
              font-size="30"
              font-weight="normal"
              x="-24.945831"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="1145.0592"
                y="529"
-               id="tspan104">de SoftLayer y Bluemix</tspan>
+               id="tspan104">de Infraestructura e IBM Cloud</tspan>
           </text>
           <text
              id="text106"
-             fill="#3C3232"
-             font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM"
              font-size="32"
-             font-weight="bold">
+             font-weight="bold"
+             style="font-weight:bold;font-size:32px;line-height:0%;font-family:HelvNeueBoldforIBM, 'HelvNeue Bold for IBM';fill:#3c3232">
             <tspan
                x="1227.864"
                y="377"
-               id="tspan108">Factura de Bluemix</tspan>
+               id="tspan108">Factura de IBM Cloud</tspan>
           </text>
           <g
              id="Group"
@@ -323,7 +316,7 @@
              font-size="30"
              font-weight="normal"
              x="39.046619"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
                x="519.08661"
                y="203"
@@ -334,7 +327,7 @@
              font-size="30"
              font-weight="normal"
              x="20.895927"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
                x="459.89594"
                y="235"
@@ -345,18 +338,18 @@
              font-size="30"
              font-weight="normal"
              x="-10.603146"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
                x="457.78186"
                y="267"
-               id="tspan120">el uso de Bluemix durante el ciclo</tspan>
+               id="tspan120">el uso de IBM Cloud durante el ciclo</tspan>
           </text>
           <text
              id="month’s-billing-cycle."
              font-size="30"
              font-weight="normal"
              x="-42.644989"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#1a1314">
             <tspan
                x="482.39499"
                y="299"
@@ -367,7 +360,7 @@
              font-size="30"
              font-weight="normal"
              x="52.402393"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="776.17242"
                y="639"
@@ -378,18 +371,18 @@
              font-size="30"
              font-weight="normal"
              x="12.614985"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="722.54498"
                y="671"
-               id="tspan129">separada por el uso de SoftLayer durante</tspan>
+               id="tspan129">separada por el uso de Infraestructura durante</tspan>
           </text>
           <text
              id="billing-cycle,-depending-on-when-you"
              font-size="30"
              font-weight="normal"
              x="39.432098"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="731.43213"
                y="703"
@@ -400,7 +393,7 @@
              font-size="30"
              font-weight="normal"
              x="-53.36499"
-             style="font-weight:normal;font-size:30px;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
+             style="font-weight:normal;font-size:30px;line-height:0%;font-family:HelveticaNeue, 'Helvetica Neue';fill:#3c3232">
             <tspan
                x="745.36499"
                y="735"

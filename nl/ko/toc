@@ -14,6 +14,13 @@
     resourcegroups.md
 
     {: .topicgroup}
+    카탈로그 가시성 관리
+        access.md
+        include.md
+        exclude.md
+        owners.md
+
+    {: .topicgroup}
     조직
         orgs_spaces.md
         manageorg.md

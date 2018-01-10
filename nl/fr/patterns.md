@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -33,7 +33,7 @@ Pour que votre projet aboutisse, prenez le temps de planifier et concevoir les r
 
 Lorsque vous concevez une solution de cloud, prenez également en compte les exigences de sécurité de compte et opérationnelles, la réglementation des pays, les directives du marché et les politiques d'entreprise. Pour répondre aux besoins de votre projet, {{site.data.keyword.Bluemix}} offre trois types d'environnements de cloud.
 
-* [Environnement {{site.data.keyword.Bluemix_notm}} public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} public") : les ressources d'infrastructure sont partagées par différentes sociétés et différents utilisateurs.
+* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/ibm-cloud.html "{{site.data.keyword.Bluemix_notm}} Public") : les ressources d'infrastructure sont partagées par diverses sociétés et différents utilisateurs.
 * [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}") : vous utilisez votre propre infrastructure {{site.data.keyword.BluSoftlayer_notm}} dédiée, que vous pouvez connecter de manière sécurisée à l'environnement {{site.data.keyword.Bluemix_notm}} public et à propre réseau.
 * [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}") : se trouve derrière le pare-feu de votre entreprise et peut protéger les
 charges de travail les plus sensibles et se connecter de manière sécurisée aux environnements {{site.data.keyword.Bluemix_notm}} public et {{site.data.keyword.Bluemix_dedicated_notm}}.
@@ -258,7 +258,7 @@ Pour ajouter des membres d'équipe à un compte, utilisez l'adresse électroniqu
 Le propriétaire de compte peut également effectuer les tâches suivantes :
 
 * Ajouter un ou plusieurs utilisateurs en tant que responsables d'une organisation en affectant à ces utilisateurs le rôle **Responsable**. Envisagez d'ajouter deux utilisateurs en tant que responsables de l'organisation. Le premier utilisateur joue le rôle de responsable principal de l'organisation. Le second utilisateur joue le rôle de responsable adjoint et agit si le responsable principal n'est pas disponible.
-* Dans {{site.data.keyword.Bluemix_notm}} public et selon le [type de compte](/docs/pricing/index.html#pay-accounts "type de compte"), définir les notifications relatives aux dépenses. Le propriétaire de compte commence par définir les seuils qui sont utilisés pour l'alerter lorsque les coûts atteignent une certaine limite. Ensuite, il [configure les notifications par courrier électronique](/docs/admin/account.html#notifications "configure les notifications par courrier électronique"). Le responsable de compte peut utiliser les informations contenues dans les courriers électroniques comme notifications d'alerte et peut prendre des mesures basées sur ces informations, par exemple, procéder à la mise à niveau du compte. Le propriétaire de compte est la seule personne qui peut recevoir des courriers électroniques de notification relatifs aux dépenses.
+* Dans {{site.data.keyword.Bluemix_notm}} public et selon le [type de compte](/docs/pricing/index.html#pay-accounts "type de compte"), définir les notifications relatives aux dépenses. Le propriétaire de compte commence par définir les seuils qui sont utilisés pour l'alerter lorsque les coûts atteignent une certaine limite. Ensuite, il [configure les notifications par courrier électronique](/docs/admin/notifications.html#setting-notifications "configure les notifications par courrier électronique"). Le responsable de compte peut utiliser les informations contenues dans les courriers électroniques comme notifications d'alerte et peut prendre des mesures basées sur ces informations, par exemple, procéder à la mise à niveau du compte. Le propriétaire de compte est la seule personne qui peut recevoir des courriers électroniques de notification relatifs aux dépenses.
 * Ajouter un ou plusieurs utilisateurs en tant qu'administrateurs du compte en affectant à ces utilisateurs le rôle **Administrateur**. Envisagez d'ajouter au moins deux utilisateurs. Le premier utilisateur joue le rôle d'administrateur principal du compte. Le second utilisateur joue le rôle d'administrateur adjoint.
 * Définir les notifications de compte afin de signaler des mises à jour de maintenance ou des alertes d'incident critique. Ces notifications peuvent être configurées pour envoyer un courrier électronique ou un SMS.
 

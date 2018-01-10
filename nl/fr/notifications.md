@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -20,12 +20,12 @@ lastupdated: "2017-11-16"
 Abonnez-vous pour recevoir des notifications relatives aux plafonds des dépenses de vos comptes {{site.data.keyword.Bluemix_notm}} et aux mises à jour de maintenance des régions publiques de la plateforme {{site.data.keyword.Bluemix_notm}}. Les notifications relatives aux dépenses ne sont disponibles que pour les propriétaires de compte Paiement à la carte ou Abonnement.
 {:shortdesc}
 
-Vous pouvez définir des notifications par courrier électronique pour les incidents et la maintenance planifiée de {{site.data.keyword.Bluemix_notm}} et vous pouvez définir des notifications relatives aux dépenses qui vous envoient des alertes lorsque vous vous approchez du plafond des dépenses que vous avez spécifié pour compte. Sélectionnez **Gérer > Compte > Notifications** afin de définir différents types de notification pour votre compte.
+Vous pouvez définir des notifications par courrier électronique pour les incidents et la maintenance planifiée de {{site.data.keyword.Bluemix_notm}} et vous pouvez définir des notifications relatives aux dépenses qui vous envoient des alertes lorsque vous vous approchez du plafond des dépenses que vous avez spécifié pour compte. Sélectionnez **Gérer > Compte > Notifications relatives à la plateforme** afin de définir différents types de notification pour votre compte.
 
 ## Définition de notifications de plateforme
 {: #platform}
 
-Dans la barre de menus de la console, cliquez sur **Gérer > Compte > Notifications > Notifications relatives à la plateforme** pour définir des notifications par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}. Vous pouvez sélectionner ou désélectionner chaque option pour activer ou désactiver les notifications par courrier électronique.
+Dans la barre de menus de la console, cliquez sur **Gérer > Compte > Notifications relatives à la plateforme** pour définir des notifications par courrier électronique relatives aux incidents et à la maintenance planifiée de {{site.data.keyword.Bluemix_notm}}. Vous pouvez sélectionner ou désélectionner chaque option pour activer ou désactiver les notifications par courrier électronique.
 
 ## Définition de notifications relatives aux dépenses
 {: #spending}

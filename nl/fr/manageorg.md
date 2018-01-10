@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -23,7 +23,7 @@ Pour gérer vos organisations à partir de la console {{site.data.keyword.Bluemi
 {: #orgrename}
 
 Procédez comme suit pour renommer votre organisation :
-1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
 2. Déterminez quelle organisation vous voulez renommer, puis cliquez sur **Afficher les détails**.
 3. Cliquez sur **Editer l'organisation**.
 4. Cliquez sur **Editer** à côté du nom de l'organisation.
@@ -40,7 +40,7 @@ Vous pouvez utiliser la commande [`bx iam org-delete`](/docs/cli/reference/bluem
 
 Pour supprimer un espace, procédez comme suit :
 
-1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
 2. Sélectionnez l'organisation à éditer, puis cliquez sur **Afficher les détails**.
 3. Déterminez l'espace à supprimer, puis cliquez sur **Editer l'espace**.
 4. Cliquez sur **Supprimer l'espace**.
@@ -52,7 +52,7 @@ Pour supprimer un espace, procédez comme suit :
 
 Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation spécifique :
 
-1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
 2. Déterminez quelle organisation vous voulez éditer et cliquez sur **Afficher les détails**, puis sur **Editer l'organisation**.
 4. Les membres de votre organisation et leurs rôles s'affichent dans l'onglet **UTILISATEURS**.
 
@@ -60,7 +60,7 @@ Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation
 
 Procédez comme suit afin d'éditer les rôles utilisateur pour un espace spécifique :
 
-1. Cliquez sur **Gérer** > **Compte** > **Organisations**.
+1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
 2. Sélectionnez l'organisation dont vous voulez afficher les membres, puis cliquez sur **Afficher les détails**.
 3. Déterminez l'espace à éditer, puis cliquez sur **Editer l'espace**.
 4. Les membres de votre espace et leurs rôles s'affichent dans l'onglet **UTILISATEURS**.
@@ -72,7 +72,7 @@ En tant que propriétaire de compte {{site.data.keyword.Bluemix_notm}} ou respon
 
 Procédez comme suit afin d'afficher le quota utilisé et le quota alloué pour une organisation :
 
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
+1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
 2. Identifiez l'organisation pour laquelle afficher le quota, puis cliquez sur **Afficher les détails**.
 3. Cliquez sur **Editer l'organisation**.
 4. Si des espaces sont définis dans plusieurs régions, sélectionnez la région que vous souhaitez visualiser.
@@ -99,7 +99,7 @@ Pour modifier le quota alloué à une organisation, vous devez ouvrir un ticket 
 
 En tant que propriétaire de compte {{site.data.keyword.Bluemix_notm}} ou responsable de l'organisation, ous pouvez afficher le domaine de système et ajouter des données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, l'onglet **Domaines** d'un espace est une liste en lecture seule des domaines affectés à l'espace.
 
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations**.
+1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
 2. Identifiez l'organisation que vous désirez éditer ou éditer les domaines.
 3. Sélectionnez **Afficher les détails** pour cette organisation.
 4. Cliquez sur **Editer l'organisation**.

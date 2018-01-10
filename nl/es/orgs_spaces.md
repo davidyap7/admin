@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-12"
 
 ---
 
@@ -19,10 +19,8 @@ lastupdated: "2017-11-16"
 Como propietario de la cuenta, puede gestionar las organizaciones y los espacios desde la página Gestionar organizaciones en la consola de {{site.data.keyword.Bluemix}}. Los gestores de organizaciones también pueden utilizar la página Gestionar organizaciones para gestionar todas las organizaciones en las que se han establecido como gestor.
 {:shortdesc}
 
-Para gestionar organizaciones y espacios, pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
+Para gestionar organizaciones y espacios, pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones de Cloud Foundry**.
 
-Debe ser el propietario de la cuenta de Pago según uso para crear una organización.
-{: tip}
 
 ## Creación de organizaciones
 {: #createorg}
@@ -60,10 +58,10 @@ Los siguientes [roles de usuario](/docs/iam/users_roles.html#userrolesinfo) pued
    * Gestor de facturación de organización
    * Auditor de organización
 
-Solo los propietarios de cuenta de Pago según uso pueden crear una organización. Puede crear una organización completando los siguientes pasos:
+Puede crear una organización completando los siguientes pasos:
 
-1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
-2. Pulse **Añadir una nueva organización**.
+1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones de Cloud Foundry**.
+2. Pulse **Añadir una nueva organización de Cloud Foundry**.
 3. Escriba el nombre de la organización.
 4. Pulse **Añadir**.
 
@@ -85,8 +83,8 @@ A un usuario se le puede asignar como mínimo uno de los permisos en el espacio.
 
 Puede crear espacios en la organización; por ejemplo, un espacio *dev* como entorno de desarrollo, un espacio *test* como entorno de prueba y un espacio *production* como entorno de producción. Luego puede asociar sus apps a los espacios. Complete los siguientes pasos para crear un espacio:
 
-1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones**.
+1. Pulse **Gestionar** &gt; **Cuenta** &gt; **Organizaciones de Cloud Foundry**.
 2. Determine la organización a la que desea añadir un espacio y seleccione **Ver detalles**.
-4. Pulse **Añadir un espacio**.
+4. Pulse **Añadir un espacio de Cloud Foundry**.
 5. Especifique el nombre de espacio.
 6. Pulse **Añadir**.
