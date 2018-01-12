@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -33,7 +33,7 @@ Für den Erfolg eines Projekts ist es sinnvoll, sich Zeit zum Planen und Entwerf
 
 Beim Entwurf einer Cloudlösung sind darüber hinaus auch Aspekte der Kontosicherheit und Betriebsanforderungen, nationale Regelungen, Marktrichtlinien sowie unternehmensinterne Richtlinien zu berücksichtigen. Zur Erfüllung Ihrer jeweiligen Projektanforderungen werden mit {{site.data.keyword.Bluemix}} drei Typen von Cloudumgebungen angeboten.
 
-* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public"): Die Infrastrukturressourcen werden von verschiedenen Unternehmen und Benutzern gemeinsam genutzt.
+* [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/ibm-cloud.html "{{site.data.keyword.Bluemix_notm}} Public"): Die Infrastrukturressourcen werden von verschiedenen Unternehmen und Benutzern gemeinsam genutzt.
 * [{{site.data.keyword.Bluemix_dedicated_notm}}](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_dedicated_notm}}"): Sie verwenden eine eigene dedizierte Instanz von {{site.data.keyword.BluSoftlayer_notm}}, die Sie sicher mit {{site.data.keyword.Bluemix_notm}} Public und dem eigenem Netz verbinden können.
 * [{{site.data.keyword.Bluemix_local_notm}}](/docs/local/index.html#local "{{site.data.keyword.Bluemix_local_notm}}"): Diese Infrastruktur befindet sich hinter der Firewall Ihres Unternehmens, die Ihre sensibelsten Workloads schützen und sichere Verbindungen zu {{site.data.keyword.Bluemix_notm}} Public- und {{site.data.keyword.Bluemix_dedicated_notm}}-Umgebungen herstellen kann.
 
@@ -257,7 +257,7 @@ Zum Hinzufügen von Teammitgliedern in einem Konto verwenden Sie die E-Mail-Adre
 Der Kontoeigner kann außerdem die folgenden Tasks ausführen:
 
 * Er kann einen oder mehrere Benutzer als Manager einer Organisation hinzufügen, indem er diesen Benutzern die Rolle **Manager** zuweist. Ziehen Sie in Betracht, zwei Benutzer als Organisationsmanager hinzuzufügen. Der erste Benutzer ist der Hauptmanager der Organisation. Der zweite Benutzer fungiert als stellvertretender Manager, falls der Hauptmanager nicht verfügbar ist.
-* Er kann in {{site.data.keyword.Bluemix_notm}} Public abhängig vom [Kontotyp](/docs/pricing/index.html#pay-accounts "Kontotyp") Benachrichtigungen über Ausgaben festlegen. Zunächst definiert der Kontoeigner die Schwellenwerte, durch die er benachrichtigt wird, wenn Kosten einen bestimmten Grenzwert erreichen. Anschließend [konfiguriert er E-Mail-Benachrichtigungen](/docs/admin/account.html#notifications "konfiguriert er E-Mail-Benachrichtigungen"). Der Kontomanager kann die Informationen in den E-Mails als Alertbenachrichtigungen verwenden und Maßnahmen abhängig von den enthaltenen Informationen ergreifen, wie zum Beispiel ein Upgrade für das Konto durchführen. Beachten Sie, dass der Kontoeigner die einzige Person ist, die Benachrichtigungs-E-Mails über Ausgaben empfangen kann.
+* Er kann in {{site.data.keyword.Bluemix_notm}} Public abhängig vom [Kontotyp](/docs/pricing/index.html#pay-accounts "Kontotyp") Benachrichtigungen über Ausgaben festlegen. Zunächst definiert der Kontoeigner die Schwellenwerte, durch die er benachrichtigt wird, wenn Kosten einen bestimmten Grenzwert erreichen. Anschließend [konfiguriert er E-Mail-Benachrichtigungen](/docs/admin/notifications.html#setting-notifications "konfiguriert er E-Mail-Benachrichtigungen"). Der Kontomanager kann die Informationen in den E-Mails als Alertbenachrichtigungen verwenden und Maßnahmen abhängig von den enthaltenen Informationen ergreifen, wie zum Beispiel ein Upgrade für das Konto durchführen. Beachten Sie, dass der Kontoeigner die einzige Person ist, die Benachrichtigungs-E-Mails über Ausgaben empfangen kann.
 * Er kann einen oder mehrere Benutzer als Administratoren des Kontos hinzufügen, indem er diesen Benutzern die Rolle **Admin** zuweist. Ziehen Sie in Betracht, mindestens zwei Benutzer hinzuzufügen. Der erste Benutzer ist der Hauptadministrator des Kontos. Der zweite Benutzer fungiert als stellvertretender Administrator.
 * Er kann Kontobenachrichtigungen definieren, um über Wartungsaktualisierungen oder Alerts bei kritischen Vorfällen zu informieren. Diese Benachrichtigungen können so konfiguriert werden, dass eine E-Mail oder eine SMS-Nachricht (Short Message Service) gesendet wird.
 
@@ -330,8 +330,7 @@ Es kann sinnvoll sein, für jeden Bereich denselben Teammitgliedern die Rolle de
 ### Verwaltungsrollen für Dedicated- und Local-Konten
 {: #adminroles}
 
-[Verwaltungsrollen](/docs/hybrid/index.html#oc_useradmin "Benutzer und Berechtigungen verwalten") definieren die Berechtigungen, die Sie Benutzern zur Verwaltung eines {{site.data.keyword.Bluemix_dedicated_notm}}- oder {{site.data.keyword.Bluemix_local_notm}}-Kontos erteilen können.
-Sie können Lese- oder Schreibberechtigungen erteilen, um einem Benutzer zu berechtigen, Systeminformationen, Daten zur Nutzung der Kontoressourcen, Berichte und Protokolle, Katalogservices, Benutzer und Daten zur Ressourcennutzung pro Organisation anzuzeigen.
+[Verwaltungsrollen](/docs/hybrid/index.html#oc_useradmin "Benutzer und Berechtigungen verwalten") definieren die Berechtigungen, die Sie Benutzern zur Verwaltung eines {{site.data.keyword.Bluemix_dedicated_notm}}- oder {{site.data.keyword.Bluemix_local_notm}}-Kontos erteilen können. Sie können Lese- oder Schreibberechtigungen erteilen, um einem Benutzer zu berechtigen, Systeminformationen, Daten zur Nutzung der Kontoressourcen, Berichte und Protokolle, Katalogservices, Benutzer und Daten zur Ressourcennutzung pro Organisation anzuzeigen.
 
 Definieren Sie in einer Architektur mit mehreren Organisationen oder mit einer Einzelorganisation die Benutzer und die Berechtigungen, die jeder einzelne Benutzer zur Verwaltung des Kontos benötigt:
 

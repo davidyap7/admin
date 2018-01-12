@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 
 ---
@@ -20,12 +20,12 @@ lastupdated: "2017-11-16"
 Melden Sie sich für den Erhalt von Benachrichtigungen über die Ausgabelimits und Wartungsaktualisierungen Ihres {{site.data.keyword.Bluemix_notm}}-Kontos an den öffentlichen Regionen der {{site.data.keyword.Bluemix_notm}}-Plattform an. Ausgabebenachrichtigungen sind nur für Eigener eines nutzungsabhängigen Kontos oder Abonnementkontos verfügbar.
 {:shortdesc}
 
-Sie können E-Mail-Benachrichtigungen für {{site.data.keyword.Bluemix_notm}}-Vorfälle und die geplante Instandhaltung festlegen und Sie können Ausgabebenachrichtigungen definieren, durch die Sie gewarnt werden, wenn sich die Ausgaben für Ihr Konto dem festgelegten Schwellenwert nähern. Rufen Sie **Konto > Benachrichtigungen verwalten** auf, um unterschiedliche Benachrichtigungstypen für Ihr Konto festzulegen.
+Sie können E-Mail-Benachrichtigungen für {{site.data.keyword.Bluemix_notm}}-Vorfälle und die geplante Instandhaltung festlegen und Sie können Ausgabebenachrichtigungen definieren, durch die Sie gewarnt werden, wenn sich die Ausgaben für Ihr Konto dem festgelegten Schwellenwert nähern. Rufen Sie **Verwalten > Konto > Benachrichtigungen für Plattform** auf, um verschiedene Benachrichtigungstypen für Ihr Konto festzulegen.
 
 ## Plattformbenachrichtigungen einstellen
 {: #platform}
 
-Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Benachrichtigungen > Plattformbenachrichtigungen**, um E-Mail-Benachrichtigungen für Vorfälle und geplante Wartung in {{site.data.keyword.Bluemix_notm}} festzulegen. Sie können jede einzelne Option auswählen oder abwählen, um E-Mail-Benachrichtigungen zu aktivieren oder zu inaktivieren.
+Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Benachrichtigungen für Plattform**, um E-Mail-Benachrichtigungen für Vorfälle und geplante Wartung in {{site.data.keyword.Bluemix_notm}} festzulegen. Sie können jede einzelne Option auswählen oder abwählen, um E-Mail-Benachrichtigungen zu aktivieren oder zu inaktivieren.
 
 ## Ausgabebenachrichtigungen einstellen
 {: #spending}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-11"
 
 ---
 
@@ -23,7 +23,7 @@ Klicken Sie zum Verwalten Ihrer Organisationen in der {{site.data.keyword.Bluemi
 {: #orgrename}
 
 Führen Sie die folgenden Schritte aus, um Ihre Organisation umzubenennen:
-1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**. 
 2. Legen Sie die Organisation fest, die Sie umbenennen möchten, und klicken Sie auf **Details anzeigen**.
 3. Klicken Sie auf **Organisation bearbeiten**.
 4. Klicken Sie neben dem Namen der Organisation auf **Bearbeiten**.
@@ -34,13 +34,13 @@ Führen Sie die folgenden Schritte aus, um Ihre Organisation umzubenennen:
 
 ### Organisation löschen
 
-Sie können Organisationen mit dem Befehl [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) löschen. Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht. Beachten Sie hierbei unbedingt, dass das Löschen von Operationen nicht rückgängig gemacht werden kann. 
+Sie können Organisationen mit dem Befehl [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) löschen. Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht. Beachten Sie hierbei unbedingt, dass das Löschen von Operationen nicht rückgängig gemacht werden kann.
 
 ### Bereich löschen
 
 Führen Sie die folgenden Schritte aus, um einen Bereich zu löschen:
 
-1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**. 
 2. Wählen Sie die Organisation aus, die bearbeitet werden soll, und klicken Sie auf **Details anzeigen**.
 3. Ermitteln Sie den Bereich, den Sie löschen möchten, und klicken Sie auf **Bereich bearbeiten**.
 4. Klicken Sie auf **Bereich löschen**.
@@ -52,7 +52,7 @@ Führen Sie die folgenden Schritte aus, um einen Bereich zu löschen:
 
 Führen Sie die folgenden Schritte aus, um die Benutzerrollen für eine bestimmte Organisation zu bearbeiten:
 
-1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**. 
 2. Legen Sie die Organisation fest, die Sie bearbeiten möchten, und klicken Sie auf **Details anzeigen** und dann auf **Organisation bearbeiten**.
 4. Sie können die Mitglieder Ihrer Organisation und deren Rollen auf der Registerkarte **Benutzer** anzeigen.
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um die Benutzerrollen für eine bestimmt
 
 Führen Sie die folgenden Schritte aus, um die Benutzerrollen für einen bestimmten Bereich zu bearbeiten:
 
-1. Klicken Sie auf **Verwalten** > **Konto** > **Organisationen**.
+1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**. 
 2. Wählen Sie die Organisation aus, deren Mitglieder Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
 3. Ermitteln Sie den Bereich, den Sie bearbeiten möchten, und klicken Sie auf **Bereich bearbeiten**.
 4. Sie können die Mitglieder Ihres Bereichs und deren Rollen auf der Registerkarte **Benutzer** anzeigen.
@@ -72,7 +72,7 @@ Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager k�
 
 Führen Sie die folgenden Schritte aus, um das verwendete und zugeordnete Kontingent für eine Organisation anzuzeigen:
 
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
+1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Cloud Foundry-Organisationen**. 
 2. Ermitteln Sie die Organisation, deren Kontingent Sie anzeigen möchten, und klicken Sie auf **Details anzeigen**.
 3. Klicken Sie auf **Organisation bearbeiten**.
 4. Wenn Bereiche in mehreren Regionen definiert wurden, dann wählen Sie die Region aus, die Sie anzeigen möchten.
@@ -99,7 +99,7 @@ Um das Kontingent zu ändern, das einer Organisation zugeordnet ist, müssen Sie
 
 Als {{site.data.keyword.Bluemix_notm}}-Kontoeigner oder -Organisationsmanager können Sie die Systemdomäne anzeigen und angepasste Domänen für Anwendungen hinzufügen, die innerhalb einer Organisation und ihren Bereichen erstellt werden. Als Bereichsmanager enthält Ihre Registerkarte **Domänen** für einen Bereich eine schreibgeschützte Liste der Domänen, die dem Bereich zugeordnet sind.
 
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
+1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Cloud Foundry-Organisationen**. 
 2. Ermitteln Sie die Organisation, für die Sie Domänen anzeigen oder bearbeiten möchten.
 3. Wählen Sie **Details anzeigen** für diese Organisation aus.
 4. Klicken Sie auf **Organisation bearbeiten**.

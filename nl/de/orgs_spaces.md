@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-12"
 
 ---
 
@@ -19,10 +19,8 @@ lastupdated: "2017-11-16"
 Als Kontoeigner können Sie Ihre Organisationen und Bereiche über die Seite 'Organisationen verwalten' in der {{site.data.keyword.Bluemix}}-Konsole verwalten. Organisationsmanager können ferner die Seite 'Organisationen verwalten' verwenden, um beliebige Organisationen, für die sie als Manager festgelegt sind, zu verwalten.
 {:shortdesc}
 
-Zur Verwaltung von Organisationen und Bereichen klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
+Klicken Sie zum Verwalten von Organisationen und Bereichen auf **Verwalten** &gt; **Konto** &gt; **Cloud Foundry-Organisationen**. 
 
-Sie müssen der Kontoeigner eines nutzungsabhängigen Kontos sein, um eine Organisation erstellen zu können.
-{: tip}
 
 ## Organisationen erstellen
 {: #createorg}
@@ -57,10 +55,10 @@ Die folgenden [Benutzerrollen](/docs/iam/users_roles.html#userrolesinfo) können
    * Abrechnungsmanager der Organisation
    * Organisationsauditor
 
-Nur Kontoeigner nutzungsabhängiger Konten können eine Organisation erstellen. Sie können eine Organisation erstellen, indem Sie die folgenden Schritte ausführen:
+Sie können eine Organisation erstellen, indem Sie die folgenden Schritte ausführen:
 
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
-2. Klicken Sie auf **Neue Organisation hinzufügen**.
+1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Cloud Foundry-Organisationen**. 
+2. Klicken Sie auf **Neue Cloud Foundry-Organisation hinzufügen**. 
 3. Geben Sie den Namen der Organisation ein.
 4. Klicken Sie auf **Hinzufügen**.
 
@@ -82,8 +80,8 @@ Einem Benutzer muss mindestens eine der Berechtigungen im Bereich zugeordnet sei
 
 Sie können in Ihrer Organisation Bereiche erstellen, z. B. einen Bereich *dev* als Entwicklungsumgebung, einen Bereich *test* als Testumgebung und einen Bereich *production* als Produktionsumgebung. Anschließend können Sie Ihre Apps den Bereichen zuordnen. Führen Sie die folgenden Schritte aus, um einen Bereich zu erstellen:
 
-1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Organisationen**.
+1. Klicken Sie auf **Verwalten** &gt; **Konto** &gt; **Cloud Foundry-Organisationen**. 
 2. Ermitteln Sie die Organisation, der Sie einen Bereich hinzufügen möchten, und wählen Sie **Details anzeigen** aus.
-4. Klicken Sie auf **Bereich hinzufügen**.
+4. Klicken Sie auf **Cloud Foundry-Bereich hinzufügen**. 
 5. Geben Sie den Bereichsnamen ein.
 6. Klicken Sie auf **Hinzufügen**.

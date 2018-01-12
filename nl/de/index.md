@@ -302,7 +302,7 @@ für die eine Aktion Ihrerseits erforderlich ist. Es gibt zwei Typen, die Ihnen 
 
 <dl>
 <dt>Unterbrechungsfreie Aktualisierungen</dt>
-<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung. Diese Aktualisierungen werden in den vorab genehmigten Aktualisierungzeitfenstern, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben, angewendet.</dd>
+<dd>Eine unterbrechungsfreie Aktualisierung hat keine Auswirkungen auf Ihre Umgebung, Ihre aktiven Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen. Dieser Aktualisierungstyp erfordert keine fallspezifische Genehmigung. Diese Aktualisierungen werden in den vorab genehmigten Aktualisierungszeitfenstern, die Sie auf der Seite 'Systemaktualisierungen' festgelegt haben, angewendet.</dd>
 <dt>Aktualisierung mit Unterbrechungen</dt>
 <dd>Eine Aktualisierung mit Unterbrechungen kann sich auf Ihre Umgebung, die Ausführung von Anwendungen oder den Zugriff der Benutzer auf Ihre Anwendungen auswirken. Sie können jede dieser Wartungsaktualisierungen innerhalb des zugeteilten Wartungszeitraums von 21 Tagen terminieren und genehmigen, um sicherzustellen, dass die Aktualisierung nicht während kritischer Geschäftszeiten angewendet wird. Sie können das vorgeschlagene Implementierungsdatum und die vorgeschlagene Uhrzeit auswählen, die auf Ihren vorab genehmigten Aktualisierungsfenstern basieren, oder Sie können zwei weitere Uhrzeiten und Daten auswählen, aus denen IBM dann bei der Anwendung der Aktualisierung auswählen kann.</dd>
 </dl>

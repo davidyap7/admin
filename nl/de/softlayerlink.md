@@ -25,7 +25,7 @@ Sie können diesen Wechsel zur IBMid jederzeit abbrechen, solange der Prozess no
 Führen Sie folgende Schritte aus, um von Ihrem bisherigen SoftLayer-Konto zu einer IBMid zu wechseln:
 1. Melden Sie sich bei Ihrem SoftLayer-Konto an und klicken Sie auf **OK**, wenn die Eingabeaufforderung zum Wechseln zu einem IBMid angezeigt wird.
 
-   Wenn Sie ein Masterbenutzer sind und keine Eingabeaufforderung zum Wechseln zur IBMid im {{site.data.keyword.slportal}} angezeigt wird, dann wenden Sie sich an den [IBM Support](/docs/support/index.html#contacting-support), um Hilfe zu erhalten. 
+   Wenn Sie ein Masterbenutzer sind und keine Eingabeaufforderung zum Wechseln zur IBMid im {{site.data.keyword.slportal}} angezeigt wird, dann wenden Sie sich an den [IBM Support](/docs/support/index.html#contacting-support), um Hilfe zu erhalten.
 
    Falls Sie bereits angemeldet sind und bei der Eingabeaufforderung auf **Später** geklickt haben, jedoch in der aktuellen Sitzung zur Authentifizierung mit IBMid wechseln möchten, rufen Sie die Seite für die Bearbeitung des Benutzerprofils auf und klicken Sie auf **Zu IBM ID wechseln**.
 
